@@ -7,12 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Reflection;
 
 namespace ParsDashboard
 {
     public partial class FrmDashboard : Form
     {
         FrmPatient fPatient = new FrmPatient();
+        FrmImageSearch fImageSearch = new FrmImageSearch();
 
         public FrmDashboard()
         {
@@ -22,10 +24,18 @@ namespace ParsDashboard
         private void TSMnuGotoPatient_Click(object sender, EventArgs e)
         {
             fPatient.MdiParent = this;
+
             fPatient.Show();
         }
 
         private void FrmDashboard_Load(object sender, EventArgs e)
+        {
+            SetPanel_Height();
+
+            StopPanel_Flickering();          
+        }
+
+        private void SetPanel_Height()
         {
             PnlDashboard.Height = 25;
             PnlImages.Height = 25;
@@ -33,10 +43,57 @@ namespace ParsDashboard
             PnlSurgery.Height = 25;
             PnlRpt.Height = 25;
             PnlData.Height = 25;
+            PnlMetaData.Height = 25;
+            PnlEmailPic.Height = 25;
+            PnlSecurity.Height = 25;
 
             //Label1Dash.Image = Properties.Resources.Expander_Collapsed16; // use your down arrow image
             //Label2.Image = Properties.Resources.Expander_Collapsed16; // use your down arrow image
             //Label3.Image = Properties.Resources.Expander_Collapsed16; // use your down arrow image
+        }
+
+        private void StopPanel_Flickering()
+        {
+            // Stop flickering for panels
+            typeof(Panel).InvokeMember("DoubleBuffered",
+            BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic,
+            null, PnlDashboard, new object[] { true });
+
+            typeof(Panel).InvokeMember("DoubleBuffered",
+            BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic,
+            null, PnlImages, new object[] { true });
+
+            typeof(Panel).InvokeMember("DoubleBuffered",
+            BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic,
+            null, PnlPatient, new object[] { true });
+
+            typeof(Panel).InvokeMember("DoubleBuffered",
+            BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic,
+            null, PnlSurgery, new object[] { true });
+
+            typeof(Panel).InvokeMember("DoubleBuffered",
+            BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic,
+            null, PnlRpt, new object[] { true });
+
+            typeof(Panel).InvokeMember("DoubleBuffered",
+            BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic,
+            null, PnlData, new object[] { true });
+
+            typeof(Panel).InvokeMember("DoubleBuffered",
+            BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic,
+            null, PnlMetaData, new object[] { true });
+
+            typeof(Panel).InvokeMember("DoubleBuffered",
+            BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic,
+            null, PnlEmailPic, new object[] { true });
+
+            typeof(Panel).InvokeMember("DoubleBuffered",
+            BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic,
+            null, PnlSecurity, new object[] { true });
+
+            typeof(Panel).InvokeMember("DoubleBuffered",
+            BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic,
+            null, tableLayoutPanel1, new object[] { true });
         }
 
         private void Label1_Click(object sender, EventArgs e)
@@ -80,11 +137,11 @@ namespace ParsDashboard
                     }
                     else
                     {
-                        p.Height = p.Controls.Count * 30;
+                        p.Height = p.Controls.Count * 28;
                         //p.Height = 150;
                         // Change the imaqge name to YOUR image
                         //l.Image = Properties.Resources.Expander_Expanded16;
-                    }
+                    }                
                 }
                 else
                 {
@@ -124,15 +181,57 @@ namespace ParsDashboard
         {
             DashboardAccordian(sender, e);
         }
-
-        private void PnlSurgery_Paint(object sender, PaintEventArgs e)
+        
+        private void LlbImages_Click(object sender, EventArgs e)
         {
-
+            DashboardAccordian(sender, e);
         }
 
-        private void PnlRpt_Paint(object sender, PaintEventArgs e)
+        private void LblPatient_Click(object sender, EventArgs e)
         {
+            DashboardAccordian(sender, e);
+        }
 
+        private void LblSurgery_Click(object sender, EventArgs e)
+        {
+            DashboardAccordian(sender, e);
+        }
+
+        private void LblRpt_Click(object sender, EventArgs e)
+        {
+            DashboardAccordian(sender, e);
+        }
+
+        private void LblData_Click(object sender, EventArgs e)
+        {
+            DashboardAccordian(sender, e);
+        }
+
+        private void LblMetaData_Click(object sender, EventArgs e)
+        {
+            DashboardAccordian(sender, e);
+        }
+
+        private void LblEmailPic_Click(object sender, EventArgs e)
+        {
+            DashboardAccordian(sender, e);
+        }
+
+        private void LblSecurity_Click(object sender, EventArgs e)
+        {
+            DashboardAccordian(sender, e);
+        }
+
+        private void label1_Click_1(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void lblImagesSearch_Click(object sender, EventArgs e)
+        {
+            fImageSearch.MdiParent = this;
+
+            fImageSearch.Show();
         }
     }
 }
