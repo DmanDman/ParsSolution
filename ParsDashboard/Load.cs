@@ -18,8 +18,17 @@ namespace ParsDashboard
         }
         public void LoadDashBoard()
         {
-            this.frmDash = new FrmDashboard();
+            this.frmDash = new FrmMain();
             this.frmDash.Show();
+        }
+    }
+
+    public class FormNav
+    {
+        public void ShowForm( Form frm )
+        {
+            frm.Show();
+            frm.BringToFront();
         }
     }
 }

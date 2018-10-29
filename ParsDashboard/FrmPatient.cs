@@ -12,9 +12,16 @@ namespace ParsDashboard
 {
     public partial class FrmPatient : Form
     {
+        FormNav frmNav = new FormNav();
+
         public FrmPatient()
         {
             InitializeComponent();
+        }
+
+        private void TSMnuDash_Click(object sender, EventArgs e)
+        {
+            frmNav.ShowForm(this.MdiParent.MdiChildren[0]);
         }
     }
 }
