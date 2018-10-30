@@ -20,8 +20,9 @@ namespace ParsDashboard
         }
 
         private void TSMnuGotoPatient_Click(object sender, EventArgs e)
-        {           
-            frmNav.ShowForm(this.MdiParent.MdiChildren[1]);
+        {
+            //  show mdi child form by tag name, which is the name of the form
+            frmNav.ShowFormName( this.MdiParent.MdiChildren, "FrmPatient" );
         }
     }
 }

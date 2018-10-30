@@ -83,6 +83,7 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.MnuMenu);
             this.Name = "FrmPatient";
+            this.Tag = "FrmPatient";
             this.Text = "Patient";
             this.MnuMenu.ResumeLayout(false);
             this.MnuMenu.PerformLayout();

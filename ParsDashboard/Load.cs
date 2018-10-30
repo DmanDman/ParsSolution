@@ -30,5 +30,18 @@ namespace ParsDashboard
             frm.Show();
             frm.BringToFront();
         }
+
+        public void ShowFormName ( Form[] frm, string FrmTagName )
+        {
+            for ( int i = 0; i <= frm.Count(); i++ )
+            {
+                if ( frm[i].Tag.ToString() == FrmTagName )
+                {
+                    frm[i].Show();
+                    frm[i].BringToFront();
+                    break;
+                }
+            }
+        }
     }
 }

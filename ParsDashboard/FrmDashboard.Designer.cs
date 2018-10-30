@@ -55,6 +55,7 @@
             // 
             this.TSMnuGotoPatient.Name = "TSMnuGotoPatient";
             this.TSMnuGotoPatient.Size = new System.Drawing.Size(92, 21);
+            this.TSMnuGotoPatient.Tag = "FrmDashboard";
             this.TSMnuGotoPatient.Text = "Goto Patient";
             this.TSMnuGotoPatient.Click += new System.EventHandler(this.TSMnuGotoPatient_Click);
             // 
@@ -84,6 +85,7 @@
             this.Controls.Add(this.MnuMenu);
             this.Name = "FrmDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.Tag = "FrmDashboard";
             this.Text = "Dashboard";
             this.MnuMenu.ResumeLayout(false);
             this.MnuMenu.PerformLayout();
