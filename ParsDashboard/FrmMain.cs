@@ -13,7 +13,7 @@ namespace ParsDashboard
 {
     public partial class FrmMain : Form
     {
-        FrmDashboard fDashBoard = new FrmDashboard();
+        f fDashBoard = new f();
         FrmPatient fPatient = new FrmPatient();
         FrmImageSearch fImageSearch = new FrmImageSearch();
 

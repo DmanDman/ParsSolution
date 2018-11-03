@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace ParsDashboard
 {
-    public partial class FrmDashboard : Form
+    public partial class f : Form
     {
         FormNav frmNav = new FormNav();        
 
-        public FrmDashboard()
+        public f()
         {
             InitializeComponent();
         }
@@ -23,6 +23,21 @@ namespace ParsDashboard
         {
             //  show mdi child form by tag name, which is the name of the form
             frmNav.ShowFormName( this.MdiParent.MdiChildren, "FrmPatient" );
+        }
+
+        private void FrmDashboard_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GrpInfo_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

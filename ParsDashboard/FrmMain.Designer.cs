@@ -92,9 +92,9 @@
             this.PnlDashboard.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlDashboard.Location = new System.Drawing.Point(2, 2);
             this.PnlDashboard.Margin = new System.Windows.Forms.Padding(0);
-            this.PnlDashboard.MinimumSize = new System.Drawing.Size(150, 0);
+            this.PnlDashboard.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlDashboard.Name = "PnlDashboard";
-            this.PnlDashboard.Size = new System.Drawing.Size(150, 25);
+            this.PnlDashboard.Size = new System.Drawing.Size(200, 31);
             this.PnlDashboard.TabIndex = 1;
             // 
             // LblDashboard
@@ -104,8 +104,9 @@
             this.LblDashboard.Dock = System.Windows.Forms.DockStyle.Top;
             this.LblDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.LblDashboard.Location = new System.Drawing.Point(0, 0);
+            this.LblDashboard.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblDashboard.Name = "LblDashboard";
-            this.LblDashboard.Size = new System.Drawing.Size(150, 26);
+            this.LblDashboard.Size = new System.Drawing.Size(200, 32);
             this.LblDashboard.TabIndex = 0;
             this.LblDashboard.Text = "Dashboard";
             this.LblDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -118,28 +119,30 @@
             this.PnlPatient.Controls.Add(this.LblPatientAdd);
             this.PnlPatient.Controls.Add(this.LblPatient);
             this.PnlPatient.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlPatient.Location = new System.Drawing.Point(2, 114);
+            this.PnlPatient.Location = new System.Drawing.Point(2, 139);
             this.PnlPatient.Margin = new System.Windows.Forms.Padding(0);
-            this.PnlPatient.MinimumSize = new System.Drawing.Size(150, 0);
+            this.PnlPatient.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlPatient.Name = "PnlPatient";
-            this.PnlPatient.Size = new System.Drawing.Size(150, 88);
+            this.PnlPatient.Size = new System.Drawing.Size(200, 108);
             this.PnlPatient.TabIndex = 2;
             // 
             // LlbPatientSearch
             // 
             this.LlbPatientSearch.AutoSize = true;
-            this.LlbPatientSearch.Location = new System.Drawing.Point(10, 63);
+            this.LlbPatientSearch.Location = new System.Drawing.Point(13, 78);
+            this.LlbPatientSearch.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LlbPatientSearch.Name = "LlbPatientSearch";
-            this.LlbPatientSearch.Size = new System.Drawing.Size(46, 15);
+            this.LlbPatientSearch.Size = new System.Drawing.Size(53, 17);
             this.LlbPatientSearch.TabIndex = 3;
             this.LlbPatientSearch.Text = "Search";
             // 
             // LblPatientAdd
             // 
             this.LblPatientAdd.AutoSize = true;
-            this.LblPatientAdd.Location = new System.Drawing.Point(10, 37);
+            this.LblPatientAdd.Location = new System.Drawing.Point(13, 46);
+            this.LblPatientAdd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblPatientAdd.Name = "LblPatientAdd";
-            this.LblPatientAdd.Size = new System.Drawing.Size(28, 15);
+            this.LblPatientAdd.Size = new System.Drawing.Size(33, 17);
             this.LblPatientAdd.TabIndex = 2;
             this.LblPatientAdd.Text = "Add";
             // 
@@ -150,8 +153,9 @@
             this.LblPatient.Dock = System.Windows.Forms.DockStyle.Top;
             this.LblPatient.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.LblPatient.Location = new System.Drawing.Point(0, 0);
+            this.LblPatient.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblPatient.Name = "LblPatient";
-            this.LblPatient.Size = new System.Drawing.Size(150, 26);
+            this.LblPatient.Size = new System.Drawing.Size(200, 32);
             this.LblPatient.TabIndex = 0;
             this.LblPatient.Text = "Patient";
             this.LblPatient.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -173,9 +177,10 @@
             this.tableLayoutPanel1.Controls.Add(this.PnlRpt, 0, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 11;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -185,8 +190,8 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(139, 439);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 123F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(185, 540);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // PnlSecurity
@@ -195,19 +200,20 @@
             this.PnlSecurity.Controls.Add(this.LblSecurityUserMgmt);
             this.PnlSecurity.Controls.Add(this.LblSecurity);
             this.PnlSecurity.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlSecurity.Location = new System.Drawing.Point(2, 600);
+            this.PnlSecurity.Location = new System.Drawing.Point(2, 732);
             this.PnlSecurity.Margin = new System.Windows.Forms.Padding(0);
-            this.PnlSecurity.MinimumSize = new System.Drawing.Size(150, 0);
+            this.PnlSecurity.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlSecurity.Name = "PnlSecurity";
-            this.PnlSecurity.Size = new System.Drawing.Size(150, 66);
+            this.PnlSecurity.Size = new System.Drawing.Size(200, 81);
             this.PnlSecurity.TabIndex = 14;
             // 
             // LblSecurityUserMgmt
             // 
             this.LblSecurityUserMgmt.AutoSize = true;
-            this.LblSecurityUserMgmt.Location = new System.Drawing.Point(10, 37);
+            this.LblSecurityUserMgmt.Location = new System.Drawing.Point(13, 46);
+            this.LblSecurityUserMgmt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblSecurityUserMgmt.Name = "LblSecurityUserMgmt";
-            this.LblSecurityUserMgmt.Size = new System.Drawing.Size(110, 15);
+            this.LblSecurityUserMgmt.Size = new System.Drawing.Size(124, 17);
             this.LblSecurityUserMgmt.TabIndex = 2;
             this.LblSecurityUserMgmt.Text = "User Management";
             // 
@@ -218,8 +224,9 @@
             this.LblSecurity.Dock = System.Windows.Forms.DockStyle.Top;
             this.LblSecurity.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.LblSecurity.Location = new System.Drawing.Point(0, 0);
+            this.LblSecurity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblSecurity.Name = "LblSecurity";
-            this.LblSecurity.Size = new System.Drawing.Size(150, 27);
+            this.LblSecurity.Size = new System.Drawing.Size(200, 33);
             this.LblSecurity.TabIndex = 0;
             this.LblSecurity.Text = "Security";
             this.LblSecurity.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -234,46 +241,50 @@
             this.PnlData.Controls.Add(this.LblDataCustomizeName);
             this.PnlData.Controls.Add(this.LblData);
             this.PnlData.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlData.Location = new System.Drawing.Point(2, 384);
+            this.PnlData.Location = new System.Drawing.Point(2, 469);
             this.PnlData.Margin = new System.Windows.Forms.Padding(0);
-            this.PnlData.MinimumSize = new System.Drawing.Size(150, 0);
+            this.PnlData.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlData.Name = "PnlData";
-            this.PnlData.Size = new System.Drawing.Size(150, 88);
+            this.PnlData.Size = new System.Drawing.Size(200, 108);
             this.PnlData.TabIndex = 7;
             // 
             // LblDataPicInfo
             // 
             this.LblDataPicInfo.AutoSize = true;
-            this.LblDataPicInfo.Location = new System.Drawing.Point(10, 114);
+            this.LblDataPicInfo.Location = new System.Drawing.Point(13, 140);
+            this.LblDataPicInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblDataPicInfo.Name = "LblDataPicInfo";
-            this.LblDataPicInfo.Size = new System.Drawing.Size(68, 15);
+            this.LblDataPicInfo.Size = new System.Drawing.Size(79, 17);
             this.LblDataPicInfo.TabIndex = 5;
             this.LblDataPicInfo.Text = "Picture Info";
             // 
             // LblDataLink
             // 
             this.LblDataLink.AutoSize = true;
-            this.LblDataLink.Location = new System.Drawing.Point(10, 88);
+            this.LblDataLink.Location = new System.Drawing.Point(13, 108);
+            this.LblDataLink.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblDataLink.Name = "LblDataLink";
-            this.LblDataLink.Size = new System.Drawing.Size(30, 15);
+            this.LblDataLink.Size = new System.Drawing.Size(34, 17);
             this.LblDataLink.TabIndex = 4;
             this.LblDataLink.Text = "Link";
             // 
             // LblDataDefaultHosp
             // 
             this.LblDataDefaultHosp.AutoSize = true;
-            this.LblDataDefaultHosp.Location = new System.Drawing.Point(10, 63);
+            this.LblDataDefaultHosp.Location = new System.Drawing.Point(13, 78);
+            this.LblDataDefaultHosp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblDataDefaultHosp.Name = "LblDataDefaultHosp";
-            this.LblDataDefaultHosp.Size = new System.Drawing.Size(94, 15);
+            this.LblDataDefaultHosp.Size = new System.Drawing.Size(108, 17);
             this.LblDataDefaultHosp.TabIndex = 3;
             this.LblDataDefaultHosp.Text = "Default Hospital";
             // 
             // LblDataCustomizeName
             // 
             this.LblDataCustomizeName.AutoSize = true;
-            this.LblDataCustomizeName.Location = new System.Drawing.Point(10, 37);
+            this.LblDataCustomizeName.Location = new System.Drawing.Point(13, 46);
+            this.LblDataCustomizeName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblDataCustomizeName.Name = "LblDataCustomizeName";
-            this.LblDataCustomizeName.Size = new System.Drawing.Size(108, 15);
+            this.LblDataCustomizeName.Size = new System.Drawing.Size(121, 17);
             this.LblDataCustomizeName.TabIndex = 2;
             this.LblDataCustomizeName.Text = "Customize Names";
             // 
@@ -284,8 +295,9 @@
             this.LblData.Dock = System.Windows.Forms.DockStyle.Top;
             this.LblData.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.LblData.Location = new System.Drawing.Point(0, 0);
+            this.LblData.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblData.Name = "LblData";
-            this.LblData.Size = new System.Drawing.Size(150, 26);
+            this.LblData.Size = new System.Drawing.Size(200, 32);
             this.LblData.TabIndex = 0;
             this.LblData.Text = "Data";
             this.LblData.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -298,28 +310,30 @@
             this.PnlSurgery.Controls.Add(this.label9);
             this.PnlSurgery.Controls.Add(this.LblSurgery);
             this.PnlSurgery.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlSurgery.Location = new System.Drawing.Point(2, 204);
+            this.PnlSurgery.Location = new System.Drawing.Point(2, 249);
             this.PnlSurgery.Margin = new System.Windows.Forms.Padding(0);
-            this.PnlSurgery.MinimumSize = new System.Drawing.Size(150, 0);
+            this.PnlSurgery.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlSurgery.Name = "PnlSurgery";
-            this.PnlSurgery.Size = new System.Drawing.Size(150, 88);
+            this.PnlSurgery.Size = new System.Drawing.Size(200, 108);
             this.PnlSurgery.TabIndex = 6;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(10, 63);
+            this.label8.Location = new System.Drawing.Point(13, 78);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(46, 15);
+            this.label8.Size = new System.Drawing.Size(53, 17);
             this.label8.TabIndex = 3;
             this.label8.Text = "Search";
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(10, 37);
+            this.label9.Location = new System.Drawing.Point(13, 46);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(28, 15);
+            this.label9.Size = new System.Drawing.Size(33, 17);
             this.label9.TabIndex = 2;
             this.label9.Text = "Add";
             // 
@@ -330,8 +344,9 @@
             this.LblSurgery.Dock = System.Windows.Forms.DockStyle.Top;
             this.LblSurgery.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.LblSurgery.Location = new System.Drawing.Point(0, 0);
+            this.LblSurgery.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblSurgery.Name = "LblSurgery";
-            this.LblSurgery.Size = new System.Drawing.Size(150, 26);
+            this.LblSurgery.Size = new System.Drawing.Size(200, 32);
             this.LblSurgery.TabIndex = 0;
             this.LblSurgery.Text = "Surgery";
             this.LblSurgery.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -352,109 +367,120 @@
             this.PnlMetaData.Controls.Add(this.LblMDCpt);
             this.PnlMetaData.Controls.Add(this.LblMDComp);
             this.PnlMetaData.Controls.Add(this.LblMetaData);
-            this.PnlMetaData.Location = new System.Drawing.Point(2, 474);
+            this.PnlMetaData.Location = new System.Drawing.Point(2, 579);
             this.PnlMetaData.Margin = new System.Windows.Forms.Padding(0);
-            this.PnlMetaData.MinimumSize = new System.Drawing.Size(150, 0);
+            this.PnlMetaData.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlMetaData.Name = "PnlMetaData";
-            this.PnlMetaData.Size = new System.Drawing.Size(150, 66);
+            this.PnlMetaData.Size = new System.Drawing.Size(200, 81);
             this.PnlMetaData.TabIndex = 8;
             // 
             // LblMDSurgery
             // 
             this.LblMDSurgery.AutoSize = true;
-            this.LblMDSurgery.Location = new System.Drawing.Point(10, 287);
+            this.LblMDSurgery.Location = new System.Drawing.Point(13, 353);
+            this.LblMDSurgery.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMDSurgery.Name = "LblMDSurgery";
-            this.LblMDSurgery.Size = new System.Drawing.Size(49, 15);
+            this.LblMDSurgery.Size = new System.Drawing.Size(58, 17);
             this.LblMDSurgery.TabIndex = 12;
             this.LblMDSurgery.Text = "Surgery";
             // 
             // LblMDLocation
             // 
             this.LblMDLocation.AutoSize = true;
-            this.LblMDLocation.Location = new System.Drawing.Point(10, 262);
+            this.LblMDLocation.Location = new System.Drawing.Point(13, 322);
+            this.LblMDLocation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMDLocation.Name = "LblMDLocation";
-            this.LblMDLocation.Size = new System.Drawing.Size(54, 15);
+            this.LblMDLocation.Size = new System.Drawing.Size(62, 17);
             this.LblMDLocation.TabIndex = 11;
             this.LblMDLocation.Text = "Location";
             // 
             // LblMDLevel
             // 
             this.LblMDLevel.AutoSize = true;
-            this.LblMDLevel.Location = new System.Drawing.Point(10, 237);
+            this.LblMDLevel.Location = new System.Drawing.Point(13, 292);
+            this.LblMDLevel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMDLevel.Name = "LblMDLevel";
-            this.LblMDLevel.Size = new System.Drawing.Size(36, 15);
+            this.LblMDLevel.Size = new System.Drawing.Size(42, 17);
             this.LblMDLevel.TabIndex = 10;
             this.LblMDLevel.Text = "Level";
             // 
             // LblMDInst
             // 
             this.LblMDInst.AutoSize = true;
-            this.LblMDInst.Location = new System.Drawing.Point(10, 212);
+            this.LblMDInst.Location = new System.Drawing.Point(13, 261);
+            this.LblMDInst.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMDInst.Name = "LblMDInst";
-            this.LblMDInst.Size = new System.Drawing.Size(92, 15);
+            this.LblMDInst.Size = new System.Drawing.Size(105, 17);
             this.LblMDInst.TabIndex = 9;
             this.LblMDInst.Text = "Instrumentation";
             // 
             // LblMDHospital
             // 
             this.LblMDHospital.AutoSize = true;
-            this.LblMDHospital.Location = new System.Drawing.Point(10, 187);
+            this.LblMDHospital.Location = new System.Drawing.Point(13, 230);
+            this.LblMDHospital.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMDHospital.Name = "LblMDHospital";
-            this.LblMDHospital.Size = new System.Drawing.Size(52, 15);
+            this.LblMDHospital.Size = new System.Drawing.Size(59, 17);
             this.LblMDHospital.TabIndex = 8;
             this.LblMDHospital.Text = "Hospital";
             // 
             // LblMDFiscalYr
             // 
             this.LblMDFiscalYr.AutoSize = true;
-            this.LblMDFiscalYr.Location = new System.Drawing.Point(10, 162);
+            this.LblMDFiscalYr.Location = new System.Drawing.Point(13, 199);
+            this.LblMDFiscalYr.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMDFiscalYr.Name = "LblMDFiscalYr";
-            this.LblMDFiscalYr.Size = new System.Drawing.Size(67, 15);
+            this.LblMDFiscalYr.Size = new System.Drawing.Size(78, 17);
             this.LblMDFiscalYr.TabIndex = 7;
             this.LblMDFiscalYr.Text = "Fiscal Year";
             // 
             // LblMDDr
             // 
             this.LblMDDr.AutoSize = true;
-            this.LblMDDr.Location = new System.Drawing.Point(10, 137);
+            this.LblMDDr.Location = new System.Drawing.Point(13, 169);
+            this.LblMDDr.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMDDr.Name = "LblMDDr";
-            this.LblMDDr.Size = new System.Drawing.Size(43, 15);
+            this.LblMDDr.Size = new System.Drawing.Size(50, 17);
             this.LblMDDr.TabIndex = 6;
             this.LblMDDr.Text = "Doctor";
             // 
             // LblMDDx
             // 
             this.LblMDDx.AutoSize = true;
-            this.LblMDDx.Location = new System.Drawing.Point(10, 112);
+            this.LblMDDx.Location = new System.Drawing.Point(13, 138);
+            this.LblMDDx.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMDDx.Name = "LblMDDx";
-            this.LblMDDx.Size = new System.Drawing.Size(62, 15);
+            this.LblMDDx.Size = new System.Drawing.Size(70, 17);
             this.LblMDDx.TabIndex = 5;
             this.LblMDDx.Text = "Diagnosis";
             // 
             // LblMDImageDesc
             // 
             this.LblMDImageDesc.AutoSize = true;
-            this.LblMDImageDesc.Location = new System.Drawing.Point(10, 87);
+            this.LblMDImageDesc.Location = new System.Drawing.Point(13, 107);
+            this.LblMDImageDesc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMDImageDesc.Name = "LblMDImageDesc";
-            this.LblMDImageDesc.Size = new System.Drawing.Size(73, 15);
+            this.LblMDImageDesc.Size = new System.Drawing.Size(82, 17);
             this.LblMDImageDesc.TabIndex = 4;
             this.LblMDImageDesc.Text = "Image Desc";
             // 
             // LblMDCpt
             // 
             this.LblMDCpt.AutoSize = true;
-            this.LblMDCpt.Location = new System.Drawing.Point(10, 62);
+            this.LblMDCpt.Location = new System.Drawing.Point(13, 76);
+            this.LblMDCpt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMDCpt.Name = "LblMDCpt";
-            this.LblMDCpt.Size = new System.Drawing.Size(30, 15);
+            this.LblMDCpt.Size = new System.Drawing.Size(35, 17);
             this.LblMDCpt.TabIndex = 3;
             this.LblMDCpt.Text = "CPT";
             // 
             // LblMDComp
             // 
             this.LblMDComp.AutoSize = true;
-            this.LblMDComp.Location = new System.Drawing.Point(10, 37);
+            this.LblMDComp.Location = new System.Drawing.Point(13, 46);
+            this.LblMDComp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMDComp.Name = "LblMDComp";
-            this.LblMDComp.Size = new System.Drawing.Size(79, 15);
+            this.LblMDComp.Size = new System.Drawing.Size(88, 17);
             this.LblMDComp.TabIndex = 2;
             this.LblMDComp.Text = "Complication";
             // 
@@ -465,8 +491,9 @@
             this.LblMetaData.Dock = System.Windows.Forms.DockStyle.Top;
             this.LblMetaData.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.LblMetaData.Location = new System.Drawing.Point(0, 0);
+            this.LblMetaData.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMetaData.Name = "LblMetaData";
-            this.LblMetaData.Size = new System.Drawing.Size(150, 25);
+            this.LblMetaData.Size = new System.Drawing.Size(200, 31);
             this.LblMetaData.TabIndex = 0;
             this.LblMetaData.Text = "Meta Data";
             this.LblMetaData.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -479,28 +506,30 @@
             this.PnlEmailPic.Controls.Add(this.LblEmailPicPicOnly);
             this.PnlEmailPic.Controls.Add(this.LblEmailPic);
             this.PnlEmailPic.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlEmailPic.Location = new System.Drawing.Point(2, 544);
+            this.PnlEmailPic.Location = new System.Drawing.Point(2, 664);
             this.PnlEmailPic.Margin = new System.Windows.Forms.Padding(0);
-            this.PnlEmailPic.MinimumSize = new System.Drawing.Size(150, 0);
+            this.PnlEmailPic.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlEmailPic.Name = "PnlEmailPic";
-            this.PnlEmailPic.Size = new System.Drawing.Size(150, 54);
+            this.PnlEmailPic.Size = new System.Drawing.Size(200, 66);
             this.PnlEmailPic.TabIndex = 13;
             // 
             // LblEmailPicPicInfo
             // 
             this.LblEmailPicPicInfo.AutoSize = true;
-            this.LblEmailPicPicInfo.Location = new System.Drawing.Point(10, 62);
+            this.LblEmailPicPicInfo.Location = new System.Drawing.Point(13, 76);
+            this.LblEmailPicPicInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblEmailPicPicInfo.Name = "LblEmailPicPicInfo";
-            this.LblEmailPicPicInfo.Size = new System.Drawing.Size(92, 15);
+            this.LblEmailPicPicInfo.Size = new System.Drawing.Size(107, 17);
             this.LblEmailPicPicInfo.TabIndex = 3;
             this.LblEmailPicPicInfo.Text = "Picture and Info";
             // 
             // LblEmailPicPicOnly
             // 
             this.LblEmailPicPicOnly.AutoSize = true;
-            this.LblEmailPicPicOnly.Location = new System.Drawing.Point(10, 37);
+            this.LblEmailPicPicOnly.Location = new System.Drawing.Point(13, 46);
+            this.LblEmailPicPicOnly.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblEmailPicPicOnly.Name = "LblEmailPicPicOnly";
-            this.LblEmailPicPicOnly.Size = new System.Drawing.Size(72, 15);
+            this.LblEmailPicPicOnly.Size = new System.Drawing.Size(85, 17);
             this.LblEmailPicPicOnly.TabIndex = 2;
             this.LblEmailPicPicOnly.Text = "Picture Only";
             // 
@@ -511,8 +540,9 @@
             this.LblEmailPic.Dock = System.Windows.Forms.DockStyle.Top;
             this.LblEmailPic.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.LblEmailPic.Location = new System.Drawing.Point(0, 0);
+            this.LblEmailPic.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblEmailPic.Name = "LblEmailPic";
-            this.LblEmailPic.Size = new System.Drawing.Size(150, 26);
+            this.LblEmailPic.Size = new System.Drawing.Size(200, 32);
             this.LblEmailPic.TabIndex = 0;
             this.LblEmailPic.Text = "Emailed Pictures";
             this.LblEmailPic.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -525,19 +555,20 @@
             this.PnlImages.Controls.Add(this.label4);
             this.PnlImages.Controls.Add(this.LlbImages);
             this.PnlImages.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlImages.Location = new System.Drawing.Point(2, 29);
+            this.PnlImages.Location = new System.Drawing.Point(2, 35);
             this.PnlImages.Margin = new System.Windows.Forms.Padding(0);
-            this.PnlImages.MinimumSize = new System.Drawing.Size(150, 0);
+            this.PnlImages.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlImages.Name = "PnlImages";
-            this.PnlImages.Size = new System.Drawing.Size(150, 83);
+            this.PnlImages.Size = new System.Drawing.Size(200, 102);
             this.PnlImages.TabIndex = 4;
             // 
             // LblImagesSearch
             // 
             this.LblImagesSearch.AutoSize = true;
-            this.LblImagesSearch.Location = new System.Drawing.Point(10, 59);
+            this.LblImagesSearch.Location = new System.Drawing.Point(13, 73);
+            this.LblImagesSearch.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblImagesSearch.Name = "LblImagesSearch";
-            this.LblImagesSearch.Size = new System.Drawing.Size(46, 15);
+            this.LblImagesSearch.Size = new System.Drawing.Size(53, 17);
             this.LblImagesSearch.TabIndex = 3;
             this.LblImagesSearch.Text = "Search";
             this.LblImagesSearch.Click += new System.EventHandler(this.LblImagesSearch_Click_1);
@@ -545,9 +576,10 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(10, 35);
+            this.label4.Location = new System.Drawing.Point(13, 43);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(28, 15);
+            this.label4.Size = new System.Drawing.Size(33, 17);
             this.label4.TabIndex = 2;
             this.label4.Text = "Add";
             // 
@@ -558,8 +590,9 @@
             this.LlbImages.Dock = System.Windows.Forms.DockStyle.Top;
             this.LlbImages.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.LlbImages.Location = new System.Drawing.Point(0, 0);
+            this.LlbImages.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LlbImages.Name = "LlbImages";
-            this.LlbImages.Size = new System.Drawing.Size(150, 26);
+            this.LlbImages.Size = new System.Drawing.Size(200, 32);
             this.LlbImages.TabIndex = 0;
             this.LlbImages.Text = "Images";
             this.LlbImages.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -572,28 +605,30 @@
             this.PnlRpt.Controls.Add(this.label6);
             this.PnlRpt.Controls.Add(this.LblRpt);
             this.PnlRpt.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlRpt.Location = new System.Drawing.Point(2, 294);
+            this.PnlRpt.Location = new System.Drawing.Point(2, 359);
             this.PnlRpt.Margin = new System.Windows.Forms.Padding(0);
-            this.PnlRpt.MinimumSize = new System.Drawing.Size(150, 0);
+            this.PnlRpt.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlRpt.Name = "PnlRpt";
-            this.PnlRpt.Size = new System.Drawing.Size(150, 88);
+            this.PnlRpt.Size = new System.Drawing.Size(200, 108);
             this.PnlRpt.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 63);
+            this.label3.Location = new System.Drawing.Point(13, 78);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 15);
+            this.label3.Size = new System.Drawing.Size(53, 17);
             this.label3.TabIndex = 3;
             this.label3.Text = "Search";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(10, 37);
+            this.label6.Location = new System.Drawing.Point(13, 46);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(28, 15);
+            this.label6.Size = new System.Drawing.Size(33, 17);
             this.label6.TabIndex = 2;
             this.label6.Text = "Add";
             // 
@@ -604,8 +639,9 @@
             this.LblRpt.Dock = System.Windows.Forms.DockStyle.Top;
             this.LblRpt.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.LblRpt.Location = new System.Drawing.Point(0, 0);
+            this.LblRpt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblRpt.Name = "LblRpt";
-            this.LblRpt.Size = new System.Drawing.Size(150, 26);
+            this.LblRpt.Size = new System.Drawing.Size(200, 32);
             this.LblRpt.TabIndex = 0;
             this.LblRpt.Text = "Reports";
             this.LblRpt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -613,11 +649,12 @@
             // 
             // FrmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 439);
+            this.ClientSize = new System.Drawing.Size(1067, 540);
             this.Controls.Add(this.tableLayoutPanel1);
             this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Tag = "FrmMain";
