@@ -13,9 +13,12 @@ namespace ParsDashboard
 {
     public partial class FrmMain : Form
     {
+        FormNav fNav = new FormNav();
+
         f fDashBoard = new f();
         FrmPatient fPatient = new FrmPatient();
         FrmImageSearch fImageSearch = new FrmImageSearch();
+        FrmImages fImage = new FrmImages();
 
         public FrmMain()
         {            
@@ -27,13 +30,13 @@ namespace ParsDashboard
 
             fPatient.MdiParent = this;
             fPatient.Show();
-        }
 
-        private void TSMnuGotoPatient_Click(object sender, EventArgs e)
-        {
-            fPatient.MdiParent = this;
-            fPatient.Show();
-        }
+            fImageSearch.MdiParent = this;
+            fImageSearch.Show();
+
+            fImage.MdiParent = this;
+            fImage.Show();
+        }     
 
         private void FrmDashboard_Load(object sender, EventArgs e)
         {
@@ -118,11 +121,15 @@ namespace ParsDashboard
         private void LlbImages_Click(object sender, EventArgs e)
         {
             DashboardAccordian(sender, e);
+
+            fNav.ShowForm( fImage );
         }
 
         private void LblPatient_Click(object sender, EventArgs e)
         {
             DashboardAccordian(sender, e);
+
+            fNav.ShowForm( fPatient );
         }
 
         private void LblSurgery_Click(object sender, EventArgs e)
@@ -154,17 +161,57 @@ namespace ParsDashboard
         {
             DashboardAccordian(sender, e);
         }        
-       
-        private void LblImagesSearch_Click_1(object sender, EventArgs e)
-        {
-            fImageSearch.MdiParent = this;
-
-            fImageSearch.Show();
-        }
 
         private void LblDashboard_Click(object sender, EventArgs e)
         {
             DashboardAccordian(sender, e);
+
+            fNav.ShowForm( fDashBoard );
+        }
+
+        private void LblImagesAdd_MouseEnter(object sender, EventArgs e)
+        {
+            LblImagesAdd.Font = new Font( LblImagesAdd.Font.Name, LblImagesAdd.Font.SizeInPoints, FontStyle.Underline | FontStyle.Bold );
+        }
+
+        private void LblImagesAdd_MouseLeave(object sender, EventArgs e)
+        {
+            LblImagesAdd.Font = new Font( LblImagesAdd.Font.Name, LblImagesAdd.Font.SizeInPoints, FontStyle.Regular );
+        }
+
+        private void LblImagesAdd_Click(object sender, EventArgs e)
+        {
+            DlgImagesAdd.ShowDialog();
+        }
+
+        private void LblImagesSearch_Click(object sender, EventArgs e)
+        {
+            fNav.ShowForm( fImageSearch );
+        }
+
+        private void LblDashboard_MouseEnter(object sender, EventArgs e)
+        {
+            LblDashboard.Font = new Font(LblDashboard.Font.Name, LblDashboard.Font.SizeInPoints, FontStyle.Underline );
+        }
+
+        private void LblDashboard_MouseLeave(object sender, EventArgs e)
+        {
+            LblDashboard.Font = new Font( LblDashboard.Font.Name, LblDashboard.Font.SizeInPoints, FontStyle.Regular );
+        }
+
+        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
+        {
+
+        }
+
+        private void LblImagesSearch_MouseEnter(object sender, EventArgs e)
+        {
+            LblImagesSearch.Font = new Font( LblImagesSearch.Font.Name, LblImagesSearch.Font.SizeInPoints, FontStyle.Underline | FontStyle.Bold );
+        }
+
+        private void LblImagesSearch_MouseLeave(object sender, EventArgs e)
+        {
+            LblImagesSearch.Font = new Font( LblImagesSearch.Font.Name, LblImagesSearch.Font.SizeInPoints, FontStyle.Regular );
         }
     }
 }

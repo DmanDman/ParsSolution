@@ -34,14 +34,14 @@
             this.TSMnuAddToCanvas = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.GrpInfo = new System.Windows.Forms.GroupBox();
-            this.LblInfoDr = new System.Windows.Forms.Label();
-            this.TxtInfoDr = new System.Windows.Forms.TextBox();
-            this.LblInfoSurgeries = new System.Windows.Forms.Label();
-            this.LblInfoImages = new System.Windows.Forms.Label();
-            this.LblInfoPatients = new System.Windows.Forms.Label();
-            this.TxtInfoSurgeries = new System.Windows.Forms.TextBox();
-            this.TxtInfoImages = new System.Windows.Forms.TextBox();
             this.TxtInfoPatients = new System.Windows.Forms.TextBox();
+            this.TxtInfoImages = new System.Windows.Forms.TextBox();
+            this.TxtInfoSurgeries = new System.Windows.Forms.TextBox();
+            this.LblInfoPatients = new System.Windows.Forms.Label();
+            this.LblInfoImages = new System.Windows.Forms.Label();
+            this.LblInfoSurgeries = new System.Windows.Forms.Label();
+            this.TxtInfoDr = new System.Windows.Forms.TextBox();
+            this.LblInfoDr = new System.Windows.Forms.Label();
             this.GrpRecent = new System.Windows.Forms.GroupBox();
             this.TxtRecentSurgeryAge = new System.Windows.Forms.TextBox();
             this.TxtRecentPatient = new System.Windows.Forms.TextBox();
@@ -55,6 +55,22 @@
             this.TxtCanvammmmmmmmmmmmmmmm = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.GrpHighest = new System.Windows.Forms.GroupBox();
+            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.TxtHighestComp = new System.Windows.Forms.TextBox();
+            this.TxtHighestInst = new System.Windows.Forms.TextBox();
+            this.LblHighestComp = new System.Windows.Forms.Label();
+            this.LblHighestInst = new System.Windows.Forms.Label();
+            this.TxtHightestSurgery = new System.Windows.Forms.TextBox();
+            this.LblHighestSurgery = new System.Windows.Forms.Label();
+            this.TxtHighestDx = new System.Windows.Forms.TextBox();
+            this.LblHighestDx = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
@@ -63,27 +79,21 @@
             this.sd = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.LblHighestHosptal = new System.Windows.Forms.Label();
-            this.LblHighestDx = new System.Windows.Forms.Label();
-            this.TxtHighestDx = new System.Windows.Forms.TextBox();
-            this.LblHighestSurgery = new System.Windows.Forms.Label();
-            this.TxtHightestSurgery = new System.Windows.Forms.TextBox();
-            this.LblHighestInst = new System.Windows.Forms.Label();
-            this.LblHighestComp = new System.Windows.Forms.Label();
-            this.TxtHighestInst = new System.Windows.Forms.TextBox();
-            this.TxtHighestComp = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.GrpImages = new System.Windows.Forms.GroupBox();
+            this.LstImageDesc = new System.Windows.Forms.ListBox();
+            this.BtnImagePrev = new System.Windows.Forms.Button();
+            this.BtnImageFirst = new System.Windows.Forms.Button();
+            this.BtnImageNext = new System.Windows.Forms.Button();
+            this.BtnImageLast = new System.Windows.Forms.Button();
+            this.TxtImagesCount = new System.Windows.Forms.TextBox();
+            this.LblGrpImageDesc = new System.Windows.Forms.Label();
+            this.LstImages = new System.Windows.Forms.ListView();
             this.MnuMenu.SuspendLayout();
             this.GrpInfo.SuspendLayout();
             this.GrpRecent.SuspendLayout();
             this.GrpCanvas.SuspendLayout();
             this.GrpHighest.SuspendLayout();
+            this.GrpImages.SuspendLayout();
             this.SuspendLayout();
             // 
             // MnuMenu
@@ -99,7 +109,7 @@
             this.MnuMenu.Name = "MnuMenu";
             this.MnuMenu.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
             this.MnuMenu.Size = new System.Drawing.Size(1307, 28);
-            this.MnuMenu.TabIndex = 2;
+            this.MnuMenu.TabIndex = 0;
             this.MnuMenu.Text = "menuStrip1";
             // 
             // TSMnuGotoPatient
@@ -142,29 +152,54 @@
             this.GrpInfo.Location = new System.Drawing.Point(12, 46);
             this.GrpInfo.Name = "GrpInfo";
             this.GrpInfo.Size = new System.Drawing.Size(273, 187);
-            this.GrpInfo.TabIndex = 3;
+            this.GrpInfo.TabIndex = 1;
             this.GrpInfo.TabStop = false;
             this.GrpInfo.Text = "Information";
             this.GrpInfo.Enter += new System.EventHandler(this.GrpInfo_Enter);
             // 
-            // LblInfoDr
+            // TxtInfoPatients
             // 
-            this.LblInfoDr.AutoSize = true;
-            this.LblInfoDr.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblInfoDr.Location = new System.Drawing.Point(6, 35);
-            this.LblInfoDr.Name = "LblInfoDr";
-            this.LblInfoDr.Size = new System.Drawing.Size(50, 17);
-            this.LblInfoDr.TabIndex = 0;
-            this.LblInfoDr.Text = "Doctor";
+            this.TxtInfoPatients.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtInfoPatients.Location = new System.Drawing.Point(98, 146);
+            this.TxtInfoPatients.Name = "TxtInfoPatients";
+            this.TxtInfoPatients.Size = new System.Drawing.Size(161, 22);
+            this.TxtInfoPatients.TabIndex = 7;
             // 
-            // TxtInfoDr
+            // TxtInfoImages
             // 
-            this.TxtInfoDr.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtInfoDr.Location = new System.Drawing.Point(98, 35);
-            this.TxtInfoDr.Name = "TxtInfoDr";
-            this.TxtInfoDr.Size = new System.Drawing.Size(161, 22);
-            this.TxtInfoDr.TabIndex = 1;
-            this.TxtInfoDr.Text = "Rick Sasso";
+            this.TxtInfoImages.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtInfoImages.Location = new System.Drawing.Point(98, 109);
+            this.TxtInfoImages.Name = "TxtInfoImages";
+            this.TxtInfoImages.Size = new System.Drawing.Size(161, 22);
+            this.TxtInfoImages.TabIndex = 5;
+            // 
+            // TxtInfoSurgeries
+            // 
+            this.TxtInfoSurgeries.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtInfoSurgeries.Location = new System.Drawing.Point(98, 72);
+            this.TxtInfoSurgeries.Name = "TxtInfoSurgeries";
+            this.TxtInfoSurgeries.Size = new System.Drawing.Size(161, 22);
+            this.TxtInfoSurgeries.TabIndex = 3;
+            // 
+            // LblInfoPatients
+            // 
+            this.LblInfoPatients.AutoSize = true;
+            this.LblInfoPatients.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblInfoPatients.Location = new System.Drawing.Point(6, 146);
+            this.LblInfoPatients.Name = "LblInfoPatients";
+            this.LblInfoPatients.Size = new System.Drawing.Size(59, 17);
+            this.LblInfoPatients.TabIndex = 6;
+            this.LblInfoPatients.Text = "Patients";
+            // 
+            // LblInfoImages
+            // 
+            this.LblInfoImages.AutoSize = true;
+            this.LblInfoImages.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblInfoImages.Location = new System.Drawing.Point(6, 109);
+            this.LblInfoImages.Name = "LblInfoImages";
+            this.LblInfoImages.Size = new System.Drawing.Size(53, 17);
+            this.LblInfoImages.TabIndex = 4;
+            this.LblInfoImages.Text = "Images";
             // 
             // LblInfoSurgeries
             // 
@@ -176,49 +211,24 @@
             this.LblInfoSurgeries.TabIndex = 2;
             this.LblInfoSurgeries.Text = "Surgeries";
             // 
-            // LblInfoImages
+            // TxtInfoDr
             // 
-            this.LblInfoImages.AutoSize = true;
-            this.LblInfoImages.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblInfoImages.Location = new System.Drawing.Point(6, 109);
-            this.LblInfoImages.Name = "LblInfoImages";
-            this.LblInfoImages.Size = new System.Drawing.Size(53, 17);
-            this.LblInfoImages.TabIndex = 3;
-            this.LblInfoImages.Text = "Images";
+            this.TxtInfoDr.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtInfoDr.Location = new System.Drawing.Point(98, 35);
+            this.TxtInfoDr.Name = "TxtInfoDr";
+            this.TxtInfoDr.Size = new System.Drawing.Size(161, 22);
+            this.TxtInfoDr.TabIndex = 1;
+            this.TxtInfoDr.Text = "Rick Sasso";
             // 
-            // LblInfoPatients
+            // LblInfoDr
             // 
-            this.LblInfoPatients.AutoSize = true;
-            this.LblInfoPatients.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblInfoPatients.Location = new System.Drawing.Point(6, 146);
-            this.LblInfoPatients.Name = "LblInfoPatients";
-            this.LblInfoPatients.Size = new System.Drawing.Size(59, 17);
-            this.LblInfoPatients.TabIndex = 4;
-            this.LblInfoPatients.Text = "Patients";
-            // 
-            // TxtInfoSurgeries
-            // 
-            this.TxtInfoSurgeries.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtInfoSurgeries.Location = new System.Drawing.Point(98, 72);
-            this.TxtInfoSurgeries.Name = "TxtInfoSurgeries";
-            this.TxtInfoSurgeries.Size = new System.Drawing.Size(161, 22);
-            this.TxtInfoSurgeries.TabIndex = 5;
-            // 
-            // TxtInfoImages
-            // 
-            this.TxtInfoImages.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtInfoImages.Location = new System.Drawing.Point(98, 109);
-            this.TxtInfoImages.Name = "TxtInfoImages";
-            this.TxtInfoImages.Size = new System.Drawing.Size(161, 22);
-            this.TxtInfoImages.TabIndex = 6;
-            // 
-            // TxtInfoPatients
-            // 
-            this.TxtInfoPatients.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtInfoPatients.Location = new System.Drawing.Point(98, 146);
-            this.TxtInfoPatients.Name = "TxtInfoPatients";
-            this.TxtInfoPatients.Size = new System.Drawing.Size(161, 22);
-            this.TxtInfoPatients.TabIndex = 7;
+            this.LblInfoDr.AutoSize = true;
+            this.LblInfoDr.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblInfoDr.Location = new System.Drawing.Point(6, 35);
+            this.LblInfoDr.Name = "LblInfoDr";
+            this.LblInfoDr.Size = new System.Drawing.Size(50, 17);
+            this.LblInfoDr.TabIndex = 0;
+            this.LblInfoDr.Text = "Doctor";
             // 
             // GrpRecent
             // 
@@ -234,7 +244,7 @@
             this.GrpRecent.Location = new System.Drawing.Point(356, 46);
             this.GrpRecent.Name = "GrpRecent";
             this.GrpRecent.Size = new System.Drawing.Size(273, 187);
-            this.GrpRecent.TabIndex = 8;
+            this.GrpRecent.TabIndex = 2;
             this.GrpRecent.TabStop = false;
             this.GrpRecent.Text = "Most Recent Surgery";
             // 
@@ -252,7 +262,7 @@
             this.TxtRecentPatient.Location = new System.Drawing.Point(98, 109);
             this.TxtRecentPatient.Name = "TxtRecentPatient";
             this.TxtRecentPatient.Size = new System.Drawing.Size(161, 22);
-            this.TxtRecentPatient.TabIndex = 6;
+            this.TxtRecentPatient.TabIndex = 5;
             // 
             // TxtRecentDate
             // 
@@ -260,7 +270,7 @@
             this.TxtRecentDate.Location = new System.Drawing.Point(98, 72);
             this.TxtRecentDate.Name = "TxtRecentDate";
             this.TxtRecentDate.Size = new System.Drawing.Size(161, 22);
-            this.TxtRecentDate.TabIndex = 5;
+            this.TxtRecentDate.TabIndex = 3;
             // 
             // LblRecentSurgeryAge
             // 
@@ -269,7 +279,7 @@
             this.LblRecentSurgeryAge.Location = new System.Drawing.Point(6, 146);
             this.LblRecentSurgeryAge.Name = "LblRecentSurgeryAge";
             this.LblRecentSurgeryAge.Size = new System.Drawing.Size(87, 17);
-            this.LblRecentSurgeryAge.TabIndex = 4;
+            this.LblRecentSurgeryAge.TabIndex = 6;
             this.LblRecentSurgeryAge.Text = "Surgery Age";
             this.LblRecentSurgeryAge.Click += new System.EventHandler(this.label1_Click);
             // 
@@ -280,7 +290,7 @@
             this.LblRecentPatient.Location = new System.Drawing.Point(6, 109);
             this.LblRecentPatient.Name = "LblRecentPatient";
             this.LblRecentPatient.Size = new System.Drawing.Size(52, 17);
-            this.LblRecentPatient.TabIndex = 3;
+            this.LblRecentPatient.TabIndex = 4;
             this.LblRecentPatient.Text = "Patient";
             // 
             // LblRecentDate
@@ -320,7 +330,7 @@
             this.GrpCanvas.Location = new System.Drawing.Point(724, 46);
             this.GrpCanvas.Name = "GrpCanvas";
             this.GrpCanvas.Size = new System.Drawing.Size(273, 187);
-            this.GrpCanvas.TabIndex = 9;
+            this.GrpCanvas.TabIndex = 3;
             this.GrpCanvas.TabStop = false;
             this.GrpCanvas.Text = "Recent Canvas";
             // 
@@ -373,9 +383,163 @@
             this.GrpHighest.Location = new System.Drawing.Point(12, 244);
             this.GrpHighest.Name = "GrpHighest";
             this.GrpHighest.Size = new System.Drawing.Size(364, 318);
-            this.GrpHighest.TabIndex = 8;
+            this.GrpHighest.TabIndex = 4;
             this.GrpHighest.TabStop = false;
             this.GrpHighest.Text = "Highest Counted";
+            // 
+            // textBox12
+            // 
+            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox12.Location = new System.Drawing.Point(295, 282);
+            this.textBox12.Name = "textBox12";
+            this.textBox12.Size = new System.Drawing.Size(55, 22);
+            this.textBox12.TabIndex = 23;
+            this.textBox12.Text = "12345";
+            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // textBox11
+            // 
+            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox11.Location = new System.Drawing.Point(295, 245);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(55, 22);
+            this.textBox11.TabIndex = 20;
+            this.textBox11.Text = "12345";
+            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox10.Location = new System.Drawing.Point(295, 210);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(55, 22);
+            this.textBox10.TabIndex = 17;
+            this.textBox10.Text = "12345";
+            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox9.Location = new System.Drawing.Point(295, 177);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(55, 22);
+            this.textBox9.TabIndex = 14;
+            this.textBox9.Text = "12345";
+            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.Location = new System.Drawing.Point(295, 146);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(55, 22);
+            this.textBox8.TabIndex = 11;
+            this.textBox8.Text = "12345";
+            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox7.Location = new System.Drawing.Point(295, 109);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(55, 22);
+            this.textBox7.TabIndex = 8;
+            this.textBox7.Text = "12345";
+            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // textBox6
+            // 
+            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox6.Location = new System.Drawing.Point(295, 72);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(55, 22);
+            this.textBox6.TabIndex = 5;
+            this.textBox6.Text = "12345";
+            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // textBox5
+            // 
+            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox5.Location = new System.Drawing.Point(295, 35);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(55, 22);
+            this.textBox5.TabIndex = 2;
+            this.textBox5.Text = "12345";
+            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // TxtHighestComp
+            // 
+            this.TxtHighestComp.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtHighestComp.Location = new System.Drawing.Point(118, 282);
+            this.TxtHighestComp.Name = "TxtHighestComp";
+            this.TxtHighestComp.Size = new System.Drawing.Size(161, 22);
+            this.TxtHighestComp.TabIndex = 22;
+            // 
+            // TxtHighestInst
+            // 
+            this.TxtHighestInst.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtHighestInst.Location = new System.Drawing.Point(118, 243);
+            this.TxtHighestInst.Name = "TxtHighestInst";
+            this.TxtHighestInst.Size = new System.Drawing.Size(161, 22);
+            this.TxtHighestInst.TabIndex = 19;
+            // 
+            // LblHighestComp
+            // 
+            this.LblHighestComp.AutoSize = true;
+            this.LblHighestComp.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblHighestComp.Location = new System.Drawing.Point(6, 280);
+            this.LblHighestComp.Name = "LblHighestComp";
+            this.LblHighestComp.Size = new System.Drawing.Size(88, 17);
+            this.LblHighestComp.TabIndex = 21;
+            this.LblHighestComp.Text = "Complication";
+            this.LblHighestComp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // LblHighestInst
+            // 
+            this.LblHighestInst.AutoSize = true;
+            this.LblHighestInst.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblHighestInst.Location = new System.Drawing.Point(6, 245);
+            this.LblHighestInst.Name = "LblHighestInst";
+            this.LblHighestInst.Size = new System.Drawing.Size(105, 17);
+            this.LblHighestInst.TabIndex = 18;
+            this.LblHighestInst.Text = "Instrumentation";
+            this.LblHighestInst.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // TxtHightestSurgery
+            // 
+            this.TxtHightestSurgery.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtHightestSurgery.Location = new System.Drawing.Point(118, 210);
+            this.TxtHightestSurgery.Name = "TxtHightestSurgery";
+            this.TxtHightestSurgery.Size = new System.Drawing.Size(161, 22);
+            this.TxtHightestSurgery.TabIndex = 16;
+            // 
+            // LblHighestSurgery
+            // 
+            this.LblHighestSurgery.AutoSize = true;
+            this.LblHighestSurgery.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblHighestSurgery.Location = new System.Drawing.Point(6, 210);
+            this.LblHighestSurgery.Name = "LblHighestSurgery";
+            this.LblHighestSurgery.Size = new System.Drawing.Size(58, 17);
+            this.LblHighestSurgery.TabIndex = 15;
+            this.LblHighestSurgery.Text = "Surgery";
+            // 
+            // TxtHighestDx
+            // 
+            this.TxtHighestDx.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtHighestDx.Location = new System.Drawing.Point(118, 177);
+            this.TxtHighestDx.Name = "TxtHighestDx";
+            this.TxtHighestDx.Size = new System.Drawing.Size(161, 22);
+            this.TxtHighestDx.TabIndex = 13;
+            // 
+            // LblHighestDx
+            // 
+            this.LblHighestDx.AutoSize = true;
+            this.LblHighestDx.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblHighestDx.Location = new System.Drawing.Point(6, 175);
+            this.LblHighestDx.Name = "LblHighestDx";
+            this.LblHighestDx.Size = new System.Drawing.Size(24, 17);
+            this.LblHighestDx.TabIndex = 12;
+            this.LblHighestDx.Text = "Dx";
             // 
             // textBox1
             // 
@@ -383,7 +547,7 @@
             this.textBox1.Location = new System.Drawing.Point(118, 146);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(161, 22);
-            this.textBox1.TabIndex = 7;
+            this.textBox1.TabIndex = 10;
             // 
             // textBox2
             // 
@@ -391,7 +555,7 @@
             this.textBox2.Location = new System.Drawing.Point(118, 109);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(161, 22);
-            this.textBox2.TabIndex = 6;
+            this.textBox2.TabIndex = 7;
             // 
             // textBox3
             // 
@@ -399,7 +563,7 @@
             this.textBox3.Location = new System.Drawing.Point(118, 72);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(161, 22);
-            this.textBox3.TabIndex = 5;
+            this.textBox3.TabIndex = 4;
             // 
             // LblHighestCPT
             // 
@@ -408,7 +572,7 @@
             this.LblHighestCPT.Location = new System.Drawing.Point(6, 140);
             this.LblHighestCPT.Name = "LblHighestCPT";
             this.LblHighestCPT.Size = new System.Drawing.Size(35, 17);
-            this.LblHighestCPT.TabIndex = 4;
+            this.LblHighestCPT.TabIndex = 9;
             this.LblHighestCPT.Text = "CPT";
             // 
             // LblHighestLevel
@@ -418,7 +582,7 @@
             this.LblHighestLevel.Location = new System.Drawing.Point(6, 105);
             this.LblHighestLevel.Name = "LblHighestLevel";
             this.LblHighestLevel.Size = new System.Drawing.Size(42, 17);
-            this.LblHighestLevel.TabIndex = 3;
+            this.LblHighestLevel.TabIndex = 6;
             this.LblHighestLevel.Text = "Level";
             // 
             // sd
@@ -428,7 +592,7 @@
             this.sd.Location = new System.Drawing.Point(6, 70);
             this.sd.Name = "sd";
             this.sd.Size = new System.Drawing.Size(62, 17);
-            this.sd.TabIndex = 2;
+            this.sd.TabIndex = 3;
             this.sd.Text = "Location";
             // 
             // textBox4
@@ -450,175 +614,113 @@
             this.LblHighestHosptal.TabIndex = 0;
             this.LblHighestHosptal.Text = "Hospital";
             // 
-            // LblHighestDx
+            // GrpImages
             // 
-            this.LblHighestDx.AutoSize = true;
-            this.LblHighestDx.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblHighestDx.Location = new System.Drawing.Point(6, 175);
-            this.LblHighestDx.Name = "LblHighestDx";
-            this.LblHighestDx.Size = new System.Drawing.Size(24, 17);
-            this.LblHighestDx.TabIndex = 8;
-            this.LblHighestDx.Text = "Dx";
+            this.GrpImages.Controls.Add(this.LstImageDesc);
+            this.GrpImages.Controls.Add(this.BtnImagePrev);
+            this.GrpImages.Controls.Add(this.BtnImageFirst);
+            this.GrpImages.Controls.Add(this.BtnImageNext);
+            this.GrpImages.Controls.Add(this.BtnImageLast);
+            this.GrpImages.Controls.Add(this.TxtImagesCount);
+            this.GrpImages.Controls.Add(this.LblGrpImageDesc);
+            this.GrpImages.Controls.Add(this.LstImages);
+            this.GrpImages.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrpImages.Location = new System.Drawing.Point(404, 244);
+            this.GrpImages.Name = "GrpImages";
+            this.GrpImages.Size = new System.Drawing.Size(593, 318);
+            this.GrpImages.TabIndex = 5;
+            this.GrpImages.TabStop = false;
+            this.GrpImages.Text = "Images";
             // 
-            // TxtHighestDx
+            // LstImageDesc
             // 
-            this.TxtHighestDx.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtHighestDx.Location = new System.Drawing.Point(118, 177);
-            this.TxtHighestDx.Name = "TxtHighestDx";
-            this.TxtHighestDx.Size = new System.Drawing.Size(161, 22);
-            this.TxtHighestDx.TabIndex = 9;
+            this.LstImageDesc.FormattingEnabled = true;
+            this.LstImageDesc.ItemHeight = 16;
+            this.LstImageDesc.Location = new System.Drawing.Point(9, 60);
+            this.LstImageDesc.Name = "LstImageDesc";
+            this.LstImageDesc.Size = new System.Drawing.Size(175, 244);
+            this.LstImageDesc.TabIndex = 1;
             // 
-            // LblHighestSurgery
+            // BtnImagePrev
             // 
-            this.LblHighestSurgery.AutoSize = true;
-            this.LblHighestSurgery.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblHighestSurgery.Location = new System.Drawing.Point(6, 210);
-            this.LblHighestSurgery.Name = "LblHighestSurgery";
-            this.LblHighestSurgery.Size = new System.Drawing.Size(58, 17);
-            this.LblHighestSurgery.TabIndex = 10;
-            this.LblHighestSurgery.Text = "Surgery";
+            this.BtnImagePrev.Location = new System.Drawing.Point(277, 30);
+            this.BtnImagePrev.Name = "BtnImagePrev";
+            this.BtnImagePrev.Size = new System.Drawing.Size(34, 23);
+            this.BtnImagePrev.TabIndex = 3;
+            this.BtnImagePrev.Text = "<";
+            this.BtnImagePrev.UseVisualStyleBackColor = true;
             // 
-            // TxtHightestSurgery
+            // BtnImageFirst
             // 
-            this.TxtHightestSurgery.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtHightestSurgery.Location = new System.Drawing.Point(118, 210);
-            this.TxtHightestSurgery.Name = "TxtHightestSurgery";
-            this.TxtHightestSurgery.Size = new System.Drawing.Size(161, 22);
-            this.TxtHightestSurgery.TabIndex = 11;
+            this.BtnImageFirst.Location = new System.Drawing.Point(225, 30);
+            this.BtnImageFirst.Name = "BtnImageFirst";
+            this.BtnImageFirst.Size = new System.Drawing.Size(34, 23);
+            this.BtnImageFirst.TabIndex = 2;
+            this.BtnImageFirst.Text = "|<";
+            this.BtnImageFirst.UseVisualStyleBackColor = true;
             // 
-            // LblHighestInst
+            // BtnImageNext
             // 
-            this.LblHighestInst.AutoSize = true;
-            this.LblHighestInst.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblHighestInst.Location = new System.Drawing.Point(6, 245);
-            this.LblHighestInst.Name = "LblHighestInst";
-            this.LblHighestInst.Size = new System.Drawing.Size(105, 17);
-            this.LblHighestInst.TabIndex = 12;
-            this.LblHighestInst.Text = "Instrumentation";
-            this.LblHighestInst.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnImageNext.Location = new System.Drawing.Point(492, 30);
+            this.BtnImageNext.Name = "BtnImageNext";
+            this.BtnImageNext.Size = new System.Drawing.Size(34, 23);
+            this.BtnImageNext.TabIndex = 5;
+            this.BtnImageNext.Text = ">";
+            this.BtnImageNext.UseVisualStyleBackColor = true;
             // 
-            // LblHighestComp
+            // BtnImageLast
             // 
-            this.LblHighestComp.AutoSize = true;
-            this.LblHighestComp.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblHighestComp.Location = new System.Drawing.Point(6, 280);
-            this.LblHighestComp.Name = "LblHighestComp";
-            this.LblHighestComp.Size = new System.Drawing.Size(88, 17);
-            this.LblHighestComp.TabIndex = 14;
-            this.LblHighestComp.Text = "Complication";
-            this.LblHighestComp.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.BtnImageLast.Location = new System.Drawing.Point(545, 30);
+            this.BtnImageLast.Name = "BtnImageLast";
+            this.BtnImageLast.Size = new System.Drawing.Size(34, 23);
+            this.BtnImageLast.TabIndex = 6;
+            this.BtnImageLast.Text = ">|";
+            this.BtnImageLast.UseVisualStyleBackColor = true;
             // 
-            // TxtHighestInst
+            // TxtImagesCount
             // 
-            this.TxtHighestInst.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtHighestInst.Location = new System.Drawing.Point(118, 243);
-            this.TxtHighestInst.Name = "TxtHighestInst";
-            this.TxtHighestInst.Size = new System.Drawing.Size(161, 22);
-            this.TxtHighestInst.TabIndex = 15;
+            this.TxtImagesCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtImagesCount.Location = new System.Drawing.Point(356, 30);
+            this.TxtImagesCount.Name = "TxtImagesCount";
+            this.TxtImagesCount.Size = new System.Drawing.Size(101, 22);
+            this.TxtImagesCount.TabIndex = 4;
+            this.TxtImagesCount.Text = "10 of 10";
+            this.TxtImagesCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // TxtHighestComp
+            // LblGrpImageDesc
             // 
-            this.TxtHighestComp.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtHighestComp.Location = new System.Drawing.Point(118, 282);
-            this.TxtHighestComp.Name = "TxtHighestComp";
-            this.TxtHighestComp.Size = new System.Drawing.Size(161, 22);
-            this.TxtHighestComp.TabIndex = 16;
+            this.LblGrpImageDesc.AutoSize = true;
+            this.LblGrpImageDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblGrpImageDesc.Location = new System.Drawing.Point(6, 35);
+            this.LblGrpImageDesc.Name = "LblGrpImageDesc";
+            this.LblGrpImageDesc.Size = new System.Drawing.Size(122, 17);
+            this.LblGrpImageDesc.TabIndex = 0;
+            this.LblGrpImageDesc.Text = "Image Descriptors";
             // 
-            // textBox5
+            // LstImages
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(295, 35);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(55, 22);
-            this.textBox5.TabIndex = 17;
-            this.textBox5.Text = "12345";
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox6
-            // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(295, 72);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(55, 22);
-            this.textBox6.TabIndex = 18;
-            this.textBox6.Text = "12345";
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox7
-            // 
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(295, 109);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(55, 22);
-            this.textBox7.TabIndex = 19;
-            this.textBox7.Text = "12345";
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(295, 146);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(55, 22);
-            this.textBox8.TabIndex = 20;
-            this.textBox8.Text = "12345";
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(295, 177);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(55, 22);
-            this.textBox9.TabIndex = 21;
-            this.textBox9.Text = "12345";
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(295, 210);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(55, 22);
-            this.textBox10.TabIndex = 22;
-            this.textBox10.Text = "12345";
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox11.Location = new System.Drawing.Point(295, 245);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(55, 22);
-            this.textBox11.TabIndex = 23;
-            this.textBox11.Text = "12345";
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox12.Location = new System.Drawing.Point(295, 282);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(55, 22);
-            this.textBox12.TabIndex = 24;
-            this.textBox12.Text = "12345";
-            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.LstImages.Location = new System.Drawing.Point(225, 63);
+            this.LstImages.Name = "LstImages";
+            this.LstImages.Size = new System.Drawing.Size(354, 244);
+            this.LstImages.TabIndex = 7;
+            this.LstImages.UseCompatibleStateImageBehavior = false;
             // 
             // f
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1307, 660);
+            this.Controls.Add(this.GrpImages);
             this.Controls.Add(this.GrpHighest);
             this.Controls.Add(this.GrpCanvas);
             this.Controls.Add(this.GrpRecent);
             this.Controls.Add(this.GrpInfo);
             this.Controls.Add(this.MnuMenu);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "f";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Tag = "FrmDashboard";
-            this.Text = "s";
+            this.Text = "Dashboard";
             this.Load += new System.EventHandler(this.FrmDashboard_Load);
             this.MnuMenu.ResumeLayout(false);
             this.MnuMenu.PerformLayout();
@@ -630,6 +732,8 @@
             this.GrpCanvas.PerformLayout();
             this.GrpHighest.ResumeLayout(false);
             this.GrpHighest.PerformLayout();
+            this.GrpImages.ResumeLayout(false);
+            this.GrpImages.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -688,5 +792,14 @@
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.GroupBox GrpImages;
+        private System.Windows.Forms.ListBox LstImageDesc;
+        private System.Windows.Forms.Button BtnImagePrev;
+        private System.Windows.Forms.Button BtnImageFirst;
+        private System.Windows.Forms.Button BtnImageNext;
+        private System.Windows.Forms.Button BtnImageLast;
+        private System.Windows.Forms.TextBox TxtImagesCount;
+        private System.Windows.Forms.Label LblGrpImageDesc;
+        private System.Windows.Forms.ListView LstImages;
     }
 }

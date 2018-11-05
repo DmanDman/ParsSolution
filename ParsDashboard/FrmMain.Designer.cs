@@ -67,12 +67,13 @@
             this.LblEmailPic = new System.Windows.Forms.Label();
             this.PnlImages = new System.Windows.Forms.Panel();
             this.LblImagesSearch = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.LblImagesAdd = new System.Windows.Forms.Label();
             this.LlbImages = new System.Windows.Forms.Label();
             this.PnlRpt = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.LblRpt = new System.Windows.Forms.Label();
+            this.DlgImagesAdd = new System.Windows.Forms.OpenFileDialog();
             this.PnlDashboard.SuspendLayout();
             this.PnlPatient.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -111,6 +112,8 @@
             this.LblDashboard.Text = "Dashboard";
             this.LblDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LblDashboard.Click += new System.EventHandler(this.LblDashboard_Click);
+            this.LblDashboard.MouseEnter += new System.EventHandler(this.LblDashboard_MouseEnter);
+            this.LblDashboard.MouseLeave += new System.EventHandler(this.LblDashboard_MouseLeave);
             // 
             // PnlPatient
             // 
@@ -177,7 +180,7 @@
             this.tableLayoutPanel1.Controls.Add(this.PnlRpt, 0, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 11;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
@@ -552,7 +555,7 @@
             // 
             this.PnlImages.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.PnlImages.Controls.Add(this.LblImagesSearch);
-            this.PnlImages.Controls.Add(this.label4);
+            this.PnlImages.Controls.Add(this.LblImagesAdd);
             this.PnlImages.Controls.Add(this.LlbImages);
             this.PnlImages.Dock = System.Windows.Forms.DockStyle.Left;
             this.PnlImages.Location = new System.Drawing.Point(2, 35);
@@ -571,17 +574,22 @@
             this.LblImagesSearch.Size = new System.Drawing.Size(53, 17);
             this.LblImagesSearch.TabIndex = 3;
             this.LblImagesSearch.Text = "Search";
-            this.LblImagesSearch.Click += new System.EventHandler(this.LblImagesSearch_Click_1);
+            this.LblImagesSearch.Click += new System.EventHandler(this.LblImagesSearch_Click);
+            this.LblImagesSearch.MouseEnter += new System.EventHandler(this.LblImagesSearch_MouseEnter);
+            this.LblImagesSearch.MouseLeave += new System.EventHandler(this.LblImagesSearch_MouseLeave);
             // 
-            // label4
+            // LblImagesAdd
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(13, 43);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(33, 17);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Add";
+            this.LblImagesAdd.AutoSize = true;
+            this.LblImagesAdd.Location = new System.Drawing.Point(13, 43);
+            this.LblImagesAdd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblImagesAdd.Name = "LblImagesAdd";
+            this.LblImagesAdd.Size = new System.Drawing.Size(33, 17);
+            this.LblImagesAdd.TabIndex = 2;
+            this.LblImagesAdd.Text = "Add";
+            this.LblImagesAdd.Click += new System.EventHandler(this.LblImagesAdd_Click);
+            this.LblImagesAdd.MouseEnter += new System.EventHandler(this.LblImagesAdd_MouseEnter);
+            this.LblImagesAdd.MouseLeave += new System.EventHandler(this.LblImagesAdd_MouseLeave);
             // 
             // LlbImages
             // 
@@ -647,6 +655,14 @@
             this.LblRpt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LblRpt.Click += new System.EventHandler(this.LblRpt_Click);
             // 
+            // DlgImagesAdd
+            // 
+            this.DlgImagesAdd.FileName = "DlgImagesAdd";
+            this.DlgImagesAdd.Filter = "PNG Files|*.png|BMP Files|*.bmp|All Files|*.*";
+            this.DlgImagesAdd.Multiselect = true;
+            this.DlgImagesAdd.Title = "Select Pictures";
+            this.DlgImagesAdd.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -654,7 +670,7 @@
             this.ClientSize = new System.Drawing.Size(1067, 540);
             this.Controls.Add(this.tableLayoutPanel1);
             this.IsMdiContainer = true;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Tag = "FrmMain";
@@ -701,7 +717,7 @@
         internal System.Windows.Forms.Label LblSurgery;
         internal System.Windows.Forms.Panel PnlImages;
         private System.Windows.Forms.Label LblImagesSearch;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label LblImagesAdd;
         internal System.Windows.Forms.Label LlbImages;
         internal System.Windows.Forms.Panel PnlRpt;
         private System.Windows.Forms.Label label3;
@@ -729,6 +745,7 @@
         internal System.Windows.Forms.Panel PnlSecurity;
         private System.Windows.Forms.Label LblSecurityUserMgmt;
         internal System.Windows.Forms.Label LblSecurity;
+        private System.Windows.Forms.OpenFileDialog DlgImagesAdd;
     }
 }
 
