@@ -10,6 +10,7 @@ namespace ParsDashboard
         public FrmImageSearch()
         {
             InitializeComponent();
+            helper.DoubleBuffered( LstMetaDataSearchTerms, true );            
         }          
 
         private void ChkMeataOnly_Click(object sender, EventArgs e)
@@ -94,7 +95,7 @@ namespace ParsDashboard
 
         private void TSMnuRemoveAllMeta_Click(object sender, EventArgs e)
         {
-
+            helper.RemoveAllListBox( CboMetaSearch, LstMetaDataSearchTerms );
         }
     }
 }

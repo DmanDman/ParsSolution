@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.ComponentModel;
 using System.Windows.Forms;
+using System.Reflection;
 
 namespace ParsDashboard
 {
@@ -23,8 +25,8 @@ namespace ParsDashboard
             }
             else
             {
-                sHoldData = combo.Text.Trim().ToString();
-
+                sHoldData = combo.SelectedItem.ToString().Trim();
+                
                 list.Items.Add( sHoldData );
 
                 combo.Items.Remove( sHoldData );
@@ -47,7 +49,7 @@ namespace ParsDashboard
             }
             else
             {
-                sHoldData = list.SelectedItem.ToString();
+                sHoldData = list.SelectedItem.ToString().Trim();
 
                 combo.Items.Add( sHoldData );
 
@@ -55,6 +57,33 @@ namespace ParsDashboard
 
                 combo.Sorted = true;
             }            
+        }
+
+        public void RemoveAllListBox( ComboBox combo, ListBox list )
+        {
+            string sHoldData;
+            int x = list.Items.Count;
+            
+            for ( int i = list.Items.Count - 1; i >= 0; i-- )
+            {
+                list.SelectedIndex = i;
+
+                sHoldData = list.SelectedItem.ToString().Trim();
+
+                list.Items.RemoveAt( i );
+
+                combo.Items.Add( sHoldData );            
+            }
+
+            combo.Sorted = true;            
+        }
+
+        public void DoubleBuffered( Control control, bool enable )
+        {
+            var doubleBufferPropertyInfo = 
+                control.GetType().GetProperty( "DoubleBuffered", BindingFlags.Instance | BindingFlags.NonPublic );
+
+            doubleBufferPropertyInfo.SetValue( control, enable, null );
         }
     }
 }
