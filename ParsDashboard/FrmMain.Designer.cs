@@ -68,7 +68,7 @@
             this.PnlImages = new System.Windows.Forms.Panel();
             this.LblImagesSearch = new System.Windows.Forms.Label();
             this.LblImagesAdd = new System.Windows.Forms.Label();
-            this.LlbImages = new System.Windows.Forms.Label();
+            this.LblImages = new System.Windows.Forms.Label();
             this.PnlRpt = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -556,7 +556,7 @@
             this.PnlImages.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.PnlImages.Controls.Add(this.LblImagesSearch);
             this.PnlImages.Controls.Add(this.LblImagesAdd);
-            this.PnlImages.Controls.Add(this.LlbImages);
+            this.PnlImages.Controls.Add(this.LblImages);
             this.PnlImages.Dock = System.Windows.Forms.DockStyle.Left;
             this.PnlImages.Location = new System.Drawing.Point(2, 35);
             this.PnlImages.Margin = new System.Windows.Forms.Padding(0);
@@ -591,20 +591,22 @@
             this.LblImagesAdd.MouseEnter += new System.EventHandler(this.LblImagesAdd_MouseEnter);
             this.LblImagesAdd.MouseLeave += new System.EventHandler(this.LblImagesAdd_MouseLeave);
             // 
-            // LlbImages
+            // LblImages
             // 
-            this.LlbImages.AutoEllipsis = true;
-            this.LlbImages.BackColor = System.Drawing.Color.Silver;
-            this.LlbImages.Dock = System.Windows.Forms.DockStyle.Top;
-            this.LlbImages.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.LlbImages.Location = new System.Drawing.Point(0, 0);
-            this.LlbImages.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LlbImages.Name = "LlbImages";
-            this.LlbImages.Size = new System.Drawing.Size(200, 32);
-            this.LlbImages.TabIndex = 0;
-            this.LlbImages.Text = "Images";
-            this.LlbImages.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LlbImages.Click += new System.EventHandler(this.LlbImages_Click);
+            this.LblImages.AutoEllipsis = true;
+            this.LblImages.BackColor = System.Drawing.Color.Silver;
+            this.LblImages.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LblImages.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.LblImages.Location = new System.Drawing.Point(0, 0);
+            this.LblImages.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblImages.Name = "LblImages";
+            this.LblImages.Size = new System.Drawing.Size(200, 32);
+            this.LblImages.TabIndex = 0;
+            this.LblImages.Text = "Images";
+            this.LblImages.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblImages.Click += new System.EventHandler(this.LblImages_Click);
+            this.LblImages.MouseEnter += new System.EventHandler(this.LblImages_MouseEnter);
+            this.LblImages.MouseLeave += new System.EventHandler(this.LblImages_MouseLeave);
             // 
             // PnlRpt
             // 
@@ -718,7 +720,7 @@
         internal System.Windows.Forms.Panel PnlImages;
         private System.Windows.Forms.Label LblImagesSearch;
         private System.Windows.Forms.Label LblImagesAdd;
-        internal System.Windows.Forms.Label LlbImages;
+        internal System.Windows.Forms.Label LblImages;
         internal System.Windows.Forms.Panel PnlRpt;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;

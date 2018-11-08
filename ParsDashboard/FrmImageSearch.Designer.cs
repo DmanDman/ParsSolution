@@ -35,6 +35,7 @@
             this.TSMnuAddInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuRemoveInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuRemoveAllMeta = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsMnuRemoveAllPic = new System.Windows.Forms.ToolStripMenuItem();
             this.GrpMetaData = new System.Windows.Forms.GroupBox();
             this.ChkMeataOnly = new System.Windows.Forms.CheckBox();
             this.RdoMetaOr = new System.Windows.Forms.RadioButton();
@@ -51,7 +52,6 @@
             this.LblPicInfoSearchItems = new System.Windows.Forms.Label();
             this.CboPicInfo = new System.Windows.Forms.ComboBox();
             this.LblPicInfo = new System.Windows.Forms.Label();
-            this.TsMnuRemoveAllPic = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuMenu.SuspendLayout();
             this.GrpMetaData.SuspendLayout();
             this.GrpPicInfo.SuspendLayout();
@@ -117,6 +117,13 @@
             this.TSMnuRemoveAllMeta.Size = new System.Drawing.Size(171, 24);
             this.TSMnuRemoveAllMeta.Text = "Re&move All Meta Data";
             this.TSMnuRemoveAllMeta.Click += new System.EventHandler(this.TSMnuRemoveAllMeta_Click);
+            // 
+            // TsMnuRemoveAllPic
+            // 
+            this.TsMnuRemoveAllPic.Name = "TsMnuRemoveAllPic";
+            this.TsMnuRemoveAllPic.Size = new System.Drawing.Size(150, 24);
+            this.TsMnuRemoveAllPic.Text = "Remove All Pic In&fo";
+            this.TsMnuRemoveAllPic.Click += new System.EventHandler(this.TsMnuRemoveAllPic_Click);
             // 
             // GrpMetaData
             // 
@@ -341,12 +348,6 @@
             this.LblPicInfo.Size = new System.Drawing.Size(79, 17);
             this.LblPicInfo.TabIndex = 0;
             this.LblPicInfo.Text = "Picture Info";
-            // 
-            // TsMnuRemoveAllPic
-            // 
-            this.TsMnuRemoveAllPic.Name = "TsMnuRemoveAllPic";
-            this.TsMnuRemoveAllPic.Size = new System.Drawing.Size(150, 24);
-            this.TsMnuRemoveAllPic.Text = "Remove All Pic In&fo";
             // 
             // FrmImageSearch
             // 

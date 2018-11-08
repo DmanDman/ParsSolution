@@ -97,5 +97,10 @@ namespace ParsDashboard
         {
             helper.RemoveAllListBox( CboMetaSearch, LstMetaDataSearchTerms );
         }
+
+        private void TsMnuRemoveAllPic_Click(object sender, EventArgs e)
+        {
+            helper.RemoveAllListBox( CboPicInfo, LstPicInfoSearchItems );
+        }
     }
 }

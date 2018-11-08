@@ -15,7 +15,7 @@ namespace ParsDashboard
         {
             string sHoldData = null;           
 
-            if ( combo.Text.Trim() == null | combo.Text.Trim() == "" ) 
+            if ( combo.Text.Trim() == null | combo.Text.Trim() == "" | combo.SelectedItem == null ) 
             {
                 string message = "Can not add item, nothing selected.";
                 string title = "Search Term Not Selected";
@@ -24,7 +24,7 @@ namespace ParsDashboard
                 MessageBox.Show( message, title, buttons, MessageBoxIcon.Error );
             }
             else
-            {
+            {                
                 sHoldData = combo.SelectedItem.ToString().Trim();
                 
                 list.Items.Add( sHoldData );
@@ -80,10 +80,11 @@ namespace ParsDashboard
 
         public void DoubleBuffered( Control control, bool enable )
         {
-            var doubleBufferPropertyInfo = 
-                control.GetType().GetProperty( "DoubleBuffered", BindingFlags.Instance | BindingFlags.NonPublic );
+            var doubleBufferPropertyInfo =
+                control.GetType().GetProperty("DoubleBuffered", BindingFlags.Instance | BindingFlags.NonPublic);
 
-            doubleBufferPropertyInfo.SetValue( control, enable, null );
+            doubleBufferPropertyInfo.SetValue(control, enable, null);
         }
+        
     }
 }

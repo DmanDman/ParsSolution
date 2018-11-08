@@ -21,7 +21,7 @@ namespace ParsDashboard
         FrmImages fImage = new FrmImages();
 
         public FrmMain()
-        {            
+        {
             InitializeComponent();
             StopPanel_Flickering();
 
@@ -36,7 +36,7 @@ namespace ParsDashboard
 
             fImage.MdiParent = this;
             fImage.Show();
-        }     
+        }
 
         private void FrmDashboard_Load(object sender, EventArgs e)
         {
@@ -64,26 +64,26 @@ namespace ParsDashboard
         {
             // Stop flickering for panels
 
-            StopPanel_FlickeringPanel( PnlDashboard );
-            StopPanel_FlickeringPanel( PnlImages );
-            StopPanel_FlickeringPanel( PnlPatient );
-            StopPanel_FlickeringPanel( PnlSurgery );
-            StopPanel_FlickeringPanel( PnlRpt );
-            StopPanel_FlickeringPanel( PnlData );
-            StopPanel_FlickeringPanel( PnlMetaData );
-            StopPanel_FlickeringPanel( PnlEmailPic );
-            StopPanel_FlickeringPanel( PnlSecurity );
-            StopPanel_FlickeringPanel( tableLayoutPanel1 );          
+            StopPanel_FlickeringPanel(PnlDashboard);
+            StopPanel_FlickeringPanel(PnlImages);
+            StopPanel_FlickeringPanel(PnlPatient);
+            StopPanel_FlickeringPanel(PnlSurgery);
+            StopPanel_FlickeringPanel(PnlRpt);
+            StopPanel_FlickeringPanel(PnlData);
+            StopPanel_FlickeringPanel(PnlMetaData);
+            StopPanel_FlickeringPanel(PnlEmailPic);
+            StopPanel_FlickeringPanel(PnlSecurity);
+            StopPanel_FlickeringPanel(tableLayoutPanel1);
         }
 
-        private void StopPanel_FlickeringPanel( Panel pnl )
+        private void StopPanel_FlickeringPanel(Panel pnl)
         {
-           typeof( Panel ).InvokeMember( "DoubleBuffered",
-           BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic,
-           null, pnl, new object[] { true });
+            typeof(Panel).InvokeMember("DoubleBuffered",
+            BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic,
+            null, pnl, new object[] { true });
         }
-       
-        public void DashboardAccordian( Object sender, EventArgs e )
+
+        public void DashboardAccordian(Object sender, EventArgs e)
         {
             // find out which label was clicked
             Label lbl = (Label)sender;
@@ -95,41 +95,35 @@ namespace ParsDashboard
             // the code loops through the panels in the table and expands/collapses
             // each panel according to whether it contains the clicked label. The label
             // images are also swapped depending on the height of the panel.
-            foreach ( Panel p in tableLayoutPanel1.Controls )
+            foreach (Panel p in tableLayoutPanel1.Controls)
             {
-                Label l = ( Label )p.Controls[0];
+                Label l = (Label)p.Controls[0];
 
-                if ( p.Equals( pnl ))
+                if (p.Equals(pnl))
                 {
                     // expand or collapse the panel
-                    if ( p.Height != 25 )
-                    {                        
-                        p.Height = 25;                        
+                    if (p.Height != 25)
+                    {
+                        p.Height = 25;
                     }
                     else
                     {
-                        p.Height = p.Controls.Count * 28;                        
-                    }                
+                        p.Height = p.Controls.Count * 28;
+                    }
                 }
                 else
                 {
-                    p.Height = 25;                    
+                    p.Height = 25;
                 }
             }
         }
-    
-        private void LlbImages_Click(object sender, EventArgs e)
-        {
-            DashboardAccordian(sender, e);
 
-            fNav.ShowForm( fImage );
-        }
 
         private void LblPatient_Click(object sender, EventArgs e)
         {
             DashboardAccordian(sender, e);
 
-            fNav.ShowForm( fPatient );
+            fNav.ShowForm(fPatient);
         }
 
         private void LblSurgery_Click(object sender, EventArgs e)
@@ -160,23 +154,23 @@ namespace ParsDashboard
         private void LblSecurity_Click(object sender, EventArgs e)
         {
             DashboardAccordian(sender, e);
-        }        
+        }
 
         private void LblDashboard_Click(object sender, EventArgs e)
         {
             DashboardAccordian(sender, e);
 
-            fNav.ShowForm( fDashBoard );
+            fNav.ShowForm(fDashBoard);
         }
 
         private void LblImagesAdd_MouseEnter(object sender, EventArgs e)
         {
-            LblImagesAdd.Font = new Font( LblImagesAdd.Font.Name, LblImagesAdd.Font.SizeInPoints, FontStyle.Underline | FontStyle.Bold );
+            LblImagesAdd.Font = new Font(LblImagesAdd.Font.Name, LblImagesAdd.Font.SizeInPoints, FontStyle.Underline | FontStyle.Bold);
         }
 
         private void LblImagesAdd_MouseLeave(object sender, EventArgs e)
         {
-            LblImagesAdd.Font = new Font( LblImagesAdd.Font.Name, LblImagesAdd.Font.SizeInPoints, FontStyle.Regular );
+            LblImagesAdd.Font = new Font(LblImagesAdd.Font.Name, LblImagesAdd.Font.SizeInPoints, FontStyle.Regular);
         }
 
         private void LblImagesAdd_Click(object sender, EventArgs e)
@@ -186,17 +180,19 @@ namespace ParsDashboard
 
         private void LblImagesSearch_Click(object sender, EventArgs e)
         {
-            fNav.ShowForm( fImageSearch );
+            fNav.ShowForm(fImageSearch);
+            //LblImagesSearch.Font = new Font( LblImagesSearch.Font.Name, LblImagesSearch.Font.SizeInPoints, FontStyle.Bold );
+            NavSetStyleClick(LblImagesSearch);
         }
 
         private void LblDashboard_MouseEnter(object sender, EventArgs e)
         {
-            LblDashboard.Font = new Font(LblDashboard.Font.Name, LblDashboard.Font.SizeInPoints, FontStyle.Underline );
+            LblDashboard.Font = new Font(LblDashboard.Font.Name, LblDashboard.Font.SizeInPoints, FontStyle.Underline);
         }
 
         private void LblDashboard_MouseLeave(object sender, EventArgs e)
         {
-            LblDashboard.Font = new Font( LblDashboard.Font.Name, LblDashboard.Font.SizeInPoints, FontStyle.Regular );
+            LblDashboard.Font = new Font(LblDashboard.Font.Name, LblDashboard.Font.SizeInPoints, FontStyle.Regular);
         }
 
         private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
@@ -206,12 +202,74 @@ namespace ParsDashboard
 
         private void LblImagesSearch_MouseEnter(object sender, EventArgs e)
         {
-            LblImagesSearch.Font = new Font( LblImagesSearch.Font.Name, LblImagesSearch.Font.SizeInPoints, FontStyle.Underline | FontStyle.Bold );
+            if (LblImagesSearch.Font.Bold == true)
+            {
+                //LblImagesSearch.Font = new Font(LblImagesSearch.Font.Name, LblImagesSearch.Font.SizeInPoints, FontStyle.Underline);
+            }
+            else
+            {
+                LblImagesSearch.Font = new Font(LblImagesSearch.Font.Name, LblImagesSearch.Font.SizeInPoints, FontStyle.Underline);
+            }
         }
 
         private void LblImagesSearch_MouseLeave(object sender, EventArgs e)
         {
-            LblImagesSearch.Font = new Font( LblImagesSearch.Font.Name, LblImagesSearch.Font.SizeInPoints, FontStyle.Regular );
+            //LblImagesSearch.Font = new Font( LblImagesSearch.Font.Name, LblImagesSearch.Font.SizeInPoints, FontStyle.Regular );
+        }
+
+        private void LlbImages_MouseEnter(object sender, EventArgs e)
+        {
+            LblImages.Font = new Font(LblImages.Font.Name, LblImages.Font.SizeInPoints, FontStyle.Underline);
+        }
+
+        private void LlbImages_MouseLeave(object sender, EventArgs e)
+        {
+            LblImages.Font = new Font(LblImages.Font.Name, LblImages.Font.SizeInPoints, FontStyle.Regular);
+        }
+
+
+        private void NavSetStyleClick(Label lbl)
+        {
+            Label lblClick = lbl;
+
+            LblDashboard.Font = new Font(LblDashboard.Font.Name, LblDashboard.Font.SizeInPoints, FontStyle.Regular);
+            LblImages.Font = new Font(LblImages.Font.Name, LblImages.Font.SizeInPoints, FontStyle.Regular);
+            LblImagesAdd.Font = new Font(LblImagesAdd.Font.Name, LblImagesAdd.Font.SizeInPoints, FontStyle.Regular);
+            LblImagesSearch.Font = new Font(LblImagesSearch.Font.Name, LblImagesSearch.Font.SizeInPoints, FontStyle.Regular);
+
+            if (lblClick.Font.Bold != true)
+            {
+                lbl.Font = new Font(lbl.Font.Name, lbl.Font.SizeInPoints, FontStyle.Bold);
+            }
+            else
+            {
+
+            }
+        }
+
+        private void LblImages_Click(object sender, EventArgs e)
+        {
+            DashboardAccordian(sender, e);
+
+            fNav.ShowForm(fImage);
+
+            NavSetStyleClick(LblImages);
+        }
+
+        private void LblImages_MouseEnter(object sender, EventArgs e)
+        {
+            if (LblImages.Font.Bold != true)
+            {
+                LblImages.Font = new Font( LblImages.Font.Name, LblImages.Font.SizeInPoints, FontStyle.Underline );
+            }
+        }
+
+        private void LblImages_MouseLeave(object sender, EventArgs e)
+        {
+            if ( LblImages.Font.Bold != true )
+            {
+                LblImages.Font = new Font( LblImages.Font.Name, LblImages.Font.SizeInPoints, FontStyle.Regular );
+            }
         }
     }
 }
