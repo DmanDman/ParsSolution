@@ -101,25 +101,34 @@ namespace ParsDashboard
             // the code loops through the panels in the table and expands/collapses
             // each panel according to whether it contains the clicked label. The label
             // images are also swapped depending on the height of the panel.
-            foreach (Panel p in tableLayoutPanel1.Controls)
+            foreach ( Panel p in tableLayoutPanel1.Controls )
             {
                 Label l = (Label)p.Controls[0];
 
-                if (p.Equals(pnl))
+                if ( p.Equals( pnl ))
                 {
-                    // expand or collapse the panel
-                    if (p.Height != 25)
+                    if ( p.Tag != null )
                     {
-                        p.Height = 25;
-                    }
-                    else
-                    {
-                        p.Height = p.Controls.Count * 28;
+                        if (p.Tag.ToString() != "Expanded")
+                        {
+                            // expand or collapse the panel
+                            if (p.Height != 25)
+                            {
+                                p.Height = 25;
+                                p.Tag = "Collapsed";
+                            }
+                            else
+                            {
+                                p.Height = p.Controls.Count * 28;
+                                p.Tag = "Expanded";
+                            }
+                        }
                     }
                 }
                 else
                 {
                     p.Height = 25;
+                    p.Tag = "Collapsed";
                 }
             }
         }
@@ -265,11 +274,11 @@ namespace ParsDashboard
 
         private void LblImages_Click(object sender, EventArgs e)
         {
-            DashboardAccordian(sender, e);
+            DashboardAccordian( sender, e );
 
-            fNav.ShowForm(fImage);
+            fNav.ShowForm( fImage );
 
-            NavSetStyleClick(LblImages);
+            NavSetStyleClick( LblImages );
         }
 
         private void LblImages_MouseEnter(object sender, EventArgs e)

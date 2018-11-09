@@ -29,10 +29,5 @@ namespace ParsDashboard
         {
 
         }
-
-        private void GrpInfo_Enter(object sender, EventArgs e)
-        {
-
-        }   
     }
 }

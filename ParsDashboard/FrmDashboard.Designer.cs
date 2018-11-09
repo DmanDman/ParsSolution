@@ -155,7 +155,6 @@
             this.GrpInfo.TabIndex = 1;
             this.GrpInfo.TabStop = false;
             this.GrpInfo.Text = "Information";
-            this.GrpInfo.Enter += new System.EventHandler(this.GrpInfo_Enter);
             // 
             // TxtInfoPatients
             // 
@@ -720,6 +719,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Tag = "FrmDashboard";
             this.Text = "Dashboard";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmDashboard_Load);
             this.MnuMenu.ResumeLayout(false);
             this.MnuMenu.PerformLayout();
