@@ -1,6 +1,6 @@
 ﻿namespace ParsDashboard
 {
-    partial class f
+    partial class FrmDashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -52,7 +52,7 @@
             this.TxtRecentName = new System.Windows.Forms.TextBox();
             this.LblRecentName = new System.Windows.Forms.Label();
             this.GrpCanvas = new System.Windows.Forms.GroupBox();
-            this.TxtCanvammmmmmmmmmmmmmmm = new System.Windows.Forms.TextBox();
+            this.TxtRecentCanvas = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.GrpHighest = new System.Windows.Forms.GroupBox();
             this.textBox12 = new System.Windows.Forms.TextBox();
@@ -281,7 +281,6 @@
             this.LblRecentSurgeryAge.Size = new System.Drawing.Size(87, 17);
             this.LblRecentSurgeryAge.TabIndex = 6;
             this.LblRecentSurgeryAge.Text = "Surgery Age";
-            this.LblRecentSurgeryAge.Click += new System.EventHandler(this.label1_Click);
             // 
             // LblRecentPatient
             // 
@@ -324,7 +323,7 @@
             // 
             // GrpCanvas
             // 
-            this.GrpCanvas.Controls.Add(this.TxtCanvammmmmmmmmmmmmmmm);
+            this.GrpCanvas.Controls.Add(this.TxtRecentCanvas);
             this.GrpCanvas.Controls.Add(this.label4);
             this.GrpCanvas.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GrpCanvas.Location = new System.Drawing.Point(724, 46);
@@ -334,14 +333,14 @@
             this.GrpCanvas.TabStop = false;
             this.GrpCanvas.Text = "Recent Canvas";
             // 
-            // TxtCanvammmmmmmmmmmmmmmm
+            // TxtRecentCanvas
             // 
-            this.TxtCanvammmmmmmmmmmmmmmm.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCanvammmmmmmmmmmmmmmm.Location = new System.Drawing.Point(98, 35);
-            this.TxtCanvammmmmmmmmmmmmmmm.Name = "TxtCanvammmmmmmmmmmmmmmm";
-            this.TxtCanvammmmmmmmmmmmmmmm.Size = new System.Drawing.Size(161, 22);
-            this.TxtCanvammmmmmmmmmmmmmmm.TabIndex = 1;
-            this.TxtCanvammmmmmmmmmmmmmmm.Text = "Rick Sasso";
+            this.TxtRecentCanvas.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtRecentCanvas.Location = new System.Drawing.Point(98, 35);
+            this.TxtRecentCanvas.Name = "TxtRecentCanvas";
+            this.TxtRecentCanvas.Size = new System.Drawing.Size(161, 22);
+            this.TxtRecentCanvas.TabIndex = 1;
+            this.TxtRecentCanvas.Text = "Rick Sasso";
             // 
             // label4
             // 
@@ -705,7 +704,7 @@
             this.LstImages.TabIndex = 7;
             this.LstImages.UseCompatibleStateImageBehavior = false;
             // 
-            // f
+            // FrmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -717,7 +716,7 @@
             this.Controls.Add(this.GrpInfo);
             this.Controls.Add(this.MnuMenu);
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "f";
+            this.Name = "FrmDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Tag = "FrmDashboard";
             this.Text = "Dashboard";
@@ -765,7 +764,7 @@
         private System.Windows.Forms.TextBox TxtRecentName;
         private System.Windows.Forms.Label LblRecentName;
         private System.Windows.Forms.GroupBox GrpCanvas;
-        private System.Windows.Forms.TextBox TxtCanvammmmmmmmmmmmmmmm;
+        private System.Windows.Forms.TextBox TxtRecentCanvas;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox GrpHighest;
         private System.Windows.Forms.TextBox textBox1;

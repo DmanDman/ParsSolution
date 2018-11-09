@@ -66,6 +66,7 @@
             this.LblEmailPicPicOnly = new System.Windows.Forms.Label();
             this.LblEmailPic = new System.Windows.Forms.Label();
             this.PnlImages = new System.Windows.Forms.Panel();
+            this.LblImagesSearchResults = new System.Windows.Forms.Label();
             this.LblImagesSearch = new System.Windows.Forms.Label();
             this.LblImagesAdd = new System.Windows.Forms.Label();
             this.LblImages = new System.Windows.Forms.Label();
@@ -122,7 +123,7 @@
             this.PnlPatient.Controls.Add(this.LblPatientAdd);
             this.PnlPatient.Controls.Add(this.LblPatient);
             this.PnlPatient.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlPatient.Location = new System.Drawing.Point(2, 139);
+            this.PnlPatient.Location = new System.Drawing.Point(2, 175);
             this.PnlPatient.Margin = new System.Windows.Forms.Padding(0);
             this.PnlPatient.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlPatient.Name = "PnlPatient";
@@ -148,6 +149,7 @@
             this.LblPatientAdd.Size = new System.Drawing.Size(33, 17);
             this.LblPatientAdd.TabIndex = 2;
             this.LblPatientAdd.Text = "Add";
+            this.LblPatientAdd.Click += new System.EventHandler(this.LblPatientAdd_Click);
             // 
             // LblPatient
             // 
@@ -163,6 +165,8 @@
             this.LblPatient.Text = "Patient";
             this.LblPatient.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LblPatient.Click += new System.EventHandler(this.LblPatient_Click);
+            this.LblPatient.MouseEnter += new System.EventHandler(this.LblPatient_MouseEnter);
+            this.LblPatient.MouseLeave += new System.EventHandler(this.LblPatient_MouseLeave);
             // 
             // tableLayoutPanel1
             // 
@@ -194,7 +198,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 123F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(185, 540);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(185, 830);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // PnlSecurity
@@ -203,7 +207,7 @@
             this.PnlSecurity.Controls.Add(this.LblSecurityUserMgmt);
             this.PnlSecurity.Controls.Add(this.LblSecurity);
             this.PnlSecurity.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlSecurity.Location = new System.Drawing.Point(2, 732);
+            this.PnlSecurity.Location = new System.Drawing.Point(2, 768);
             this.PnlSecurity.Margin = new System.Windows.Forms.Padding(0);
             this.PnlSecurity.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlSecurity.Name = "PnlSecurity";
@@ -244,7 +248,7 @@
             this.PnlData.Controls.Add(this.LblDataCustomizeName);
             this.PnlData.Controls.Add(this.LblData);
             this.PnlData.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlData.Location = new System.Drawing.Point(2, 469);
+            this.PnlData.Location = new System.Drawing.Point(2, 505);
             this.PnlData.Margin = new System.Windows.Forms.Padding(0);
             this.PnlData.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlData.Name = "PnlData";
@@ -313,7 +317,7 @@
             this.PnlSurgery.Controls.Add(this.label9);
             this.PnlSurgery.Controls.Add(this.LblSurgery);
             this.PnlSurgery.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlSurgery.Location = new System.Drawing.Point(2, 249);
+            this.PnlSurgery.Location = new System.Drawing.Point(2, 285);
             this.PnlSurgery.Margin = new System.Windows.Forms.Padding(0);
             this.PnlSurgery.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlSurgery.Name = "PnlSurgery";
@@ -370,7 +374,7 @@
             this.PnlMetaData.Controls.Add(this.LblMDCpt);
             this.PnlMetaData.Controls.Add(this.LblMDComp);
             this.PnlMetaData.Controls.Add(this.LblMetaData);
-            this.PnlMetaData.Location = new System.Drawing.Point(2, 579);
+            this.PnlMetaData.Location = new System.Drawing.Point(2, 615);
             this.PnlMetaData.Margin = new System.Windows.Forms.Padding(0);
             this.PnlMetaData.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlMetaData.Name = "PnlMetaData";
@@ -509,7 +513,7 @@
             this.PnlEmailPic.Controls.Add(this.LblEmailPicPicOnly);
             this.PnlEmailPic.Controls.Add(this.LblEmailPic);
             this.PnlEmailPic.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlEmailPic.Location = new System.Drawing.Point(2, 664);
+            this.PnlEmailPic.Location = new System.Drawing.Point(2, 700);
             this.PnlEmailPic.Margin = new System.Windows.Forms.Padding(0);
             this.PnlEmailPic.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlEmailPic.Name = "PnlEmailPic";
@@ -554,6 +558,7 @@
             // PnlImages
             // 
             this.PnlImages.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.PnlImages.Controls.Add(this.LblImagesSearchResults);
             this.PnlImages.Controls.Add(this.LblImagesSearch);
             this.PnlImages.Controls.Add(this.LblImagesAdd);
             this.PnlImages.Controls.Add(this.LblImages);
@@ -562,8 +567,18 @@
             this.PnlImages.Margin = new System.Windows.Forms.Padding(0);
             this.PnlImages.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlImages.Name = "PnlImages";
-            this.PnlImages.Size = new System.Drawing.Size(200, 102);
+            this.PnlImages.Size = new System.Drawing.Size(200, 138);
             this.PnlImages.TabIndex = 4;
+            // 
+            // LblImagesSearchResults
+            // 
+            this.LblImagesSearchResults.AutoSize = true;
+            this.LblImagesSearchResults.Location = new System.Drawing.Point(13, 107);
+            this.LblImagesSearchResults.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblImagesSearchResults.Name = "LblImagesSearchResults";
+            this.LblImagesSearchResults.Size = new System.Drawing.Size(104, 17);
+            this.LblImagesSearchResults.TabIndex = 4;
+            this.LblImagesSearchResults.Text = "Search Results";
             // 
             // LblImagesSearch
             // 
@@ -615,7 +630,7 @@
             this.PnlRpt.Controls.Add(this.label6);
             this.PnlRpt.Controls.Add(this.LblRpt);
             this.PnlRpt.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlRpt.Location = new System.Drawing.Point(2, 359);
+            this.PnlRpt.Location = new System.Drawing.Point(2, 395);
             this.PnlRpt.Margin = new System.Windows.Forms.Padding(0);
             this.PnlRpt.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlRpt.Name = "PnlRpt";
@@ -663,13 +678,12 @@
             this.DlgImagesAdd.Filter = "PNG Files|*.png|BMP Files|*.bmp|All Files|*.*";
             this.DlgImagesAdd.Multiselect = true;
             this.DlgImagesAdd.Title = "Select Pictures";
-            this.DlgImagesAdd.FileOk += new System.ComponentModel.CancelEventHandler(this.openFileDialog1_FileOk);
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 540);
+            this.ClientSize = new System.Drawing.Size(1072, 830);
             this.Controls.Add(this.tableLayoutPanel1);
             this.IsMdiContainer = true;
             this.Margin = new System.Windows.Forms.Padding(4);
@@ -748,6 +762,7 @@
         private System.Windows.Forms.Label LblSecurityUserMgmt;
         internal System.Windows.Forms.Label LblSecurity;
         private System.Windows.Forms.OpenFileDialog DlgImagesAdd;
+        private System.Windows.Forms.Label LblImagesSearchResults;
     }
 }
 

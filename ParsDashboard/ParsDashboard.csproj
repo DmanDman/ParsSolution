@@ -58,6 +58,12 @@
     <Compile Include="FrmImages.Designer.cs">
       <DependentUpon>FrmImages.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmImageSearchResults.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmImageSearchResults.Designer.cs">
+      <DependentUpon>FrmImageSearchResults.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +94,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmImageSearch.resx">
       <DependentUpon>FrmImageSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmImageSearchResults.resx">
+      <DependentUpon>FrmImageSearchResults.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>

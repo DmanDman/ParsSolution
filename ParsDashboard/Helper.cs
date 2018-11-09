@@ -17,11 +17,11 @@ namespace ParsDashboard
 
             if ( combo.Text.Trim() == null | combo.Text.Trim() == "" | combo.SelectedItem == null ) 
             {
-                string message = "Can not add item, nothing selected.";
-                string title = "Search Term Not Selected";
+                //string message = "Can not add item, nothing selected.";
+                //string title = "Search Term Not Selected";
 
-                MessageBoxButtons buttons = MessageBoxButtons.OK;
-                MessageBox.Show( message, title, buttons, MessageBoxIcon.Error );
+                //MessageBoxButtons buttons = MessageBoxButtons.OK;
+                //MessageBox.Show( message, title, buttons, MessageBoxIcon.Error );
             }
             else
             {                
@@ -41,11 +41,11 @@ namespace ParsDashboard
 
             if ( list.SelectedIndex == -1 )
             {
-                string message = "Can not remvoe item, nothing selected.";
-                string title = "Search Term Not Selected";
+                //string message = "Can not remvoe item, nothing selected.";
+                //string title = "Search Term Not Selected";
 
-                MessageBoxButtons buttons = MessageBoxButtons.OK;
-                MessageBox.Show( message, title, buttons, MessageBoxIcon.Error );
+                //MessageBoxButtons buttons = MessageBoxButtons.OK;
+                //MessageBox.Show( message, title, buttons, MessageBoxIcon.Error );
             }
             else
             {

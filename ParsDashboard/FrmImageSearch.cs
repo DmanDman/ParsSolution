@@ -6,6 +6,7 @@ namespace ParsDashboard
     public partial class FrmImageSearch : Form
     {
         Helper helper = new Helper();
+        FormNav frmNav = new FormNav();    
 
         public FrmImageSearch()
         {
@@ -101,6 +102,11 @@ namespace ParsDashboard
         private void TsMnuRemoveAllPic_Click(object sender, EventArgs e)
         {
             helper.RemoveAllListBox( CboPicInfo, LstPicInfoSearchItems );
+        }
+
+        private void TSMnuSearch_Click(object sender, EventArgs e)
+        {
+            frmNav.ShowFormName( this.MdiParent.MdiChildren, "FrmImageSearchResults" );           
         }
     }
 }

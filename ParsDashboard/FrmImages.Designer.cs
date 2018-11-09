@@ -336,6 +336,7 @@
             this.Controls.Add(this.GrpImage);
             this.Controls.Add(this.MnuMenu);
             this.Name = "FrmImages";
+            this.Tag = "FrmImages";
             this.Text = "Images";
             this.MnuMenu.ResumeLayout(false);
             this.MnuMenu.PerformLayout();

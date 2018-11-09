@@ -39,6 +39,12 @@ namespace ParsDashboard
                 {
                     frm[i].Show();
                     frm[i].BringToFront();
+
+                    //if ( frm[i].Tag.ToString() == "FrmImageSearchResults" )
+                    //{
+                    //    FrmMain.Controls["LblImagesSearchResults"].Visible = true;
+                    //}
+
                     break;
                 }
             }

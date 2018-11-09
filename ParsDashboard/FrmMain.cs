@@ -15,10 +15,13 @@ namespace ParsDashboard
     {
         FormNav fNav = new FormNav();
 
-        f fDashBoard = new f();
-        FrmPatient fPatient = new FrmPatient();
-        FrmImageSearch fImageSearch = new FrmImageSearch();
+        FrmDashboard fDashBoard = new FrmDashboard();
+
         FrmImages fImage = new FrmImages();
+        FrmImageSearch fImageSearch = new FrmImageSearch();
+        FrmImageSearchResults fImageSearchResuts = new FrmImageSearchResults();
+
+        FrmPatient fPatient = new FrmPatient();
 
         public FrmMain()
         {
@@ -30,12 +33,15 @@ namespace ParsDashboard
 
             fPatient.MdiParent = this;
             fPatient.Show();
+           
+            fImage.MdiParent = this;
+            fImage.Show();
 
             fImageSearch.MdiParent = this;
             fImageSearch.Show();
 
-            fImage.MdiParent = this;
-            fImage.Show();
+            fImageSearchResuts.MdiParent = this;
+            fImageSearchResuts.Show();
         }
 
         private void FrmDashboard_Load(object sender, EventArgs e)
@@ -118,12 +124,13 @@ namespace ParsDashboard
             }
         }
 
-
         private void LblPatient_Click(object sender, EventArgs e)
         {
-            DashboardAccordian(sender, e);
+            DashboardAccordian( sender, e );
 
-            fNav.ShowForm(fPatient);
+            fNav.ShowForm( fPatient );
+
+            NavSetStyleClick( LblPatient );
         }
 
         private void LblSurgery_Click(object sender, EventArgs e)
@@ -160,17 +167,25 @@ namespace ParsDashboard
         {
             DashboardAccordian(sender, e);
 
-            fNav.ShowForm(fDashBoard);
+            NavSetStyleClick( LblDashboard );
+
+            fNav.ShowForm( fDashBoard );
         }
 
         private void LblImagesAdd_MouseEnter(object sender, EventArgs e)
-        {
-            LblImagesAdd.Font = new Font(LblImagesAdd.Font.Name, LblImagesAdd.Font.SizeInPoints, FontStyle.Underline | FontStyle.Bold);
+        {            
+            if ( LblImagesAdd.Font.Bold != true )           
+            {
+                LblImagesAdd.Font = new Font( LblImagesAdd.Font.Name, LblImagesAdd.Font.SizeInPoints, FontStyle.Underline );
+            }
         }
 
         private void LblImagesAdd_MouseLeave(object sender, EventArgs e)
         {
-            LblImagesAdd.Font = new Font(LblImagesAdd.Font.Name, LblImagesAdd.Font.SizeInPoints, FontStyle.Regular);
+            if (LblImagesAdd.Font.Bold != true)
+            {
+                LblImagesAdd.Font = new Font( LblImagesAdd.Font.Name, LblImagesAdd.Font.SizeInPoints, FontStyle.Regular );
+            }
         }
 
         private void LblImagesAdd_Click(object sender, EventArgs e)
@@ -180,41 +195,41 @@ namespace ParsDashboard
 
         private void LblImagesSearch_Click(object sender, EventArgs e)
         {
-            fNav.ShowForm(fImageSearch);
-            //LblImagesSearch.Font = new Font( LblImagesSearch.Font.Name, LblImagesSearch.Font.SizeInPoints, FontStyle.Bold );
-            NavSetStyleClick(LblImagesSearch);
+            fNav.ShowForm( fImageSearch );
+            
+            NavSetStyleClick( LblImagesSearch );
         }
 
         private void LblDashboard_MouseEnter(object sender, EventArgs e)
         {
-            LblDashboard.Font = new Font(LblDashboard.Font.Name, LblDashboard.Font.SizeInPoints, FontStyle.Underline);
+            if ( LblDashboard.Font.Bold != true )
+            { 
+                LblDashboard.Font = new Font( LblDashboard.Font.Name, LblDashboard.Font.SizeInPoints, FontStyle.Underline );
+            }
         }
 
         private void LblDashboard_MouseLeave(object sender, EventArgs e)
         {
-            LblDashboard.Font = new Font(LblDashboard.Font.Name, LblDashboard.Font.SizeInPoints, FontStyle.Regular);
-        }
-
-        private void openFileDialog1_FileOk(object sender, CancelEventArgs e)
-        {
-
-        }
+            if ( LblDashboard.Font.Bold != true )
+            { 
+                LblDashboard.Font = new Font( LblDashboard.Font.Name, LblDashboard.Font.SizeInPoints, FontStyle.Regular );
+            }
+        }   
 
         private void LblImagesSearch_MouseEnter(object sender, EventArgs e)
         {
-            if (LblImagesSearch.Font.Bold == true)
-            {
-                //LblImagesSearch.Font = new Font(LblImagesSearch.Font.Name, LblImagesSearch.Font.SizeInPoints, FontStyle.Underline);
-            }
-            else
-            {
-                LblImagesSearch.Font = new Font(LblImagesSearch.Font.Name, LblImagesSearch.Font.SizeInPoints, FontStyle.Underline);
+            if ( LblImagesSearch.Font.Bold != true )
+            {            
+                LblImagesSearch.Font = new Font( LblImagesSearch.Font.Name, LblImagesSearch.Font.SizeInPoints, FontStyle.Underline );
             }
         }
 
         private void LblImagesSearch_MouseLeave(object sender, EventArgs e)
         {
-            //LblImagesSearch.Font = new Font( LblImagesSearch.Font.Name, LblImagesSearch.Font.SizeInPoints, FontStyle.Regular );
+            if ( LblImagesSearch.Font.Bold != true )
+            { 
+                LblImagesSearch.Font = new Font( LblImagesSearch.Font.Name, LblImagesSearch.Font.SizeInPoints, FontStyle.Regular );
+            }
         }
 
         private void LlbImages_MouseEnter(object sender, EventArgs e)
@@ -232,14 +247,15 @@ namespace ParsDashboard
         {
             Label lblClick = lbl;
 
-            LblDashboard.Font = new Font(LblDashboard.Font.Name, LblDashboard.Font.SizeInPoints, FontStyle.Regular);
-            LblImages.Font = new Font(LblImages.Font.Name, LblImages.Font.SizeInPoints, FontStyle.Regular);
-            LblImagesAdd.Font = new Font(LblImagesAdd.Font.Name, LblImagesAdd.Font.SizeInPoints, FontStyle.Regular);
-            LblImagesSearch.Font = new Font(LblImagesSearch.Font.Name, LblImagesSearch.Font.SizeInPoints, FontStyle.Regular);
+            LblDashboard.Font = new Font( LblDashboard.Font.Name, LblDashboard.Font.SizeInPoints, FontStyle.Regular );
+            LblImages.Font = new Font( LblImages.Font.Name, LblImages.Font.SizeInPoints, FontStyle.Regular );
+            LblImagesAdd.Font = new Font( LblImagesAdd.Font.Name, LblImagesAdd.Font.SizeInPoints, FontStyle.Regular );
+            LblImagesSearch.Font = new Font( LblImagesSearch.Font.Name, LblImagesSearch.Font.SizeInPoints, FontStyle.Regular );
+            LblPatient.Font = new Font( LblPatient.Font.Name, LblPatient.Font.SizeInPoints, FontStyle.Regular );
 
-            if (lblClick.Font.Bold != true)
+            if ( lblClick.Font.Bold != true )
             {
-                lbl.Font = new Font(lbl.Font.Name, lbl.Font.SizeInPoints, FontStyle.Bold);
+                lbl.Font = new Font( lbl.Font.Name, lbl.Font.SizeInPoints, FontStyle.Bold );
             }
             else
             {
@@ -270,6 +286,31 @@ namespace ParsDashboard
             {
                 LblImages.Font = new Font( LblImages.Font.Name, LblImages.Font.SizeInPoints, FontStyle.Regular );
             }
+        }
+
+        private void LblPatient_MouseEnter(object sender, EventArgs e)
+        {
+            if ( LblPatient.Font.Bold != true )
+            {
+                LblPatient.Font = new Font( LblPatient.Font.Name, LblPatient.Font.SizeInPoints, FontStyle.Underline );
+            }
+        }
+
+        private void LblPatient_MouseLeave(object sender, EventArgs e)
+        {
+            if ( LblPatient.Font.Bold != true )
+            {
+                LblPatient.Font = new Font( LblPatient.Font.Name, LblPatient.Font.SizeInPoints, FontStyle.Regular );
+            }
+        }
+
+        private void LblPatientAdd_Click(object sender, EventArgs e)
+        {
+            DashboardAccordian( sender, e );
+
+            //fNav.ShowForm( fImage );
+
+            //NavSetStyleClick( LblPatientAdd );
         }
     }
 }

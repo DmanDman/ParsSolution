@@ -82,6 +82,7 @@
             this.TSMnuSearch.Size = new System.Drawing.Size(65, 24);
             this.TSMnuSearch.Tag = "FrmDashboard";
             this.TSMnuSearch.Text = "&Search";
+            this.TSMnuSearch.Click += new System.EventHandler(this.TSMnuSearch_Click);
             // 
             // TSMnuAddMeta
             // 

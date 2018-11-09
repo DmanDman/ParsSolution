@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace ParsDashboard
 {
-    public partial class f : Form
+    public partial class FrmDashboard : Form
     {
         FormNav frmNav = new FormNav();        
 
-        public f()
+        public FrmDashboard()
         {
             InitializeComponent();
         }
@@ -33,11 +33,6 @@ namespace ParsDashboard
         private void GrpInfo_Enter(object sender, EventArgs e)
         {
 
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
+        }   
     }
 }
