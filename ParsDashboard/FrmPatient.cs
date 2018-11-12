@@ -24,5 +24,17 @@ namespace ParsDashboard
             //  show mdi child form by tag name, which is the name of the form
             frmNav.ShowFormName( this.MdiParent.MdiChildren, "FrmDashboard" );
         }
+
+        private void FrmPatient_Load(object sender, EventArgs e)
+        {
+            // Enable double duffering to stop flickering.
+            SetStyle(ControlStyles.DoubleBuffer, true);
+            SetStyle(ControlStyles.AllPaintingInWmPaint, true);
+            SetStyle(ControlStyles.UserPaint, true);
+            SetStyle(ControlStyles.SupportsTransparentBackColor, false);
+            SetStyle(ControlStyles.Opaque, false);
+            SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
+            SetStyle(ControlStyles.ResizeRedraw, true);
+        }
     }
 }

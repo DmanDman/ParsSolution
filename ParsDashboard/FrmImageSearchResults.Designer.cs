@@ -35,43 +35,43 @@
             this.TSMnuOpenCanvas = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuPrint = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.LbMetaDataSearch = new System.Windows.Forms.Label();
-            this.TxtName = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.TxtDob = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.TxtSurgeryAge = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.TxtSex = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.TxtSurgeryDate = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.TxtSurgeryCount = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.TxtFiscalYear = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.TxtSurgeryCount = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.TxtSurgeryDate = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.TxtSex = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.TxtSurgeryAge = new System.Windows.Forms.TextBox();
+            this.label2 = new System.Windows.Forms.Label();
+            this.TxtDob = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.TxtName = new System.Windows.Forms.TextBox();
+            this.LbMetaDataSearch = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.LstSearchCriteria = new System.Windows.Forms.ListBox();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.LstDr = new System.Windows.Forms.ListBox();
-            this.label8 = new System.Windows.Forms.Label();
-            this.LstHospital = new System.Windows.Forms.ListBox();
-            this.label9 = new System.Windows.Forms.Label();
-            this.LstLocation = new System.Windows.Forms.ListBox();
-            this.label10 = new System.Windows.Forms.Label();
-            this.LstLevel = new System.Windows.Forms.ListBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.LstCpt = new System.Windows.Forms.ListBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.LstDx = new System.Windows.Forms.ListBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.LstSurgery = new System.Windows.Forms.ListBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.LstInst = new System.Windows.Forms.ListBox();
-            this.label15 = new System.Windows.Forms.Label();
-            this.LstComp = new System.Windows.Forms.ListBox();
-            this.label16 = new System.Windows.Forms.Label();
             this.LstPicInfo = new System.Windows.Forms.ListBox();
+            this.label16 = new System.Windows.Forms.Label();
+            this.LstComp = new System.Windows.Forms.ListBox();
+            this.label15 = new System.Windows.Forms.Label();
+            this.LstInst = new System.Windows.Forms.ListBox();
+            this.label14 = new System.Windows.Forms.Label();
+            this.LstSurgery = new System.Windows.Forms.ListBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.LstDx = new System.Windows.Forms.ListBox();
+            this.label12 = new System.Windows.Forms.Label();
+            this.LstCpt = new System.Windows.Forms.ListBox();
+            this.label11 = new System.Windows.Forms.Label();
+            this.LstLevel = new System.Windows.Forms.ListBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.LstLocation = new System.Windows.Forms.ListBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.LstHospital = new System.Windows.Forms.ListBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.LstDr = new System.Windows.Forms.ListBox();
+            this.label7 = new System.Windows.Forms.Label();
             this.GrpImages = new System.Windows.Forms.GroupBox();
             this.LstImageDesc = new System.Windows.Forms.ListBox();
             this.BtnImagePrev = new System.Windows.Forms.Button();
@@ -160,122 +160,15 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Patient";
             // 
-            // LbMetaDataSearch
+            // TxtFiscalYear
             // 
-            this.LbMetaDataSearch.AutoSize = true;
-            this.LbMetaDataSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbMetaDataSearch.Location = new System.Drawing.Point(12, 35);
-            this.LbMetaDataSearch.Name = "LbMetaDataSearch";
-            this.LbMetaDataSearch.Size = new System.Drawing.Size(45, 17);
-            this.LbMetaDataSearch.TabIndex = 1;
-            this.LbMetaDataSearch.Text = "Name";
-            // 
-            // TxtName
-            // 
-            this.TxtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtName.Location = new System.Drawing.Point(12, 55);
-            this.TxtName.Name = "TxtName";
-            this.TxtName.Size = new System.Drawing.Size(171, 22);
-            this.TxtName.TabIndex = 2;
-            this.TxtName.Text = "Smith, Mike";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 97);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 17);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "D.O.B.";
-            // 
-            // TxtDob
-            // 
-            this.TxtDob.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtDob.Location = new System.Drawing.Point(12, 117);
-            this.TxtDob.Name = "TxtDob";
-            this.TxtDob.Size = new System.Drawing.Size(87, 22);
-            this.TxtDob.TabIndex = 4;
-            this.TxtDob.Text = "08/05/1997";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(12, 157);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 17);
-            this.label2.TabIndex = 5;
-            this.label2.Text = "Surgery Age";
-            // 
-            // TxtSurgeryAge
-            // 
-            this.TxtSurgeryAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSurgeryAge.Location = new System.Drawing.Point(12, 177);
-            this.TxtSurgeryAge.Name = "TxtSurgeryAge";
-            this.TxtSurgeryAge.Size = new System.Drawing.Size(30, 22);
-            this.TxtSurgeryAge.TabIndex = 6;
-            this.TxtSurgeryAge.Text = "27";
-            this.TxtSurgeryAge.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(123, 157);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(31, 17);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "Sex";
-            // 
-            // TxtSex
-            // 
-            this.TxtSex.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSex.Location = new System.Drawing.Point(123, 177);
-            this.TxtSex.Name = "TxtSex";
-            this.TxtSex.Size = new System.Drawing.Size(28, 22);
-            this.TxtSex.TabIndex = 8;
-            this.TxtSex.Text = "M";
-            this.TxtSex.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(12, 213);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(92, 17);
-            this.label4.TabIndex = 9;
-            this.label4.Text = "Surgery Date";
-            // 
-            // TxtSurgeryDate
-            // 
-            this.TxtSurgeryDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSurgeryDate.Location = new System.Drawing.Point(12, 233);
-            this.TxtSurgeryDate.Name = "TxtSurgeryDate";
-            this.TxtSurgeryDate.Size = new System.Drawing.Size(87, 22);
-            this.TxtSurgeryDate.TabIndex = 10;
-            this.TxtSurgeryDate.Text = "01/22/2011";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(123, 213);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(58, 17);
-            this.label5.TabIndex = 11;
-            this.label5.Text = "Surgery";
-            // 
-            // TxtSurgeryCount
-            // 
-            this.TxtSurgeryCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSurgeryCount.Location = new System.Drawing.Point(123, 233);
-            this.TxtSurgeryCount.Name = "TxtSurgeryCount";
-            this.TxtSurgeryCount.Size = new System.Drawing.Size(55, 22);
-            this.TxtSurgeryCount.TabIndex = 12;
-            this.TxtSurgeryCount.Text = "2 of 5";
-            this.TxtSurgeryCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TxtFiscalYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtFiscalYear.Location = new System.Drawing.Point(12, 291);
+            this.TxtFiscalYear.Name = "TxtFiscalYear";
+            this.TxtFiscalYear.Size = new System.Drawing.Size(45, 22);
+            this.TxtFiscalYear.TabIndex = 14;
+            this.TxtFiscalYear.Text = "2011";
+            this.TxtFiscalYear.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label6
             // 
@@ -287,15 +180,122 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "Fiscal Year";
             // 
-            // TxtFiscalYear
+            // TxtSurgeryCount
             // 
-            this.TxtFiscalYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtFiscalYear.Location = new System.Drawing.Point(12, 291);
-            this.TxtFiscalYear.Name = "TxtFiscalYear";
-            this.TxtFiscalYear.Size = new System.Drawing.Size(45, 22);
-            this.TxtFiscalYear.TabIndex = 14;
-            this.TxtFiscalYear.Text = "2011";
-            this.TxtFiscalYear.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.TxtSurgeryCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSurgeryCount.Location = new System.Drawing.Point(123, 233);
+            this.TxtSurgeryCount.Name = "TxtSurgeryCount";
+            this.TxtSurgeryCount.Size = new System.Drawing.Size(55, 22);
+            this.TxtSurgeryCount.TabIndex = 12;
+            this.TxtSurgeryCount.Text = "2 of 5";
+            this.TxtSurgeryCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(123, 213);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(58, 17);
+            this.label5.TabIndex = 11;
+            this.label5.Text = "Surgery";
+            // 
+            // TxtSurgeryDate
+            // 
+            this.TxtSurgeryDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSurgeryDate.Location = new System.Drawing.Point(12, 233);
+            this.TxtSurgeryDate.Name = "TxtSurgeryDate";
+            this.TxtSurgeryDate.Size = new System.Drawing.Size(87, 22);
+            this.TxtSurgeryDate.TabIndex = 10;
+            this.TxtSurgeryDate.Text = "01/22/2011";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(12, 213);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(92, 17);
+            this.label4.TabIndex = 9;
+            this.label4.Text = "Surgery Date";
+            // 
+            // TxtSex
+            // 
+            this.TxtSex.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSex.Location = new System.Drawing.Point(123, 177);
+            this.TxtSex.Name = "TxtSex";
+            this.TxtSex.Size = new System.Drawing.Size(28, 22);
+            this.TxtSex.TabIndex = 8;
+            this.TxtSex.Text = "M";
+            this.TxtSex.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(123, 157);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(31, 17);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "Sex";
+            // 
+            // TxtSurgeryAge
+            // 
+            this.TxtSurgeryAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSurgeryAge.Location = new System.Drawing.Point(12, 177);
+            this.TxtSurgeryAge.Name = "TxtSurgeryAge";
+            this.TxtSurgeryAge.Size = new System.Drawing.Size(30, 22);
+            this.TxtSurgeryAge.TabIndex = 6;
+            this.TxtSurgeryAge.Text = "27";
+            this.TxtSurgeryAge.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(12, 157);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(87, 17);
+            this.label2.TabIndex = 5;
+            this.label2.Text = "Surgery Age";
+            // 
+            // TxtDob
+            // 
+            this.TxtDob.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDob.Location = new System.Drawing.Point(12, 117);
+            this.TxtDob.Name = "TxtDob";
+            this.TxtDob.Size = new System.Drawing.Size(87, 22);
+            this.TxtDob.TabIndex = 4;
+            this.TxtDob.Text = "08/05/1997";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(12, 97);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(50, 17);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "D.O.B.";
+            // 
+            // TxtName
+            // 
+            this.TxtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtName.Location = new System.Drawing.Point(12, 55);
+            this.TxtName.Name = "TxtName";
+            this.TxtName.Size = new System.Drawing.Size(171, 22);
+            this.TxtName.TabIndex = 2;
+            this.TxtName.Text = "Smith, Mike";
+            // 
+            // LbMetaDataSearch
+            // 
+            this.LbMetaDataSearch.AutoSize = true;
+            this.LbMetaDataSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbMetaDataSearch.Location = new System.Drawing.Point(12, 35);
+            this.LbMetaDataSearch.Name = "LbMetaDataSearch";
+            this.LbMetaDataSearch.Size = new System.Drawing.Size(45, 17);
+            this.LbMetaDataSearch.TabIndex = 1;
+            this.LbMetaDataSearch.Text = "Name";
             // 
             // groupBox2
             // 
@@ -352,83 +352,148 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Surgery";
             // 
-            // label7
+            // LstPicInfo
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(6, 35);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(50, 17);
-            this.label7.TabIndex = 2;
-            this.label7.Text = "Doctor";
+            this.LstPicInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LstPicInfo.FormattingEnabled = true;
+            this.LstPicInfo.ItemHeight = 16;
+            this.LstPicInfo.Items.AddRange(new object[] {
+            "Best Patient",
+            "First Surgery",
+            "Weirdest Case",
+            "Youngest Male"});
+            this.LstPicInfo.Location = new System.Drawing.Point(83, 708);
+            this.LstPicInfo.Name = "LstPicInfo";
+            this.LstPicInfo.Size = new System.Drawing.Size(249, 68);
+            this.LstPicInfo.TabIndex = 21;
             // 
-            // LstDr
+            // label16
             // 
-            this.LstDr.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LstDr.FormattingEnabled = true;
-            this.LstDr.ItemHeight = 16;
-            this.LstDr.Items.AddRange(new object[] {
-            "Sasso",
-            "Smith"});
-            this.LstDr.Location = new System.Drawing.Point(83, 18);
-            this.LstDr.Name = "LstDr";
-            this.LstDr.Size = new System.Drawing.Size(249, 36);
-            this.LstDr.TabIndex = 3;
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(6, 735);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(54, 17);
+            this.label16.TabIndex = 20;
+            this.label16.Text = "Pic Info";
             // 
-            // label8
+            // LstComp
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(6, 78);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(59, 17);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "Hospital";
+            this.LstComp.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LstComp.FormattingEnabled = true;
+            this.LstComp.ItemHeight = 16;
+            this.LstComp.Items.AddRange(new object[] {
+            "Hardware--Failure",
+            "Transition Spondylolisthesis",
+            "Open Incision"});
+            this.LstComp.Location = new System.Drawing.Point(83, 621);
+            this.LstComp.Name = "LstComp";
+            this.LstComp.Size = new System.Drawing.Size(249, 68);
+            this.LstComp.TabIndex = 19;
             // 
-            // LstHospital
+            // label15
             // 
-            this.LstHospital.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LstHospital.FormattingEnabled = true;
-            this.LstHospital.ItemHeight = 16;
-            this.LstHospital.Items.AddRange(new object[] {
-            "St Vincent 86th St",
-            "Main"});
-            this.LstHospital.Location = new System.Drawing.Point(83, 69);
-            this.LstHospital.Name = "LstHospital";
-            this.LstHospital.Size = new System.Drawing.Size(249, 36);
-            this.LstHospital.TabIndex = 5;
+            this.label15.AutoSize = true;
+            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label15.Location = new System.Drawing.Point(6, 640);
+            this.label15.Name = "label15";
+            this.label15.Size = new System.Drawing.Size(44, 17);
+            this.label15.TabIndex = 18;
+            this.label15.Text = "Comp";
             // 
-            // label9
+            // LstInst
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(6, 138);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(62, 17);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "Location";
+            this.LstInst.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LstInst.FormattingEnabled = true;
+            this.LstInst.ItemHeight = 16;
+            this.LstInst.Items.AddRange(new object[] {
+            "Precision Spacer",
+            "Translaminar Facet Screws",
+            "Premier Plate"});
+            this.LstInst.Location = new System.Drawing.Point(83, 538);
+            this.LstInst.Name = "LstInst";
+            this.LstInst.Size = new System.Drawing.Size(249, 68);
+            this.LstInst.TabIndex = 17;
             // 
-            // LstLocation
+            // label14
             // 
-            this.LstLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LstLocation.FormattingEnabled = true;
-            this.LstLocation.ItemHeight = 16;
-            this.LstLocation.Items.AddRange(new object[] {
-            "Thoracic"});
-            this.LstLocation.Location = new System.Drawing.Point(83, 117);
-            this.LstLocation.Name = "LstLocation";
-            this.LstLocation.Size = new System.Drawing.Size(249, 68);
-            this.LstLocation.TabIndex = 7;
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(6, 563);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(30, 17);
+            this.label14.TabIndex = 16;
+            this.label14.Text = "Inst";
             // 
-            // label10
+            // LstSurgery
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(6, 222);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(42, 17);
-            this.label10.TabIndex = 8;
-            this.label10.Text = "Level";
+            this.LstSurgery.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LstSurgery.FormattingEnabled = true;
+            this.LstSurgery.ItemHeight = 16;
+            this.LstSurgery.Items.AddRange(new object[] {
+            "Fusion",
+            "Fusion--PTF",
+            "Fusion--PLF"});
+            this.LstSurgery.Location = new System.Drawing.Point(83, 455);
+            this.LstSurgery.Name = "LstSurgery";
+            this.LstSurgery.Size = new System.Drawing.Size(249, 68);
+            this.LstSurgery.TabIndex = 15;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(6, 476);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(58, 17);
+            this.label13.TabIndex = 14;
+            this.label13.Text = "Surgery";
+            // 
+            // LstDx
+            // 
+            this.LstDx.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LstDx.FormattingEnabled = true;
+            this.LstDx.ItemHeight = 16;
+            this.LstDx.Items.AddRange(new object[] {
+            "Instability"});
+            this.LstDx.Location = new System.Drawing.Point(83, 371);
+            this.LstDx.Name = "LstDx";
+            this.LstDx.Size = new System.Drawing.Size(249, 68);
+            this.LstDx.TabIndex = 13;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.Location = new System.Drawing.Point(6, 398);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(24, 17);
+            this.label12.TabIndex = 12;
+            this.label12.Text = "Dx";
+            // 
+            // LstCpt
+            // 
+            this.LstCpt.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LstCpt.FormattingEnabled = true;
+            this.LstCpt.ItemHeight = 16;
+            this.LstCpt.Items.AddRange(new object[] {
+            "22610",
+            "22614",
+            "22842"});
+            this.LstCpt.Location = new System.Drawing.Point(83, 288);
+            this.LstCpt.Name = "LstCpt";
+            this.LstCpt.Size = new System.Drawing.Size(249, 68);
+            this.LstCpt.TabIndex = 11;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label11.Location = new System.Drawing.Point(6, 308);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(35, 17);
+            this.label11.TabIndex = 10;
+            this.label11.Text = "CPT";
             // 
             // LstLevel
             // 
@@ -445,148 +510,83 @@
             this.LstLevel.Size = new System.Drawing.Size(249, 68);
             this.LstLevel.TabIndex = 9;
             // 
-            // label11
+            // label10
             // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(6, 308);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(35, 17);
-            this.label11.TabIndex = 10;
-            this.label11.Text = "CPT";
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(6, 222);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(42, 17);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "Level";
             // 
-            // LstCpt
+            // LstLocation
             // 
-            this.LstCpt.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LstCpt.FormattingEnabled = true;
-            this.LstCpt.ItemHeight = 16;
-            this.LstCpt.Items.AddRange(new object[] {
-            "22610",
-            "22614",
-            "22842"});
-            this.LstCpt.Location = new System.Drawing.Point(83, 288);
-            this.LstCpt.Name = "LstCpt";
-            this.LstCpt.Size = new System.Drawing.Size(249, 68);
-            this.LstCpt.TabIndex = 11;
+            this.LstLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LstLocation.FormattingEnabled = true;
+            this.LstLocation.ItemHeight = 16;
+            this.LstLocation.Items.AddRange(new object[] {
+            "Thoracic"});
+            this.LstLocation.Location = new System.Drawing.Point(83, 117);
+            this.LstLocation.Name = "LstLocation";
+            this.LstLocation.Size = new System.Drawing.Size(249, 68);
+            this.LstLocation.TabIndex = 7;
             // 
-            // label12
+            // label9
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(6, 398);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(24, 17);
-            this.label12.TabIndex = 12;
-            this.label12.Text = "Dx";
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(6, 138);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(62, 17);
+            this.label9.TabIndex = 6;
+            this.label9.Text = "Location";
             // 
-            // LstDx
+            // LstHospital
             // 
-            this.LstDx.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LstDx.FormattingEnabled = true;
-            this.LstDx.ItemHeight = 16;
-            this.LstDx.Items.AddRange(new object[] {
-            "Instability"});
-            this.LstDx.Location = new System.Drawing.Point(83, 371);
-            this.LstDx.Name = "LstDx";
-            this.LstDx.Size = new System.Drawing.Size(249, 68);
-            this.LstDx.TabIndex = 13;
+            this.LstHospital.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LstHospital.FormattingEnabled = true;
+            this.LstHospital.ItemHeight = 16;
+            this.LstHospital.Items.AddRange(new object[] {
+            "St Vincent 86th St",
+            "Main"});
+            this.LstHospital.Location = new System.Drawing.Point(83, 69);
+            this.LstHospital.Name = "LstHospital";
+            this.LstHospital.Size = new System.Drawing.Size(249, 36);
+            this.LstHospital.TabIndex = 5;
             // 
-            // label13
+            // label8
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(6, 476);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(58, 17);
-            this.label13.TabIndex = 14;
-            this.label13.Text = "Surgery";
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(6, 78);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(59, 17);
+            this.label8.TabIndex = 4;
+            this.label8.Text = "Hospital";
             // 
-            // LstSurgery
+            // LstDr
             // 
-            this.LstSurgery.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LstSurgery.FormattingEnabled = true;
-            this.LstSurgery.ItemHeight = 16;
-            this.LstSurgery.Items.AddRange(new object[] {
-            "Fusion",
-            "Fusion--PTF",
-            "Fusion--PLF"});
-            this.LstSurgery.Location = new System.Drawing.Point(83, 455);
-            this.LstSurgery.Name = "LstSurgery";
-            this.LstSurgery.Size = new System.Drawing.Size(249, 68);
-            this.LstSurgery.TabIndex = 15;
+            this.LstDr.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LstDr.FormattingEnabled = true;
+            this.LstDr.ItemHeight = 16;
+            this.LstDr.Items.AddRange(new object[] {
+            "Sasso",
+            "Smith"});
+            this.LstDr.Location = new System.Drawing.Point(83, 18);
+            this.LstDr.Name = "LstDr";
+            this.LstDr.Size = new System.Drawing.Size(249, 36);
+            this.LstDr.TabIndex = 3;
             // 
-            // label14
+            // label7
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.Location = new System.Drawing.Point(6, 563);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(30, 17);
-            this.label14.TabIndex = 16;
-            this.label14.Text = "Inst";
-            // 
-            // LstInst
-            // 
-            this.LstInst.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LstInst.FormattingEnabled = true;
-            this.LstInst.ItemHeight = 16;
-            this.LstInst.Items.AddRange(new object[] {
-            "Precision Spacer",
-            "Translaminar Facet Screws",
-            "Premier Plate"});
-            this.LstInst.Location = new System.Drawing.Point(83, 538);
-            this.LstInst.Name = "LstInst";
-            this.LstInst.Size = new System.Drawing.Size(249, 68);
-            this.LstInst.TabIndex = 17;
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.Location = new System.Drawing.Point(6, 640);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(44, 17);
-            this.label15.TabIndex = 18;
-            this.label15.Text = "Comp";
-            // 
-            // LstComp
-            // 
-            this.LstComp.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LstComp.FormattingEnabled = true;
-            this.LstComp.ItemHeight = 16;
-            this.LstComp.Items.AddRange(new object[] {
-            "Hardware--Failure",
-            "Transition Spondylolisthesis",
-            "Open Incision"});
-            this.LstComp.Location = new System.Drawing.Point(83, 621);
-            this.LstComp.Name = "LstComp";
-            this.LstComp.Size = new System.Drawing.Size(249, 68);
-            this.LstComp.TabIndex = 19;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(6, 735);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(54, 17);
-            this.label16.TabIndex = 20;
-            this.label16.Text = "Pic Info";
-            // 
-            // LstPicInfo
-            // 
-            this.LstPicInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LstPicInfo.FormattingEnabled = true;
-            this.LstPicInfo.ItemHeight = 16;
-            this.LstPicInfo.Items.AddRange(new object[] {
-            "Best Patient",
-            "First Surgery",
-            "Weirdest Case",
-            "Youngest Male"});
-            this.LstPicInfo.Location = new System.Drawing.Point(83, 708);
-            this.LstPicInfo.Name = "LstPicInfo";
-            this.LstPicInfo.Size = new System.Drawing.Size(249, 68);
-            this.LstPicInfo.TabIndex = 21;
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(6, 35);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(50, 17);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "Doctor";
             // 
             // GrpImages
             // 
@@ -685,14 +685,21 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1368, 840);
+            this.ControlBox = false;
             this.Controls.Add(this.GrpImages);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.MnuMenu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmImageSearchResults";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Tag = "FrmImageSearchResults";
             this.Text = "Images - Search Results";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FrmImageSearchResults_Load);
             this.MnuMenu.ResumeLayout(false);
             this.MnuMenu.PerformLayout();
             this.groupBox1.ResumeLayout(false);

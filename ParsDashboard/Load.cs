@@ -27,7 +27,7 @@ namespace ParsDashboard
     {
         public void ShowForm( Form frm )
         {
-            frm.Show();
+            //frm.Show();
             frm.BringToFront();
         }
 

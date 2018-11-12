@@ -30,7 +30,6 @@
         {
             this.MnuMenu = new System.Windows.Forms.MenuStrip();
             this.TSMnuDisplay = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuGoToPatient = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuClearAll = new System.Windows.Forms.ToolStripMenuItem();
             this.GrpImage = new System.Windows.Forms.GroupBox();
             this.CboEndYear = new System.Windows.Forms.ComboBox();
@@ -58,7 +57,6 @@
             this.MnuMenu.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMnuDisplay,
-            this.TSMnuGoToPatient,
             this.TSMnuClearAll});
             this.MnuMenu.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.MnuMenu.Location = new System.Drawing.Point(0, 0);
@@ -75,12 +73,6 @@
             this.TSMnuDisplay.Tag = "FrmDashboard";
             this.TSMnuDisplay.Text = "Display";
             this.TSMnuDisplay.Click += new System.EventHandler(this.TSMnuGotoPatient_Click);
-            // 
-            // TSMnuGoToPatient
-            // 
-            this.TSMnuGoToPatient.Name = "TSMnuGoToPatient";
-            this.TSMnuGoToPatient.Size = new System.Drawing.Size(109, 24);
-            this.TSMnuGoToPatient.Text = "Go To Patient";
             // 
             // TSMnuClearAll
             // 
@@ -102,7 +94,7 @@
             this.GrpImage.Size = new System.Drawing.Size(242, 176);
             this.GrpImage.TabIndex = 4;
             this.GrpImage.TabStop = false;
-            this.GrpImage.Text = "Date Picture Entered";
+            this.GrpImage.Text = "Surgery Date / Image Entered";
             // 
             // CboEndYear
             // 
@@ -332,12 +324,19 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1033, 661);
+            this.ControlBox = false;
             this.Controls.Add(this.GrpImages);
             this.Controls.Add(this.GrpImage);
             this.Controls.Add(this.MnuMenu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmImages";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Tag = "FrmImages";
             this.Text = "Images";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FrmImages_Load);
             this.MnuMenu.ResumeLayout(false);
             this.MnuMenu.PerformLayout();
             this.GrpImage.ResumeLayout(false);
@@ -353,7 +352,6 @@
 
         private System.Windows.Forms.MenuStrip MnuMenu;
         private System.Windows.Forms.ToolStripMenuItem TSMnuDisplay;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuGoToPatient;
         private System.Windows.Forms.ToolStripMenuItem TSMnuClearAll;
         private System.Windows.Forms.GroupBox GrpImage;
         private System.Windows.Forms.Label LblDatePicStart;

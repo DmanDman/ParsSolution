@@ -13,6 +13,8 @@ namespace ParsDashboard
 {
     public partial class FrmMain : Form
     {
+        //  define forms
+
         FormNav fNav = new FormNav();
 
         FrmDashboard fDashBoard = new FrmDashboard();
@@ -23,31 +25,22 @@ namespace ParsDashboard
 
         FrmPatient fPatient = new FrmPatient();
 
+
+        //  define helper class
+        Helper_MouseMove HelpMouseMove = new Helper_MouseMove();
+
+
         public FrmMain()
         {
             InitializeComponent();
             StopPanel_Flickering();
-
-            fDashBoard.MdiParent = this;
-            fDashBoard.Show();
-
-            fPatient.MdiParent = this;
-            fPatient.Show();
-           
-            fImage.MdiParent = this;
-            fImage.Show();
-
-            fImageSearch.MdiParent = this;
-            fImageSearch.Show();
-
-            fImageSearchResuts.MdiParent = this;
-            fImageSearchResuts.Show();
-        }
-
-        private void FrmDashboard_Load(object sender, EventArgs e)
-        {
-            SetPanel_Height();
-        }
+          
+            Load_All_Forms( fPatient );
+            Load_All_Forms( fImage );
+            Load_All_Forms( fImageSearch );
+            Load_All_Forms( fImageSearchResuts );
+            Load_All_Forms( fDashBoard );          
+        }     
 
         private void SetPanel_Height()
         {
@@ -119,8 +112,16 @@ namespace ParsDashboard
                             }
                             else
                             {
-                                p.Height = p.Controls.Count * 28;
-                                p.Tag = "Expanded";
+                                if ( p.Controls.Count == 3 )
+                                {
+                                    p.Height = p.Controls.Count * 28;
+                                    p.Tag = "Expanded";
+                                }
+                                else
+                                {
+                                    p.Height = ( p.Controls.Count - 1 ) * 28;
+                                    p.Tag = "Expanded";
+                                }                                
                             }
                         }
                     }
@@ -182,19 +183,13 @@ namespace ParsDashboard
         }
 
         private void LblImagesAdd_MouseEnter(object sender, EventArgs e)
-        {            
-            if ( LblImagesAdd.Font.Bold != true )           
-            {
-                LblImagesAdd.Font = new Font( LblImagesAdd.Font.Name, LblImagesAdd.Font.SizeInPoints, FontStyle.Underline );
-            }
+        {
+            HelpMouseMove.MouseEnter( LblImagesAdd );
         }
 
         private void LblImagesAdd_MouseLeave(object sender, EventArgs e)
         {
-            if (LblImagesAdd.Font.Bold != true)
-            {
-                LblImagesAdd.Font = new Font( LblImagesAdd.Font.Name, LblImagesAdd.Font.SizeInPoints, FontStyle.Regular );
-            }
+            HelpMouseMove.MouseLeave( LblImagesAdd );
         }
 
         private void LblImagesAdd_Click(object sender, EventArgs e)
@@ -219,26 +214,17 @@ namespace ParsDashboard
 
         private void LblDashboard_MouseLeave(object sender, EventArgs e)
         {
-            if ( LblDashboard.Font.Bold != true )
-            { 
-                LblDashboard.Font = new Font( LblDashboard.Font.Name, LblDashboard.Font.SizeInPoints, FontStyle.Regular );
-            }
+            HelpMouseMove.MouseLeave( LblDashboard );            
         }   
 
         private void LblImagesSearch_MouseEnter(object sender, EventArgs e)
         {
-            if ( LblImagesSearch.Font.Bold != true )
-            {            
-                LblImagesSearch.Font = new Font( LblImagesSearch.Font.Name, LblImagesSearch.Font.SizeInPoints, FontStyle.Underline );
-            }
+            HelpMouseMove.MouseEnter( LblImagesSearch );
         }
 
         private void LblImagesSearch_MouseLeave(object sender, EventArgs e)
         {
-            if ( LblImagesSearch.Font.Bold != true )
-            { 
-                LblImagesSearch.Font = new Font( LblImagesSearch.Font.Name, LblImagesSearch.Font.SizeInPoints, FontStyle.Regular );
-            }
+            HelpMouseMove.MouseLeave( LblImagesSearch );
         }
 
         private void LlbImages_MouseEnter(object sender, EventArgs e)
@@ -257,11 +243,19 @@ namespace ParsDashboard
             Label lblClick = lbl;
 
             LblDashboard.Font = new Font( LblDashboard.Font.Name, LblDashboard.Font.SizeInPoints, FontStyle.Regular );
+
             LblImages.Font = new Font( LblImages.Font.Name, LblImages.Font.SizeInPoints, FontStyle.Regular );
             LblImagesAdd.Font = new Font( LblImagesAdd.Font.Name, LblImagesAdd.Font.SizeInPoints, FontStyle.Regular );
             LblImagesSearch.Font = new Font( LblImagesSearch.Font.Name, LblImagesSearch.Font.SizeInPoints, FontStyle.Regular );
-            LblPatient.Font = new Font( LblPatient.Font.Name, LblPatient.Font.SizeInPoints, FontStyle.Regular );
+            LblImagesFilter.Font = new Font( LblImagesFilter.Font.Name, LblImagesFilter.Font.SizeInPoints, FontStyle.Regular );
+            LblImagesSearchResults.Font = new Font( LblImagesSearchResults.Font.Name, LblImagesSearchResults.Font.SizeInPoints, FontStyle.Regular );
+            LblImagesSearchToPatient.Font = new Font( LblImagesSearchToPatient.Font.Name, LblImagesSearchToPatient.Font.SizeInPoints, FontStyle.Regular );
 
+            LblPatient.Font = new Font( LblPatient.Font.Name, LblPatient.Font.SizeInPoints, FontStyle.Regular );
+            LblPatientAdd.Font = new Font( LblPatientAdd.Font.Name, LblPatientAdd.Font.SizeInPoints, FontStyle.Regular );
+            LlbPatientSearch.Font = new Font( LlbPatientSearch.Font.Name, LlbPatientSearch.Font.SizeInPoints, FontStyle.Regular ) ;
+            LblPatientFilter.Font = new Font(LblPatient.Font.Name, LblPatient.Font.SizeInPoints, FontStyle.Regular );
+             
             if ( lblClick.Font.Bold != true )
             {
                 lbl.Font = new Font( lbl.Font.Name, lbl.Font.SizeInPoints, FontStyle.Bold );
@@ -291,26 +285,17 @@ namespace ParsDashboard
 
         private void LblImages_MouseLeave(object sender, EventArgs e)
         {
-            if ( LblImages.Font.Bold != true )
-            {
-                LblImages.Font = new Font( LblImages.Font.Name, LblImages.Font.SizeInPoints, FontStyle.Regular );
-            }
+            HelpMouseMove.MouseLeave( LblImages );            
         }
 
         private void LblPatient_MouseEnter(object sender, EventArgs e)
         {
-            if ( LblPatient.Font.Bold != true )
-            {
-                LblPatient.Font = new Font( LblPatient.Font.Name, LblPatient.Font.SizeInPoints, FontStyle.Underline );
-            }
+            HelpMouseMove.MouseEnter( LblPatient );            
         }
 
         private void LblPatient_MouseLeave(object sender, EventArgs e)
         {
-            if ( LblPatient.Font.Bold != true )
-            {
-                LblPatient.Font = new Font( LblPatient.Font.Name, LblPatient.Font.SizeInPoints, FontStyle.Regular );
-            }
+            HelpMouseMove.MouseLeave( LblPatient );            
         }
 
         private void LblPatientAdd_Click(object sender, EventArgs e)
@@ -320,6 +305,175 @@ namespace ParsDashboard
             //fNav.ShowForm( fImage );
 
             //NavSetStyleClick( LblPatientAdd );
+        }
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+            SetPanel_Height();
+
+            // Enable double duffering to stop flickering.
+            this.SetStyle(ControlStyles.DoubleBuffer, true);
+            this.SetStyle(ControlStyles.AllPaintingInWmPaint, true);
+            this.SetStyle(ControlStyles.UserPaint, true);
+            this.SetStyle(ControlStyles.SupportsTransparentBackColor, false);
+            this.SetStyle(ControlStyles.Opaque, false);
+            this.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
+            this.SetStyle(ControlStyles.ResizeRedraw, true);
+        }
+
+        private void Load_All_Forms( Form frm )
+        {
+            frm.MdiParent = this;
+            frm.StartPosition = FormStartPosition.CenterParent;
+            frm.WindowState = FormWindowState.Minimized;
+            frm.Dock = DockStyle.Fill;
+            frm.Show();
+            frm.WindowState = FormWindowState.Maximized;
+        }
+
+        private void LblImagesFilter_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblImagesFilter );
+        }
+
+        private void LblImagesSearchResults_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblImagesSearchResults );
+        }
+
+        private void LblImagesSearchToPatient_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblImagesSearchToPatient );
+        }
+
+        private void LblPatientAdd_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblPatientAdd );
+        }
+
+        private void LlbPatientSearch_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LlbPatientSearch );
+        }
+
+        private void LblPatientFilter_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblPatientFilter );
+        }
+
+        private void LblPatientSearchResults_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblPatientSearchResults );
+        }
+
+        private void LblPatientSearchToImage_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblPatientSearchToImage );
+        }
+
+        private void LblSurgery_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblSurgery );
+        }
+
+        private void LblSurgeryAdd_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblSurgeryAdd );
+        }
+
+        private void LblSurgerySearch_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblSurgerySearch );
+        }
+
+        private void LblImagesFilter_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblImagesFilter );
+        }
+
+        private void LblImagesSearchResults_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblImagesSearchResults );
+        }
+
+        private void LblImagesSearchToPatient_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblImagesSearchToPatient );
+        }
+
+        private void LblPatientAdd_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblPatientAdd );
+        }
+
+        private void LlbPatientSearch_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LlbPatientSearch );
+        }
+
+        private void LblPatientFilter_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblPatientFilter );
+        }
+
+        private void LblPatientSearchResults_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblPatientSearchResults );
+        }
+
+        private void LblPatientSearchToImage_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblPatientSearchToImage );
+        }
+
+        private void LblSurgery_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblSurgery );
+        }
+
+        private void LblSurgeryAdd_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblSurgeryAdd );
+        }
+
+        private void LblSurgerySearch_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblSurgerySearch );
+        }
+
+        private void LblImagesFilter_Click(object sender, EventArgs e)
+        {
+            //fNav.ShowForm(fImageSearch);
+
+            NavSetStyleClick( LblImagesFilter );
+        }
+
+        private void LblImagesSearchResults_Click(object sender, EventArgs e)
+        {
+            //fNav.ShowForm( X );
+
+            NavSetStyleClick( LblImagesSearchResults );
+        }
+
+        private void LblImagesSearchToPatient_Click(object sender, EventArgs e)
+        {
+            //fNav.ShowForm( X );
+
+            NavSetStyleClick( LblImagesSearchToPatient );
+        }
+
+        private void LlbPatientSearch_Click(object sender, EventArgs e)
+        {
+            //fNav.ShowForm( X );
+
+            NavSetStyleClick( LlbPatientSearch );
+        }
+
+        private void LblPatientFilter_Click(object sender, EventArgs e)
+        {
+            //fNav.ShowForm( X );
+
+            NavSetStyleClick( LblPatientFilter );
         }
     }
 }

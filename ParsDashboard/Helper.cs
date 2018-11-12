@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.ComponentModel;
+using System.Drawing;
 using System.Windows.Forms;
 using System.Reflection;
 
@@ -84,7 +85,25 @@ namespace ParsDashboard
                 control.GetType().GetProperty("DoubleBuffered", BindingFlags.Instance | BindingFlags.NonPublic);
 
             doubleBufferPropertyInfo.SetValue(control, enable, null);
+        }            
+    }
+
+    public class Helper_MouseMove
+    {
+        public void MouseEnter( Label  lbl )
+        {
+            if ( lbl.Font.Bold != true )
+            {
+                lbl.Font = new Font( lbl.Font.Name, lbl.Font.SizeInPoints, FontStyle.Underline );
+            }
         }
-        
+
+        public void MouseLeave( Label lbl )
+        {
+            if ( lbl.Font.Bold != true )
+            {
+                lbl.Font = new Font( lbl.Font.Name, lbl.Font.SizeInPoints, FontStyle.Regular );
+            }
+        }        
     }
 }

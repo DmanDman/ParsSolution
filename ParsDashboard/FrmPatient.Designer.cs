@@ -29,10 +29,8 @@
         private void InitializeComponent()
         {
             this.MnuMenu = new System.Windows.Forms.MenuStrip();
-            this.TSMnuDash = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuOpenCanvas = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuAddToCanvas = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuHelp = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDisplay = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuClear = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuMenu.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -40,51 +38,47 @@
             // 
             this.MnuMenu.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSMnuDash,
-            this.TSMnuOpenCanvas,
-            this.TSMnuAddToCanvas,
-            this.TSMnuHelp});
+            this.TSMnuDisplay,
+            this.TSMnuClear});
             this.MnuMenu.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.MnuMenu.Location = new System.Drawing.Point(0, 0);
             this.MnuMenu.Name = "MnuMenu";
-            this.MnuMenu.Size = new System.Drawing.Size(800, 25);
+            this.MnuMenu.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuMenu.Size = new System.Drawing.Size(1067, 28);
             this.MnuMenu.TabIndex = 3;
             this.MnuMenu.Text = "menuStrip1";
             // 
-            // TSMnuDash
+            // TSMnuDisplay
             // 
-            this.TSMnuDash.Name = "TSMnuDash";
-            this.TSMnuDash.Size = new System.Drawing.Size(82, 21);
-            this.TSMnuDash.Text = "Goto Dash";
-            this.TSMnuDash.Click += new System.EventHandler(this.TSMnuDash_Click);
+            this.TSMnuDisplay.Name = "TSMnuDisplay";
+            this.TSMnuDisplay.Size = new System.Drawing.Size(70, 24);
+            this.TSMnuDisplay.Text = "Display";
+            this.TSMnuDisplay.Click += new System.EventHandler(this.TSMnuDash_Click);
             // 
-            // TSMnuOpenCanvas
+            // TSMnuClear
             // 
-            this.TSMnuOpenCanvas.Name = "TSMnuOpenCanvas";
-            this.TSMnuOpenCanvas.Size = new System.Drawing.Size(97, 21);
-            this.TSMnuOpenCanvas.Text = "Open Canvas";
-            // 
-            // TSMnuAddToCanvas
-            // 
-            this.TSMnuAddToCanvas.Name = "TSMnuAddToCanvas";
-            this.TSMnuAddToCanvas.Size = new System.Drawing.Size(105, 21);
-            this.TSMnuAddToCanvas.Text = "Add to Canvas";
-            // 
-            // TSMnuHelp
-            // 
-            this.TSMnuHelp.Name = "TSMnuHelp";
-            this.TSMnuHelp.Size = new System.Drawing.Size(47, 21);
-            this.TSMnuHelp.Text = "Help";
+            this.TSMnuClear.Name = "TSMnuClear";
+            this.TSMnuClear.Size = new System.Drawing.Size(55, 24);
+            this.TSMnuClear.Text = "Clear";
             // 
             // FrmPatient
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.ControlBox = false;
             this.Controls.Add(this.MnuMenu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmPatient";
+            this.ShowInTaskbar = false;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Tag = "FrmPatient";
             this.Text = "Patient";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.FrmPatient_Load);
             this.MnuMenu.ResumeLayout(false);
             this.MnuMenu.PerformLayout();
             this.ResumeLayout(false);
@@ -95,9 +89,7 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip MnuMenu;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuDash;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuOpenCanvas;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuAddToCanvas;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuHelp;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDisplay;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuClear;
     }
 }

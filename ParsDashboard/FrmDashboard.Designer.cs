@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.MnuMenu = new System.Windows.Forms.MenuStrip();
-            this.TSMnuGotoPatient = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuOpenCanvas = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuAddToCanvas = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuHelp = new System.Windows.Forms.ToolStripMenuItem();
@@ -100,7 +99,6 @@
             // 
             this.MnuMenu.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSMnuGotoPatient,
             this.TSMnuOpenCanvas,
             this.TSMnuAddToCanvas,
             this.TSMnuHelp});
@@ -108,17 +106,9 @@
             this.MnuMenu.Location = new System.Drawing.Point(0, 0);
             this.MnuMenu.Name = "MnuMenu";
             this.MnuMenu.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.MnuMenu.Size = new System.Drawing.Size(1307, 28);
+            this.MnuMenu.Size = new System.Drawing.Size(1249, 28);
             this.MnuMenu.TabIndex = 0;
             this.MnuMenu.Text = "menuStrip1";
-            // 
-            // TSMnuGotoPatient
-            // 
-            this.TSMnuGotoPatient.Name = "TSMnuGotoPatient";
-            this.TSMnuGotoPatient.Size = new System.Drawing.Size(103, 24);
-            this.TSMnuGotoPatient.Tag = "FrmDashboard";
-            this.TSMnuGotoPatient.Text = "Goto Patient";
-            this.TSMnuGotoPatient.Click += new System.EventHandler(this.TSMnuGotoPatient_Click);
             // 
             // TSMnuOpenCanvas
             // 
@@ -707,14 +697,18 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1307, 660);
+            this.ClientSize = new System.Drawing.Size(1249, 792);
+            this.ControlBox = false;
             this.Controls.Add(this.GrpImages);
             this.Controls.Add(this.GrpHighest);
             this.Controls.Add(this.GrpCanvas);
             this.Controls.Add(this.GrpRecent);
             this.Controls.Add(this.GrpInfo);
             this.Controls.Add(this.MnuMenu);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "FrmDashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Tag = "FrmDashboard";
@@ -741,7 +735,6 @@
         #endregion
 
         private System.Windows.Forms.MenuStrip MnuMenu;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuGotoPatient;
         private System.Windows.Forms.ToolStripMenuItem TSMnuOpenCanvas;
         private System.Windows.Forms.ToolStripMenuItem TSMnuAddToCanvas;
         private System.Windows.Forms.ToolStripMenuItem TSMnuHelp;
