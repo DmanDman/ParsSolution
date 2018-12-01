@@ -85,7 +85,7 @@ namespace ParsDashboard
                 control.GetType().GetProperty("DoubleBuffered", BindingFlags.Instance | BindingFlags.NonPublic);
 
             doubleBufferPropertyInfo.SetValue(control, enable, null);
-        }            
+        }                   
     }
 
     public class Helper_MouseMove

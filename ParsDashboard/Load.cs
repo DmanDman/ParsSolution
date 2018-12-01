@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Drawing;
 using System.Windows.Forms;
 
 namespace ParsDashboard
@@ -11,6 +12,7 @@ namespace ParsDashboard
     {
         public Boolean isLoaded;
         public Form frmDash;
+        public Form frmMain;
         
         public LoadForm( Boolean isLoaded )
         {
@@ -25,9 +27,10 @@ namespace ParsDashboard
 
     public class FormNav
     {
+        public Form FrmMain;
+
         public void ShowForm( Form frm )
-        {
-            //frm.Show();
+        {            
             frm.BringToFront();
         }
 
@@ -39,11 +42,6 @@ namespace ParsDashboard
                 {
                     frm[i].Show();
                     frm[i].BringToFront();
-
-                    //if ( frm[i].Tag.ToString() == "FrmImageSearchResults" )
-                    //{
-                    //    FrmMain.Controls["LblImagesSearchResults"].Visible = true;
-                    //}
 
                     break;
                 }

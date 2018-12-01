@@ -28,10 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.MnuMenu = new System.Windows.Forms.MenuStrip();
-            this.TSMnuOpenCanvas = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuAddToCanvas = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.GrpInfo = new System.Windows.Forms.GroupBox();
             this.TxtInfoPatients = new System.Windows.Forms.TextBox();
             this.TxtInfoImages = new System.Windows.Forms.TextBox();
@@ -87,46 +83,12 @@
             this.TxtImagesCount = new System.Windows.Forms.TextBox();
             this.LblGrpImageDesc = new System.Windows.Forms.Label();
             this.LstImages = new System.Windows.Forms.ListView();
-            this.MnuMenu.SuspendLayout();
             this.GrpInfo.SuspendLayout();
             this.GrpRecent.SuspendLayout();
             this.GrpCanvas.SuspendLayout();
             this.GrpHighest.SuspendLayout();
             this.GrpImages.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // MnuMenu
-            // 
-            this.MnuMenu.ImageScalingSize = new System.Drawing.Size(17, 17);
-            this.MnuMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSMnuOpenCanvas,
-            this.TSMnuAddToCanvas,
-            this.TSMnuHelp});
-            this.MnuMenu.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuMenu.Location = new System.Drawing.Point(0, 0);
-            this.MnuMenu.Name = "MnuMenu";
-            this.MnuMenu.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.MnuMenu.Size = new System.Drawing.Size(1249, 28);
-            this.MnuMenu.TabIndex = 0;
-            this.MnuMenu.Text = "menuStrip1";
-            // 
-            // TSMnuOpenCanvas
-            // 
-            this.TSMnuOpenCanvas.Name = "TSMnuOpenCanvas";
-            this.TSMnuOpenCanvas.Size = new System.Drawing.Size(107, 24);
-            this.TSMnuOpenCanvas.Text = "Open Canvas";
-            // 
-            // TSMnuAddToCanvas
-            // 
-            this.TSMnuAddToCanvas.Name = "TSMnuAddToCanvas";
-            this.TSMnuAddToCanvas.Size = new System.Drawing.Size(117, 24);
-            this.TSMnuAddToCanvas.Text = "Add to Canvas";
-            // 
-            // TSMnuHelp
-            // 
-            this.TSMnuHelp.Name = "TSMnuHelp";
-            this.TSMnuHelp.Size = new System.Drawing.Size(53, 24);
-            this.TSMnuHelp.Text = "Help";
             // 
             // GrpInfo
             // 
@@ -704,7 +666,6 @@
             this.Controls.Add(this.GrpCanvas);
             this.Controls.Add(this.GrpRecent);
             this.Controls.Add(this.GrpInfo);
-            this.Controls.Add(this.MnuMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
@@ -715,8 +676,6 @@
             this.Text = "Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmDashboard_Load);
-            this.MnuMenu.ResumeLayout(false);
-            this.MnuMenu.PerformLayout();
             this.GrpInfo.ResumeLayout(false);
             this.GrpInfo.PerformLayout();
             this.GrpRecent.ResumeLayout(false);
@@ -728,16 +687,10 @@
             this.GrpImages.ResumeLayout(false);
             this.GrpImages.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip MnuMenu;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuOpenCanvas;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuAddToCanvas;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuHelp;
         private System.Windows.Forms.GroupBox GrpInfo;
         private System.Windows.Forms.Label LblInfoSurgeries;
         private System.Windows.Forms.TextBox TxtInfoDr;

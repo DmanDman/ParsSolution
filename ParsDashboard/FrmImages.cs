@@ -17,11 +17,6 @@ namespace ParsDashboard
             InitializeComponent();
         }
 
-        private void TSMnuGotoPatient_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void FrmImages_Load(object sender, EventArgs e)
         {
             // Enable double duffering to stop flickering.

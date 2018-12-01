@@ -13,8 +13,9 @@ namespace ParsDashboard
 {
     public partial class FrmMain : Form
     {
-        //  define forms
+        #region Define Forms
 
+        //  define forms
         FormNav fNav = new FormNav();
 
         FrmDashboard fDashBoard = new FrmDashboard();
@@ -24,162 +25,82 @@ namespace ParsDashboard
         FrmImageSearchResults fImageSearchResuts = new FrmImageSearchResults();
 
         FrmPatient fPatient = new FrmPatient();
+        #endregion
 
-
+        #region Define Helper Classes
         //  define helper class
         Helper_MouseMove HelpMouseMove = new Helper_MouseMove();
+
+        Helper helper = new Helper();
+
+        SubRoutine SubRtn = new SubRoutine();
+        #endregion
 
 
         public FrmMain()
         {
             InitializeComponent();
             StopPanel_Flickering();
-          
-            Load_All_Forms( fPatient );
-            Load_All_Forms( fImage );
-            Load_All_Forms( fImageSearch );
-            Load_All_Forms( fImageSearchResuts );
-            Load_All_Forms( fDashBoard );          
-        }     
+                      
+            SubRtn.Load_All_Forms( fPatient, this );           
+            SubRtn.Load_All_Forms( fImage, this );
+            SubRtn.Load_All_Forms( fImageSearch, this );
+            SubRtn.Load_All_Forms( fImageSearchResuts, this );
+            SubRtn.Load_All_Forms( fDashBoard, this );
 
-        private void SetPanel_Height()
-        {
-            PnlDashboard.Height = 25;
-            PnlImages.Height = 25;
-            PnlPatient.Height = 25;
-            PnlSurgery.Height = 25;
-            PnlRpt.Height = 25;
-            PnlData.Height = 25;
-            PnlMetaData.Height = 25;
-            PnlEmailPic.Height = 25;
-            PnlSecurity.Height = 25;
-
-            //Label1Dash.Image = Properties.Resources.Expander_Collapsed16; // use your down arrow image
-            //Label2.Image = Properties.Resources.Expander_Collapsed16; // use your down arrow image
-            //Label3.Image = Properties.Resources.Expander_Collapsed16; // use your down arrow image
+            LblDashboard.Click += new EventHandler( LblDashboard_Click );
         }
-
-        private void StopPanel_Flickering()
-        {
-            // Stop flickering for panels
-
-            StopPanel_FlickeringPanel(PnlDashboard);
-            StopPanel_FlickeringPanel(PnlImages);
-            StopPanel_FlickeringPanel(PnlPatient);
-            StopPanel_FlickeringPanel(PnlSurgery);
-            StopPanel_FlickeringPanel(PnlRpt);
-            StopPanel_FlickeringPanel(PnlData);
-            StopPanel_FlickeringPanel(PnlMetaData);
-            StopPanel_FlickeringPanel(PnlEmailPic);
-            StopPanel_FlickeringPanel(PnlSecurity);
-            StopPanel_FlickeringPanel(tableLayoutPanel1);
-        }
-
-        private void StopPanel_FlickeringPanel(Panel pnl)
-        {
-            typeof(Panel).InvokeMember("DoubleBuffered",
-            BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic,
-            null, pnl, new object[] { true });
-        }
-
-        public void DashboardAccordian(Object sender, EventArgs e)
-        {
-            // find out which label was clicked
-            Label lbl = (Label)sender;
-
-            // find the panel containing the label
-            Panel pnl = lbl.Parent as Panel;
-
-            // ### this assumes that no other controls are present in the main table ###
-            // the code loops through the panels in the table and expands/collapses
-            // each panel according to whether it contains the clicked label. The label
-            // images are also swapped depending on the height of the panel.
-            foreach ( Panel p in tableLayoutPanel1.Controls )
-            {
-                Label l = (Label)p.Controls[0];
-
-                if ( p.Equals( pnl ))
-                {
-                    if ( p.Tag != null )
-                    {
-                        if (p.Tag.ToString() != "Expanded")
-                        {
-                            // expand or collapse the panel
-                            if (p.Height != 25)
-                            {
-                                p.Height = 25;
-                                p.Tag = "Collapsed";
-                            }
-                            else
-                            {
-                                if ( p.Controls.Count == 3 )
-                                {
-                                    p.Height = p.Controls.Count * 28;
-                                    p.Tag = "Expanded";
-                                }
-                                else
-                                {
-                                    p.Height = ( p.Controls.Count - 1 ) * 28;
-                                    p.Tag = "Expanded";
-                                }                                
-                            }
-                        }
-                    }
-                }
-                else
-                {
-                    p.Height = 25;
-                    p.Tag = "Collapsed";
-                }
-            }
-        }
-
+        
         private void LblPatient_Click(object sender, EventArgs e)
-        {
-            DashboardAccordian( sender, e );
+        {         
+            SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
 
             fNav.ShowForm( fPatient );
 
             NavSetStyleClick( LblPatient );
+
+            SubRtn.ShowHideMenu( this, MnuPatient.Name );
         }
 
         private void LblSurgery_Click(object sender, EventArgs e)
         {
-            DashboardAccordian(sender, e);
+            SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
         }
 
         private void LblRpt_Click(object sender, EventArgs e)
         {
-            DashboardAccordian(sender, e);
+            SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
         }
 
         private void LblData_Click(object sender, EventArgs e)
         {
-            DashboardAccordian(sender, e);
+            SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
         }
 
         private void LblMetaData_Click(object sender, EventArgs e)
         {
-            DashboardAccordian(sender, e);
+            SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
         }
 
         private void LblEmailPic_Click(object sender, EventArgs e)
         {
-            DashboardAccordian(sender, e);
+            SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
         }
 
         private void LblSecurity_Click(object sender, EventArgs e)
         {
-            DashboardAccordian(sender, e);
+            SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
         }
 
-        private void LblDashboard_Click(object sender, EventArgs e)
+        public void LblDashboard_Click(object sender, EventArgs e)
         {
-            DashboardAccordian(sender, e);
+            SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
 
             NavSetStyleClick( LblDashboard );
 
             fNav.ShowForm( fDashBoard );
+
+            SubRtn.ShowHideMenu( this, MnuDashboard.Name );
         }
 
         private void LblImagesAdd_MouseEnter(object sender, EventArgs e)
@@ -202,6 +123,8 @@ namespace ParsDashboard
             fNav.ShowForm( fImageSearch );
             
             NavSetStyleClick( LblImagesSearch );
+
+            SubRtn.ShowHideMenu(this, MnuImagesSearch.Name);
         }
 
         private void LblDashboard_MouseEnter(object sender, EventArgs e)
@@ -229,50 +152,23 @@ namespace ParsDashboard
 
         private void LlbImages_MouseEnter(object sender, EventArgs e)
         {
-            LblImages.Font = new Font(LblImages.Font.Name, LblImages.Font.SizeInPoints, FontStyle.Underline);
+            LblImages.Font = new Font( LblImages.Font.Name, LblImages.Font.SizeInPoints, FontStyle.Underline );
         }
 
         private void LlbImages_MouseLeave(object sender, EventArgs e)
         {
-            LblImages.Font = new Font(LblImages.Font.Name, LblImages.Font.SizeInPoints, FontStyle.Regular);
-        }
-
-
-        private void NavSetStyleClick(Label lbl)
-        {
-            Label lblClick = lbl;
-
-            LblDashboard.Font = new Font( LblDashboard.Font.Name, LblDashboard.Font.SizeInPoints, FontStyle.Regular );
-
             LblImages.Font = new Font( LblImages.Font.Name, LblImages.Font.SizeInPoints, FontStyle.Regular );
-            LblImagesAdd.Font = new Font( LblImagesAdd.Font.Name, LblImagesAdd.Font.SizeInPoints, FontStyle.Regular );
-            LblImagesSearch.Font = new Font( LblImagesSearch.Font.Name, LblImagesSearch.Font.SizeInPoints, FontStyle.Regular );
-            LblImagesFilter.Font = new Font( LblImagesFilter.Font.Name, LblImagesFilter.Font.SizeInPoints, FontStyle.Regular );
-            LblImagesSearchResults.Font = new Font( LblImagesSearchResults.Font.Name, LblImagesSearchResults.Font.SizeInPoints, FontStyle.Regular );
-            LblImagesSearchToPatient.Font = new Font( LblImagesSearchToPatient.Font.Name, LblImagesSearchToPatient.Font.SizeInPoints, FontStyle.Regular );
-
-            LblPatient.Font = new Font( LblPatient.Font.Name, LblPatient.Font.SizeInPoints, FontStyle.Regular );
-            LblPatientAdd.Font = new Font( LblPatientAdd.Font.Name, LblPatientAdd.Font.SizeInPoints, FontStyle.Regular );
-            LlbPatientSearch.Font = new Font( LlbPatientSearch.Font.Name, LlbPatientSearch.Font.SizeInPoints, FontStyle.Regular ) ;
-            LblPatientFilter.Font = new Font(LblPatient.Font.Name, LblPatient.Font.SizeInPoints, FontStyle.Regular );
-             
-            if ( lblClick.Font.Bold != true )
-            {
-                lbl.Font = new Font( lbl.Font.Name, lbl.Font.SizeInPoints, FontStyle.Bold );
-            }
-            else
-            {
-
-            }
-        }
+        }        
 
         private void LblImages_Click(object sender, EventArgs e)
         {
-            DashboardAccordian( sender, e );
+            SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
 
             fNav.ShowForm( fImage );
 
             NavSetStyleClick( LblImages );
+
+            SubRtn.ShowHideMenu( this, MnuImages.Name );
         }
 
         private void LblImages_MouseEnter(object sender, EventArgs e)
@@ -300,11 +196,12 @@ namespace ParsDashboard
 
         private void LblPatientAdd_Click(object sender, EventArgs e)
         {
-            DashboardAccordian( sender, e );
+            SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
 
-            //fNav.ShowForm( fImage );
+            // TODO create patinet add form; add it here
+            //fNav.ShowForm(  );
 
-            //NavSetStyleClick( LblPatientAdd );
+            NavSetStyleClick( LblPatientAdd );
         }
 
         private void FrmMain_Load(object sender, EventArgs e)
@@ -320,17 +217,7 @@ namespace ParsDashboard
             this.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
             this.SetStyle(ControlStyles.ResizeRedraw, true);
         }
-
-        private void Load_All_Forms( Form frm )
-        {
-            frm.MdiParent = this;
-            frm.StartPosition = FormStartPosition.CenterParent;
-            frm.WindowState = FormWindowState.Minimized;
-            frm.Dock = DockStyle.Fill;
-            frm.Show();
-            frm.WindowState = FormWindowState.Maximized;
-        }
-
+       
         private void LblImagesFilter_MouseEnter(object sender, EventArgs e)
         {
             HelpMouseMove.MouseEnter( LblImagesFilter );
@@ -443,12 +330,12 @@ namespace ParsDashboard
 
         private void LblImagesFilter_Click(object sender, EventArgs e)
         {
-            //fNav.ShowForm(fImageSearch);
+            //fNav.ShowForm();
 
             NavSetStyleClick( LblImagesFilter );
         }
 
-        private void LblImagesSearchResults_Click(object sender, EventArgs e)
+        public void LblImagesSearchResults_Click(object sender, EventArgs e)
         {
             //fNav.ShowForm( X );
 
@@ -474,6 +361,293 @@ namespace ParsDashboard
             //fNav.ShowForm( X );
 
             NavSetStyleClick( LblPatientFilter );
+        }       
+
+        private void TSMnuSearch_Click(object sender, EventArgs e)
+        {            
+            fNav.ShowForm( fImageSearchResuts );
+
+            NavSetStyleClick( LblImagesSearchResults );
+
+            SubRtn.ShowHideMenu( this, MnuImageSearchResult.Name );
         }
+
+        private void TSMnuAddMeta_Click(object sender, EventArgs e)
+        {      
+            Control cbo = SubRoutine.FindControl( fImageSearch, "CboMetaSearch" );
+            Control lst = SubRoutine.FindControl( fImageSearch, "LstMetaDataSearchTerms" );
+
+            ComboBox ctlCbo = cbo as ComboBox;
+            ListBox ctlLst = lst as ListBox;
+
+            helper.AddListBoxData( ctlCbo, ctlLst );
+        }
+
+        private void TSMnuRemoveMeta_Click(object sender, EventArgs e)
+        {
+            Control cbo = SubRoutine.FindControl( fImageSearch, "CboMetaSearch" );
+            Control lst = SubRoutine.FindControl( fImageSearch, "LstMetaDataSearchTerms" );
+
+            ComboBox ctlCbo = cbo as ComboBox;
+            ListBox ctlLst = lst as ListBox;
+
+            helper.AddComboBox( ctlCbo, ctlLst );
+        }
+
+        private void TSMnuAddInfo_Click(object sender, EventArgs e)
+        {
+            Control cbo = SubRoutine.FindControl( fImageSearch, "CboPicInfo" );
+            Control lst = SubRoutine.FindControl( fImageSearch, "LstPicInfoSearchItems" );
+
+            ComboBox ctlCbo = cbo as ComboBox;
+            ListBox ctlLst = lst as ListBox;
+
+            helper.AddListBoxData( ctlCbo, ctlLst );
+        }
+
+        private void TSMnuRemoveInfo_Click(object sender, EventArgs e)
+        {
+            Control cbo = SubRoutine.FindControl( fImageSearch, "CboPicInfo" );
+            Control lst = SubRoutine.FindControl( fImageSearch, "LstPicInfoSearchItems" );
+
+            ComboBox ctlCbo = cbo as ComboBox;
+            ListBox ctlLst = lst as ListBox;
+
+            helper.AddComboBox( ctlCbo, ctlLst );
+        }
+
+        private void TSMnuRemoveAllMeta_Click(object sender, EventArgs e)
+        {
+            Control cbo = SubRoutine.FindControl( fImageSearch, "CboMetaSearch" );
+            Control lst = SubRoutine.FindControl( fImageSearch, "LstMetaDataSearchTerms" );
+
+            ComboBox ctlCbo = cbo as ComboBox;
+            ListBox ctlLst = lst as ListBox;
+
+            helper.RemoveAllListBox( ctlCbo, ctlLst );
+        }
+
+        private void TsMnuRemoveAllPic_Click(object sender, EventArgs e)
+        {
+            Control cbo = SubRoutine.FindControl( fImageSearch, "CboPicInfo" );
+            Control lst = SubRoutine.FindControl( fImageSearch, "LstPicInfoSearchItems" );
+
+            ComboBox ctlCbo = cbo as ComboBox;
+            ListBox ctlLst = lst as ListBox;
+
+            helper.RemoveAllListBox( ctlCbo, ctlLst );
+        }
+
+        private void LblPatientSearchToImage_Click(object sender, EventArgs e)
+        {
+            NavSetStyleClick( LblPatientSearchToImage );
+        }
+
+        private void LblPatientSearchResults_Click(object sender, EventArgs e)
+        {
+            NavSetStyleClick( LblPatientSearchResults );
+        }
+
+        #region Form Sub-Routines  
+        
+        public void NavSetStyleClick(Label lbl)
+        {
+            Label lblClick = lbl;
+
+            //  Dashboard Panel
+            LblDashboard.Font = new Font(LblDashboard.Font.Name, LblDashboard.Font.SizeInPoints, FontStyle.Regular);
+
+            //  Images Panel
+            LblImages.Font = new Font(LblImages.Font.Name, LblImages.Font.SizeInPoints, FontStyle.Regular);
+            LblImagesAdd.Font = new Font(LblImagesAdd.Font.Name, LblImagesAdd.Font.SizeInPoints, FontStyle.Regular);
+            LblImagesSearch.Font = new Font(LblImagesSearch.Font.Name, LblImagesSearch.Font.SizeInPoints, FontStyle.Regular);
+            LblImagesFilter.Font = new Font(LblImagesFilter.Font.Name, LblImagesFilter.Font.SizeInPoints, FontStyle.Regular);
+            LblImagesSearchResults.Font = new Font(LblImagesSearchResults.Font.Name, LblImagesSearchResults.Font.SizeInPoints, FontStyle.Regular);
+            LblImagesSearchToPatient.Font = new Font(LblImagesSearchToPatient.Font.Name, LblImagesSearchToPatient.Font.SizeInPoints, FontStyle.Regular);
+
+            //  Patient Panel
+            LblPatient.Font = new Font(LblPatient.Font.Name, LblPatient.Font.SizeInPoints, FontStyle.Regular);
+            LblPatientAdd.Font = new Font(LblPatientAdd.Font.Name, LblPatientAdd.Font.SizeInPoints, FontStyle.Regular);
+            LlbPatientSearch.Font = new Font(LlbPatientSearch.Font.Name, LlbPatientSearch.Font.SizeInPoints, FontStyle.Regular);
+            LblPatientFilter.Font = new Font(LblPatientFilter.Font.Name, LblPatientFilter.Font.SizeInPoints, FontStyle.Regular);
+            LblPatientSearchResults.Font = new Font(LblPatientSearchResults.Font.Name, LblPatientSearchResults.Font.SizeInPoints, FontStyle.Regular);
+            LblPatientSearchToImage.Font = new Font(LblPatientSearchToImage.Font.Name, LblPatientSearchToImage.Font.SizeInPoints, FontStyle.Regular);
+
+            //  Set font bold
+            if (lblClick.Font.Bold != true)
+            {
+                lbl.Font = new Font(lbl.Font.Name, lbl.Font.SizeInPoints, FontStyle.Bold);
+            }
+            else
+            {
+
+            }
+        }
+
+        private void SetPanel_Height()
+        {
+            PnlDashboard.Height = 25;
+            PnlImages.Height = 25;
+            PnlPatient.Height = 25;
+            PnlSurgery.Height = 25;
+            PnlRpt.Height = 25;
+            PnlData.Height = 25;
+            PnlMetaData.Height = 25;
+            PnlEmailPic.Height = 25;
+            PnlSecurity.Height = 25;
+
+            //Label1Dash.Image = Properties.Resources.Expander_Collapsed16; // use your down arrow image
+            //Label2.Image = Properties.Resources.Expander_Collapsed16; // use your down arrow image
+            //Label3.Image = Properties.Resources.Expander_Collapsed16; // use your down arrow image
+        }
+
+        private void StopPanel_Flickering()
+        {
+            // Stop flickering for panels
+
+            StopPanel_FlickeringPanel(tableLayoutPanel1);
+            StopPanel_FlickeringPanel(PnlDashboard);
+            StopPanel_FlickeringPanel(PnlImages);
+            StopPanel_FlickeringPanel(PnlPatient);
+            StopPanel_FlickeringPanel(PnlSurgery);
+            StopPanel_FlickeringPanel(PnlRpt);
+            StopPanel_FlickeringPanel(PnlData);
+            StopPanel_FlickeringPanel(PnlMetaData);
+            StopPanel_FlickeringPanel(PnlEmailPic);
+            StopPanel_FlickeringPanel(PnlSecurity);
+        }
+
+        private void StopPanel_FlickeringPanel(Panel pnl)
+        {
+            typeof(Panel).InvokeMember("DoubleBuffered",
+                BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic,
+                null, pnl, new object[] { true });
+        }
+
+        #endregion
+    }
+
+    public class SubRoutine
+    {        
+        public void ShowHideMenu( Form fMain, string ControlName )
+        {
+            //string LabelName = FrmMain.Controls["LblImages"].Name;
+
+            //Control[] ctrls = FrmMain.Controls.Find( ControlName, false );
+            
+            //if ( ctrls.Length > 0 )
+            //{
+            //    Label lbl = (Label)ctrls[0];
+            //    lbl.Visible = true;
+            //}
+
+            foreach( Control ctr in fMain.Controls )
+            {
+                if( ctr is MenuStrip & ctr.Name == ControlName )
+                {
+                    ctr.Visible = true;
+                }
+                else if ( ctr is MenuStrip )
+                {
+                    ctr.Visible = false;
+                }
+            }
+        }
+
+        public static Control FindControl( Form frm, String name )
+        {
+            foreach ( Control control in frm.Controls )
+            {
+                Control result = FindControl( frm, control, name );
+
+                if ( result != null )
+                    return result;
+            }
+
+            return null;
+        }
+
+        private static Control FindControl( Form form, Control control, string name )
+        {
+            if ( control.Name == name )
+            {
+                return control;
+            }
+
+            foreach ( Control subControl in control.Controls )
+            {
+                Control result = FindControl( form, subControl, name) ;
+
+                if ( result != null )
+                    return result;
+            }
+
+            return null;
+        }
+
+        public void DashboardAccordian( Object sender, EventArgs e , Panel pnlLayout )
+        {
+            // find out which label was clicked
+            Label lbl = (Label)sender;
+
+            // find the panel containing the label
+            Panel pnl = lbl.Parent as Panel;
+
+            // ### this assumes that no other controls are present in the main table ###
+            // the code loops through the panels in the table and expands/collapses
+            // each panel according to whether it contains the clicked label. The label
+            // images are also swapped depending on the height of the panel.
+
+            //foreach (Panel p in tableLayoutPanel1.Controls)
+            foreach (Panel p in pnlLayout.Controls)
+            {
+                Label l = (Label)p.Controls[0];
+
+                if (p.Equals(pnl))
+                {
+                    if (p.Tag != null)
+                    {
+                        if (p.Tag.ToString() != "Expanded")
+                        {
+                            // expand or collapse the panel
+                            if (p.Height != 25)
+                            {
+                                p.Height = 25;
+                                p.Tag = "Collapsed";
+                            }
+                            else
+                            {
+                                if (p.Controls.Count == 3)
+                                {
+                                    p.Height = p.Controls.Count * 28;
+                                    p.Tag = "Expanded";
+                                }
+                                else
+                                {
+                                    p.Height = (p.Controls.Count - 1) * 28;
+                                    p.Tag = "Expanded";
+                                }
+                            }
+                        }
+                    }
+                }
+                else
+                {
+                    p.Height = 25;
+                    p.Tag = "Collapsed";
+                }
+            }
+        }
+
+        public void Load_All_Forms( Form frm, Form frmMain )
+        {
+            frm.MdiParent = frmMain;
+            frm.StartPosition = FormStartPosition.CenterParent;
+            frm.WindowState = FormWindowState.Minimized;
+            frm.Dock = DockStyle.Fill;
+            frm.Show();
+            frm.WindowState = FormWindowState.Maximized;
+        }
+
     }
 }

@@ -1,12 +1,18 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Linq;
+using System.Windows.Input;
+using System.Drawing;
+using System.Reflection;
 
 namespace ParsDashboard
 {
     public partial class FrmImageSearch : Form
     {
         Helper helper = new Helper();
-        FormNav frmNav = new FormNav();    
+        FormNav frmNav = new FormNav();
+
+        public FrmMain fMain;
 
         public FrmImageSearch()
         {
@@ -106,7 +112,7 @@ namespace ParsDashboard
 
         private void TSMnuSearch_Click(object sender, EventArgs e)
         {
-            frmNav.ShowFormName( this.MdiParent.MdiChildren, "FrmImageSearchResults" );           
+            frmNav.ShowFormName( this.MdiParent.MdiChildren, "FrmImageSearchResults" );            
         }
 
         private void FrmImageSearch_Load(object sender, EventArgs e)
@@ -119,6 +125,39 @@ namespace ParsDashboard
             SetStyle(ControlStyles.Opaque, false);
             SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
             SetStyle(ControlStyles.ResizeRedraw, true);
+        }
+     
+        private void CboMetaSearch_KeyUp(object sender, KeyEventArgs e)
+        {
+            //  if enter key is pressed
+            if ( e.KeyCode == Keys.Enter )
+            {
+                //  check if entered text is in list
+                Int32 TextExist = CboMetaSearch.FindStringExact( CboMetaSearch.Text );
+                
+                //  if yes, add to list box and remove from combo box
+                if ( TextExist != ListBox.NoMatches )
+                {
+                    helper.AddListBoxData( CboMetaSearch, LstMetaDataSearchTerms );
+                }
+            }
+        }
+
+        private void CboPicInfo_KeyUp(object sender, KeyEventArgs e)
+        {
+            //  if enter key is pressed
+            if ( e.KeyCode == Keys.Enter )
+            {
+                //  check if entered text is in list
+                Int32 TextExist = CboPicInfo.FindStringExact( CboPicInfo.Text );
+
+                //  if yes, add to list box and remove from combo box
+                if ( TextExist != ListBox.NoMatches )
+                {
+                    helper.AddListBoxData( CboPicInfo, LstPicInfoSearchItems );
+                }
+            }
+
         }
     }
 }

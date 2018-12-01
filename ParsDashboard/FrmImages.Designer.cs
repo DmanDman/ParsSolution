@@ -28,9 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.MnuMenu = new System.Windows.Forms.MenuStrip();
-            this.TSMnuDisplay = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuClearAll = new System.Windows.Forms.ToolStripMenuItem();
             this.GrpImage = new System.Windows.Forms.GroupBox();
             this.CboEndYear = new System.Windows.Forms.ComboBox();
             this.CboEndMonth = new System.Windows.Forms.ComboBox();
@@ -47,38 +44,9 @@
             this.TxtImagesCount = new System.Windows.Forms.TextBox();
             this.LblGrpImageDesc = new System.Windows.Forms.Label();
             this.LstImages = new System.Windows.Forms.ListView();
-            this.MnuMenu.SuspendLayout();
             this.GrpImage.SuspendLayout();
             this.GrpImages.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // MnuMenu
-            // 
-            this.MnuMenu.ImageScalingSize = new System.Drawing.Size(17, 17);
-            this.MnuMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSMnuDisplay,
-            this.TSMnuClearAll});
-            this.MnuMenu.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuMenu.Location = new System.Drawing.Point(0, 0);
-            this.MnuMenu.Name = "MnuMenu";
-            this.MnuMenu.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.MnuMenu.Size = new System.Drawing.Size(1033, 28);
-            this.MnuMenu.TabIndex = 1;
-            this.MnuMenu.Text = "menuStrip1";
-            // 
-            // TSMnuDisplay
-            // 
-            this.TSMnuDisplay.Name = "TSMnuDisplay";
-            this.TSMnuDisplay.Size = new System.Drawing.Size(70, 24);
-            this.TSMnuDisplay.Tag = "FrmDashboard";
-            this.TSMnuDisplay.Text = "Display";
-            this.TSMnuDisplay.Click += new System.EventHandler(this.TSMnuGotoPatient_Click);
-            // 
-            // TSMnuClearAll
-            // 
-            this.TSMnuClearAll.Name = "TSMnuClearAll";
-            this.TSMnuClearAll.Size = new System.Drawing.Size(77, 24);
-            this.TSMnuClearAll.Text = "Clear All";
             // 
             // GrpImage
             // 
@@ -327,7 +295,6 @@
             this.ControlBox = false;
             this.Controls.Add(this.GrpImages);
             this.Controls.Add(this.GrpImage);
-            this.Controls.Add(this.MnuMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -337,22 +304,15 @@
             this.Text = "Images";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmImages_Load);
-            this.MnuMenu.ResumeLayout(false);
-            this.MnuMenu.PerformLayout();
             this.GrpImage.ResumeLayout(false);
             this.GrpImage.PerformLayout();
             this.GrpImages.ResumeLayout(false);
             this.GrpImages.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip MnuMenu;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuDisplay;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuClearAll;
         private System.Windows.Forms.GroupBox GrpImage;
         private System.Windows.Forms.Label LblDatePicStart;
         private System.Windows.Forms.ComboBox CboStartYear;

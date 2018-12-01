@@ -28,12 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.MnuMenu = new System.Windows.Forms.MenuStrip();
-            this.TSMnuPatientDetail = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuAddPic = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuDelPic = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuOpenCanvas = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuPrint = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.TxtFiscalYear = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -81,60 +75,11 @@
             this.TxtImagesCount = new System.Windows.Forms.TextBox();
             this.LblGrpImageDesc = new System.Windows.Forms.Label();
             this.LstImages = new System.Windows.Forms.ListView();
-            this.MnuMenu.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.GrpImages.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // MnuMenu
-            // 
-            this.MnuMenu.ImageScalingSize = new System.Drawing.Size(17, 17);
-            this.MnuMenu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSMnuPatientDetail,
-            this.TSMnuAddPic,
-            this.TSMnuDelPic,
-            this.TSMnuOpenCanvas,
-            this.TSMnuPrint});
-            this.MnuMenu.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuMenu.Location = new System.Drawing.Point(0, 0);
-            this.MnuMenu.Name = "MnuMenu";
-            this.MnuMenu.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.MnuMenu.Size = new System.Drawing.Size(1368, 28);
-            this.MnuMenu.TabIndex = 3;
-            this.MnuMenu.Text = "menuStrip1";
-            // 
-            // TSMnuPatientDetail
-            // 
-            this.TSMnuPatientDetail.Name = "TSMnuPatientDetail";
-            this.TSMnuPatientDetail.Size = new System.Drawing.Size(110, 24);
-            this.TSMnuPatientDetail.Tag = "";
-            this.TSMnuPatientDetail.Text = "Patient Detail";
-            // 
-            // TSMnuAddPic
-            // 
-            this.TSMnuAddPic.Name = "TSMnuAddPic";
-            this.TSMnuAddPic.Size = new System.Drawing.Size(72, 24);
-            this.TSMnuAddPic.Text = "&Add Pic";
-            // 
-            // TSMnuDelPic
-            // 
-            this.TSMnuDelPic.Name = "TSMnuDelPic";
-            this.TSMnuDelPic.Size = new System.Drawing.Size(67, 24);
-            this.TSMnuDelPic.Text = "Del Pic";
-            // 
-            // TSMnuOpenCanvas
-            // 
-            this.TSMnuOpenCanvas.Name = "TSMnuOpenCanvas";
-            this.TSMnuOpenCanvas.Size = new System.Drawing.Size(107, 24);
-            this.TSMnuOpenCanvas.Text = "Open Canvas";
-            // 
-            // TSMnuPrint
-            // 
-            this.TSMnuPrint.Name = "TSMnuPrint";
-            this.TSMnuPrint.Size = new System.Drawing.Size(51, 24);
-            this.TSMnuPrint.Text = "Print";
             // 
             // groupBox1
             // 
@@ -690,7 +635,6 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.MnuMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -700,8 +644,6 @@
             this.Text = "Images - Search Results";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmImageSearchResults_Load);
-            this.MnuMenu.ResumeLayout(false);
-            this.MnuMenu.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -710,18 +652,10 @@
             this.GrpImages.ResumeLayout(false);
             this.GrpImages.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip MnuMenu;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuPatientDetail;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuAddPic;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuDelPic;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuOpenCanvas;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuPrint;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label LbMetaDataSearch;
         private System.Windows.Forms.TextBox TxtFiscalYear;
