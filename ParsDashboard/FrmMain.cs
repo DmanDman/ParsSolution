@@ -23,6 +23,7 @@ namespace ParsDashboard
         FrmImages fImage = new FrmImages();
         FrmImageSearch fImageSearch = new FrmImageSearch();
         FrmImageSearchResults fImageSearchResuts = new FrmImageSearchResults();
+        FrmImageFilter fImageFilter = new FrmImageFilter();
 
         FrmPatient fPatient = new FrmPatient();
         #endregion
@@ -46,6 +47,7 @@ namespace ParsDashboard
             SubRtn.Load_All_Forms( fImage, this );
             SubRtn.Load_All_Forms( fImageSearch, this );
             SubRtn.Load_All_Forms( fImageSearchResuts, this );
+            SubRtn.Load_All_Forms( fImageFilter, this );
             SubRtn.Load_All_Forms( fDashBoard, this );
 
             LblDashboard.Click += new EventHandler( LblDashboard_Click );
@@ -330,9 +332,11 @@ namespace ParsDashboard
 
         private void LblImagesFilter_Click(object sender, EventArgs e)
         {
-            //fNav.ShowForm();
+            fNav.ShowForm( fImageFilter );
 
             NavSetStyleClick( LblImagesFilter );
+
+            SubRtn.ShowHideMenu( this, MnuImageFilter.Name );           
         }
 
         public void LblImagesSearchResults_Click(object sender, EventArgs e)
@@ -505,21 +509,21 @@ namespace ParsDashboard
         {
             // Stop flickering for panels
 
-            StopPanel_FlickeringPanel(tableLayoutPanel1);
-            StopPanel_FlickeringPanel(PnlDashboard);
-            StopPanel_FlickeringPanel(PnlImages);
-            StopPanel_FlickeringPanel(PnlPatient);
-            StopPanel_FlickeringPanel(PnlSurgery);
-            StopPanel_FlickeringPanel(PnlRpt);
-            StopPanel_FlickeringPanel(PnlData);
-            StopPanel_FlickeringPanel(PnlMetaData);
-            StopPanel_FlickeringPanel(PnlEmailPic);
-            StopPanel_FlickeringPanel(PnlSecurity);
+            StopPanel_FlickeringPanel( tableLayoutPanel1 );
+            StopPanel_FlickeringPanel( PnlDashboard );
+            StopPanel_FlickeringPanel( PnlImages );
+            StopPanel_FlickeringPanel( PnlPatient );
+            StopPanel_FlickeringPanel( PnlSurgery );
+            StopPanel_FlickeringPanel( PnlRpt );
+            StopPanel_FlickeringPanel( PnlData );
+            StopPanel_FlickeringPanel( PnlMetaData );
+            StopPanel_FlickeringPanel( PnlEmailPic );
+            StopPanel_FlickeringPanel( PnlSecurity );
         }
 
         private void StopPanel_FlickeringPanel(Panel pnl)
         {
-            typeof(Panel).InvokeMember("DoubleBuffered",
+            typeof(Panel).InvokeMember( "DoubleBuffered",
                 BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic,
                 null, pnl, new object[] { true });
         }

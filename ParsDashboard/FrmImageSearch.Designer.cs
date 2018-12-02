@@ -278,7 +278,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 755);
+            this.ClientSize = new System.Drawing.Size(1368, 840);
             this.ControlBox = false;
             this.Controls.Add(this.GrpPicInfo);
             this.Controls.Add(this.GrpMetaData);
@@ -287,6 +287,8 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmImageSearch";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Tag = "FrmImageSearch";
             this.Text = "Images - Search";

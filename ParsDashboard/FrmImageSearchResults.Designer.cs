@@ -639,6 +639,8 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmImageSearchResults";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Tag = "FrmImageSearchResults";
             this.Text = "Images - Search Results";

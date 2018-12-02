@@ -96,14 +96,34 @@
             this.TSMnuRemoveAllMeta = new System.Windows.Forms.ToolStripMenuItem();
             this.TsMnuRemoveAllPic = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuImageSearchResult = new System.Windows.Forms.MenuStrip();
-            this.TSMnuPatientDetail = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuAddPic = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuDelPic = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuPrint = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuImgSearchResultPatientDetail = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuImgSearchResultAddPic = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuImgSearchResultDelPic = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuImgSearchResultOpenCanvas = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuImgSearchResultPrint = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuPatient = new System.Windows.Forms.MenuStrip();
             this.TSMnuPatientDisplay = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuPatientClear = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuImageFilter = new System.Windows.Forms.MenuStrip();
+            this.TSMnuFilterApplyFilter = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuFilterClearChecks = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuFilterClearSurgery = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuFilterBreak1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuFilterBreak2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuPatientBreak1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuImgSearchResultBreak1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuImgSearchResultBreak2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuImgSearchResultBreak3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuImgSearchResultBreak4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsMnuImageSearchBreak1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsMnuImageSearchBreak2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsMnuImageSearchBreak3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsMnuImageSearchBreak4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsMnuImageSearchBreak5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDashboardBreak1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDashboardBreak2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsMnuImageSearchBreak6 = new System.Windows.Forms.ToolStripMenuItem();
             this.PnlDashboard.SuspendLayout();
             this.PnlPatient.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -119,6 +139,7 @@
             this.MnuImagesSearch.SuspendLayout();
             this.MnuImageSearchResult.SuspendLayout();
             this.MnuPatient.SuspendLayout();
+            this.MnuImageFilter.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnlDashboard
@@ -811,13 +832,15 @@
             this.MnuDashboard.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuDashboard.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMnuOpenCanvas,
+            this.TSMnuDashboardBreak1,
             this.TSMnuAddToCanvas,
+            this.TSMnuDashboardBreak2,
             this.TSMnuHelp});
             this.MnuDashboard.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.MnuDashboard.Location = new System.Drawing.Point(185, 0);
             this.MnuDashboard.Name = "MnuDashboard";
             this.MnuDashboard.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.MnuDashboard.Size = new System.Drawing.Size(998, 28);
+            this.MnuDashboard.Size = new System.Drawing.Size(1212, 28);
             this.MnuDashboard.TabIndex = 6;
             this.MnuDashboard.Text = "menuStrip1";
             // 
@@ -844,12 +867,13 @@
             this.MnuImages.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuImages.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMnuDisplay,
+            this.toolStripMenuItem1,
             this.TSMnuClearAll});
             this.MnuImages.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.MnuImages.Location = new System.Drawing.Point(185, 28);
             this.MnuImages.Name = "MnuImages";
             this.MnuImages.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.MnuImages.Size = new System.Drawing.Size(998, 28);
+            this.MnuImages.Size = new System.Drawing.Size(1212, 28);
             this.MnuImages.TabIndex = 7;
             this.MnuImages.Text = "menuStrip1";
             this.MnuImages.Visible = false;
@@ -872,17 +896,23 @@
             this.MnuImagesSearch.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuImagesSearch.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMnuSearch,
+            this.TsMnuImageSearchBreak1,
             this.TSMnuAddMeta,
+            this.TsMnuImageSearchBreak2,
             this.TSMnuRemoveMeta,
+            this.TsMnuImageSearchBreak3,
             this.TSMnuAddInfo,
+            this.TsMnuImageSearchBreak4,
             this.TSMnuRemoveInfo,
+            this.TsMnuImageSearchBreak5,
             this.TSMnuRemoveAllMeta,
+            this.TsMnuImageSearchBreak6,
             this.TsMnuRemoveAllPic});
             this.MnuImagesSearch.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.MnuImagesSearch.Location = new System.Drawing.Point(185, 28);
             this.MnuImagesSearch.Name = "MnuImagesSearch";
             this.MnuImagesSearch.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.MnuImagesSearch.Size = new System.Drawing.Size(998, 28);
+            this.MnuImagesSearch.Size = new System.Drawing.Size(1212, 28);
             this.MnuImagesSearch.TabIndex = 9;
             this.MnuImagesSearch.Text = "menuStrip1";
             this.MnuImagesSearch.Visible = false;
@@ -941,62 +971,67 @@
             // 
             this.MnuImageSearchResult.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuImageSearchResult.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSMnuPatientDetail,
-            this.TSMnuAddPic,
-            this.TSMnuDelPic,
-            this.toolStripMenuItem1,
-            this.TSMnuPrint});
+            this.TSMnuImgSearchResultPatientDetail,
+            this.TSMnuImgSearchResultBreak1,
+            this.TSMnuImgSearchResultAddPic,
+            this.TSMnuImgSearchResultBreak2,
+            this.TSMnuImgSearchResultDelPic,
+            this.TSMnuImgSearchResultBreak3,
+            this.TSMnuImgSearchResultOpenCanvas,
+            this.TSMnuImgSearchResultBreak4,
+            this.TSMnuImgSearchResultPrint});
             this.MnuImageSearchResult.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.MnuImageSearchResult.Location = new System.Drawing.Point(185, 28);
             this.MnuImageSearchResult.Name = "MnuImageSearchResult";
             this.MnuImageSearchResult.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.MnuImageSearchResult.Size = new System.Drawing.Size(998, 28);
+            this.MnuImageSearchResult.Size = new System.Drawing.Size(1212, 28);
             this.MnuImageSearchResult.TabIndex = 10;
             this.MnuImageSearchResult.Text = "menuStrip1";
             this.MnuImageSearchResult.Visible = false;
             // 
-            // TSMnuPatientDetail
+            // TSMnuImgSearchResultPatientDetail
             // 
-            this.TSMnuPatientDetail.Name = "TSMnuPatientDetail";
-            this.TSMnuPatientDetail.Size = new System.Drawing.Size(110, 24);
-            this.TSMnuPatientDetail.Tag = "";
-            this.TSMnuPatientDetail.Text = "Patient Detail";
+            this.TSMnuImgSearchResultPatientDetail.Name = "TSMnuImgSearchResultPatientDetail";
+            this.TSMnuImgSearchResultPatientDetail.Size = new System.Drawing.Size(110, 24);
+            this.TSMnuImgSearchResultPatientDetail.Tag = "";
+            this.TSMnuImgSearchResultPatientDetail.Text = "Patient Detail";
             // 
-            // TSMnuAddPic
+            // TSMnuImgSearchResultAddPic
             // 
-            this.TSMnuAddPic.Name = "TSMnuAddPic";
-            this.TSMnuAddPic.Size = new System.Drawing.Size(72, 24);
-            this.TSMnuAddPic.Text = "&Add Pic";
+            this.TSMnuImgSearchResultAddPic.Name = "TSMnuImgSearchResultAddPic";
+            this.TSMnuImgSearchResultAddPic.Size = new System.Drawing.Size(72, 24);
+            this.TSMnuImgSearchResultAddPic.Text = "Add Pic";
             // 
-            // TSMnuDelPic
+            // TSMnuImgSearchResultDelPic
             // 
-            this.TSMnuDelPic.Name = "TSMnuDelPic";
-            this.TSMnuDelPic.Size = new System.Drawing.Size(67, 24);
-            this.TSMnuDelPic.Text = "Del Pic";
+            this.TSMnuImgSearchResultDelPic.Name = "TSMnuImgSearchResultDelPic";
+            this.TSMnuImgSearchResultDelPic.Size = new System.Drawing.Size(67, 24);
+            this.TSMnuImgSearchResultDelPic.Text = "Del Pic";
             // 
-            // toolStripMenuItem1
+            // TSMnuImgSearchResultOpenCanvas
             // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(107, 24);
-            this.toolStripMenuItem1.Text = "Open Canvas";
+            this.TSMnuImgSearchResultOpenCanvas.Name = "TSMnuImgSearchResultOpenCanvas";
+            this.TSMnuImgSearchResultOpenCanvas.Size = new System.Drawing.Size(107, 24);
+            this.TSMnuImgSearchResultOpenCanvas.Text = "Open Canvas";
             // 
-            // TSMnuPrint
+            // TSMnuImgSearchResultPrint
             // 
-            this.TSMnuPrint.Name = "TSMnuPrint";
-            this.TSMnuPrint.Size = new System.Drawing.Size(51, 24);
-            this.TSMnuPrint.Text = "Print";
+            this.TSMnuImgSearchResultPrint.Name = "TSMnuImgSearchResultPrint";
+            this.TSMnuImgSearchResultPrint.Size = new System.Drawing.Size(51, 24);
+            this.TSMnuImgSearchResultPrint.Text = "Print";
             // 
             // MnuPatient
             // 
             this.MnuPatient.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuPatient.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMnuPatientDisplay,
+            this.TSMnuPatientBreak1,
             this.TSMnuPatientClear});
             this.MnuPatient.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.MnuPatient.Location = new System.Drawing.Point(185, 28);
             this.MnuPatient.Name = "MnuPatient";
             this.MnuPatient.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.MnuPatient.Size = new System.Drawing.Size(998, 28);
+            this.MnuPatient.Size = new System.Drawing.Size(1212, 28);
             this.MnuPatient.TabIndex = 11;
             this.MnuPatient.Text = "menuStrip1";
             this.MnuPatient.Visible = false;
@@ -1013,11 +1048,192 @@
             this.TSMnuPatientClear.Size = new System.Drawing.Size(55, 24);
             this.TSMnuPatientClear.Text = "Clear";
             // 
+            // MnuImageFilter
+            // 
+            this.MnuImageFilter.ImageScalingSize = new System.Drawing.Size(17, 17);
+            this.MnuImageFilter.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMnuFilterApplyFilter,
+            this.TSMnuFilterBreak1,
+            this.TSMnuFilterClearChecks,
+            this.TSMnuFilterBreak2,
+            this.TSMnuFilterClearSurgery});
+            this.MnuImageFilter.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MnuImageFilter.Location = new System.Drawing.Point(185, 28);
+            this.MnuImageFilter.Name = "MnuImageFilter";
+            this.MnuImageFilter.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuImageFilter.Size = new System.Drawing.Size(1212, 28);
+            this.MnuImageFilter.TabIndex = 12;
+            this.MnuImageFilter.Text = "menuStrip1";
+            this.MnuImageFilter.Visible = false;
+            // 
+            // TSMnuFilterApplyFilter
+            // 
+            this.TSMnuFilterApplyFilter.Name = "TSMnuFilterApplyFilter";
+            this.TSMnuFilterApplyFilter.Size = new System.Drawing.Size(97, 24);
+            this.TSMnuFilterApplyFilter.Text = "Apply Filter";
+            // 
+            // TSMnuFilterClearChecks
+            // 
+            this.TSMnuFilterClearChecks.Name = "TSMnuFilterClearChecks";
+            this.TSMnuFilterClearChecks.Size = new System.Drawing.Size(144, 24);
+            this.TSMnuFilterClearChecks.Text = "Clear Personal Info";
+            // 
+            // TSMnuFilterClearSurgery
+            // 
+            this.TSMnuFilterClearSurgery.Name = "TSMnuFilterClearSurgery";
+            this.TSMnuFilterClearSurgery.Size = new System.Drawing.Size(198, 24);
+            this.TSMnuFilterClearSurgery.Text = "Clear Patient / Surgery Info";
+            // 
+            // TSMnuFilterBreak1
+            // 
+            this.TSMnuFilterBreak1.Enabled = false;
+            this.TSMnuFilterBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuFilterBreak1.Name = "TSMnuFilterBreak1";
+            this.TSMnuFilterBreak1.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuFilterBreak1.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuFilterBreak1.Text = "|";
+            // 
+            // TSMnuFilterBreak2
+            // 
+            this.TSMnuFilterBreak2.Enabled = false;
+            this.TSMnuFilterBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuFilterBreak2.Name = "TSMnuFilterBreak2";
+            this.TSMnuFilterBreak2.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuFilterBreak2.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuFilterBreak2.Text = "|";
+            // 
+            // TSMnuPatientBreak1
+            // 
+            this.TSMnuPatientBreak1.Enabled = false;
+            this.TSMnuPatientBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuPatientBreak1.Name = "TSMnuPatientBreak1";
+            this.TSMnuPatientBreak1.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuPatientBreak1.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuPatientBreak1.Text = "|";
+            // 
+            // TSMnuImgSearchResultBreak1
+            // 
+            this.TSMnuImgSearchResultBreak1.Enabled = false;
+            this.TSMnuImgSearchResultBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuImgSearchResultBreak1.Name = "TSMnuImgSearchResultBreak1";
+            this.TSMnuImgSearchResultBreak1.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuImgSearchResultBreak1.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuImgSearchResultBreak1.Text = "|";
+            // 
+            // TSMnuImgSearchResultBreak2
+            // 
+            this.TSMnuImgSearchResultBreak2.Enabled = false;
+            this.TSMnuImgSearchResultBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuImgSearchResultBreak2.Name = "TSMnuImgSearchResultBreak2";
+            this.TSMnuImgSearchResultBreak2.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuImgSearchResultBreak2.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuImgSearchResultBreak2.Text = "|";
+            // 
+            // TSMnuImgSearchResultBreak3
+            // 
+            this.TSMnuImgSearchResultBreak3.Enabled = false;
+            this.TSMnuImgSearchResultBreak3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuImgSearchResultBreak3.Name = "TSMnuImgSearchResultBreak3";
+            this.TSMnuImgSearchResultBreak3.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuImgSearchResultBreak3.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuImgSearchResultBreak3.Text = "|";
+            // 
+            // TSMnuImgSearchResultBreak4
+            // 
+            this.TSMnuImgSearchResultBreak4.Enabled = false;
+            this.TSMnuImgSearchResultBreak4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuImgSearchResultBreak4.Name = "TSMnuImgSearchResultBreak4";
+            this.TSMnuImgSearchResultBreak4.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuImgSearchResultBreak4.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuImgSearchResultBreak4.Text = "|";
+            // 
+            // TsMnuImageSearchBreak1
+            // 
+            this.TsMnuImageSearchBreak1.Enabled = false;
+            this.TsMnuImageSearchBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TsMnuImageSearchBreak1.Name = "TsMnuImageSearchBreak1";
+            this.TsMnuImageSearchBreak1.Padding = new System.Windows.Forms.Padding(0);
+            this.TsMnuImageSearchBreak1.Size = new System.Drawing.Size(18, 24);
+            this.TsMnuImageSearchBreak1.Text = "|";
+            // 
+            // TsMnuImageSearchBreak2
+            // 
+            this.TsMnuImageSearchBreak2.Enabled = false;
+            this.TsMnuImageSearchBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TsMnuImageSearchBreak2.Name = "TsMnuImageSearchBreak2";
+            this.TsMnuImageSearchBreak2.Padding = new System.Windows.Forms.Padding(0);
+            this.TsMnuImageSearchBreak2.Size = new System.Drawing.Size(18, 24);
+            this.TsMnuImageSearchBreak2.Text = "|";
+            // 
+            // TsMnuImageSearchBreak3
+            // 
+            this.TsMnuImageSearchBreak3.Enabled = false;
+            this.TsMnuImageSearchBreak3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TsMnuImageSearchBreak3.Name = "TsMnuImageSearchBreak3";
+            this.TsMnuImageSearchBreak3.Padding = new System.Windows.Forms.Padding(0);
+            this.TsMnuImageSearchBreak3.Size = new System.Drawing.Size(18, 24);
+            this.TsMnuImageSearchBreak3.Text = "|";
+            // 
+            // TsMnuImageSearchBreak4
+            // 
+            this.TsMnuImageSearchBreak4.Enabled = false;
+            this.TsMnuImageSearchBreak4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TsMnuImageSearchBreak4.Name = "TsMnuImageSearchBreak4";
+            this.TsMnuImageSearchBreak4.Padding = new System.Windows.Forms.Padding(0);
+            this.TsMnuImageSearchBreak4.Size = new System.Drawing.Size(18, 24);
+            this.TsMnuImageSearchBreak4.Text = "|";
+            // 
+            // TsMnuImageSearchBreak5
+            // 
+            this.TsMnuImageSearchBreak5.Enabled = false;
+            this.TsMnuImageSearchBreak5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TsMnuImageSearchBreak5.Name = "TsMnuImageSearchBreak5";
+            this.TsMnuImageSearchBreak5.Padding = new System.Windows.Forms.Padding(0);
+            this.TsMnuImageSearchBreak5.Size = new System.Drawing.Size(18, 24);
+            this.TsMnuImageSearchBreak5.Text = "|";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Enabled = false;
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Padding = new System.Windows.Forms.Padding(0);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(18, 24);
+            this.toolStripMenuItem1.Text = "|";
+            // 
+            // TSMnuDashboardBreak1
+            // 
+            this.TSMnuDashboardBreak1.Enabled = false;
+            this.TSMnuDashboardBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuDashboardBreak1.Name = "TSMnuDashboardBreak1";
+            this.TSMnuDashboardBreak1.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuDashboardBreak1.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuDashboardBreak1.Text = "|";
+            // 
+            // TSMnuDashboardBreak2
+            // 
+            this.TSMnuDashboardBreak2.Enabled = false;
+            this.TSMnuDashboardBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuDashboardBreak2.Name = "TSMnuDashboardBreak2";
+            this.TSMnuDashboardBreak2.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuDashboardBreak2.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuDashboardBreak2.Text = "|";
+            // 
+            // TsMnuImageSearchBreak6
+            // 
+            this.TsMnuImageSearchBreak6.Enabled = false;
+            this.TsMnuImageSearchBreak6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TsMnuImageSearchBreak6.Name = "TsMnuImageSearchBreak6";
+            this.TsMnuImageSearchBreak6.Padding = new System.Windows.Forms.Padding(0);
+            this.TsMnuImageSearchBreak6.Size = new System.Drawing.Size(18, 24);
+            this.TsMnuImageSearchBreak6.Text = "|";
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1183, 612);
+            this.ClientSize = new System.Drawing.Size(1397, 612);
+            this.Controls.Add(this.MnuImageFilter);
             this.Controls.Add(this.MnuPatient);
             this.Controls.Add(this.MnuImageSearchResult);
             this.Controls.Add(this.MnuImagesSearch);
@@ -1060,6 +1276,8 @@
             this.MnuImageSearchResult.PerformLayout();
             this.MnuPatient.ResumeLayout(false);
             this.MnuPatient.PerformLayout();
+            this.MnuImageFilter.ResumeLayout(false);
+            this.MnuImageFilter.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1134,14 +1352,34 @@
         private System.Windows.Forms.ToolStripMenuItem TSMnuRemoveAllMeta;
         private System.Windows.Forms.ToolStripMenuItem TsMnuRemoveAllPic;
         private System.Windows.Forms.MenuStrip MnuImageSearchResult;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuPatientDetail;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuAddPic;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuDelPic;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuPrint;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultPatientDetail;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultAddPic;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultDelPic;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultOpenCanvas;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultPrint;
         private System.Windows.Forms.MenuStrip MnuPatient;
         private System.Windows.Forms.ToolStripMenuItem TSMnuPatientDisplay;
         private System.Windows.Forms.ToolStripMenuItem TSMnuPatientClear;
+        private System.Windows.Forms.MenuStrip MnuImageFilter;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuFilterApplyFilter;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuFilterClearChecks;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuFilterClearSurgery;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuPatientBreak1;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuFilterBreak1;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuFilterBreak2;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultBreak1;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultBreak2;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultBreak3;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultBreak4;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDashboardBreak1;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDashboardBreak2;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem TsMnuImageSearchBreak1;
+        private System.Windows.Forms.ToolStripMenuItem TsMnuImageSearchBreak2;
+        private System.Windows.Forms.ToolStripMenuItem TsMnuImageSearchBreak3;
+        private System.Windows.Forms.ToolStripMenuItem TsMnuImageSearchBreak4;
+        private System.Windows.Forms.ToolStripMenuItem TsMnuImageSearchBreak5;
+        private System.Windows.Forms.ToolStripMenuItem TsMnuImageSearchBreak6;
     }
 }
 
