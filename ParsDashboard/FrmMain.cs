@@ -14,7 +14,6 @@ namespace ParsDashboard
     public partial class FrmMain : Form
     {
         #region Define Forms
-
         //  define forms
         FormNav fNav = new FormNav();
 
@@ -25,10 +24,10 @@ namespace ParsDashboard
         FrmImageSearchResults fImageSearchResuts = new FrmImageSearchResults();
         FrmImageFilter fImageFilter = new FrmImageFilter();
 
-        FrmPatient fPatient = new FrmPatient();
+        FrmPatient fPatient = new FrmPatient();       
         #endregion
 
-        #region Define Helper Classes
+        #region Define Helper Classes    
         //  define helper class
         Helper_MouseMove HelpMouseMove = new Helper_MouseMove();
 
@@ -39,7 +38,7 @@ namespace ParsDashboard
 
 
         public FrmMain()
-        {
+        {   
             InitializeComponent();
             StopPanel_Flickering();
                       

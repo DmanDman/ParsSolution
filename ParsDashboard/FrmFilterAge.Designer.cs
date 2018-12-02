@@ -68,7 +68,7 @@
             // RdoFilterEqualTo
             // 
             this.RdoFilterEqualTo.AutoSize = true;
-            this.RdoFilterEqualTo.Location = new System.Drawing.Point(12, 90);
+            this.RdoFilterEqualTo.Location = new System.Drawing.Point(12, 88);
             this.RdoFilterEqualTo.Name = "RdoFilterEqualTo";
             this.RdoFilterEqualTo.Size = new System.Drawing.Size(86, 21);
             this.RdoFilterEqualTo.TabIndex = 2;
@@ -91,7 +91,7 @@
             // 
             // NumLess
             // 
-            this.NumLess.Location = new System.Drawing.Point(144, 64);
+            this.NumLess.Location = new System.Drawing.Point(144, 11);
             this.NumLess.Minimum = new decimal(new int[] {
             1,
             0,
@@ -110,7 +110,7 @@
             // LblAnd
             // 
             this.LblAnd.AutoSize = true;
-            this.LblAnd.Location = new System.Drawing.Point(218, 67);
+            this.LblAnd.Location = new System.Drawing.Point(218, 14);
             this.LblAnd.Name = "LblAnd";
             this.LblAnd.Size = new System.Drawing.Size(32, 17);
             this.LblAnd.TabIndex = 5;
@@ -119,7 +119,7 @@
             // 
             // NumGreater
             // 
-            this.NumGreater.Location = new System.Drawing.Point(273, 64);
+            this.NumGreater.Location = new System.Drawing.Point(273, 11);
             this.NumGreater.Minimum = new decimal(new int[] {
             1,
             0,
@@ -143,6 +143,7 @@
             this.BtnCancel.TabIndex = 7;
             this.BtnCancel.Text = "Cancel";
             this.BtnCancel.UseVisualStyleBackColor = true;
+            this.BtnCancel.Click += new System.EventHandler(this.BtnCancel_Click);
             // 
             // BtnOK
             // 
@@ -152,12 +153,13 @@
             this.BtnOK.TabIndex = 8;
             this.BtnOK.Text = "OK";
             this.BtnOK.UseVisualStyleBackColor = true;
+            this.BtnOK.Click += new System.EventHandler(this.BtnOK_Click);
             // 
             // FrmFilterAge
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(363, 172);
+            this.ClientSize = new System.Drawing.Size(350, 172);
             this.Controls.Add(this.BtnOK);
             this.Controls.Add(this.BtnCancel);
             this.Controls.Add(this.NumGreater);

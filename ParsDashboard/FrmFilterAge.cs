@@ -49,12 +49,26 @@ namespace ParsDashboard
 
         private void RdoFilterBetween_CheckedChanged(object sender, EventArgs e)
         {
-            if ( RdoFilterEqualTo.Checked )
+            if ( RdoFilterBetween.Checked )
             {
                 NumLess.Visible = true;
                 LblAnd.Visible = true;
                 NumGreater.Visible = true;
             }
+        }
+
+        private void BtnCancel_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void BtnOK_Click(object sender, EventArgs e)
+        {
+            if( RdoFilterLessThan.Checked )
+            {
+
+            }
+              
         }
     }
 }

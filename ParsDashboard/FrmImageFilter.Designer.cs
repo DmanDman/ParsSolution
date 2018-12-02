@@ -29,16 +29,16 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox2 = new System.Windows.Forms.CheckBox();
+            this.TxtSurgeryDate = new System.Windows.Forms.TextBox();
+            this.RdoFemale = new System.Windows.Forms.RadioButton();
+            this.RdoMale = new System.Windows.Forms.RadioButton();
+            this.TxtSurgeryAge = new System.Windows.Forms.TextBox();
+            this.ChkSurgeryDate = new System.Windows.Forms.CheckBox();
+            this.ChkSex = new System.Windows.Forms.CheckBox();
             this.ChkSurgeryAge = new System.Windows.Forms.CheckBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.TxtDob = new System.Windows.Forms.TextBox();
             this.ChkDOB = new System.Windows.Forms.CheckBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtFirstName = new System.Windows.Forms.TextBox();
             this.TxtLastName = new System.Windows.Forms.TextBox();
             this.ChkFirstName = new System.Windows.Forms.CheckBox();
             this.ChkLastName = new System.Windows.Forms.CheckBox();
@@ -91,16 +91,16 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Controls.Add(this.checkBox2);
+            this.groupBox1.Controls.Add(this.TxtSurgeryDate);
+            this.groupBox1.Controls.Add(this.RdoFemale);
+            this.groupBox1.Controls.Add(this.RdoMale);
+            this.groupBox1.Controls.Add(this.TxtSurgeryAge);
+            this.groupBox1.Controls.Add(this.ChkSurgeryDate);
+            this.groupBox1.Controls.Add(this.ChkSex);
             this.groupBox1.Controls.Add(this.ChkSurgeryAge);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.TxtDob);
             this.groupBox1.Controls.Add(this.ChkDOB);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.TxtFirstName);
             this.groupBox1.Controls.Add(this.TxtLastName);
             this.groupBox1.Controls.Add(this.ChkFirstName);
             this.groupBox1.Controls.Add(this.ChkLastName);
@@ -112,67 +112,68 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Personal Information";
             // 
-            // textBox4
+            // TxtSurgeryDate
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(121, 225);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(166, 22);
-            this.textBox4.TabIndex = 15;
+            this.TxtSurgeryDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSurgeryDate.Location = new System.Drawing.Point(121, 225);
+            this.TxtSurgeryDate.Name = "TxtSurgeryDate";
+            this.TxtSurgeryDate.Size = new System.Drawing.Size(166, 22);
+            this.TxtSurgeryDate.TabIndex = 12;
             // 
-            // radioButton2
+            // RdoFemale
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton2.Location = new System.Drawing.Point(186, 187);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(75, 21);
-            this.radioButton2.TabIndex = 14;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Female";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.RdoFemale.AutoSize = true;
+            this.RdoFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RdoFemale.Location = new System.Drawing.Point(186, 187);
+            this.RdoFemale.Name = "RdoFemale";
+            this.RdoFemale.Size = new System.Drawing.Size(75, 21);
+            this.RdoFemale.TabIndex = 10;
+            this.RdoFemale.TabStop = true;
+            this.RdoFemale.Text = "Female";
+            this.RdoFemale.UseVisualStyleBackColor = true;
             // 
-            // radioButton1
+            // RdoMale
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton1.Location = new System.Drawing.Point(121, 187);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(59, 21);
-            this.radioButton1.TabIndex = 13;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Male";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.RdoMale.AutoSize = true;
+            this.RdoMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RdoMale.Location = new System.Drawing.Point(121, 187);
+            this.RdoMale.Name = "RdoMale";
+            this.RdoMale.Size = new System.Drawing.Size(59, 21);
+            this.RdoMale.TabIndex = 9;
+            this.RdoMale.TabStop = true;
+            this.RdoMale.Text = "Male";
+            this.RdoMale.UseVisualStyleBackColor = true;
             // 
-            // textBox3
+            // TxtSurgeryAge
             // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(121, 145);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(166, 22);
-            this.textBox3.TabIndex = 12;
+            this.TxtSurgeryAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtSurgeryAge.Location = new System.Drawing.Point(121, 145);
+            this.TxtSurgeryAge.Name = "TxtSurgeryAge";
+            this.TxtSurgeryAge.Size = new System.Drawing.Size(166, 22);
+            this.TxtSurgeryAge.TabIndex = 7;
             // 
-            // checkBox3
+            // ChkSurgeryDate
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(6, 227);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(114, 21);
-            this.checkBox3.TabIndex = 11;
-            this.checkBox3.Text = "Surgery Date";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.ChkSurgeryDate.AutoSize = true;
+            this.ChkSurgeryDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChkSurgeryDate.Location = new System.Drawing.Point(6, 227);
+            this.ChkSurgeryDate.Name = "ChkSurgeryDate";
+            this.ChkSurgeryDate.Size = new System.Drawing.Size(114, 21);
+            this.ChkSurgeryDate.TabIndex = 11;
+            this.ChkSurgeryDate.Text = "Surgery Date";
+            this.ChkSurgeryDate.UseVisualStyleBackColor = true;
+            this.ChkSurgeryDate.Click += new System.EventHandler(this.ChkSurgeryDate_Click);
             // 
-            // checkBox2
+            // ChkSex
             // 
-            this.checkBox2.AutoSize = true;
-            this.checkBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox2.Location = new System.Drawing.Point(6, 187);
-            this.checkBox2.Name = "checkBox2";
-            this.checkBox2.Size = new System.Drawing.Size(53, 21);
-            this.checkBox2.TabIndex = 10;
-            this.checkBox2.Text = "Sex";
-            this.checkBox2.UseVisualStyleBackColor = true;
+            this.ChkSex.AutoSize = true;
+            this.ChkSex.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChkSex.Location = new System.Drawing.Point(6, 187);
+            this.ChkSex.Name = "ChkSex";
+            this.ChkSex.Size = new System.Drawing.Size(53, 21);
+            this.ChkSex.TabIndex = 8;
+            this.ChkSex.Text = "Sex";
+            this.ChkSex.UseVisualStyleBackColor = true;
             // 
             // ChkSurgeryAge
             // 
@@ -181,18 +182,18 @@
             this.ChkSurgeryAge.Location = new System.Drawing.Point(6, 147);
             this.ChkSurgeryAge.Name = "ChkSurgeryAge";
             this.ChkSurgeryAge.Size = new System.Drawing.Size(109, 21);
-            this.ChkSurgeryAge.TabIndex = 9;
+            this.ChkSurgeryAge.TabIndex = 6;
             this.ChkSurgeryAge.Text = "Surgery Age";
             this.ChkSurgeryAge.UseVisualStyleBackColor = true;
             this.ChkSurgeryAge.Click += new System.EventHandler(this.ChkSurgeryAge_Click);
             // 
-            // textBox2
+            // TxtDob
             // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(121, 109);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(166, 22);
-            this.textBox2.TabIndex = 8;
+            this.TxtDob.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDob.Location = new System.Drawing.Point(121, 109);
+            this.TxtDob.Name = "TxtDob";
+            this.TxtDob.Size = new System.Drawing.Size(166, 22);
+            this.TxtDob.TabIndex = 5;
             // 
             // ChkDOB
             // 
@@ -201,17 +202,17 @@
             this.ChkDOB.Location = new System.Drawing.Point(6, 109);
             this.ChkDOB.Name = "ChkDOB";
             this.ChkDOB.Size = new System.Drawing.Size(72, 21);
-            this.ChkDOB.TabIndex = 7;
+            this.ChkDOB.TabIndex = 4;
             this.ChkDOB.Text = "D.O.B.";
             this.ChkDOB.UseVisualStyleBackColor = true;
             // 
-            // textBox1
+            // TxtFirstName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(121, 70);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(166, 22);
-            this.textBox1.TabIndex = 6;
+            this.TxtFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtFirstName.Location = new System.Drawing.Point(121, 70);
+            this.TxtFirstName.Name = "TxtFirstName";
+            this.TxtFirstName.Size = new System.Drawing.Size(166, 22);
+            this.TxtFirstName.TabIndex = 3;
             // 
             // TxtLastName
             // 
@@ -219,7 +220,7 @@
             this.TxtLastName.Location = new System.Drawing.Point(121, 35);
             this.TxtLastName.Name = "TxtLastName";
             this.TxtLastName.Size = new System.Drawing.Size(166, 22);
-            this.TxtLastName.TabIndex = 5;
+            this.TxtLastName.TabIndex = 1;
             // 
             // ChkFirstName
             // 
@@ -228,7 +229,7 @@
             this.ChkFirstName.Location = new System.Drawing.Point(6, 71);
             this.ChkFirstName.Name = "ChkFirstName";
             this.ChkFirstName.Size = new System.Drawing.Size(98, 21);
-            this.ChkFirstName.TabIndex = 4;
+            this.ChkFirstName.TabIndex = 2;
             this.ChkFirstName.Text = "First Name";
             this.ChkFirstName.UseVisualStyleBackColor = true;
             // 
@@ -239,7 +240,7 @@
             this.ChkLastName.Location = new System.Drawing.Point(6, 35);
             this.ChkLastName.Name = "ChkLastName";
             this.ChkLastName.Size = new System.Drawing.Size(98, 21);
-            this.ChkLastName.TabIndex = 3;
+            this.ChkLastName.TabIndex = 0;
             this.ChkLastName.Text = "Last Name";
             this.ChkLastName.UseVisualStyleBackColor = true;
             // 
@@ -808,18 +809,18 @@
 
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.CheckBox ChkLastName;
-        private System.Windows.Forms.CheckBox checkBox2;
+        private System.Windows.Forms.CheckBox ChkSex;
         private System.Windows.Forms.CheckBox ChkSurgeryAge;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TxtDob;
         private System.Windows.Forms.CheckBox ChkDOB;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtFirstName;
         private System.Windows.Forms.TextBox TxtLastName;
         private System.Windows.Forms.CheckBox ChkFirstName;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.RadioButton RdoFemale;
+        private System.Windows.Forms.RadioButton RdoMale;
+        private System.Windows.Forms.TextBox TxtSurgeryAge;
+        private System.Windows.Forms.CheckBox ChkSurgeryDate;
+        private System.Windows.Forms.TextBox TxtSurgeryDate;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.ListBox LstPicInfo;
         private System.Windows.Forms.Label label16;
