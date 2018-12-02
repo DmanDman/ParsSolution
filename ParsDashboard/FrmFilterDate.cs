@@ -7,11 +7,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static ParsDashboard.FrmImageFilter;
 
 namespace ParsDashboard
 {
     public partial class FrmFilterDate : Form
-    {
+    {    
         public FrmFilterDate()
         {
             InitializeComponent();
@@ -68,8 +69,33 @@ namespace ParsDashboard
         }
 
         private void BtnCancel_Click(object sender, EventArgs e)
-        {
+        {           
             this.Close();
+        }
+
+        private void BtnOK_Click(object sender, EventArgs e)
+        {
+            if ( RdoFilterEqualTo.Checked )
+            {
+                FilterVar.FilterDate = RdoFilterEqualTo.Text + " " + DtStart.Value.ToShortDateString();
+            }
+
+            if ( RdoFilterGreaterThan.Checked )
+            {
+                FilterVar.FilterDate = RdoFilterGreaterThan.Text + " " + DtStart.Value.ToShortDateString();
+            }
+
+            if ( RdoFilterLessThan.Checked )
+            {
+                FilterVar.FilterDate = RdoFilterLessThan.Text + " " + DtStart.Value.ToShortDateString();
+            }
+
+            if ( RdoFilterBetween.Checked )
+            {
+                FilterVar.FilterDate = RdoFilterBetween.Text + " " + DtStart.Value.ToShortDateString() + " and " + DtEnd.Value.ToShortDateString();
+            }
+
+            this.Close();         
         }
     }
 }

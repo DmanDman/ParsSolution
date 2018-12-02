@@ -44,10 +44,10 @@
             // RdoFilterLessThan
             // 
             this.RdoFilterLessThan.AutoSize = true;
-            this.RdoFilterLessThan.Location = new System.Drawing.Point(12, 12);
+            this.RdoFilterLessThan.Location = new System.Drawing.Point(21, 92);
             this.RdoFilterLessThan.Name = "RdoFilterLessThan";
             this.RdoFilterLessThan.Size = new System.Drawing.Size(96, 21);
-            this.RdoFilterLessThan.TabIndex = 0;
+            this.RdoFilterLessThan.TabIndex = 2;
             this.RdoFilterLessThan.TabStop = true;
             this.RdoFilterLessThan.Text = "Less Than";
             this.RdoFilterLessThan.UseVisualStyleBackColor = true;
@@ -56,7 +56,7 @@
             // RdoFilterGreaterThan
             // 
             this.RdoFilterGreaterThan.AutoSize = true;
-            this.RdoFilterGreaterThan.Location = new System.Drawing.Point(12, 50);
+            this.RdoFilterGreaterThan.Location = new System.Drawing.Point(21, 54);
             this.RdoFilterGreaterThan.Name = "RdoFilterGreaterThan";
             this.RdoFilterGreaterThan.Size = new System.Drawing.Size(115, 21);
             this.RdoFilterGreaterThan.TabIndex = 1;
@@ -68,10 +68,10 @@
             // RdoFilterEqualTo
             // 
             this.RdoFilterEqualTo.AutoSize = true;
-            this.RdoFilterEqualTo.Location = new System.Drawing.Point(12, 88);
+            this.RdoFilterEqualTo.Location = new System.Drawing.Point(21, 16);
             this.RdoFilterEqualTo.Name = "RdoFilterEqualTo";
             this.RdoFilterEqualTo.Size = new System.Drawing.Size(86, 21);
-            this.RdoFilterEqualTo.TabIndex = 2;
+            this.RdoFilterEqualTo.TabIndex = 0;
             this.RdoFilterEqualTo.TabStop = true;
             this.RdoFilterEqualTo.Text = "Equal To";
             this.RdoFilterEqualTo.UseVisualStyleBackColor = true;
@@ -80,7 +80,7 @@
             // RdoFilterBetween
             // 
             this.RdoFilterBetween.AutoSize = true;
-            this.RdoFilterBetween.Location = new System.Drawing.Point(12, 126);
+            this.RdoFilterBetween.Location = new System.Drawing.Point(21, 130);
             this.RdoFilterBetween.Name = "RdoFilterBetween";
             this.RdoFilterBetween.Size = new System.Drawing.Size(83, 21);
             this.RdoFilterBetween.TabIndex = 3;
@@ -91,7 +91,7 @@
             // 
             // NumLess
             // 
-            this.NumLess.Location = new System.Drawing.Point(144, 11);
+            this.NumLess.Location = new System.Drawing.Point(176, 16);
             this.NumLess.Minimum = new decimal(new int[] {
             1,
             0,
@@ -110,7 +110,7 @@
             // LblAnd
             // 
             this.LblAnd.AutoSize = true;
-            this.LblAnd.Location = new System.Drawing.Point(218, 14);
+            this.LblAnd.Location = new System.Drawing.Point(185, 47);
             this.LblAnd.Name = "LblAnd";
             this.LblAnd.Size = new System.Drawing.Size(32, 17);
             this.LblAnd.TabIndex = 5;
@@ -119,7 +119,7 @@
             // 
             // NumGreater
             // 
-            this.NumGreater.Location = new System.Drawing.Point(273, 11);
+            this.NumGreater.Location = new System.Drawing.Point(176, 73);
             this.NumGreater.Minimum = new decimal(new int[] {
             1,
             0,
@@ -137,7 +137,7 @@
             // 
             // BtnCancel
             // 
-            this.BtnCancel.Location = new System.Drawing.Point(144, 116);
+            this.BtnCancel.Location = new System.Drawing.Point(135, 120);
             this.BtnCancel.Name = "BtnCancel";
             this.BtnCancel.Size = new System.Drawing.Size(82, 41);
             this.BtnCancel.TabIndex = 7;
@@ -147,7 +147,7 @@
             // 
             // BtnOK
             // 
-            this.BtnOK.Location = new System.Drawing.Point(242, 116);
+            this.BtnOK.Location = new System.Drawing.Point(246, 120);
             this.BtnOK.Name = "BtnOK";
             this.BtnOK.Size = new System.Drawing.Size(82, 41);
             this.BtnOK.TabIndex = 8;
@@ -159,7 +159,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(350, 172);
+            this.ClientSize = new System.Drawing.Size(350, 176);
             this.Controls.Add(this.BtnOK);
             this.Controls.Add(this.BtnCancel);
             this.Controls.Add(this.NumGreater);

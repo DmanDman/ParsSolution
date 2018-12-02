@@ -13,7 +13,7 @@ namespace ParsDashboard
     public partial class FrmImageFilter : Form
     {
         FrmFilterAge fFilterAge = new FrmFilterAge();
-        FrmFilterDate fFilterDate = new FrmFilterDate();
+        FrmFilterDate fFilterDate = new FrmFilterDate();        
 
         public FrmImageFilter()
         {
@@ -24,7 +24,9 @@ namespace ParsDashboard
         {
             if( ChkSurgeryAge.Checked )
             {
-                fFilterAge.ShowDialog();       
+                fFilterAge.ShowDialog();
+
+                TxtSurgeryAge.Text = FilterVar.FilterAge;
             }
         }
 
@@ -33,7 +35,15 @@ namespace ParsDashboard
             if ( ChkSurgeryDate.Checked )
             {
                 fFilterDate.ShowDialog();
+
+                TxtSurgeryDate.Text = FilterVar.FilterDate;                
             }
         }
+
+        public static class FilterVar
+        {
+            public static string FilterDate { get; set; }
+            public static string FilterAge { get; set; }
+        }        
     }
 }

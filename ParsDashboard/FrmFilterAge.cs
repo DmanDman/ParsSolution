@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static ParsDashboard.FrmImageFilter;
 
 namespace ParsDashboard
 {
@@ -64,11 +65,28 @@ namespace ParsDashboard
 
         private void BtnOK_Click(object sender, EventArgs e)
         {
-            if( RdoFilterLessThan.Checked )
-            {
 
+            if ( RdoFilterEqualTo.Checked )
+            {
+                FilterVar.FilterAge = RdoFilterEqualTo.Text + " " + NumLess.Text;
             }
-              
+
+            if ( RdoFilterGreaterThan.Checked )
+            {
+                FilterVar.FilterAge = RdoFilterGreaterThan.Text + " " + NumLess.Text;
+            }
+
+            if ( RdoFilterLessThan.Checked )
+            {
+                FilterVar.FilterAge = RdoFilterLessThan.Text + " " + NumLess.Text;
+            }
+            
+            if ( RdoFilterBetween.Checked )
+            {
+                FilterVar.FilterAge = RdoFilterBetween.Text + " " + NumLess.Text + " and " + NumGreater.Text;
+            }
+
+            this.Close();
         }
     }
 }

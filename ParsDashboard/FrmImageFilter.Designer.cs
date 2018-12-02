@@ -114,10 +114,12 @@
             // 
             // TxtSurgeryDate
             // 
+            this.TxtSurgeryDate.Enabled = false;
             this.TxtSurgeryDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtSurgeryDate.Location = new System.Drawing.Point(121, 225);
+            this.TxtSurgeryDate.Multiline = true;
             this.TxtSurgeryDate.Name = "TxtSurgeryDate";
-            this.TxtSurgeryDate.Size = new System.Drawing.Size(166, 22);
+            this.TxtSurgeryDate.Size = new System.Drawing.Size(166, 43);
             this.TxtSurgeryDate.TabIndex = 12;
             // 
             // RdoFemale
@@ -146,6 +148,7 @@
             // 
             // TxtSurgeryAge
             // 
+            this.TxtSurgeryAge.Enabled = false;
             this.TxtSurgeryAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtSurgeryAge.Location = new System.Drawing.Point(121, 145);
             this.TxtSurgeryAge.Name = "TxtSurgeryAge";
