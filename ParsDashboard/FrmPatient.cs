@@ -14,6 +14,10 @@ namespace ParsDashboard
     {
         FormNav frmNav = new FormNav();
 
+        public static class PatientVar
+        {
+            public static int ClearType { get; set; }
+        }
         public FrmPatient()
         {
             InitializeComponent();
@@ -35,6 +39,16 @@ namespace ParsDashboard
             SetStyle(ControlStyles.Opaque, false);
             SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
             SetStyle(ControlStyles.ResizeRedraw, true);
+
+            DateTime CurrentYear = DateTime.Today;
+            int year = CurrentYear.Year;
+
+            UpDwnYear.Text= year.ToString();            
+        }
+
+        private void TabDisplay_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            PatientVar.ClearType = TabDisplay.SelectedIndex;
         }
     }
 }

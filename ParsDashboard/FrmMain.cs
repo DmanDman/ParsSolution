@@ -637,6 +637,30 @@ namespace ParsDashboard
 
             helper.ClearListBoxes( ctllbFrom, ctllbTo );
         }
+
+        private void TSMnuPatientClear_Click(object sender, EventArgs e)
+        {           
+            if ( FrmPatient.PatientVar.ClearType == 0 )
+            {
+                Control updwn = SubRoutine.FindControl( fPatient, "UpDwnLastNameLetter" );
+                DomainUpDown ctlupdwn = updwn as DomainUpDown;
+
+                helper.ClearUpDwn( ctlupdwn );
+            }
+
+            if ( FrmPatient.PatientVar.ClearType == 1 )
+            {
+                Control updwn = SubRoutine.FindControl( fPatient, "UpDwnYear" );
+                DomainUpDown ctlupdwn = updwn as DomainUpDown;
+
+                helper.ClearUpDwn ( ctlupdwn );
+
+                updwn = SubRoutine.FindControl( fPatient, "UpDwnMonth" );
+                ctlupdwn = updwn as DomainUpDown;
+
+                helper.ClearUpDwn( ctlupdwn );
+            }            
+        }
     }
 
     public class SubRoutine

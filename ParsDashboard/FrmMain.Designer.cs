@@ -1173,6 +1173,7 @@
             this.TSMnuPatientClear.Name = "TSMnuPatientClear";
             this.TSMnuPatientClear.Size = new System.Drawing.Size(55, 24);
             this.TSMnuPatientClear.Text = "Clear";
+            this.TSMnuPatientClear.Click += new System.EventHandler(this.TSMnuPatientClear_Click);
             // 
             // MnuImageFilter
             // 
@@ -1235,11 +1236,11 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1397, 612);
+            this.Controls.Add(this.MnuPatient);
             this.Controls.Add(this.MnuImageFilter);
             this.Controls.Add(this.MnuImages);
             this.Controls.Add(this.MnuImagesSearch);
             this.Controls.Add(this.MnuImageSearchResult);
-            this.Controls.Add(this.MnuPatient);
             this.Controls.Add(this.MnuDashboard);
             this.Controls.Add(this.tableLayoutPanel1);
             this.IsMdiContainer = true;

@@ -139,6 +139,16 @@ namespace ParsDashboard
 
             listTo.Sorted = true;
         }
+
+        public void ClearUpDwn( DomainUpDown domainupdwm )
+        {
+            domainupdwm.Text = "";
+        }
+
+        public void ClearComboBox( ComboBox cbo )
+        {
+           
+        }
     }
 
     public class Helper_MouseMove

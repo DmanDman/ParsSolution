@@ -62,7 +62,7 @@
             this.GrpImage.Size = new System.Drawing.Size(242, 176);
             this.GrpImage.TabIndex = 4;
             this.GrpImage.TabStop = false;
-            this.GrpImage.Text = "Surgery Date / Image Entered";
+            this.GrpImage.Text = "Surgery Date";
             // 
             // CboEndYear
             // 
