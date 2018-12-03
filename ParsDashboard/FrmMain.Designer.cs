@@ -82,48 +82,48 @@
             this.DlgImagesAdd = new System.Windows.Forms.OpenFileDialog();
             this.MnuDashboard = new System.Windows.Forms.MenuStrip();
             this.TSMnuOpenCanvas = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDashboardBreak1 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuAddToCanvas = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDashboardBreak2 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuImages = new System.Windows.Forms.MenuStrip();
             this.TSMnuDisplay = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuClearAll = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuImagesSearch = new System.Windows.Forms.MenuStrip();
             this.TSMnuSearch = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsMnuImageSearchBreak1 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuAddMeta = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsMnuImageSearchBreak2 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuRemoveMeta = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsMnuImageSearchBreak3 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuAddInfo = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsMnuImageSearchBreak4 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuRemoveInfo = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsMnuImageSearchBreak5 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuRemoveAllMeta = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsMnuImageSearchBreak6 = new System.Windows.Forms.ToolStripMenuItem();
             this.TsMnuRemoveAllPic = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuImageSearchResult = new System.Windows.Forms.MenuStrip();
             this.TSMnuImgSearchResultPatientDetail = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuImgSearchResultBreak1 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuImgSearchResultAddPic = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuImgSearchResultBreak2 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuImgSearchResultDelPic = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuImgSearchResultBreak3 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuImgSearchResultOpenCanvas = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuImgSearchResultBreak4 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuImgSearchResultPrint = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuPatient = new System.Windows.Forms.MenuStrip();
             this.TSMnuPatientDisplay = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuPatientBreak1 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuPatientClear = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuImageFilter = new System.Windows.Forms.MenuStrip();
             this.TSMnuFilterApplyFilter = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuFilterClearChecks = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuFilterClearSurgery = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuFilterBreak1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuFilterClearChecks = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuFilterBreak2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuPatientBreak1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuImgSearchResultBreak1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuImgSearchResultBreak2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuImgSearchResultBreak3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuImgSearchResultBreak4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsMnuImageSearchBreak1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsMnuImageSearchBreak2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsMnuImageSearchBreak3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsMnuImageSearchBreak4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsMnuImageSearchBreak5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuDashboardBreak1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuDashboardBreak2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsMnuImageSearchBreak6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuFilterClearSurgery = new System.Windows.Forms.ToolStripMenuItem();
             this.PnlDashboard.SuspendLayout();
             this.PnlPatient.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -850,11 +850,29 @@
             this.TSMnuOpenCanvas.Size = new System.Drawing.Size(107, 24);
             this.TSMnuOpenCanvas.Text = "Open Canvas";
             // 
+            // TSMnuDashboardBreak1
+            // 
+            this.TSMnuDashboardBreak1.Enabled = false;
+            this.TSMnuDashboardBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuDashboardBreak1.Name = "TSMnuDashboardBreak1";
+            this.TSMnuDashboardBreak1.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuDashboardBreak1.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuDashboardBreak1.Text = "|";
+            // 
             // TSMnuAddToCanvas
             // 
             this.TSMnuAddToCanvas.Name = "TSMnuAddToCanvas";
             this.TSMnuAddToCanvas.Size = new System.Drawing.Size(117, 24);
             this.TSMnuAddToCanvas.Text = "Add to Canvas";
+            // 
+            // TSMnuDashboardBreak2
+            // 
+            this.TSMnuDashboardBreak2.Enabled = false;
+            this.TSMnuDashboardBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuDashboardBreak2.Name = "TSMnuDashboardBreak2";
+            this.TSMnuDashboardBreak2.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuDashboardBreak2.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuDashboardBreak2.Text = "|";
             // 
             // TSMnuHelp
             // 
@@ -884,6 +902,15 @@
             this.TSMnuDisplay.Size = new System.Drawing.Size(70, 24);
             this.TSMnuDisplay.Tag = "FrmDashboard";
             this.TSMnuDisplay.Text = "Display";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Enabled = false;
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Padding = new System.Windows.Forms.Padding(0);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(18, 24);
+            this.toolStripMenuItem1.Text = "|";
             // 
             // TSMnuClearAll
             // 
@@ -925,12 +952,30 @@
             this.TSMnuSearch.Text = "&Search";
             this.TSMnuSearch.Click += new System.EventHandler(this.TSMnuSearch_Click);
             // 
+            // TsMnuImageSearchBreak1
+            // 
+            this.TsMnuImageSearchBreak1.Enabled = false;
+            this.TsMnuImageSearchBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TsMnuImageSearchBreak1.Name = "TsMnuImageSearchBreak1";
+            this.TsMnuImageSearchBreak1.Padding = new System.Windows.Forms.Padding(0);
+            this.TsMnuImageSearchBreak1.Size = new System.Drawing.Size(18, 24);
+            this.TsMnuImageSearchBreak1.Text = "|";
+            // 
             // TSMnuAddMeta
             // 
             this.TSMnuAddMeta.Name = "TSMnuAddMeta";
             this.TSMnuAddMeta.Size = new System.Drawing.Size(123, 24);
             this.TSMnuAddMeta.Text = "&Add Meta Data";
             this.TSMnuAddMeta.Click += new System.EventHandler(this.TSMnuAddMeta_Click);
+            // 
+            // TsMnuImageSearchBreak2
+            // 
+            this.TsMnuImageSearchBreak2.Enabled = false;
+            this.TsMnuImageSearchBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TsMnuImageSearchBreak2.Name = "TsMnuImageSearchBreak2";
+            this.TsMnuImageSearchBreak2.Padding = new System.Windows.Forms.Padding(0);
+            this.TsMnuImageSearchBreak2.Size = new System.Drawing.Size(18, 24);
+            this.TsMnuImageSearchBreak2.Text = "|";
             // 
             // TSMnuRemoveMeta
             // 
@@ -939,12 +984,30 @@
             this.TSMnuRemoveMeta.Text = "&Remove Meta Data";
             this.TSMnuRemoveMeta.Click += new System.EventHandler(this.TSMnuRemoveMeta_Click);
             // 
+            // TsMnuImageSearchBreak3
+            // 
+            this.TsMnuImageSearchBreak3.Enabled = false;
+            this.TsMnuImageSearchBreak3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TsMnuImageSearchBreak3.Name = "TsMnuImageSearchBreak3";
+            this.TsMnuImageSearchBreak3.Padding = new System.Windows.Forms.Padding(0);
+            this.TsMnuImageSearchBreak3.Size = new System.Drawing.Size(18, 24);
+            this.TsMnuImageSearchBreak3.Text = "|";
+            // 
             // TSMnuAddInfo
             // 
             this.TSMnuAddInfo.Name = "TSMnuAddInfo";
             this.TSMnuAddInfo.Size = new System.Drawing.Size(128, 24);
             this.TSMnuAddInfo.Text = "Add Picture &Info";
             this.TSMnuAddInfo.Click += new System.EventHandler(this.TSMnuAddInfo_Click);
+            // 
+            // TsMnuImageSearchBreak4
+            // 
+            this.TsMnuImageSearchBreak4.Enabled = false;
+            this.TsMnuImageSearchBreak4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TsMnuImageSearchBreak4.Name = "TsMnuImageSearchBreak4";
+            this.TsMnuImageSearchBreak4.Padding = new System.Windows.Forms.Padding(0);
+            this.TsMnuImageSearchBreak4.Size = new System.Drawing.Size(18, 24);
+            this.TsMnuImageSearchBreak4.Text = "|";
             // 
             // TSMnuRemoveInfo
             // 
@@ -953,12 +1016,30 @@
             this.TSMnuRemoveInfo.Text = "Remove Picture I&nfo";
             this.TSMnuRemoveInfo.Click += new System.EventHandler(this.TSMnuRemoveInfo_Click);
             // 
+            // TsMnuImageSearchBreak5
+            // 
+            this.TsMnuImageSearchBreak5.Enabled = false;
+            this.TsMnuImageSearchBreak5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TsMnuImageSearchBreak5.Name = "TsMnuImageSearchBreak5";
+            this.TsMnuImageSearchBreak5.Padding = new System.Windows.Forms.Padding(0);
+            this.TsMnuImageSearchBreak5.Size = new System.Drawing.Size(18, 24);
+            this.TsMnuImageSearchBreak5.Text = "|";
+            // 
             // TSMnuRemoveAllMeta
             // 
             this.TSMnuRemoveAllMeta.Name = "TSMnuRemoveAllMeta";
             this.TSMnuRemoveAllMeta.Size = new System.Drawing.Size(171, 24);
             this.TSMnuRemoveAllMeta.Text = "Re&move All Meta Data";
             this.TSMnuRemoveAllMeta.Click += new System.EventHandler(this.TSMnuRemoveAllMeta_Click);
+            // 
+            // TsMnuImageSearchBreak6
+            // 
+            this.TsMnuImageSearchBreak6.Enabled = false;
+            this.TsMnuImageSearchBreak6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TsMnuImageSearchBreak6.Name = "TsMnuImageSearchBreak6";
+            this.TsMnuImageSearchBreak6.Padding = new System.Windows.Forms.Padding(0);
+            this.TsMnuImageSearchBreak6.Size = new System.Drawing.Size(18, 24);
+            this.TsMnuImageSearchBreak6.Text = "|";
             // 
             // TsMnuRemoveAllPic
             // 
@@ -996,11 +1077,29 @@
             this.TSMnuImgSearchResultPatientDetail.Tag = "";
             this.TSMnuImgSearchResultPatientDetail.Text = "Patient Detail";
             // 
+            // TSMnuImgSearchResultBreak1
+            // 
+            this.TSMnuImgSearchResultBreak1.Enabled = false;
+            this.TSMnuImgSearchResultBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuImgSearchResultBreak1.Name = "TSMnuImgSearchResultBreak1";
+            this.TSMnuImgSearchResultBreak1.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuImgSearchResultBreak1.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuImgSearchResultBreak1.Text = "|";
+            // 
             // TSMnuImgSearchResultAddPic
             // 
             this.TSMnuImgSearchResultAddPic.Name = "TSMnuImgSearchResultAddPic";
             this.TSMnuImgSearchResultAddPic.Size = new System.Drawing.Size(72, 24);
             this.TSMnuImgSearchResultAddPic.Text = "Add Pic";
+            // 
+            // TSMnuImgSearchResultBreak2
+            // 
+            this.TSMnuImgSearchResultBreak2.Enabled = false;
+            this.TSMnuImgSearchResultBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuImgSearchResultBreak2.Name = "TSMnuImgSearchResultBreak2";
+            this.TSMnuImgSearchResultBreak2.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuImgSearchResultBreak2.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuImgSearchResultBreak2.Text = "|";
             // 
             // TSMnuImgSearchResultDelPic
             // 
@@ -1008,11 +1107,29 @@
             this.TSMnuImgSearchResultDelPic.Size = new System.Drawing.Size(67, 24);
             this.TSMnuImgSearchResultDelPic.Text = "Del Pic";
             // 
+            // TSMnuImgSearchResultBreak3
+            // 
+            this.TSMnuImgSearchResultBreak3.Enabled = false;
+            this.TSMnuImgSearchResultBreak3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuImgSearchResultBreak3.Name = "TSMnuImgSearchResultBreak3";
+            this.TSMnuImgSearchResultBreak3.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuImgSearchResultBreak3.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuImgSearchResultBreak3.Text = "|";
+            // 
             // TSMnuImgSearchResultOpenCanvas
             // 
             this.TSMnuImgSearchResultOpenCanvas.Name = "TSMnuImgSearchResultOpenCanvas";
             this.TSMnuImgSearchResultOpenCanvas.Size = new System.Drawing.Size(107, 24);
             this.TSMnuImgSearchResultOpenCanvas.Text = "Open Canvas";
+            // 
+            // TSMnuImgSearchResultBreak4
+            // 
+            this.TSMnuImgSearchResultBreak4.Enabled = false;
+            this.TSMnuImgSearchResultBreak4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuImgSearchResultBreak4.Name = "TSMnuImgSearchResultBreak4";
+            this.TSMnuImgSearchResultBreak4.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuImgSearchResultBreak4.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuImgSearchResultBreak4.Text = "|";
             // 
             // TSMnuImgSearchResultPrint
             // 
@@ -1041,6 +1158,15 @@
             this.TSMnuPatientDisplay.Name = "TSMnuPatientDisplay";
             this.TSMnuPatientDisplay.Size = new System.Drawing.Size(70, 24);
             this.TSMnuPatientDisplay.Text = "Display";
+            // 
+            // TSMnuPatientBreak1
+            // 
+            this.TSMnuPatientBreak1.Enabled = false;
+            this.TSMnuPatientBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuPatientBreak1.Name = "TSMnuPatientBreak1";
+            this.TSMnuPatientBreak1.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuPatientBreak1.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuPatientBreak1.Text = "|";
             // 
             // TSMnuPatientClear
             // 
@@ -1072,18 +1198,6 @@
             this.TSMnuFilterApplyFilter.Size = new System.Drawing.Size(97, 24);
             this.TSMnuFilterApplyFilter.Text = "Apply Filter";
             // 
-            // TSMnuFilterClearChecks
-            // 
-            this.TSMnuFilterClearChecks.Name = "TSMnuFilterClearChecks";
-            this.TSMnuFilterClearChecks.Size = new System.Drawing.Size(144, 24);
-            this.TSMnuFilterClearChecks.Text = "Clear Personal Info";
-            // 
-            // TSMnuFilterClearSurgery
-            // 
-            this.TSMnuFilterClearSurgery.Name = "TSMnuFilterClearSurgery";
-            this.TSMnuFilterClearSurgery.Size = new System.Drawing.Size(198, 24);
-            this.TSMnuFilterClearSurgery.Text = "Clear Patient / Surgery Info";
-            // 
             // TSMnuFilterBreak1
             // 
             this.TSMnuFilterBreak1.Enabled = false;
@@ -1092,6 +1206,13 @@
             this.TSMnuFilterBreak1.Padding = new System.Windows.Forms.Padding(0);
             this.TSMnuFilterBreak1.Size = new System.Drawing.Size(18, 24);
             this.TSMnuFilterBreak1.Text = "|";
+            // 
+            // TSMnuFilterClearChecks
+            // 
+            this.TSMnuFilterClearChecks.Name = "TSMnuFilterClearChecks";
+            this.TSMnuFilterClearChecks.Size = new System.Drawing.Size(144, 24);
+            this.TSMnuFilterClearChecks.Text = "Clear Personal Info";
+            this.TSMnuFilterClearChecks.Click += new System.EventHandler(this.TSMnuFilterClearChecks_Click);
             // 
             // TSMnuFilterBreak2
             // 
@@ -1102,131 +1223,12 @@
             this.TSMnuFilterBreak2.Size = new System.Drawing.Size(18, 24);
             this.TSMnuFilterBreak2.Text = "|";
             // 
-            // TSMnuPatientBreak1
+            // TSMnuFilterClearSurgery
             // 
-            this.TSMnuPatientBreak1.Enabled = false;
-            this.TSMnuPatientBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TSMnuPatientBreak1.Name = "TSMnuPatientBreak1";
-            this.TSMnuPatientBreak1.Padding = new System.Windows.Forms.Padding(0);
-            this.TSMnuPatientBreak1.Size = new System.Drawing.Size(18, 24);
-            this.TSMnuPatientBreak1.Text = "|";
-            // 
-            // TSMnuImgSearchResultBreak1
-            // 
-            this.TSMnuImgSearchResultBreak1.Enabled = false;
-            this.TSMnuImgSearchResultBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TSMnuImgSearchResultBreak1.Name = "TSMnuImgSearchResultBreak1";
-            this.TSMnuImgSearchResultBreak1.Padding = new System.Windows.Forms.Padding(0);
-            this.TSMnuImgSearchResultBreak1.Size = new System.Drawing.Size(18, 24);
-            this.TSMnuImgSearchResultBreak1.Text = "|";
-            // 
-            // TSMnuImgSearchResultBreak2
-            // 
-            this.TSMnuImgSearchResultBreak2.Enabled = false;
-            this.TSMnuImgSearchResultBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TSMnuImgSearchResultBreak2.Name = "TSMnuImgSearchResultBreak2";
-            this.TSMnuImgSearchResultBreak2.Padding = new System.Windows.Forms.Padding(0);
-            this.TSMnuImgSearchResultBreak2.Size = new System.Drawing.Size(18, 24);
-            this.TSMnuImgSearchResultBreak2.Text = "|";
-            // 
-            // TSMnuImgSearchResultBreak3
-            // 
-            this.TSMnuImgSearchResultBreak3.Enabled = false;
-            this.TSMnuImgSearchResultBreak3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TSMnuImgSearchResultBreak3.Name = "TSMnuImgSearchResultBreak3";
-            this.TSMnuImgSearchResultBreak3.Padding = new System.Windows.Forms.Padding(0);
-            this.TSMnuImgSearchResultBreak3.Size = new System.Drawing.Size(18, 24);
-            this.TSMnuImgSearchResultBreak3.Text = "|";
-            // 
-            // TSMnuImgSearchResultBreak4
-            // 
-            this.TSMnuImgSearchResultBreak4.Enabled = false;
-            this.TSMnuImgSearchResultBreak4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TSMnuImgSearchResultBreak4.Name = "TSMnuImgSearchResultBreak4";
-            this.TSMnuImgSearchResultBreak4.Padding = new System.Windows.Forms.Padding(0);
-            this.TSMnuImgSearchResultBreak4.Size = new System.Drawing.Size(18, 24);
-            this.TSMnuImgSearchResultBreak4.Text = "|";
-            // 
-            // TsMnuImageSearchBreak1
-            // 
-            this.TsMnuImageSearchBreak1.Enabled = false;
-            this.TsMnuImageSearchBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TsMnuImageSearchBreak1.Name = "TsMnuImageSearchBreak1";
-            this.TsMnuImageSearchBreak1.Padding = new System.Windows.Forms.Padding(0);
-            this.TsMnuImageSearchBreak1.Size = new System.Drawing.Size(18, 24);
-            this.TsMnuImageSearchBreak1.Text = "|";
-            // 
-            // TsMnuImageSearchBreak2
-            // 
-            this.TsMnuImageSearchBreak2.Enabled = false;
-            this.TsMnuImageSearchBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TsMnuImageSearchBreak2.Name = "TsMnuImageSearchBreak2";
-            this.TsMnuImageSearchBreak2.Padding = new System.Windows.Forms.Padding(0);
-            this.TsMnuImageSearchBreak2.Size = new System.Drawing.Size(18, 24);
-            this.TsMnuImageSearchBreak2.Text = "|";
-            // 
-            // TsMnuImageSearchBreak3
-            // 
-            this.TsMnuImageSearchBreak3.Enabled = false;
-            this.TsMnuImageSearchBreak3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TsMnuImageSearchBreak3.Name = "TsMnuImageSearchBreak3";
-            this.TsMnuImageSearchBreak3.Padding = new System.Windows.Forms.Padding(0);
-            this.TsMnuImageSearchBreak3.Size = new System.Drawing.Size(18, 24);
-            this.TsMnuImageSearchBreak3.Text = "|";
-            // 
-            // TsMnuImageSearchBreak4
-            // 
-            this.TsMnuImageSearchBreak4.Enabled = false;
-            this.TsMnuImageSearchBreak4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TsMnuImageSearchBreak4.Name = "TsMnuImageSearchBreak4";
-            this.TsMnuImageSearchBreak4.Padding = new System.Windows.Forms.Padding(0);
-            this.TsMnuImageSearchBreak4.Size = new System.Drawing.Size(18, 24);
-            this.TsMnuImageSearchBreak4.Text = "|";
-            // 
-            // TsMnuImageSearchBreak5
-            // 
-            this.TsMnuImageSearchBreak5.Enabled = false;
-            this.TsMnuImageSearchBreak5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TsMnuImageSearchBreak5.Name = "TsMnuImageSearchBreak5";
-            this.TsMnuImageSearchBreak5.Padding = new System.Windows.Forms.Padding(0);
-            this.TsMnuImageSearchBreak5.Size = new System.Drawing.Size(18, 24);
-            this.TsMnuImageSearchBreak5.Text = "|";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Enabled = false;
-            this.toolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Padding = new System.Windows.Forms.Padding(0);
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(18, 24);
-            this.toolStripMenuItem1.Text = "|";
-            // 
-            // TSMnuDashboardBreak1
-            // 
-            this.TSMnuDashboardBreak1.Enabled = false;
-            this.TSMnuDashboardBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TSMnuDashboardBreak1.Name = "TSMnuDashboardBreak1";
-            this.TSMnuDashboardBreak1.Padding = new System.Windows.Forms.Padding(0);
-            this.TSMnuDashboardBreak1.Size = new System.Drawing.Size(18, 24);
-            this.TSMnuDashboardBreak1.Text = "|";
-            // 
-            // TSMnuDashboardBreak2
-            // 
-            this.TSMnuDashboardBreak2.Enabled = false;
-            this.TSMnuDashboardBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TSMnuDashboardBreak2.Name = "TSMnuDashboardBreak2";
-            this.TSMnuDashboardBreak2.Padding = new System.Windows.Forms.Padding(0);
-            this.TSMnuDashboardBreak2.Size = new System.Drawing.Size(18, 24);
-            this.TSMnuDashboardBreak2.Text = "|";
-            // 
-            // TsMnuImageSearchBreak6
-            // 
-            this.TsMnuImageSearchBreak6.Enabled = false;
-            this.TsMnuImageSearchBreak6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TsMnuImageSearchBreak6.Name = "TsMnuImageSearchBreak6";
-            this.TsMnuImageSearchBreak6.Padding = new System.Windows.Forms.Padding(0);
-            this.TsMnuImageSearchBreak6.Size = new System.Drawing.Size(18, 24);
-            this.TsMnuImageSearchBreak6.Text = "|";
+            this.TSMnuFilterClearSurgery.Name = "TSMnuFilterClearSurgery";
+            this.TSMnuFilterClearSurgery.Size = new System.Drawing.Size(132, 24);
+            this.TSMnuFilterClearSurgery.Text = "Clear Filter Items";
+            this.TSMnuFilterClearSurgery.Click += new System.EventHandler(this.TSMnuFilterClearSurgery_Click);
             // 
             // FrmMain
             // 
@@ -1234,10 +1236,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1397, 612);
             this.Controls.Add(this.MnuImageFilter);
-            this.Controls.Add(this.MnuPatient);
-            this.Controls.Add(this.MnuImageSearchResult);
-            this.Controls.Add(this.MnuImagesSearch);
             this.Controls.Add(this.MnuImages);
+            this.Controls.Add(this.MnuImagesSearch);
+            this.Controls.Add(this.MnuImageSearchResult);
+            this.Controls.Add(this.MnuPatient);
             this.Controls.Add(this.MnuDashboard);
             this.Controls.Add(this.tableLayoutPanel1);
             this.IsMdiContainer = true;

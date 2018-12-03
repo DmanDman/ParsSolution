@@ -36,6 +36,83 @@ namespace ParsDashboard
         SubRoutine SubRtn = new SubRoutine();
         #endregion
 
+        #region Form Sub-Routines  
+
+        public void NavSetStyleClick(Label lbl)
+        {
+            Label lblClick = lbl;
+
+            //  Dashboard Panel
+            LblDashboard.Font = new Font(LblDashboard.Font.Name, LblDashboard.Font.SizeInPoints, FontStyle.Regular);
+
+            //  Images Panel
+            LblImages.Font = new Font(LblImages.Font.Name, LblImages.Font.SizeInPoints, FontStyle.Regular);
+            LblImagesAdd.Font = new Font(LblImagesAdd.Font.Name, LblImagesAdd.Font.SizeInPoints, FontStyle.Regular);
+            LblImagesSearch.Font = new Font(LblImagesSearch.Font.Name, LblImagesSearch.Font.SizeInPoints, FontStyle.Regular);
+            LblImagesFilter.Font = new Font(LblImagesFilter.Font.Name, LblImagesFilter.Font.SizeInPoints, FontStyle.Regular);
+            LblImagesSearchResults.Font = new Font(LblImagesSearchResults.Font.Name, LblImagesSearchResults.Font.SizeInPoints, FontStyle.Regular);
+            LblImagesSearchToPatient.Font = new Font(LblImagesSearchToPatient.Font.Name, LblImagesSearchToPatient.Font.SizeInPoints, FontStyle.Regular);
+
+            //  Patient Panel
+            LblPatient.Font = new Font(LblPatient.Font.Name, LblPatient.Font.SizeInPoints, FontStyle.Regular);
+            LblPatientAdd.Font = new Font(LblPatientAdd.Font.Name, LblPatientAdd.Font.SizeInPoints, FontStyle.Regular);
+            LlbPatientSearch.Font = new Font(LlbPatientSearch.Font.Name, LlbPatientSearch.Font.SizeInPoints, FontStyle.Regular);
+            LblPatientFilter.Font = new Font(LblPatientFilter.Font.Name, LblPatientFilter.Font.SizeInPoints, FontStyle.Regular);
+            LblPatientSearchResults.Font = new Font(LblPatientSearchResults.Font.Name, LblPatientSearchResults.Font.SizeInPoints, FontStyle.Regular);
+            LblPatientSearchToImage.Font = new Font(LblPatientSearchToImage.Font.Name, LblPatientSearchToImage.Font.SizeInPoints, FontStyle.Regular);
+
+            //  Set font bold
+            if (lblClick.Font.Bold != true)
+            {
+                lbl.Font = new Font(lbl.Font.Name, lbl.Font.SizeInPoints, FontStyle.Bold);
+            }
+            else
+            {
+
+            }
+        }
+
+        private void SetPanel_Height()
+        {
+            PnlDashboard.Height = 25;
+            PnlImages.Height = 25;
+            PnlPatient.Height = 25;
+            PnlSurgery.Height = 25;
+            PnlRpt.Height = 25;
+            PnlData.Height = 25;
+            PnlMetaData.Height = 25;
+            PnlEmailPic.Height = 25;
+            PnlSecurity.Height = 25;
+
+            //Label1Dash.Image = Properties.Resources.Expander_Collapsed16; // use your down arrow image
+            //Label2.Image = Properties.Resources.Expander_Collapsed16; // use your down arrow image
+            //Label3.Image = Properties.Resources.Expander_Collapsed16; // use your down arrow image
+        }
+
+        private void StopPanel_Flickering()
+        {
+            // Stop flickering for panels
+
+            StopPanel_FlickeringPanel(tableLayoutPanel1);
+            StopPanel_FlickeringPanel(PnlDashboard);
+            StopPanel_FlickeringPanel(PnlImages);
+            StopPanel_FlickeringPanel(PnlPatient);
+            StopPanel_FlickeringPanel(PnlSurgery);
+            StopPanel_FlickeringPanel(PnlRpt);
+            StopPanel_FlickeringPanel(PnlData);
+            StopPanel_FlickeringPanel(PnlMetaData);
+            StopPanel_FlickeringPanel(PnlEmailPic);
+            StopPanel_FlickeringPanel(PnlSecurity);
+        }
+
+        private void StopPanel_FlickeringPanel(Panel pnl)
+        {
+            typeof(Panel).InvokeMember("DoubleBuffered",
+                BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic,
+                null, pnl, new object[] { true });
+        }
+
+        #endregion
 
         public FrmMain()
         {   
@@ -449,101 +526,123 @@ namespace ParsDashboard
         private void LblPatientSearchResults_Click(object sender, EventArgs e)
         {
             NavSetStyleClick( LblPatientSearchResults );
-        }
+        }        
 
-        #region Form Sub-Routines  
-        
-        public void NavSetStyleClick(Label lbl)
+        private void TSMnuFilterClearChecks_Click(object sender, EventArgs e)
         {
-            Label lblClick = lbl;
+            Control gb = SubRoutine.FindControl( fImageFilter, "GrpBoxPersonal" );
+            GroupBox ctlGb = gb as GroupBox;
 
-            //  Dashboard Panel
-            LblDashboard.Font = new Font(LblDashboard.Font.Name, LblDashboard.Font.SizeInPoints, FontStyle.Regular);
-
-            //  Images Panel
-            LblImages.Font = new Font(LblImages.Font.Name, LblImages.Font.SizeInPoints, FontStyle.Regular);
-            LblImagesAdd.Font = new Font(LblImagesAdd.Font.Name, LblImagesAdd.Font.SizeInPoints, FontStyle.Regular);
-            LblImagesSearch.Font = new Font(LblImagesSearch.Font.Name, LblImagesSearch.Font.SizeInPoints, FontStyle.Regular);
-            LblImagesFilter.Font = new Font(LblImagesFilter.Font.Name, LblImagesFilter.Font.SizeInPoints, FontStyle.Regular);
-            LblImagesSearchResults.Font = new Font(LblImagesSearchResults.Font.Name, LblImagesSearchResults.Font.SizeInPoints, FontStyle.Regular);
-            LblImagesSearchToPatient.Font = new Font(LblImagesSearchToPatient.Font.Name, LblImagesSearchToPatient.Font.SizeInPoints, FontStyle.Regular);
-
-            //  Patient Panel
-            LblPatient.Font = new Font(LblPatient.Font.Name, LblPatient.Font.SizeInPoints, FontStyle.Regular);
-            LblPatientAdd.Font = new Font(LblPatientAdd.Font.Name, LblPatientAdd.Font.SizeInPoints, FontStyle.Regular);
-            LlbPatientSearch.Font = new Font(LlbPatientSearch.Font.Name, LlbPatientSearch.Font.SizeInPoints, FontStyle.Regular);
-            LblPatientFilter.Font = new Font(LblPatientFilter.Font.Name, LblPatientFilter.Font.SizeInPoints, FontStyle.Regular);
-            LblPatientSearchResults.Font = new Font(LblPatientSearchResults.Font.Name, LblPatientSearchResults.Font.SizeInPoints, FontStyle.Regular);
-            LblPatientSearchToImage.Font = new Font(LblPatientSearchToImage.Font.Name, LblPatientSearchToImage.Font.SizeInPoints, FontStyle.Regular);
-
-            //  Set font bold
-            if (lblClick.Font.Bold != true)
-            {
-                lbl.Font = new Font(lbl.Font.Name, lbl.Font.SizeInPoints, FontStyle.Bold);
-            }
-            else
-            {
-
-            }
+            helper.ClearAllCheckBoxes( ctlGb );
         }
 
-        private void SetPanel_Height()
+        private void TSMnuFilterClearSurgery_Click(object sender, EventArgs e)
         {
-            PnlDashboard.Height = 25;
-            PnlImages.Height = 25;
-            PnlPatient.Height = 25;
-            PnlSurgery.Height = 25;
-            PnlRpt.Height = 25;
-            PnlData.Height = 25;
-            PnlMetaData.Height = 25;
-            PnlEmailPic.Height = 25;
-            PnlSecurity.Height = 25;
+            //  clear doctor
+            Control lbFrom = SubRoutine.FindControl( fImageFilter, "LstDr" );
+            ListBox ctllbFrom = lbFrom as ListBox;
 
-            //Label1Dash.Image = Properties.Resources.Expander_Collapsed16; // use your down arrow image
-            //Label2.Image = Properties.Resources.Expander_Collapsed16; // use your down arrow image
-            //Label3.Image = Properties.Resources.Expander_Collapsed16; // use your down arrow image
+            Control lbTo = SubRoutine.FindControl( fImageFilter, "LstDrFilter" );
+            ListBox ctllbTo = lbTo as ListBox;
+
+            helper.ClearListBoxes( ctllbFrom, ctllbTo );
+
+
+            //  clear hospital
+            lbFrom = SubRoutine.FindControl( fImageFilter, "LstHospital" );
+            ctllbFrom = lbFrom as ListBox;
+
+            lbTo = SubRoutine.FindControl( fImageFilter, "LstHospitalFilter" );
+            ctllbTo = lbTo as ListBox;
+
+            helper.ClearListBoxes( ctllbFrom, ctllbTo );
+
+
+            //  clear location
+            lbFrom = SubRoutine.FindControl( fImageFilter, "LstLocation" );
+            ctllbFrom = lbFrom as ListBox;
+
+            lbTo = SubRoutine.FindControl( fImageFilter, "LstLocationFIlter" );
+            ctllbTo = lbTo as ListBox;
+
+            helper.ClearListBoxes( ctllbFrom, ctllbTo );
+
+
+            //  clear level
+            lbFrom = SubRoutine.FindControl( fImageFilter, "LstLevel" );
+            ctllbFrom = lbFrom as ListBox;
+
+            lbTo = SubRoutine.FindControl( fImageFilter, "LstLevelFilter" );
+            ctllbTo = lbTo as ListBox;
+
+            helper.ClearListBoxes( ctllbFrom, ctllbTo );
+
+
+            //  clear cpt
+            lbFrom = SubRoutine.FindControl( fImageFilter, "LstCpt" );
+            ctllbFrom = lbFrom as ListBox;
+
+            lbTo = SubRoutine.FindControl( fImageFilter, "LstCptFilter" );
+            ctllbTo = lbTo as ListBox;
+
+            helper.ClearListBoxes( ctllbFrom, ctllbTo );
+
+
+            //  clear dx
+            lbFrom = SubRoutine.FindControl( fImageFilter, "LstDx" );
+            ctllbFrom = lbFrom as ListBox;
+
+            lbTo = SubRoutine.FindControl( fImageFilter, "LstDxFilter" );
+            ctllbTo = lbTo as ListBox;
+
+            helper.ClearListBoxes( ctllbFrom, ctllbTo );
+
+
+            //  clear surgery
+            lbFrom = SubRoutine.FindControl( fImageFilter, "LstSurgery" );
+            ctllbFrom = lbFrom as ListBox;
+
+            lbTo = SubRoutine.FindControl( fImageFilter, "LstSurgeryFilter" );
+            ctllbTo = lbTo as ListBox;
+
+            helper.ClearListBoxes( ctllbFrom, ctllbTo );
+
+
+            //  clear instrumentation
+            lbFrom = SubRoutine.FindControl( fImageFilter, "LstInst" );
+            ctllbFrom = lbFrom as ListBox;
+
+            lbTo = SubRoutine.FindControl( fImageFilter, "LstInstFilter" );
+            ctllbTo = lbTo as ListBox;
+
+            helper.ClearListBoxes( ctllbFrom, ctllbTo );
+
+
+            //  clear complication
+            lbFrom = SubRoutine.FindControl( fImageFilter, "LstComp" );
+            ctllbFrom = lbFrom as ListBox;
+
+            lbTo = SubRoutine.FindControl( fImageFilter, "LstCompFilter" );
+            ctllbTo = lbTo as ListBox;
+
+            helper.ClearListBoxes( ctllbFrom, ctllbTo );
+
+
+            //  clear pic info
+            lbFrom = SubRoutine.FindControl( fImageFilter, "LstPicInfo" );
+            ctllbFrom = lbFrom as ListBox;
+
+            lbTo = SubRoutine.FindControl( fImageFilter, "LstPicInfoFilter" );
+            ctllbTo = lbTo as ListBox;
+
+            helper.ClearListBoxes( ctllbFrom, ctllbTo );
         }
-
-        private void StopPanel_Flickering()
-        {
-            // Stop flickering for panels
-
-            StopPanel_FlickeringPanel( tableLayoutPanel1 );
-            StopPanel_FlickeringPanel( PnlDashboard );
-            StopPanel_FlickeringPanel( PnlImages );
-            StopPanel_FlickeringPanel( PnlPatient );
-            StopPanel_FlickeringPanel( PnlSurgery );
-            StopPanel_FlickeringPanel( PnlRpt );
-            StopPanel_FlickeringPanel( PnlData );
-            StopPanel_FlickeringPanel( PnlMetaData );
-            StopPanel_FlickeringPanel( PnlEmailPic );
-            StopPanel_FlickeringPanel( PnlSecurity );
-        }
-
-        private void StopPanel_FlickeringPanel(Panel pnl)
-        {
-            typeof(Panel).InvokeMember( "DoubleBuffered",
-                BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic,
-                null, pnl, new object[] { true });
-        }
-
-        #endregion
     }
 
     public class SubRoutine
     {        
         public void ShowHideMenu( Form fMain, string ControlName )
-        {
-            //string LabelName = FrmMain.Controls["LblImages"].Name;
-
-            //Control[] ctrls = FrmMain.Controls.Find( ControlName, false );
-            
-            //if ( ctrls.Length > 0 )
-            //{
-            //    Label lbl = (Label)ctrls[0];
-            //    lbl.Visible = true;
-            //}
-
+        {           
             foreach( Control ctr in fMain.Controls )
             {
                 if( ctr is MenuStrip & ctr.Name == ControlName )

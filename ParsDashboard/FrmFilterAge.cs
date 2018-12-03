@@ -86,7 +86,7 @@ namespace ParsDashboard
                 FilterVar.FilterAge = RdoFilterBetween.Text + " " + NumLess.Text + " and " + NumGreater.Text;
             }
 
-            this.Close();
+            this.Close();            
         }
     }
 }
