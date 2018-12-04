@@ -31,14 +31,19 @@
             this.GrpImage = new System.Windows.Forms.GroupBox();
             this.TabDisplay = new System.Windows.Forms.TabControl();
             this.tabLastName = new System.Windows.Forms.TabPage();
+            this.UpDwnLastNameLetter = new System.Windows.Forms.DomainUpDown();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.CboFullName = new System.Windows.Forms.ComboBox();
             this.tabDate = new System.Windows.Forms.TabPage();
+            this.UpDwnYear = new System.Windows.Forms.DomainUpDown();
+            this.UpDwnMonth = new System.Windows.Forms.DomainUpDown();
             this.comboBox2 = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Last = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.First = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -46,11 +51,6 @@
             this.DOB = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sex = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Surgeries = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.UpDwnLastNameLetter = new System.Windows.Forms.DomainUpDown();
-            this.UpDwnMonth = new System.Windows.Forms.DomainUpDown();
-            this.UpDwnYear = new System.Windows.Forms.DomainUpDown();
             this.GrpImages = new System.Windows.Forms.GroupBox();
             this.LstImageDesc = new System.Windows.Forms.ListBox();
             this.BtnImagePrev = new System.Windows.Forms.Button();
@@ -105,6 +105,42 @@
             this.tabLastName.TabIndex = 0;
             this.tabLastName.Text = "Last Name";
             this.tabLastName.UseVisualStyleBackColor = true;
+            // 
+            // UpDwnLastNameLetter
+            // 
+            this.UpDwnLastNameLetter.Items.Add("A");
+            this.UpDwnLastNameLetter.Items.Add("B");
+            this.UpDwnLastNameLetter.Items.Add("C");
+            this.UpDwnLastNameLetter.Items.Add("D");
+            this.UpDwnLastNameLetter.Items.Add("E");
+            this.UpDwnLastNameLetter.Items.Add("F");
+            this.UpDwnLastNameLetter.Items.Add("G");
+            this.UpDwnLastNameLetter.Items.Add("H");
+            this.UpDwnLastNameLetter.Items.Add("I");
+            this.UpDwnLastNameLetter.Items.Add("J");
+            this.UpDwnLastNameLetter.Items.Add("K");
+            this.UpDwnLastNameLetter.Items.Add("L");
+            this.UpDwnLastNameLetter.Items.Add("M");
+            this.UpDwnLastNameLetter.Items.Add("N");
+            this.UpDwnLastNameLetter.Items.Add("O");
+            this.UpDwnLastNameLetter.Items.Add("P");
+            this.UpDwnLastNameLetter.Items.Add("Q");
+            this.UpDwnLastNameLetter.Items.Add("R");
+            this.UpDwnLastNameLetter.Items.Add("S");
+            this.UpDwnLastNameLetter.Items.Add("T");
+            this.UpDwnLastNameLetter.Items.Add("U");
+            this.UpDwnLastNameLetter.Items.Add("V");
+            this.UpDwnLastNameLetter.Items.Add("W");
+            this.UpDwnLastNameLetter.Items.Add("X");
+            this.UpDwnLastNameLetter.Items.Add("Y");
+            this.UpDwnLastNameLetter.Items.Add("Z");
+            this.UpDwnLastNameLetter.Location = new System.Drawing.Point(9, 41);
+            this.UpDwnLastNameLetter.Name = "UpDwnLastNameLetter";
+            this.UpDwnLastNameLetter.ReadOnly = true;
+            this.UpDwnLastNameLetter.Size = new System.Drawing.Size(65, 22);
+            this.UpDwnLastNameLetter.Sorted = true;
+            this.UpDwnLastNameLetter.TabIndex = 2;
+            this.UpDwnLastNameLetter.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label2
             // 
@@ -176,6 +212,76 @@
             this.tabDate.Text = "Date";
             this.tabDate.UseVisualStyleBackColor = true;
             // 
+            // UpDwnYear
+            // 
+            this.UpDwnYear.Items.Add("1980");
+            this.UpDwnYear.Items.Add("1981");
+            this.UpDwnYear.Items.Add("1982");
+            this.UpDwnYear.Items.Add("1983");
+            this.UpDwnYear.Items.Add("1984");
+            this.UpDwnYear.Items.Add("1985");
+            this.UpDwnYear.Items.Add("1986");
+            this.UpDwnYear.Items.Add("1987");
+            this.UpDwnYear.Items.Add("1988");
+            this.UpDwnYear.Items.Add("1989");
+            this.UpDwnYear.Items.Add("1990");
+            this.UpDwnYear.Items.Add("1991");
+            this.UpDwnYear.Items.Add("1992");
+            this.UpDwnYear.Items.Add("1993");
+            this.UpDwnYear.Items.Add("1994");
+            this.UpDwnYear.Items.Add("1995");
+            this.UpDwnYear.Items.Add("1996");
+            this.UpDwnYear.Items.Add("1997");
+            this.UpDwnYear.Items.Add("1998");
+            this.UpDwnYear.Items.Add("1999");
+            this.UpDwnYear.Items.Add("2000");
+            this.UpDwnYear.Items.Add("2001");
+            this.UpDwnYear.Items.Add("2002");
+            this.UpDwnYear.Items.Add("2003");
+            this.UpDwnYear.Items.Add("2004");
+            this.UpDwnYear.Items.Add("2005");
+            this.UpDwnYear.Items.Add("2006");
+            this.UpDwnYear.Items.Add("2007");
+            this.UpDwnYear.Items.Add("2008");
+            this.UpDwnYear.Items.Add("2009");
+            this.UpDwnYear.Items.Add("2010");
+            this.UpDwnYear.Items.Add("2011");
+            this.UpDwnYear.Items.Add("2012");
+            this.UpDwnYear.Items.Add("2013");
+            this.UpDwnYear.Items.Add("2014");
+            this.UpDwnYear.Items.Add("2015");
+            this.UpDwnYear.Items.Add("2016");
+            this.UpDwnYear.Items.Add("2017");
+            this.UpDwnYear.Items.Add("2018");
+            this.UpDwnYear.Items.Add("2019");
+            this.UpDwnYear.Location = new System.Drawing.Point(9, 41);
+            this.UpDwnYear.Name = "UpDwnYear";
+            this.UpDwnYear.ReadOnly = true;
+            this.UpDwnYear.Size = new System.Drawing.Size(65, 22);
+            this.UpDwnYear.TabIndex = 2;
+            this.UpDwnYear.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // UpDwnMonth
+            // 
+            this.UpDwnMonth.Items.Add("Jan");
+            this.UpDwnMonth.Items.Add("Feb");
+            this.UpDwnMonth.Items.Add("Mar");
+            this.UpDwnMonth.Items.Add("Apr");
+            this.UpDwnMonth.Items.Add("May");
+            this.UpDwnMonth.Items.Add("Jun");
+            this.UpDwnMonth.Items.Add("Jul");
+            this.UpDwnMonth.Items.Add("Aug");
+            this.UpDwnMonth.Items.Add("Sep");
+            this.UpDwnMonth.Items.Add("Oct");
+            this.UpDwnMonth.Items.Add("Nov");
+            this.UpDwnMonth.Items.Add("Dec");
+            this.UpDwnMonth.Location = new System.Drawing.Point(103, 41);
+            this.UpDwnMonth.Name = "UpDwnMonth";
+            this.UpDwnMonth.ReadOnly = true;
+            this.UpDwnMonth.Size = new System.Drawing.Size(65, 22);
+            this.UpDwnMonth.TabIndex = 3;
+            this.UpDwnMonth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
             // comboBox2
             // 
             this.comboBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.Suggest;
@@ -238,6 +344,27 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Patient";
             // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(63, 35);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(340, 22);
+            this.textBox1.TabIndex = 1;
+            this.textBox1.Text = "Patient - 9359  |  Pics - 7455  |  Procedures - 11835";
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(6, 35);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(51, 17);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "Totals:";
+            // 
             // dataGridView1
             // 
             this.dataGridView1.AllowUserToAddRows = false;
@@ -295,133 +422,6 @@
             this.Surgeries.Name = "Surgeries";
             this.Surgeries.ReadOnly = true;
             this.Surgeries.Width = 75;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(6, 35);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 17);
-            this.label5.TabIndex = 0;
-            this.label5.Text = "Totals:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(63, 35);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(340, 22);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.Text = "Patient - 9359  |  Pics - 7455  |  Procedures - 11835";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // UpDwnLastNameLetter
-            // 
-            this.UpDwnLastNameLetter.Items.Add("A");
-            this.UpDwnLastNameLetter.Items.Add("B");
-            this.UpDwnLastNameLetter.Items.Add("C");
-            this.UpDwnLastNameLetter.Items.Add("D");
-            this.UpDwnLastNameLetter.Items.Add("E");
-            this.UpDwnLastNameLetter.Items.Add("F");
-            this.UpDwnLastNameLetter.Items.Add("G");
-            this.UpDwnLastNameLetter.Items.Add("H");
-            this.UpDwnLastNameLetter.Items.Add("I");
-            this.UpDwnLastNameLetter.Items.Add("J");
-            this.UpDwnLastNameLetter.Items.Add("K");
-            this.UpDwnLastNameLetter.Items.Add("L");
-            this.UpDwnLastNameLetter.Items.Add("M");
-            this.UpDwnLastNameLetter.Items.Add("N");
-            this.UpDwnLastNameLetter.Items.Add("O");
-            this.UpDwnLastNameLetter.Items.Add("P");
-            this.UpDwnLastNameLetter.Items.Add("Q");
-            this.UpDwnLastNameLetter.Items.Add("R");
-            this.UpDwnLastNameLetter.Items.Add("S");
-            this.UpDwnLastNameLetter.Items.Add("T");
-            this.UpDwnLastNameLetter.Items.Add("U");
-            this.UpDwnLastNameLetter.Items.Add("V");
-            this.UpDwnLastNameLetter.Items.Add("W");
-            this.UpDwnLastNameLetter.Items.Add("X");
-            this.UpDwnLastNameLetter.Items.Add("Y");
-            this.UpDwnLastNameLetter.Items.Add("Z");
-            this.UpDwnLastNameLetter.Location = new System.Drawing.Point(9, 41);
-            this.UpDwnLastNameLetter.Name = "UpDwnLastNameLetter";
-            this.UpDwnLastNameLetter.ReadOnly = true;
-            this.UpDwnLastNameLetter.Size = new System.Drawing.Size(65, 22);
-            this.UpDwnLastNameLetter.Sorted = true;
-            this.UpDwnLastNameLetter.TabIndex = 2;
-            this.UpDwnLastNameLetter.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // UpDwnMonth
-            // 
-            this.UpDwnMonth.Items.Add("Jan");
-            this.UpDwnMonth.Items.Add("Feb");
-            this.UpDwnMonth.Items.Add("Mar");
-            this.UpDwnMonth.Items.Add("Apr");
-            this.UpDwnMonth.Items.Add("May");
-            this.UpDwnMonth.Items.Add("Jun");
-            this.UpDwnMonth.Items.Add("Jul");
-            this.UpDwnMonth.Items.Add("Aug");
-            this.UpDwnMonth.Items.Add("Sep");
-            this.UpDwnMonth.Items.Add("Oct");
-            this.UpDwnMonth.Items.Add("Nov");
-            this.UpDwnMonth.Items.Add("Dec");
-            this.UpDwnMonth.Location = new System.Drawing.Point(103, 41);
-            this.UpDwnMonth.Name = "UpDwnMonth";
-            this.UpDwnMonth.ReadOnly = true;
-            this.UpDwnMonth.Size = new System.Drawing.Size(65, 22);
-            this.UpDwnMonth.TabIndex = 3;
-            this.UpDwnMonth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // UpDwnYear
-            // 
-            this.UpDwnYear.Items.Add("1980");
-            this.UpDwnYear.Items.Add("1981");
-            this.UpDwnYear.Items.Add("1982");
-            this.UpDwnYear.Items.Add("1983");
-            this.UpDwnYear.Items.Add("1984");
-            this.UpDwnYear.Items.Add("1985");
-            this.UpDwnYear.Items.Add("1986");
-            this.UpDwnYear.Items.Add("1987");
-            this.UpDwnYear.Items.Add("1988");
-            this.UpDwnYear.Items.Add("1989");
-            this.UpDwnYear.Items.Add("1990");
-            this.UpDwnYear.Items.Add("1991");
-            this.UpDwnYear.Items.Add("1992");
-            this.UpDwnYear.Items.Add("1993");
-            this.UpDwnYear.Items.Add("1994");
-            this.UpDwnYear.Items.Add("1995");
-            this.UpDwnYear.Items.Add("1996");
-            this.UpDwnYear.Items.Add("1997");
-            this.UpDwnYear.Items.Add("1998");
-            this.UpDwnYear.Items.Add("1999");
-            this.UpDwnYear.Items.Add("2000");
-            this.UpDwnYear.Items.Add("2001");
-            this.UpDwnYear.Items.Add("2002");
-            this.UpDwnYear.Items.Add("2003");
-            this.UpDwnYear.Items.Add("2004");
-            this.UpDwnYear.Items.Add("2005");
-            this.UpDwnYear.Items.Add("2006");
-            this.UpDwnYear.Items.Add("2007");
-            this.UpDwnYear.Items.Add("2008");
-            this.UpDwnYear.Items.Add("2009");
-            this.UpDwnYear.Items.Add("2010");
-            this.UpDwnYear.Items.Add("2011");
-            this.UpDwnYear.Items.Add("2012");
-            this.UpDwnYear.Items.Add("2013");
-            this.UpDwnYear.Items.Add("2014");
-            this.UpDwnYear.Items.Add("2015");
-            this.UpDwnYear.Items.Add("2016");
-            this.UpDwnYear.Items.Add("2017");
-            this.UpDwnYear.Items.Add("2018");
-            this.UpDwnYear.Items.Add("2019");
-            this.UpDwnYear.Location = new System.Drawing.Point(9, 41);
-            this.UpDwnYear.Name = "UpDwnYear";
-            this.UpDwnYear.ReadOnly = true;
-            this.UpDwnYear.Size = new System.Drawing.Size(65, 22);
-            this.UpDwnYear.TabIndex = 2;
-            this.UpDwnYear.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // GrpImages
             // 
@@ -491,6 +491,7 @@
             this.TxtImagesCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtImagesCount.Location = new System.Drawing.Point(417, 32);
             this.TxtImagesCount.Name = "TxtImagesCount";
+            this.TxtImagesCount.ReadOnly = true;
             this.TxtImagesCount.Size = new System.Drawing.Size(101, 22);
             this.TxtImagesCount.TabIndex = 4;
             this.TxtImagesCount.Text = "10 of 10";

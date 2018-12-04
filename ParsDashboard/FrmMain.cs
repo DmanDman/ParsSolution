@@ -646,6 +646,11 @@ namespace ParsDashboard
                 DomainUpDown ctlupdwn = updwn as DomainUpDown;
 
                 helper.ClearUpDwn( ctlupdwn );
+
+                Control cbo = SubRoutine.FindControl( fPatient, "CboFullName" );
+                ComboBox ctlcbo = cbo as ComboBox;
+
+                helper.ClearComboBox( ctlcbo );                
             }
 
             if ( FrmPatient.PatientVar.ClearType == 1 )
@@ -664,7 +669,7 @@ namespace ParsDashboard
     }
 
     public class SubRoutine
-    {        
+    {
         public void ShowHideMenu( Form fMain, string ControlName )
         {           
             foreach( Control ctr in fMain.Controls )
@@ -774,6 +779,5 @@ namespace ParsDashboard
             frm.Show();
             frm.WindowState = FormWindowState.Maximized;
         }
-
     }
 }

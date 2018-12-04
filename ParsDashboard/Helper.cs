@@ -147,7 +147,8 @@ namespace ParsDashboard
 
         public void ClearComboBox( ComboBox cbo )
         {
-           
+            cbo.Items.Clear();
+            cbo.Text = "";
         }
     }
 
