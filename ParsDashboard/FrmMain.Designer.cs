@@ -124,6 +124,10 @@
             this.TSMnuFilterClearChecks = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuFilterBreak2 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuFilterClearSurgery = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuPatientSearch = new System.Windows.Forms.MenuStrip();
+            this.TSMnuPatientSrchSearch = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuBlank1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuPatientSrchClear = new System.Windows.Forms.ToolStripMenuItem();
             this.PnlDashboard.SuspendLayout();
             this.PnlPatient.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -140,6 +144,7 @@
             this.MnuImageSearchResult.SuspendLayout();
             this.MnuPatient.SuspendLayout();
             this.MnuImageFilter.SuspendLayout();
+            this.MnuPatientSearch.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnlDashboard
@@ -1231,16 +1236,55 @@
             this.TSMnuFilterClearSurgery.Text = "Clear Filter Items";
             this.TSMnuFilterClearSurgery.Click += new System.EventHandler(this.TSMnuFilterClearSurgery_Click);
             // 
+            // MnuPatientSearch
+            // 
+            this.MnuPatientSearch.ImageScalingSize = new System.Drawing.Size(17, 17);
+            this.MnuPatientSearch.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMnuPatientSrchSearch,
+            this.TSMnuBlank1,
+            this.TSMnuPatientSrchClear});
+            this.MnuPatientSearch.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MnuPatientSearch.Location = new System.Drawing.Point(185, 28);
+            this.MnuPatientSearch.Name = "MnuPatientSearch";
+            this.MnuPatientSearch.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuPatientSearch.Size = new System.Drawing.Size(1212, 28);
+            this.MnuPatientSearch.TabIndex = 14;
+            this.MnuPatientSearch.Text = "menuStrip1";
+            this.MnuPatientSearch.Visible = false;
+            // 
+            // TSMnuPatientSrchSearch
+            // 
+            this.TSMnuPatientSrchSearch.Name = "TSMnuPatientSrchSearch";
+            this.TSMnuPatientSrchSearch.Size = new System.Drawing.Size(65, 24);
+            this.TSMnuPatientSrchSearch.Text = "Search";
+            // 
+            // TSMnuBlank1
+            // 
+            this.TSMnuBlank1.Enabled = false;
+            this.TSMnuBlank1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuBlank1.Name = "TSMnuBlank1";
+            this.TSMnuBlank1.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuBlank1.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuBlank1.Text = "|";
+            // 
+            // TSMnuPatientSrchClear
+            // 
+            this.TSMnuPatientSrchClear.Name = "TSMnuPatientSrchClear";
+            this.TSMnuPatientSrchClear.Size = new System.Drawing.Size(55, 24);
+            this.TSMnuPatientSrchClear.Text = "Clear";
+            this.TSMnuPatientSrchClear.Click += new System.EventHandler(this.TSMnuPatientSrchClear_Click);
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1397, 612);
-            this.Controls.Add(this.MnuPatient);
+            this.Controls.Add(this.MnuPatientSearch);
             this.Controls.Add(this.MnuImageFilter);
+            this.Controls.Add(this.MnuPatient);
+            this.Controls.Add(this.MnuImageSearchResult);
             this.Controls.Add(this.MnuImages);
             this.Controls.Add(this.MnuImagesSearch);
-            this.Controls.Add(this.MnuImageSearchResult);
             this.Controls.Add(this.MnuDashboard);
             this.Controls.Add(this.tableLayoutPanel1);
             this.IsMdiContainer = true;
@@ -1281,6 +1325,8 @@
             this.MnuPatient.PerformLayout();
             this.MnuImageFilter.ResumeLayout(false);
             this.MnuImageFilter.PerformLayout();
+            this.MnuPatientSearch.ResumeLayout(false);
+            this.MnuPatientSearch.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1383,6 +1429,10 @@
         private System.Windows.Forms.ToolStripMenuItem TsMnuImageSearchBreak4;
         private System.Windows.Forms.ToolStripMenuItem TsMnuImageSearchBreak5;
         private System.Windows.Forms.ToolStripMenuItem TsMnuImageSearchBreak6;
+        private System.Windows.Forms.MenuStrip MnuPatientSearch;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuPatientSrchSearch;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuBlank1;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuPatientSrchClear;
     }
 }
 

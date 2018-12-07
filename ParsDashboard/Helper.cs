@@ -150,6 +150,22 @@ namespace ParsDashboard
             cbo.Items.Clear();
             cbo.Text = "";
         }
+
+        public void ClearTextBox ( TextBox txt )
+        {
+            txt.Text = "";
+            txt.Focus();
+        }
+
+        public void ClearCheckBox( CheckBox chk )
+        {
+            chk.Checked = false;
+        }
+
+        public void ClearRadioBtn( RadioButton rdo )
+        {
+            rdo.Checked = false;
+        }
     }
 
     public class Helper_MouseMove

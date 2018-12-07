@@ -106,6 +106,7 @@
     <Compile Include="FrmPatientSearch.Designer.cs">
       <DependentUpon>FrmPatientSearch.cs</DependentUpon>
     </Compile>
+    <Compile Include="Globals.cs" />
     <Compile Include="Helper.cs" />
     <Compile Include="Load.cs" />
     <Compile Include="Program.cs" />

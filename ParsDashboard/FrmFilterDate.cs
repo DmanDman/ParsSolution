@@ -8,6 +8,8 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static ParsDashboard.FrmImageFilter;
+using static ParsDashboard.FrmPatientSearch;
+using static ParsDashboard.Globals;
 
 namespace ParsDashboard
 {
@@ -69,12 +71,54 @@ namespace ParsDashboard
         }
 
         private void BtnCancel_Click(object sender, EventArgs e)
-        {           
+        {
+            if ( PatientSearchVar.DobChecked == true )
+            { DobCancel = true; }
+
+            if ( PatientSearchVar.SurgeryDateChecked == true )
+            { SurgeryDateCancel = true; }
+
             this.Close();
         }
 
         private void BtnOK_Click(object sender, EventArgs e)
         {
+            //  FrmPatientSearch personal info
+            if ( PatientSearchVar.PersonalType == 1 )
+            {
+                //  date of birth checked
+                if ( PatientSearchVar.DobChecked == true )
+                {
+                    if ( RdoFilterEqualTo.Checked )
+                    { PatientSearchVar.FilterDOB = RdoFilterEqualTo.Text + " " + DtStart.Text; }
+
+                    if ( RdoFilterGreaterThan.Checked )
+                    { PatientSearchVar.FilterDOB = RdoFilterGreaterThan.Text + " " + DtStart.Text; }
+
+                    if ( RdoFilterLessThan.Checked )
+                    { PatientSearchVar.FilterDOB = RdoFilterLessThan.Text + " " + DtStart.Text; }
+
+                    if ( RdoFilterBetween.Checked )
+                    { PatientSearchVar.FilterDOB = RdoFilterBetween.Text + " " + DtStart.Text + " and " + DtEnd.Text; }
+                }
+
+                //  surgery date checked
+                if ( PatientSearchVar.SurgeryDateChecked == true )
+                {
+                    if ( RdoFilterEqualTo.Checked )
+                    { PatientSearchVar.FilterSurgeryDate = RdoFilterEqualTo.Text + " " + DtStart.Text; }
+
+                    if ( RdoFilterGreaterThan.Checked )
+                    { PatientSearchVar.FilterSurgeryDate = RdoFilterGreaterThan.Text + " " + DtStart.Text; }
+
+                    if ( RdoFilterLessThan.Checked )
+                    { PatientSearchVar.FilterSurgeryDate = RdoFilterLessThan.Text + " " + DtStart.Text; }
+
+                    if ( RdoFilterBetween.Checked )
+                    { PatientSearchVar.FilterSurgeryDate = RdoFilterBetween.Text + " " + DtStart.Text + " and " + DtEnd.Text; }
+                }
+            }
+
             if ( RdoFilterEqualTo.Checked )
             {
                 FilterVar.FilterDate = RdoFilterEqualTo.Text + " " + DtStart.Value.ToShortDateString();

@@ -18,6 +18,7 @@ namespace ParsDashboard
         {
             public static int ClearType { get; set; }
         }
+
         public FrmPatient()
         {
             InitializeComponent();

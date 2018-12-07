@@ -24,7 +24,8 @@ namespace ParsDashboard
         FrmImageSearchResults fImageSearchResuts = new FrmImageSearchResults();
         FrmImageFilter fImageFilter = new FrmImageFilter();
 
-        FrmPatient fPatient = new FrmPatient();       
+        FrmPatient fPatient = new FrmPatient();
+        public FrmPatientSearch fPatientSearch = new FrmPatientSearch();
         #endregion
 
         #region Define Helper Classes    
@@ -119,7 +120,9 @@ namespace ParsDashboard
             InitializeComponent();
             StopPanel_Flickering();
                       
-            SubRtn.Load_All_Forms( fPatient, this );           
+            SubRtn.Load_All_Forms( fPatient, this );
+            SubRtn.Load_All_Forms( fPatientSearch, this );
+            
             SubRtn.Load_All_Forms( fImage, this );
             SubRtn.Load_All_Forms( fImageSearch, this );
             SubRtn.Load_All_Forms( fImageSearchResuts, this );
@@ -202,7 +205,7 @@ namespace ParsDashboard
             
             NavSetStyleClick( LblImagesSearch );
 
-            SubRtn.ShowHideMenu(this, MnuImagesSearch.Name);
+            SubRtn.ShowHideMenu( this, MnuImagesSearch.Name );
         }
 
         private void LblDashboard_MouseEnter(object sender, EventArgs e)
@@ -431,9 +434,11 @@ namespace ParsDashboard
 
         private void LlbPatientSearch_Click(object sender, EventArgs e)
         {
-            //fNav.ShowForm( X );
+            fNav.ShowForm( fPatientSearch );
 
             NavSetStyleClick( LlbPatientSearch );
+
+            SubRtn.ShowHideMenu( this, MnuPatientSearch.Name );
         }
 
         private void LblPatientFilter_Click(object sender, EventArgs e)
@@ -665,6 +670,57 @@ namespace ParsDashboard
 
                 helper.ClearUpDwn( ctlupdwn );
             }            
+        }
+
+        private void TSMnuPatientSrchClear_Click(object sender, EventArgs e)
+        {
+            if ( FrmPatientSearch.PatientSearchVar.ClearType == 0 )
+            {
+                Control txt = SubRoutine.FindControl( fPatientSearch, "TxtLastName" );
+                TextBox ctltxt = txt as TextBox;
+
+                helper.ClearTextBox( ctltxt );
+
+                txt = SubRoutine.FindControl( fPatientSearch, "TxtFirstName" );
+                ctltxt = txt as TextBox;
+
+                helper.ClearTextBox( ctltxt );
+
+                txt = SubRoutine.FindControl( fPatientSearch, "TxtPatientNum" );
+                ctltxt = txt as TextBox;
+
+                helper.ClearTextBox( ctltxt );
+
+                Control chk = SubRoutine.FindControl( fPatientSearch, "ChkSurgeryDate" );
+                CheckBox ctlchk = chk as CheckBox;
+
+                helper.ClearCheckBox( ctlchk );
+
+                chk = SubRoutine.FindControl( fPatientSearch, "ChkDOB" );
+                ctlchk = chk as CheckBox;
+
+                helper.ClearCheckBox( ctlchk );
+
+                chk = SubRoutine.FindControl( fPatientSearch, "ChkAge" );
+                ctlchk = chk as CheckBox;
+
+                helper.ClearCheckBox( ctlchk );
+
+                Control rdo = SubRoutine.FindControl( fPatientSearch, "RdoMale" );
+                RadioButton ctlrdo = rdo as RadioButton;
+
+                helper.ClearRadioBtn( ctlrdo );
+
+                rdo = SubRoutine.FindControl (fPatientSearch, "RdoFemale" );
+                ctlrdo = rdo as RadioButton;
+
+                helper.ClearRadioBtn( ctlrdo );
+
+                txt = SubRoutine.FindControl(fPatientSearch, "TxtSsn");
+                ctltxt = txt as TextBox;
+
+                helper.ClearTextBox( ctltxt );
+            }
         }
     }
 

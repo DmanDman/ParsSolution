@@ -8,11 +8,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static ParsDashboard.FrmImageFilter;
+using static ParsDashboard.FrmPatientSearch;
+using static ParsDashboard.Globals;
 
 namespace ParsDashboard
 {
     public partial class FrmFilterAge : Form
-    {
+    {       
         public FrmFilterAge()
         {
             InitializeComponent();
@@ -60,31 +62,47 @@ namespace ParsDashboard
 
         private void BtnCancel_Click(object sender, EventArgs e)
         {
+            if ( PatientSearchVar.AgeChecked == true )
+            { AgeCancel = true; }
+
             this.Close();
         }
 
         private void BtnOK_Click(object sender, EventArgs e)
         {
 
-            if ( RdoFilterEqualTo.Checked )
+            //  FrmPatientSearch personal info
+            if ( PatientSearchVar.PersonalType == 1 )
             {
-                FilterVar.FilterAge = RdoFilterEqualTo.Text + " " + NumLess.Text;
-            }
+                //  age checked
+                if ( PatientSearchVar.AgeChecked == true )
+                {
+                    if ( RdoFilterEqualTo.Checked )
+                    { PatientSearchVar.FilterAge = RdoFilterEqualTo.Text + " " + NumLess.Text; }
 
-            if ( RdoFilterGreaterThan.Checked )
-            {
-                FilterVar.FilterAge = RdoFilterGreaterThan.Text + " " + NumLess.Text;
-            }
+                    if ( RdoFilterGreaterThan.Checked )
+                    { PatientSearchVar.FilterAge = RdoFilterGreaterThan.Text + " " + NumLess.Text; }
 
-            if ( RdoFilterLessThan.Checked )
-            {
-                FilterVar.FilterAge = RdoFilterLessThan.Text + " " + NumLess.Text;
+                    if ( RdoFilterLessThan.Checked )
+                    { PatientSearchVar.FilterAge = RdoFilterLessThan.Text + " " + NumLess.Text; }
+
+                    if ( RdoFilterBetween.Checked )
+                    { PatientSearchVar.FilterAge = RdoFilterBetween.Text + " " + NumLess.Text + " and " + NumGreater.Text; }
+                }
             }
             
+            //  set FrmImageFilter variables
+            if ( RdoFilterEqualTo.Checked )
+            { FilterVar.FilterAge = RdoFilterEqualTo.Text + " " + NumLess.Text; }
+
+            if ( RdoFilterGreaterThan.Checked )
+            { FilterVar.FilterAge = RdoFilterGreaterThan.Text + " " + NumLess.Text; }
+
+            if ( RdoFilterLessThan.Checked )
+            { FilterVar.FilterAge = RdoFilterLessThan.Text + " " + NumLess.Text; }
+            
             if ( RdoFilterBetween.Checked )
-            {
-                FilterVar.FilterAge = RdoFilterBetween.Text + " " + NumLess.Text + " and " + NumGreater.Text;
-            }
+            { FilterVar.FilterAge = RdoFilterBetween.Text + " " + NumLess.Text + " and " + NumGreater.Text; }
 
             this.Close();            
         }
