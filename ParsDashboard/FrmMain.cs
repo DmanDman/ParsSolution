@@ -674,6 +674,7 @@ namespace ParsDashboard
 
         private void TSMnuPatientSrchClear_Click(object sender, EventArgs e)
         {
+            //  clear personal information
             if ( FrmPatientSearch.PatientSearchVar.ClearType == 0 )
             {
                 Control txt = SubRoutine.FindControl( fPatientSearch, "TxtLastName" );
@@ -721,6 +722,56 @@ namespace ParsDashboard
 
                 helper.ClearTextBox( ctltxt );
             }
+
+            //  clear home information
+            if ( FrmPatientSearch.PatientSearchVar.ClearType ==  1 )
+            {
+                Control txt = SubRoutine.FindControl( fPatientSearch, "TxtAddress1" );
+                TextBox ctltxt = txt as TextBox;
+
+                helper.ClearTextBox( ctltxt );
+
+                txt = SubRoutine.FindControl( fPatientSearch, "TxtAddress2" );
+                ctltxt = txt as TextBox;
+
+                helper.ClearTextBox( ctltxt );
+
+                txt = SubRoutine.FindControl( fPatientSearch, "TxtCity" );
+                ctltxt = txt as TextBox;
+
+                helper.ClearTextBox( ctltxt );
+
+                Control cbo = SubRoutine.FindControl( fPatientSearch, "CboState" );
+                ComboBox ctlcbo = cbo as ComboBox;
+
+                helper.ClearComboBoxTxt( ctlcbo );
+
+                txt = SubRoutine.FindControl( fPatientSearch, "TxtZip" );
+                ctltxt = txt as TextBox;
+
+                helper.ClearTextBox( ctltxt );
+
+                txt = SubRoutine.FindControl( fPatientSearch, "TxtPhone" );
+                ctltxt = txt as TextBox;
+
+                helper.ClearTextBox( ctltxt );
+
+                txt = SubRoutine.FindControl( fPatientSearch, "TxtCell" );
+                ctltxt = txt as TextBox;
+
+                helper.ClearTextBox( ctltxt );
+            }
+        }
+
+        private void TSMnuPatientSrchSearch_Click(object sender, EventArgs e)
+        {
+            fNav.ShowForm( fImageSearchResuts );
+
+            SubRtn.DashboardAccordian( LblImages, e, tableLayoutPanel1 );
+
+            NavSetStyleClick( LblImagesSearchResults );
+
+            SubRtn.ShowHideMenu( this, MnuImageSearchResult.Name );
         }
     }
 

@@ -50,18 +50,20 @@
             this.TxtLastName = new System.Windows.Forms.TextBox();
             this.TabHome = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.checkBox4 = new System.Windows.Forms.CheckBox();
-            this.checkBox5 = new System.Windows.Forms.CheckBox();
-            this.checkBox6 = new System.Windows.Forms.CheckBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.checkBox7 = new System.Windows.Forms.CheckBox();
-            this.checkBox8 = new System.Windows.Forms.CheckBox();
+            this.TxtZip = new System.Windows.Forms.TextBox();
+            this.TxtCity = new System.Windows.Forms.TextBox();
+            this.TxtPhone = new System.Windows.Forms.TextBox();
+            this.TxtAddress2 = new System.Windows.Forms.TextBox();
+            this.TxtAddress1 = new System.Windows.Forms.TextBox();
+            this.LblAddress1 = new System.Windows.Forms.Label();
+            this.LblAddress2 = new System.Windows.Forms.Label();
+            this.LblCity = new System.Windows.Forms.Label();
+            this.LblState = new System.Windows.Forms.Label();
+            this.LblZip = new System.Windows.Forms.Label();
+            this.LblPhone = new System.Windows.Forms.Label();
+            this.CboState = new System.Windows.Forms.ComboBox();
+            this.LblCell = new System.Windows.Forms.Label();
+            this.TxtCell = new System.Windows.Forms.TextBox();
             this.TabSearch.SuspendLayout();
             this.TabPersonal.SuspendLayout();
             this.GrpBoxPersonal.SuspendLayout();
@@ -235,7 +237,6 @@
             // 
             this.TxtSsn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtSsn.Location = new System.Drawing.Point(123, 327);
-            this.TxtSsn.Multiline = true;
             this.TxtSsn.Name = "TxtSsn";
             this.TxtSsn.Size = new System.Drawing.Size(166, 22);
             this.TxtSsn.TabIndex = 16;
@@ -313,144 +314,271 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.checkBox3);
-            this.groupBox1.Controls.Add(this.checkBox4);
-            this.groupBox1.Controls.Add(this.checkBox5);
-            this.groupBox1.Controls.Add(this.checkBox6);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.checkBox7);
-            this.groupBox1.Controls.Add(this.checkBox8);
+            this.groupBox1.Controls.Add(this.TxtCell);
+            this.groupBox1.Controls.Add(this.LblCell);
+            this.groupBox1.Controls.Add(this.CboState);
+            this.groupBox1.Controls.Add(this.LblPhone);
+            this.groupBox1.Controls.Add(this.LblZip);
+            this.groupBox1.Controls.Add(this.LblState);
+            this.groupBox1.Controls.Add(this.LblCity);
+            this.groupBox1.Controls.Add(this.LblAddress2);
+            this.groupBox1.Controls.Add(this.LblAddress1);
+            this.groupBox1.Controls.Add(this.TxtZip);
+            this.groupBox1.Controls.Add(this.TxtCity);
+            this.groupBox1.Controls.Add(this.TxtPhone);
+            this.groupBox1.Controls.Add(this.TxtAddress2);
+            this.groupBox1.Controls.Add(this.TxtAddress1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(21, 17);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(307, 322);
-            this.groupBox1.TabIndex = 16;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Tag = "GrpBoxPersonal";
             this.groupBox1.Text = "Home";
             // 
-            // textBox7
+            // TxtZip
             // 
-            this.textBox7.Enabled = false;
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(123, 199);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(166, 22);
-            this.textBox7.TabIndex = 16;
+            this.TxtZip.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtZip.Location = new System.Drawing.Point(123, 199);
+            this.TxtZip.Name = "TxtZip";
+            this.TxtZip.Size = new System.Drawing.Size(166, 22);
+            this.TxtZip.TabIndex = 9;
             // 
-            // textBox6
+            // TxtCity
             // 
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(123, 115);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(166, 22);
-            this.textBox6.TabIndex = 15;
+            this.TxtCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCity.Location = new System.Drawing.Point(123, 115);
+            this.TxtCity.Name = "TxtCity";
+            this.TxtCity.Size = new System.Drawing.Size(166, 22);
+            this.TxtCity.TabIndex = 5;
             // 
-            // textBox2
+            // TxtPhone
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(123, 243);
-            this.textBox2.Multiline = true;
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(166, 22);
-            this.textBox2.TabIndex = 12;
+            this.TxtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtPhone.Location = new System.Drawing.Point(123, 243);
+            this.TxtPhone.Multiline = true;
+            this.TxtPhone.Name = "TxtPhone";
+            this.TxtPhone.Size = new System.Drawing.Size(166, 22);
+            this.TxtPhone.TabIndex = 11;
             // 
-            // textBox3
+            // TxtAddress2
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(123, 155);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(166, 22);
-            this.textBox3.TabIndex = 7;
+            this.TxtAddress2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtAddress2.Location = new System.Drawing.Point(123, 75);
+            this.TxtAddress2.Name = "TxtAddress2";
+            this.TxtAddress2.Size = new System.Drawing.Size(166, 22);
+            this.TxtAddress2.TabIndex = 3;
             // 
-            // checkBox3
+            // TxtAddress1
             // 
-            this.checkBox3.AutoSize = true;
-            this.checkBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox3.Location = new System.Drawing.Point(6, 240);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(71, 21);
-            this.checkBox3.TabIndex = 11;
-            this.checkBox3.Text = "Phone";
-            this.checkBox3.UseVisualStyleBackColor = true;
+            this.TxtAddress1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtAddress1.Location = new System.Drawing.Point(123, 35);
+            this.TxtAddress1.Name = "TxtAddress1";
+            this.TxtAddress1.Size = new System.Drawing.Size(166, 22);
+            this.TxtAddress1.TabIndex = 1;
             // 
-            // checkBox4
+            // LblAddress1
             // 
-            this.checkBox4.AutoSize = true;
-            this.checkBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox4.Location = new System.Drawing.Point(6, 199);
-            this.checkBox4.Name = "checkBox4";
-            this.checkBox4.Size = new System.Drawing.Size(50, 21);
-            this.checkBox4.TabIndex = 8;
-            this.checkBox4.Text = "Zip";
-            this.checkBox4.UseVisualStyleBackColor = true;
+            this.LblAddress1.AutoSize = true;
+            this.LblAddress1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblAddress1.Location = new System.Drawing.Point(5, 38);
+            this.LblAddress1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblAddress1.Name = "LblAddress1";
+            this.LblAddress1.Size = new System.Drawing.Size(72, 17);
+            this.LblAddress1.TabIndex = 0;
+            this.LblAddress1.Text = "Address 1";
             // 
-            // checkBox5
+            // LblAddress2
             // 
-            this.checkBox5.AutoSize = true;
-            this.checkBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox5.Location = new System.Drawing.Point(6, 158);
-            this.checkBox5.Name = "checkBox5";
-            this.checkBox5.Size = new System.Drawing.Size(63, 21);
-            this.checkBox5.TabIndex = 6;
-            this.checkBox5.Text = "State";
-            this.checkBox5.UseVisualStyleBackColor = true;
+            this.LblAddress2.AutoSize = true;
+            this.LblAddress2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblAddress2.Location = new System.Drawing.Point(6, 76);
+            this.LblAddress2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblAddress2.Name = "LblAddress2";
+            this.LblAddress2.Size = new System.Drawing.Size(72, 17);
+            this.LblAddress2.TabIndex = 2;
+            this.LblAddress2.Text = "Address 2";
             // 
-            // checkBox6
+            // LblCity
             // 
-            this.checkBox6.AutoSize = true;
-            this.checkBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox6.Location = new System.Drawing.Point(6, 117);
-            this.checkBox6.Name = "checkBox6";
-            this.checkBox6.Size = new System.Drawing.Size(53, 21);
-            this.checkBox6.TabIndex = 4;
-            this.checkBox6.Text = "City";
-            this.checkBox6.UseVisualStyleBackColor = true;
+            this.LblCity.AutoSize = true;
+            this.LblCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCity.Location = new System.Drawing.Point(6, 117);
+            this.LblCity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblCity.Name = "LblCity";
+            this.LblCity.Size = new System.Drawing.Size(31, 17);
+            this.LblCity.TabIndex = 4;
+            this.LblCity.Text = "City";
             // 
-            // textBox4
+            // LblState
             // 
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(123, 75);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(166, 22);
-            this.textBox4.TabIndex = 3;
+            this.LblState.AutoSize = true;
+            this.LblState.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblState.Location = new System.Drawing.Point(6, 158);
+            this.LblState.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblState.Name = "LblState";
+            this.LblState.Size = new System.Drawing.Size(41, 17);
+            this.LblState.TabIndex = 6;
+            this.LblState.Text = "State";
             // 
-            // textBox5
+            // LblZip
             // 
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(123, 35);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(166, 22);
-            this.textBox5.TabIndex = 1;
+            this.LblZip.AutoSize = true;
+            this.LblZip.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblZip.Location = new System.Drawing.Point(6, 199);
+            this.LblZip.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblZip.Name = "LblZip";
+            this.LblZip.Size = new System.Drawing.Size(28, 17);
+            this.LblZip.TabIndex = 8;
+            this.LblZip.Text = "Zip";
             // 
-            // checkBox7
+            // LblPhone
             // 
-            this.checkBox7.AutoSize = true;
-            this.checkBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox7.Location = new System.Drawing.Point(6, 76);
-            this.checkBox7.Name = "checkBox7";
-            this.checkBox7.Size = new System.Drawing.Size(94, 21);
-            this.checkBox7.TabIndex = 2;
-            this.checkBox7.Text = "Address 2";
-            this.checkBox7.UseVisualStyleBackColor = true;
+            this.LblPhone.AutoSize = true;
+            this.LblPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPhone.Location = new System.Drawing.Point(6, 240);
+            this.LblPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblPhone.Name = "LblPhone";
+            this.LblPhone.Size = new System.Drawing.Size(49, 17);
+            this.LblPhone.TabIndex = 10;
+            this.LblPhone.Text = "Phone";
             // 
-            // checkBox8
+            // CboState
             // 
-            this.checkBox8.AutoSize = true;
-            this.checkBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBox8.Location = new System.Drawing.Point(6, 35);
-            this.checkBox8.Name = "checkBox8";
-            this.checkBox8.Size = new System.Drawing.Size(94, 21);
-            this.checkBox8.TabIndex = 0;
-            this.checkBox8.Text = "Address 1";
-            this.checkBox8.UseVisualStyleBackColor = true;
+            this.CboState.AutoCompleteCustomSource.AddRange(new string[] {
+            "AL",
+            "AK",
+            "AZ",
+            "AR",
+            "CA",
+            "CO",
+            "CT",
+            "DE",
+            "FL",
+            "GA",
+            "HI",
+            "ID",
+            "IL",
+            "IN",
+            "IA",
+            "KS",
+            "KY",
+            "LA",
+            "ME",
+            "MD",
+            "MA",
+            "MI",
+            "MN",
+            "MS",
+            "MO",
+            "MT",
+            "NE",
+            "NV",
+            "NH",
+            "NJ",
+            "NJ",
+            "NM",
+            "NY",
+            "NC",
+            "ND",
+            "OH",
+            "OK",
+            "OR",
+            "PA",
+            "RI",
+            "SC",
+            "SD",
+            "TN",
+            "TX",
+            "UT",
+            "VT",
+            "VA",
+            "WA",
+            "WV",
+            "WI",
+            "WY"});
+            this.CboState.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CboState.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.CboState.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CboState.FormattingEnabled = true;
+            this.CboState.Items.AddRange(new object[] {
+            "AK",
+            "AL",
+            "AR",
+            "AZ",
+            "CA",
+            "CO",
+            "CT",
+            "DE",
+            "FL",
+            "GA",
+            "HI",
+            "IA",
+            "ID",
+            "IL",
+            "IN",
+            "KS",
+            "KY",
+            "LA",
+            "MA",
+            "MD",
+            "ME",
+            "MI",
+            "MN",
+            "MO",
+            "MS",
+            "MT",
+            "NC",
+            "ND",
+            "NE",
+            "NH",
+            "NJ",
+            "NM",
+            "NV",
+            "NY",
+            "OH",
+            "OK",
+            "OR",
+            "PA",
+            "RI",
+            "SC",
+            "SD",
+            "TN",
+            "TX",
+            "UT",
+            "VA",
+            "VT",
+            "WA",
+            "WI",
+            "WV",
+            "WY"});
+            this.CboState.Location = new System.Drawing.Point(123, 155);
+            this.CboState.MaxLength = 2;
+            this.CboState.Name = "CboState";
+            this.CboState.Size = new System.Drawing.Size(75, 24);
+            this.CboState.Sorted = true;
+            this.CboState.TabIndex = 7;
+            // 
+            // LblCell
+            // 
+            this.LblCell.AutoSize = true;
+            this.LblCell.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCell.Location = new System.Drawing.Point(7, 282);
+            this.LblCell.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblCell.Name = "LblCell";
+            this.LblCell.Size = new System.Drawing.Size(31, 17);
+            this.LblCell.TabIndex = 12;
+            this.LblCell.Text = "Cell";
+            // 
+            // TxtCell
+            // 
+            this.TxtCell.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCell.Location = new System.Drawing.Point(123, 282);
+            this.TxtCell.Multiline = true;
+            this.TxtCell.Name = "TxtCell";
+            this.TxtCell.Size = new System.Drawing.Size(166, 22);
+            this.TxtCell.TabIndex = 13;
             // 
             // FrmPatientSearch
             // 
@@ -495,18 +623,11 @@
         private System.Windows.Forms.TextBox TxtLastName;
         private System.Windows.Forms.TabPage TabHome;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private System.Windows.Forms.CheckBox checkBox4;
-        private System.Windows.Forms.CheckBox checkBox5;
-        private System.Windows.Forms.CheckBox checkBox6;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.CheckBox checkBox7;
-        private System.Windows.Forms.CheckBox checkBox8;
+        private System.Windows.Forms.TextBox TxtZip;
+        private System.Windows.Forms.TextBox TxtCity;
+        private System.Windows.Forms.TextBox TxtPhone;
+        private System.Windows.Forms.TextBox TxtAddress2;
+        private System.Windows.Forms.TextBox TxtAddress1;
         private System.Windows.Forms.Label LblFirstName;
         private System.Windows.Forms.Label LblLastName;
         private System.Windows.Forms.Label LblSex;
@@ -517,5 +638,14 @@
         private System.Windows.Forms.TextBox TxtPatientNum;
         private System.Windows.Forms.Label LblPatientNum;
         private System.Windows.Forms.Label LblSSN;
+        private System.Windows.Forms.Label LblPhone;
+        private System.Windows.Forms.Label LblZip;
+        private System.Windows.Forms.Label LblState;
+        private System.Windows.Forms.Label LblCity;
+        private System.Windows.Forms.Label LblAddress2;
+        private System.Windows.Forms.Label LblAddress1;
+        private System.Windows.Forms.ComboBox CboState;
+        private System.Windows.Forms.TextBox TxtCell;
+        private System.Windows.Forms.Label LblCell;
     }
 }

@@ -1257,6 +1257,7 @@
             this.TSMnuPatientSrchSearch.Name = "TSMnuPatientSrchSearch";
             this.TSMnuPatientSrchSearch.Size = new System.Drawing.Size(65, 24);
             this.TSMnuPatientSrchSearch.Text = "Search";
+            this.TSMnuPatientSrchSearch.Click += new System.EventHandler(this.TSMnuPatientSrchSearch_Click);
             // 
             // TSMnuBlank1
             // 
@@ -1280,11 +1281,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1397, 612);
             this.Controls.Add(this.MnuPatientSearch);
+            this.Controls.Add(this.MnuImagesSearch);
             this.Controls.Add(this.MnuImageFilter);
             this.Controls.Add(this.MnuPatient);
             this.Controls.Add(this.MnuImageSearchResult);
             this.Controls.Add(this.MnuImages);
-            this.Controls.Add(this.MnuImagesSearch);
             this.Controls.Add(this.MnuDashboard);
             this.Controls.Add(this.tableLayoutPanel1);
             this.IsMdiContainer = true;

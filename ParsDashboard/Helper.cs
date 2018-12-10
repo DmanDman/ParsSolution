@@ -151,6 +151,11 @@ namespace ParsDashboard
             cbo.Text = "";
         }
 
+        public void ClearComboBoxTxt( ComboBox cbo )
+        {
+            cbo.Text = "";
+        }
+
         public void ClearTextBox ( TextBox txt )
         {
             txt.Text = "";
