@@ -26,6 +26,8 @@ namespace ParsDashboard
 
         FrmPatient fPatient = new FrmPatient();
         public FrmPatientSearch fPatientSearch = new FrmPatientSearch();
+
+        FrmSurgery fSurgery = new FrmSurgery();
         #endregion
 
         #region Define Helper Classes    
@@ -37,8 +39,8 @@ namespace ParsDashboard
         SubRoutine SubRtn = new SubRoutine();
         #endregion
 
-        #region Form Sub-Routines  
 
+        #region Form Sub-Routines  
         public void NavSetStyleClick(Label lbl)
         {
             Label lblClick = lbl;
@@ -61,6 +63,11 @@ namespace ParsDashboard
             LblPatientFilter.Font = new Font(LblPatientFilter.Font.Name, LblPatientFilter.Font.SizeInPoints, FontStyle.Regular);
             LblPatientSearchResults.Font = new Font(LblPatientSearchResults.Font.Name, LblPatientSearchResults.Font.SizeInPoints, FontStyle.Regular);
             LblPatientSearchToImage.Font = new Font(LblPatientSearchToImage.Font.Name, LblPatientSearchToImage.Font.SizeInPoints, FontStyle.Regular);
+
+            //  Surgery Panel
+            LblSurgery.Font = new Font( LblSurgery.Font.Name, LblSurgery.Font.SizeInPoints, FontStyle.Regular );
+            LblSurgeryAdd.Font = new Font( LblSurgeryAdd.Font.Name, LblSurgeryAdd.Font.SizeInPoints, FontStyle.Regular );
+            LblSurgerySearch.Font = new Font( LblSurgerySearch.Font.Name, LblSurgerySearch.Font.SizeInPoints, FontStyle.Regular );
 
             //  Set font bold
             if (lblClick.Font.Bold != true)
@@ -111,9 +118,9 @@ namespace ParsDashboard
             typeof(Panel).InvokeMember("DoubleBuffered",
                 BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic,
                 null, pnl, new object[] { true });
-        }
-
+        }  
         #endregion
+
 
         public FrmMain()
         {   
@@ -127,6 +134,9 @@ namespace ParsDashboard
             SubRtn.Load_All_Forms( fImageSearch, this );
             SubRtn.Load_All_Forms( fImageSearchResuts, this );
             SubRtn.Load_All_Forms( fImageFilter, this );
+
+            SubRtn.Load_All_Forms( fSurgery, this );
+
             SubRtn.Load_All_Forms( fDashBoard, this );
 
             LblDashboard.Click += new EventHandler( LblDashboard_Click );
@@ -146,6 +156,12 @@ namespace ParsDashboard
         private void LblSurgery_Click(object sender, EventArgs e)
         {
             SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
+
+            fNav.ShowForm( fSurgery );
+
+            NavSetStyleClick( LblSurgery );
+
+            SubRtn.ShowHideMenu( this, MnuSurgery.Name );
         }
 
         private void LblRpt_Click(object sender, EventArgs e)
@@ -773,6 +789,16 @@ namespace ParsDashboard
 
             SubRtn.ShowHideMenu( this, MnuImageSearchResult.Name );
         }
+
+        private void LblSurgeryAdd_Click(object sender, EventArgs e)
+        {
+            NavSetStyleClick( LblSurgeryAdd );
+        }
+
+        private void LblSurgerySearch_Click(object sender, EventArgs e)
+        {
+            NavSetStyleClick( LblSurgerySearch );
+        }
     }
 
     public class SubRoutine
@@ -837,7 +863,7 @@ namespace ParsDashboard
             // images are also swapped depending on the height of the panel.
 
             //foreach (Panel p in tableLayoutPanel1.Controls)
-            foreach (Panel p in pnlLayout.Controls)
+            foreach ( Panel p in pnlLayout.Controls )
             {
                 Label l = (Label)p.Controls[0];
 
