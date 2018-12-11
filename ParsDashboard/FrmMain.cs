@@ -28,6 +28,7 @@ namespace ParsDashboard
         public FrmPatientSearch fPatientSearch = new FrmPatientSearch();
 
         FrmSurgery fSurgery = new FrmSurgery();
+        FrmSurgerySearch fSurgerySearch = new FrmSurgerySearch();
         #endregion
 
         #region Define Helper Classes    
@@ -136,6 +137,7 @@ namespace ParsDashboard
             SubRtn.Load_All_Forms( fImageFilter, this );
 
             SubRtn.Load_All_Forms( fSurgery, this );
+            SubRtn.Load_All_Forms( fSurgerySearch, this );
 
             SubRtn.Load_All_Forms( fDashBoard, this );
 
@@ -798,6 +800,10 @@ namespace ParsDashboard
         private void LblSurgerySearch_Click(object sender, EventArgs e)
         {
             NavSetStyleClick( LblSurgerySearch );
+
+            fNav.ShowForm( fSurgerySearch );            
+
+            SubRtn.ShowHideMenu( this, MnuSurgerySearch.Name );
         }
     }
 

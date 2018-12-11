@@ -257,6 +257,7 @@
             this.UpDwnYear.Name = "UpDwnYear";
             this.UpDwnYear.ReadOnly = true;
             this.UpDwnYear.Size = new System.Drawing.Size(65, 22);
+            this.UpDwnYear.Sorted = true;
             this.UpDwnYear.TabIndex = 2;
             this.UpDwnYear.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 

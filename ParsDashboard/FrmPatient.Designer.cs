@@ -73,9 +73,11 @@
             // 
             this.GrpImage.Controls.Add(this.TabDisplay);
             this.GrpImage.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GrpImage.Location = new System.Drawing.Point(12, 46);
+            this.GrpImage.Location = new System.Drawing.Point(9, 37);
+            this.GrpImage.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.GrpImage.Name = "GrpImage";
-            this.GrpImage.Size = new System.Drawing.Size(403, 164);
+            this.GrpImage.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GrpImage.Size = new System.Drawing.Size(302, 133);
             this.GrpImage.TabIndex = 0;
             this.GrpImage.TabStop = false;
             this.GrpImage.Text = "Display By: Last Name / Date";
@@ -85,10 +87,11 @@
             this.TabDisplay.Controls.Add(this.tabLastName);
             this.TabDisplay.Controls.Add(this.tabDate);
             this.TabDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TabDisplay.Location = new System.Drawing.Point(6, 37);
+            this.TabDisplay.Location = new System.Drawing.Point(4, 31);
+            this.TabDisplay.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TabDisplay.Name = "TabDisplay";
             this.TabDisplay.SelectedIndex = 0;
-            this.TabDisplay.Size = new System.Drawing.Size(379, 121);
+            this.TabDisplay.Size = new System.Drawing.Size(284, 98);
             this.TabDisplay.TabIndex = 0;
             this.TabDisplay.SelectedIndexChanged += new System.EventHandler(this.TabDisplay_SelectedIndexChanged);
             // 
@@ -98,10 +101,11 @@
             this.tabLastName.Controls.Add(this.label2);
             this.tabLastName.Controls.Add(this.label1);
             this.tabLastName.Controls.Add(this.CboFullName);
-            this.tabLastName.Location = new System.Drawing.Point(4, 25);
+            this.tabLastName.Location = new System.Drawing.Point(4, 22);
+            this.tabLastName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabLastName.Name = "tabLastName";
-            this.tabLastName.Padding = new System.Windows.Forms.Padding(3);
-            this.tabLastName.Size = new System.Drawing.Size(371, 92);
+            this.tabLastName.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabLastName.Size = new System.Drawing.Size(276, 72);
             this.tabLastName.TabIndex = 0;
             this.tabLastName.Text = "Last Name";
             this.tabLastName.UseVisualStyleBackColor = true;
@@ -134,10 +138,11 @@
             this.UpDwnLastNameLetter.Items.Add("X");
             this.UpDwnLastNameLetter.Items.Add("Y");
             this.UpDwnLastNameLetter.Items.Add("Z");
-            this.UpDwnLastNameLetter.Location = new System.Drawing.Point(9, 41);
+            this.UpDwnLastNameLetter.Location = new System.Drawing.Point(7, 33);
+            this.UpDwnLastNameLetter.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.UpDwnLastNameLetter.Name = "UpDwnLastNameLetter";
             this.UpDwnLastNameLetter.ReadOnly = true;
-            this.UpDwnLastNameLetter.Size = new System.Drawing.Size(65, 22);
+            this.UpDwnLastNameLetter.Size = new System.Drawing.Size(49, 19);
             this.UpDwnLastNameLetter.Sorted = true;
             this.UpDwnLastNameLetter.TabIndex = 2;
             this.UpDwnLastNameLetter.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -145,18 +150,20 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(103, 12);
+            this.label2.Location = new System.Drawing.Point(77, 10);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(71, 17);
+            this.label2.Size = new System.Drawing.Size(54, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Full Name";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(6, 12);
+            this.label1.Location = new System.Drawing.Point(4, 10);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(77, 17);
+            this.label1.Size = new System.Drawing.Size(59, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Starts With";
             // 
@@ -192,9 +199,10 @@
             "X",
             "Y",
             "Z"});
-            this.CboFullName.Location = new System.Drawing.Point(103, 41);
+            this.CboFullName.Location = new System.Drawing.Point(77, 33);
+            this.CboFullName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.CboFullName.Name = "CboFullName";
-            this.CboFullName.Size = new System.Drawing.Size(247, 24);
+            this.CboFullName.Size = new System.Drawing.Size(186, 21);
             this.CboFullName.TabIndex = 3;
             // 
             // tabDate
@@ -204,10 +212,11 @@
             this.tabDate.Controls.Add(this.comboBox2);
             this.tabDate.Controls.Add(this.label4);
             this.tabDate.Controls.Add(this.label3);
-            this.tabDate.Location = new System.Drawing.Point(4, 25);
+            this.tabDate.Location = new System.Drawing.Point(4, 22);
+            this.tabDate.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tabDate.Name = "tabDate";
-            this.tabDate.Padding = new System.Windows.Forms.Padding(3);
-            this.tabDate.Size = new System.Drawing.Size(371, 92);
+            this.tabDate.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabDate.Size = new System.Drawing.Size(276, 72);
             this.tabDate.TabIndex = 1;
             this.tabDate.Text = "Date";
             this.tabDate.UseVisualStyleBackColor = true;
@@ -254,10 +263,11 @@
             this.UpDwnYear.Items.Add("2017");
             this.UpDwnYear.Items.Add("2018");
             this.UpDwnYear.Items.Add("2019");
-            this.UpDwnYear.Location = new System.Drawing.Point(9, 41);
+            this.UpDwnYear.Location = new System.Drawing.Point(4, 33);
+            this.UpDwnYear.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.UpDwnYear.Name = "UpDwnYear";
             this.UpDwnYear.ReadOnly = true;
-            this.UpDwnYear.Size = new System.Drawing.Size(65, 22);
+            this.UpDwnYear.Size = new System.Drawing.Size(49, 19);
             this.UpDwnYear.TabIndex = 2;
             this.UpDwnYear.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -275,10 +285,11 @@
             this.UpDwnMonth.Items.Add("Oct");
             this.UpDwnMonth.Items.Add("Nov");
             this.UpDwnMonth.Items.Add("Dec");
-            this.UpDwnMonth.Location = new System.Drawing.Point(103, 41);
+            this.UpDwnMonth.Location = new System.Drawing.Point(77, 33);
+            this.UpDwnMonth.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.UpDwnMonth.Name = "UpDwnMonth";
             this.UpDwnMonth.ReadOnly = true;
-            this.UpDwnMonth.Size = new System.Drawing.Size(65, 22);
+            this.UpDwnMonth.Size = new System.Drawing.Size(49, 19);
             this.UpDwnMonth.TabIndex = 3;
             this.UpDwnMonth.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
@@ -305,9 +316,10 @@
             "2018",
             "2019",
             "2020"});
-            this.comboBox2.Location = new System.Drawing.Point(186, 41);
+            this.comboBox2.Location = new System.Drawing.Point(140, 33);
+            this.comboBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(66, 24);
+            this.comboBox2.Size = new System.Drawing.Size(50, 21);
             this.comboBox2.TabIndex = 4;
             this.comboBox2.Visible = false;
             // 
@@ -315,9 +327,10 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(103, 12);
+            this.label4.Location = new System.Drawing.Point(77, 10);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(47, 17);
+            this.label4.Size = new System.Drawing.Size(37, 13);
             this.label4.TabIndex = 1;
             this.label4.Text = "Month";
             // 
@@ -325,9 +338,10 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 12);
+            this.label3.Location = new System.Drawing.Point(4, 10);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(38, 17);
+            this.label3.Size = new System.Drawing.Size(29, 13);
             this.label3.TabIndex = 0;
             this.label3.Text = "Year";
             // 
@@ -337,9 +351,11 @@
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.dataGridView1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 240);
+            this.groupBox1.Location = new System.Drawing.Point(9, 195);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(763, 411);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(572, 334);
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Patient";
@@ -347,10 +363,11 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(63, 35);
+            this.textBox1.Location = new System.Drawing.Point(47, 28);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(340, 22);
+            this.textBox1.Size = new System.Drawing.Size(256, 19);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "Patient - 9359  |  Pics - 7455  |  Procedures - 11835";
             this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -359,9 +376,10 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(6, 35);
+            this.label5.Location = new System.Drawing.Point(4, 28);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(51, 17);
+            this.label5.Size = new System.Drawing.Size(39, 13);
             this.label5.TabIndex = 0;
             this.label5.Text = "Totals:";
             // 
@@ -377,11 +395,12 @@
             this.DOB,
             this.Sex,
             this.Surgeries});
-            this.dataGridView1.Location = new System.Drawing.Point(9, 63);
+            this.dataGridView1.Location = new System.Drawing.Point(7, 51);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(736, 321);
+            this.dataGridView1.Size = new System.Drawing.Size(552, 261);
             this.dataGridView1.TabIndex = 2;
             // 
             // Last
@@ -434,9 +453,11 @@
             this.GrpImages.Controls.Add(this.LblGrpImageDesc);
             this.GrpImages.Controls.Add(this.LstImages);
             this.GrpImages.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GrpImages.Location = new System.Drawing.Point(811, 240);
+            this.GrpImages.Location = new System.Drawing.Point(608, 195);
+            this.GrpImages.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.GrpImages.Name = "GrpImages";
-            this.GrpImages.Size = new System.Drawing.Size(725, 411);
+            this.GrpImages.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.GrpImages.Size = new System.Drawing.Size(544, 334);
             this.GrpImages.TabIndex = 1;
             this.GrpImages.TabStop = false;
             this.GrpImages.Text = "Images";
@@ -444,44 +465,48 @@
             // LstImageDesc
             // 
             this.LstImageDesc.FormattingEnabled = true;
-            this.LstImageDesc.ItemHeight = 16;
-            this.LstImageDesc.Location = new System.Drawing.Point(9, 60);
+            this.LstImageDesc.Location = new System.Drawing.Point(7, 49);
+            this.LstImageDesc.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LstImageDesc.Name = "LstImageDesc";
-            this.LstImageDesc.Size = new System.Drawing.Size(175, 324);
+            this.LstImageDesc.Size = new System.Drawing.Size(132, 264);
             this.LstImageDesc.TabIndex = 1;
             // 
             // BtnImagePrev
             // 
-            this.BtnImagePrev.Location = new System.Drawing.Point(277, 34);
+            this.BtnImagePrev.Location = new System.Drawing.Point(208, 28);
+            this.BtnImagePrev.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnImagePrev.Name = "BtnImagePrev";
-            this.BtnImagePrev.Size = new System.Drawing.Size(34, 23);
+            this.BtnImagePrev.Size = new System.Drawing.Size(26, 19);
             this.BtnImagePrev.TabIndex = 3;
             this.BtnImagePrev.Text = "<";
             this.BtnImagePrev.UseVisualStyleBackColor = true;
             // 
             // BtnImageFirst
             // 
-            this.BtnImageFirst.Location = new System.Drawing.Point(225, 32);
+            this.BtnImageFirst.Location = new System.Drawing.Point(169, 26);
+            this.BtnImageFirst.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnImageFirst.Name = "BtnImageFirst";
-            this.BtnImageFirst.Size = new System.Drawing.Size(34, 23);
+            this.BtnImageFirst.Size = new System.Drawing.Size(26, 19);
             this.BtnImageFirst.TabIndex = 2;
             this.BtnImageFirst.Text = "|<";
             this.BtnImageFirst.UseVisualStyleBackColor = true;
             // 
             // BtnImageNext
             // 
-            this.BtnImageNext.Location = new System.Drawing.Point(616, 29);
+            this.BtnImageNext.Location = new System.Drawing.Point(462, 24);
+            this.BtnImageNext.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnImageNext.Name = "BtnImageNext";
-            this.BtnImageNext.Size = new System.Drawing.Size(34, 23);
+            this.BtnImageNext.Size = new System.Drawing.Size(26, 19);
             this.BtnImageNext.TabIndex = 5;
             this.BtnImageNext.Text = ">";
             this.BtnImageNext.UseVisualStyleBackColor = true;
             // 
             // BtnImageLast
             // 
-            this.BtnImageLast.Location = new System.Drawing.Point(669, 29);
+            this.BtnImageLast.Location = new System.Drawing.Point(502, 24);
+            this.BtnImageLast.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnImageLast.Name = "BtnImageLast";
-            this.BtnImageLast.Size = new System.Drawing.Size(34, 23);
+            this.BtnImageLast.Size = new System.Drawing.Size(26, 19);
             this.BtnImageLast.TabIndex = 6;
             this.BtnImageLast.Text = ">|";
             this.BtnImageLast.UseVisualStyleBackColor = true;
@@ -489,10 +514,11 @@
             // TxtImagesCount
             // 
             this.TxtImagesCount.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtImagesCount.Location = new System.Drawing.Point(417, 32);
+            this.TxtImagesCount.Location = new System.Drawing.Point(313, 26);
+            this.TxtImagesCount.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TxtImagesCount.Name = "TxtImagesCount";
             this.TxtImagesCount.ReadOnly = true;
-            this.TxtImagesCount.Size = new System.Drawing.Size(101, 22);
+            this.TxtImagesCount.Size = new System.Drawing.Size(77, 19);
             this.TxtImagesCount.TabIndex = 4;
             this.TxtImagesCount.Text = "10 of 10";
             this.TxtImagesCount.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -501,32 +527,33 @@
             // 
             this.LblGrpImageDesc.AutoSize = true;
             this.LblGrpImageDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblGrpImageDesc.Location = new System.Drawing.Point(6, 35);
+            this.LblGrpImageDesc.Location = new System.Drawing.Point(4, 28);
+            this.LblGrpImageDesc.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.LblGrpImageDesc.Name = "LblGrpImageDesc";
-            this.LblGrpImageDesc.Size = new System.Drawing.Size(122, 17);
+            this.LblGrpImageDesc.Size = new System.Drawing.Size(92, 13);
             this.LblGrpImageDesc.TabIndex = 0;
             this.LblGrpImageDesc.Text = "Image Descriptors";
             // 
             // LstImages
             // 
-            this.LstImages.Location = new System.Drawing.Point(225, 63);
+            this.LstImages.Location = new System.Drawing.Point(169, 51);
+            this.LstImages.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.LstImages.Name = "LstImages";
-            this.LstImages.Size = new System.Drawing.Size(478, 324);
+            this.LstImages.Size = new System.Drawing.Size(360, 264);
             this.LstImages.TabIndex = 7;
             this.LstImages.UseCompatibleStateImageBehavior = false;
             // 
             // FrmPatient
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1621, 840);
+            this.ClientSize = new System.Drawing.Size(1167, 682);
             this.ControlBox = false;
             this.Controls.Add(this.GrpImages);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.GrpImage);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(19, 41);
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmPatient";
