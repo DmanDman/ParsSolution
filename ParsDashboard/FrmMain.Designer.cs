@@ -135,12 +135,10 @@
             this.MnuSurgerySearch = new System.Windows.Forms.MenuStrip();
             this.TSMnuSurgerySrchSearch = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuSurgerySrchBreak1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuSurgerySrchClearDates = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuSurgerySrchClearSurgery = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuSurgerySrchBreak2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuSurgerySrchClearYear = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuSurgerySrchBreak3 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuSurgerySrchClearItems = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuSurgerySrchBreak4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuSurgerySrchBreak3 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuSurgerySrchClearAll = new System.Windows.Forms.ToolStripMenuItem();
             this.PnlDashboard.SuspendLayout();
             this.PnlPatient.SuspendLayout();
@@ -170,9 +168,9 @@
             this.PnlDashboard.Dock = System.Windows.Forms.DockStyle.Fill;
             this.PnlDashboard.Location = new System.Drawing.Point(2, 2);
             this.PnlDashboard.Margin = new System.Windows.Forms.Padding(0);
-            this.PnlDashboard.MinimumSize = new System.Drawing.Size(150, 0);
+            this.PnlDashboard.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlDashboard.Name = "PnlDashboard";
-            this.PnlDashboard.Size = new System.Drawing.Size(150, 25);
+            this.PnlDashboard.Size = new System.Drawing.Size(200, 31);
             this.PnlDashboard.TabIndex = 1;
             // 
             // LblDashboard
@@ -182,8 +180,9 @@
             this.LblDashboard.Dock = System.Windows.Forms.DockStyle.Top;
             this.LblDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.LblDashboard.Location = new System.Drawing.Point(0, 0);
+            this.LblDashboard.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblDashboard.Name = "LblDashboard";
-            this.LblDashboard.Size = new System.Drawing.Size(150, 26);
+            this.LblDashboard.Size = new System.Drawing.Size(200, 32);
             this.LblDashboard.TabIndex = 0;
             this.LblDashboard.Text = "Dashboard";
             this.LblDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -201,20 +200,21 @@
             this.PnlPatient.Controls.Add(this.LblPatientAdd);
             this.PnlPatient.Controls.Add(this.LblPatient);
             this.PnlPatient.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlPatient.Location = new System.Drawing.Point(2, 177);
+            this.PnlPatient.Location = new System.Drawing.Point(2, 217);
             this.PnlPatient.Margin = new System.Windows.Forms.Padding(0);
-            this.PnlPatient.MinimumSize = new System.Drawing.Size(150, 0);
+            this.PnlPatient.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlPatient.Name = "PnlPatient";
-            this.PnlPatient.Size = new System.Drawing.Size(150, 146);
+            this.PnlPatient.Size = new System.Drawing.Size(200, 180);
             this.PnlPatient.TabIndex = 2;
             this.PnlPatient.Tag = "Collapsed";
             // 
             // LblPatientSearchResults
             // 
             this.LblPatientSearchResults.AutoSize = true;
-            this.LblPatientSearchResults.Location = new System.Drawing.Point(10, 101);
+            this.LblPatientSearchResults.Location = new System.Drawing.Point(13, 124);
+            this.LblPatientSearchResults.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblPatientSearchResults.Name = "LblPatientSearchResults";
-            this.LblPatientSearchResults.Size = new System.Drawing.Size(79, 13);
+            this.LblPatientSearchResults.Size = new System.Drawing.Size(104, 17);
             this.LblPatientSearchResults.TabIndex = 7;
             this.LblPatientSearchResults.Text = "Search Results";
             this.LblPatientSearchResults.Click += new System.EventHandler(this.LblPatientSearchResults_Click);
@@ -224,9 +224,10 @@
             // LblPatientFilter
             // 
             this.LblPatientFilter.AutoSize = true;
-            this.LblPatientFilter.Location = new System.Drawing.Point(10, 79);
+            this.LblPatientFilter.Location = new System.Drawing.Point(13, 97);
+            this.LblPatientFilter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblPatientFilter.Name = "LblPatientFilter";
-            this.LblPatientFilter.Size = new System.Drawing.Size(29, 13);
+            this.LblPatientFilter.Size = new System.Drawing.Size(39, 17);
             this.LblPatientFilter.TabIndex = 6;
             this.LblPatientFilter.Text = "Filter";
             this.LblPatientFilter.Click += new System.EventHandler(this.LblPatientFilter_Click);
@@ -236,9 +237,10 @@
             // LblPatientSearchToImage
             // 
             this.LblPatientSearchToImage.AutoSize = true;
-            this.LblPatientSearchToImage.Location = new System.Drawing.Point(10, 123);
+            this.LblPatientSearchToImage.Location = new System.Drawing.Point(13, 151);
+            this.LblPatientSearchToImage.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblPatientSearchToImage.Name = "LblPatientSearchToImage";
-            this.LblPatientSearchToImage.Size = new System.Drawing.Size(57, 13);
+            this.LblPatientSearchToImage.Size = new System.Drawing.Size(74, 17);
             this.LblPatientSearchToImage.TabIndex = 4;
             this.LblPatientSearchToImage.Text = "To Images";
             this.LblPatientSearchToImage.Click += new System.EventHandler(this.LblPatientSearchToImage_Click);
@@ -248,9 +250,10 @@
             // LlbPatientSearch
             // 
             this.LlbPatientSearch.AutoSize = true;
-            this.LlbPatientSearch.Location = new System.Drawing.Point(10, 57);
+            this.LlbPatientSearch.Location = new System.Drawing.Point(13, 70);
+            this.LlbPatientSearch.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LlbPatientSearch.Name = "LlbPatientSearch";
-            this.LlbPatientSearch.Size = new System.Drawing.Size(41, 13);
+            this.LlbPatientSearch.Size = new System.Drawing.Size(53, 17);
             this.LlbPatientSearch.TabIndex = 3;
             this.LlbPatientSearch.Text = "Search";
             this.LlbPatientSearch.Click += new System.EventHandler(this.LlbPatientSearch_Click);
@@ -260,9 +263,10 @@
             // LblPatientAdd
             // 
             this.LblPatientAdd.AutoSize = true;
-            this.LblPatientAdd.Location = new System.Drawing.Point(10, 35);
+            this.LblPatientAdd.Location = new System.Drawing.Point(13, 43);
+            this.LblPatientAdd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblPatientAdd.Name = "LblPatientAdd";
-            this.LblPatientAdd.Size = new System.Drawing.Size(26, 13);
+            this.LblPatientAdd.Size = new System.Drawing.Size(33, 17);
             this.LblPatientAdd.TabIndex = 2;
             this.LblPatientAdd.Text = "Add";
             this.LblPatientAdd.Click += new System.EventHandler(this.LblPatientAdd_Click);
@@ -276,8 +280,9 @@
             this.LblPatient.Dock = System.Windows.Forms.DockStyle.Top;
             this.LblPatient.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.LblPatient.Location = new System.Drawing.Point(0, 0);
+            this.LblPatient.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblPatient.Name = "LblPatient";
-            this.LblPatient.Size = new System.Drawing.Size(150, 26);
+            this.LblPatient.Size = new System.Drawing.Size(200, 32);
             this.LblPatient.TabIndex = 0;
             this.LblPatient.Text = "Patient";
             this.LblPatient.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -301,9 +306,10 @@
             this.tableLayoutPanel1.Controls.Add(this.PnlRpt, 0, 4);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 11;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -313,8 +319,8 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(139, 497);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 123F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(185, 612);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // PnlSecurity
@@ -323,20 +329,21 @@
             this.PnlSecurity.Controls.Add(this.LblSecurityUserMgmt);
             this.PnlSecurity.Controls.Add(this.LblSecurity);
             this.PnlSecurity.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlSecurity.Location = new System.Drawing.Point(2, 705);
+            this.PnlSecurity.Location = new System.Drawing.Point(2, 862);
             this.PnlSecurity.Margin = new System.Windows.Forms.Padding(0);
-            this.PnlSecurity.MinimumSize = new System.Drawing.Size(150, 0);
+            this.PnlSecurity.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlSecurity.Name = "PnlSecurity";
-            this.PnlSecurity.Size = new System.Drawing.Size(150, 66);
+            this.PnlSecurity.Size = new System.Drawing.Size(200, 81);
             this.PnlSecurity.TabIndex = 14;
             this.PnlSecurity.Tag = "Collapsed";
             // 
             // LblSecurityUserMgmt
             // 
             this.LblSecurityUserMgmt.AutoSize = true;
-            this.LblSecurityUserMgmt.Location = new System.Drawing.Point(10, 37);
+            this.LblSecurityUserMgmt.Location = new System.Drawing.Point(13, 46);
+            this.LblSecurityUserMgmt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblSecurityUserMgmt.Name = "LblSecurityUserMgmt";
-            this.LblSecurityUserMgmt.Size = new System.Drawing.Size(94, 13);
+            this.LblSecurityUserMgmt.Size = new System.Drawing.Size(124, 17);
             this.LblSecurityUserMgmt.TabIndex = 2;
             this.LblSecurityUserMgmt.Text = "User Management";
             // 
@@ -347,8 +354,9 @@
             this.LblSecurity.Dock = System.Windows.Forms.DockStyle.Top;
             this.LblSecurity.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.LblSecurity.Location = new System.Drawing.Point(0, 0);
+            this.LblSecurity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblSecurity.Name = "LblSecurity";
-            this.LblSecurity.Size = new System.Drawing.Size(150, 27);
+            this.LblSecurity.Size = new System.Drawing.Size(200, 33);
             this.LblSecurity.TabIndex = 0;
             this.LblSecurity.Text = "Security";
             this.LblSecurity.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -363,47 +371,51 @@
             this.PnlData.Controls.Add(this.LblDataCustomizeName);
             this.PnlData.Controls.Add(this.LblData);
             this.PnlData.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlData.Location = new System.Drawing.Point(2, 489);
+            this.PnlData.Location = new System.Drawing.Point(2, 599);
             this.PnlData.Margin = new System.Windows.Forms.Padding(0);
-            this.PnlData.MinimumSize = new System.Drawing.Size(150, 0);
+            this.PnlData.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlData.Name = "PnlData";
-            this.PnlData.Size = new System.Drawing.Size(150, 88);
+            this.PnlData.Size = new System.Drawing.Size(200, 108);
             this.PnlData.TabIndex = 7;
             this.PnlData.Tag = "Collapsed";
             // 
             // LblDataPicInfo
             // 
             this.LblDataPicInfo.AutoSize = true;
-            this.LblDataPicInfo.Location = new System.Drawing.Point(10, 114);
+            this.LblDataPicInfo.Location = new System.Drawing.Point(13, 140);
+            this.LblDataPicInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblDataPicInfo.Name = "LblDataPicInfo";
-            this.LblDataPicInfo.Size = new System.Drawing.Size(61, 13);
+            this.LblDataPicInfo.Size = new System.Drawing.Size(79, 17);
             this.LblDataPicInfo.TabIndex = 5;
             this.LblDataPicInfo.Text = "Picture Info";
             // 
             // LblDataLink
             // 
             this.LblDataLink.AutoSize = true;
-            this.LblDataLink.Location = new System.Drawing.Point(10, 88);
+            this.LblDataLink.Location = new System.Drawing.Point(13, 108);
+            this.LblDataLink.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblDataLink.Name = "LblDataLink";
-            this.LblDataLink.Size = new System.Drawing.Size(27, 13);
+            this.LblDataLink.Size = new System.Drawing.Size(34, 17);
             this.LblDataLink.TabIndex = 4;
             this.LblDataLink.Text = "Link";
             // 
             // LblDataDefaultHosp
             // 
             this.LblDataDefaultHosp.AutoSize = true;
-            this.LblDataDefaultHosp.Location = new System.Drawing.Point(10, 63);
+            this.LblDataDefaultHosp.Location = new System.Drawing.Point(13, 78);
+            this.LblDataDefaultHosp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblDataDefaultHosp.Name = "LblDataDefaultHosp";
-            this.LblDataDefaultHosp.Size = new System.Drawing.Size(82, 13);
+            this.LblDataDefaultHosp.Size = new System.Drawing.Size(108, 17);
             this.LblDataDefaultHosp.TabIndex = 3;
             this.LblDataDefaultHosp.Text = "Default Hospital";
             // 
             // LblDataCustomizeName
             // 
             this.LblDataCustomizeName.AutoSize = true;
-            this.LblDataCustomizeName.Location = new System.Drawing.Point(10, 37);
+            this.LblDataCustomizeName.Location = new System.Drawing.Point(13, 46);
+            this.LblDataCustomizeName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblDataCustomizeName.Name = "LblDataCustomizeName";
-            this.LblDataCustomizeName.Size = new System.Drawing.Size(91, 13);
+            this.LblDataCustomizeName.Size = new System.Drawing.Size(121, 17);
             this.LblDataCustomizeName.TabIndex = 2;
             this.LblDataCustomizeName.Text = "Customize Names";
             // 
@@ -414,8 +426,9 @@
             this.LblData.Dock = System.Windows.Forms.DockStyle.Top;
             this.LblData.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.LblData.Location = new System.Drawing.Point(0, 0);
+            this.LblData.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblData.Name = "LblData";
-            this.LblData.Size = new System.Drawing.Size(150, 26);
+            this.LblData.Size = new System.Drawing.Size(200, 32);
             this.LblData.TabIndex = 0;
             this.LblData.Text = "Data";
             this.LblData.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -428,20 +441,21 @@
             this.PnlSurgery.Controls.Add(this.LblSurgeryAdd);
             this.PnlSurgery.Controls.Add(this.LblSurgery);
             this.PnlSurgery.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlSurgery.Location = new System.Drawing.Point(2, 325);
+            this.PnlSurgery.Location = new System.Drawing.Point(2, 399);
             this.PnlSurgery.Margin = new System.Windows.Forms.Padding(0);
-            this.PnlSurgery.MinimumSize = new System.Drawing.Size(150, 0);
+            this.PnlSurgery.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlSurgery.Name = "PnlSurgery";
-            this.PnlSurgery.Size = new System.Drawing.Size(150, 80);
+            this.PnlSurgery.Size = new System.Drawing.Size(200, 98);
             this.PnlSurgery.TabIndex = 6;
             this.PnlSurgery.Tag = "Collapsed";
             // 
             // LblSurgerySearch
             // 
             this.LblSurgerySearch.AutoSize = true;
-            this.LblSurgerySearch.Location = new System.Drawing.Point(10, 57);
+            this.LblSurgerySearch.Location = new System.Drawing.Point(13, 70);
+            this.LblSurgerySearch.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblSurgerySearch.Name = "LblSurgerySearch";
-            this.LblSurgerySearch.Size = new System.Drawing.Size(41, 13);
+            this.LblSurgerySearch.Size = new System.Drawing.Size(53, 17);
             this.LblSurgerySearch.TabIndex = 3;
             this.LblSurgerySearch.Text = "Search";
             this.LblSurgerySearch.Click += new System.EventHandler(this.LblSurgerySearch_Click);
@@ -451,9 +465,10 @@
             // LblSurgeryAdd
             // 
             this.LblSurgeryAdd.AutoSize = true;
-            this.LblSurgeryAdd.Location = new System.Drawing.Point(10, 35);
+            this.LblSurgeryAdd.Location = new System.Drawing.Point(13, 43);
+            this.LblSurgeryAdd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblSurgeryAdd.Name = "LblSurgeryAdd";
-            this.LblSurgeryAdd.Size = new System.Drawing.Size(26, 13);
+            this.LblSurgeryAdd.Size = new System.Drawing.Size(33, 17);
             this.LblSurgeryAdd.TabIndex = 2;
             this.LblSurgeryAdd.Text = "Add";
             this.LblSurgeryAdd.Click += new System.EventHandler(this.LblSurgeryAdd_Click);
@@ -467,8 +482,9 @@
             this.LblSurgery.Dock = System.Windows.Forms.DockStyle.Top;
             this.LblSurgery.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.LblSurgery.Location = new System.Drawing.Point(0, 0);
+            this.LblSurgery.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblSurgery.Name = "LblSurgery";
-            this.LblSurgery.Size = new System.Drawing.Size(150, 26);
+            this.LblSurgery.Size = new System.Drawing.Size(200, 32);
             this.LblSurgery.TabIndex = 0;
             this.LblSurgery.Text = "Surgery";
             this.LblSurgery.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -491,110 +507,121 @@
             this.PnlMetaData.Controls.Add(this.LblMDCpt);
             this.PnlMetaData.Controls.Add(this.LblMDComp);
             this.PnlMetaData.Controls.Add(this.LblMetaData);
-            this.PnlMetaData.Location = new System.Drawing.Point(2, 579);
+            this.PnlMetaData.Location = new System.Drawing.Point(2, 709);
             this.PnlMetaData.Margin = new System.Windows.Forms.Padding(0);
-            this.PnlMetaData.MinimumSize = new System.Drawing.Size(150, 0);
+            this.PnlMetaData.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlMetaData.Name = "PnlMetaData";
-            this.PnlMetaData.Size = new System.Drawing.Size(150, 66);
+            this.PnlMetaData.Size = new System.Drawing.Size(200, 81);
             this.PnlMetaData.TabIndex = 8;
             this.PnlMetaData.Tag = "Collapsed";
             // 
             // LblMDSurgery
             // 
             this.LblMDSurgery.AutoSize = true;
-            this.LblMDSurgery.Location = new System.Drawing.Point(10, 287);
+            this.LblMDSurgery.Location = new System.Drawing.Point(13, 353);
+            this.LblMDSurgery.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMDSurgery.Name = "LblMDSurgery";
-            this.LblMDSurgery.Size = new System.Drawing.Size(43, 13);
+            this.LblMDSurgery.Size = new System.Drawing.Size(58, 17);
             this.LblMDSurgery.TabIndex = 12;
             this.LblMDSurgery.Text = "Surgery";
             // 
             // LblMDLocation
             // 
             this.LblMDLocation.AutoSize = true;
-            this.LblMDLocation.Location = new System.Drawing.Point(10, 262);
+            this.LblMDLocation.Location = new System.Drawing.Point(13, 322);
+            this.LblMDLocation.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMDLocation.Name = "LblMDLocation";
-            this.LblMDLocation.Size = new System.Drawing.Size(48, 13);
+            this.LblMDLocation.Size = new System.Drawing.Size(62, 17);
             this.LblMDLocation.TabIndex = 11;
             this.LblMDLocation.Text = "Location";
             // 
             // LblMDLevel
             // 
             this.LblMDLevel.AutoSize = true;
-            this.LblMDLevel.Location = new System.Drawing.Point(10, 237);
+            this.LblMDLevel.Location = new System.Drawing.Point(13, 292);
+            this.LblMDLevel.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMDLevel.Name = "LblMDLevel";
-            this.LblMDLevel.Size = new System.Drawing.Size(33, 13);
+            this.LblMDLevel.Size = new System.Drawing.Size(42, 17);
             this.LblMDLevel.TabIndex = 10;
             this.LblMDLevel.Text = "Level";
             // 
             // LblMDInst
             // 
             this.LblMDInst.AutoSize = true;
-            this.LblMDInst.Location = new System.Drawing.Point(10, 212);
+            this.LblMDInst.Location = new System.Drawing.Point(13, 261);
+            this.LblMDInst.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMDInst.Name = "LblMDInst";
-            this.LblMDInst.Size = new System.Drawing.Size(79, 13);
+            this.LblMDInst.Size = new System.Drawing.Size(105, 17);
             this.LblMDInst.TabIndex = 9;
             this.LblMDInst.Text = "Instrumentation";
             // 
             // LblMDHospital
             // 
             this.LblMDHospital.AutoSize = true;
-            this.LblMDHospital.Location = new System.Drawing.Point(10, 187);
+            this.LblMDHospital.Location = new System.Drawing.Point(13, 230);
+            this.LblMDHospital.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMDHospital.Name = "LblMDHospital";
-            this.LblMDHospital.Size = new System.Drawing.Size(45, 13);
+            this.LblMDHospital.Size = new System.Drawing.Size(59, 17);
             this.LblMDHospital.TabIndex = 8;
             this.LblMDHospital.Text = "Hospital";
             // 
             // LblMDFiscalYr
             // 
             this.LblMDFiscalYr.AutoSize = true;
-            this.LblMDFiscalYr.Location = new System.Drawing.Point(10, 162);
+            this.LblMDFiscalYr.Location = new System.Drawing.Point(13, 199);
+            this.LblMDFiscalYr.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMDFiscalYr.Name = "LblMDFiscalYr";
-            this.LblMDFiscalYr.Size = new System.Drawing.Size(59, 13);
+            this.LblMDFiscalYr.Size = new System.Drawing.Size(78, 17);
             this.LblMDFiscalYr.TabIndex = 7;
             this.LblMDFiscalYr.Text = "Fiscal Year";
             // 
             // LblMDDr
             // 
             this.LblMDDr.AutoSize = true;
-            this.LblMDDr.Location = new System.Drawing.Point(10, 137);
+            this.LblMDDr.Location = new System.Drawing.Point(13, 169);
+            this.LblMDDr.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMDDr.Name = "LblMDDr";
-            this.LblMDDr.Size = new System.Drawing.Size(39, 13);
+            this.LblMDDr.Size = new System.Drawing.Size(50, 17);
             this.LblMDDr.TabIndex = 6;
             this.LblMDDr.Text = "Doctor";
             // 
             // LblMDDx
             // 
             this.LblMDDx.AutoSize = true;
-            this.LblMDDx.Location = new System.Drawing.Point(10, 112);
+            this.LblMDDx.Location = new System.Drawing.Point(13, 138);
+            this.LblMDDx.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMDDx.Name = "LblMDDx";
-            this.LblMDDx.Size = new System.Drawing.Size(53, 13);
+            this.LblMDDx.Size = new System.Drawing.Size(70, 17);
             this.LblMDDx.TabIndex = 5;
             this.LblMDDx.Text = "Diagnosis";
             // 
             // LblMDImageDesc
             // 
             this.LblMDImageDesc.AutoSize = true;
-            this.LblMDImageDesc.Location = new System.Drawing.Point(10, 87);
+            this.LblMDImageDesc.Location = new System.Drawing.Point(13, 107);
+            this.LblMDImageDesc.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMDImageDesc.Name = "LblMDImageDesc";
-            this.LblMDImageDesc.Size = new System.Drawing.Size(64, 13);
+            this.LblMDImageDesc.Size = new System.Drawing.Size(82, 17);
             this.LblMDImageDesc.TabIndex = 4;
             this.LblMDImageDesc.Text = "Image Desc";
             // 
             // LblMDCpt
             // 
             this.LblMDCpt.AutoSize = true;
-            this.LblMDCpt.Location = new System.Drawing.Point(10, 62);
+            this.LblMDCpt.Location = new System.Drawing.Point(13, 76);
+            this.LblMDCpt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMDCpt.Name = "LblMDCpt";
-            this.LblMDCpt.Size = new System.Drawing.Size(28, 13);
+            this.LblMDCpt.Size = new System.Drawing.Size(35, 17);
             this.LblMDCpt.TabIndex = 3;
             this.LblMDCpt.Text = "CPT";
             // 
             // LblMDComp
             // 
             this.LblMDComp.AutoSize = true;
-            this.LblMDComp.Location = new System.Drawing.Point(10, 37);
+            this.LblMDComp.Location = new System.Drawing.Point(13, 46);
+            this.LblMDComp.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMDComp.Name = "LblMDComp";
-            this.LblMDComp.Size = new System.Drawing.Size(67, 13);
+            this.LblMDComp.Size = new System.Drawing.Size(88, 17);
             this.LblMDComp.TabIndex = 2;
             this.LblMDComp.Text = "Complication";
             // 
@@ -605,8 +632,9 @@
             this.LblMetaData.Dock = System.Windows.Forms.DockStyle.Top;
             this.LblMetaData.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.LblMetaData.Location = new System.Drawing.Point(0, 0);
+            this.LblMetaData.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMetaData.Name = "LblMetaData";
-            this.LblMetaData.Size = new System.Drawing.Size(150, 25);
+            this.LblMetaData.Size = new System.Drawing.Size(200, 31);
             this.LblMetaData.TabIndex = 0;
             this.LblMetaData.Text = "Meta Data";
             this.LblMetaData.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -619,29 +647,31 @@
             this.PnlEmailPic.Controls.Add(this.LblEmailPicPicOnly);
             this.PnlEmailPic.Controls.Add(this.LblEmailPic);
             this.PnlEmailPic.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlEmailPic.Location = new System.Drawing.Point(2, 649);
+            this.PnlEmailPic.Location = new System.Drawing.Point(2, 794);
             this.PnlEmailPic.Margin = new System.Windows.Forms.Padding(0);
-            this.PnlEmailPic.MinimumSize = new System.Drawing.Size(150, 0);
+            this.PnlEmailPic.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlEmailPic.Name = "PnlEmailPic";
-            this.PnlEmailPic.Size = new System.Drawing.Size(150, 54);
+            this.PnlEmailPic.Size = new System.Drawing.Size(200, 66);
             this.PnlEmailPic.TabIndex = 13;
             this.PnlEmailPic.Tag = "Collapsed";
             // 
             // LblEmailPicPicInfo
             // 
             this.LblEmailPicPicInfo.AutoSize = true;
-            this.LblEmailPicPicInfo.Location = new System.Drawing.Point(10, 62);
+            this.LblEmailPicPicInfo.Location = new System.Drawing.Point(13, 76);
+            this.LblEmailPicPicInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblEmailPicPicInfo.Name = "LblEmailPicPicInfo";
-            this.LblEmailPicPicInfo.Size = new System.Drawing.Size(82, 13);
+            this.LblEmailPicPicInfo.Size = new System.Drawing.Size(107, 17);
             this.LblEmailPicPicInfo.TabIndex = 3;
             this.LblEmailPicPicInfo.Text = "Picture and Info";
             // 
             // LblEmailPicPicOnly
             // 
             this.LblEmailPicPicOnly.AutoSize = true;
-            this.LblEmailPicPicOnly.Location = new System.Drawing.Point(10, 37);
+            this.LblEmailPicPicOnly.Location = new System.Drawing.Point(13, 46);
+            this.LblEmailPicPicOnly.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblEmailPicPicOnly.Name = "LblEmailPicPicOnly";
-            this.LblEmailPicPicOnly.Size = new System.Drawing.Size(64, 13);
+            this.LblEmailPicPicOnly.Size = new System.Drawing.Size(85, 17);
             this.LblEmailPicPicOnly.TabIndex = 2;
             this.LblEmailPicPicOnly.Text = "Picture Only";
             // 
@@ -652,8 +682,9 @@
             this.LblEmailPic.Dock = System.Windows.Forms.DockStyle.Top;
             this.LblEmailPic.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.LblEmailPic.Location = new System.Drawing.Point(0, 0);
+            this.LblEmailPic.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblEmailPic.Name = "LblEmailPic";
-            this.LblEmailPic.Size = new System.Drawing.Size(150, 26);
+            this.LblEmailPic.Size = new System.Drawing.Size(200, 32);
             this.LblEmailPic.TabIndex = 0;
             this.LblEmailPic.Text = "Emailed Pictures";
             this.LblEmailPic.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -669,20 +700,21 @@
             this.PnlImages.Controls.Add(this.LblImagesAdd);
             this.PnlImages.Controls.Add(this.LblImages);
             this.PnlImages.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlImages.Location = new System.Drawing.Point(2, 29);
+            this.PnlImages.Location = new System.Drawing.Point(2, 35);
             this.PnlImages.Margin = new System.Windows.Forms.Padding(0);
-            this.PnlImages.MinimumSize = new System.Drawing.Size(150, 0);
+            this.PnlImages.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlImages.Name = "PnlImages";
-            this.PnlImages.Size = new System.Drawing.Size(150, 146);
+            this.PnlImages.Size = new System.Drawing.Size(200, 180);
             this.PnlImages.TabIndex = 4;
             this.PnlImages.Tag = "Collapsed";
             // 
             // LblImagesSearchToPatient
             // 
             this.LblImagesSearchToPatient.AutoSize = true;
-            this.LblImagesSearchToPatient.Location = new System.Drawing.Point(10, 123);
+            this.LblImagesSearchToPatient.Location = new System.Drawing.Point(13, 151);
+            this.LblImagesSearchToPatient.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblImagesSearchToPatient.Name = "LblImagesSearchToPatient";
-            this.LblImagesSearchToPatient.Size = new System.Drawing.Size(56, 13);
+            this.LblImagesSearchToPatient.Size = new System.Drawing.Size(73, 17);
             this.LblImagesSearchToPatient.TabIndex = 6;
             this.LblImagesSearchToPatient.Text = "To Patient";
             this.LblImagesSearchToPatient.Click += new System.EventHandler(this.LblImagesSearchToPatient_Click);
@@ -692,9 +724,10 @@
             // LblImagesFilter
             // 
             this.LblImagesFilter.AutoSize = true;
-            this.LblImagesFilter.Location = new System.Drawing.Point(10, 79);
+            this.LblImagesFilter.Location = new System.Drawing.Point(13, 97);
+            this.LblImagesFilter.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblImagesFilter.Name = "LblImagesFilter";
-            this.LblImagesFilter.Size = new System.Drawing.Size(29, 13);
+            this.LblImagesFilter.Size = new System.Drawing.Size(39, 17);
             this.LblImagesFilter.TabIndex = 5;
             this.LblImagesFilter.Text = "Filter";
             this.LblImagesFilter.Click += new System.EventHandler(this.LblImagesFilter_Click);
@@ -704,9 +737,10 @@
             // LblImagesSearchResults
             // 
             this.LblImagesSearchResults.AutoSize = true;
-            this.LblImagesSearchResults.Location = new System.Drawing.Point(10, 101);
+            this.LblImagesSearchResults.Location = new System.Drawing.Point(13, 124);
+            this.LblImagesSearchResults.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblImagesSearchResults.Name = "LblImagesSearchResults";
-            this.LblImagesSearchResults.Size = new System.Drawing.Size(79, 13);
+            this.LblImagesSearchResults.Size = new System.Drawing.Size(104, 17);
             this.LblImagesSearchResults.TabIndex = 4;
             this.LblImagesSearchResults.Tag = "LblImagesSearchResults";
             this.LblImagesSearchResults.Text = "Search Results";
@@ -717,9 +751,10 @@
             // LblImagesSearch
             // 
             this.LblImagesSearch.AutoSize = true;
-            this.LblImagesSearch.Location = new System.Drawing.Point(10, 57);
+            this.LblImagesSearch.Location = new System.Drawing.Point(13, 70);
+            this.LblImagesSearch.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblImagesSearch.Name = "LblImagesSearch";
-            this.LblImagesSearch.Size = new System.Drawing.Size(41, 13);
+            this.LblImagesSearch.Size = new System.Drawing.Size(53, 17);
             this.LblImagesSearch.TabIndex = 3;
             this.LblImagesSearch.Text = "Search";
             this.LblImagesSearch.Click += new System.EventHandler(this.LblImagesSearch_Click);
@@ -729,9 +764,10 @@
             // LblImagesAdd
             // 
             this.LblImagesAdd.AutoSize = true;
-            this.LblImagesAdd.Location = new System.Drawing.Point(10, 35);
+            this.LblImagesAdd.Location = new System.Drawing.Point(13, 43);
+            this.LblImagesAdd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblImagesAdd.Name = "LblImagesAdd";
-            this.LblImagesAdd.Size = new System.Drawing.Size(26, 13);
+            this.LblImagesAdd.Size = new System.Drawing.Size(33, 17);
             this.LblImagesAdd.TabIndex = 2;
             this.LblImagesAdd.Text = "Add";
             this.LblImagesAdd.Click += new System.EventHandler(this.LblImagesAdd_Click);
@@ -745,8 +781,9 @@
             this.LblImages.Dock = System.Windows.Forms.DockStyle.Top;
             this.LblImages.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.LblImages.Location = new System.Drawing.Point(0, 0);
+            this.LblImages.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblImages.Name = "LblImages";
-            this.LblImages.Size = new System.Drawing.Size(150, 26);
+            this.LblImages.Size = new System.Drawing.Size(200, 32);
             this.LblImages.TabIndex = 0;
             this.LblImages.Text = "Images";
             this.LblImages.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -761,29 +798,31 @@
             this.PnlRpt.Controls.Add(this.label6);
             this.PnlRpt.Controls.Add(this.LblRpt);
             this.PnlRpt.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlRpt.Location = new System.Drawing.Point(2, 407);
+            this.PnlRpt.Location = new System.Drawing.Point(2, 499);
             this.PnlRpt.Margin = new System.Windows.Forms.Padding(0);
-            this.PnlRpt.MinimumSize = new System.Drawing.Size(150, 0);
+            this.PnlRpt.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlRpt.Name = "PnlRpt";
-            this.PnlRpt.Size = new System.Drawing.Size(150, 80);
+            this.PnlRpt.Size = new System.Drawing.Size(200, 98);
             this.PnlRpt.TabIndex = 5;
             this.PnlRpt.Tag = "Collapsed";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(10, 57);
+            this.label3.Location = new System.Drawing.Point(13, 70);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(41, 13);
+            this.label3.Size = new System.Drawing.Size(53, 17);
             this.label3.TabIndex = 3;
             this.label3.Text = "Search";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(10, 35);
+            this.label6.Location = new System.Drawing.Point(13, 43);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(26, 13);
+            this.label6.Size = new System.Drawing.Size(33, 17);
             this.label6.TabIndex = 2;
             this.label6.Text = "Add";
             // 
@@ -794,8 +833,9 @@
             this.LblRpt.Dock = System.Windows.Forms.DockStyle.Top;
             this.LblRpt.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.LblRpt.Location = new System.Drawing.Point(0, 0);
+            this.LblRpt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblRpt.Name = "LblRpt";
-            this.LblRpt.Size = new System.Drawing.Size(150, 26);
+            this.LblRpt.Size = new System.Drawing.Size(200, 32);
             this.LblRpt.TabIndex = 0;
             this.LblRpt.Text = "Reports";
             this.LblRpt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -818,16 +858,17 @@
             this.TSMnuDashboardBreak2,
             this.TSMnuHelp});
             this.MnuDashboard.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuDashboard.Location = new System.Drawing.Point(139, 0);
+            this.MnuDashboard.Location = new System.Drawing.Point(185, 0);
             this.MnuDashboard.Name = "MnuDashboard";
-            this.MnuDashboard.Size = new System.Drawing.Size(909, 24);
+            this.MnuDashboard.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuDashboard.Size = new System.Drawing.Size(1212, 28);
             this.MnuDashboard.TabIndex = 6;
             this.MnuDashboard.Text = "menuStrip1";
             // 
             // TSMnuOpenCanvas
             // 
             this.TSMnuOpenCanvas.Name = "TSMnuOpenCanvas";
-            this.TSMnuOpenCanvas.Size = new System.Drawing.Size(89, 20);
+            this.TSMnuOpenCanvas.Size = new System.Drawing.Size(107, 24);
             this.TSMnuOpenCanvas.Text = "Open Canvas";
             // 
             // TSMnuDashboardBreak1
@@ -836,13 +877,13 @@
             this.TSMnuDashboardBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.TSMnuDashboardBreak1.Name = "TSMnuDashboardBreak1";
             this.TSMnuDashboardBreak1.Padding = new System.Windows.Forms.Padding(0);
-            this.TSMnuDashboardBreak1.Size = new System.Drawing.Size(15, 20);
+            this.TSMnuDashboardBreak1.Size = new System.Drawing.Size(18, 24);
             this.TSMnuDashboardBreak1.Text = "|";
             // 
             // TSMnuAddToCanvas
             // 
             this.TSMnuAddToCanvas.Name = "TSMnuAddToCanvas";
-            this.TSMnuAddToCanvas.Size = new System.Drawing.Size(96, 20);
+            this.TSMnuAddToCanvas.Size = new System.Drawing.Size(117, 24);
             this.TSMnuAddToCanvas.Text = "Add to Canvas";
             // 
             // TSMnuDashboardBreak2
@@ -851,13 +892,13 @@
             this.TSMnuDashboardBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.TSMnuDashboardBreak2.Name = "TSMnuDashboardBreak2";
             this.TSMnuDashboardBreak2.Padding = new System.Windows.Forms.Padding(0);
-            this.TSMnuDashboardBreak2.Size = new System.Drawing.Size(15, 20);
+            this.TSMnuDashboardBreak2.Size = new System.Drawing.Size(18, 24);
             this.TSMnuDashboardBreak2.Text = "|";
             // 
             // TSMnuHelp
             // 
             this.TSMnuHelp.Name = "TSMnuHelp";
-            this.TSMnuHelp.Size = new System.Drawing.Size(44, 20);
+            this.TSMnuHelp.Size = new System.Drawing.Size(53, 24);
             this.TSMnuHelp.Text = "Help";
             // 
             // MnuImages
@@ -868,9 +909,10 @@
             this.toolStripMenuItem1,
             this.TSMnuClearAll});
             this.MnuImages.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuImages.Location = new System.Drawing.Point(139, 23);
+            this.MnuImages.Location = new System.Drawing.Point(185, 28);
             this.MnuImages.Name = "MnuImages";
-            this.MnuImages.Size = new System.Drawing.Size(909, 23);
+            this.MnuImages.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuImages.Size = new System.Drawing.Size(1212, 28);
             this.MnuImages.TabIndex = 7;
             this.MnuImages.Text = "menuStrip1";
             this.MnuImages.Visible = false;
@@ -878,7 +920,7 @@
             // TSMnuDisplay
             // 
             this.TSMnuDisplay.Name = "TSMnuDisplay";
-            this.TSMnuDisplay.Size = new System.Drawing.Size(57, 19);
+            this.TSMnuDisplay.Size = new System.Drawing.Size(70, 24);
             this.TSMnuDisplay.Tag = "FrmDashboard";
             this.TSMnuDisplay.Text = "Display";
             // 
@@ -888,13 +930,13 @@
             this.toolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.toolStripMenuItem1.Name = "toolStripMenuItem1";
             this.toolStripMenuItem1.Padding = new System.Windows.Forms.Padding(0);
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(15, 19);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(18, 24);
             this.toolStripMenuItem1.Text = "|";
             // 
             // TSMnuClearAll
             // 
             this.TSMnuClearAll.Name = "TSMnuClearAll";
-            this.TSMnuClearAll.Size = new System.Drawing.Size(63, 19);
+            this.TSMnuClearAll.Size = new System.Drawing.Size(77, 24);
             this.TSMnuClearAll.Text = "Clear All";
             // 
             // MnuImagesSearch
@@ -915,9 +957,10 @@
             this.TsMnuImageSearchBreak6,
             this.TsMnuRemoveAllPic});
             this.MnuImagesSearch.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuImagesSearch.Location = new System.Drawing.Point(139, 23);
+            this.MnuImagesSearch.Location = new System.Drawing.Point(185, 28);
             this.MnuImagesSearch.Name = "MnuImagesSearch";
-            this.MnuImagesSearch.Size = new System.Drawing.Size(909, 23);
+            this.MnuImagesSearch.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuImagesSearch.Size = new System.Drawing.Size(1212, 28);
             this.MnuImagesSearch.TabIndex = 9;
             this.MnuImagesSearch.Text = "menuStrip1";
             this.MnuImagesSearch.Visible = false;
@@ -925,7 +968,7 @@
             // TSMnuSearch
             // 
             this.TSMnuSearch.Name = "TSMnuSearch";
-            this.TSMnuSearch.Size = new System.Drawing.Size(54, 19);
+            this.TSMnuSearch.Size = new System.Drawing.Size(65, 24);
             this.TSMnuSearch.Tag = "FrmDashboard";
             this.TSMnuSearch.Text = "&Search";
             this.TSMnuSearch.Click += new System.EventHandler(this.TSMnuSearch_Click);
@@ -936,13 +979,13 @@
             this.TsMnuImageSearchBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.TsMnuImageSearchBreak1.Name = "TsMnuImageSearchBreak1";
             this.TsMnuImageSearchBreak1.Padding = new System.Windows.Forms.Padding(0);
-            this.TsMnuImageSearchBreak1.Size = new System.Drawing.Size(15, 19);
+            this.TsMnuImageSearchBreak1.Size = new System.Drawing.Size(18, 24);
             this.TsMnuImageSearchBreak1.Text = "|";
             // 
             // TSMnuAddMeta
             // 
             this.TSMnuAddMeta.Name = "TSMnuAddMeta";
-            this.TSMnuAddMeta.Size = new System.Drawing.Size(98, 19);
+            this.TSMnuAddMeta.Size = new System.Drawing.Size(123, 24);
             this.TSMnuAddMeta.Text = "&Add Meta Data";
             this.TSMnuAddMeta.Click += new System.EventHandler(this.TSMnuAddMeta_Click);
             // 
@@ -952,13 +995,13 @@
             this.TsMnuImageSearchBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.TsMnuImageSearchBreak2.Name = "TsMnuImageSearchBreak2";
             this.TsMnuImageSearchBreak2.Padding = new System.Windows.Forms.Padding(0);
-            this.TsMnuImageSearchBreak2.Size = new System.Drawing.Size(15, 19);
+            this.TsMnuImageSearchBreak2.Size = new System.Drawing.Size(18, 24);
             this.TsMnuImageSearchBreak2.Text = "|";
             // 
             // TSMnuRemoveMeta
             // 
             this.TSMnuRemoveMeta.Name = "TSMnuRemoveMeta";
-            this.TSMnuRemoveMeta.Size = new System.Drawing.Size(119, 19);
+            this.TSMnuRemoveMeta.Size = new System.Drawing.Size(149, 24);
             this.TSMnuRemoveMeta.Text = "&Remove Meta Data";
             this.TSMnuRemoveMeta.Click += new System.EventHandler(this.TSMnuRemoveMeta_Click);
             // 
@@ -968,13 +1011,13 @@
             this.TsMnuImageSearchBreak3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.TsMnuImageSearchBreak3.Name = "TsMnuImageSearchBreak3";
             this.TsMnuImageSearchBreak3.Padding = new System.Windows.Forms.Padding(0);
-            this.TsMnuImageSearchBreak3.Size = new System.Drawing.Size(15, 19);
+            this.TsMnuImageSearchBreak3.Size = new System.Drawing.Size(18, 24);
             this.TsMnuImageSearchBreak3.Text = "|";
             // 
             // TSMnuAddInfo
             // 
             this.TSMnuAddInfo.Name = "TSMnuAddInfo";
-            this.TSMnuAddInfo.Size = new System.Drawing.Size(105, 19);
+            this.TSMnuAddInfo.Size = new System.Drawing.Size(128, 24);
             this.TSMnuAddInfo.Text = "Add Picture &Info";
             this.TSMnuAddInfo.Click += new System.EventHandler(this.TSMnuAddInfo_Click);
             // 
@@ -984,13 +1027,13 @@
             this.TsMnuImageSearchBreak4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.TsMnuImageSearchBreak4.Name = "TsMnuImageSearchBreak4";
             this.TsMnuImageSearchBreak4.Padding = new System.Windows.Forms.Padding(0);
-            this.TsMnuImageSearchBreak4.Size = new System.Drawing.Size(15, 19);
+            this.TsMnuImageSearchBreak4.Size = new System.Drawing.Size(18, 24);
             this.TsMnuImageSearchBreak4.Text = "|";
             // 
             // TSMnuRemoveInfo
             // 
             this.TSMnuRemoveInfo.Name = "TSMnuRemoveInfo";
-            this.TSMnuRemoveInfo.Size = new System.Drawing.Size(126, 19);
+            this.TSMnuRemoveInfo.Size = new System.Drawing.Size(154, 24);
             this.TSMnuRemoveInfo.Text = "Remove Picture I&nfo";
             this.TSMnuRemoveInfo.Click += new System.EventHandler(this.TSMnuRemoveInfo_Click);
             // 
@@ -1000,13 +1043,13 @@
             this.TsMnuImageSearchBreak5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.TsMnuImageSearchBreak5.Name = "TsMnuImageSearchBreak5";
             this.TsMnuImageSearchBreak5.Padding = new System.Windows.Forms.Padding(0);
-            this.TsMnuImageSearchBreak5.Size = new System.Drawing.Size(15, 19);
+            this.TsMnuImageSearchBreak5.Size = new System.Drawing.Size(18, 24);
             this.TsMnuImageSearchBreak5.Text = "|";
             // 
             // TSMnuRemoveAllMeta
             // 
             this.TSMnuRemoveAllMeta.Name = "TSMnuRemoveAllMeta";
-            this.TSMnuRemoveAllMeta.Size = new System.Drawing.Size(136, 19);
+            this.TSMnuRemoveAllMeta.Size = new System.Drawing.Size(171, 24);
             this.TSMnuRemoveAllMeta.Text = "Re&move All Meta Data";
             this.TSMnuRemoveAllMeta.Click += new System.EventHandler(this.TSMnuRemoveAllMeta_Click);
             // 
@@ -1016,13 +1059,13 @@
             this.TsMnuImageSearchBreak6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.TsMnuImageSearchBreak6.Name = "TsMnuImageSearchBreak6";
             this.TsMnuImageSearchBreak6.Padding = new System.Windows.Forms.Padding(0);
-            this.TsMnuImageSearchBreak6.Size = new System.Drawing.Size(15, 19);
+            this.TsMnuImageSearchBreak6.Size = new System.Drawing.Size(18, 24);
             this.TsMnuImageSearchBreak6.Text = "|";
             // 
             // TsMnuRemoveAllPic
             // 
             this.TsMnuRemoveAllPic.Name = "TsMnuRemoveAllPic";
-            this.TsMnuRemoveAllPic.Size = new System.Drawing.Size(122, 19);
+            this.TsMnuRemoveAllPic.Size = new System.Drawing.Size(150, 24);
             this.TsMnuRemoveAllPic.Text = "Remove All Pic In&fo";
             this.TsMnuRemoveAllPic.Click += new System.EventHandler(this.TsMnuRemoveAllPic_Click);
             // 
@@ -1040,9 +1083,10 @@
             this.TSMnuImgSearchResultBreak4,
             this.TSMnuImgSearchResultPrint});
             this.MnuImageSearchResult.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuImageSearchResult.Location = new System.Drawing.Point(139, 24);
+            this.MnuImageSearchResult.Location = new System.Drawing.Point(185, 30);
             this.MnuImageSearchResult.Name = "MnuImageSearchResult";
-            this.MnuImageSearchResult.Size = new System.Drawing.Size(909, 24);
+            this.MnuImageSearchResult.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuImageSearchResult.Size = new System.Drawing.Size(1212, 30);
             this.MnuImageSearchResult.TabIndex = 10;
             this.MnuImageSearchResult.Text = "menuStrip1";
             this.MnuImageSearchResult.Visible = false;
@@ -1050,7 +1094,7 @@
             // TSMnuImgSearchResultPatientDetail
             // 
             this.TSMnuImgSearchResultPatientDetail.Name = "TSMnuImgSearchResultPatientDetail";
-            this.TSMnuImgSearchResultPatientDetail.Size = new System.Drawing.Size(89, 20);
+            this.TSMnuImgSearchResultPatientDetail.Size = new System.Drawing.Size(110, 26);
             this.TSMnuImgSearchResultPatientDetail.Tag = "";
             this.TSMnuImgSearchResultPatientDetail.Text = "Patient Detail";
             // 
@@ -1060,13 +1104,13 @@
             this.TSMnuImgSearchResultBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.TSMnuImgSearchResultBreak1.Name = "TSMnuImgSearchResultBreak1";
             this.TSMnuImgSearchResultBreak1.Padding = new System.Windows.Forms.Padding(0);
-            this.TSMnuImgSearchResultBreak1.Size = new System.Drawing.Size(15, 20);
+            this.TSMnuImgSearchResultBreak1.Size = new System.Drawing.Size(18, 26);
             this.TSMnuImgSearchResultBreak1.Text = "|";
             // 
             // TSMnuImgSearchResultAddPic
             // 
             this.TSMnuImgSearchResultAddPic.Name = "TSMnuImgSearchResultAddPic";
-            this.TSMnuImgSearchResultAddPic.Size = new System.Drawing.Size(60, 20);
+            this.TSMnuImgSearchResultAddPic.Size = new System.Drawing.Size(72, 26);
             this.TSMnuImgSearchResultAddPic.Text = "Add Pic";
             // 
             // TSMnuImgSearchResultBreak2
@@ -1075,13 +1119,13 @@
             this.TSMnuImgSearchResultBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.TSMnuImgSearchResultBreak2.Name = "TSMnuImgSearchResultBreak2";
             this.TSMnuImgSearchResultBreak2.Padding = new System.Windows.Forms.Padding(0);
-            this.TSMnuImgSearchResultBreak2.Size = new System.Drawing.Size(15, 20);
+            this.TSMnuImgSearchResultBreak2.Size = new System.Drawing.Size(18, 26);
             this.TSMnuImgSearchResultBreak2.Text = "|";
             // 
             // TSMnuImgSearchResultDelPic
             // 
             this.TSMnuImgSearchResultDelPic.Name = "TSMnuImgSearchResultDelPic";
-            this.TSMnuImgSearchResultDelPic.Size = new System.Drawing.Size(55, 20);
+            this.TSMnuImgSearchResultDelPic.Size = new System.Drawing.Size(67, 26);
             this.TSMnuImgSearchResultDelPic.Text = "Del Pic";
             // 
             // TSMnuImgSearchResultBreak3
@@ -1090,13 +1134,13 @@
             this.TSMnuImgSearchResultBreak3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.TSMnuImgSearchResultBreak3.Name = "TSMnuImgSearchResultBreak3";
             this.TSMnuImgSearchResultBreak3.Padding = new System.Windows.Forms.Padding(0);
-            this.TSMnuImgSearchResultBreak3.Size = new System.Drawing.Size(15, 20);
+            this.TSMnuImgSearchResultBreak3.Size = new System.Drawing.Size(18, 26);
             this.TSMnuImgSearchResultBreak3.Text = "|";
             // 
             // TSMnuImgSearchResultOpenCanvas
             // 
             this.TSMnuImgSearchResultOpenCanvas.Name = "TSMnuImgSearchResultOpenCanvas";
-            this.TSMnuImgSearchResultOpenCanvas.Size = new System.Drawing.Size(89, 20);
+            this.TSMnuImgSearchResultOpenCanvas.Size = new System.Drawing.Size(107, 26);
             this.TSMnuImgSearchResultOpenCanvas.Text = "Open Canvas";
             // 
             // TSMnuImgSearchResultBreak4
@@ -1105,13 +1149,13 @@
             this.TSMnuImgSearchResultBreak4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.TSMnuImgSearchResultBreak4.Name = "TSMnuImgSearchResultBreak4";
             this.TSMnuImgSearchResultBreak4.Padding = new System.Windows.Forms.Padding(0);
-            this.TSMnuImgSearchResultBreak4.Size = new System.Drawing.Size(15, 20);
+            this.TSMnuImgSearchResultBreak4.Size = new System.Drawing.Size(18, 26);
             this.TSMnuImgSearchResultBreak4.Text = "|";
             // 
             // TSMnuImgSearchResultPrint
             // 
             this.TSMnuImgSearchResultPrint.Name = "TSMnuImgSearchResultPrint";
-            this.TSMnuImgSearchResultPrint.Size = new System.Drawing.Size(44, 20);
+            this.TSMnuImgSearchResultPrint.Size = new System.Drawing.Size(51, 26);
             this.TSMnuImgSearchResultPrint.Text = "Print";
             // 
             // MnuPatient
@@ -1122,9 +1166,10 @@
             this.TSMnuPatientBreak1,
             this.TSMnuPatientClear});
             this.MnuPatient.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuPatient.Location = new System.Drawing.Point(139, 24);
+            this.MnuPatient.Location = new System.Drawing.Point(185, 30);
             this.MnuPatient.Name = "MnuPatient";
-            this.MnuPatient.Size = new System.Drawing.Size(909, 24);
+            this.MnuPatient.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuPatient.Size = new System.Drawing.Size(1212, 30);
             this.MnuPatient.TabIndex = 11;
             this.MnuPatient.Text = "menuStrip1";
             this.MnuPatient.Visible = false;
@@ -1132,7 +1177,7 @@
             // TSMnuPatientDisplay
             // 
             this.TSMnuPatientDisplay.Name = "TSMnuPatientDisplay";
-            this.TSMnuPatientDisplay.Size = new System.Drawing.Size(57, 20);
+            this.TSMnuPatientDisplay.Size = new System.Drawing.Size(70, 26);
             this.TSMnuPatientDisplay.Text = "Display";
             // 
             // TSMnuPatientBreak1
@@ -1141,13 +1186,13 @@
             this.TSMnuPatientBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.TSMnuPatientBreak1.Name = "TSMnuPatientBreak1";
             this.TSMnuPatientBreak1.Padding = new System.Windows.Forms.Padding(0);
-            this.TSMnuPatientBreak1.Size = new System.Drawing.Size(15, 20);
+            this.TSMnuPatientBreak1.Size = new System.Drawing.Size(18, 26);
             this.TSMnuPatientBreak1.Text = "|";
             // 
             // TSMnuPatientClear
             // 
             this.TSMnuPatientClear.Name = "TSMnuPatientClear";
-            this.TSMnuPatientClear.Size = new System.Drawing.Size(46, 20);
+            this.TSMnuPatientClear.Size = new System.Drawing.Size(55, 26);
             this.TSMnuPatientClear.Text = "Clear";
             this.TSMnuPatientClear.Click += new System.EventHandler(this.TSMnuPatientClear_Click);
             // 
@@ -1161,9 +1206,10 @@
             this.TSMnuFilterBreak2,
             this.TSMnuFilterClearSurgery});
             this.MnuImageFilter.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuImageFilter.Location = new System.Drawing.Point(139, 23);
+            this.MnuImageFilter.Location = new System.Drawing.Point(185, 28);
             this.MnuImageFilter.Name = "MnuImageFilter";
-            this.MnuImageFilter.Size = new System.Drawing.Size(909, 23);
+            this.MnuImageFilter.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuImageFilter.Size = new System.Drawing.Size(1212, 28);
             this.MnuImageFilter.TabIndex = 12;
             this.MnuImageFilter.Text = "menuStrip1";
             this.MnuImageFilter.Visible = false;
@@ -1171,7 +1217,7 @@
             // TSMnuFilterApplyFilter
             // 
             this.TSMnuFilterApplyFilter.Name = "TSMnuFilterApplyFilter";
-            this.TSMnuFilterApplyFilter.Size = new System.Drawing.Size(79, 19);
+            this.TSMnuFilterApplyFilter.Size = new System.Drawing.Size(97, 24);
             this.TSMnuFilterApplyFilter.Text = "Apply Filter";
             // 
             // TSMnuFilterBreak1
@@ -1180,13 +1226,13 @@
             this.TSMnuFilterBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.TSMnuFilterBreak1.Name = "TSMnuFilterBreak1";
             this.TSMnuFilterBreak1.Padding = new System.Windows.Forms.Padding(0);
-            this.TSMnuFilterBreak1.Size = new System.Drawing.Size(15, 19);
+            this.TSMnuFilterBreak1.Size = new System.Drawing.Size(18, 24);
             this.TSMnuFilterBreak1.Text = "|";
             // 
             // TSMnuFilterClearChecks
             // 
             this.TSMnuFilterClearChecks.Name = "TSMnuFilterClearChecks";
-            this.TSMnuFilterClearChecks.Size = new System.Drawing.Size(118, 19);
+            this.TSMnuFilterClearChecks.Size = new System.Drawing.Size(144, 24);
             this.TSMnuFilterClearChecks.Text = "Clear Personal Info";
             this.TSMnuFilterClearChecks.Click += new System.EventHandler(this.TSMnuFilterClearChecks_Click);
             // 
@@ -1196,13 +1242,13 @@
             this.TSMnuFilterBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.TSMnuFilterBreak2.Name = "TSMnuFilterBreak2";
             this.TSMnuFilterBreak2.Padding = new System.Windows.Forms.Padding(0);
-            this.TSMnuFilterBreak2.Size = new System.Drawing.Size(15, 19);
+            this.TSMnuFilterBreak2.Size = new System.Drawing.Size(18, 24);
             this.TSMnuFilterBreak2.Text = "|";
             // 
             // TSMnuFilterClearSurgery
             // 
             this.TSMnuFilterClearSurgery.Name = "TSMnuFilterClearSurgery";
-            this.TSMnuFilterClearSurgery.Size = new System.Drawing.Size(107, 19);
+            this.TSMnuFilterClearSurgery.Size = new System.Drawing.Size(132, 24);
             this.TSMnuFilterClearSurgery.Text = "Clear Filter Items";
             this.TSMnuFilterClearSurgery.Click += new System.EventHandler(this.TSMnuFilterClearSurgery_Click);
             // 
@@ -1214,9 +1260,10 @@
             this.TSMnuBlank1,
             this.TSMnuPatientSrchClear});
             this.MnuPatientSearch.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuPatientSearch.Location = new System.Drawing.Point(139, 24);
+            this.MnuPatientSearch.Location = new System.Drawing.Point(185, 28);
             this.MnuPatientSearch.Name = "MnuPatientSearch";
-            this.MnuPatientSearch.Size = new System.Drawing.Size(909, 24);
+            this.MnuPatientSearch.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuPatientSearch.Size = new System.Drawing.Size(1212, 28);
             this.MnuPatientSearch.TabIndex = 14;
             this.MnuPatientSearch.Text = "menuStrip1";
             this.MnuPatientSearch.Visible = false;
@@ -1224,7 +1271,7 @@
             // TSMnuPatientSrchSearch
             // 
             this.TSMnuPatientSrchSearch.Name = "TSMnuPatientSrchSearch";
-            this.TSMnuPatientSrchSearch.Size = new System.Drawing.Size(54, 20);
+            this.TSMnuPatientSrchSearch.Size = new System.Drawing.Size(65, 24);
             this.TSMnuPatientSrchSearch.Text = "Search";
             this.TSMnuPatientSrchSearch.Click += new System.EventHandler(this.TSMnuPatientSrchSearch_Click);
             // 
@@ -1234,13 +1281,13 @@
             this.TSMnuBlank1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.TSMnuBlank1.Name = "TSMnuBlank1";
             this.TSMnuBlank1.Padding = new System.Windows.Forms.Padding(0);
-            this.TSMnuBlank1.Size = new System.Drawing.Size(15, 20);
+            this.TSMnuBlank1.Size = new System.Drawing.Size(18, 24);
             this.TSMnuBlank1.Text = "|";
             // 
             // TSMnuPatientSrchClear
             // 
             this.TSMnuPatientSrchClear.Name = "TSMnuPatientSrchClear";
-            this.TSMnuPatientSrchClear.Size = new System.Drawing.Size(46, 20);
+            this.TSMnuPatientSrchClear.Size = new System.Drawing.Size(55, 24);
             this.TSMnuPatientSrchClear.Text = "Clear";
             this.TSMnuPatientSrchClear.Click += new System.EventHandler(this.TSMnuPatientSrchClear_Click);
             // 
@@ -1252,9 +1299,10 @@
             this.TSMnuSurgeryBreak1,
             this.TSMnuSurgeryClear});
             this.MnuSurgery.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuSurgery.Location = new System.Drawing.Point(139, 24);
+            this.MnuSurgery.Location = new System.Drawing.Point(185, 30);
             this.MnuSurgery.Name = "MnuSurgery";
-            this.MnuSurgery.Size = new System.Drawing.Size(909, 24);
+            this.MnuSurgery.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuSurgery.Size = new System.Drawing.Size(1212, 30);
             this.MnuSurgery.TabIndex = 16;
             this.MnuSurgery.Text = "menuStrip1";
             this.MnuSurgery.Visible = false;
@@ -1262,7 +1310,7 @@
             // TSMnuSurgeryDisplay
             // 
             this.TSMnuSurgeryDisplay.Name = "TSMnuSurgeryDisplay";
-            this.TSMnuSurgeryDisplay.Size = new System.Drawing.Size(57, 20);
+            this.TSMnuSurgeryDisplay.Size = new System.Drawing.Size(70, 26);
             this.TSMnuSurgeryDisplay.Text = "Display";
             // 
             // TSMnuSurgeryBreak1
@@ -1271,13 +1319,13 @@
             this.TSMnuSurgeryBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.TSMnuSurgeryBreak1.Name = "TSMnuSurgeryBreak1";
             this.TSMnuSurgeryBreak1.Padding = new System.Windows.Forms.Padding(0);
-            this.TSMnuSurgeryBreak1.Size = new System.Drawing.Size(15, 20);
+            this.TSMnuSurgeryBreak1.Size = new System.Drawing.Size(18, 26);
             this.TSMnuSurgeryBreak1.Text = "|";
             // 
             // TSMnuSurgeryClear
             // 
             this.TSMnuSurgeryClear.Name = "TSMnuSurgeryClear";
-            this.TSMnuSurgeryClear.Size = new System.Drawing.Size(46, 20);
+            this.TSMnuSurgeryClear.Size = new System.Drawing.Size(55, 26);
             this.TSMnuSurgeryClear.Text = "Clear";
             // 
             // MnuSurgerySearch
@@ -1286,17 +1334,16 @@
             this.MnuSurgerySearch.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMnuSurgerySrchSearch,
             this.TSMnuSurgerySrchBreak1,
-            this.TSMnuSurgerySrchClearDates,
+            this.TSMnuSurgerySrchClearSurgery,
             this.TSMnuSurgerySrchBreak2,
-            this.TSMnuSurgerySrchClearYear,
-            this.TSMnuSurgerySrchBreak3,
             this.TSMnuSurgerySrchClearItems,
-            this.TSMnuSurgerySrchBreak4,
+            this.TSMnuSurgerySrchBreak3,
             this.TSMnuSurgerySrchClearAll});
             this.MnuSurgerySearch.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuSurgerySearch.Location = new System.Drawing.Point(139, 24);
+            this.MnuSurgerySearch.Location = new System.Drawing.Point(185, 28);
             this.MnuSurgerySearch.Name = "MnuSurgerySearch";
-            this.MnuSurgerySearch.Size = new System.Drawing.Size(909, 24);
+            this.MnuSurgerySearch.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuSurgerySearch.Size = new System.Drawing.Size(1212, 28);
             this.MnuSurgerySearch.TabIndex = 18;
             this.MnuSurgerySearch.Text = "menuStrip1";
             this.MnuSurgerySearch.Visible = false;
@@ -1304,7 +1351,7 @@
             // TSMnuSurgerySrchSearch
             // 
             this.TSMnuSurgerySrchSearch.Name = "TSMnuSurgerySrchSearch";
-            this.TSMnuSurgerySrchSearch.Size = new System.Drawing.Size(54, 20);
+            this.TSMnuSurgerySrchSearch.Size = new System.Drawing.Size(65, 24);
             this.TSMnuSurgerySrchSearch.Text = "Search";
             // 
             // TSMnuSurgerySrchBreak1
@@ -1313,67 +1360,57 @@
             this.TSMnuSurgerySrchBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.TSMnuSurgerySrchBreak1.Name = "TSMnuSurgerySrchBreak1";
             this.TSMnuSurgerySrchBreak1.Padding = new System.Windows.Forms.Padding(0);
-            this.TSMnuSurgerySrchBreak1.Size = new System.Drawing.Size(15, 20);
+            this.TSMnuSurgerySrchBreak1.Size = new System.Drawing.Size(18, 24);
             this.TSMnuSurgerySrchBreak1.Text = "|";
             // 
-            // TSMnuSurgerySrchClearDates
+            // TSMnuSurgerySrchClearSurgery
             // 
-            this.TSMnuSurgerySrchClearDates.Name = "TSMnuSurgerySrchClearDates";
-            this.TSMnuSurgerySrchClearDates.Size = new System.Drawing.Size(78, 20);
-            this.TSMnuSurgerySrchClearDates.Text = "Clear Dates";
+            this.TSMnuSurgerySrchClearSurgery.Name = "TSMnuSurgerySrchClearSurgery";
+            this.TSMnuSurgerySrchClearSurgery.Size = new System.Drawing.Size(109, 24);
+            this.TSMnuSurgerySrchClearSurgery.Text = "Clear Surgery";
+            this.TSMnuSurgerySrchClearSurgery.Click += new System.EventHandler(this.TSMnuSurgerySrchClearSurgery_Click);
             // 
             // TSMnuSurgerySrchBreak2
             // 
             this.TSMnuSurgerySrchBreak2.Name = "TSMnuSurgerySrchBreak2";
-            this.TSMnuSurgerySrchBreak2.Size = new System.Drawing.Size(22, 20);
+            this.TSMnuSurgerySrchBreak2.Size = new System.Drawing.Size(25, 24);
             this.TSMnuSurgerySrchBreak2.Text = "|";
-            // 
-            // TSMnuSurgerySrchClearYear
-            // 
-            this.TSMnuSurgerySrchClearYear.Name = "TSMnuSurgerySrchClearYear";
-            this.TSMnuSurgerySrchClearYear.Size = new System.Drawing.Size(71, 20);
-            this.TSMnuSurgerySrchClearYear.Text = "Clear Year";
-            // 
-            // TSMnuSurgerySrchBreak3
-            // 
-            this.TSMnuSurgerySrchBreak3.Name = "TSMnuSurgerySrchBreak3";
-            this.TSMnuSurgerySrchBreak3.Size = new System.Drawing.Size(22, 20);
-            this.TSMnuSurgerySrchBreak3.Text = "|";
             // 
             // TSMnuSurgerySrchClearItems
             // 
             this.TSMnuSurgerySrchClearItems.Name = "TSMnuSurgerySrchClearItems";
-            this.TSMnuSurgerySrchClearItems.Size = new System.Drawing.Size(78, 20);
+            this.TSMnuSurgerySrchClearItems.Size = new System.Drawing.Size(95, 24);
             this.TSMnuSurgerySrchClearItems.Text = "Clear Items";
             // 
-            // TSMnuSurgerySrchBreak4
+            // TSMnuSurgerySrchBreak3
             // 
-            this.TSMnuSurgerySrchBreak4.Name = "TSMnuSurgerySrchBreak4";
-            this.TSMnuSurgerySrchBreak4.Size = new System.Drawing.Size(22, 20);
-            this.TSMnuSurgerySrchBreak4.Text = "|";
+            this.TSMnuSurgerySrchBreak3.Name = "TSMnuSurgerySrchBreak3";
+            this.TSMnuSurgerySrchBreak3.Size = new System.Drawing.Size(25, 24);
+            this.TSMnuSurgerySrchBreak3.Text = "|";
             // 
             // TSMnuSurgerySrchClearAll
             // 
             this.TSMnuSurgerySrchClearAll.Name = "TSMnuSurgerySrchClearAll";
-            this.TSMnuSurgerySrchClearAll.Size = new System.Drawing.Size(63, 20);
+            this.TSMnuSurgerySrchClearAll.Size = new System.Drawing.Size(77, 24);
             this.TSMnuSurgerySrchClearAll.Text = "Clear All";
             // 
             // FrmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1048, 497);
-            this.Controls.Add(this.MnuPatient);
+            this.ClientSize = new System.Drawing.Size(1397, 612);
             this.Controls.Add(this.MnuSurgerySearch);
+            this.Controls.Add(this.MnuPatientSearch);
+            this.Controls.Add(this.MnuPatient);
             this.Controls.Add(this.MnuSurgery);
             this.Controls.Add(this.MnuImageSearchResult);
-            this.Controls.Add(this.MnuPatientSearch);
             this.Controls.Add(this.MnuImageFilter);
             this.Controls.Add(this.MnuImagesSearch);
             this.Controls.Add(this.MnuImages);
             this.Controls.Add(this.MnuDashboard);
             this.Controls.Add(this.tableLayoutPanel1);
             this.IsMdiContainer = true;
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Tag = "FrmMain";
@@ -1529,12 +1566,10 @@
         private System.Windows.Forms.MenuStrip MnuSurgerySearch;
         private System.Windows.Forms.ToolStripMenuItem TSMnuSurgerySrchSearch;
         private System.Windows.Forms.ToolStripMenuItem TSMnuSurgerySrchBreak1;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuSurgerySrchClearDates;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuSurgerySrchClearSurgery;
         private System.Windows.Forms.ToolStripMenuItem TSMnuSurgerySrchBreak2;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuSurgerySrchClearYear;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuSurgerySrchBreak3;
         private System.Windows.Forms.ToolStripMenuItem TSMnuSurgerySrchClearItems;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuSurgerySrchBreak4;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuSurgerySrchBreak3;
         private System.Windows.Forms.ToolStripMenuItem TSMnuSurgerySrchClearAll;
     }
 }

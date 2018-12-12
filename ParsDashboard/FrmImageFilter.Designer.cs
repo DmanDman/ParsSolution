@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.GrpBoxPersonal = new System.Windows.Forms.GroupBox();
+            this.DtDOB = new System.Windows.Forms.DateTimePicker();
             this.TxtSurgeryDate = new System.Windows.Forms.TextBox();
             this.RdoFemale = new System.Windows.Forms.RadioButton();
             this.RdoMale = new System.Windows.Forms.RadioButton();
@@ -83,7 +84,6 @@
             this.label19 = new System.Windows.Forms.Label();
             this.LstDrFilter = new System.Windows.Forms.ListBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.DtDOB = new System.Windows.Forms.DateTimePicker();
             this.GrpBoxPersonal.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -112,6 +112,15 @@
             this.GrpBoxPersonal.TabStop = false;
             this.GrpBoxPersonal.Tag = "GrpBoxPersonal";
             this.GrpBoxPersonal.Text = "Personal Info (check to filter)";
+            // 
+            // DtDOB
+            // 
+            this.DtDOB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DtDOB.Location = new System.Drawing.Point(121, 105);
+            this.DtDOB.MinDate = new System.DateTime(1970, 1, 1, 0, 0, 0, 0);
+            this.DtDOB.Name = "DtDOB";
+            this.DtDOB.Size = new System.Drawing.Size(166, 22);
+            this.DtDOB.TabIndex = 5;
             // 
             // TxtSurgeryDate
             // 
@@ -761,15 +770,6 @@
             this.label20.Size = new System.Drawing.Size(50, 17);
             this.label20.TabIndex = 0;
             this.label20.Text = "Doctor";
-            // 
-            // DtDOB
-            // 
-            this.DtDOB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.DtDOB.Location = new System.Drawing.Point(121, 105);
-            this.DtDOB.MinDate = new System.DateTime(1970, 1, 1, 0, 0, 0, 0);
-            this.DtDOB.Name = "DtDOB";
-            this.DtDOB.Size = new System.Drawing.Size(166, 22);
-            this.DtDOB.TabIndex = 5;
             // 
             // FrmImageFilter
             // 
