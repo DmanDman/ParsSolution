@@ -137,9 +137,9 @@
             this.TSMnuSurgerySrchBreak1 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuSurgerySrchClearSurgery = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuSurgerySrchBreak2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuSurgerySrchClearItems = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuSurgerySrchBreak3 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuSurgerySrchClearAll = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuSurgerySrchBreak3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuSurgerySrchClearItems = new System.Windows.Forms.ToolStripMenuItem();
             this.PnlDashboard.SuspendLayout();
             this.PnlPatient.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -1376,11 +1376,11 @@
             this.TSMnuSurgerySrchBreak2.Size = new System.Drawing.Size(25, 24);
             this.TSMnuSurgerySrchBreak2.Text = "|";
             // 
-            // TSMnuSurgerySrchClearItems
+            // TSMnuSurgerySrchClearAll
             // 
-            this.TSMnuSurgerySrchClearItems.Name = "TSMnuSurgerySrchClearItems";
-            this.TSMnuSurgerySrchClearItems.Size = new System.Drawing.Size(95, 24);
-            this.TSMnuSurgerySrchClearItems.Text = "Clear Items";
+            this.TSMnuSurgerySrchClearAll.Name = "TSMnuSurgerySrchClearAll";
+            this.TSMnuSurgerySrchClearAll.Size = new System.Drawing.Size(77, 24);
+            this.TSMnuSurgerySrchClearAll.Text = "Clear All";
             // 
             // TSMnuSurgerySrchBreak3
             // 
@@ -1388,24 +1388,24 @@
             this.TSMnuSurgerySrchBreak3.Size = new System.Drawing.Size(25, 24);
             this.TSMnuSurgerySrchBreak3.Text = "|";
             // 
-            // TSMnuSurgerySrchClearAll
+            // TSMnuSurgerySrchClearItems
             // 
-            this.TSMnuSurgerySrchClearAll.Name = "TSMnuSurgerySrchClearAll";
-            this.TSMnuSurgerySrchClearAll.Size = new System.Drawing.Size(77, 24);
-            this.TSMnuSurgerySrchClearAll.Text = "Clear All";
+            this.TSMnuSurgerySrchClearItems.Name = "TSMnuSurgerySrchClearItems";
+            this.TSMnuSurgerySrchClearItems.Size = new System.Drawing.Size(95, 24);
+            this.TSMnuSurgerySrchClearItems.Text = "Clear Items";
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1397, 612);
+            this.Controls.Add(this.MnuImagesSearch);
             this.Controls.Add(this.MnuSurgerySearch);
             this.Controls.Add(this.MnuPatientSearch);
             this.Controls.Add(this.MnuPatient);
             this.Controls.Add(this.MnuSurgery);
             this.Controls.Add(this.MnuImageSearchResult);
             this.Controls.Add(this.MnuImageFilter);
-            this.Controls.Add(this.MnuImagesSearch);
             this.Controls.Add(this.MnuImages);
             this.Controls.Add(this.MnuDashboard);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -1568,9 +1568,9 @@
         private System.Windows.Forms.ToolStripMenuItem TSMnuSurgerySrchBreak1;
         private System.Windows.Forms.ToolStripMenuItem TSMnuSurgerySrchClearSurgery;
         private System.Windows.Forms.ToolStripMenuItem TSMnuSurgerySrchBreak2;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuSurgerySrchClearAll;
         private System.Windows.Forms.ToolStripMenuItem TSMnuSurgerySrchClearItems;
         private System.Windows.Forms.ToolStripMenuItem TSMnuSurgerySrchBreak3;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuSurgerySrchClearAll;
     }
 }
 

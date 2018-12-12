@@ -494,7 +494,7 @@ namespace ParsDashboard
             ComboBox ctlCbo = cbo as ComboBox;
             ListBox ctlLst = lst as ListBox;
 
-            helper.AddComboBox(ctlCbo, ctlLst);
+            helper.AddComboBox( ctlCbo, ctlLst );
         }
 
         private void TSMnuAddInfo_Click(object sender, EventArgs e)
@@ -809,12 +809,72 @@ namespace ParsDashboard
         private void TSMnuSurgerySrchClearSurgery_Click(object sender, EventArgs e)
         {
             //  clear surgery dates
-            if (FrmSurgerySearch.SurgerySearchVar.ClearType == 0)
+            if ( FrmSurgerySearch.SurgerySearchVar.ClearType == 0 )
             {             
                 Control rdo = SubRoutine.FindControl( fSurgerySearch, "RdoSurgeryEqualTo" );
                 RadioButton ctlrdo = rdo as RadioButton;
+
                 helper.ClearRadioBtn( ctlrdo );
 
+                rdo = SubRoutine.FindControl( fSurgerySearch, "RdoSurgeryGreater" );
+                ctlrdo = rdo as RadioButton;
+
+                helper.ClearRadioBtn( ctlrdo );
+
+                rdo = SubRoutine.FindControl( fSurgerySearch, "RdoSurgeryLess" );
+                ctlrdo = rdo as RadioButton;
+
+                helper.ClearRadioBtn( ctlrdo );
+
+                rdo = SubRoutine.FindControl( fSurgerySearch, "RdoSurgeryBetween" );
+                ctlrdo = rdo as RadioButton;
+
+                helper.ClearRadioBtn( ctlrdo );
+
+                Control dt = SubRoutine.FindControl( fSurgerySearch, "DtStart" );
+                DateTimePicker ctldt = dt as DateTimePicker;
+
+                helper.SetDateToToday( ctldt );
+
+                dt = SubRoutine.FindControl( fSurgerySearch, "DtEnd" );
+                ctldt = dt as DateTimePicker;
+
+                helper.SetDateToToday( ctldt );
+
+            }
+
+            //  clear fiscal year
+            if ( FrmSurgerySearch.SurgerySearchVar.ClearType ==  1)
+            {
+                Control rdo = SubRoutine.FindControl( fSurgerySearch, "RdoFiscalEqualTo" );
+                RadioButton ctlrdo = rdo as RadioButton;
+
+                helper.ClearRadioBtn( ctlrdo );
+
+                rdo = SubRoutine.FindControl( fSurgerySearch, "RdoFiscalGreater" );
+                ctlrdo = rdo as RadioButton;
+
+                helper.ClearRadioBtn( ctlrdo );
+
+                rdo = SubRoutine.FindControl( fSurgerySearch, "RdoFiscalLess" );
+                ctlrdo = rdo as RadioButton;
+
+                helper.ClearRadioBtn(ctlrdo);
+
+                rdo = SubRoutine.FindControl( fSurgerySearch, "RdoFiscalBetween" );
+                ctlrdo = rdo as RadioButton;
+
+                helper.ClearRadioBtn( ctlrdo );
+
+                Control dt = SubRoutine.FindControl( fSurgerySearch, "DtFiscalStart" );
+                DateTimePicker ctldt = dt as DateTimePicker;
+
+                helper.SetDateToToday( ctldt );
+
+                dt = SubRoutine.FindControl( fSurgerySearch, "DtFiscalEnd" );
+                ctldt = dt as DateTimePicker;
+
+                helper.SetDateToToday( ctldt );               
             }
         }
     }

@@ -12,6 +12,14 @@ namespace ParsDashboard
 {
     public class Helper
     {
+        public void DoubleBuffered(Control control, bool enable)
+        {
+            var doubleBufferPropertyInfo =
+                control.GetType().GetProperty( "DoubleBuffered", BindingFlags.Instance | BindingFlags.NonPublic );
+
+            doubleBufferPropertyInfo.SetValue( control, enable, null );
+        }
+
         public void AdListBoxToListBox( ListBox listFrom, ListBox listTo )
         {
             string sHoldData;
@@ -102,15 +110,7 @@ namespace ParsDashboard
 
             combo.Sorted = true;            
         }
-
-        public void DoubleBuffered( Control control, bool enable )
-        {
-            var doubleBufferPropertyInfo =
-                control.GetType().GetProperty("DoubleBuffered", BindingFlags.Instance | BindingFlags.NonPublic);
-
-            doubleBufferPropertyInfo.SetValue(control, enable, null);
-        }                   
-
+        
         public void ClearAllCheckBoxes( GroupBox gb )
         {
             var checkBoxes = gb.Controls.OfType<CheckBox>();
@@ -170,6 +170,11 @@ namespace ParsDashboard
         public void ClearRadioBtn( RadioButton rdo )
         {
             rdo.Checked = false;
+        }
+
+        public void SetDateToToday( DateTimePicker dt )
+        {
+            dt.Value = DateTime.Today;
         }
     }
 

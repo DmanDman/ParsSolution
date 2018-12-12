@@ -664,7 +664,7 @@
             this.TabDisplay.SelectedIndex = 0;
             this.TabDisplay.Size = new System.Drawing.Size(363, 256);
             this.TabDisplay.TabIndex = 18;
-            this.TabDisplay.SelectedIndexChanged += new System.EventHandler(this.TabDisplay_SelectedIndexChanged_1);
+            this.TabDisplay.SelectedIndexChanged += new System.EventHandler(this.TabDisplay_SelectedIndexChanged);
             // 
             // TabSurgeryDate
             // 
@@ -740,6 +740,7 @@
             this.RdoSurgeryBetween.TabIndex = 10;
             this.RdoSurgeryBetween.Text = "Between";
             this.RdoSurgeryBetween.UseVisualStyleBackColor = true;
+            this.RdoSurgeryBetween.CheckedChanged += new System.EventHandler(this.RdoSurgeryBetween_CheckedChanged);
             // 
             // RdoSurgeryEqualTo
             // 
@@ -754,6 +755,7 @@
             this.RdoSurgeryEqualTo.TabStop = true;
             this.RdoSurgeryEqualTo.Text = "Equal To";
             this.RdoSurgeryEqualTo.UseVisualStyleBackColor = true;
+            this.RdoSurgeryEqualTo.CheckedChanged += new System.EventHandler(this.RdoSurgeryEqualTo_CheckedChanged);
             // 
             // RdoSurgeryGreater
             // 
@@ -766,6 +768,7 @@
             this.RdoSurgeryGreater.TabIndex = 8;
             this.RdoSurgeryGreater.Text = "Greater Than";
             this.RdoSurgeryGreater.UseVisualStyleBackColor = true;
+            this.RdoSurgeryGreater.CheckedChanged += new System.EventHandler(this.RdoSurgeryGreater_CheckedChanged);
             // 
             // RdoSurgeryLess
             // 
@@ -778,6 +781,7 @@
             this.RdoSurgeryLess.TabIndex = 9;
             this.RdoSurgeryLess.Text = "Less Than";
             this.RdoSurgeryLess.UseVisualStyleBackColor = true;
+            this.RdoSurgeryLess.CheckedChanged += new System.EventHandler(this.RdoSurgeryLess_CheckedChanged);
             // 
             // TabFiscalYear
             // 
@@ -857,6 +861,7 @@
             this.RdoFiscalBetween.TabIndex = 10;
             this.RdoFiscalBetween.Text = "Between";
             this.RdoFiscalBetween.UseVisualStyleBackColor = true;
+            this.RdoFiscalBetween.CheckedChanged += new System.EventHandler(this.RdoFiscalBetween_CheckedChanged);
             // 
             // RdoFiscalEqualTo
             // 
@@ -871,6 +876,7 @@
             this.RdoFiscalEqualTo.TabStop = true;
             this.RdoFiscalEqualTo.Text = "Equal To";
             this.RdoFiscalEqualTo.UseVisualStyleBackColor = true;
+            this.RdoFiscalEqualTo.CheckedChanged += new System.EventHandler(this.RdoFiscalEqualTo_CheckedChanged);
             // 
             // RdoFiscalGreater
             // 
@@ -883,6 +889,7 @@
             this.RdoFiscalGreater.TabIndex = 8;
             this.RdoFiscalGreater.Text = "Greater Than";
             this.RdoFiscalGreater.UseVisualStyleBackColor = true;
+            this.RdoFiscalGreater.CheckedChanged += new System.EventHandler(this.RdoFiscalGreater_CheckedChanged);
             // 
             // RdoFiscalLess
             // 
@@ -895,6 +902,7 @@
             this.RdoFiscalLess.TabIndex = 9;
             this.RdoFiscalLess.Text = "Less Than";
             this.RdoFiscalLess.UseVisualStyleBackColor = true;
+            this.RdoFiscalLess.CheckedChanged += new System.EventHandler(this.RdoFiscalLess_CheckedChanged);
             // 
             // FrmSurgerySearch
             // 
@@ -907,7 +915,7 @@
             this.Controls.Add(this.groupBox3);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(6, 117);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmSurgerySearch";

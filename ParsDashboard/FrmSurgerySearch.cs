@@ -14,6 +14,8 @@ namespace ParsDashboard
     {
         Helper helper = new Helper();
 
+        SubRoutineSearch SubRtn = new SubRoutineSearch();
+
         public static class SurgerySearchVar
         {
             public static int ClearType { get; set; }
@@ -26,82 +28,42 @@ namespace ParsDashboard
 
         private void RdoSurgeryEqualTo_CheckedChanged(object sender, EventArgs e)
         {
-            if ( RdoSurgeryEqualTo.Checked )
-            {
-                DtStart.Visible = true;
-                LblAnd.Visible = false;
-                DtEnd.Visible = false;
-            }
+            SubRtn.DateRdoBtn( RdoSurgeryEqualTo, DtStart, DtEnd, LblAnd, true, false, false);            
         }
 
         private void RdoSurgeryGreater_CheckedChanged(object sender, EventArgs e)
         {
-            if ( RdoSurgeryGreater.Checked )
-            {
-                DtStart.Visible = true;
-                LblAnd.Visible = false;
-                DtEnd.Visible = false;
-            }
+            SubRtn.DateRdoBtn(RdoSurgeryGreater, DtStart, DtEnd, LblAnd, true, false, false);           
         }
 
         private void RdoSurgeryLess_CheckedChanged(object sender, EventArgs e)
         {
-            if ( RdoSurgeryLess.Checked )
-            {
-                DtStart.Visible = true;
-                LblAnd.Visible = false;
-                DtEnd.Visible = false;
-            }
+            SubRtn.DateRdoBtn( RdoSurgeryLess, DtStart, DtEnd, LblAnd, true, false, false );            
         }
 
         private void RdoSurgeryBetween_CheckedChanged(object sender, EventArgs e)
         {
-            if ( RdoSurgeryBetween.Checked )
-            {
-                DtStart.Visible = true;
-                LblAnd.Visible = true;
-                DtEnd.Visible = true;
-            }
+            SubRtn.DateRdoBtn( RdoSurgeryBetween, DtStart, DtEnd, LblAnd, true, true, true );            
         }
 
         private void RdoFiscalEqualTo_CheckedChanged(object sender, EventArgs e)
         {
-            if ( RdoFiscalEqualTo.Checked )
-            {
-                DtFiscalStart.Visible = true;
-                LblAndFiscalYear.Visible = false;
-                DtFiscalEnd.Visible = false;
-            }
+            SubRtn.DateRdoBtn( RdoFiscalEqualTo, DtFiscalStart, DtFiscalEnd, LblAndFiscalYear, true, false, false );           
         }
 
         private void RdoFiscalGreater_CheckedChanged(object sender, EventArgs e)
         {
-            if ( RdoFiscalGreater.Checked )
-            {
-                DtFiscalStart.Visible = true;
-                LblAndFiscalYear.Visible = false;
-                DtFiscalEnd.Visible = false;
-            }
+            SubRtn.DateRdoBtn( RdoFiscalGreater, DtFiscalStart, DtFiscalEnd, LblAndFiscalYear, true, false, false );           
         }
 
         private void RdoFiscalLess_CheckedChanged(object sender, EventArgs e)
         {
-            if ( RdoFiscalLess.Checked )
-            {
-                DtFiscalStart.Visible = true;
-                LblAndFiscalYear.Visible = false;
-                DtFiscalEnd.Visible = false;
-            }
+            SubRtn.DateRdoBtn( RdoFiscalLess, DtFiscalStart, DtFiscalEnd, LblAndFiscalYear, true, false, false );           
         }
 
         private void RdoFiscalBetween_CheckedChanged(object sender, EventArgs e)
         {
-            if ( RdoFiscalBetween.Checked )
-            {
-                DtFiscalStart.Visible = true;
-                LblAndFiscalYear.Visible = true;
-                DtFiscalEnd.Visible = true;
-            }
+            SubRtn.DateRdoBtn( RdoFiscalBetween, DtFiscalStart, DtFiscalEnd, LblAndFiscalYear, true, true, true );            
         }
 
         private void TabDisplay_SelectedIndexChanged(object sender, EventArgs e)
@@ -209,9 +171,23 @@ namespace ParsDashboard
             helper.AdListBoxToListBox( LstPicInfo, LstPicInfoFilter );
         }
 
-        private void TabDisplay_SelectedIndexChanged_1(object sender, EventArgs e)
+        private void RdoFiscalEqualTo_CheckedChanged_1(object sender, EventArgs e)
         {
-            SurgerySearchVar.ClearType = TabDisplay.SelectedIndex;
+            SubRtn.DateRdoBtn( RdoFiscalEqualTo, DtFiscalStart, DtFiscalEnd, LblAndFiscalYear, true, false, false );
+        }
+    }
+
+    public class SubRoutineSearch
+    {
+        public void DateRdoBtn( RadioButton rd, DateTimePicker dtStart, DateTimePicker dtEnd, 
+                                Label lbl, bool startVis, bool endVis, bool lblVis )
+        {
+            if ( rd.Checked )
+            {
+                dtStart.Visible = startVis;
+                lbl.Visible = lblVis;
+                dtEnd.Visible = endVis;
+            }
         }
     }
 }
