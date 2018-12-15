@@ -140,6 +140,12 @@
             this.TSMnuSurgerySrchClearItems = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuSurgerySrchBreak3 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuSurgerySrchClearAll = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuDataCustomizeNames = new System.Windows.Forms.MenuStrip();
+            this.TSMnuDataCustNameSave = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDataCustNameBreak1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDataCustNameRestore = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDataCustNameBreak2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDataCustNameClearAll = new System.Windows.Forms.ToolStripMenuItem();
             this.PnlDashboard.SuspendLayout();
             this.PnlPatient.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -159,6 +165,7 @@
             this.MnuPatientSearch.SuspendLayout();
             this.MnuSurgery.SuspendLayout();
             this.MnuSurgerySearch.SuspendLayout();
+            this.MnuDataCustomizeNames.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnlDashboard
@@ -320,7 +327,7 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 123F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(185, 612);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(185, 976);
             this.tableLayoutPanel1.TabIndex = 3;
             // 
             // PnlSecurity
@@ -329,7 +336,7 @@
             this.PnlSecurity.Controls.Add(this.LblSecurityUserMgmt);
             this.PnlSecurity.Controls.Add(this.LblSecurity);
             this.PnlSecurity.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlSecurity.Location = new System.Drawing.Point(2, 862);
+            this.PnlSecurity.Location = new System.Drawing.Point(2, 927);
             this.PnlSecurity.Margin = new System.Windows.Forms.Padding(0);
             this.PnlSecurity.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlSecurity.Name = "PnlSecurity";
@@ -370,12 +377,11 @@
             this.PnlData.Controls.Add(this.LblDataDefaultHosp);
             this.PnlData.Controls.Add(this.LblDataCustomizeName);
             this.PnlData.Controls.Add(this.LblData);
-            this.PnlData.Dock = System.Windows.Forms.DockStyle.Left;
             this.PnlData.Location = new System.Drawing.Point(2, 599);
             this.PnlData.Margin = new System.Windows.Forms.Padding(0);
             this.PnlData.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlData.Name = "PnlData";
-            this.PnlData.Size = new System.Drawing.Size(200, 108);
+            this.PnlData.Size = new System.Drawing.Size(200, 173);
             this.PnlData.TabIndex = 7;
             this.PnlData.Tag = "Collapsed";
             // 
@@ -418,6 +424,7 @@
             this.LblDataCustomizeName.Size = new System.Drawing.Size(121, 17);
             this.LblDataCustomizeName.TabIndex = 2;
             this.LblDataCustomizeName.Text = "Customize Names";
+            this.LblDataCustomizeName.Click += new System.EventHandler(this.LblDataCustomizeName_Click);
             // 
             // LblData
             // 
@@ -433,6 +440,8 @@
             this.LblData.Text = "Data";
             this.LblData.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LblData.Click += new System.EventHandler(this.LblData_Click);
+            this.LblData.MouseEnter += new System.EventHandler(this.LblData_MouseEnter);
+            this.LblData.MouseLeave += new System.EventHandler(this.LblData_MouseLeave);
             // 
             // PnlSurgery
             // 
@@ -507,7 +516,7 @@
             this.PnlMetaData.Controls.Add(this.LblMDCpt);
             this.PnlMetaData.Controls.Add(this.LblMDComp);
             this.PnlMetaData.Controls.Add(this.LblMetaData);
-            this.PnlMetaData.Location = new System.Drawing.Point(2, 709);
+            this.PnlMetaData.Location = new System.Drawing.Point(2, 774);
             this.PnlMetaData.Margin = new System.Windows.Forms.Padding(0);
             this.PnlMetaData.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlMetaData.Name = "PnlMetaData";
@@ -647,7 +656,7 @@
             this.PnlEmailPic.Controls.Add(this.LblEmailPicPicOnly);
             this.PnlEmailPic.Controls.Add(this.LblEmailPic);
             this.PnlEmailPic.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlEmailPic.Location = new System.Drawing.Point(2, 794);
+            this.PnlEmailPic.Location = new System.Drawing.Point(2, 859);
             this.PnlEmailPic.Margin = new System.Windows.Forms.Padding(0);
             this.PnlEmailPic.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlEmailPic.Name = "PnlEmailPic";
@@ -1310,7 +1319,7 @@
             // TSMnuSurgeryDisplay
             // 
             this.TSMnuSurgeryDisplay.Name = "TSMnuSurgeryDisplay";
-            this.TSMnuSurgeryDisplay.Size = new System.Drawing.Size(70, 26);
+            this.TSMnuSurgeryDisplay.Size = new System.Drawing.Size(70, 24);
             this.TSMnuSurgeryDisplay.Text = "Display";
             // 
             // TSMnuSurgeryBreak1
@@ -1319,7 +1328,7 @@
             this.TSMnuSurgeryBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.TSMnuSurgeryBreak1.Name = "TSMnuSurgeryBreak1";
             this.TSMnuSurgeryBreak1.Padding = new System.Windows.Forms.Padding(0);
-            this.TSMnuSurgeryBreak1.Size = new System.Drawing.Size(18, 26);
+            this.TSMnuSurgeryBreak1.Size = new System.Drawing.Size(18, 24);
             this.TSMnuSurgeryBreak1.Text = "|";
             // 
             // TSMnuSurgeryClear
@@ -1397,19 +1406,71 @@
             this.TSMnuSurgerySrchClearAll.Text = "Clear All";
             this.TSMnuSurgerySrchClearAll.Click += new System.EventHandler(this.TSMnuSurgerySrchClearAll_Click);
             // 
+            // MnuDataCustomizeNames
+            // 
+            this.MnuDataCustomizeNames.ImageScalingSize = new System.Drawing.Size(17, 17);
+            this.MnuDataCustomizeNames.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMnuDataCustNameSave,
+            this.TSMnuDataCustNameBreak1,
+            this.TSMnuDataCustNameRestore,
+            this.TSMnuDataCustNameBreak2,
+            this.TSMnuDataCustNameClearAll});
+            this.MnuDataCustomizeNames.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MnuDataCustomizeNames.Location = new System.Drawing.Point(185, 28);
+            this.MnuDataCustomizeNames.Name = "MnuDataCustomizeNames";
+            this.MnuDataCustomizeNames.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuDataCustomizeNames.Size = new System.Drawing.Size(1212, 28);
+            this.MnuDataCustomizeNames.TabIndex = 20;
+            this.MnuDataCustomizeNames.Text = "menuStrip1";
+            this.MnuDataCustomizeNames.Visible = false;
+            // 
+            // TSMnuDataCustNameSave
+            // 
+            this.TSMnuDataCustNameSave.Name = "TSMnuDataCustNameSave";
+            this.TSMnuDataCustNameSave.Size = new System.Drawing.Size(52, 24);
+            this.TSMnuDataCustNameSave.Text = "Save";
+            // 
+            // TSMnuDataCustNameBreak1
+            // 
+            this.TSMnuDataCustNameBreak1.Enabled = false;
+            this.TSMnuDataCustNameBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuDataCustNameBreak1.Name = "TSMnuDataCustNameBreak1";
+            this.TSMnuDataCustNameBreak1.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuDataCustNameBreak1.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuDataCustNameBreak1.Text = "|";
+            // 
+            // TSMnuDataCustNameRestore
+            // 
+            this.TSMnuDataCustNameRestore.Name = "TSMnuDataCustNameRestore";
+            this.TSMnuDataCustNameRestore.Size = new System.Drawing.Size(128, 24);
+            this.TSMnuDataCustNameRestore.Text = "Restore Original";
+            // 
+            // TSMnuDataCustNameBreak2
+            // 
+            this.TSMnuDataCustNameBreak2.Name = "TSMnuDataCustNameBreak2";
+            this.TSMnuDataCustNameBreak2.Size = new System.Drawing.Size(25, 24);
+            this.TSMnuDataCustNameBreak2.Text = "|";
+            // 
+            // TSMnuDataCustNameClearAll
+            // 
+            this.TSMnuDataCustNameClearAll.Name = "TSMnuDataCustNameClearAll";
+            this.TSMnuDataCustNameClearAll.Size = new System.Drawing.Size(77, 24);
+            this.TSMnuDataCustNameClearAll.Text = "Clear All";
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1397, 612);
+            this.ClientSize = new System.Drawing.Size(1397, 976);
+            this.Controls.Add(this.MnuDataCustomizeNames);
             this.Controls.Add(this.MnuSurgerySearch);
             this.Controls.Add(this.MnuSurgery);
-            this.Controls.Add(this.MnuImagesSearch);
-            this.Controls.Add(this.MnuPatientSearch);
-            this.Controls.Add(this.MnuPatient);
-            this.Controls.Add(this.MnuImageSearchResult);
-            this.Controls.Add(this.MnuImageFilter);
             this.Controls.Add(this.MnuImages);
+            this.Controls.Add(this.MnuImagesSearch);
+            this.Controls.Add(this.MnuImageSearchResult);
+            this.Controls.Add(this.MnuPatient);
+            this.Controls.Add(this.MnuImageFilter);
+            this.Controls.Add(this.MnuPatientSearch);
             this.Controls.Add(this.MnuDashboard);
             this.Controls.Add(this.tableLayoutPanel1);
             this.IsMdiContainer = true;
@@ -1456,6 +1517,8 @@
             this.MnuSurgery.PerformLayout();
             this.MnuSurgerySearch.ResumeLayout(false);
             this.MnuSurgerySearch.PerformLayout();
+            this.MnuDataCustomizeNames.ResumeLayout(false);
+            this.MnuDataCustomizeNames.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1574,6 +1637,12 @@
         private System.Windows.Forms.ToolStripMenuItem TSMnuSurgerySrchClearAll;
         private System.Windows.Forms.ToolStripMenuItem TSMnuSurgerySrchClearItems;
         private System.Windows.Forms.ToolStripMenuItem TSMnuSurgerySrchBreak3;
+        private System.Windows.Forms.MenuStrip MnuDataCustomizeNames;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataCustNameSave;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataCustNameBreak1;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataCustNameRestore;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataCustNameBreak2;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataCustNameClearAll;
     }
 }
 

@@ -29,6 +29,9 @@ namespace ParsDashboard
 
         FrmSurgery fSurgery = new FrmSurgery();
         public FrmSurgerySearch fSurgerySearch = new FrmSurgerySearch();
+
+        FrmDataCustomizeName fDataCustName = new FrmDataCustomizeName();
+
         #endregion
 
         #region Define Helper Classes    
@@ -139,6 +142,8 @@ namespace ParsDashboard
             SubRtn.Load_All_Forms(fSurgery, this);
             SubRtn.Load_All_Forms(fSurgerySearch, this);
 
+            SubRtn.Load_All_Forms(fDataCustName, this);
+
             SubRtn.Load_All_Forms(fDashBoard, this);
 
             LblDashboard.Click += new EventHandler(LblDashboard_Click);
@@ -174,6 +179,12 @@ namespace ParsDashboard
         private void LblData_Click(object sender, EventArgs e)
         {
             SubRtn.DashboardAccordian(sender, e, tableLayoutPanel1);
+
+            NavSetStyleClick(LblDataCustomizeName);
+
+            fNav.ShowForm(fDataCustName);
+
+            SubRtn.ShowHideMenu(this, MnuDataCustomizeNames.Name);
         }
 
         private void LblMetaData_Click(object sender, EventArgs e)
@@ -230,13 +241,13 @@ namespace ParsDashboard
         {
             if (LblDashboard.Font.Bold != true)
             {
-                LblDashboard.Font = new Font( LblDashboard.Font.Name, LblDashboard.Font.SizeInPoints, FontStyle.Underline );
+                LblDashboard.Font = new Font(LblDashboard.Font.Name, LblDashboard.Font.SizeInPoints, FontStyle.Underline);
             }
         }
 
         private void LblDashboard_MouseLeave(object sender, EventArgs e)
         {
-            HelpMouseMove.MouseLeave( LblDashboard );
+            HelpMouseMove.MouseLeave(LblDashboard);
         }
 
         private void LblImagesSearch_MouseEnter(object sender, EventArgs e)
@@ -308,13 +319,13 @@ namespace ParsDashboard
             SetPanel_Height();
 
             // Enable double duffering to stop flickering.
-            this.SetStyle( ControlStyles.DoubleBuffer, true );
-            this.SetStyle( ControlStyles.AllPaintingInWmPaint, true );
-            this.SetStyle( ControlStyles.UserPaint, true );
-            this.SetStyle( ControlStyles.SupportsTransparentBackColor, false );
-            this.SetStyle( ControlStyles.Opaque, false );
-            this.SetStyle( ControlStyles.OptimizedDoubleBuffer, true );
-            this.SetStyle( ControlStyles.ResizeRedraw, true );
+            this.SetStyle(ControlStyles.DoubleBuffer, true);
+            this.SetStyle(ControlStyles.AllPaintingInWmPaint, true);
+            this.SetStyle(ControlStyles.UserPaint, true);
+            this.SetStyle(ControlStyles.SupportsTransparentBackColor, false);
+            this.SetStyle(ControlStyles.Opaque, false);
+            this.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
+            this.SetStyle(ControlStyles.ResizeRedraw, true);
         }
 
         private void LblImagesFilter_MouseEnter(object sender, EventArgs e)
@@ -429,11 +440,11 @@ namespace ParsDashboard
 
         private void LblImagesFilter_Click(object sender, EventArgs e)
         {
-            fNav.ShowForm( fImageFilter );
+            fNav.ShowForm(fImageFilter);
 
-            NavSetStyleClick( LblImagesFilter );
+            NavSetStyleClick(LblImagesFilter);
 
-            SubRtn.ShowHideMenu( this, MnuImageFilter.Name );
+            SubRtn.ShowHideMenu(this, MnuImageFilter.Name);
         }
 
         public void LblImagesSearchResults_Click(object sender, EventArgs e)
@@ -494,7 +505,7 @@ namespace ParsDashboard
             ComboBox ctlCbo = cbo as ComboBox;
             ListBox ctlLst = lst as ListBox;
 
-            helper.AddComboBox( ctlCbo, ctlLst );
+            helper.AddComboBox(ctlCbo, ctlLst);
         }
 
         private void TSMnuAddInfo_Click(object sender, EventArgs e)
@@ -806,28 +817,28 @@ namespace ParsDashboard
             SubRtn.ShowHideMenu(this, MnuSurgerySearch.Name);
         }
 
-        private void TSMnuSurgerySrchClearSurgery_Click( object sender, EventArgs e )
+        private void TSMnuSurgerySrchClearSurgery_Click(object sender, EventArgs e)
         {
             //  clear surgery dates
-            SubRtn.ClearSurgeryDates( fSurgerySearch );
+            SubRtn.ClearSurgeryDates(fSurgerySearch);
 
             //  clear fiscal year
-            SubRtn.ClearFiscalYear( fSurgerySearch );            
+            SubRtn.ClearFiscalYear(fSurgerySearch);
         }
 
         private void TSMnuSurgerySrchClearItems_Click(object sender, EventArgs e)
         {
             //  clear search items
-            SubRtn.ClearItems( fSurgerySearch );
+            SubRtn.ClearItems(fSurgerySearch);
         }
 
         private void TSMnuSurgerySrchClearAll_Click(object sender, EventArgs e)
         {
             //  clear surgery dates
-            SubRtn.ClearSurgeryDates( fSurgerySearch );
+            SubRtn.ClearSurgeryDates(fSurgerySearch);
 
             //  clear fiscal year
-            SubRtn.ClearFiscalYear( fSurgerySearch );
+            SubRtn.ClearFiscalYear(fSurgerySearch);
 
             //  clear search items
             SubRtn.ClearItems(fSurgerySearch);
@@ -836,59 +847,74 @@ namespace ParsDashboard
         private void TSMnuSurgeryClear_Click(object sender, EventArgs e)
         {
             //  clear surgery type
-            SubRtn.SurgeryClearType( fSurgery );
+            SubRtn.SurgeryClearType(fSurgery);
+        }
+
+        private void LblDataCustomizeName_Click(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void LblData_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblData ) ;
+        }
+
+        private void LblData_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblData );
         }
     }
 
     public class SubRoutine
     {
-        public void ShowHideMenu( Form fMain, string ControlName )
-        {           
-            foreach( Control ctr in fMain.Controls )
+        public void ShowHideMenu(Form fMain, string ControlName)
+        {
+            foreach (Control ctr in fMain.Controls)
             {
-                if( ctr is MenuStrip & ctr.Name == ControlName )
+                if (ctr is MenuStrip & ctr.Name == ControlName)
                 {
                     ctr.Visible = true;
                 }
-                else if ( ctr is MenuStrip )
+                else if (ctr is MenuStrip)
                 {
                     ctr.Visible = false;
                 }
             }
         }
 
-        public static Control FindControl( Form frm, String name )
+        public static Control FindControl(Form frm, String name)
         {
-            foreach ( Control control in frm.Controls )
+            foreach (Control control in frm.Controls)
             {
-                Control result = FindControl( frm, control, name );
+                Control result = FindControl(frm, control, name);
 
-                if ( result != null )
+                if (result != null)
                     return result;
             }
 
             return null;
         }
 
-        private static Control FindControl( Form form, Control control, string name )
+        private static Control FindControl(Form form, Control control, string name)
         {
-            if ( control.Name == name )
+            if (control.Name == name)
             {
                 return control;
             }
 
-            foreach ( Control subControl in control.Controls )
+            foreach (Control subControl in control.Controls)
             {
-                Control result = FindControl( form, subControl, name) ;
+                Control result = FindControl(form, subControl, name);
 
-                if ( result != null )
+                if (result != null)
                     return result;
             }
 
             return null;
         }
 
-        public void DashboardAccordian( Object sender, EventArgs e , Panel pnlLayout )
+        public void DashboardAccordian(Object sender, EventArgs e, Panel pnlLayout)
         {
             // find out which label was clicked
             Label lbl = (Label)sender;
@@ -902,7 +928,7 @@ namespace ParsDashboard
             // images are also swapped depending on the height of the panel.
 
             //foreach (Panel p in tableLayoutPanel1.Controls)
-            foreach ( Panel p in pnlLayout.Controls )
+            foreach (Panel p in pnlLayout.Controls)
             {
                 Label l = (Label)p.Controls[0];
 
@@ -942,7 +968,7 @@ namespace ParsDashboard
             }
         }
 
-        public void Load_All_Forms( Form frm, Form frmMain )
+        public void Load_All_Forms(Form frm, Form frmMain)
         {
             frm.MdiParent = frmMain;
             frm.StartPosition = FormStartPosition.CenterParent;
@@ -952,12 +978,12 @@ namespace ParsDashboard
             frm.WindowState = FormWindowState.Maximized;
         }
 
-        public void ClearSurgeryDates( Form fSurgerySearch )
+        public void ClearSurgeryDates(Form fSurgerySearch)
         {
             Helper helper = new Helper();
 
             //  clear surgery dates
-            if ( FrmSurgerySearch.SurgerySearchVar.ClearType == 0 )
+            if (FrmSurgerySearch.SurgerySearchVar.ClearType == 0)
             {
                 Control rdo = SubRoutine.FindControl(fSurgerySearch, "RdoSurgeryEqualTo");
                 RadioButton ctlrdo = rdo as RadioButton;
@@ -992,50 +1018,50 @@ namespace ParsDashboard
             }
         }
 
-        public void SurgeryClearType( Form fSurgery )
+        public void SurgeryClearType(Form fSurgery)
         {
             Helper helper = new Helper();
 
             //  clear surgery type
-            if ( FrmSurgery.SurgeryVar.ClearType == 0 )
+            if (FrmSurgery.SurgeryVar.ClearType == 0)
             {
-                Control updwn = SubRoutine.FindControl( fSurgery, "UpDwnLastNameLetter" );
+                Control updwn = SubRoutine.FindControl(fSurgery, "UpDwnLastNameLetter");
                 DomainUpDown ctlupdwn = updwn as DomainUpDown;
 
-                helper.ClearUpDwn( ctlupdwn );
+                helper.ClearUpDwn(ctlupdwn);
 
-                Control cbo = SubRoutine.FindControl( fSurgery, "CboFullName" );
+                Control cbo = SubRoutine.FindControl(fSurgery, "CboFullName");
                 ComboBox ctlcbo = cbo as ComboBox;
 
-                helper.ClearComboBox( ctlcbo );
+                helper.ClearComboBox(ctlcbo);
             }
 
             //  clear surgery date
-            if ( FrmSurgery.SurgeryVar.ClearType == 1 )
+            if (FrmSurgery.SurgeryVar.ClearType == 1)
             {
-                Control updwn = SubRoutine.FindControl( fSurgery, "UpDwnYear" );
+                Control updwn = SubRoutine.FindControl(fSurgery, "UpDwnYear");
                 DomainUpDown ctlupdwn = updwn as DomainUpDown;
 
-                helper.ClearUpDwn( ctlupdwn );
+                helper.ClearUpDwn(ctlupdwn);
 
-                updwn = SubRoutine.FindControl( fSurgery, "UpDwnMonth" );
+                updwn = SubRoutine.FindControl(fSurgery, "UpDwnMonth");
                 ctlupdwn = updwn as DomainUpDown;
 
-                helper.ClearUpDwn( ctlupdwn );
+                helper.ClearUpDwn(ctlupdwn);
             }
         }
 
-        public void SurgeryClearDate( Form fSurgery )
+        public void SurgeryClearDate(Form fSurgery)
         {
 
         }
 
-        public void ClearFiscalYear( Form fSurgerySearch )
+        public void ClearFiscalYear(Form fSurgerySearch)
         {
             Helper helper = new Helper();
 
             //  clear fiscal year
-            if ( FrmSurgerySearch.SurgerySearchVar.ClearType == 1 )
+            if (FrmSurgerySearch.SurgerySearchVar.ClearType == 1)
             {
                 Control rdo = SubRoutine.FindControl(fSurgerySearch, "RdoFiscalEqualTo");
                 RadioButton ctlrdo = rdo as RadioButton;
@@ -1069,7 +1095,7 @@ namespace ParsDashboard
             }
         }
 
-        public void ClearItems( Form fSurgerySearch )
+        public void ClearItems(Form fSurgerySearch)
         {
             Helper helper = new Helper();
 
@@ -1172,4 +1198,5 @@ namespace ParsDashboard
             helper.ClearListBoxes(ctllstFrom, ctllstTo);
         }
     }
+
 }
