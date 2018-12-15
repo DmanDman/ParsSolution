@@ -137,9 +137,9 @@
             this.TSMnuSurgerySrchBreak1 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuSurgerySrchClearSurgery = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuSurgerySrchBreak2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuSurgerySrchClearAll = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuSurgerySrchBreak3 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuSurgerySrchClearItems = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuSurgerySrchBreak3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuSurgerySrchClearAll = new System.Windows.Forms.ToolStripMenuItem();
             this.PnlDashboard.SuspendLayout();
             this.PnlPatient.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -1299,10 +1299,10 @@
             this.TSMnuSurgeryBreak1,
             this.TSMnuSurgeryClear});
             this.MnuSurgery.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuSurgery.Location = new System.Drawing.Point(185, 30);
+            this.MnuSurgery.Location = new System.Drawing.Point(185, 28);
             this.MnuSurgery.Name = "MnuSurgery";
             this.MnuSurgery.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.MnuSurgery.Size = new System.Drawing.Size(1212, 30);
+            this.MnuSurgery.Size = new System.Drawing.Size(1212, 28);
             this.MnuSurgery.TabIndex = 16;
             this.MnuSurgery.Text = "menuStrip1";
             this.MnuSurgery.Visible = false;
@@ -1325,8 +1325,9 @@
             // TSMnuSurgeryClear
             // 
             this.TSMnuSurgeryClear.Name = "TSMnuSurgeryClear";
-            this.TSMnuSurgeryClear.Size = new System.Drawing.Size(55, 26);
+            this.TSMnuSurgeryClear.Size = new System.Drawing.Size(55, 24);
             this.TSMnuSurgeryClear.Text = "Clear";
+            this.TSMnuSurgeryClear.Click += new System.EventHandler(this.TSMnuSurgeryClear_Click);
             // 
             // MnuSurgerySearch
             // 
@@ -1376,11 +1377,12 @@
             this.TSMnuSurgerySrchBreak2.Size = new System.Drawing.Size(25, 24);
             this.TSMnuSurgerySrchBreak2.Text = "|";
             // 
-            // TSMnuSurgerySrchClearAll
+            // TSMnuSurgerySrchClearItems
             // 
-            this.TSMnuSurgerySrchClearAll.Name = "TSMnuSurgerySrchClearAll";
-            this.TSMnuSurgerySrchClearAll.Size = new System.Drawing.Size(77, 24);
-            this.TSMnuSurgerySrchClearAll.Text = "Clear All";
+            this.TSMnuSurgerySrchClearItems.Name = "TSMnuSurgerySrchClearItems";
+            this.TSMnuSurgerySrchClearItems.Size = new System.Drawing.Size(95, 24);
+            this.TSMnuSurgerySrchClearItems.Text = "Clear Items";
+            this.TSMnuSurgerySrchClearItems.Click += new System.EventHandler(this.TSMnuSurgerySrchClearItems_Click);
             // 
             // TSMnuSurgerySrchBreak3
             // 
@@ -1388,22 +1390,23 @@
             this.TSMnuSurgerySrchBreak3.Size = new System.Drawing.Size(25, 24);
             this.TSMnuSurgerySrchBreak3.Text = "|";
             // 
-            // TSMnuSurgerySrchClearItems
+            // TSMnuSurgerySrchClearAll
             // 
-            this.TSMnuSurgerySrchClearItems.Name = "TSMnuSurgerySrchClearItems";
-            this.TSMnuSurgerySrchClearItems.Size = new System.Drawing.Size(95, 24);
-            this.TSMnuSurgerySrchClearItems.Text = "Clear Items";
+            this.TSMnuSurgerySrchClearAll.Name = "TSMnuSurgerySrchClearAll";
+            this.TSMnuSurgerySrchClearAll.Size = new System.Drawing.Size(77, 24);
+            this.TSMnuSurgerySrchClearAll.Text = "Clear All";
+            this.TSMnuSurgerySrchClearAll.Click += new System.EventHandler(this.TSMnuSurgerySrchClearAll_Click);
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1397, 612);
-            this.Controls.Add(this.MnuImagesSearch);
             this.Controls.Add(this.MnuSurgerySearch);
+            this.Controls.Add(this.MnuSurgery);
+            this.Controls.Add(this.MnuImagesSearch);
             this.Controls.Add(this.MnuPatientSearch);
             this.Controls.Add(this.MnuPatient);
-            this.Controls.Add(this.MnuSurgery);
             this.Controls.Add(this.MnuImageSearchResult);
             this.Controls.Add(this.MnuImageFilter);
             this.Controls.Add(this.MnuImages);

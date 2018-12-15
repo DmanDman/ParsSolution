@@ -12,9 +12,19 @@ namespace ParsDashboard
 {
     public partial class FrmSurgery : Form
     {
+        public static class SurgeryVar
+        {
+            public static int ClearType { get; set; }
+        }
+
         public FrmSurgery()
         {
             InitializeComponent();
+        }
+
+        private void TabDisplay_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            SurgeryVar.ClearType = TabDisplay.SelectedIndex;
         }
     }
 }

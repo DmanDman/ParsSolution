@@ -28,7 +28,7 @@ namespace ParsDashboard
         public FrmPatientSearch fPatientSearch = new FrmPatientSearch();
 
         FrmSurgery fSurgery = new FrmSurgery();
-        FrmSurgerySearch fSurgerySearch = new FrmSurgerySearch();
+        public FrmSurgerySearch fSurgerySearch = new FrmSurgerySearch();
         #endregion
 
         #region Define Helper Classes    
@@ -230,13 +230,13 @@ namespace ParsDashboard
         {
             if (LblDashboard.Font.Bold != true)
             {
-                LblDashboard.Font = new Font(LblDashboard.Font.Name, LblDashboard.Font.SizeInPoints, FontStyle.Underline);
+                LblDashboard.Font = new Font( LblDashboard.Font.Name, LblDashboard.Font.SizeInPoints, FontStyle.Underline );
             }
         }
 
         private void LblDashboard_MouseLeave(object sender, EventArgs e)
         {
-            HelpMouseMove.MouseLeave(LblDashboard);
+            HelpMouseMove.MouseLeave( LblDashboard );
         }
 
         private void LblImagesSearch_MouseEnter(object sender, EventArgs e)
@@ -308,13 +308,13 @@ namespace ParsDashboard
             SetPanel_Height();
 
             // Enable double duffering to stop flickering.
-            this.SetStyle(ControlStyles.DoubleBuffer, true);
-            this.SetStyle(ControlStyles.AllPaintingInWmPaint, true);
-            this.SetStyle(ControlStyles.UserPaint, true);
-            this.SetStyle(ControlStyles.SupportsTransparentBackColor, false);
-            this.SetStyle(ControlStyles.Opaque, false);
-            this.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
-            this.SetStyle(ControlStyles.ResizeRedraw, true);
+            this.SetStyle( ControlStyles.DoubleBuffer, true );
+            this.SetStyle( ControlStyles.AllPaintingInWmPaint, true );
+            this.SetStyle( ControlStyles.UserPaint, true );
+            this.SetStyle( ControlStyles.SupportsTransparentBackColor, false );
+            this.SetStyle( ControlStyles.Opaque, false );
+            this.SetStyle( ControlStyles.OptimizedDoubleBuffer, true );
+            this.SetStyle( ControlStyles.ResizeRedraw, true );
         }
 
         private void LblImagesFilter_MouseEnter(object sender, EventArgs e)
@@ -429,11 +429,11 @@ namespace ParsDashboard
 
         private void LblImagesFilter_Click(object sender, EventArgs e)
         {
-            fNav.ShowForm(fImageFilter);
+            fNav.ShowForm( fImageFilter );
 
-            NavSetStyleClick(LblImagesFilter);
+            NavSetStyleClick( LblImagesFilter );
 
-            SubRtn.ShowHideMenu(this, MnuImageFilter.Name);
+            SubRtn.ShowHideMenu( this, MnuImageFilter.Name );
         }
 
         public void LblImagesSearchResults_Click(object sender, EventArgs e)
@@ -806,76 +806,37 @@ namespace ParsDashboard
             SubRtn.ShowHideMenu(this, MnuSurgerySearch.Name);
         }
 
-        private void TSMnuSurgerySrchClearSurgery_Click(object sender, EventArgs e)
+        private void TSMnuSurgerySrchClearSurgery_Click( object sender, EventArgs e )
         {
             //  clear surgery dates
-            if ( FrmSurgerySearch.SurgerySearchVar.ClearType == 0 )
-            {             
-                Control rdo = SubRoutine.FindControl( fSurgerySearch, "RdoSurgeryEqualTo" );
-                RadioButton ctlrdo = rdo as RadioButton;
-
-                helper.ClearRadioBtn( ctlrdo );
-
-                rdo = SubRoutine.FindControl( fSurgerySearch, "RdoSurgeryGreater" );
-                ctlrdo = rdo as RadioButton;
-
-                helper.ClearRadioBtn( ctlrdo );
-
-                rdo = SubRoutine.FindControl( fSurgerySearch, "RdoSurgeryLess" );
-                ctlrdo = rdo as RadioButton;
-
-                helper.ClearRadioBtn( ctlrdo );
-
-                rdo = SubRoutine.FindControl( fSurgerySearch, "RdoSurgeryBetween" );
-                ctlrdo = rdo as RadioButton;
-
-                helper.ClearRadioBtn( ctlrdo );
-
-                Control dt = SubRoutine.FindControl( fSurgerySearch, "DtStart" );
-                DateTimePicker ctldt = dt as DateTimePicker;
-
-                helper.SetDateToToday( ctldt );
-
-                dt = SubRoutine.FindControl( fSurgerySearch, "DtEnd" );
-                ctldt = dt as DateTimePicker;
-
-                helper.SetDateToToday( ctldt );
-
-            }
+            SubRtn.ClearSurgeryDates( fSurgerySearch );
 
             //  clear fiscal year
-            if ( FrmSurgerySearch.SurgerySearchVar.ClearType ==  1)
-            {
-                Control rdo = SubRoutine.FindControl( fSurgerySearch, "RdoFiscalEqualTo" );
-                RadioButton ctlrdo = rdo as RadioButton;
+            SubRtn.ClearFiscalYear( fSurgerySearch );            
+        }
 
-                helper.ClearRadioBtn( ctlrdo );
+        private void TSMnuSurgerySrchClearItems_Click(object sender, EventArgs e)
+        {
+            //  clear search items
+            SubRtn.ClearItems( fSurgerySearch );
+        }
 
-                rdo = SubRoutine.FindControl( fSurgerySearch, "RdoFiscalGreater" );
-                ctlrdo = rdo as RadioButton;
+        private void TSMnuSurgerySrchClearAll_Click(object sender, EventArgs e)
+        {
+            //  clear surgery dates
+            SubRtn.ClearSurgeryDates( fSurgerySearch );
 
-                helper.ClearRadioBtn( ctlrdo );
+            //  clear fiscal year
+            SubRtn.ClearFiscalYear( fSurgerySearch );
 
-                rdo = SubRoutine.FindControl( fSurgerySearch, "RdoFiscalLess" );
-                ctlrdo = rdo as RadioButton;
+            //  clear search items
+            SubRtn.ClearItems(fSurgerySearch);
+        }
 
-                helper.ClearRadioBtn(ctlrdo);
-
-                rdo = SubRoutine.FindControl( fSurgerySearch, "RdoFiscalBetween" );
-                ctlrdo = rdo as RadioButton;
-
-                helper.ClearRadioBtn( ctlrdo );
-
-                Control dt = SubRoutine.FindControl( fSurgerySearch, "DtFiscalStart" );
-                DateTimePicker ctldt = dt as DateTimePicker;
-
-                helper.SetDateToToday( ctldt );
-
-                dt = SubRoutine.FindControl( fSurgerySearch, "DtFiscalEnd" );
-                ctldt = dt as DateTimePicker;
-
-                helper.SetDateToToday( ctldt );               
-            }
+        private void TSMnuSurgeryClear_Click(object sender, EventArgs e)
+        {
+            //  clear surgery type
+            SubRtn.SurgeryClearType( fSurgery );
         }
     }
 
@@ -989,6 +950,226 @@ namespace ParsDashboard
             frm.Dock = DockStyle.Fill;
             frm.Show();
             frm.WindowState = FormWindowState.Maximized;
+        }
+
+        public void ClearSurgeryDates( Form fSurgerySearch )
+        {
+            Helper helper = new Helper();
+
+            //  clear surgery dates
+            if ( FrmSurgerySearch.SurgerySearchVar.ClearType == 0 )
+            {
+                Control rdo = SubRoutine.FindControl(fSurgerySearch, "RdoSurgeryEqualTo");
+                RadioButton ctlrdo = rdo as RadioButton;
+
+                helper.ClearRadioBtn(ctlrdo);
+
+                rdo = SubRoutine.FindControl(fSurgerySearch, "RdoSurgeryGreater");
+                ctlrdo = rdo as RadioButton;
+
+                helper.ClearRadioBtn(ctlrdo);
+
+                rdo = SubRoutine.FindControl(fSurgerySearch, "RdoSurgeryLess");
+                ctlrdo = rdo as RadioButton;
+
+                helper.ClearRadioBtn(ctlrdo);
+
+                rdo = SubRoutine.FindControl(fSurgerySearch, "RdoSurgeryBetween");
+                ctlrdo = rdo as RadioButton;
+
+                helper.ClearRadioBtn(ctlrdo);
+
+                Control dt = SubRoutine.FindControl(fSurgerySearch, "DtStart");
+                DateTimePicker ctldt = dt as DateTimePicker;
+
+                helper.SetDateToToday(ctldt);
+
+                dt = SubRoutine.FindControl(fSurgerySearch, "DtEnd");
+                ctldt = dt as DateTimePicker;
+
+                helper.SetDateToToday(ctldt);
+
+            }
+        }
+
+        public void SurgeryClearType( Form fSurgery )
+        {
+            Helper helper = new Helper();
+
+            //  clear surgery type
+            if ( FrmSurgery.SurgeryVar.ClearType == 0 )
+            {
+                Control updwn = SubRoutine.FindControl( fSurgery, "UpDwnLastNameLetter" );
+                DomainUpDown ctlupdwn = updwn as DomainUpDown;
+
+                helper.ClearUpDwn( ctlupdwn );
+
+                Control cbo = SubRoutine.FindControl( fSurgery, "CboFullName" );
+                ComboBox ctlcbo = cbo as ComboBox;
+
+                helper.ClearComboBox( ctlcbo );
+            }
+
+            //  clear surgery date
+            if ( FrmSurgery.SurgeryVar.ClearType == 1 )
+            {
+                Control updwn = SubRoutine.FindControl( fSurgery, "UpDwnYear" );
+                DomainUpDown ctlupdwn = updwn as DomainUpDown;
+
+                helper.ClearUpDwn( ctlupdwn );
+
+                updwn = SubRoutine.FindControl( fSurgery, "UpDwnMonth" );
+                ctlupdwn = updwn as DomainUpDown;
+
+                helper.ClearUpDwn( ctlupdwn );
+            }
+        }
+
+        public void SurgeryClearDate( Form fSurgery )
+        {
+
+        }
+
+        public void ClearFiscalYear( Form fSurgerySearch )
+        {
+            Helper helper = new Helper();
+
+            //  clear fiscal year
+            if ( FrmSurgerySearch.SurgerySearchVar.ClearType == 1 )
+            {
+                Control rdo = SubRoutine.FindControl(fSurgerySearch, "RdoFiscalEqualTo");
+                RadioButton ctlrdo = rdo as RadioButton;
+
+                helper.ClearRadioBtn(ctlrdo);
+
+                rdo = SubRoutine.FindControl(fSurgerySearch, "RdoFiscalGreater");
+                ctlrdo = rdo as RadioButton;
+
+                helper.ClearRadioBtn(ctlrdo);
+
+                rdo = SubRoutine.FindControl(fSurgerySearch, "RdoFiscalLess");
+                ctlrdo = rdo as RadioButton;
+
+                helper.ClearRadioBtn(ctlrdo);
+
+                rdo = SubRoutine.FindControl(fSurgerySearch, "RdoFiscalBetween");
+                ctlrdo = rdo as RadioButton;
+
+                helper.ClearRadioBtn(ctlrdo);
+
+                Control dt = SubRoutine.FindControl(fSurgerySearch, "DtFiscalStart");
+                DateTimePicker ctldt = dt as DateTimePicker;
+
+                helper.SetDateToToday(ctldt);
+
+                dt = SubRoutine.FindControl(fSurgerySearch, "DtFiscalEnd");
+                ctldt = dt as DateTimePicker;
+
+                helper.SetDateToToday(ctldt);
+            }
+        }
+
+        public void ClearItems( Form fSurgerySearch )
+        {
+            Helper helper = new Helper();
+
+            //  clear doctor
+            Control lstFrom = SubRoutine.FindControl(fSurgerySearch, "LstDr");
+            ListBox ctllstFrom = lstFrom as ListBox;
+
+            Control lstTo = SubRoutine.FindControl(fSurgerySearch, "LstDrFilter");
+            ListBox ctllstTo = lstTo as ListBox;
+
+            helper.ClearListBoxes(ctllstFrom, ctllstTo);
+
+
+            //  clear hospital
+            lstFrom = SubRoutine.FindControl(fSurgerySearch, "LstHospital");
+            ctllstFrom = lstFrom as ListBox;
+
+            lstTo = SubRoutine.FindControl(fSurgerySearch, "LstHospitalFilter");
+            ctllstTo = lstTo as ListBox;
+
+            helper.ClearListBoxes(ctllstFrom, ctllstTo);
+
+
+            //  clear location
+            lstFrom = SubRoutine.FindControl(fSurgerySearch, "LstLocation");
+            ctllstFrom = lstFrom as ListBox;
+
+            lstTo = SubRoutine.FindControl(fSurgerySearch, "LstLocationFIlter");
+            ctllstTo = lstTo as ListBox;
+
+            helper.ClearListBoxes(ctllstFrom, ctllstTo);
+
+
+            //  clear level
+            lstFrom = SubRoutine.FindControl(fSurgerySearch, "LstLevel");
+            ctllstFrom = lstFrom as ListBox;
+
+            lstTo = SubRoutine.FindControl(fSurgerySearch, "LstLevelFilter");
+            ctllstTo = lstTo as ListBox;
+
+            helper.ClearListBoxes(ctllstFrom, ctllstTo);
+
+            //  clear cpt
+            lstFrom = SubRoutine.FindControl(fSurgerySearch, "LstCpt");
+            ctllstFrom = lstFrom as ListBox;
+
+            lstTo = SubRoutine.FindControl(fSurgerySearch, "LstCptFilter");
+            ctllstTo = lstTo as ListBox;
+
+            helper.ClearListBoxes(ctllstFrom, ctllstTo);
+
+
+            //  clear Dx
+            lstFrom = SubRoutine.FindControl(fSurgerySearch, "LstDx");
+            ctllstFrom = lstFrom as ListBox;
+
+            lstTo = SubRoutine.FindControl(fSurgerySearch, "LstDxFilter");
+            ctllstTo = lstTo as ListBox;
+
+            helper.ClearListBoxes(ctllstFrom, ctllstTo);
+
+
+            //  clear surgery
+            lstFrom = SubRoutine.FindControl(fSurgerySearch, "LstSurgery");
+            ctllstFrom = lstFrom as ListBox;
+
+            lstTo = SubRoutine.FindControl(fSurgerySearch, "LstSurgeryFilter");
+            ctllstTo = lstTo as ListBox;
+
+            helper.ClearListBoxes(ctllstFrom, ctllstTo);
+
+
+            //  clear instrumentation
+            lstFrom = SubRoutine.FindControl(fSurgerySearch, "LstInst");
+            ctllstFrom = lstFrom as ListBox;
+
+            lstTo = SubRoutine.FindControl(fSurgerySearch, "LstInstFilter");
+            ctllstTo = lstTo as ListBox;
+
+            helper.ClearListBoxes(ctllstFrom, ctllstTo);
+
+
+            //  clear comp
+            lstFrom = SubRoutine.FindControl(fSurgerySearch, "LstComp");
+            ctllstFrom = lstFrom as ListBox;
+
+            lstTo = SubRoutine.FindControl(fSurgerySearch, "LstCompFilter");
+            ctllstTo = lstTo as ListBox;
+
+            helper.ClearListBoxes(ctllstFrom, ctllstTo);
+
+
+            //  clear PicInfo
+            lstFrom = SubRoutine.FindControl(fSurgerySearch, "LstPicInfo");
+            ctllstFrom = lstFrom as ListBox;
+
+            lstTo = SubRoutine.FindControl(fSurgerySearch, "LstPicInfoFilter");
+            ctllstTo = lstTo as ListBox;
+
+            helper.ClearListBoxes(ctllstFrom, ctllstTo);
         }
     }
 }

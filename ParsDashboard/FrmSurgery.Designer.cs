@@ -90,6 +90,7 @@
             this.TabDisplay.SelectedIndex = 0;
             this.TabDisplay.Size = new System.Drawing.Size(379, 121);
             this.TabDisplay.TabIndex = 0;
+            this.TabDisplay.SelectedIndexChanged += new System.EventHandler(this.TabDisplay_SelectedIndexChanged);
             // 
             // TabSurgery
             // 
