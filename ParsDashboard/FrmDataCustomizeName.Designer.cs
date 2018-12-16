@@ -29,20 +29,36 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.TxtName = new System.Windows.Forms.TextBox();
-            this.LbMetaDataSearch = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.TxtNewComp = new System.Windows.Forms.TextBox();
+            this.TxtNewInst = new System.Windows.Forms.TextBox();
+            this.TxtNewSurgery = new System.Windows.Forms.TextBox();
+            this.TxtNewDx = new System.Windows.Forms.TextBox();
+            this.TxtNewCpt = new System.Windows.Forms.TextBox();
+            this.TxtNewLevel = new System.Windows.Forms.TextBox();
+            this.TxtNewLocation = new System.Windows.Forms.TextBox();
+            this.TxtNewHospital = new System.Windows.Forms.TextBox();
+            this.TxtCurrComp = new System.Windows.Forms.TextBox();
+            this.TxtCurrInst = new System.Windows.Forms.TextBox();
+            this.TxtCurrSurgery = new System.Windows.Forms.TextBox();
+            this.TxtCurrDx = new System.Windows.Forms.TextBox();
+            this.TxtCurrCpt = new System.Windows.Forms.TextBox();
+            this.TxtCurrLevel = new System.Windows.Forms.TextBox();
+            this.TxtCurrLocation = new System.Windows.Forms.TextBox();
+            this.TxtCurrHospital = new System.Windows.Forms.TextBox();
+            this.TxtOrigComp = new System.Windows.Forms.TextBox();
+            this.TxtOrigInst = new System.Windows.Forms.TextBox();
+            this.TxtOrigSurgery = new System.Windows.Forms.TextBox();
+            this.TxtOrigDx = new System.Windows.Forms.TextBox();
+            this.TxtOrigCpt = new System.Windows.Forms.TextBox();
+            this.TxtOrigLevel = new System.Windows.Forms.TextBox();
+            this.TxtOrigLocation = new System.Windows.Forms.TextBox();
+            this.TxtOrigHospital = new System.Windows.Forms.TextBox();
+            this.TxtNewDr = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.TxtCurrDr = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.TxtOrigDr = new System.Windows.Forms.TextBox();
+            this.LbMetaDataSearch = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.TxtDesc = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,69 +68,291 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.textBox10);
-            this.groupBox1.Controls.Add(this.textBox9);
-            this.groupBox1.Controls.Add(this.textBox8);
-            this.groupBox1.Controls.Add(this.textBox7);
-            this.groupBox1.Controls.Add(this.textBox6);
-            this.groupBox1.Controls.Add(this.textBox5);
-            this.groupBox1.Controls.Add(this.textBox4);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox2);
+            this.groupBox1.Controls.Add(this.TxtNewComp);
+            this.groupBox1.Controls.Add(this.TxtNewInst);
+            this.groupBox1.Controls.Add(this.TxtNewSurgery);
+            this.groupBox1.Controls.Add(this.TxtNewDx);
+            this.groupBox1.Controls.Add(this.TxtNewCpt);
+            this.groupBox1.Controls.Add(this.TxtNewLevel);
+            this.groupBox1.Controls.Add(this.TxtNewLocation);
+            this.groupBox1.Controls.Add(this.TxtNewHospital);
+            this.groupBox1.Controls.Add(this.TxtCurrComp);
+            this.groupBox1.Controls.Add(this.TxtCurrInst);
+            this.groupBox1.Controls.Add(this.TxtCurrSurgery);
+            this.groupBox1.Controls.Add(this.TxtCurrDx);
+            this.groupBox1.Controls.Add(this.TxtCurrCpt);
+            this.groupBox1.Controls.Add(this.TxtCurrLevel);
+            this.groupBox1.Controls.Add(this.TxtCurrLocation);
+            this.groupBox1.Controls.Add(this.TxtCurrHospital);
+            this.groupBox1.Controls.Add(this.TxtOrigComp);
+            this.groupBox1.Controls.Add(this.TxtOrigInst);
+            this.groupBox1.Controls.Add(this.TxtOrigSurgery);
+            this.groupBox1.Controls.Add(this.TxtOrigDx);
+            this.groupBox1.Controls.Add(this.TxtOrigCpt);
+            this.groupBox1.Controls.Add(this.TxtOrigLevel);
+            this.groupBox1.Controls.Add(this.TxtOrigLocation);
+            this.groupBox1.Controls.Add(this.TxtOrigHospital);
+            this.groupBox1.Controls.Add(this.TxtNewDr);
             this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.TxtCurrDr);
             this.groupBox1.Controls.Add(this.label7);
-            this.groupBox1.Controls.Add(this.TxtName);
+            this.groupBox1.Controls.Add(this.TxtOrigDr);
             this.groupBox1.Controls.Add(this.LbMetaDataSearch);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 46);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(564, 455);
-            this.groupBox1.TabIndex = 5;
+            this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Surgery Information";
             // 
-            // TxtName
+            // TxtNewComp
             // 
-            this.TxtName.Enabled = false;
-            this.TxtName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtName.Location = new System.Drawing.Point(6, 55);
-            this.TxtName.Name = "TxtName";
-            this.TxtName.ReadOnly = true;
-            this.TxtName.Size = new System.Drawing.Size(113, 22);
-            this.TxtName.TabIndex = 2;
-            this.TxtName.Text = "Doctor";
+            this.TxtNewComp.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNewComp.Location = new System.Drawing.Point(334, 415);
+            this.TxtNewComp.Name = "TxtNewComp";
+            this.TxtNewComp.Size = new System.Drawing.Size(113, 22);
+            this.TxtNewComp.TabIndex = 29;
             // 
-            // LbMetaDataSearch
+            // TxtNewInst
             // 
-            this.LbMetaDataSearch.AutoSize = true;
-            this.LbMetaDataSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbMetaDataSearch.Location = new System.Drawing.Point(6, 35);
-            this.LbMetaDataSearch.Name = "LbMetaDataSearch";
-            this.LbMetaDataSearch.Size = new System.Drawing.Size(98, 17);
-            this.LbMetaDataSearch.TabIndex = 1;
-            this.LbMetaDataSearch.Text = "Original Name";
+            this.TxtNewInst.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNewInst.Location = new System.Drawing.Point(334, 370);
+            this.TxtNewInst.Name = "TxtNewInst";
+            this.TxtNewInst.Size = new System.Drawing.Size(113, 22);
+            this.TxtNewInst.TabIndex = 26;
             // 
-            // label7
+            // TxtNewSurgery
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(165, 35);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(96, 17);
-            this.label7.TabIndex = 15;
-            this.label7.Text = "Current Name";
+            this.TxtNewSurgery.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNewSurgery.Location = new System.Drawing.Point(334, 325);
+            this.TxtNewSurgery.Name = "TxtNewSurgery";
+            this.TxtNewSurgery.Size = new System.Drawing.Size(113, 22);
+            this.TxtNewSurgery.TabIndex = 23;
             // 
-            // textBox1
+            // TxtNewDx
             // 
-            this.textBox1.Enabled = false;
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(168, 55);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(113, 22);
-            this.textBox1.TabIndex = 16;
-            this.textBox1.Text = "Doctor";
+            this.TxtNewDx.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNewDx.Location = new System.Drawing.Point(334, 280);
+            this.TxtNewDx.Name = "TxtNewDx";
+            this.TxtNewDx.Size = new System.Drawing.Size(113, 22);
+            this.TxtNewDx.TabIndex = 20;
+            // 
+            // TxtNewCpt
+            // 
+            this.TxtNewCpt.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNewCpt.Location = new System.Drawing.Point(334, 235);
+            this.TxtNewCpt.Name = "TxtNewCpt";
+            this.TxtNewCpt.Size = new System.Drawing.Size(113, 22);
+            this.TxtNewCpt.TabIndex = 17;
+            // 
+            // TxtNewLevel
+            // 
+            this.TxtNewLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNewLevel.Location = new System.Drawing.Point(334, 190);
+            this.TxtNewLevel.Name = "TxtNewLevel";
+            this.TxtNewLevel.Size = new System.Drawing.Size(113, 22);
+            this.TxtNewLevel.TabIndex = 14;
+            // 
+            // TxtNewLocation
+            // 
+            this.TxtNewLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNewLocation.Location = new System.Drawing.Point(334, 145);
+            this.TxtNewLocation.Name = "TxtNewLocation";
+            this.TxtNewLocation.Size = new System.Drawing.Size(113, 22);
+            this.TxtNewLocation.TabIndex = 11;
+            // 
+            // TxtNewHospital
+            // 
+            this.TxtNewHospital.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNewHospital.Location = new System.Drawing.Point(334, 100);
+            this.TxtNewHospital.Name = "TxtNewHospital";
+            this.TxtNewHospital.Size = new System.Drawing.Size(113, 22);
+            this.TxtNewHospital.TabIndex = 8;
+            // 
+            // TxtCurrComp
+            // 
+            this.TxtCurrComp.Enabled = false;
+            this.TxtCurrComp.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCurrComp.Location = new System.Drawing.Point(168, 415);
+            this.TxtCurrComp.Name = "TxtCurrComp";
+            this.TxtCurrComp.ReadOnly = true;
+            this.TxtCurrComp.Size = new System.Drawing.Size(113, 22);
+            this.TxtCurrComp.TabIndex = 28;
+            this.TxtCurrComp.Text = "Complication";
+            // 
+            // TxtCurrInst
+            // 
+            this.TxtCurrInst.Enabled = false;
+            this.TxtCurrInst.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCurrInst.Location = new System.Drawing.Point(168, 370);
+            this.TxtCurrInst.Name = "TxtCurrInst";
+            this.TxtCurrInst.ReadOnly = true;
+            this.TxtCurrInst.Size = new System.Drawing.Size(113, 22);
+            this.TxtCurrInst.TabIndex = 25;
+            this.TxtCurrInst.Text = "Instrumentation";
+            // 
+            // TxtCurrSurgery
+            // 
+            this.TxtCurrSurgery.Enabled = false;
+            this.TxtCurrSurgery.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCurrSurgery.Location = new System.Drawing.Point(168, 325);
+            this.TxtCurrSurgery.Name = "TxtCurrSurgery";
+            this.TxtCurrSurgery.ReadOnly = true;
+            this.TxtCurrSurgery.Size = new System.Drawing.Size(113, 22);
+            this.TxtCurrSurgery.TabIndex = 22;
+            this.TxtCurrSurgery.Text = "Surgery";
+            // 
+            // TxtCurrDx
+            // 
+            this.TxtCurrDx.Enabled = false;
+            this.TxtCurrDx.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCurrDx.Location = new System.Drawing.Point(168, 280);
+            this.TxtCurrDx.Name = "TxtCurrDx";
+            this.TxtCurrDx.ReadOnly = true;
+            this.TxtCurrDx.Size = new System.Drawing.Size(113, 22);
+            this.TxtCurrDx.TabIndex = 19;
+            this.TxtCurrDx.Text = "Dx";
+            // 
+            // TxtCurrCpt
+            // 
+            this.TxtCurrCpt.Enabled = false;
+            this.TxtCurrCpt.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCurrCpt.Location = new System.Drawing.Point(168, 235);
+            this.TxtCurrCpt.Name = "TxtCurrCpt";
+            this.TxtCurrCpt.ReadOnly = true;
+            this.TxtCurrCpt.Size = new System.Drawing.Size(113, 22);
+            this.TxtCurrCpt.TabIndex = 16;
+            this.TxtCurrCpt.Text = "CPT";
+            // 
+            // TxtCurrLevel
+            // 
+            this.TxtCurrLevel.Enabled = false;
+            this.TxtCurrLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCurrLevel.Location = new System.Drawing.Point(168, 190);
+            this.TxtCurrLevel.Name = "TxtCurrLevel";
+            this.TxtCurrLevel.ReadOnly = true;
+            this.TxtCurrLevel.Size = new System.Drawing.Size(113, 22);
+            this.TxtCurrLevel.TabIndex = 13;
+            this.TxtCurrLevel.Text = "Level";
+            // 
+            // TxtCurrLocation
+            // 
+            this.TxtCurrLocation.Enabled = false;
+            this.TxtCurrLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCurrLocation.Location = new System.Drawing.Point(168, 145);
+            this.TxtCurrLocation.Name = "TxtCurrLocation";
+            this.TxtCurrLocation.ReadOnly = true;
+            this.TxtCurrLocation.Size = new System.Drawing.Size(113, 22);
+            this.TxtCurrLocation.TabIndex = 10;
+            this.TxtCurrLocation.Text = "Location";
+            // 
+            // TxtCurrHospital
+            // 
+            this.TxtCurrHospital.Enabled = false;
+            this.TxtCurrHospital.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCurrHospital.Location = new System.Drawing.Point(168, 100);
+            this.TxtCurrHospital.Name = "TxtCurrHospital";
+            this.TxtCurrHospital.ReadOnly = true;
+            this.TxtCurrHospital.Size = new System.Drawing.Size(113, 22);
+            this.TxtCurrHospital.TabIndex = 7;
+            this.TxtCurrHospital.Text = "Hospital";
+            // 
+            // TxtOrigComp
+            // 
+            this.TxtOrigComp.Enabled = false;
+            this.TxtOrigComp.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtOrigComp.Location = new System.Drawing.Point(6, 415);
+            this.TxtOrigComp.Name = "TxtOrigComp";
+            this.TxtOrigComp.ReadOnly = true;
+            this.TxtOrigComp.Size = new System.Drawing.Size(113, 22);
+            this.TxtOrigComp.TabIndex = 27;
+            this.TxtOrigComp.Text = "Complication";
+            // 
+            // TxtOrigInst
+            // 
+            this.TxtOrigInst.Enabled = false;
+            this.TxtOrigInst.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtOrigInst.Location = new System.Drawing.Point(6, 370);
+            this.TxtOrigInst.Name = "TxtOrigInst";
+            this.TxtOrigInst.ReadOnly = true;
+            this.TxtOrigInst.Size = new System.Drawing.Size(113, 22);
+            this.TxtOrigInst.TabIndex = 24;
+            this.TxtOrigInst.Text = "Instrumentation";
+            // 
+            // TxtOrigSurgery
+            // 
+            this.TxtOrigSurgery.Enabled = false;
+            this.TxtOrigSurgery.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtOrigSurgery.Location = new System.Drawing.Point(6, 325);
+            this.TxtOrigSurgery.Name = "TxtOrigSurgery";
+            this.TxtOrigSurgery.ReadOnly = true;
+            this.TxtOrigSurgery.Size = new System.Drawing.Size(113, 22);
+            this.TxtOrigSurgery.TabIndex = 21;
+            this.TxtOrigSurgery.Text = "Surgery";
+            // 
+            // TxtOrigDx
+            // 
+            this.TxtOrigDx.Enabled = false;
+            this.TxtOrigDx.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtOrigDx.Location = new System.Drawing.Point(6, 280);
+            this.TxtOrigDx.Name = "TxtOrigDx";
+            this.TxtOrigDx.ReadOnly = true;
+            this.TxtOrigDx.Size = new System.Drawing.Size(113, 22);
+            this.TxtOrigDx.TabIndex = 18;
+            this.TxtOrigDx.Text = "Dx";
+            // 
+            // TxtOrigCpt
+            // 
+            this.TxtOrigCpt.Enabled = false;
+            this.TxtOrigCpt.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtOrigCpt.Location = new System.Drawing.Point(6, 235);
+            this.TxtOrigCpt.Name = "TxtOrigCpt";
+            this.TxtOrigCpt.ReadOnly = true;
+            this.TxtOrigCpt.Size = new System.Drawing.Size(113, 22);
+            this.TxtOrigCpt.TabIndex = 15;
+            this.TxtOrigCpt.Text = "CPT";
+            // 
+            // TxtOrigLevel
+            // 
+            this.TxtOrigLevel.Enabled = false;
+            this.TxtOrigLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtOrigLevel.Location = new System.Drawing.Point(6, 190);
+            this.TxtOrigLevel.Name = "TxtOrigLevel";
+            this.TxtOrigLevel.ReadOnly = true;
+            this.TxtOrigLevel.Size = new System.Drawing.Size(113, 22);
+            this.TxtOrigLevel.TabIndex = 12;
+            this.TxtOrigLevel.Text = "Level";
+            // 
+            // TxtOrigLocation
+            // 
+            this.TxtOrigLocation.Enabled = false;
+            this.TxtOrigLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtOrigLocation.Location = new System.Drawing.Point(6, 145);
+            this.TxtOrigLocation.Name = "TxtOrigLocation";
+            this.TxtOrigLocation.ReadOnly = true;
+            this.TxtOrigLocation.Size = new System.Drawing.Size(113, 22);
+            this.TxtOrigLocation.TabIndex = 9;
+            this.TxtOrigLocation.Text = "Location";
+            // 
+            // TxtOrigHospital
+            // 
+            this.TxtOrigHospital.Enabled = false;
+            this.TxtOrigHospital.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtOrigHospital.Location = new System.Drawing.Point(6, 100);
+            this.TxtOrigHospital.Name = "TxtOrigHospital";
+            this.TxtOrigHospital.ReadOnly = true;
+            this.TxtOrigHospital.Size = new System.Drawing.Size(113, 22);
+            this.TxtOrigHospital.TabIndex = 6;
+            this.TxtOrigHospital.Text = "Hospital";
+            // 
+            // TxtNewDr
+            // 
+            this.TxtNewDr.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNewDr.Location = new System.Drawing.Point(334, 55);
+            this.TxtNewDr.Name = "TxtNewDr";
+            this.TxtNewDr.Size = new System.Drawing.Size(113, 22);
+            this.TxtNewDr.TabIndex = 5;
             // 
             // label8
             // 
@@ -123,105 +361,50 @@
             this.label8.Location = new System.Drawing.Point(331, 35);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(76, 17);
-            this.label8.TabIndex = 17;
+            this.label8.TabIndex = 2;
             this.label8.Text = "New Name";
             // 
-            // textBox2
+            // TxtCurrDr
             // 
-            this.textBox2.Enabled = false;
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(334, 55);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(113, 22);
-            this.textBox2.TabIndex = 18;
+            this.TxtCurrDr.Enabled = false;
+            this.TxtCurrDr.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCurrDr.Location = new System.Drawing.Point(168, 55);
+            this.TxtCurrDr.Name = "TxtCurrDr";
+            this.TxtCurrDr.ReadOnly = true;
+            this.TxtCurrDr.Size = new System.Drawing.Size(113, 22);
+            this.TxtCurrDr.TabIndex = 4;
+            this.TxtCurrDr.Text = "Doctor";
             // 
-            // textBox3
+            // label7
             // 
-            this.textBox3.Enabled = false;
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(6, 100);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(113, 22);
-            this.textBox3.TabIndex = 19;
-            this.textBox3.Text = "Hospital";
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(165, 35);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(96, 17);
+            this.label7.TabIndex = 1;
+            this.label7.Text = "Current Name";
             // 
-            // textBox4
+            // TxtOrigDr
             // 
-            this.textBox4.Enabled = false;
-            this.textBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(6, 145);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(113, 22);
-            this.textBox4.TabIndex = 20;
-            this.textBox4.Text = "Location";
+            this.TxtOrigDr.Enabled = false;
+            this.TxtOrigDr.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtOrigDr.Location = new System.Drawing.Point(6, 55);
+            this.TxtOrigDr.Name = "TxtOrigDr";
+            this.TxtOrigDr.ReadOnly = true;
+            this.TxtOrigDr.Size = new System.Drawing.Size(113, 22);
+            this.TxtOrigDr.TabIndex = 3;
+            this.TxtOrigDr.Text = "Doctor";
             // 
-            // textBox5
+            // LbMetaDataSearch
             // 
-            this.textBox5.Enabled = false;
-            this.textBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(6, 190);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(113, 22);
-            this.textBox5.TabIndex = 21;
-            this.textBox5.Text = "Level";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Enabled = false;
-            this.textBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(6, 235);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(113, 22);
-            this.textBox6.TabIndex = 22;
-            this.textBox6.Text = "CPT";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Enabled = false;
-            this.textBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox7.Location = new System.Drawing.Point(6, 280);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.ReadOnly = true;
-            this.textBox7.Size = new System.Drawing.Size(113, 22);
-            this.textBox7.TabIndex = 23;
-            this.textBox7.Text = "Dx";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Enabled = false;
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(6, 325);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.ReadOnly = true;
-            this.textBox8.Size = new System.Drawing.Size(113, 22);
-            this.textBox8.TabIndex = 24;
-            this.textBox8.Text = "Surgery";
-            // 
-            // textBox9
-            // 
-            this.textBox9.Enabled = false;
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(6, 370);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(113, 22);
-            this.textBox9.TabIndex = 25;
-            this.textBox9.Text = "Instrumentation";
-            // 
-            // textBox10
-            // 
-            this.textBox10.Enabled = false;
-            this.textBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox10.Location = new System.Drawing.Point(6, 415);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(113, 22);
-            this.textBox10.TabIndex = 26;
-            this.textBox10.Text = "Complication";
+            this.LbMetaDataSearch.AutoSize = true;
+            this.LbMetaDataSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LbMetaDataSearch.Location = new System.Drawing.Point(6, 35);
+            this.LbMetaDataSearch.Name = "LbMetaDataSearch";
+            this.LbMetaDataSearch.Size = new System.Drawing.Size(98, 17);
+            this.LbMetaDataSearch.TabIndex = 0;
+            this.LbMetaDataSearch.Text = "Original Name";
             // 
             // groupBox2
             // 
@@ -231,7 +414,7 @@
             this.groupBox2.Location = new System.Drawing.Point(12, 541);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(564, 130);
-            this.groupBox2.TabIndex = 27;
+            this.groupBox2.TabIndex = 1;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Description";
             // 
@@ -242,7 +425,7 @@
             this.TxtDesc.Multiline = true;
             this.TxtDesc.Name = "TxtDesc";
             this.TxtDesc.Size = new System.Drawing.Size(519, 76);
-            this.TxtDesc.TabIndex = 2;
+            this.TxtDesc.TabIndex = 0;
             this.TxtDesc.Text = "The name of the Doctor";
             // 
             // label3
@@ -283,22 +466,38 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox TxtName;
+        private System.Windows.Forms.TextBox TxtOrigDr;
         private System.Windows.Forms.Label LbMetaDataSearch;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox TxtNewDr;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox TxtCurrDr;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
-        private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox TxtOrigComp;
+        private System.Windows.Forms.TextBox TxtOrigInst;
+        private System.Windows.Forms.TextBox TxtOrigSurgery;
+        private System.Windows.Forms.TextBox TxtOrigDx;
+        private System.Windows.Forms.TextBox TxtOrigCpt;
+        private System.Windows.Forms.TextBox TxtOrigLevel;
+        private System.Windows.Forms.TextBox TxtOrigLocation;
+        private System.Windows.Forms.TextBox TxtOrigHospital;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox TxtDesc;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.TextBox TxtNewComp;
+        private System.Windows.Forms.TextBox TxtNewInst;
+        private System.Windows.Forms.TextBox TxtNewSurgery;
+        private System.Windows.Forms.TextBox TxtNewDx;
+        private System.Windows.Forms.TextBox TxtNewCpt;
+        private System.Windows.Forms.TextBox TxtNewLevel;
+        private System.Windows.Forms.TextBox TxtNewLocation;
+        private System.Windows.Forms.TextBox TxtNewHospital;
+        private System.Windows.Forms.TextBox TxtCurrComp;
+        private System.Windows.Forms.TextBox TxtCurrInst;
+        private System.Windows.Forms.TextBox TxtCurrSurgery;
+        private System.Windows.Forms.TextBox TxtCurrDx;
+        private System.Windows.Forms.TextBox TxtCurrCpt;
+        private System.Windows.Forms.TextBox TxtCurrLevel;
+        private System.Windows.Forms.TextBox TxtCurrLocation;
+        private System.Windows.Forms.TextBox TxtCurrHospital;
     }
 }

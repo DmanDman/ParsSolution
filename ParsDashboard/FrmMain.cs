@@ -31,6 +31,7 @@ namespace ParsDashboard
         public FrmSurgerySearch fSurgerySearch = new FrmSurgerySearch();
 
         FrmDataCustomizeName fDataCustName = new FrmDataCustomizeName();
+        FrmDataDefaultHosp fDataDefaultHosp = new FrmDataDefaultHosp();
 
         #endregion
 
@@ -72,6 +73,13 @@ namespace ParsDashboard
             LblSurgery.Font = new Font(LblSurgery.Font.Name, LblSurgery.Font.SizeInPoints, FontStyle.Regular);
             LblSurgeryAdd.Font = new Font(LblSurgeryAdd.Font.Name, LblSurgeryAdd.Font.SizeInPoints, FontStyle.Regular);
             LblSurgerySearch.Font = new Font(LblSurgerySearch.Font.Name, LblSurgerySearch.Font.SizeInPoints, FontStyle.Regular);
+
+            //  Data Panel
+            LblData.Font = new Font( LblData.Font.Name, LblData.Font.SizeInPoints, FontStyle.Regular );
+            LblDataCustomizeName.Font = new Font(LblDataDefaultHosp.Font.Name, LblDataDefaultHosp.Font.SizeInPoints, FontStyle.Regular);
+            LblDataDefaultHosp.Font = new Font( LblDataDefaultHosp.Font.Name, LblDataDefaultHosp.Font.SizeInPoints, FontStyle.Regular );
+            LblDataLink.Font = new Font( LblDataLink.Font.Name, LblDataLink.Font.SizeInPoints, FontStyle.Regular );
+            LblDataPicInfo.Font = new Font( LblDataPicInfo.Font.Name, LblDataPicInfo.Font.SizeInPoints, FontStyle.Regular );
 
             //  Set font bold
             if (lblClick.Font.Bold != true)
@@ -143,8 +151,9 @@ namespace ParsDashboard
             SubRtn.Load_All_Forms(fSurgerySearch, this);
 
             SubRtn.Load_All_Forms(fDataCustName, this);
+            SubRtn.Load_All_Forms(fDataDefaultHosp, this);
 
-            SubRtn.Load_All_Forms(fDashBoard, this);
+            SubRtn.Load_All_Forms( fDashBoard, this );
 
             LblDashboard.Click += new EventHandler(LblDashboard_Click);
         }
@@ -178,13 +187,13 @@ namespace ParsDashboard
 
         private void LblData_Click(object sender, EventArgs e)
         {
-            SubRtn.DashboardAccordian(sender, e, tableLayoutPanel1);
-
-            NavSetStyleClick(LblDataCustomizeName);
+            SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
 
             fNav.ShowForm(fDataCustName);
 
-            SubRtn.ShowHideMenu(this, MnuDataCustomizeNames.Name);
+            NavSetStyleClick( LblDataCustomizeName );           
+
+            SubRtn.ShowHideMenu( this, MnuDataCustomizeNames.Name );
         }
 
         private void LblMetaData_Click(object sender, EventArgs e)
@@ -852,7 +861,11 @@ namespace ParsDashboard
 
         private void LblDataCustomizeName_Click(object sender, EventArgs e)
         {
-           
+            NavSetStyleClick( LblDataCustomizeName );
+
+            fNav.ShowForm( fDataCustName );
+
+            SubRtn.ShowHideMenu( this, MnuDataCustomizeNames.Name );
         }
 
         private void LblData_MouseEnter(object sender, EventArgs e)
@@ -864,6 +877,60 @@ namespace ParsDashboard
         {
             HelpMouseMove.MouseLeave( LblData );
         }
+
+        private void TSMnuDataCustNameClearAll_Click(object sender, EventArgs e)
+        {
+            SubRtn.ClearDataCustomizeNames( fDataCustName );
+        }
+
+        private void LblDataDefaultHosp_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblDataDefaultHosp );
+        }
+
+        private void LblDataDefaultHosp_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblDataDefaultHosp );
+        }
+
+        private void LblDataLink_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblDataLink );
+        }
+
+        private void LblDataLink_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblDataLink );
+        }
+
+        private void LblDataPicInfo_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblDataPicInfo );
+        }
+
+        private void LblDataPicInfo_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblDataPicInfo );
+        }
+
+        private void LblDataDefaultHosp_Click(object sender, EventArgs e)
+        {
+            NavSetStyleClick( LblDataDefaultHosp );
+
+            fNav.ShowForm( fDataDefaultHosp );
+
+            SubRtn.ShowHideMenu( this, MnuDataDefaultHosp.Name );
+        }
+
+        private void LblDataCustomizeName_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblDataCustomizeName );
+        }
+
+        private void LblDataCustomizeName_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblDataCustomizeName );
+        }
     }
 
     public class SubRoutine
@@ -872,11 +939,11 @@ namespace ParsDashboard
         {
             foreach (Control ctr in fMain.Controls)
             {
-                if (ctr is MenuStrip & ctr.Name == ControlName)
+                if ( ctr is MenuStrip & ctr.Name == ControlName )
                 {
                     ctr.Visible = true;
                 }
-                else if (ctr is MenuStrip)
+                else if ( ctr is MenuStrip )
                 {
                     ctr.Visible = false;
                 }
@@ -946,14 +1013,19 @@ namespace ParsDashboard
                             }
                             else
                             {
-                                if (p.Controls.Count == 3)
+                                if ( p.Controls.Count == 3 )
+                                {
+                                    p.Height = p.Controls.Count * 28;
+                                    p.Tag = "Expanded";
+                                }
+                                else if ( p.Controls.Count == 5 )
                                 {
                                     p.Height = p.Controls.Count * 28;
                                     p.Tag = "Expanded";
                                 }
                                 else
                                 {
-                                    p.Height = (p.Controls.Count - 1) * 28;
+                                    p.Height = ( p.Controls.Count - 1 ) * 28;
                                     p.Tag = "Expanded";
                                 }
                             }
@@ -1049,11 +1121,6 @@ namespace ParsDashboard
 
                 helper.ClearUpDwn(ctlupdwn);
             }
-        }
-
-        public void SurgeryClearDate(Form fSurgery)
-        {
-
         }
 
         public void ClearFiscalYear(Form fSurgerySearch)
@@ -1197,6 +1264,65 @@ namespace ParsDashboard
 
             helper.ClearListBoxes(ctllstFrom, ctllstTo);
         }
-    }
 
+        public void ClearDataCustomizeNames( Form fDataCustName )
+        {
+            Helper helper = new Helper();
+
+            //  clear doctor
+            Control txt = SubRoutine.FindControl( fDataCustName, "TxtNewDr" );
+            TextBox ctltxt = txt as TextBox;
+
+            helper.ClearTextBox( ctltxt );
+
+            //  clear hospital
+            txt = SubRoutine.FindControl( fDataCustName, "TxtNewHospital" );
+            ctltxt = txt as TextBox;
+
+            helper.ClearTextBox( ctltxt );
+
+            //  clear location
+            txt = SubRoutine.FindControl( fDataCustName, "TxtNewLocation" );
+            ctltxt = txt as TextBox;
+
+            helper.ClearTextBox( ctltxt );
+
+            //  clear level
+            txt = SubRoutine.FindControl( fDataCustName, "TxtNewLevel" );
+            ctltxt = txt as TextBox;
+
+            helper.ClearTextBox( ctltxt );
+
+            //  clear cpt
+            txt = SubRoutine.FindControl( fDataCustName, "TxtNewCpt" );
+            ctltxt = txt as TextBox;
+
+            helper.ClearTextBox( ctltxt );
+
+            //  clear dx
+            txt = SubRoutine.FindControl( fDataCustName, "TxtNewDx" );
+            ctltxt = txt as TextBox;
+
+            helper.ClearTextBox( ctltxt );
+
+            //  clear surgery
+            txt = SubRoutine.FindControl( fDataCustName, "TxtNewSurgery" );
+            ctltxt = txt as TextBox;
+
+            helper.ClearTextBox( ctltxt );
+
+            //  clear instrumentation
+            txt = SubRoutine.FindControl( fDataCustName, "TxtNewInst" );
+            ctltxt = txt as TextBox;
+
+            helper.ClearTextBox( ctltxt );
+
+            //  clear complication
+            txt = SubRoutine.FindControl( fDataCustName, "TxtNewComp" );
+            ctltxt = txt as TextBox;
+
+            helper.ClearTextBox( ctltxt );
+
+        }
+    }
 }

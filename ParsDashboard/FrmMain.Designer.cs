@@ -146,6 +146,12 @@
             this.TSMnuDataCustNameRestore = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuDataCustNameBreak2 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuDataCustNameClearAll = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuDataDefaultHosp = new System.Windows.Forms.MenuStrip();
+            this.TSMnuDataDefaultHospSave = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDataDefaultHospBreak1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDataDefaultHospRemoveDefault = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDataDefaultHospBreak2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDataDefaultHospClear = new System.Windows.Forms.ToolStripMenuItem();
             this.PnlDashboard.SuspendLayout();
             this.PnlPatient.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -166,6 +172,7 @@
             this.MnuSurgery.SuspendLayout();
             this.MnuSurgerySearch.SuspendLayout();
             this.MnuDataCustomizeNames.SuspendLayout();
+            this.MnuDataDefaultHosp.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnlDashboard
@@ -377,6 +384,7 @@
             this.PnlData.Controls.Add(this.LblDataDefaultHosp);
             this.PnlData.Controls.Add(this.LblDataCustomizeName);
             this.PnlData.Controls.Add(this.LblData);
+            this.PnlData.Dock = System.Windows.Forms.DockStyle.Left;
             this.PnlData.Location = new System.Drawing.Point(2, 599);
             this.PnlData.Margin = new System.Windows.Forms.Padding(0);
             this.PnlData.MinimumSize = new System.Drawing.Size(200, 0);
@@ -394,6 +402,8 @@
             this.LblDataPicInfo.Size = new System.Drawing.Size(79, 17);
             this.LblDataPicInfo.TabIndex = 5;
             this.LblDataPicInfo.Text = "Picture Info";
+            this.LblDataPicInfo.MouseEnter += new System.EventHandler(this.LblDataPicInfo_MouseEnter);
+            this.LblDataPicInfo.MouseLeave += new System.EventHandler(this.LblDataPicInfo_MouseLeave);
             // 
             // LblDataLink
             // 
@@ -404,6 +414,8 @@
             this.LblDataLink.Size = new System.Drawing.Size(34, 17);
             this.LblDataLink.TabIndex = 4;
             this.LblDataLink.Text = "Link";
+            this.LblDataLink.MouseEnter += new System.EventHandler(this.LblDataLink_MouseEnter);
+            this.LblDataLink.MouseLeave += new System.EventHandler(this.LblDataLink_MouseLeave);
             // 
             // LblDataDefaultHosp
             // 
@@ -414,6 +426,9 @@
             this.LblDataDefaultHosp.Size = new System.Drawing.Size(108, 17);
             this.LblDataDefaultHosp.TabIndex = 3;
             this.LblDataDefaultHosp.Text = "Default Hospital";
+            this.LblDataDefaultHosp.Click += new System.EventHandler(this.LblDataDefaultHosp_Click);
+            this.LblDataDefaultHosp.MouseEnter += new System.EventHandler(this.LblDataDefaultHosp_MouseEnter);
+            this.LblDataDefaultHosp.MouseLeave += new System.EventHandler(this.LblDataDefaultHosp_MouseLeave);
             // 
             // LblDataCustomizeName
             // 
@@ -425,6 +440,8 @@
             this.LblDataCustomizeName.TabIndex = 2;
             this.LblDataCustomizeName.Text = "Customize Names";
             this.LblDataCustomizeName.Click += new System.EventHandler(this.LblDataCustomizeName_Click);
+            this.LblDataCustomizeName.MouseEnter += new System.EventHandler(this.LblDataCustomizeName_MouseEnter);
+            this.LblDataCustomizeName.MouseLeave += new System.EventHandler(this.LblDataCustomizeName_MouseLeave);
             // 
             // LblData
             // 
@@ -1456,21 +1473,74 @@
             this.TSMnuDataCustNameClearAll.Name = "TSMnuDataCustNameClearAll";
             this.TSMnuDataCustNameClearAll.Size = new System.Drawing.Size(77, 24);
             this.TSMnuDataCustNameClearAll.Text = "Clear All";
+            this.TSMnuDataCustNameClearAll.Click += new System.EventHandler(this.TSMnuDataCustNameClearAll_Click);
+            // 
+            // MnuDataDefaultHosp
+            // 
+            this.MnuDataDefaultHosp.ImageScalingSize = new System.Drawing.Size(17, 17);
+            this.MnuDataDefaultHosp.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMnuDataDefaultHospSave,
+            this.TSMnuDataDefaultHospBreak1,
+            this.TSMnuDataDefaultHospRemoveDefault,
+            this.TSMnuDataDefaultHospBreak2,
+            this.TSMnuDataDefaultHospClear});
+            this.MnuDataDefaultHosp.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MnuDataDefaultHosp.Location = new System.Drawing.Point(185, 28);
+            this.MnuDataDefaultHosp.Name = "MnuDataDefaultHosp";
+            this.MnuDataDefaultHosp.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuDataDefaultHosp.Size = new System.Drawing.Size(1212, 28);
+            this.MnuDataDefaultHosp.TabIndex = 22;
+            this.MnuDataDefaultHosp.Text = "menuStrip1";
+            this.MnuDataDefaultHosp.Visible = false;
+            // 
+            // TSMnuDataDefaultHospSave
+            // 
+            this.TSMnuDataDefaultHospSave.Name = "TSMnuDataDefaultHospSave";
+            this.TSMnuDataDefaultHospSave.Size = new System.Drawing.Size(52, 24);
+            this.TSMnuDataDefaultHospSave.Text = "Save";
+            // 
+            // TSMnuDataDefaultHospBreak1
+            // 
+            this.TSMnuDataDefaultHospBreak1.Enabled = false;
+            this.TSMnuDataDefaultHospBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuDataDefaultHospBreak1.Name = "TSMnuDataDefaultHospBreak1";
+            this.TSMnuDataDefaultHospBreak1.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuDataDefaultHospBreak1.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuDataDefaultHospBreak1.Text = "|";
+            // 
+            // TSMnuDataDefaultHospRemoveDefault
+            // 
+            this.TSMnuDataDefaultHospRemoveDefault.Name = "TSMnuDataDefaultHospRemoveDefault";
+            this.TSMnuDataDefaultHospRemoveDefault.Size = new System.Drawing.Size(128, 24);
+            this.TSMnuDataDefaultHospRemoveDefault.Text = "Remove Default";
+            // 
+            // TSMnuDataDefaultHospBreak2
+            // 
+            this.TSMnuDataDefaultHospBreak2.Name = "TSMnuDataDefaultHospBreak2";
+            this.TSMnuDataDefaultHospBreak2.Size = new System.Drawing.Size(25, 24);
+            this.TSMnuDataDefaultHospBreak2.Text = "|";
+            // 
+            // TSMnuDataDefaultHospClear
+            // 
+            this.TSMnuDataDefaultHospClear.Name = "TSMnuDataDefaultHospClear";
+            this.TSMnuDataDefaultHospClear.Size = new System.Drawing.Size(55, 24);
+            this.TSMnuDataDefaultHospClear.Text = "Clear";
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1397, 976);
+            this.Controls.Add(this.MnuDataDefaultHosp);
             this.Controls.Add(this.MnuDataCustomizeNames);
-            this.Controls.Add(this.MnuSurgerySearch);
-            this.Controls.Add(this.MnuSurgery);
             this.Controls.Add(this.MnuImages);
             this.Controls.Add(this.MnuImagesSearch);
             this.Controls.Add(this.MnuImageSearchResult);
             this.Controls.Add(this.MnuPatient);
             this.Controls.Add(this.MnuImageFilter);
             this.Controls.Add(this.MnuPatientSearch);
+            this.Controls.Add(this.MnuSurgery);
+            this.Controls.Add(this.MnuSurgerySearch);
             this.Controls.Add(this.MnuDashboard);
             this.Controls.Add(this.tableLayoutPanel1);
             this.IsMdiContainer = true;
@@ -1519,6 +1589,8 @@
             this.MnuSurgerySearch.PerformLayout();
             this.MnuDataCustomizeNames.ResumeLayout(false);
             this.MnuDataCustomizeNames.PerformLayout();
+            this.MnuDataDefaultHosp.ResumeLayout(false);
+            this.MnuDataDefaultHosp.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1643,6 +1715,12 @@
         private System.Windows.Forms.ToolStripMenuItem TSMnuDataCustNameRestore;
         private System.Windows.Forms.ToolStripMenuItem TSMnuDataCustNameBreak2;
         private System.Windows.Forms.ToolStripMenuItem TSMnuDataCustNameClearAll;
+        private System.Windows.Forms.MenuStrip MnuDataDefaultHosp;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataDefaultHospSave;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataDefaultHospBreak1;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataDefaultHospRemoveDefault;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataDefaultHospBreak2;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataDefaultHospClear;
     }
 }
 
