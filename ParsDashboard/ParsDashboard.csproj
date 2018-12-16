@@ -64,6 +64,12 @@
     <Compile Include="FrmDataDefaultHosp.Designer.cs">
       <DependentUpon>FrmDataDefaultHosp.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmDataLink.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDataLink.Designer.cs">
+      <DependentUpon>FrmDataLink.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmFilterAge.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -143,6 +149,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDataDefaultHosp.resx">
       <DependentUpon>FrmDataDefaultHosp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDataLink.resx">
+      <DependentUpon>FrmDataLink.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFilterAge.resx">
       <DependentUpon>FrmFilterAge.cs</DependentUpon>
