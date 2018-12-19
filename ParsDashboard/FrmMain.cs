@@ -35,6 +35,8 @@ namespace ParsDashboard
         FrmDataLink fDataLink = new FrmDataLink();
         FrmDataPicInfo fDataPicInfo = new FrmDataPicInfo();
 
+        FrmMDComplication fMDComp = new FrmMDComplication();
+
         #endregion
 
         #region Define Helper Classes    
@@ -52,36 +54,56 @@ namespace ParsDashboard
         {
             Label lblClick = lbl;
 
-            //  Dashboard Panel
-            LblDashboard.Font = new Font(LblDashboard.Font.Name, LblDashboard.Font.SizeInPoints, FontStyle.Regular);
+            //  Dashboard Panel            
+            LblDashboard.Font = NavSetStyleLbl( LblDashboard );
 
-            //  Images Panel
-            LblImages.Font = new Font(LblImages.Font.Name, LblImages.Font.SizeInPoints, FontStyle.Regular);
-            LblImagesAdd.Font = new Font(LblImagesAdd.Font.Name, LblImagesAdd.Font.SizeInPoints, FontStyle.Regular);
-            LblImagesSearch.Font = new Font(LblImagesSearch.Font.Name, LblImagesSearch.Font.SizeInPoints, FontStyle.Regular);
-            LblImagesFilter.Font = new Font(LblImagesFilter.Font.Name, LblImagesFilter.Font.SizeInPoints, FontStyle.Regular);
-            LblImagesSearchResults.Font = new Font(LblImagesSearchResults.Font.Name, LblImagesSearchResults.Font.SizeInPoints, FontStyle.Regular);
-            LblImagesSearchToPatient.Font = new Font(LblImagesSearchToPatient.Font.Name, LblImagesSearchToPatient.Font.SizeInPoints, FontStyle.Regular);
+            //  Images Panel            
+            LblImages.Font = NavSetStyleLbl( LblImages );
+            LblImagesAdd.Font = NavSetStyleLbl( LblImagesAdd );            
+            LblImagesSearch.Font = NavSetStyleLbl( LblImagesSearch );
+            LblImagesFilter.Font = NavSetStyleLbl( LblImagesFilter );
+            LblImagesSearchResults.Font = NavSetStyleLbl( LblImagesSearchResults );
+            LblImagesSearchToPatient.Font = NavSetStyleLbl( LblImagesSearchToPatient );
 
             //  Patient Panel
-            LblPatient.Font = new Font(LblPatient.Font.Name, LblPatient.Font.SizeInPoints, FontStyle.Regular);
-            LblPatientAdd.Font = new Font(LblPatientAdd.Font.Name, LblPatientAdd.Font.SizeInPoints, FontStyle.Regular);
-            LlbPatientSearch.Font = new Font(LlbPatientSearch.Font.Name, LlbPatientSearch.Font.SizeInPoints, FontStyle.Regular);
-            LblPatientFilter.Font = new Font(LblPatientFilter.Font.Name, LblPatientFilter.Font.SizeInPoints, FontStyle.Regular);
-            LblPatientSearchResults.Font = new Font(LblPatientSearchResults.Font.Name, LblPatientSearchResults.Font.SizeInPoints, FontStyle.Regular);
-            LblPatientSearchToImage.Font = new Font(LblPatientSearchToImage.Font.Name, LblPatientSearchToImage.Font.SizeInPoints, FontStyle.Regular);
+            LblPatient.Font = NavSetStyleLbl(LblPatient);
+            LblPatientAdd.Font = NavSetStyleLbl(LblPatientAdd);
+            LlbPatientSearch.Font = NavSetStyleLbl(LlbPatientSearch);
+            LblPatientFilter.Font = NavSetStyleLbl(LblPatientFilter);
+            LblPatientSearchResults.Font = NavSetStyleLbl(LblPatientSearchResults);
+            LblPatientSearchToImage.Font = NavSetStyleLbl(LblPatientSearchToImage);
 
             //  Surgery Panel
-            LblSurgery.Font = new Font(LblSurgery.Font.Name, LblSurgery.Font.SizeInPoints, FontStyle.Regular);
-            LblSurgeryAdd.Font = new Font(LblSurgeryAdd.Font.Name, LblSurgeryAdd.Font.SizeInPoints, FontStyle.Regular);
-            LblSurgerySearch.Font = new Font(LblSurgerySearch.Font.Name, LblSurgerySearch.Font.SizeInPoints, FontStyle.Regular);
+            LblSurgery.Font = NavSetStyleLbl(LblSurgery);
+            LblSurgeryAdd.Font = NavSetStyleLbl(LblSurgeryAdd);
+            LblSurgerySearch.Font = NavSetStyleLbl(LblSurgerySearch);
+
+            //  Report Panel
+            LblRpt.Font = NavSetStyleLbl(LblRpt);
+            LblSurgeryAdd.Font = NavSetStyleLbl(LblSurgeryAdd);
+            LblSurgerySearch.Font = NavSetStyleLbl(LblSurgerySearch);
 
             //  Data Panel
-            LblData.Font = new Font( LblData.Font.Name, LblData.Font.SizeInPoints, FontStyle.Regular );
-            LblDataCustomizeName.Font = new Font(LblDataDefaultHosp.Font.Name, LblDataDefaultHosp.Font.SizeInPoints, FontStyle.Regular);
-            LblDataDefaultHosp.Font = new Font( LblDataDefaultHosp.Font.Name, LblDataDefaultHosp.Font.SizeInPoints, FontStyle.Regular );
-            LblDataLink.Font = new Font( LblDataLink.Font.Name, LblDataLink.Font.SizeInPoints, FontStyle.Regular );
-            LblDataPicInfo.Font = new Font( LblDataPicInfo.Font.Name, LblDataPicInfo.Font.SizeInPoints, FontStyle.Regular );
+            LblData.Font = NavSetStyleLbl(LblData);
+            LblDataCustomizeName.Font = NavSetStyleLbl(LblDataCustomizeName);
+            LblDataDefaultHosp.Font = NavSetStyleLbl(LblDataDefaultHosp);
+            LblDataLink.Font = NavSetStyleLbl(LblDataLink);
+            LblDataPicInfo.Font = NavSetStyleLbl(LblDataPicInfo);
+
+            //  Meta Data Panel
+            LblMetaData.Font = NavSetStyleLbl(LblMetaData);
+            LblMDComp.Font = NavSetStyleLbl(LblMDComp);
+            LblMDCpt.Font = NavSetStyleLbl(LblMDCpt);
+            LblMDImageDesc.Font = NavSetStyleLbl(LblMDImageDesc);
+            LblMDDx.Font = NavSetStyleLbl(LblMDDx);
+            LblMDDr.Font = NavSetStyleLbl(LblMDDr);
+            LblMDFiscalYr.Font = NavSetStyleLbl(LblMDFiscalYr);
+            LblMDHospital.Font = NavSetStyleLbl(LblMDHospital);
+            LblMDInst.Font = NavSetStyleLbl(LblMDLevel);
+            LblMDLevel.Font = NavSetStyleLbl(LblMDInst);
+            LblMDLocation.Font = NavSetStyleLbl(LblMDLocation);
+            LblMDSurgery.Font = NavSetStyleLbl(LblMDSurgery);
+
 
             //  Set font bold
             if (lblClick.Font.Bold != true)
@@ -92,6 +114,12 @@ namespace ParsDashboard
             {
 
             }
+        }
+
+        public static Font NavSetStyleLbl( Label lbl )
+        {
+            lbl.Font = new Font( lbl.Font.Name, lbl.Font.SizeInPoints, FontStyle.Regular );
+            return lbl.Font;
         }
 
         private void SetPanel_Height()
@@ -157,6 +185,8 @@ namespace ParsDashboard
             SubRtn.Load_All_Forms( fDataLink, this );
             SubRtn.Load_All_Forms( fDataPicInfo, this );
 
+            SubRtn.Load_All_Forms(fMDComp, this);
+
             SubRtn.Load_All_Forms( fDashBoard, this );
 
             LblDashboard.Click += new EventHandler( LblDashboard_Click );
@@ -186,7 +216,9 @@ namespace ParsDashboard
 
         private void LblRpt_Click(object sender, EventArgs e)
         {
-            SubRtn.DashboardAccordian(sender, e, tableLayoutPanel1);
+            SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
+
+            NavSetStyleClick( LblRpt );
         }
 
         private void LblData_Click(object sender, EventArgs e)
@@ -203,6 +235,8 @@ namespace ParsDashboard
         private void LblMetaData_Click(object sender, EventArgs e)
         {
             SubRtn.DashboardAccordian(sender, e, tableLayoutPanel1);
+
+            NavSetStyleClick( LblMetaData );
         }
 
         private void LblEmailPic_Click(object sender, EventArgs e)
@@ -378,7 +412,7 @@ namespace ParsDashboard
 
         private void LblPatientSearchToImage_MouseEnter(object sender, EventArgs e)
         {
-            HelpMouseMove.MouseEnter(LblPatientSearchToImage);
+            HelpMouseMove.MouseEnter( LblPatientSearchToImage );
         }
 
         private void LblSurgery_MouseEnter(object sender, EventArgs e)
@@ -985,6 +1019,225 @@ namespace ParsDashboard
             fNav.ShowForm( fDataPicInfo );
 
             SubRtn.ShowHideMenu( this, MnuDataPicInfo.Name );
+        }
+
+        private void LblMDComp_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblMDComp );
+        }
+
+        private void LblMDComp_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblMDComp );
+        }
+
+        private void LblMDComp_Click(object sender, EventArgs e)
+        {
+            NavSetStyleClick( LblMDComp );
+
+            fNav.ShowForm( fMDComp ); 
+
+            SubRtn.ShowHideMenu( this, MnuMDComp.Name );
+        }
+
+        private void LblMDCpt_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblMDCpt );
+        }
+
+        private void LblMDCpt_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblMDCpt );
+        }
+
+        private void LblMDCpt_Click(object sender, EventArgs e)
+        {
+            NavSetStyleClick( LblMDCpt );
+        }
+
+        private void LblMDImageDesc_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblMDImageDesc );
+        }
+
+        private void LblMDImageDesc_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblMDImageDesc );
+        }
+
+        private void LblMDImageDesc_Click(object sender, EventArgs e)
+        {
+            NavSetStyleClick( LblMDImageDesc );
+        }
+
+        private void LblMDDx_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblMDDx );
+        }
+
+        private void LblMDDx_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblMDDx );
+        }
+
+        private void LblMDDx_Click(object sender, EventArgs e)
+        {
+            NavSetStyleClick( LblMDDx );
+        }
+
+        private void LblMDDr_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblMDDr );
+        }
+
+        private void LblMDDr_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblMDDr );
+        }
+
+        private void LblMDDr_Click(object sender, EventArgs e)
+        {
+            NavSetStyleClick( LblMDDr );
+        }
+
+        private void LblMDFiscalYr_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblMDFiscalYr );
+        }
+
+        private void LblMDFiscalYr_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblMDFiscalYr );
+        }
+
+        private void LblMDFiscalYr_Click(object sender, EventArgs e)
+        {
+            NavSetStyleClick( LblMDFiscalYr );
+        }
+
+        private void LblMDHospital_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblMDHospital );
+        }
+
+        private void LblMDHospital_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblMDHospital );
+        }
+
+        private void LblMDHospital_Click(object sender, EventArgs e)
+        {
+            NavSetStyleClick( LblMDHospital );
+        }
+
+        private void LblMDInst_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblMDInst );
+        }
+
+        private void LblMDInst_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblMDInst );
+        }
+
+        private void LblMDInst_Click(object sender, EventArgs e)
+        {
+            NavSetStyleClick( LblMDInst );
+        }
+
+        private void LblMDLevel_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblMDLevel );
+        }
+
+        private void LblMDLevel_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblMDLevel );
+        }
+
+        private void LblMDLevel_Click(object sender, EventArgs e)
+        {
+            NavSetStyleClick( LblMDLevel );
+        }
+
+        private void LblMDLocation_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblMDLocation );
+        }
+
+        private void LblMDLocation_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblMDLocation );
+        }
+
+        private void LblMDLocation_Click(object sender, EventArgs e)
+        {
+            NavSetStyleClick( LblMDLocation );
+        }
+
+        private void LblMDSurgery_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblMDSurgery );
+        }
+
+        private void LblMDSurgery_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblMDSurgery );
+        }
+
+        private void LblMDSurgery_Click(object sender, EventArgs e)
+        {
+            NavSetStyleClick( LblMDSurgery );
+        }
+
+        private void LblRpt_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblRpt );
+        }
+
+        private void LblRpt_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblRpt );
+        }
+
+        private void LblMetaData_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblMetaData );
+        }
+
+        private void LblMetaData_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblMetaData );
+        }
+
+        private void LblRptStatic_Click(object sender, EventArgs e)
+        {
+            NavSetStyleClick( LblRptStatic );
+        }
+
+        private void LblRptStatic_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblRptStatic );
+        }
+
+        private void LblRptStatic_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblRptStatic );
+        }
+
+        private void LblRptDynamic_Click(object sender, EventArgs e)
+        {
+            NavSetStyleClick( LblRptDynamic );
+        }
+
+        private void LblRptDynamic_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblRptDynamic );
+        }
+
+        private void LblRptDynamic_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblRptDynamic );
         }
     }
 

@@ -76,8 +76,8 @@
             this.LblImagesAdd = new System.Windows.Forms.Label();
             this.LblImages = new System.Windows.Forms.Label();
             this.PnlRpt = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.LblRptDynamic = new System.Windows.Forms.Label();
+            this.LblRptStatic = new System.Windows.Forms.Label();
             this.LblRpt = new System.Windows.Forms.Label();
             this.DlgImagesAdd = new System.Windows.Forms.OpenFileDialog();
             this.MnuDashboard = new System.Windows.Forms.MenuStrip();
@@ -168,6 +168,12 @@
             this.TSMnuDataPicInfoDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuDataPicInfoBreak2 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuDataPicInfoRename = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuMDComp = new System.Windows.Forms.MenuStrip();
+            this.TSMnuMDCompAdd = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuMDCompBreak1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuMDCompDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuMDCompBreak2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuMDCompRename = new System.Windows.Forms.ToolStripMenuItem();
             this.PnlDashboard.SuspendLayout();
             this.PnlPatient.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -191,6 +197,7 @@
             this.MnuDataDefaultHosp.SuspendLayout();
             this.MnuDataLink.SuspendLayout();
             this.MnuDataPicInfo.SuspendLayout();
+            this.MnuMDComp.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnlDashboard
@@ -231,12 +238,11 @@
             this.PnlPatient.Controls.Add(this.LlbPatientSearch);
             this.PnlPatient.Controls.Add(this.LblPatientAdd);
             this.PnlPatient.Controls.Add(this.LblPatient);
-            this.PnlPatient.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlPatient.Location = new System.Drawing.Point(2, 217);
+            this.PnlPatient.Location = new System.Drawing.Point(2, 86);
             this.PnlPatient.Margin = new System.Windows.Forms.Padding(0);
             this.PnlPatient.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlPatient.Name = "PnlPatient";
-            this.PnlPatient.Size = new System.Drawing.Size(200, 180);
+            this.PnlPatient.Size = new System.Drawing.Size(200, 48);
             this.PnlPatient.TabIndex = 2;
             this.PnlPatient.Tag = "Collapsed";
             // 
@@ -361,7 +367,7 @@
             this.PnlSecurity.Controls.Add(this.LblSecurityUserMgmt);
             this.PnlSecurity.Controls.Add(this.LblSecurity);
             this.PnlSecurity.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlSecurity.Location = new System.Drawing.Point(2, 927);
+            this.PnlSecurity.Location = new System.Drawing.Point(2, 739);
             this.PnlSecurity.Margin = new System.Windows.Forms.Padding(0);
             this.PnlSecurity.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlSecurity.Name = "PnlSecurity";
@@ -402,12 +408,11 @@
             this.PnlData.Controls.Add(this.LblDataDefaultHosp);
             this.PnlData.Controls.Add(this.LblDataCustomizeName);
             this.PnlData.Controls.Add(this.LblData);
-            this.PnlData.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlData.Location = new System.Drawing.Point(2, 599);
+            this.PnlData.Location = new System.Drawing.Point(2, 239);
             this.PnlData.Margin = new System.Windows.Forms.Padding(0);
             this.PnlData.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlData.Name = "PnlData";
-            this.PnlData.Size = new System.Drawing.Size(200, 173);
+            this.PnlData.Size = new System.Drawing.Size(200, 52);
             this.PnlData.TabIndex = 7;
             this.PnlData.Tag = "Collapsed";
             // 
@@ -486,12 +491,11 @@
             this.PnlSurgery.Controls.Add(this.LblSurgerySearch);
             this.PnlSurgery.Controls.Add(this.LblSurgeryAdd);
             this.PnlSurgery.Controls.Add(this.LblSurgery);
-            this.PnlSurgery.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlSurgery.Location = new System.Drawing.Point(2, 399);
+            this.PnlSurgery.Location = new System.Drawing.Point(2, 136);
             this.PnlSurgery.Margin = new System.Windows.Forms.Padding(0);
             this.PnlSurgery.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlSurgery.Name = "PnlSurgery";
-            this.PnlSurgery.Size = new System.Drawing.Size(200, 98);
+            this.PnlSurgery.Size = new System.Drawing.Size(200, 47);
             this.PnlSurgery.TabIndex = 6;
             this.PnlSurgery.Tag = "Collapsed";
             // 
@@ -553,11 +557,11 @@
             this.PnlMetaData.Controls.Add(this.LblMDCpt);
             this.PnlMetaData.Controls.Add(this.LblMDComp);
             this.PnlMetaData.Controls.Add(this.LblMetaData);
-            this.PnlMetaData.Location = new System.Drawing.Point(2, 774);
+            this.PnlMetaData.Location = new System.Drawing.Point(2, 293);
             this.PnlMetaData.Margin = new System.Windows.Forms.Padding(0);
             this.PnlMetaData.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlMetaData.Name = "PnlMetaData";
-            this.PnlMetaData.Size = new System.Drawing.Size(200, 81);
+            this.PnlMetaData.Size = new System.Drawing.Size(200, 374);
             this.PnlMetaData.TabIndex = 8;
             this.PnlMetaData.Tag = "Collapsed";
             // 
@@ -570,6 +574,9 @@
             this.LblMDSurgery.Size = new System.Drawing.Size(58, 17);
             this.LblMDSurgery.TabIndex = 12;
             this.LblMDSurgery.Text = "Surgery";
+            this.LblMDSurgery.Click += new System.EventHandler(this.LblMDSurgery_Click);
+            this.LblMDSurgery.MouseEnter += new System.EventHandler(this.LblMDSurgery_MouseEnter);
+            this.LblMDSurgery.MouseLeave += new System.EventHandler(this.LblMDSurgery_MouseLeave);
             // 
             // LblMDLocation
             // 
@@ -580,6 +587,9 @@
             this.LblMDLocation.Size = new System.Drawing.Size(62, 17);
             this.LblMDLocation.TabIndex = 11;
             this.LblMDLocation.Text = "Location";
+            this.LblMDLocation.Click += new System.EventHandler(this.LblMDLocation_Click);
+            this.LblMDLocation.MouseEnter += new System.EventHandler(this.LblMDLocation_MouseEnter);
+            this.LblMDLocation.MouseLeave += new System.EventHandler(this.LblMDLocation_MouseLeave);
             // 
             // LblMDLevel
             // 
@@ -590,6 +600,9 @@
             this.LblMDLevel.Size = new System.Drawing.Size(42, 17);
             this.LblMDLevel.TabIndex = 10;
             this.LblMDLevel.Text = "Level";
+            this.LblMDLevel.Click += new System.EventHandler(this.LblMDLevel_Click);
+            this.LblMDLevel.MouseEnter += new System.EventHandler(this.LblMDLevel_MouseEnter);
+            this.LblMDLevel.MouseLeave += new System.EventHandler(this.LblMDLevel_MouseLeave);
             // 
             // LblMDInst
             // 
@@ -600,6 +613,9 @@
             this.LblMDInst.Size = new System.Drawing.Size(105, 17);
             this.LblMDInst.TabIndex = 9;
             this.LblMDInst.Text = "Instrumentation";
+            this.LblMDInst.Click += new System.EventHandler(this.LblMDInst_Click);
+            this.LblMDInst.MouseEnter += new System.EventHandler(this.LblMDInst_MouseEnter);
+            this.LblMDInst.MouseLeave += new System.EventHandler(this.LblMDInst_MouseLeave);
             // 
             // LblMDHospital
             // 
@@ -610,6 +626,9 @@
             this.LblMDHospital.Size = new System.Drawing.Size(59, 17);
             this.LblMDHospital.TabIndex = 8;
             this.LblMDHospital.Text = "Hospital";
+            this.LblMDHospital.Click += new System.EventHandler(this.LblMDHospital_Click);
+            this.LblMDHospital.MouseEnter += new System.EventHandler(this.LblMDHospital_MouseEnter);
+            this.LblMDHospital.MouseLeave += new System.EventHandler(this.LblMDHospital_MouseLeave);
             // 
             // LblMDFiscalYr
             // 
@@ -620,6 +639,9 @@
             this.LblMDFiscalYr.Size = new System.Drawing.Size(78, 17);
             this.LblMDFiscalYr.TabIndex = 7;
             this.LblMDFiscalYr.Text = "Fiscal Year";
+            this.LblMDFiscalYr.Click += new System.EventHandler(this.LblMDFiscalYr_Click);
+            this.LblMDFiscalYr.MouseEnter += new System.EventHandler(this.LblMDFiscalYr_MouseEnter);
+            this.LblMDFiscalYr.MouseLeave += new System.EventHandler(this.LblMDFiscalYr_MouseLeave);
             // 
             // LblMDDr
             // 
@@ -630,6 +652,9 @@
             this.LblMDDr.Size = new System.Drawing.Size(50, 17);
             this.LblMDDr.TabIndex = 6;
             this.LblMDDr.Text = "Doctor";
+            this.LblMDDr.Click += new System.EventHandler(this.LblMDDr_Click);
+            this.LblMDDr.MouseEnter += new System.EventHandler(this.LblMDDr_MouseEnter);
+            this.LblMDDr.MouseLeave += new System.EventHandler(this.LblMDDr_MouseLeave);
             // 
             // LblMDDx
             // 
@@ -640,6 +665,9 @@
             this.LblMDDx.Size = new System.Drawing.Size(70, 17);
             this.LblMDDx.TabIndex = 5;
             this.LblMDDx.Text = "Diagnosis";
+            this.LblMDDx.Click += new System.EventHandler(this.LblMDDx_Click);
+            this.LblMDDx.MouseEnter += new System.EventHandler(this.LblMDDx_MouseEnter);
+            this.LblMDDx.MouseLeave += new System.EventHandler(this.LblMDDx_MouseLeave);
             // 
             // LblMDImageDesc
             // 
@@ -650,6 +678,9 @@
             this.LblMDImageDesc.Size = new System.Drawing.Size(82, 17);
             this.LblMDImageDesc.TabIndex = 4;
             this.LblMDImageDesc.Text = "Image Desc";
+            this.LblMDImageDesc.Click += new System.EventHandler(this.LblMDImageDesc_Click);
+            this.LblMDImageDesc.MouseEnter += new System.EventHandler(this.LblMDImageDesc_MouseEnter);
+            this.LblMDImageDesc.MouseLeave += new System.EventHandler(this.LblMDImageDesc_MouseLeave);
             // 
             // LblMDCpt
             // 
@@ -660,6 +691,9 @@
             this.LblMDCpt.Size = new System.Drawing.Size(35, 17);
             this.LblMDCpt.TabIndex = 3;
             this.LblMDCpt.Text = "CPT";
+            this.LblMDCpt.Click += new System.EventHandler(this.LblMDCpt_Click);
+            this.LblMDCpt.MouseEnter += new System.EventHandler(this.LblMDCpt_MouseEnter);
+            this.LblMDCpt.MouseLeave += new System.EventHandler(this.LblMDCpt_MouseLeave);
             // 
             // LblMDComp
             // 
@@ -670,6 +704,9 @@
             this.LblMDComp.Size = new System.Drawing.Size(88, 17);
             this.LblMDComp.TabIndex = 2;
             this.LblMDComp.Text = "Complication";
+            this.LblMDComp.Click += new System.EventHandler(this.LblMDComp_Click);
+            this.LblMDComp.MouseEnter += new System.EventHandler(this.LblMDComp_MouseEnter);
+            this.LblMDComp.MouseLeave += new System.EventHandler(this.LblMDComp_MouseLeave);
             // 
             // LblMetaData
             // 
@@ -685,6 +722,8 @@
             this.LblMetaData.Text = "Meta Data";
             this.LblMetaData.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LblMetaData.Click += new System.EventHandler(this.LblMetaData_Click);
+            this.LblMetaData.MouseEnter += new System.EventHandler(this.LblMetaData_MouseEnter);
+            this.LblMetaData.MouseLeave += new System.EventHandler(this.LblMetaData_MouseLeave);
             // 
             // PnlEmailPic
             // 
@@ -693,7 +732,7 @@
             this.PnlEmailPic.Controls.Add(this.LblEmailPicPicOnly);
             this.PnlEmailPic.Controls.Add(this.LblEmailPic);
             this.PnlEmailPic.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlEmailPic.Location = new System.Drawing.Point(2, 859);
+            this.PnlEmailPic.Location = new System.Drawing.Point(2, 671);
             this.PnlEmailPic.Margin = new System.Windows.Forms.Padding(0);
             this.PnlEmailPic.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlEmailPic.Name = "PnlEmailPic";
@@ -745,12 +784,11 @@
             this.PnlImages.Controls.Add(this.LblImagesSearch);
             this.PnlImages.Controls.Add(this.LblImagesAdd);
             this.PnlImages.Controls.Add(this.LblImages);
-            this.PnlImages.Dock = System.Windows.Forms.DockStyle.Left;
             this.PnlImages.Location = new System.Drawing.Point(2, 35);
             this.PnlImages.Margin = new System.Windows.Forms.Padding(0);
             this.PnlImages.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlImages.Name = "PnlImages";
-            this.PnlImages.Size = new System.Drawing.Size(200, 180);
+            this.PnlImages.Size = new System.Drawing.Size(200, 49);
             this.PnlImages.TabIndex = 4;
             this.PnlImages.Tag = "Collapsed";
             // 
@@ -840,37 +878,42 @@
             // PnlRpt
             // 
             this.PnlRpt.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.PnlRpt.Controls.Add(this.label3);
-            this.PnlRpt.Controls.Add(this.label6);
+            this.PnlRpt.Controls.Add(this.LblRptDynamic);
+            this.PnlRpt.Controls.Add(this.LblRptStatic);
             this.PnlRpt.Controls.Add(this.LblRpt);
-            this.PnlRpt.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlRpt.Location = new System.Drawing.Point(2, 499);
+            this.PnlRpt.Location = new System.Drawing.Point(2, 185);
             this.PnlRpt.Margin = new System.Windows.Forms.Padding(0);
             this.PnlRpt.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlRpt.Name = "PnlRpt";
-            this.PnlRpt.Size = new System.Drawing.Size(200, 98);
+            this.PnlRpt.Size = new System.Drawing.Size(200, 52);
             this.PnlRpt.TabIndex = 5;
             this.PnlRpt.Tag = "Collapsed";
             // 
-            // label3
+            // LblRptDynamic
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(13, 70);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(53, 17);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Search";
+            this.LblRptDynamic.AutoSize = true;
+            this.LblRptDynamic.Location = new System.Drawing.Point(13, 70);
+            this.LblRptDynamic.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblRptDynamic.Name = "LblRptDynamic";
+            this.LblRptDynamic.Size = new System.Drawing.Size(62, 17);
+            this.LblRptDynamic.TabIndex = 3;
+            this.LblRptDynamic.Text = "Dynamic";
+            this.LblRptDynamic.Click += new System.EventHandler(this.LblRptDynamic_Click);
+            this.LblRptDynamic.MouseEnter += new System.EventHandler(this.LblRptDynamic_MouseEnter);
+            this.LblRptDynamic.MouseLeave += new System.EventHandler(this.LblRptDynamic_MouseLeave);
             // 
-            // label6
+            // LblRptStatic
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(13, 43);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(33, 17);
-            this.label6.TabIndex = 2;
-            this.label6.Text = "Add";
+            this.LblRptStatic.AutoSize = true;
+            this.LblRptStatic.Location = new System.Drawing.Point(13, 43);
+            this.LblRptStatic.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblRptStatic.Name = "LblRptStatic";
+            this.LblRptStatic.Size = new System.Drawing.Size(43, 17);
+            this.LblRptStatic.TabIndex = 2;
+            this.LblRptStatic.Text = "Static";
+            this.LblRptStatic.Click += new System.EventHandler(this.LblRptStatic_Click);
+            this.LblRptStatic.MouseEnter += new System.EventHandler(this.LblRptStatic_MouseEnter);
+            this.LblRptStatic.MouseLeave += new System.EventHandler(this.LblRptStatic_MouseLeave);
             // 
             // LblRpt
             // 
@@ -886,6 +929,8 @@
             this.LblRpt.Text = "Reports";
             this.LblRpt.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LblRpt.Click += new System.EventHandler(this.LblRpt_Click);
+            this.LblRpt.MouseEnter += new System.EventHandler(this.LblRpt_MouseEnter);
+            this.LblRpt.MouseLeave += new System.EventHandler(this.LblRpt_MouseLeave);
             // 
             // DlgImagesAdd
             // 
@@ -1697,23 +1742,77 @@
             this.TSMnuDataPicInfoRename.Size = new System.Drawing.Size(75, 24);
             this.TSMnuDataPicInfoRename.Text = "Rename";
             // 
+            // MnuMDComp
+            // 
+            this.MnuMDComp.ImageScalingSize = new System.Drawing.Size(17, 17);
+            this.MnuMDComp.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMnuMDCompAdd,
+            this.TSMnuMDCompBreak1,
+            this.TSMnuMDCompDelete,
+            this.TSMnuMDCompBreak2,
+            this.TSMnuMDCompRename});
+            this.MnuMDComp.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MnuMDComp.Location = new System.Drawing.Point(185, 28);
+            this.MnuMDComp.Name = "MnuMDComp";
+            this.MnuMDComp.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuMDComp.Size = new System.Drawing.Size(1212, 28);
+            this.MnuMDComp.TabIndex = 27;
+            this.MnuMDComp.Text = "menuStrip1";
+            this.MnuMDComp.Visible = false;
+            // 
+            // TSMnuMDCompAdd
+            // 
+            this.TSMnuMDCompAdd.Name = "TSMnuMDCompAdd";
+            this.TSMnuMDCompAdd.Size = new System.Drawing.Size(53, 24);
+            this.TSMnuMDCompAdd.Text = "Add ";
+            // 
+            // TSMnuMDCompBreak1
+            // 
+            this.TSMnuMDCompBreak1.Enabled = false;
+            this.TSMnuMDCompBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuMDCompBreak1.Name = "TSMnuMDCompBreak1";
+            this.TSMnuMDCompBreak1.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuMDCompBreak1.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuMDCompBreak1.Text = "|";
+            // 
+            // TSMnuMDCompDelete
+            // 
+            this.TSMnuMDCompDelete.Name = "TSMnuMDCompDelete";
+            this.TSMnuMDCompDelete.Size = new System.Drawing.Size(65, 24);
+            this.TSMnuMDCompDelete.Text = "Delete";
+            // 
+            // TSMnuMDCompBreak2
+            // 
+            this.TSMnuMDCompBreak2.Enabled = false;
+            this.TSMnuMDCompBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuMDCompBreak2.Name = "TSMnuMDCompBreak2";
+            this.TSMnuMDCompBreak2.Size = new System.Drawing.Size(26, 24);
+            this.TSMnuMDCompBreak2.Text = "|";
+            // 
+            // TSMnuMDCompRename
+            // 
+            this.TSMnuMDCompRename.Name = "TSMnuMDCompRename";
+            this.TSMnuMDCompRename.Size = new System.Drawing.Size(75, 24);
+            this.TSMnuMDCompRename.Text = "Rename";
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1397, 976);
-            this.Controls.Add(this.MnuDataPicInfo);
-            this.Controls.Add(this.MnuDataLink);
-            this.Controls.Add(this.MnuDataDefaultHosp);
-            this.Controls.Add(this.MnuDataCustomizeNames);
-            this.Controls.Add(this.MnuSurgerySearch);
-            this.Controls.Add(this.MnuSurgery);
-            this.Controls.Add(this.MnuPatientSearch);
-            this.Controls.Add(this.MnuImageFilter);
-            this.Controls.Add(this.MnuPatient);
-            this.Controls.Add(this.MnuImageSearchResult);
-            this.Controls.Add(this.MnuImagesSearch);
+            this.Controls.Add(this.MnuMDComp);
             this.Controls.Add(this.MnuImages);
+            this.Controls.Add(this.MnuImagesSearch);
+            this.Controls.Add(this.MnuImageSearchResult);
+            this.Controls.Add(this.MnuPatient);
+            this.Controls.Add(this.MnuImageFilter);
+            this.Controls.Add(this.MnuPatientSearch);
+            this.Controls.Add(this.MnuSurgery);
+            this.Controls.Add(this.MnuSurgerySearch);
+            this.Controls.Add(this.MnuDataCustomizeNames);
+            this.Controls.Add(this.MnuDataDefaultHosp);
+            this.Controls.Add(this.MnuDataLink);
+            this.Controls.Add(this.MnuDataPicInfo);
             this.Controls.Add(this.MnuDashboard);
             this.Controls.Add(this.tableLayoutPanel1);
             this.IsMdiContainer = true;
@@ -1768,6 +1867,8 @@
             this.MnuDataLink.PerformLayout();
             this.MnuDataPicInfo.ResumeLayout(false);
             this.MnuDataPicInfo.PerformLayout();
+            this.MnuMDComp.ResumeLayout(false);
+            this.MnuMDComp.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1794,8 +1895,8 @@
         private System.Windows.Forms.Label LblImagesAdd;
         internal System.Windows.Forms.Label LblImages;
         internal System.Windows.Forms.Panel PnlRpt;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label LblRptDynamic;
+        private System.Windows.Forms.Label LblRptStatic;
         internal System.Windows.Forms.Label LblRpt;
         private System.Windows.Forms.Label LblDataPicInfo;
         private System.Windows.Forms.Label LblDataLink;
@@ -1914,6 +2015,12 @@
         private System.Windows.Forms.ToolStripMenuItem TSMnuDataPicInfoDelete;
         private System.Windows.Forms.ToolStripMenuItem TSMnuDataPicInfoBreak2;
         private System.Windows.Forms.ToolStripMenuItem TSMnuDataPicInfoRename;
+        private System.Windows.Forms.MenuStrip MnuMDComp;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuMDCompAdd;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuMDCompBreak1;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuMDCompDelete;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuMDCompBreak2;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuMDCompRename;
     }
 }
 

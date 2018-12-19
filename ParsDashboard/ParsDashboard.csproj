@@ -118,6 +118,12 @@
     <Compile Include="FrmImageSearch.Designer.cs">
       <DependentUpon>FrmImageSearch.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmMDComplication.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMDComplication.Designer.cs">
+      <DependentUpon>FrmMDComplication.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmPatient.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -182,6 +188,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmMain.resx">
       <DependentUpon>FrmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMDComplication.resx">
+      <DependentUpon>FrmMDComplication.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPatient.resx">
       <DependentUpon>FrmPatient.cs</DependentUpon>
