@@ -32,6 +32,8 @@ namespace ParsDashboard
 
         FrmDataCustomizeName fDataCustName = new FrmDataCustomizeName();
         FrmDataDefaultHosp fDataDefaultHosp = new FrmDataDefaultHosp();
+        FrmDataLink fDataLink = new FrmDataLink();
+        FrmDataPicInfo fDataPicInfo = new FrmDataPicInfo();
 
         #endregion
 
@@ -139,23 +141,25 @@ namespace ParsDashboard
             InitializeComponent();
             StopPanel_Flickering();
 
-            SubRtn.Load_All_Forms(fPatient, this);
-            SubRtn.Load_All_Forms(fPatientSearch, this);
+            SubRtn.Load_All_Forms( fPatient, this );
+            SubRtn.Load_All_Forms( fPatientSearch, this );
 
-            SubRtn.Load_All_Forms(fImage, this);
-            SubRtn.Load_All_Forms(fImageSearch, this);
-            SubRtn.Load_All_Forms(fImageSearchResuts, this);
-            SubRtn.Load_All_Forms(fImageFilter, this);
+            SubRtn.Load_All_Forms( fImage, this );
+            SubRtn.Load_All_Forms( fImageSearch, this );
+            SubRtn.Load_All_Forms( fImageSearchResuts, this );
+            SubRtn.Load_All_Forms (fImageFilter, this );
 
-            SubRtn.Load_All_Forms(fSurgery, this);
-            SubRtn.Load_All_Forms(fSurgerySearch, this);
+            SubRtn.Load_All_Forms( fSurgery, this );
+            SubRtn.Load_All_Forms( fSurgerySearch, this );
 
-            SubRtn.Load_All_Forms(fDataCustName, this);
-            SubRtn.Load_All_Forms(fDataDefaultHosp, this);
+            SubRtn.Load_All_Forms( fDataCustName, this );
+            SubRtn.Load_All_Forms( fDataDefaultHosp, this) ;
+            SubRtn.Load_All_Forms( fDataLink, this );
+            SubRtn.Load_All_Forms( fDataPicInfo, this );
 
             SubRtn.Load_All_Forms( fDashBoard, this );
 
-            LblDashboard.Click += new EventHandler(LblDashboard_Click);
+            LblDashboard.Click += new EventHandler( LblDashboard_Click );
         }
 
         private void LblPatient_Click(object sender, EventArgs e)
@@ -930,6 +934,57 @@ namespace ParsDashboard
         private void LblDataCustomizeName_MouseLeave(object sender, EventArgs e)
         {
             HelpMouseMove.MouseLeave( LblDataCustomizeName );
+        }
+
+        private void LblDataLink_Click(object sender, EventArgs e)
+        {
+            NavSetStyleClick( LblDataLink );
+
+            fNav.ShowForm( fDataLink );
+
+            SubRtn.ShowHideMenu( this, MnuDataLink.Name );
+        }
+
+        public void TSMnuDataLinkClearFrom_Click(object sender, EventArgs e)
+        {
+            Control cbo = SubRoutine.FindControl( fDataLink, "CboLinkFromType" );
+            ComboBox ctlcbo = cbo as ComboBox;
+
+            helper.ClearComboBoxTxt( ctlcbo );
+
+            cbo = SubRoutine.FindControl( fDataLink, "CboLinkFromDetail");
+            ctlcbo = cbo as ComboBox;
+
+            helper.ClearComboBox( ctlcbo );
+        }
+
+        public void TSMnuDataLinkClearTo_Click(object sender, EventArgs e)
+        {
+            Control cbo = SubRoutine.FindControl( fDataLink, "CboLinkToType" );
+            ComboBox ctlcbo = cbo as ComboBox;
+
+            helper.ClearComboBoxTxt( ctlcbo );
+
+            cbo = SubRoutine.FindControl( fDataLink, "CboLinkToDetail" );
+            ctlcbo = cbo as ComboBox;
+
+            helper.ClearComboBox( ctlcbo );
+        }
+
+        private void TSMnuDataLinkClearAll_Click(object sender, EventArgs e)
+        {
+            TSMnuDataLinkClearFrom_Click( sender, e );
+
+            TSMnuDataLinkClearTo_Click( sender, e );            
+        }
+
+        private void LblDataPicInfo_Click(object sender, EventArgs e)
+        {
+            NavSetStyleClick( LblDataPicInfo );
+
+            fNav.ShowForm( fDataPicInfo );
+
+            SubRtn.ShowHideMenu( this, MnuDataPicInfo.Name );
         }
     }
 

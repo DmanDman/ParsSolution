@@ -28,35 +28,34 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.CboMetaSearch = new System.Windows.Forms.ComboBox();
-            this.LbMetaDataSearch = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label4 = new System.Windows.Forms.Label();
+            this.CboLinkFromType = new System.Windows.Forms.ComboBox();
+            this.LblLinkFromType = new System.Windows.Forms.Label();
+            this.LblLinkFromDetail = new System.Windows.Forms.Label();
+            this.CboLinkFromDetail = new System.Windows.Forms.ComboBox();
+            this.GrpLinkFrom = new System.Windows.Forms.GroupBox();
+            this.GrpLinkTo = new System.Windows.Forms.GroupBox();
+            this.CboLinkToDetail = new System.Windows.Forms.ComboBox();
+            this.LblLinkToDetail = new System.Windows.Forms.Label();
+            this.LblLinkToType = new System.Windows.Forms.Label();
+            this.CboLinkToType = new System.Windows.Forms.ComboBox();
+            this.GrpCurrentlyLinked = new System.Windows.Forms.GroupBox();
             this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Last = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.First = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Blank = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PatientNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DOB = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.listBox1 = new System.Windows.Forms.ListBox();
-            this.groupBox1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.GrpLinkFrom.SuspendLayout();
+            this.GrpLinkTo.SuspendLayout();
+            this.GrpCurrentlyLinked.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
-            // CboMetaSearch
+            // CboLinkFromType
             // 
-            this.CboMetaSearch.AutoCompleteCustomSource.AddRange(new string[] {
+            this.CboLinkFromType.AutoCompleteCustomSource.AddRange(new string[] {
             "Complication\n",
             "CPT",
             "\nDoctor",
@@ -66,11 +65,11 @@
             "\nLevel",
             "\nLocation\n",
             "Surgery"});
-            this.CboMetaSearch.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.CboMetaSearch.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.CboMetaSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CboMetaSearch.FormattingEnabled = true;
-            this.CboMetaSearch.Items.AddRange(new object[] {
+            this.CboLinkFromType.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CboLinkFromType.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.CboLinkFromType.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CboLinkFromType.FormattingEnabled = true;
+            this.CboLinkFromType.Items.AddRange(new object[] {
             "Complication\n",
             "CPT",
             "\nDoctor\n",
@@ -80,145 +79,169 @@
             "Level\n",
             "Location\n",
             "Surgery"});
-            this.CboMetaSearch.Location = new System.Drawing.Point(6, 55);
-            this.CboMetaSearch.Name = "CboMetaSearch";
-            this.CboMetaSearch.Size = new System.Drawing.Size(254, 24);
-            this.CboMetaSearch.TabIndex = 2;
+            this.CboLinkFromType.Location = new System.Drawing.Point(6, 55);
+            this.CboLinkFromType.Name = "CboLinkFromType";
+            this.CboLinkFromType.Size = new System.Drawing.Size(254, 24);
+            this.CboLinkFromType.TabIndex = 2;
             // 
-            // LbMetaDataSearch
+            // LblLinkFromType
             // 
-            this.LbMetaDataSearch.AutoSize = true;
-            this.LbMetaDataSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LbMetaDataSearch.Location = new System.Drawing.Point(6, 35);
-            this.LbMetaDataSearch.Name = "LbMetaDataSearch";
-            this.LbMetaDataSearch.Size = new System.Drawing.Size(40, 17);
-            this.LbMetaDataSearch.TabIndex = 3;
-            this.LbMetaDataSearch.Text = "Type";
+            this.LblLinkFromType.AutoSize = true;
+            this.LblLinkFromType.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblLinkFromType.Location = new System.Drawing.Point(6, 35);
+            this.LblLinkFromType.Name = "LblLinkFromType";
+            this.LblLinkFromType.Size = new System.Drawing.Size(40, 17);
+            this.LblLinkFromType.TabIndex = 0;
+            this.LblLinkFromType.Text = "Type";
             // 
-            // label1
+            // LblLinkFromDetail
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 112);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(44, 17);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "Detail";
+            this.LblLinkFromDetail.AutoSize = true;
+            this.LblLinkFromDetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblLinkFromDetail.Location = new System.Drawing.Point(6, 112);
+            this.LblLinkFromDetail.Name = "LblLinkFromDetail";
+            this.LblLinkFromDetail.Size = new System.Drawing.Size(44, 17);
+            this.LblLinkFromDetail.TabIndex = 3;
+            this.LblLinkFromDetail.Text = "Detail";
             // 
-            // comboBox1
+            // CboLinkFromDetail
             // 
-            this.comboBox1.AutoCompleteCustomSource.AddRange(new string[] {
+            this.CboLinkFromDetail.AutoCompleteCustomSource.AddRange(new string[] {
             "Scoliosis\n",
             "Scoliosis--Adolescent Idiopathic\n",
             "Scoliosis--Adult Idiopathic\n",
             "Scoliosis--Congenital"});
-            this.comboBox1.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBox1.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.comboBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.CboLinkFromDetail.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CboLinkFromDetail.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.CboLinkFromDetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CboLinkFromDetail.FormattingEnabled = true;
+            this.CboLinkFromDetail.Items.AddRange(new object[] {
             "Scoliosis--Adolescent Idiopathic\n",
             "Scoliosis--Adult Idiopathic\n",
             "Scoliosis--Congenital",
             "Scoliosis\n"});
-            this.comboBox1.Location = new System.Drawing.Point(6, 132);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(254, 24);
-            this.comboBox1.Sorted = true;
-            this.comboBox1.TabIndex = 5;
-            this.comboBox1.Text = "Scoliosis--Adolescent Idiopathic\n";
+            this.CboLinkFromDetail.Location = new System.Drawing.Point(6, 132);
+            this.CboLinkFromDetail.Name = "CboLinkFromDetail";
+            this.CboLinkFromDetail.Size = new System.Drawing.Size(254, 24);
+            this.CboLinkFromDetail.Sorted = true;
+            this.CboLinkFromDetail.TabIndex = 1;
+            this.CboLinkFromDetail.Text = "Scoliosis--Adolescent Idiopathic\n";
             // 
-            // groupBox1
+            // GrpLinkFrom
             // 
-            this.groupBox1.Controls.Add(this.comboBox1);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.LbMetaDataSearch);
-            this.groupBox1.Controls.Add(this.CboMetaSearch);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(12, 46);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(276, 185);
-            this.groupBox1.TabIndex = 2;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Link From";
+            this.GrpLinkFrom.Controls.Add(this.CboLinkFromDetail);
+            this.GrpLinkFrom.Controls.Add(this.LblLinkFromDetail);
+            this.GrpLinkFrom.Controls.Add(this.LblLinkFromType);
+            this.GrpLinkFrom.Controls.Add(this.CboLinkFromType);
+            this.GrpLinkFrom.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrpLinkFrom.Location = new System.Drawing.Point(12, 46);
+            this.GrpLinkFrom.Name = "GrpLinkFrom";
+            this.GrpLinkFrom.Size = new System.Drawing.Size(276, 185);
+            this.GrpLinkFrom.TabIndex = 0;
+            this.GrpLinkFrom.TabStop = false;
+            this.GrpLinkFrom.Text = "Link From";
             // 
-            // groupBox2
+            // GrpLinkTo
             // 
-            this.groupBox2.Controls.Add(this.comboBox2);
-            this.groupBox2.Controls.Add(this.label2);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.comboBox3);
-            this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(330, 46);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(276, 185);
-            this.groupBox2.TabIndex = 3;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Link To";
+            this.GrpLinkTo.Controls.Add(this.CboLinkToDetail);
+            this.GrpLinkTo.Controls.Add(this.LblLinkToDetail);
+            this.GrpLinkTo.Controls.Add(this.LblLinkToType);
+            this.GrpLinkTo.Controls.Add(this.CboLinkToType);
+            this.GrpLinkTo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrpLinkTo.Location = new System.Drawing.Point(330, 46);
+            this.GrpLinkTo.Name = "GrpLinkTo";
+            this.GrpLinkTo.Size = new System.Drawing.Size(276, 185);
+            this.GrpLinkTo.TabIndex = 1;
+            this.GrpLinkTo.TabStop = false;
+            this.GrpLinkTo.Text = "Link To";
             // 
-            // comboBox2
+            // CboLinkToDetail
             // 
-            this.comboBox2.AutoCompleteCustomSource.AddRange(new string[] {
+            this.CboLinkToDetail.AutoCompleteCustomSource.AddRange(new string[] {
             "Sasso"});
-            this.comboBox2.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBox2.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.comboBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.CboLinkToDetail.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CboLinkToDetail.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.CboLinkToDetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CboLinkToDetail.FormattingEnabled = true;
+            this.CboLinkToDetail.Items.AddRange(new object[] {
             "Sasso"});
-            this.comboBox2.Location = new System.Drawing.Point(6, 132);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(254, 24);
-            this.comboBox2.Sorted = true;
-            this.comboBox2.TabIndex = 5;
+            this.CboLinkToDetail.Location = new System.Drawing.Point(6, 132);
+            this.CboLinkToDetail.Name = "CboLinkToDetail";
+            this.CboLinkToDetail.Size = new System.Drawing.Size(254, 24);
+            this.CboLinkToDetail.Sorted = true;
+            this.CboLinkToDetail.TabIndex = 1;
             // 
-            // label2
+            // LblLinkToDetail
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(6, 112);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(44, 17);
-            this.label2.TabIndex = 4;
-            this.label2.Text = "Detail";
+            this.LblLinkToDetail.AutoSize = true;
+            this.LblLinkToDetail.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblLinkToDetail.Location = new System.Drawing.Point(6, 112);
+            this.LblLinkToDetail.Name = "LblLinkToDetail";
+            this.LblLinkToDetail.Size = new System.Drawing.Size(44, 17);
+            this.LblLinkToDetail.TabIndex = 3;
+            this.LblLinkToDetail.Text = "Detail";
             // 
-            // label3
+            // LblLinkToType
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 35);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(40, 17);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Type";
+            this.LblLinkToType.AutoSize = true;
+            this.LblLinkToType.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblLinkToType.Location = new System.Drawing.Point(6, 35);
+            this.LblLinkToType.Name = "LblLinkToType";
+            this.LblLinkToType.Size = new System.Drawing.Size(40, 17);
+            this.LblLinkToType.TabIndex = 0;
+            this.LblLinkToType.Text = "Type";
             // 
-            // comboBox3
+            // CboLinkToType
             // 
-            this.comboBox3.AutoCompleteCustomSource.AddRange(new string[] {
+            this.CboLinkToType.AutoCompleteCustomSource.AddRange(new string[] {
             "Doctor"});
-            this.comboBox3.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.comboBox3.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.comboBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Items.AddRange(new object[] {
+            this.CboLinkToType.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CboLinkToType.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.CboLinkToType.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CboLinkToType.FormattingEnabled = true;
+            this.CboLinkToType.Items.AddRange(new object[] {
             "Doctor"});
-            this.comboBox3.Location = new System.Drawing.Point(6, 55);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(254, 24);
-            this.comboBox3.TabIndex = 2;
+            this.CboLinkToType.Location = new System.Drawing.Point(6, 55);
+            this.CboLinkToType.Name = "CboLinkToType";
+            this.CboLinkToType.Size = new System.Drawing.Size(254, 24);
+            this.CboLinkToType.TabIndex = 2;
             // 
-            // groupBox3
+            // GrpCurrentlyLinked
             // 
-            this.groupBox3.Controls.Add(this.label5);
-            this.groupBox3.Controls.Add(this.label4);
-            this.groupBox3.Controls.Add(this.dataGridView1);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(12, 256);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(910, 417);
-            this.groupBox3.TabIndex = 6;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Currently Linked Items";
+            this.GrpCurrentlyLinked.Controls.Add(this.label5);
+            this.GrpCurrentlyLinked.Controls.Add(this.label4);
+            this.GrpCurrentlyLinked.Controls.Add(this.dataGridView1);
+            this.GrpCurrentlyLinked.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrpCurrentlyLinked.Location = new System.Drawing.Point(12, 256);
+            this.GrpCurrentlyLinked.Name = "GrpCurrentlyLinked";
+            this.GrpCurrentlyLinked.Size = new System.Drawing.Size(910, 417);
+            this.GrpCurrentlyLinked.TabIndex = 0;
+            this.GrpCurrentlyLinked.TabStop = false;
+            this.GrpCurrentlyLinked.Text = "Currently Linked Items";
+            // 
+            // label5
+            // 
+            this.label5.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(525, 34);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(360, 26);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Link To";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            // 
+            // label4
+            // 
+            this.label4.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(9, 34);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(360, 26);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Link From";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // dataGridView1
             // 
@@ -237,31 +260,7 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(876, 290);
-            this.dataGridView1.TabIndex = 3;
-            // 
-            // label4
-            // 
-            this.label4.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(9, 34);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(360, 26);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Link From";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            // 
-            // label5
-            // 
-            this.label5.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(525, 34);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(360, 26);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Link To";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.dataGridView1.TabIndex = 0;
             // 
             // Last
             // 
@@ -303,26 +302,15 @@
             this.DOB.ReadOnly = true;
             this.DOB.Width = 175;
             // 
-            // listBox1
-            // 
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(624, 83);
-            this.listBox1.MultiColumn = true;
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(342, 148);
-            this.listBox1.TabIndex = 7;
-            // 
             // FrmDataLink
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1567, 699);
             this.ControlBox = false;
-            this.Controls.Add(this.listBox1);
-            this.Controls.Add(this.groupBox3);
-            this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.GrpCurrentlyLinked);
+            this.Controls.Add(this.GrpLinkTo);
+            this.Controls.Add(this.GrpLinkFrom);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -333,11 +321,11 @@
             this.Tag = "FrmDataLink";
             this.Text = "Data - Link";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
+            this.GrpLinkFrom.ResumeLayout(false);
+            this.GrpLinkFrom.PerformLayout();
+            this.GrpLinkTo.ResumeLayout(false);
+            this.GrpLinkTo.PerformLayout();
+            this.GrpCurrentlyLinked.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 
@@ -345,17 +333,17 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox CboMetaSearch;
-        private System.Windows.Forms.Label LbMetaDataSearch;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.ComboBox comboBox1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox comboBox3;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.ComboBox CboLinkFromType;
+        private System.Windows.Forms.Label LblLinkFromType;
+        private System.Windows.Forms.Label LblLinkFromDetail;
+        private System.Windows.Forms.ComboBox CboLinkFromDetail;
+        private System.Windows.Forms.GroupBox GrpLinkFrom;
+        private System.Windows.Forms.GroupBox GrpLinkTo;
+        private System.Windows.Forms.ComboBox CboLinkToDetail;
+        private System.Windows.Forms.Label LblLinkToDetail;
+        private System.Windows.Forms.Label LblLinkToType;
+        private System.Windows.Forms.ComboBox CboLinkToType;
+        private System.Windows.Forms.GroupBox GrpCurrentlyLinked;
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label4;
@@ -364,6 +352,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Blank;
         private System.Windows.Forms.DataGridViewTextBoxColumn PatientNum;
         private System.Windows.Forms.DataGridViewTextBoxColumn DOB;
-        private System.Windows.Forms.ListBox listBox1;
     }
 }

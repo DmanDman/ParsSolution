@@ -70,6 +70,12 @@
     <Compile Include="FrmDataLink.Designer.cs">
       <DependentUpon>FrmDataLink.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmDataPicInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmDataPicInfo.Designer.cs">
+      <DependentUpon>FrmDataPicInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmFilterAge.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +158,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmDataLink.resx">
       <DependentUpon>FrmDataLink.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmDataPicInfo.resx">
+      <DependentUpon>FrmDataPicInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmFilterAge.resx">
       <DependentUpon>FrmFilterAge.cs</DependentUpon>
