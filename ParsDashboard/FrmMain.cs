@@ -36,6 +36,7 @@ namespace ParsDashboard
         FrmDataPicInfo fDataPicInfo = new FrmDataPicInfo();
 
         FrmMDComplication fMDComp = new FrmMDComplication();
+        FrmCpt fMDCpt = new FrmCpt();
 
         #endregion
 
@@ -185,7 +186,8 @@ namespace ParsDashboard
             SubRtn.Load_All_Forms( fDataLink, this );
             SubRtn.Load_All_Forms( fDataPicInfo, this );
 
-            SubRtn.Load_All_Forms(fMDComp, this);
+            SubRtn.Load_All_Forms( fMDComp, this );
+            SubRtn.Load_All_Forms( fMDCpt, this );
 
             SubRtn.Load_All_Forms( fDashBoard, this );
 
@@ -1053,6 +1055,10 @@ namespace ParsDashboard
         private void LblMDCpt_Click(object sender, EventArgs e)
         {
             NavSetStyleClick( LblMDCpt );
+
+            fNav.ShowForm( fMDCpt );
+
+            SubRtn.ShowHideMenu( this, MnuMDComp.Name );
         }
 
         private void LblMDImageDesc_MouseEnter(object sender, EventArgs e)
