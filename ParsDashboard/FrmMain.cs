@@ -19,24 +19,30 @@ namespace ParsDashboard
 
         FrmDashboard fDashBoard = new FrmDashboard();
 
+        //  Images
         FrmImages fImage = new FrmImages();
         FrmImageSearch fImageSearch = new FrmImageSearch();
         FrmImageSearchResults fImageSearchResuts = new FrmImageSearchResults();
         FrmImageFilter fImageFilter = new FrmImageFilter();
 
+        //  Patient
         FrmPatient fPatient = new FrmPatient();
         public FrmPatientSearch fPatientSearch = new FrmPatientSearch();
 
+        //  Surgery
         FrmSurgery fSurgery = new FrmSurgery();
         public FrmSurgerySearch fSurgerySearch = new FrmSurgerySearch();
 
+        //  Data
         FrmDataCustomizeName fDataCustName = new FrmDataCustomizeName();
         FrmDataDefaultHosp fDataDefaultHosp = new FrmDataDefaultHosp();
         FrmDataLink fDataLink = new FrmDataLink();
         FrmDataPicInfo fDataPicInfo = new FrmDataPicInfo();
 
+        //  Meta Data
         FrmMDComplication fMDComp = new FrmMDComplication();
-        FrmCpt fMDCpt = new FrmCpt();
+        FrmMDCpt fMDCpt = new FrmMDCpt();
+        FrmMDImageDesc fMDImageDesc = new FrmMDImageDesc();
 
         #endregion
 
@@ -188,6 +194,7 @@ namespace ParsDashboard
 
             SubRtn.Load_All_Forms( fMDComp, this );
             SubRtn.Load_All_Forms( fMDCpt, this );
+            SubRtn.Load_All_Forms( fMDImageDesc, this );
 
             SubRtn.Load_All_Forms( fDashBoard, this );
 
@@ -1040,6 +1047,9 @@ namespace ParsDashboard
             fNav.ShowForm( fMDComp ); 
 
             SubRtn.ShowHideMenu( this, MnuMDComp.Name );
+
+            SubRtn.ShowHideMD( fMDComp, "GrpComp" );
+
         }
 
         private void LblMDCpt_MouseEnter(object sender, EventArgs e)
@@ -1073,7 +1083,12 @@ namespace ParsDashboard
 
         private void LblMDImageDesc_Click(object sender, EventArgs e)
         {
+            
             NavSetStyleClick( LblMDImageDesc );
+
+            fNav.ShowForm( fMDImageDesc );
+
+            SubRtn.ShowHideMenu( this, MnuMDImageDesc.Name );
         }
 
         private void LblMDDx_MouseEnter(object sender, EventArgs e)
@@ -1636,6 +1651,32 @@ namespace ParsDashboard
             ctltxt = txt as TextBox;
 
             helper.ClearTextBox( ctltxt );
+
+        }
+
+        public void ShowHideMD ( Form fMDComp, string GrpName )
+        {
+            bool GrpVisible = false;
+
+            Control grp = SubRoutine.FindControl( fMDComp, "GrpComp");
+            GroupBox ctlGrp = grp as GroupBox;
+
+            if ( GrpName == "GrpComp")
+            {
+                GrpVisible = true;
+            }
+
+            ctlGrp.Visible = GrpVisible;
+
+            grp = SubRoutine.FindControl(fMDComp, "GrpCpt");
+            ctlGrp = grp as GroupBox;
+
+            if (GrpName == "CboMetaSearch")
+            {
+                GrpVisible = true;
+            }
+
+            ctlGrp.Visible = GrpVisible;
 
         }
     }
