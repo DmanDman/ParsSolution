@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ParsDashboard
 {
-    public partial class FrmMDComplication : Form
+    public partial class FrmMD : Form
     {
-        public FrmMDComplication()
+        public FrmMD()
         {
             InitializeComponent();
         }

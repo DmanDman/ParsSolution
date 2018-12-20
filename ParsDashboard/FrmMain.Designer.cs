@@ -168,24 +168,12 @@
             this.TSMnuDataPicInfoDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuDataPicInfoBreak2 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuDataPicInfoRename = new System.Windows.Forms.ToolStripMenuItem();
-            this.MnuMDComp = new System.Windows.Forms.MenuStrip();
-            this.TSMnuMDCompAdd = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuMDCompBreak1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuMDCompDelete = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuMDCompBreak2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuMDCompRename = new System.Windows.Forms.ToolStripMenuItem();
-            this.MnuMDCpt = new System.Windows.Forms.MenuStrip();
-            this.TSMnuMDCpt = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuCptBreak1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuMDCptDel = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuCptBreak2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuMDCptRename = new System.Windows.Forms.ToolStripMenuItem();
-            this.MnuMDImageDesc = new System.Windows.Forms.MenuStrip();
-            this.TSMnuMDImageDescAdd = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuMDImageDescBreak1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuMDImageDescDel = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuMDImageDescBreak2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuMDImageDescRename = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuMD = new System.Windows.Forms.MenuStrip();
+            this.TSMnuMDAdd = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuMDBreak1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuMDDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuMDBreak2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuMDRename = new System.Windows.Forms.ToolStripMenuItem();
             this.PnlDashboard.SuspendLayout();
             this.PnlPatient.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -209,9 +197,7 @@
             this.MnuDataDefaultHosp.SuspendLayout();
             this.MnuDataLink.SuspendLayout();
             this.MnuDataPicInfo.SuspendLayout();
-            this.MnuMDComp.SuspendLayout();
-            this.MnuMDCpt.SuspendLayout();
-            this.MnuMDImageDesc.SuspendLayout();
+            this.MnuMD.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnlDashboard
@@ -1756,172 +1742,66 @@
             this.TSMnuDataPicInfoRename.Size = new System.Drawing.Size(75, 24);
             this.TSMnuDataPicInfoRename.Text = "Rename";
             // 
-            // MnuMDComp
+            // MnuMD
             // 
-            this.MnuMDComp.ImageScalingSize = new System.Drawing.Size(17, 17);
-            this.MnuMDComp.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSMnuMDCompAdd,
-            this.TSMnuMDCompBreak1,
-            this.TSMnuMDCompDelete,
-            this.TSMnuMDCompBreak2,
-            this.TSMnuMDCompRename});
-            this.MnuMDComp.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuMDComp.Location = new System.Drawing.Point(185, 28);
-            this.MnuMDComp.Name = "MnuMDComp";
-            this.MnuMDComp.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.MnuMDComp.Size = new System.Drawing.Size(1212, 28);
-            this.MnuMDComp.TabIndex = 27;
-            this.MnuMDComp.Text = "menuStrip1";
-            this.MnuMDComp.Visible = false;
+            this.MnuMD.ImageScalingSize = new System.Drawing.Size(17, 17);
+            this.MnuMD.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMnuMDAdd,
+            this.TSMnuMDBreak1,
+            this.TSMnuMDDelete,
+            this.TSMnuMDBreak2,
+            this.TSMnuMDRename});
+            this.MnuMD.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MnuMD.Location = new System.Drawing.Point(185, 28);
+            this.MnuMD.Name = "MnuMD";
+            this.MnuMD.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuMD.Size = new System.Drawing.Size(1212, 28);
+            this.MnuMD.TabIndex = 27;
+            this.MnuMD.Text = "menuStrip1";
+            this.MnuMD.Visible = false;
             // 
-            // TSMnuMDCompAdd
+            // TSMnuMDAdd
             // 
-            this.TSMnuMDCompAdd.Name = "TSMnuMDCompAdd";
-            this.TSMnuMDCompAdd.Size = new System.Drawing.Size(53, 24);
-            this.TSMnuMDCompAdd.Text = "Add ";
+            this.TSMnuMDAdd.Name = "TSMnuMDAdd";
+            this.TSMnuMDAdd.Size = new System.Drawing.Size(53, 24);
+            this.TSMnuMDAdd.Text = "Add ";
             // 
-            // TSMnuMDCompBreak1
+            // TSMnuMDBreak1
             // 
-            this.TSMnuMDCompBreak1.Enabled = false;
-            this.TSMnuMDCompBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TSMnuMDCompBreak1.Name = "TSMnuMDCompBreak1";
-            this.TSMnuMDCompBreak1.Padding = new System.Windows.Forms.Padding(0);
-            this.TSMnuMDCompBreak1.Size = new System.Drawing.Size(18, 24);
-            this.TSMnuMDCompBreak1.Text = "|";
+            this.TSMnuMDBreak1.Enabled = false;
+            this.TSMnuMDBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuMDBreak1.Name = "TSMnuMDBreak1";
+            this.TSMnuMDBreak1.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuMDBreak1.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuMDBreak1.Text = "|";
             // 
-            // TSMnuMDCompDelete
+            // TSMnuMDDelete
             // 
-            this.TSMnuMDCompDelete.Name = "TSMnuMDCompDelete";
-            this.TSMnuMDCompDelete.Size = new System.Drawing.Size(65, 24);
-            this.TSMnuMDCompDelete.Text = "Delete";
+            this.TSMnuMDDelete.Name = "TSMnuMDDelete";
+            this.TSMnuMDDelete.Size = new System.Drawing.Size(65, 24);
+            this.TSMnuMDDelete.Text = "Delete";
             // 
-            // TSMnuMDCompBreak2
+            // TSMnuMDBreak2
             // 
-            this.TSMnuMDCompBreak2.Enabled = false;
-            this.TSMnuMDCompBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TSMnuMDCompBreak2.Name = "TSMnuMDCompBreak2";
-            this.TSMnuMDCompBreak2.Size = new System.Drawing.Size(26, 24);
-            this.TSMnuMDCompBreak2.Text = "|";
+            this.TSMnuMDBreak2.Enabled = false;
+            this.TSMnuMDBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuMDBreak2.Name = "TSMnuMDBreak2";
+            this.TSMnuMDBreak2.Size = new System.Drawing.Size(26, 24);
+            this.TSMnuMDBreak2.Text = "|";
             // 
-            // TSMnuMDCompRename
+            // TSMnuMDRename
             // 
-            this.TSMnuMDCompRename.Name = "TSMnuMDCompRename";
-            this.TSMnuMDCompRename.Size = new System.Drawing.Size(75, 24);
-            this.TSMnuMDCompRename.Text = "Rename";
-            // 
-            // MnuMDCpt
-            // 
-            this.MnuMDCpt.ImageScalingSize = new System.Drawing.Size(17, 17);
-            this.MnuMDCpt.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSMnuMDCpt,
-            this.TSMnuCptBreak1,
-            this.TSMnuMDCptDel,
-            this.TSMnuCptBreak2,
-            this.TSMnuMDCptRename});
-            this.MnuMDCpt.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuMDCpt.Location = new System.Drawing.Point(185, 28);
-            this.MnuMDCpt.Name = "MnuMDCpt";
-            this.MnuMDCpt.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.MnuMDCpt.Size = new System.Drawing.Size(1212, 28);
-            this.MnuMDCpt.TabIndex = 29;
-            this.MnuMDCpt.Text = "menuStrip1";
-            this.MnuMDCpt.Visible = false;
-            // 
-            // TSMnuMDCpt
-            // 
-            this.TSMnuMDCpt.Name = "TSMnuMDCpt";
-            this.TSMnuMDCpt.Size = new System.Drawing.Size(53, 24);
-            this.TSMnuMDCpt.Text = "Add ";
-            // 
-            // TSMnuCptBreak1
-            // 
-            this.TSMnuCptBreak1.Enabled = false;
-            this.TSMnuCptBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TSMnuCptBreak1.Name = "TSMnuCptBreak1";
-            this.TSMnuCptBreak1.Padding = new System.Windows.Forms.Padding(0);
-            this.TSMnuCptBreak1.Size = new System.Drawing.Size(18, 24);
-            this.TSMnuCptBreak1.Text = "|";
-            // 
-            // TSMnuMDCptDel
-            // 
-            this.TSMnuMDCptDel.Name = "TSMnuMDCptDel";
-            this.TSMnuMDCptDel.Size = new System.Drawing.Size(65, 24);
-            this.TSMnuMDCptDel.Text = "Delete";
-            // 
-            // TSMnuCptBreak2
-            // 
-            this.TSMnuCptBreak2.Enabled = false;
-            this.TSMnuCptBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TSMnuCptBreak2.Name = "TSMnuCptBreak2";
-            this.TSMnuCptBreak2.Size = new System.Drawing.Size(26, 24);
-            this.TSMnuCptBreak2.Text = "|";
-            // 
-            // TSMnuMDCptRename
-            // 
-            this.TSMnuMDCptRename.Name = "TSMnuMDCptRename";
-            this.TSMnuMDCptRename.Size = new System.Drawing.Size(75, 24);
-            this.TSMnuMDCptRename.Text = "Rename";
-            // 
-            // MnuMDImageDesc
-            // 
-            this.MnuMDImageDesc.ImageScalingSize = new System.Drawing.Size(17, 17);
-            this.MnuMDImageDesc.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSMnuMDImageDescAdd,
-            this.TSMnuMDImageDescBreak1,
-            this.TSMnuMDImageDescDel,
-            this.TSMnuMDImageDescBreak2,
-            this.TSMnuMDImageDescRename});
-            this.MnuMDImageDesc.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuMDImageDesc.Location = new System.Drawing.Point(185, 28);
-            this.MnuMDImageDesc.Name = "MnuMDImageDesc";
-            this.MnuMDImageDesc.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.MnuMDImageDesc.Size = new System.Drawing.Size(1212, 28);
-            this.MnuMDImageDesc.TabIndex = 31;
-            this.MnuMDImageDesc.Text = "menuStrip1";
-            this.MnuMDImageDesc.Visible = false;
-            // 
-            // TSMnuMDImageDescAdd
-            // 
-            this.TSMnuMDImageDescAdd.Name = "TSMnuMDImageDescAdd";
-            this.TSMnuMDImageDescAdd.Size = new System.Drawing.Size(53, 24);
-            this.TSMnuMDImageDescAdd.Text = "Add ";
-            // 
-            // TSMnuMDImageDescBreak1
-            // 
-            this.TSMnuMDImageDescBreak1.Enabled = false;
-            this.TSMnuMDImageDescBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TSMnuMDImageDescBreak1.Name = "TSMnuMDImageDescBreak1";
-            this.TSMnuMDImageDescBreak1.Padding = new System.Windows.Forms.Padding(0);
-            this.TSMnuMDImageDescBreak1.Size = new System.Drawing.Size(18, 24);
-            this.TSMnuMDImageDescBreak1.Text = "|";
-            // 
-            // TSMnuMDImageDescDel
-            // 
-            this.TSMnuMDImageDescDel.Name = "TSMnuMDImageDescDel";
-            this.TSMnuMDImageDescDel.Size = new System.Drawing.Size(65, 24);
-            this.TSMnuMDImageDescDel.Text = "Delete";
-            // 
-            // TSMnuMDImageDescBreak2
-            // 
-            this.TSMnuMDImageDescBreak2.Enabled = false;
-            this.TSMnuMDImageDescBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TSMnuMDImageDescBreak2.Name = "TSMnuMDImageDescBreak2";
-            this.TSMnuMDImageDescBreak2.Size = new System.Drawing.Size(26, 24);
-            this.TSMnuMDImageDescBreak2.Text = "|";
-            // 
-            // TSMnuMDImageDescRename
-            // 
-            this.TSMnuMDImageDescRename.Name = "TSMnuMDImageDescRename";
-            this.TSMnuMDImageDescRename.Size = new System.Drawing.Size(75, 24);
-            this.TSMnuMDImageDescRename.Text = "Rename";
+            this.TSMnuMDRename.Name = "TSMnuMDRename";
+            this.TSMnuMDRename.Size = new System.Drawing.Size(75, 24);
+            this.TSMnuMDRename.Text = "Rename";
             // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1397, 976);
-            this.Controls.Add(this.MnuMDImageDesc);
-            this.Controls.Add(this.MnuMDCpt);
+            this.Controls.Add(this.MnuMD);
+            this.Controls.Add(this.MnuDataPicInfo);
             this.Controls.Add(this.MnuImages);
             this.Controls.Add(this.MnuImagesSearch);
             this.Controls.Add(this.MnuImageSearchResult);
@@ -1933,8 +1813,6 @@
             this.Controls.Add(this.MnuDataCustomizeNames);
             this.Controls.Add(this.MnuDataDefaultHosp);
             this.Controls.Add(this.MnuDataLink);
-            this.Controls.Add(this.MnuDataPicInfo);
-            this.Controls.Add(this.MnuMDComp);
             this.Controls.Add(this.MnuDashboard);
             this.Controls.Add(this.tableLayoutPanel1);
             this.IsMdiContainer = true;
@@ -1989,12 +1867,8 @@
             this.MnuDataLink.PerformLayout();
             this.MnuDataPicInfo.ResumeLayout(false);
             this.MnuDataPicInfo.PerformLayout();
-            this.MnuMDComp.ResumeLayout(false);
-            this.MnuMDComp.PerformLayout();
-            this.MnuMDCpt.ResumeLayout(false);
-            this.MnuMDCpt.PerformLayout();
-            this.MnuMDImageDesc.ResumeLayout(false);
-            this.MnuMDImageDesc.PerformLayout();
+            this.MnuMD.ResumeLayout(false);
+            this.MnuMD.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2141,24 +2015,12 @@
         private System.Windows.Forms.ToolStripMenuItem TSMnuDataPicInfoDelete;
         private System.Windows.Forms.ToolStripMenuItem TSMnuDataPicInfoBreak2;
         private System.Windows.Forms.ToolStripMenuItem TSMnuDataPicInfoRename;
-        private System.Windows.Forms.MenuStrip MnuMDComp;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuMDCompAdd;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuMDCompBreak1;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuMDCompDelete;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuMDCompBreak2;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuMDCompRename;
-        private System.Windows.Forms.MenuStrip MnuMDCpt;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuMDCpt;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuCptBreak1;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuMDCptDel;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuCptBreak2;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuMDCptRename;
-        private System.Windows.Forms.MenuStrip MnuMDImageDesc;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuMDImageDescAdd;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuMDImageDescBreak1;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuMDImageDescDel;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuMDImageDescBreak2;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuMDImageDescRename;
+        private System.Windows.Forms.MenuStrip MnuMD;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuMDAdd;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuMDBreak1;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuMDDelete;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuMDBreak2;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuMDRename;
     }
 }
 

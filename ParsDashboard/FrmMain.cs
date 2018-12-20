@@ -40,9 +40,7 @@ namespace ParsDashboard
         FrmDataPicInfo fDataPicInfo = new FrmDataPicInfo();
 
         //  Meta Data
-        FrmMDComplication fMDComp = new FrmMDComplication();
-        FrmMDCpt fMDCpt = new FrmMDCpt();
-        FrmMDImageDesc fMDImageDesc = new FrmMDImageDesc();
+        FrmMD fMD = new FrmMD();                
 
         #endregion
 
@@ -192,9 +190,7 @@ namespace ParsDashboard
             SubRtn.Load_All_Forms( fDataLink, this );
             SubRtn.Load_All_Forms( fDataPicInfo, this );
 
-            SubRtn.Load_All_Forms( fMDComp, this );
-            SubRtn.Load_All_Forms( fMDCpt, this );
-            SubRtn.Load_All_Forms( fMDImageDesc, this );
+            SubRtn.Load_All_Forms( fMD, this );                        
 
             SubRtn.Load_All_Forms( fDashBoard, this );
 
@@ -1044,12 +1040,11 @@ namespace ParsDashboard
         {
             NavSetStyleClick( LblMDComp );
 
-            fNav.ShowForm( fMDComp ); 
+            fNav.ShowForm( fMD ); 
 
-            SubRtn.ShowHideMenu( this, MnuMDComp.Name );
+            SubRtn.ShowHideMenu( this, MnuMD.Name );
 
-            SubRtn.ShowHideMD( fMDComp, "GrpComp" );
-
+            SubRtn.ShowHideMD( fMD, "GrpComp" );
         }
 
         private void LblMDCpt_MouseEnter(object sender, EventArgs e)
@@ -1065,10 +1060,12 @@ namespace ParsDashboard
         private void LblMDCpt_Click(object sender, EventArgs e)
         {
             NavSetStyleClick( LblMDCpt );
+             
+            fNav.ShowForm( fMD );
 
-            fNav.ShowForm( fMDCpt );
+            SubRtn.ShowHideMenu( this, MnuMD.Name );
 
-            SubRtn.ShowHideMenu( this, MnuMDComp.Name );
+            SubRtn.ShowHideMD( fMD, "GrpCpt" );
         }
 
         private void LblMDImageDesc_MouseEnter(object sender, EventArgs e)
@@ -1082,13 +1079,14 @@ namespace ParsDashboard
         }
 
         private void LblMDImageDesc_Click(object sender, EventArgs e)
-        {
-            
+        {            
             NavSetStyleClick( LblMDImageDesc );
 
-            fNav.ShowForm( fMDImageDesc );
+            fNav.ShowForm( fMD );
 
-            SubRtn.ShowHideMenu( this, MnuMDImageDesc.Name );
+            SubRtn.ShowHideMenu( this, MnuMD.Name );
+
+            SubRtn.ShowHideMD( fMD, "GrpImageDesc" );
         }
 
         private void LblMDDx_MouseEnter(object sender, EventArgs e)
@@ -1104,6 +1102,12 @@ namespace ParsDashboard
         private void LblMDDx_Click(object sender, EventArgs e)
         {
             NavSetStyleClick( LblMDDx );
+
+            fNav.ShowForm( fMD );
+
+            SubRtn.ShowHideMenu( this, MnuMD.Name );
+
+            SubRtn.ShowHideMD( fMD, "GrpDx" );
         }
 
         private void LblMDDr_MouseEnter(object sender, EventArgs e)
@@ -1654,29 +1658,43 @@ namespace ParsDashboard
 
         }
 
-        public void ShowHideMD ( Form fMDComp, string GrpName )
+        public void ShowHideMD ( Form frm, string GrpName )
         {
-            bool GrpVisible = false;
-
-            Control grp = SubRoutine.FindControl( fMDComp, "GrpComp");
+            //  Complication
+            Control grp = SubRoutine.FindControl( frm, "GrpComp");
             GroupBox ctlGrp = grp as GroupBox;
 
-            if ( GrpName == "GrpComp")
-            {
-                GrpVisible = true;
-            }
+            if ( GrpName == "GrpComp" )
+                { ctlGrp.BringToFront(); }
+            else
+                { ctlGrp.SendToBack(); }
 
-            ctlGrp.Visible = GrpVisible;
-
-            grp = SubRoutine.FindControl(fMDComp, "GrpCpt");
+            //  CPT
+            grp = SubRoutine.FindControl( frm, "GrpCpt" );
             ctlGrp = grp as GroupBox;
 
-            if (GrpName == "CboMetaSearch")
-            {
-                GrpVisible = true;
-            }
+            if ( GrpName == "GrpCpt" )
+                { ctlGrp.BringToFront(); }
+            else
+                { ctlGrp.SendToBack(); }
 
-            ctlGrp.Visible = GrpVisible;
+            //  Image Descriptors
+            grp = SubRoutine.FindControl ( frm, "GrpImageDesc" );
+            ctlGrp = grp as GroupBox;
+
+            if ( GrpName == "GrpImageDesc" )
+            { ctlGrp.BringToFront(); }
+            else
+            { ctlGrp.SendToBack(); }
+
+            //  DX
+            grp = SubRoutine.FindControl( frm, "GrpDx" );
+            ctlGrp = grp as GroupBox;
+
+            if ( GrpName == "GrpDx" )
+            { ctlGrp.BringToFront(); }
+            else
+            { ctlGrp.SendToBack(); }
 
         }
     }
