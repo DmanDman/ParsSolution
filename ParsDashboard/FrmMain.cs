@@ -1122,7 +1122,13 @@ namespace ParsDashboard
 
         private void LblMDDr_Click(object sender, EventArgs e)
         {
-            NavSetStyleClick( LblMDDr );
+            NavSetStyleClick( LblMDDr );            
+
+            fNav.ShowForm( fMD );
+
+            SubRtn.ShowHideMenu( this, MnuMD.Name );
+
+            SubRtn.ShowHideMD( fMD, "GrpDr" );
         }
 
         private void LblMDFiscalYr_MouseEnter(object sender, EventArgs e)
@@ -1138,6 +1144,12 @@ namespace ParsDashboard
         private void LblMDFiscalYr_Click(object sender, EventArgs e)
         {
             NavSetStyleClick( LblMDFiscalYr );
+            
+            fNav.ShowForm( fMD );
+
+            SubRtn.ShowHideMenu( this, MnuMD.Name );
+
+            SubRtn.ShowHideMD( fMD, "GrpFiscalYr");
         }
 
         private void LblMDHospital_MouseEnter(object sender, EventArgs e)
@@ -1153,6 +1165,12 @@ namespace ParsDashboard
         private void LblMDHospital_Click(object sender, EventArgs e)
         {
             NavSetStyleClick( LblMDHospital );
+
+            fNav.ShowForm( fMD );
+
+            SubRtn.ShowHideMenu( this, MnuMD.Name) ;
+
+            SubRtn.ShowHideMD( fMD, "GrpHospital" );
         }
 
         private void LblMDInst_MouseEnter(object sender, EventArgs e)
@@ -1696,6 +1714,32 @@ namespace ParsDashboard
             else
             { ctlGrp.SendToBack(); }
 
+            //  Dr
+            grp = SubRoutine.FindControl( frm, "GrpDr" );
+            ctlGrp = grp as GroupBox;
+
+            if ( GrpName == "GrpDr" )
+            { ctlGrp.BringToFront(); }
+            else
+            { ctlGrp.SendToBack(); }
+
+            //  Fiscal Year
+            grp = SubRoutine.FindControl( frm, "GrpFiscalYr" );
+            ctlGrp = grp as GroupBox;
+
+            if ( GrpName == "GrpFiscalYr" )
+            { ctlGrp.BringToFront(); }
+            else
+            { ctlGrp.SendToBack(); }
+
+            //  Hospital
+            grp = SubRoutine.FindControl( frm, "GrpHospital" );
+            ctlGrp = grp as GroupBox;
+
+            if ( GrpName == "GrpHospital" )
+            { ctlGrp.BringToFront(); }
+            else
+            { ctlGrp.SendToBack(); }
         }
     }
 }
