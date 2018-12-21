@@ -230,7 +230,7 @@ namespace ParsDashboard
         {
             SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
 
-            fNav.ShowForm(fDataCustName);
+            fNav.ShowForm( fDataCustName );
 
             NavSetStyleClick( LblDataCustomizeName );           
 
@@ -241,7 +241,11 @@ namespace ParsDashboard
         {
             SubRtn.DashboardAccordian(sender, e, tableLayoutPanel1);
 
-            NavSetStyleClick( LblMetaData );
+            fNav.ShowForm( fMD );
+
+            NavSetStyleClick( LblMDComp );
+
+            SubRtn.ShowHideMD( fMD, "GrpComp" );
         }
 
         private void LblEmailPic_Click(object sender, EventArgs e)
@@ -1186,6 +1190,12 @@ namespace ParsDashboard
         private void LblMDInst_Click(object sender, EventArgs e)
         {
             NavSetStyleClick( LblMDInst );
+
+            fNav.ShowForm( fMD );
+
+            SubRtn.ShowHideMenu( this, MnuMD.Name );
+
+            SubRtn.ShowHideMD( fMD, "GrpInst" );
         }
 
         private void LblMDLevel_MouseEnter(object sender, EventArgs e)
@@ -1201,6 +1211,12 @@ namespace ParsDashboard
         private void LblMDLevel_Click(object sender, EventArgs e)
         {
             NavSetStyleClick( LblMDLevel );
+
+            fNav.ShowForm( fMD );
+
+            SubRtn.ShowHideMenu( this, MnuMD.Name );
+
+            SubRtn.ShowHideMD( fMD, "GrpLevel" );
         }
 
         private void LblMDLocation_MouseEnter(object sender, EventArgs e)
@@ -1216,6 +1232,12 @@ namespace ParsDashboard
         private void LblMDLocation_Click(object sender, EventArgs e)
         {
             NavSetStyleClick( LblMDLocation );
+
+            fNav.ShowForm( fMD );
+
+            SubRtn.ShowHideMenu( this, MnuMD.Name );
+
+            SubRtn.ShowHideMD( fMD, "GrpLocation" );
         }
 
         private void LblMDSurgery_MouseEnter(object sender, EventArgs e)
@@ -1231,6 +1253,12 @@ namespace ParsDashboard
         private void LblMDSurgery_Click(object sender, EventArgs e)
         {
             NavSetStyleClick( LblMDSurgery );
+
+            fNav.ShowForm( fMD );
+
+            SubRtn.ShowHideMenu( this, MnuMD.Name );
+
+            SubRtn.ShowHideMD( fMD, "GrpSurgery" );
         }
 
         private void LblRpt_MouseEnter(object sender, EventArgs e)
@@ -1737,6 +1765,42 @@ namespace ParsDashboard
             ctlGrp = grp as GroupBox;
 
             if ( GrpName == "GrpHospital" )
+            { ctlGrp.BringToFront(); }
+            else
+            { ctlGrp.SendToBack(); }
+
+            //  Instrumentation
+            grp = SubRoutine.FindControl( frm, "GrpInst" );
+            ctlGrp = grp as GroupBox;
+
+            if ( GrpName == "GrpInst")
+            { ctlGrp.BringToFront(); }
+            else
+            { ctlGrp.SendToBack(); }
+
+            //  Level
+            grp = SubRoutine.FindControl( frm, "GrpLevel" );
+            ctlGrp = grp as GroupBox;
+
+            if ( GrpName == "GrpLevel")
+            { ctlGrp.BringToFront(); }
+            else
+            { ctlGrp.SendToBack(); }
+
+            //  Location
+            grp = SubRoutine.FindControl( frm, "GrpLocation" );
+            ctlGrp = grp as GroupBox;
+
+            if ( GrpName == "GrpLocation")
+            { ctlGrp.BringToFront(); }
+            else
+            { ctlGrp.SendToBack(); }
+
+            //  Surgery
+            grp = SubRoutine.FindControl( frm, "GrpSurgery" );
+            ctlGrp = grp as GroupBox;
+
+            if ( GrpName == "GrpSurgery" )
             { ctlGrp.BringToFront(); }
             else
             { ctlGrp.SendToBack(); }

@@ -367,7 +367,7 @@
             this.PnlSecurity.Controls.Add(this.LblSecurityUserMgmt);
             this.PnlSecurity.Controls.Add(this.LblSecurity);
             this.PnlSecurity.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlSecurity.Location = new System.Drawing.Point(2, 739);
+            this.PnlSecurity.Location = new System.Drawing.Point(2, 467);
             this.PnlSecurity.Margin = new System.Windows.Forms.Padding(0);
             this.PnlSecurity.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlSecurity.Name = "PnlSecurity";
@@ -561,7 +561,7 @@
             this.PnlMetaData.Margin = new System.Windows.Forms.Padding(0);
             this.PnlMetaData.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlMetaData.Name = "PnlMetaData";
-            this.PnlMetaData.Size = new System.Drawing.Size(200, 374);
+            this.PnlMetaData.Size = new System.Drawing.Size(200, 54);
             this.PnlMetaData.TabIndex = 8;
             this.PnlMetaData.Tag = "Collapsed";
             // 
@@ -731,12 +731,11 @@
             this.PnlEmailPic.Controls.Add(this.LblEmailPicPicInfo);
             this.PnlEmailPic.Controls.Add(this.LblEmailPicPicOnly);
             this.PnlEmailPic.Controls.Add(this.LblEmailPic);
-            this.PnlEmailPic.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlEmailPic.Location = new System.Drawing.Point(2, 671);
+            this.PnlEmailPic.Location = new System.Drawing.Point(2, 351);
             this.PnlEmailPic.Margin = new System.Windows.Forms.Padding(0);
             this.PnlEmailPic.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlEmailPic.Name = "PnlEmailPic";
-            this.PnlEmailPic.Size = new System.Drawing.Size(200, 66);
+            this.PnlEmailPic.Size = new System.Drawing.Size(200, 114);
             this.PnlEmailPic.TabIndex = 13;
             this.PnlEmailPic.Tag = "Collapsed";
             // 

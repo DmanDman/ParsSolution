@@ -28,12 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.GrpComp = new System.Windows.Forms.GroupBox();
             this.GrpCompRename = new System.Windows.Forms.GroupBox();
             this.TxtCompRename = new System.Windows.Forms.TextBox();
@@ -62,26 +62,6 @@
             this.CobDx = new System.Windows.Forms.ComboBox();
             this.GrpDxNew = new System.Windows.Forms.GroupBox();
             this.TxtDxNew = new System.Windows.Forms.TextBox();
-            this.GrpDr = new System.Windows.Forms.GroupBox();
-            this.GrpDrRename = new System.Windows.Forms.GroupBox();
-            this.GrpDrDr = new System.Windows.Forms.GroupBox();
-            this.GrpDrNew = new System.Windows.Forms.GroupBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.TxtDrNewLast = new System.Windows.Forms.TextBox();
-            this.LblDrNewLast = new System.Windows.Forms.Label();
-            this.LblDrNewFirst = new System.Windows.Forms.Label();
-            this.TxtDrNewFirst = new System.Windows.Forms.TextBox();
-            this.LblDrNewInit = new System.Windows.Forms.Label();
-            this.TxtDrNewInit = new System.Windows.Forms.TextBox();
-            this.TxtDrRenameInit = new System.Windows.Forms.TextBox();
-            this.LblDrRenameInit = new System.Windows.Forms.Label();
-            this.TxtDrRenameFirst = new System.Windows.Forms.TextBox();
-            this.LblDrRenameFirst = new System.Windows.Forms.Label();
-            this.LblDrRenameLast = new System.Windows.Forms.Label();
-            this.TxtDrRenameLast = new System.Windows.Forms.TextBox();
-            this.LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Initial = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.GrpFiscalYr = new System.Windows.Forms.GroupBox();
             this.GrpFiscalYrRename = new System.Windows.Forms.GroupBox();
             this.TxtFiscalYrRename = new System.Windows.Forms.TextBox();
@@ -89,31 +69,27 @@
             this.CboFiscalYr = new System.Windows.Forms.ComboBox();
             this.GrpFiscalYrNew = new System.Windows.Forms.GroupBox();
             this.TxtFiscalYr = new System.Windows.Forms.TextBox();
+            this.GrpDr = new System.Windows.Forms.GroupBox();
+            this.GrpDrRename = new System.Windows.Forms.GroupBox();
+            this.TxtDrRenameInit = new System.Windows.Forms.TextBox();
+            this.LblDrRenameInit = new System.Windows.Forms.Label();
+            this.TxtDrRenameFirst = new System.Windows.Forms.TextBox();
+            this.LblDrRenameFirst = new System.Windows.Forms.Label();
+            this.LblDrRenameLast = new System.Windows.Forms.Label();
+            this.TxtDrRenameLast = new System.Windows.Forms.TextBox();
+            this.GrpDrDr = new System.Windows.Forms.GroupBox();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Initial = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GrpDrNew = new System.Windows.Forms.GroupBox();
+            this.TxtDrNewInit = new System.Windows.Forms.TextBox();
+            this.LblDrNewInit = new System.Windows.Forms.Label();
+            this.TxtDrNewFirst = new System.Windows.Forms.TextBox();
+            this.LblDrNewFirst = new System.Windows.Forms.Label();
+            this.LblDrNewLast = new System.Windows.Forms.Label();
+            this.TxtDrNewLast = new System.Windows.Forms.TextBox();
             this.GrpHospital = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.City = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.State = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Zip = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
@@ -129,6 +105,58 @@
             this.label13 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.textBox14 = new System.Windows.Forms.TextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.City = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.State = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Zip = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Phone = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox7 = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.GrpInst = new System.Windows.Forms.GroupBox();
+            this.GrpInstRename = new System.Windows.Forms.GroupBox();
+            this.TxtInstRename = new System.Windows.Forms.TextBox();
+            this.GrpInstInst = new System.Windows.Forms.GroupBox();
+            this.CboInst = new System.Windows.Forms.ComboBox();
+            this.GrpInstNew = new System.Windows.Forms.GroupBox();
+            this.TxtInst = new System.Windows.Forms.TextBox();
+            this.GrpLevel = new System.Windows.Forms.GroupBox();
+            this.GrpLevelRename = new System.Windows.Forms.GroupBox();
+            this.TxtLevelRename = new System.Windows.Forms.TextBox();
+            this.GrpLevelLevel = new System.Windows.Forms.GroupBox();
+            this.CboLevel = new System.Windows.Forms.ComboBox();
+            this.GrpLevelNew = new System.Windows.Forms.GroupBox();
+            this.TxtLevel = new System.Windows.Forms.TextBox();
+            this.GrpLocation = new System.Windows.Forms.GroupBox();
+            this.GrpLocationRename = new System.Windows.Forms.GroupBox();
+            this.TxtLocationRename = new System.Windows.Forms.TextBox();
+            this.GrpLocationLocation = new System.Windows.Forms.GroupBox();
+            this.CboLocation = new System.Windows.Forms.ComboBox();
+            this.GrpLocationNew = new System.Windows.Forms.GroupBox();
+            this.TxtLocation = new System.Windows.Forms.TextBox();
+            this.GrpSurgery = new System.Windows.Forms.GroupBox();
+            this.GrpSurgeryRename = new System.Windows.Forms.GroupBox();
+            this.TxtSurgeryRename = new System.Windows.Forms.TextBox();
+            this.GrpSurgerySurgery = new System.Windows.Forms.GroupBox();
+            this.CboSurgery = new System.Windows.Forms.ComboBox();
+            this.GrpSurgeryNew = new System.Windows.Forms.GroupBox();
+            this.TxtSurgery = new System.Windows.Forms.TextBox();
             this.GrpComp.SuspendLayout();
             this.GrpCompRename.SuspendLayout();
             this.GrpCompComp.SuspendLayout();
@@ -145,20 +173,36 @@
             this.GrpDxRename.SuspendLayout();
             this.GrpDxDx.SuspendLayout();
             this.GrpDxNew.SuspendLayout();
-            this.GrpDr.SuspendLayout();
-            this.GrpDrRename.SuspendLayout();
-            this.GrpDrDr.SuspendLayout();
-            this.GrpDrNew.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.GrpFiscalYr.SuspendLayout();
             this.GrpFiscalYrRename.SuspendLayout();
             this.GrpFiscalYrFiscalYr.SuspendLayout();
             this.GrpFiscalYrNew.SuspendLayout();
+            this.GrpDr.SuspendLayout();
+            this.GrpDrRename.SuspendLayout();
+            this.GrpDrDr.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.GrpDrNew.SuspendLayout();
             this.GrpHospital.SuspendLayout();
+            this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
             this.groupBox4.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.GrpInst.SuspendLayout();
+            this.GrpInstRename.SuspendLayout();
+            this.GrpInstInst.SuspendLayout();
+            this.GrpInstNew.SuspendLayout();
+            this.GrpLevel.SuspendLayout();
+            this.GrpLevelRename.SuspendLayout();
+            this.GrpLevelLevel.SuspendLayout();
+            this.GrpLevelNew.SuspendLayout();
+            this.GrpLocation.SuspendLayout();
+            this.GrpLocationRename.SuspendLayout();
+            this.GrpLocationLocation.SuspendLayout();
+            this.GrpLocationNew.SuspendLayout();
+            this.GrpSurgery.SuspendLayout();
+            this.GrpSurgeryRename.SuspendLayout();
+            this.GrpSurgerySurgery.SuspendLayout();
+            this.GrpSurgeryNew.SuspendLayout();
             this.SuspendLayout();
             // 
             // GrpComp
@@ -529,217 +573,6 @@
             this.TxtDxNew.Size = new System.Drawing.Size(264, 22);
             this.TxtDxNew.TabIndex = 0;
             // 
-            // GrpDr
-            // 
-            this.GrpDr.Controls.Add(this.GrpDrRename);
-            this.GrpDr.Controls.Add(this.GrpDrDr);
-            this.GrpDr.Controls.Add(this.GrpDrNew);
-            this.GrpDr.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GrpDr.Location = new System.Drawing.Point(12, 46);
-            this.GrpDr.Name = "GrpDr";
-            this.GrpDr.Size = new System.Drawing.Size(1065, 324);
-            this.GrpDr.TabIndex = 0;
-            this.GrpDr.TabStop = false;
-            this.GrpDr.Text = "Doctor";
-            // 
-            // GrpDrRename
-            // 
-            this.GrpDrRename.Controls.Add(this.TxtDrRenameInit);
-            this.GrpDrRename.Controls.Add(this.LblDrRenameInit);
-            this.GrpDrRename.Controls.Add(this.TxtDrRenameFirst);
-            this.GrpDrRename.Controls.Add(this.LblDrRenameFirst);
-            this.GrpDrRename.Controls.Add(this.LblDrRenameLast);
-            this.GrpDrRename.Controls.Add(this.TxtDrRenameLast);
-            this.GrpDrRename.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GrpDrRename.Location = new System.Drawing.Point(776, 35);
-            this.GrpDrRename.Name = "GrpDrRename";
-            this.GrpDrRename.Size = new System.Drawing.Size(276, 185);
-            this.GrpDrRename.TabIndex = 2;
-            this.GrpDrRename.TabStop = false;
-            this.GrpDrRename.Text = "Rename";
-            // 
-            // GrpDrDr
-            // 
-            this.GrpDrDr.Controls.Add(this.dataGridView1);
-            this.GrpDrDr.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GrpDrDr.Location = new System.Drawing.Point(336, 35);
-            this.GrpDrDr.Name = "GrpDrDr";
-            this.GrpDrDr.Size = new System.Drawing.Size(402, 283);
-            this.GrpDrDr.TabIndex = 1;
-            this.GrpDrDr.TabStop = false;
-            this.GrpDrDr.Text = "Doctor";
-            // 
-            // GrpDrNew
-            // 
-            this.GrpDrNew.Controls.Add(this.TxtDrNewInit);
-            this.GrpDrNew.Controls.Add(this.LblDrNewInit);
-            this.GrpDrNew.Controls.Add(this.TxtDrNewFirst);
-            this.GrpDrNew.Controls.Add(this.LblDrNewFirst);
-            this.GrpDrNew.Controls.Add(this.LblDrNewLast);
-            this.GrpDrNew.Controls.Add(this.TxtDrNewLast);
-            this.GrpDrNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GrpDrNew.Location = new System.Drawing.Point(21, 35);
-            this.GrpDrNew.Name = "GrpDrNew";
-            this.GrpDrNew.Size = new System.Drawing.Size(276, 185);
-            this.GrpDrNew.TabIndex = 0;
-            this.GrpDrNew.TabStop = false;
-            this.GrpDrNew.Text = "New";
-            // 
-            // dataGridView1
-            // 
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.LastName,
-            this.FirstName,
-            this.Initial});
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle8;
-            this.dataGridView1.Location = new System.Drawing.Point(16, 35);
-            this.dataGridView1.Name = "dataGridView1";
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle9.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle9;
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(365, 175);
-            this.dataGridView1.TabIndex = 0;
-            // 
-            // TxtDrNewLast
-            // 
-            this.TxtDrNewLast.Location = new System.Drawing.Point(104, 35);
-            this.TxtDrNewLast.Name = "TxtDrNewLast";
-            this.TxtDrNewLast.Size = new System.Drawing.Size(154, 22);
-            this.TxtDrNewLast.TabIndex = 1;
-            // 
-            // LblDrNewLast
-            // 
-            this.LblDrNewLast.AutoSize = true;
-            this.LblDrNewLast.Location = new System.Drawing.Point(7, 38);
-            this.LblDrNewLast.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblDrNewLast.Name = "LblDrNewLast";
-            this.LblDrNewLast.Size = new System.Drawing.Size(80, 17);
-            this.LblDrNewLast.TabIndex = 0;
-            this.LblDrNewLast.Text = "Last Name:";
-            // 
-            // LblDrNewFirst
-            // 
-            this.LblDrNewFirst.AutoSize = true;
-            this.LblDrNewFirst.Location = new System.Drawing.Point(7, 76);
-            this.LblDrNewFirst.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblDrNewFirst.Name = "LblDrNewFirst";
-            this.LblDrNewFirst.Size = new System.Drawing.Size(80, 17);
-            this.LblDrNewFirst.TabIndex = 2;
-            this.LblDrNewFirst.Text = "First Name:";
-            // 
-            // TxtDrNewFirst
-            // 
-            this.TxtDrNewFirst.Location = new System.Drawing.Point(104, 73);
-            this.TxtDrNewFirst.Name = "TxtDrNewFirst";
-            this.TxtDrNewFirst.Size = new System.Drawing.Size(154, 22);
-            this.TxtDrNewFirst.TabIndex = 3;
-            // 
-            // LblDrNewInit
-            // 
-            this.LblDrNewInit.AutoSize = true;
-            this.LblDrNewInit.Location = new System.Drawing.Point(7, 117);
-            this.LblDrNewInit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblDrNewInit.Name = "LblDrNewInit";
-            this.LblDrNewInit.Size = new System.Drawing.Size(44, 17);
-            this.LblDrNewInit.TabIndex = 4;
-            this.LblDrNewInit.Text = "Initial:";
-            // 
-            // TxtDrNewInit
-            // 
-            this.TxtDrNewInit.Location = new System.Drawing.Point(104, 117);
-            this.TxtDrNewInit.Name = "TxtDrNewInit";
-            this.TxtDrNewInit.Size = new System.Drawing.Size(154, 22);
-            this.TxtDrNewInit.TabIndex = 5;
-            // 
-            // TxtDrRenameInit
-            // 
-            this.TxtDrRenameInit.Location = new System.Drawing.Point(110, 122);
-            this.TxtDrRenameInit.Name = "TxtDrRenameInit";
-            this.TxtDrRenameInit.Size = new System.Drawing.Size(154, 22);
-            this.TxtDrRenameInit.TabIndex = 5;
-            // 
-            // LblDrRenameInit
-            // 
-            this.LblDrRenameInit.AutoSize = true;
-            this.LblDrRenameInit.Location = new System.Drawing.Point(13, 122);
-            this.LblDrRenameInit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblDrRenameInit.Name = "LblDrRenameInit";
-            this.LblDrRenameInit.Size = new System.Drawing.Size(44, 17);
-            this.LblDrRenameInit.TabIndex = 4;
-            this.LblDrRenameInit.Text = "Initial:";
-            // 
-            // TxtDrRenameFirst
-            // 
-            this.TxtDrRenameFirst.Location = new System.Drawing.Point(110, 78);
-            this.TxtDrRenameFirst.Name = "TxtDrRenameFirst";
-            this.TxtDrRenameFirst.Size = new System.Drawing.Size(154, 22);
-            this.TxtDrRenameFirst.TabIndex = 3;
-            // 
-            // LblDrRenameFirst
-            // 
-            this.LblDrRenameFirst.AutoSize = true;
-            this.LblDrRenameFirst.Location = new System.Drawing.Point(13, 81);
-            this.LblDrRenameFirst.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblDrRenameFirst.Name = "LblDrRenameFirst";
-            this.LblDrRenameFirst.Size = new System.Drawing.Size(80, 17);
-            this.LblDrRenameFirst.TabIndex = 2;
-            this.LblDrRenameFirst.Text = "First Name:";
-            // 
-            // LblDrRenameLast
-            // 
-            this.LblDrRenameLast.AutoSize = true;
-            this.LblDrRenameLast.Location = new System.Drawing.Point(13, 43);
-            this.LblDrRenameLast.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblDrRenameLast.Name = "LblDrRenameLast";
-            this.LblDrRenameLast.Size = new System.Drawing.Size(80, 17);
-            this.LblDrRenameLast.TabIndex = 0;
-            this.LblDrRenameLast.Text = "Last Name:";
-            // 
-            // TxtDrRenameLast
-            // 
-            this.TxtDrRenameLast.Location = new System.Drawing.Point(110, 40);
-            this.TxtDrRenameLast.Name = "TxtDrRenameLast";
-            this.TxtDrRenameLast.Size = new System.Drawing.Size(154, 22);
-            this.TxtDrRenameLast.TabIndex = 1;
-            // 
-            // LastName
-            // 
-            this.LastName.HeaderText = "Last Name";
-            this.LastName.Name = "LastName";
-            // 
-            // FirstName
-            // 
-            this.FirstName.HeaderText = "First Name";
-            this.FirstName.Name = "FirstName";
-            // 
-            // Initial
-            // 
-            this.Initial.HeaderText = "Initial";
-            this.Initial.Name = "Initial";
-            this.Initial.Width = 50;
-            // 
             // GrpFiscalYr
             // 
             this.GrpFiscalYr.Controls.Add(this.GrpFiscalYrRename);
@@ -832,6 +665,217 @@
             this.TxtFiscalYr.Size = new System.Drawing.Size(264, 22);
             this.TxtFiscalYr.TabIndex = 0;
             // 
+            // GrpDr
+            // 
+            this.GrpDr.Controls.Add(this.GrpDrRename);
+            this.GrpDr.Controls.Add(this.GrpDrDr);
+            this.GrpDr.Controls.Add(this.GrpDrNew);
+            this.GrpDr.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrpDr.Location = new System.Drawing.Point(12, 46);
+            this.GrpDr.Name = "GrpDr";
+            this.GrpDr.Size = new System.Drawing.Size(1065, 324);
+            this.GrpDr.TabIndex = 0;
+            this.GrpDr.TabStop = false;
+            this.GrpDr.Text = "Doctor";
+            // 
+            // GrpDrRename
+            // 
+            this.GrpDrRename.Controls.Add(this.TxtDrRenameInit);
+            this.GrpDrRename.Controls.Add(this.LblDrRenameInit);
+            this.GrpDrRename.Controls.Add(this.TxtDrRenameFirst);
+            this.GrpDrRename.Controls.Add(this.LblDrRenameFirst);
+            this.GrpDrRename.Controls.Add(this.LblDrRenameLast);
+            this.GrpDrRename.Controls.Add(this.TxtDrRenameLast);
+            this.GrpDrRename.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrpDrRename.Location = new System.Drawing.Point(776, 35);
+            this.GrpDrRename.Name = "GrpDrRename";
+            this.GrpDrRename.Size = new System.Drawing.Size(276, 185);
+            this.GrpDrRename.TabIndex = 2;
+            this.GrpDrRename.TabStop = false;
+            this.GrpDrRename.Text = "Rename";
+            // 
+            // TxtDrRenameInit
+            // 
+            this.TxtDrRenameInit.Location = new System.Drawing.Point(110, 122);
+            this.TxtDrRenameInit.Name = "TxtDrRenameInit";
+            this.TxtDrRenameInit.Size = new System.Drawing.Size(154, 22);
+            this.TxtDrRenameInit.TabIndex = 5;
+            // 
+            // LblDrRenameInit
+            // 
+            this.LblDrRenameInit.AutoSize = true;
+            this.LblDrRenameInit.Location = new System.Drawing.Point(13, 122);
+            this.LblDrRenameInit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblDrRenameInit.Name = "LblDrRenameInit";
+            this.LblDrRenameInit.Size = new System.Drawing.Size(44, 17);
+            this.LblDrRenameInit.TabIndex = 4;
+            this.LblDrRenameInit.Text = "Initial:";
+            // 
+            // TxtDrRenameFirst
+            // 
+            this.TxtDrRenameFirst.Location = new System.Drawing.Point(110, 78);
+            this.TxtDrRenameFirst.Name = "TxtDrRenameFirst";
+            this.TxtDrRenameFirst.Size = new System.Drawing.Size(154, 22);
+            this.TxtDrRenameFirst.TabIndex = 3;
+            // 
+            // LblDrRenameFirst
+            // 
+            this.LblDrRenameFirst.AutoSize = true;
+            this.LblDrRenameFirst.Location = new System.Drawing.Point(13, 81);
+            this.LblDrRenameFirst.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblDrRenameFirst.Name = "LblDrRenameFirst";
+            this.LblDrRenameFirst.Size = new System.Drawing.Size(80, 17);
+            this.LblDrRenameFirst.TabIndex = 2;
+            this.LblDrRenameFirst.Text = "First Name:";
+            // 
+            // LblDrRenameLast
+            // 
+            this.LblDrRenameLast.AutoSize = true;
+            this.LblDrRenameLast.Location = new System.Drawing.Point(13, 43);
+            this.LblDrRenameLast.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblDrRenameLast.Name = "LblDrRenameLast";
+            this.LblDrRenameLast.Size = new System.Drawing.Size(80, 17);
+            this.LblDrRenameLast.TabIndex = 0;
+            this.LblDrRenameLast.Text = "Last Name:";
+            // 
+            // TxtDrRenameLast
+            // 
+            this.TxtDrRenameLast.Location = new System.Drawing.Point(110, 40);
+            this.TxtDrRenameLast.Name = "TxtDrRenameLast";
+            this.TxtDrRenameLast.Size = new System.Drawing.Size(154, 22);
+            this.TxtDrRenameLast.TabIndex = 1;
+            // 
+            // GrpDrDr
+            // 
+            this.GrpDrDr.Controls.Add(this.dataGridView1);
+            this.GrpDrDr.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrpDrDr.Location = new System.Drawing.Point(336, 35);
+            this.GrpDrDr.Name = "GrpDrDr";
+            this.GrpDrDr.Size = new System.Drawing.Size(402, 283);
+            this.GrpDrDr.TabIndex = 1;
+            this.GrpDrDr.TabStop = false;
+            this.GrpDrDr.Text = "Doctor";
+            // 
+            // dataGridView1
+            // 
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.LastName,
+            this.FirstName,
+            this.Initial});
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView1.DefaultCellStyle = dataGridViewCellStyle2;
+            this.dataGridView1.Location = new System.Drawing.Point(16, 35);
+            this.dataGridView1.Name = "dataGridView1";
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView1.RowHeadersDefaultCellStyle = dataGridViewCellStyle3;
+            this.dataGridView1.RowTemplate.Height = 24;
+            this.dataGridView1.Size = new System.Drawing.Size(365, 175);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // LastName
+            // 
+            this.LastName.HeaderText = "Last Name";
+            this.LastName.Name = "LastName";
+            // 
+            // FirstName
+            // 
+            this.FirstName.HeaderText = "First Name";
+            this.FirstName.Name = "FirstName";
+            // 
+            // Initial
+            // 
+            this.Initial.HeaderText = "Initial";
+            this.Initial.Name = "Initial";
+            this.Initial.Width = 50;
+            // 
+            // GrpDrNew
+            // 
+            this.GrpDrNew.Controls.Add(this.TxtDrNewInit);
+            this.GrpDrNew.Controls.Add(this.LblDrNewInit);
+            this.GrpDrNew.Controls.Add(this.TxtDrNewFirst);
+            this.GrpDrNew.Controls.Add(this.LblDrNewFirst);
+            this.GrpDrNew.Controls.Add(this.LblDrNewLast);
+            this.GrpDrNew.Controls.Add(this.TxtDrNewLast);
+            this.GrpDrNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrpDrNew.Location = new System.Drawing.Point(21, 35);
+            this.GrpDrNew.Name = "GrpDrNew";
+            this.GrpDrNew.Size = new System.Drawing.Size(276, 185);
+            this.GrpDrNew.TabIndex = 0;
+            this.GrpDrNew.TabStop = false;
+            this.GrpDrNew.Text = "New";
+            // 
+            // TxtDrNewInit
+            // 
+            this.TxtDrNewInit.Location = new System.Drawing.Point(104, 117);
+            this.TxtDrNewInit.Name = "TxtDrNewInit";
+            this.TxtDrNewInit.Size = new System.Drawing.Size(154, 22);
+            this.TxtDrNewInit.TabIndex = 5;
+            // 
+            // LblDrNewInit
+            // 
+            this.LblDrNewInit.AutoSize = true;
+            this.LblDrNewInit.Location = new System.Drawing.Point(7, 117);
+            this.LblDrNewInit.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblDrNewInit.Name = "LblDrNewInit";
+            this.LblDrNewInit.Size = new System.Drawing.Size(44, 17);
+            this.LblDrNewInit.TabIndex = 4;
+            this.LblDrNewInit.Text = "Initial:";
+            // 
+            // TxtDrNewFirst
+            // 
+            this.TxtDrNewFirst.Location = new System.Drawing.Point(104, 73);
+            this.TxtDrNewFirst.Name = "TxtDrNewFirst";
+            this.TxtDrNewFirst.Size = new System.Drawing.Size(154, 22);
+            this.TxtDrNewFirst.TabIndex = 3;
+            // 
+            // LblDrNewFirst
+            // 
+            this.LblDrNewFirst.AutoSize = true;
+            this.LblDrNewFirst.Location = new System.Drawing.Point(7, 76);
+            this.LblDrNewFirst.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblDrNewFirst.Name = "LblDrNewFirst";
+            this.LblDrNewFirst.Size = new System.Drawing.Size(80, 17);
+            this.LblDrNewFirst.TabIndex = 2;
+            this.LblDrNewFirst.Text = "First Name:";
+            // 
+            // LblDrNewLast
+            // 
+            this.LblDrNewLast.AutoSize = true;
+            this.LblDrNewLast.Location = new System.Drawing.Point(7, 38);
+            this.LblDrNewLast.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblDrNewLast.Name = "LblDrNewLast";
+            this.LblDrNewLast.Size = new System.Drawing.Size(80, 17);
+            this.LblDrNewLast.TabIndex = 0;
+            this.LblDrNewLast.Text = "Last Name:";
+            // 
+            // TxtDrNewLast
+            // 
+            this.TxtDrNewLast.Location = new System.Drawing.Point(104, 35);
+            this.TxtDrNewLast.Name = "TxtDrNewLast";
+            this.TxtDrNewLast.Size = new System.Drawing.Size(154, 22);
+            this.TxtDrNewLast.TabIndex = 1;
+            // 
             // GrpHospital
             // 
             this.GrpHospital.Controls.Add(this.groupBox2);
@@ -844,242 +888,6 @@
             this.GrpHospital.TabIndex = 11;
             this.GrpHospital.TabStop = false;
             this.GrpHospital.Text = "Hospital";
-            // 
-            // groupBox3
-            // 
-            this.groupBox3.Controls.Add(this.dataGridView2);
-            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(336, 35);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(402, 283);
-            this.groupBox3.TabIndex = 1;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Hospital";
-            // 
-            // dataGridView2
-            // 
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn2,
-            this.dataGridViewTextBoxColumn3,
-            this.City,
-            this.State,
-            this.Zip,
-            this.Phone});
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle11;
-            this.dataGridView2.Location = new System.Drawing.Point(6, 35);
-            this.dataGridView2.Name = "dataGridView2";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
-            this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(380, 175);
-            this.dataGridView2.TabIndex = 0;
-            // 
-            // groupBox4
-            // 
-            this.groupBox4.Controls.Add(this.textBox10);
-            this.groupBox4.Controls.Add(this.textBox9);
-            this.groupBox4.Controls.Add(this.textBox8);
-            this.groupBox4.Controls.Add(this.textBox7);
-            this.groupBox4.Controls.Add(this.label10);
-            this.groupBox4.Controls.Add(this.label9);
-            this.groupBox4.Controls.Add(this.label8);
-            this.groupBox4.Controls.Add(this.label7);
-            this.groupBox4.Controls.Add(this.textBox4);
-            this.groupBox4.Controls.Add(this.label4);
-            this.groupBox4.Controls.Add(this.textBox5);
-            this.groupBox4.Controls.Add(this.label5);
-            this.groupBox4.Controls.Add(this.label6);
-            this.groupBox4.Controls.Add(this.textBox6);
-            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(21, 35);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(276, 289);
-            this.groupBox4.TabIndex = 0;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "New";
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(104, 109);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(154, 22);
-            this.textBox4.TabIndex = 5;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(7, 117);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(76, 17);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Address 2:";
-            // 
-            // textBox5
-            // 
-            this.textBox5.Location = new System.Drawing.Point(104, 72);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(154, 22);
-            this.textBox5.TabIndex = 3;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(7, 76);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(76, 17);
-            this.label5.TabIndex = 2;
-            this.label5.Text = "Address 1:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(7, 38);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(49, 17);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Name:";
-            // 
-            // textBox6
-            // 
-            this.textBox6.Location = new System.Drawing.Point(104, 35);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(154, 22);
-            this.textBox6.TabIndex = 1;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(7, 156);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(35, 17);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "City:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(7, 193);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(45, 17);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "State:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(7, 223);
-            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(32, 17);
-            this.label9.TabIndex = 8;
-            this.label9.Text = "Zip:";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(7, 253);
-            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(53, 17);
-            this.label10.TabIndex = 9;
-            this.label10.Text = "Phone:";
-            // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(104, 146);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(154, 22);
-            this.textBox7.TabIndex = 10;
-            // 
-            // textBox8
-            // 
-            this.textBox8.Location = new System.Drawing.Point(104, 183);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(154, 22);
-            this.textBox8.TabIndex = 11;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Location = new System.Drawing.Point(104, 220);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(154, 22);
-            this.textBox9.TabIndex = 12;
-            // 
-            // textBox10
-            // 
-            this.textBox10.Location = new System.Drawing.Point(104, 257);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(154, 22);
-            this.textBox10.TabIndex = 13;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.Frozen = true;
-            this.dataGridViewTextBoxColumn1.HeaderText = "Name";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.Frozen = true;
-            this.dataGridViewTextBoxColumn2.HeaderText = "Address 1";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            // 
-            // dataGridViewTextBoxColumn3
-            // 
-            this.dataGridViewTextBoxColumn3.Frozen = true;
-            this.dataGridViewTextBoxColumn3.HeaderText = "Address 2";
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.Width = 50;
-            // 
-            // City
-            // 
-            this.City.Frozen = true;
-            this.City.HeaderText = "City";
-            this.City.Name = "City";
-            // 
-            // State
-            // 
-            this.State.Frozen = true;
-            this.State.HeaderText = "State";
-            this.State.Name = "State";
-            // 
-            // Zip
-            // 
-            this.Zip.HeaderText = "Zip";
-            this.Zip.Name = "Zip";
-            // 
-            // Phone
-            // 
-            this.Phone.HeaderText = "Phone";
-            this.Phone.Name = "Phone";
             // 
             // groupBox2
             // 
@@ -1224,15 +1032,623 @@
             this.textBox14.Size = new System.Drawing.Size(154, 22);
             this.textBox14.TabIndex = 1;
             // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.dataGridView2);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(336, 35);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(402, 283);
+            this.groupBox3.TabIndex = 1;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Hospital";
+            // 
+            // dataGridView2
+            // 
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.City,
+            this.State,
+            this.Zip,
+            this.Phone});
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dataGridView2.DefaultCellStyle = dataGridViewCellStyle5;
+            this.dataGridView2.Location = new System.Drawing.Point(6, 35);
+            this.dataGridView2.Name = "dataGridView2";
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dataGridView2.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.dataGridView2.RowTemplate.Height = 24;
+            this.dataGridView2.Size = new System.Drawing.Size(380, 175);
+            this.dataGridView2.TabIndex = 0;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.Frozen = true;
+            this.dataGridViewTextBoxColumn1.HeaderText = "Name";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.Frozen = true;
+            this.dataGridViewTextBoxColumn2.HeaderText = "Address 1";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.Frozen = true;
+            this.dataGridViewTextBoxColumn3.HeaderText = "Address 2";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            this.dataGridViewTextBoxColumn3.Width = 50;
+            // 
+            // City
+            // 
+            this.City.Frozen = true;
+            this.City.HeaderText = "City";
+            this.City.Name = "City";
+            // 
+            // State
+            // 
+            this.State.Frozen = true;
+            this.State.HeaderText = "State";
+            this.State.Name = "State";
+            // 
+            // Zip
+            // 
+            this.Zip.HeaderText = "Zip";
+            this.Zip.Name = "Zip";
+            // 
+            // Phone
+            // 
+            this.Phone.HeaderText = "Phone";
+            this.Phone.Name = "Phone";
+            // 
+            // groupBox4
+            // 
+            this.groupBox4.Controls.Add(this.textBox10);
+            this.groupBox4.Controls.Add(this.textBox9);
+            this.groupBox4.Controls.Add(this.textBox8);
+            this.groupBox4.Controls.Add(this.textBox7);
+            this.groupBox4.Controls.Add(this.label10);
+            this.groupBox4.Controls.Add(this.label9);
+            this.groupBox4.Controls.Add(this.label8);
+            this.groupBox4.Controls.Add(this.label7);
+            this.groupBox4.Controls.Add(this.textBox4);
+            this.groupBox4.Controls.Add(this.label4);
+            this.groupBox4.Controls.Add(this.textBox5);
+            this.groupBox4.Controls.Add(this.label5);
+            this.groupBox4.Controls.Add(this.label6);
+            this.groupBox4.Controls.Add(this.textBox6);
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(21, 35);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Size = new System.Drawing.Size(276, 289);
+            this.groupBox4.TabIndex = 0;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "New";
+            // 
+            // textBox10
+            // 
+            this.textBox10.Location = new System.Drawing.Point(104, 257);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(154, 22);
+            this.textBox10.TabIndex = 13;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Location = new System.Drawing.Point(104, 220);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(154, 22);
+            this.textBox9.TabIndex = 12;
+            // 
+            // textBox8
+            // 
+            this.textBox8.Location = new System.Drawing.Point(104, 183);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(154, 22);
+            this.textBox8.TabIndex = 11;
+            // 
+            // textBox7
+            // 
+            this.textBox7.Location = new System.Drawing.Point(104, 146);
+            this.textBox7.Name = "textBox7";
+            this.textBox7.Size = new System.Drawing.Size(154, 22);
+            this.textBox7.TabIndex = 10;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(7, 253);
+            this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(53, 17);
+            this.label10.TabIndex = 9;
+            this.label10.Text = "Phone:";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(7, 223);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(32, 17);
+            this.label9.TabIndex = 8;
+            this.label9.Text = "Zip:";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(7, 193);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(45, 17);
+            this.label8.TabIndex = 7;
+            this.label8.Text = "State:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(7, 156);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(35, 17);
+            this.label7.TabIndex = 6;
+            this.label7.Text = "City:";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(104, 109);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(154, 22);
+            this.textBox4.TabIndex = 5;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(7, 117);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(76, 17);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Address 2:";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(104, 72);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(154, 22);
+            this.textBox5.TabIndex = 3;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(7, 76);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(76, 17);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Address 1:";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(7, 38);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(49, 17);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Name:";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(104, 35);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(154, 22);
+            this.textBox6.TabIndex = 1;
+            // 
+            // GrpInst
+            // 
+            this.GrpInst.Controls.Add(this.GrpInstRename);
+            this.GrpInst.Controls.Add(this.GrpInstInst);
+            this.GrpInst.Controls.Add(this.GrpInstNew);
+            this.GrpInst.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrpInst.Location = new System.Drawing.Point(12, 46);
+            this.GrpInst.Name = "GrpInst";
+            this.GrpInst.Size = new System.Drawing.Size(1065, 324);
+            this.GrpInst.TabIndex = 11;
+            this.GrpInst.TabStop = false;
+            this.GrpInst.Text = "Instrumentation";
+            // 
+            // GrpInstRename
+            // 
+            this.GrpInstRename.Controls.Add(this.TxtInstRename);
+            this.GrpInstRename.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrpInstRename.Location = new System.Drawing.Point(662, 35);
+            this.GrpInstRename.Name = "GrpInstRename";
+            this.GrpInstRename.Size = new System.Drawing.Size(276, 185);
+            this.GrpInstRename.TabIndex = 6;
+            this.GrpInstRename.TabStop = false;
+            this.GrpInstRename.Text = "Rename";
+            // 
+            // TxtInstRename
+            // 
+            this.TxtInstRename.Location = new System.Drawing.Point(6, 35);
+            this.TxtInstRename.Name = "TxtInstRename";
+            this.TxtInstRename.Size = new System.Drawing.Size(264, 22);
+            this.TxtInstRename.TabIndex = 0;
+            // 
+            // GrpInstInst
+            // 
+            this.GrpInstInst.Controls.Add(this.CboInst);
+            this.GrpInstInst.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrpInstInst.Location = new System.Drawing.Point(336, 35);
+            this.GrpInstInst.Name = "GrpInstInst";
+            this.GrpInstInst.Size = new System.Drawing.Size(276, 185);
+            this.GrpInstInst.TabIndex = 5;
+            this.GrpInstInst.TabStop = false;
+            this.GrpInstInst.Text = "Instrumentation";
+            // 
+            // CboInst
+            // 
+            this.CboInst.AutoCompleteCustomSource.AddRange(new string[] {
+            "Best Patient",
+            "\nFirst Surgery",
+            "\nOldest Female\n",
+            "Oldest Male\n",
+            "Oldest Patient\n",
+            "Weirdest Case",
+            "\nWorst Break\n",
+            "Youngest Female\n",
+            "Youngest Male"});
+            this.CboInst.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CboInst.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.CboInst.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CboInst.FormattingEnabled = true;
+            this.CboInst.Items.AddRange(new object[] {
+            "\nOldest Female",
+            "\nOldest Male\n",
+            "\nWeirdest Case\n",
+            "Best Patient\n",
+            "First Surgery",
+            "Oldest Patient",
+            "Worst Break\n",
+            "Youngest Female\n",
+            "Youngest Male"});
+            this.CboInst.Location = new System.Drawing.Point(6, 35);
+            this.CboInst.Name = "CboInst";
+            this.CboInst.Size = new System.Drawing.Size(254, 24);
+            this.CboInst.Sorted = true;
+            this.CboInst.TabIndex = 0;
+            // 
+            // GrpInstNew
+            // 
+            this.GrpInstNew.Controls.Add(this.TxtInst);
+            this.GrpInstNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrpInstNew.Location = new System.Drawing.Point(21, 35);
+            this.GrpInstNew.Name = "GrpInstNew";
+            this.GrpInstNew.Size = new System.Drawing.Size(276, 185);
+            this.GrpInstNew.TabIndex = 4;
+            this.GrpInstNew.TabStop = false;
+            this.GrpInstNew.Text = "New";
+            // 
+            // TxtInst
+            // 
+            this.TxtInst.Location = new System.Drawing.Point(6, 35);
+            this.TxtInst.Name = "TxtInst";
+            this.TxtInst.Size = new System.Drawing.Size(264, 22);
+            this.TxtInst.TabIndex = 0;
+            // 
+            // GrpLevel
+            // 
+            this.GrpLevel.Controls.Add(this.GrpLevelRename);
+            this.GrpLevel.Controls.Add(this.GrpLevelLevel);
+            this.GrpLevel.Controls.Add(this.GrpLevelNew);
+            this.GrpLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrpLevel.Location = new System.Drawing.Point(12, 46);
+            this.GrpLevel.Name = "GrpLevel";
+            this.GrpLevel.Size = new System.Drawing.Size(1065, 324);
+            this.GrpLevel.TabIndex = 12;
+            this.GrpLevel.TabStop = false;
+            this.GrpLevel.Text = "Level";
+            // 
+            // GrpLevelRename
+            // 
+            this.GrpLevelRename.Controls.Add(this.TxtLevelRename);
+            this.GrpLevelRename.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrpLevelRename.Location = new System.Drawing.Point(662, 35);
+            this.GrpLevelRename.Name = "GrpLevelRename";
+            this.GrpLevelRename.Size = new System.Drawing.Size(276, 185);
+            this.GrpLevelRename.TabIndex = 6;
+            this.GrpLevelRename.TabStop = false;
+            this.GrpLevelRename.Text = "Rename";
+            // 
+            // TxtLevelRename
+            // 
+            this.TxtLevelRename.Location = new System.Drawing.Point(6, 35);
+            this.TxtLevelRename.Name = "TxtLevelRename";
+            this.TxtLevelRename.Size = new System.Drawing.Size(264, 22);
+            this.TxtLevelRename.TabIndex = 0;
+            // 
+            // GrpLevelLevel
+            // 
+            this.GrpLevelLevel.Controls.Add(this.CboLevel);
+            this.GrpLevelLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrpLevelLevel.Location = new System.Drawing.Point(336, 35);
+            this.GrpLevelLevel.Name = "GrpLevelLevel";
+            this.GrpLevelLevel.Size = new System.Drawing.Size(276, 185);
+            this.GrpLevelLevel.TabIndex = 5;
+            this.GrpLevelLevel.TabStop = false;
+            this.GrpLevelLevel.Text = "Level";
+            // 
+            // CboLevel
+            // 
+            this.CboLevel.AutoCompleteCustomSource.AddRange(new string[] {
+            "Best Patient",
+            "\nFirst Surgery",
+            "\nOldest Female\n",
+            "Oldest Male\n",
+            "Oldest Patient\n",
+            "Weirdest Case",
+            "\nWorst Break\n",
+            "Youngest Female\n",
+            "Youngest Male"});
+            this.CboLevel.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CboLevel.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.CboLevel.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CboLevel.FormattingEnabled = true;
+            this.CboLevel.Items.AddRange(new object[] {
+            "\nOldest Female",
+            "\nOldest Male\n",
+            "\nWeirdest Case\n",
+            "Best Patient\n",
+            "First Surgery",
+            "Oldest Patient",
+            "Worst Break\n",
+            "Youngest Female\n",
+            "Youngest Male"});
+            this.CboLevel.Location = new System.Drawing.Point(6, 35);
+            this.CboLevel.Name = "CboLevel";
+            this.CboLevel.Size = new System.Drawing.Size(254, 24);
+            this.CboLevel.Sorted = true;
+            this.CboLevel.TabIndex = 0;
+            // 
+            // GrpLevelNew
+            // 
+            this.GrpLevelNew.Controls.Add(this.TxtLevel);
+            this.GrpLevelNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrpLevelNew.Location = new System.Drawing.Point(21, 35);
+            this.GrpLevelNew.Name = "GrpLevelNew";
+            this.GrpLevelNew.Size = new System.Drawing.Size(276, 185);
+            this.GrpLevelNew.TabIndex = 4;
+            this.GrpLevelNew.TabStop = false;
+            this.GrpLevelNew.Text = "New";
+            // 
+            // TxtLevel
+            // 
+            this.TxtLevel.Location = new System.Drawing.Point(6, 35);
+            this.TxtLevel.Name = "TxtLevel";
+            this.TxtLevel.Size = new System.Drawing.Size(264, 22);
+            this.TxtLevel.TabIndex = 0;
+            // 
+            // GrpLocation
+            // 
+            this.GrpLocation.Controls.Add(this.GrpLocationRename);
+            this.GrpLocation.Controls.Add(this.GrpLocationLocation);
+            this.GrpLocation.Controls.Add(this.GrpLocationNew);
+            this.GrpLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrpLocation.Location = new System.Drawing.Point(12, 46);
+            this.GrpLocation.Name = "GrpLocation";
+            this.GrpLocation.Size = new System.Drawing.Size(1065, 324);
+            this.GrpLocation.TabIndex = 13;
+            this.GrpLocation.TabStop = false;
+            this.GrpLocation.Text = "Location";
+            // 
+            // GrpLocationRename
+            // 
+            this.GrpLocationRename.Controls.Add(this.TxtLocationRename);
+            this.GrpLocationRename.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrpLocationRename.Location = new System.Drawing.Point(662, 35);
+            this.GrpLocationRename.Name = "GrpLocationRename";
+            this.GrpLocationRename.Size = new System.Drawing.Size(276, 185);
+            this.GrpLocationRename.TabIndex = 6;
+            this.GrpLocationRename.TabStop = false;
+            this.GrpLocationRename.Text = "Rename";
+            // 
+            // TxtLocationRename
+            // 
+            this.TxtLocationRename.Location = new System.Drawing.Point(6, 35);
+            this.TxtLocationRename.Name = "TxtLocationRename";
+            this.TxtLocationRename.Size = new System.Drawing.Size(264, 22);
+            this.TxtLocationRename.TabIndex = 0;
+            // 
+            // GrpLocationLocation
+            // 
+            this.GrpLocationLocation.Controls.Add(this.CboLocation);
+            this.GrpLocationLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrpLocationLocation.Location = new System.Drawing.Point(336, 35);
+            this.GrpLocationLocation.Name = "GrpLocationLocation";
+            this.GrpLocationLocation.Size = new System.Drawing.Size(276, 185);
+            this.GrpLocationLocation.TabIndex = 5;
+            this.GrpLocationLocation.TabStop = false;
+            this.GrpLocationLocation.Text = "Location";
+            // 
+            // CboLocation
+            // 
+            this.CboLocation.AutoCompleteCustomSource.AddRange(new string[] {
+            "Best Patient",
+            "\nFirst Surgery",
+            "\nOldest Female\n",
+            "Oldest Male\n",
+            "Oldest Patient\n",
+            "Weirdest Case",
+            "\nWorst Break\n",
+            "Youngest Female\n",
+            "Youngest Male"});
+            this.CboLocation.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CboLocation.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.CboLocation.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CboLocation.FormattingEnabled = true;
+            this.CboLocation.Items.AddRange(new object[] {
+            "\nOldest Female",
+            "\nOldest Male\n",
+            "\nWeirdest Case\n",
+            "Best Patient\n",
+            "First Surgery",
+            "Oldest Patient",
+            "Worst Break\n",
+            "Youngest Female\n",
+            "Youngest Male"});
+            this.CboLocation.Location = new System.Drawing.Point(6, 35);
+            this.CboLocation.Name = "CboLocation";
+            this.CboLocation.Size = new System.Drawing.Size(254, 24);
+            this.CboLocation.Sorted = true;
+            this.CboLocation.TabIndex = 0;
+            // 
+            // GrpLocationNew
+            // 
+            this.GrpLocationNew.Controls.Add(this.TxtLocation);
+            this.GrpLocationNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrpLocationNew.Location = new System.Drawing.Point(21, 35);
+            this.GrpLocationNew.Name = "GrpLocationNew";
+            this.GrpLocationNew.Size = new System.Drawing.Size(276, 185);
+            this.GrpLocationNew.TabIndex = 4;
+            this.GrpLocationNew.TabStop = false;
+            this.GrpLocationNew.Text = "New";
+            // 
+            // TxtLocation
+            // 
+            this.TxtLocation.Location = new System.Drawing.Point(6, 35);
+            this.TxtLocation.Name = "TxtLocation";
+            this.TxtLocation.Size = new System.Drawing.Size(264, 22);
+            this.TxtLocation.TabIndex = 0;
+            // 
+            // GrpSurgery
+            // 
+            this.GrpSurgery.Controls.Add(this.GrpSurgeryRename);
+            this.GrpSurgery.Controls.Add(this.GrpSurgerySurgery);
+            this.GrpSurgery.Controls.Add(this.GrpSurgeryNew);
+            this.GrpSurgery.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrpSurgery.Location = new System.Drawing.Point(12, 46);
+            this.GrpSurgery.Name = "GrpSurgery";
+            this.GrpSurgery.Size = new System.Drawing.Size(1065, 324);
+            this.GrpSurgery.TabIndex = 14;
+            this.GrpSurgery.TabStop = false;
+            this.GrpSurgery.Text = "Surgery";
+            // 
+            // GrpSurgeryRename
+            // 
+            this.GrpSurgeryRename.Controls.Add(this.TxtSurgeryRename);
+            this.GrpSurgeryRename.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrpSurgeryRename.Location = new System.Drawing.Point(662, 35);
+            this.GrpSurgeryRename.Name = "GrpSurgeryRename";
+            this.GrpSurgeryRename.Size = new System.Drawing.Size(276, 185);
+            this.GrpSurgeryRename.TabIndex = 6;
+            this.GrpSurgeryRename.TabStop = false;
+            this.GrpSurgeryRename.Text = "Rename";
+            // 
+            // TxtSurgeryRename
+            // 
+            this.TxtSurgeryRename.Location = new System.Drawing.Point(6, 35);
+            this.TxtSurgeryRename.Name = "TxtSurgeryRename";
+            this.TxtSurgeryRename.Size = new System.Drawing.Size(264, 22);
+            this.TxtSurgeryRename.TabIndex = 0;
+            // 
+            // GrpSurgerySurgery
+            // 
+            this.GrpSurgerySurgery.Controls.Add(this.CboSurgery);
+            this.GrpSurgerySurgery.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrpSurgerySurgery.Location = new System.Drawing.Point(336, 35);
+            this.GrpSurgerySurgery.Name = "GrpSurgerySurgery";
+            this.GrpSurgerySurgery.Size = new System.Drawing.Size(276, 185);
+            this.GrpSurgerySurgery.TabIndex = 5;
+            this.GrpSurgerySurgery.TabStop = false;
+            this.GrpSurgerySurgery.Text = "Surgery";
+            // 
+            // CboSurgery
+            // 
+            this.CboSurgery.AutoCompleteCustomSource.AddRange(new string[] {
+            "Best Patient",
+            "\nFirst Surgery",
+            "\nOldest Female\n",
+            "Oldest Male\n",
+            "Oldest Patient\n",
+            "Weirdest Case",
+            "\nWorst Break\n",
+            "Youngest Female\n",
+            "Youngest Male"});
+            this.CboSurgery.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CboSurgery.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.CboSurgery.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CboSurgery.FormattingEnabled = true;
+            this.CboSurgery.Items.AddRange(new object[] {
+            "\nOldest Female",
+            "\nOldest Male\n",
+            "\nWeirdest Case\n",
+            "Best Patient\n",
+            "First Surgery",
+            "Oldest Patient",
+            "Worst Break\n",
+            "Youngest Female\n",
+            "Youngest Male"});
+            this.CboSurgery.Location = new System.Drawing.Point(6, 35);
+            this.CboSurgery.Name = "CboSurgery";
+            this.CboSurgery.Size = new System.Drawing.Size(254, 24);
+            this.CboSurgery.Sorted = true;
+            this.CboSurgery.TabIndex = 0;
+            // 
+            // GrpSurgeryNew
+            // 
+            this.GrpSurgeryNew.Controls.Add(this.TxtSurgery);
+            this.GrpSurgeryNew.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrpSurgeryNew.Location = new System.Drawing.Point(21, 35);
+            this.GrpSurgeryNew.Name = "GrpSurgeryNew";
+            this.GrpSurgeryNew.Size = new System.Drawing.Size(276, 185);
+            this.GrpSurgeryNew.TabIndex = 4;
+            this.GrpSurgeryNew.TabStop = false;
+            this.GrpSurgeryNew.Text = "New";
+            // 
+            // TxtSurgery
+            // 
+            this.TxtSurgery.Location = new System.Drawing.Point(6, 35);
+            this.TxtSurgery.Name = "TxtSurgery";
+            this.TxtSurgery.Size = new System.Drawing.Size(264, 22);
+            this.TxtSurgery.TabIndex = 0;
+            // 
             // FrmMD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1531, 773);
             this.ControlBox = false;
-            this.Controls.Add(this.GrpFiscalYr);
+            this.Controls.Add(this.GrpSurgery);
+            this.Controls.Add(this.GrpLocation);
+            this.Controls.Add(this.GrpLevel);
+            this.Controls.Add(this.GrpInst);
             this.Controls.Add(this.GrpDx);
             this.Controls.Add(this.GrpComp);
+            this.Controls.Add(this.GrpFiscalYr);
             this.Controls.Add(this.GrpImageDesc);
             this.Controls.Add(this.GrpCpt);
             this.Controls.Add(this.GrpHospital);
@@ -1271,26 +1687,50 @@
             this.GrpDxDx.ResumeLayout(false);
             this.GrpDxNew.ResumeLayout(false);
             this.GrpDxNew.PerformLayout();
-            this.GrpDr.ResumeLayout(false);
-            this.GrpDrRename.ResumeLayout(false);
-            this.GrpDrRename.PerformLayout();
-            this.GrpDrDr.ResumeLayout(false);
-            this.GrpDrNew.ResumeLayout(false);
-            this.GrpDrNew.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.GrpFiscalYr.ResumeLayout(false);
             this.GrpFiscalYrRename.ResumeLayout(false);
             this.GrpFiscalYrRename.PerformLayout();
             this.GrpFiscalYrFiscalYr.ResumeLayout(false);
             this.GrpFiscalYrNew.ResumeLayout(false);
             this.GrpFiscalYrNew.PerformLayout();
+            this.GrpDr.ResumeLayout(false);
+            this.GrpDrRename.ResumeLayout(false);
+            this.GrpDrRename.PerformLayout();
+            this.GrpDrDr.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.GrpDrNew.ResumeLayout(false);
+            this.GrpDrNew.PerformLayout();
             this.GrpHospital.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
+            this.GrpInst.ResumeLayout(false);
+            this.GrpInstRename.ResumeLayout(false);
+            this.GrpInstRename.PerformLayout();
+            this.GrpInstInst.ResumeLayout(false);
+            this.GrpInstNew.ResumeLayout(false);
+            this.GrpInstNew.PerformLayout();
+            this.GrpLevel.ResumeLayout(false);
+            this.GrpLevelRename.ResumeLayout(false);
+            this.GrpLevelRename.PerformLayout();
+            this.GrpLevelLevel.ResumeLayout(false);
+            this.GrpLevelNew.ResumeLayout(false);
+            this.GrpLevelNew.PerformLayout();
+            this.GrpLocation.ResumeLayout(false);
+            this.GrpLocationRename.ResumeLayout(false);
+            this.GrpLocationRename.PerformLayout();
+            this.GrpLocationLocation.ResumeLayout(false);
+            this.GrpLocationNew.ResumeLayout(false);
+            this.GrpLocationNew.PerformLayout();
+            this.GrpSurgery.ResumeLayout(false);
+            this.GrpSurgeryRename.ResumeLayout(false);
+            this.GrpSurgeryRename.PerformLayout();
+            this.GrpSurgerySurgery.ResumeLayout(false);
+            this.GrpSurgeryNew.ResumeLayout(false);
+            this.GrpSurgeryNew.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -1391,5 +1831,33 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.GroupBox GrpInst;
+        private System.Windows.Forms.GroupBox GrpInstRename;
+        private System.Windows.Forms.TextBox TxtInstRename;
+        private System.Windows.Forms.GroupBox GrpInstInst;
+        private System.Windows.Forms.ComboBox CboInst;
+        private System.Windows.Forms.GroupBox GrpInstNew;
+        private System.Windows.Forms.TextBox TxtInst;
+        private System.Windows.Forms.GroupBox GrpLevel;
+        private System.Windows.Forms.GroupBox GrpLevelRename;
+        private System.Windows.Forms.TextBox TxtLevelRename;
+        private System.Windows.Forms.GroupBox GrpLevelLevel;
+        private System.Windows.Forms.ComboBox CboLevel;
+        private System.Windows.Forms.GroupBox GrpLevelNew;
+        private System.Windows.Forms.TextBox TxtLevel;
+        private System.Windows.Forms.GroupBox GrpLocation;
+        private System.Windows.Forms.GroupBox GrpLocationRename;
+        private System.Windows.Forms.TextBox TxtLocationRename;
+        private System.Windows.Forms.GroupBox GrpLocationLocation;
+        private System.Windows.Forms.ComboBox CboLocation;
+        private System.Windows.Forms.GroupBox GrpLocationNew;
+        private System.Windows.Forms.TextBox TxtLocation;
+        private System.Windows.Forms.GroupBox GrpSurgery;
+        private System.Windows.Forms.GroupBox GrpSurgeryRename;
+        private System.Windows.Forms.TextBox TxtSurgeryRename;
+        private System.Windows.Forms.GroupBox GrpSurgerySurgery;
+        private System.Windows.Forms.ComboBox CboSurgery;
+        private System.Windows.Forms.GroupBox GrpSurgeryNew;
+        private System.Windows.Forms.TextBox TxtSurgery;
     }
 }
