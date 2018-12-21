@@ -174,6 +174,12 @@
             this.TSMnuMDDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuMDBreak2 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuMDRename = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuPicOnly = new System.Windows.Forms.MenuStrip();
+            this.TSMnuPicOnlySave = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuPicOnlyBreak1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuPicOnlyAdd = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuPicOnlyBreak2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuPicOnlyDel = new System.Windows.Forms.ToolStripMenuItem();
             this.PnlDashboard.SuspendLayout();
             this.PnlPatient.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -198,6 +204,7 @@
             this.MnuDataLink.SuspendLayout();
             this.MnuDataPicInfo.SuspendLayout();
             this.MnuMD.SuspendLayout();
+            this.MnuPicOnly.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnlDashboard
@@ -758,6 +765,9 @@
             this.LblEmailPicPicOnly.Size = new System.Drawing.Size(85, 17);
             this.LblEmailPicPicOnly.TabIndex = 2;
             this.LblEmailPicPicOnly.Text = "Picture Only";
+            this.LblEmailPicPicOnly.Click += new System.EventHandler(this.LblEmailPicPicOnly_Click);
+            this.LblEmailPicPicOnly.MouseEnter += new System.EventHandler(this.LblEmailPicPicOnly_MouseEnter);
+            this.LblEmailPicPicOnly.MouseLeave += new System.EventHandler(this.LblEmailPicPicOnly_MouseLeave);
             // 
             // LblEmailPic
             // 
@@ -773,6 +783,8 @@
             this.LblEmailPic.Text = "Emailed Pictures";
             this.LblEmailPic.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.LblEmailPic.Click += new System.EventHandler(this.LblEmailPic_Click);
+            this.LblEmailPic.MouseEnter += new System.EventHandler(this.LblEmailPic_MouseEnter);
+            this.LblEmailPic.MouseLeave += new System.EventHandler(this.LblEmailPic_MouseLeave);
             // 
             // PnlImages
             // 
@@ -1794,13 +1806,67 @@
             this.TSMnuMDRename.Size = new System.Drawing.Size(75, 24);
             this.TSMnuMDRename.Text = "Rename";
             // 
+            // MnuPicOnly
+            // 
+            this.MnuPicOnly.ImageScalingSize = new System.Drawing.Size(17, 17);
+            this.MnuPicOnly.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMnuPicOnlySave,
+            this.TSMnuPicOnlyBreak1,
+            this.TSMnuPicOnlyAdd,
+            this.TSMnuPicOnlyBreak2,
+            this.TSMnuPicOnlyDel});
+            this.MnuPicOnly.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MnuPicOnly.Location = new System.Drawing.Point(185, 28);
+            this.MnuPicOnly.Name = "MnuPicOnly";
+            this.MnuPicOnly.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuPicOnly.Size = new System.Drawing.Size(1212, 28);
+            this.MnuPicOnly.TabIndex = 29;
+            this.MnuPicOnly.Text = "menuStrip1";
+            this.MnuPicOnly.Visible = false;
+            // 
+            // TSMnuPicOnlySave
+            // 
+            this.TSMnuPicOnlySave.Name = "TSMnuPicOnlySave";
+            this.TSMnuPicOnlySave.Size = new System.Drawing.Size(52, 24);
+            this.TSMnuPicOnlySave.Tag = "";
+            this.TSMnuPicOnlySave.Text = "Save";
+            this.TSMnuPicOnlySave.Click += new System.EventHandler(this.TSMnuPicOnlySave_Click);
+            // 
+            // TSMnuPicOnlyBreak1
+            // 
+            this.TSMnuPicOnlyBreak1.Enabled = false;
+            this.TSMnuPicOnlyBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuPicOnlyBreak1.Name = "TSMnuPicOnlyBreak1";
+            this.TSMnuPicOnlyBreak1.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuPicOnlyBreak1.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuPicOnlyBreak1.Text = "|";
+            // 
+            // TSMnuPicOnlyAdd
+            // 
+            this.TSMnuPicOnlyAdd.Name = "TSMnuPicOnlyAdd";
+            this.TSMnuPicOnlyAdd.Size = new System.Drawing.Size(72, 24);
+            this.TSMnuPicOnlyAdd.Text = "Add Pic";
+            // 
+            // TSMnuPicOnlyBreak2
+            // 
+            this.TSMnuPicOnlyBreak2.Enabled = false;
+            this.TSMnuPicOnlyBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuPicOnlyBreak2.Name = "TSMnuPicOnlyBreak2";
+            this.TSMnuPicOnlyBreak2.Size = new System.Drawing.Size(26, 24);
+            this.TSMnuPicOnlyBreak2.Text = "|";
+            // 
+            // TSMnuPicOnlyDel
+            // 
+            this.TSMnuPicOnlyDel.Name = "TSMnuPicOnlyDel";
+            this.TSMnuPicOnlyDel.Size = new System.Drawing.Size(67, 24);
+            this.TSMnuPicOnlyDel.Text = "Del Pic";
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1397, 976);
-            this.Controls.Add(this.MnuMD);
-            this.Controls.Add(this.MnuDataPicInfo);
+            this.Controls.Add(this.MnuPicOnly);
             this.Controls.Add(this.MnuImages);
             this.Controls.Add(this.MnuImagesSearch);
             this.Controls.Add(this.MnuImageSearchResult);
@@ -1812,6 +1878,8 @@
             this.Controls.Add(this.MnuDataCustomizeNames);
             this.Controls.Add(this.MnuDataDefaultHosp);
             this.Controls.Add(this.MnuDataLink);
+            this.Controls.Add(this.MnuDataPicInfo);
+            this.Controls.Add(this.MnuMD);
             this.Controls.Add(this.MnuDashboard);
             this.Controls.Add(this.tableLayoutPanel1);
             this.IsMdiContainer = true;
@@ -1868,6 +1936,8 @@
             this.MnuDataPicInfo.PerformLayout();
             this.MnuMD.ResumeLayout(false);
             this.MnuMD.PerformLayout();
+            this.MnuPicOnly.ResumeLayout(false);
+            this.MnuPicOnly.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -2020,6 +2090,12 @@
         private System.Windows.Forms.ToolStripMenuItem TSMnuMDDelete;
         private System.Windows.Forms.ToolStripMenuItem TSMnuMDBreak2;
         private System.Windows.Forms.ToolStripMenuItem TSMnuMDRename;
+        private System.Windows.Forms.MenuStrip MnuPicOnly;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuPicOnlySave;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuPicOnlyBreak1;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuPicOnlyAdd;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuPicOnlyBreak2;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuPicOnlyDel;
     }
 }
 

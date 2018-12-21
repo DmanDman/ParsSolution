@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAddImageDesc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddImageDesc.Designer.cs">
+      <DependentUpon>FrmAddImageDesc.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -136,6 +142,12 @@
     <Compile Include="FrmPatientSearch.Designer.cs">
       <DependentUpon>FrmPatientSearch.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmPicOnly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPicOnly.Designer.cs">
+      <DependentUpon>FrmPicOnly.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmSurgery.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -153,6 +165,9 @@
     <Compile Include="Load.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAddImageDesc.resx">
+      <DependentUpon>FrmAddImageDesc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmDashboard.resx">
       <DependentUpon>FrmDashboard.cs</DependentUpon>
     </EmbeddedResource>
@@ -197,6 +212,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPatientSearch.resx">
       <DependentUpon>FrmPatientSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPicOnly.resx">
+      <DependentUpon>FrmPicOnly.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSurgery.resx">
       <DependentUpon>FrmSurgery.cs</DependentUpon>

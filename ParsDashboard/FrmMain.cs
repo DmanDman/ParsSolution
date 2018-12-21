@@ -40,7 +40,11 @@ namespace ParsDashboard
         FrmDataPicInfo fDataPicInfo = new FrmDataPicInfo();
 
         //  Meta Data
-        FrmMD fMD = new FrmMD();                
+        FrmMD fMD = new FrmMD();
+
+        //  Emailed Pics
+        FrmPicOnly fPicOnly = new FrmPicOnly();
+        FrmAddImageDesc fAddImageDesc = new FrmAddImageDesc();
 
         #endregion
 
@@ -190,7 +194,9 @@ namespace ParsDashboard
             SubRtn.Load_All_Forms( fDataLink, this );
             SubRtn.Load_All_Forms( fDataPicInfo, this );
 
-            SubRtn.Load_All_Forms( fMD, this );                        
+            SubRtn.Load_All_Forms( fMD, this );
+
+            SubRtn.Load_All_Forms( fPicOnly, this );
 
             SubRtn.Load_All_Forms( fDashBoard, this );
 
@@ -210,13 +216,13 @@ namespace ParsDashboard
 
         private void LblSurgery_Click(object sender, EventArgs e)
         {
-            SubRtn.DashboardAccordian(sender, e, tableLayoutPanel1);
+            SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
 
-            fNav.ShowForm(fSurgery);
+            fNav.ShowForm( fSurgery );
 
-            NavSetStyleClick(LblSurgery);
+            NavSetStyleClick( LblSurgery );
 
-            SubRtn.ShowHideMenu(this, MnuSurgery.Name);
+            SubRtn.ShowHideMenu( this, MnuSurgery.Name );
         }
 
         private void LblRpt_Click(object sender, EventArgs e)
@@ -250,7 +256,13 @@ namespace ParsDashboard
 
         private void LblEmailPic_Click(object sender, EventArgs e)
         {
-            SubRtn.DashboardAccordian(sender, e, tableLayoutPanel1);
+            SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
+
+            fNav.ShowForm( fPicOnly );
+
+            NavSetStyleClick( LblEmailPicPicOnly );
+
+            SubRtn.ShowHideMenu( this, MnuPicOnly.Name );
         }
 
         private void LblSecurity_Click(object sender, EventArgs e)
@@ -1309,6 +1321,40 @@ namespace ParsDashboard
         private void LblRptDynamic_MouseLeave(object sender, EventArgs e)
         {
             HelpMouseMove.MouseLeave( LblRptDynamic );
+        }
+
+        private void LblEmailPicPicOnly_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblEmailPicPicOnly );
+        }
+
+        private void LblEmailPicPicOnly_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblEmailPicPicOnly );
+        }
+
+        private void LblEmailPicPicOnly_Click(object sender, EventArgs e)
+        {
+            NavSetStyleClick( LblEmailPicPicOnly );
+
+            fNav.ShowForm( fPicOnly );
+
+            SubRtn.ShowHideMenu( this, MnuPicOnly.Name );
+        }
+
+        private void LblEmailPic_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblEmailPic );
+        }
+
+        private void LblEmailPic_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblEmailPic );
+        }
+
+        private void TSMnuPicOnlySave_Click(object sender, EventArgs e)
+        {
+            fAddImageDesc.Show();
         }
     }
 
