@@ -14,7 +14,7 @@ namespace ParsDashboard
     {
         Helper helper = new Helper();
 
-        Subroutines SubRtn = new Subroutines();
+        Subroutines SubRtn = new Subroutines();        
 
         public FrmAddImageDesc()
         {
@@ -22,9 +22,8 @@ namespace ParsDashboard
         }
 
         private void FrmAddImageDesc_Load(object sender, EventArgs e)
-        {
+        {           
             GrpDesc.BringToFront();
-            GrpDescFinal.Visible = false;
         }
 
         private void CboPicInfo_KeyUp(object sender, KeyEventArgs e)
@@ -96,6 +95,18 @@ namespace ParsDashboard
                     GrpAddImage.Enabled = false;
                     
                     helper.CopyListBoxToListBox( LstImageDesc, LstImageDescFinal );
+                }
+
+                //  Group box Add Image visible and "Add images to existing patient and surgery" is checked
+                if ( GrpAddImage.Visible == true && RdoAddPatSur.Checked == true )
+                {
+                    FrmAddExisting fAddExisting = new FrmAddExisting();
+
+                    this.Visible = false;
+
+                    fAddExisting.ShowDialog();
+                    
+                    this.Close();
                 }
             }
         }

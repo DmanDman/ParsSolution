@@ -43,8 +43,7 @@ namespace ParsDashboard
         FrmMD fMD = new FrmMD();
 
         //  Emailed Pics
-        FrmPicOnly fPicOnly = new FrmPicOnly();
-        FrmAddImageDesc fAddImageDesc = new FrmAddImageDesc();
+        FrmPicOnly fPicOnly = new FrmPicOnly();          
 
         #endregion
 
@@ -1354,7 +1353,10 @@ namespace ParsDashboard
 
         private void TSMnuPicOnlySave_Click(object sender, EventArgs e)
         {
+            FrmAddImageDesc fAddImageDesc = new FrmAddImageDesc();
+
             fAddImageDesc.ShowDialog();
+            fAddImageDesc.Close();
         }
     }
 

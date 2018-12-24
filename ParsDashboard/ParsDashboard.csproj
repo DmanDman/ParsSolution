@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAddExisting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddExisting.Designer.cs">
+      <DependentUpon>FrmAddExisting.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmAddImageDesc.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -165,6 +171,9 @@
     <Compile Include="Load.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAddExisting.resx">
+      <DependentUpon>FrmAddExisting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FrmAddImageDesc.resx">
       <DependentUpon>FrmAddImageDesc.cs</DependentUpon>
     </EmbeddedResource>

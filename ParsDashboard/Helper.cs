@@ -121,6 +121,18 @@ namespace ParsDashboard
             }
         }
 
+        public void ClearListBox( ListBox lst )
+        {            
+            int x = lst.Items.Count;
+
+            for ( int i = lst.Items.Count - 1; i >= 0; i-- )
+            {
+                lst.SelectedIndex = i;
+
+                lst.Items.RemoveAt( i );
+            }
+        }
+
         public void ClearListBoxes( ListBox listFrom, ListBox listTo )
         {
             string sHoldData;
