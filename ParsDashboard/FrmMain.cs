@@ -1354,7 +1354,7 @@ namespace ParsDashboard
 
         private void TSMnuPicOnlySave_Click(object sender, EventArgs e)
         {
-            fAddImageDesc.Show();
+            fAddImageDesc.ShowDialog();
         }
     }
 

@@ -172,6 +172,29 @@ namespace ParsDashboard
             rdo.Checked = false;
         }
 
+        public void CopyListBoxToListBox( ListBox listFrom, ListBox listTo )
+        {
+            string sHoldData;
+            int x = listFrom.Items.Count;
+
+            //  Clear listTo
+            for ( int i = listTo.Items.Count - 1; i >= 0; i-- )
+            {
+                listTo.SelectedIndex = i;
+                listTo.Items.RemoveAt( i );
+            }
+
+            //  Copy from listFrom to listTo
+            for ( int i = listFrom.Items.Count - 1; i >= 0; i-- )
+            {
+                listFrom.SelectedIndex = i;
+                sHoldData = listFrom.SelectedItem.ToString().Trim();                
+                listTo.Items.Add( sHoldData );
+            }
+
+            listTo.Sorted = true;
+        }
+
         public void SetDateToToday( DateTimePicker dt )
         {
             dt.Value = DateTime.Today;
