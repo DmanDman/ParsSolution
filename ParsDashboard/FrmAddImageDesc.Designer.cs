@@ -377,8 +377,8 @@
             this.Controls.Add(this.GrpDescFinal);
             this.Controls.Add(this.GrpImages);
             this.Controls.Add(this.MnuAddEmailPic);
-            this.Controls.Add(this.GrpDesc);
             this.Controls.Add(this.GrpAddImage);
+            this.Controls.Add(this.GrpDesc);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

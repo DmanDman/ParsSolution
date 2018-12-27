@@ -105,8 +105,9 @@ namespace ParsDashboard
                     this.Visible = false;
 
                     fAddExisting.ShowDialog();
-                    
-                    this.Close();
+
+                    //this.Close();
+                    this.Visible = true;
                 }
             }
         }

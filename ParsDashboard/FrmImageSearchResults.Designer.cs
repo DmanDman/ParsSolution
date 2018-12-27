@@ -544,7 +544,7 @@
             this.GrpImages.Controls.Add(this.LblGrpImageDesc);
             this.GrpImages.Controls.Add(this.LstImages);
             this.GrpImages.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GrpImages.Location = new System.Drawing.Point(642, 50);
+            this.GrpImages.Location = new System.Drawing.Point(642, 46);
             this.GrpImages.Name = "GrpImages";
             this.GrpImages.Size = new System.Drawing.Size(725, 411);
             this.GrpImages.TabIndex = 17;

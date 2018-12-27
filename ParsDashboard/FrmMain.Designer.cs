@@ -1480,7 +1480,8 @@
             this.TSMnuSurgerySrchBreak2.Enabled = false;
             this.TSMnuSurgerySrchBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.TSMnuSurgerySrchBreak2.Name = "TSMnuSurgerySrchBreak2";
-            this.TSMnuSurgerySrchBreak2.Size = new System.Drawing.Size(26, 24);
+            this.TSMnuSurgerySrchBreak2.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuSurgerySrchBreak2.Size = new System.Drawing.Size(18, 24);
             this.TSMnuSurgerySrchBreak2.Text = "|";
             // 
             // TSMnuSurgerySrchClearItems
@@ -1495,7 +1496,8 @@
             this.TSMnuSurgerySrchBreak3.Enabled = false;
             this.TSMnuSurgerySrchBreak3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.TSMnuSurgerySrchBreak3.Name = "TSMnuSurgerySrchBreak3";
-            this.TSMnuSurgerySrchBreak3.Size = new System.Drawing.Size(26, 24);
+            this.TSMnuSurgerySrchBreak3.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuSurgerySrchBreak3.Size = new System.Drawing.Size(18, 24);
             this.TSMnuSurgerySrchBreak3.Text = "|";
             // 
             // TSMnuSurgerySrchClearAll
@@ -1549,7 +1551,8 @@
             this.TSMnuDataCustNameBreak2.Enabled = false;
             this.TSMnuDataCustNameBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.TSMnuDataCustNameBreak2.Name = "TSMnuDataCustNameBreak2";
-            this.TSMnuDataCustNameBreak2.Size = new System.Drawing.Size(26, 24);
+            this.TSMnuDataCustNameBreak2.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuDataCustNameBreak2.Size = new System.Drawing.Size(18, 24);
             this.TSMnuDataCustNameBreak2.Text = "|";
             // 
             // TSMnuDataCustNameClearAll
@@ -1603,7 +1606,8 @@
             this.TSMnuDataDefaultHospBreak2.Enabled = false;
             this.TSMnuDataDefaultHospBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.TSMnuDataDefaultHospBreak2.Name = "TSMnuDataDefaultHospBreak2";
-            this.TSMnuDataDefaultHospBreak2.Size = new System.Drawing.Size(26, 24);
+            this.TSMnuDataDefaultHospBreak2.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuDataDefaultHospBreak2.Size = new System.Drawing.Size(18, 24);
             this.TSMnuDataDefaultHospBreak2.Text = "|";
             // 
             // TSMnuDataDefaultHospClear
@@ -1660,7 +1664,8 @@
             this.TSMnuDataLinkBreak2.Enabled = false;
             this.TSMnuDataLinkBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.TSMnuDataLinkBreak2.Name = "TSMnuDataLinkBreak2";
-            this.TSMnuDataLinkBreak2.Size = new System.Drawing.Size(26, 24);
+            this.TSMnuDataLinkBreak2.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuDataLinkBreak2.Size = new System.Drawing.Size(18, 24);
             this.TSMnuDataLinkBreak2.Text = "|";
             // 
             // TSMnuDataLinkClearFrom
@@ -1675,7 +1680,8 @@
             this.TSMnuDataLinkBreak3.Enabled = false;
             this.TSMnuDataLinkBreak3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.TSMnuDataLinkBreak3.Name = "TSMnuDataLinkBreak3";
-            this.TSMnuDataLinkBreak3.Size = new System.Drawing.Size(26, 24);
+            this.TSMnuDataLinkBreak3.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuDataLinkBreak3.Size = new System.Drawing.Size(18, 24);
             this.TSMnuDataLinkBreak3.Text = "|";
             // 
             // TSMnuDataLinkClearTo
@@ -1690,7 +1696,8 @@
             this.TSMnuDataLinkBreak4.Enabled = false;
             this.TSMnuDataLinkBreak4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.TSMnuDataLinkBreak4.Name = "TSMnuDataLinkBreak4";
-            this.TSMnuDataLinkBreak4.Size = new System.Drawing.Size(26, 24);
+            this.TSMnuDataLinkBreak4.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuDataLinkBreak4.Size = new System.Drawing.Size(18, 24);
             this.TSMnuDataLinkBreak4.Text = "|";
             // 
             // TSMnuDataLinkClearAll
@@ -1744,7 +1751,8 @@
             this.TSMnuDataPicInfoBreak2.Enabled = false;
             this.TSMnuDataPicInfoBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.TSMnuDataPicInfoBreak2.Name = "TSMnuDataPicInfoBreak2";
-            this.TSMnuDataPicInfoBreak2.Size = new System.Drawing.Size(26, 24);
+            this.TSMnuDataPicInfoBreak2.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuDataPicInfoBreak2.Size = new System.Drawing.Size(18, 24);
             this.TSMnuDataPicInfoBreak2.Text = "|";
             // 
             // TSMnuDataPicInfoRename
@@ -1797,7 +1805,8 @@
             this.TSMnuMDBreak2.Enabled = false;
             this.TSMnuMDBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.TSMnuMDBreak2.Name = "TSMnuMDBreak2";
-            this.TSMnuMDBreak2.Size = new System.Drawing.Size(26, 24);
+            this.TSMnuMDBreak2.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuMDBreak2.Size = new System.Drawing.Size(18, 24);
             this.TSMnuMDBreak2.Text = "|";
             // 
             // TSMnuMDRename
@@ -1852,7 +1861,8 @@
             this.TSMnuPicOnlyBreak2.Enabled = false;
             this.TSMnuPicOnlyBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
             this.TSMnuPicOnlyBreak2.Name = "TSMnuPicOnlyBreak2";
-            this.TSMnuPicOnlyBreak2.Size = new System.Drawing.Size(26, 24);
+            this.TSMnuPicOnlyBreak2.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuPicOnlyBreak2.Size = new System.Drawing.Size(18, 24);
             this.TSMnuPicOnlyBreak2.Text = "|";
             // 
             // TSMnuPicOnlyDel
