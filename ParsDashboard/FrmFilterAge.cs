@@ -63,7 +63,7 @@ namespace ParsDashboard
         private void BtnCancel_Click(object sender, EventArgs e)
         {
             if ( PatientSearchVar.AgeChecked == true )
-            { AgeCancel = true; }
+            { AGECANCEL = true; }
 
             this.Close();
         }

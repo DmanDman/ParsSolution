@@ -8,8 +8,10 @@ namespace ParsDashboard
 {
     public class Globals
     {
-        public static bool AgeCancel = false;
-        public static bool DobCancel = false;
-        public static bool SurgeryDateCancel = false;
+        public static bool AGECANCEL = false;
+        public static bool DOBCANCEL = false;
+        public static bool SURGERYDATECANCEL = false;
+
+        public static bool SAVEPICTOEXISTING = false;
     }
 }

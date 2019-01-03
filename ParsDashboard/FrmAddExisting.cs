@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Reflection;
+using static ParsDashboard.Globals;
 
 namespace ParsDashboard
 {
@@ -15,9 +16,13 @@ namespace ParsDashboard
     {
         SubRoutinesFrmAddExisting SubRtn = new SubRoutinesFrmAddExisting();
 
+        FormNav fNav = new FormNav();
+
         public static class AddExistingVar
         {
-            public static int ClearType { get; set; }
+            //  1 - Clear Personal Info
+            //  2 - Clear Home Info
+            public static int ClearType { get; set; }          
         }
 
         public FrmAddExisting()
@@ -27,7 +32,13 @@ namespace ParsDashboard
 
         private void FrmAddExisting_FormClosing(object sender, FormClosingEventArgs e)
         {
-            
+            ////  save pics to existing patient
+            //if ( AddExistingVar.SavePics == true )
+            //{
+            //    //fNav.ShowFormName( Form.FrmImageSearchResults, "FrmImageSearchResults" );
+
+            //    fNav.ShowFormName( fImageSearchResuts.MdiParent.MdiChildren, "FrmImageSearchResults" );
+            //}
         }
 
         private void FrmAddExisting_Load(object sender, EventArgs e)
@@ -48,7 +59,16 @@ namespace ParsDashboard
         }
 
         private void TSMnuAddEmailImagesBack_Click(object sender, EventArgs e)
-        {
+        {           
+            SAVEPICTOEXISTING = false;
+
+            this.Close();
+        }
+
+        private void TSMnuAddEmailImageSave_Click(object sender, EventArgs e)
+        {           
+            SAVEPICTOEXISTING = true;
+
             this.Close();
         }
     }

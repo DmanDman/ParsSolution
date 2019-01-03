@@ -249,7 +249,7 @@
             this.PnlPatient.Margin = new System.Windows.Forms.Padding(0);
             this.PnlPatient.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlPatient.Name = "PnlPatient";
-            this.PnlPatient.Size = new System.Drawing.Size(200, 48);
+            this.PnlPatient.Size = new System.Drawing.Size(200, 184);
             this.PnlPatient.TabIndex = 2;
             this.PnlPatient.Tag = "Collapsed";
             // 
@@ -374,7 +374,7 @@
             this.PnlSecurity.Controls.Add(this.LblSecurityUserMgmt);
             this.PnlSecurity.Controls.Add(this.LblSecurity);
             this.PnlSecurity.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlSecurity.Location = new System.Drawing.Point(2, 467);
+            this.PnlSecurity.Location = new System.Drawing.Point(2, 603);
             this.PnlSecurity.Margin = new System.Windows.Forms.Padding(0);
             this.PnlSecurity.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlSecurity.Name = "PnlSecurity";
@@ -415,7 +415,7 @@
             this.PnlData.Controls.Add(this.LblDataDefaultHosp);
             this.PnlData.Controls.Add(this.LblDataCustomizeName);
             this.PnlData.Controls.Add(this.LblData);
-            this.PnlData.Location = new System.Drawing.Point(2, 239);
+            this.PnlData.Location = new System.Drawing.Point(2, 375);
             this.PnlData.Margin = new System.Windows.Forms.Padding(0);
             this.PnlData.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlData.Name = "PnlData";
@@ -498,7 +498,7 @@
             this.PnlSurgery.Controls.Add(this.LblSurgerySearch);
             this.PnlSurgery.Controls.Add(this.LblSurgeryAdd);
             this.PnlSurgery.Controls.Add(this.LblSurgery);
-            this.PnlSurgery.Location = new System.Drawing.Point(2, 136);
+            this.PnlSurgery.Location = new System.Drawing.Point(2, 272);
             this.PnlSurgery.Margin = new System.Windows.Forms.Padding(0);
             this.PnlSurgery.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlSurgery.Name = "PnlSurgery";
@@ -564,7 +564,7 @@
             this.PnlMetaData.Controls.Add(this.LblMDCpt);
             this.PnlMetaData.Controls.Add(this.LblMDComp);
             this.PnlMetaData.Controls.Add(this.LblMetaData);
-            this.PnlMetaData.Location = new System.Drawing.Point(2, 293);
+            this.PnlMetaData.Location = new System.Drawing.Point(2, 429);
             this.PnlMetaData.Margin = new System.Windows.Forms.Padding(0);
             this.PnlMetaData.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlMetaData.Name = "PnlMetaData";
@@ -738,7 +738,7 @@
             this.PnlEmailPic.Controls.Add(this.LblEmailPicPicInfo);
             this.PnlEmailPic.Controls.Add(this.LblEmailPicPicOnly);
             this.PnlEmailPic.Controls.Add(this.LblEmailPic);
-            this.PnlEmailPic.Location = new System.Drawing.Point(2, 351);
+            this.PnlEmailPic.Location = new System.Drawing.Point(2, 487);
             this.PnlEmailPic.Margin = new System.Windows.Forms.Padding(0);
             this.PnlEmailPic.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlEmailPic.Name = "PnlEmailPic";
@@ -892,7 +892,7 @@
             this.PnlRpt.Controls.Add(this.LblRptDynamic);
             this.PnlRpt.Controls.Add(this.LblRptStatic);
             this.PnlRpt.Controls.Add(this.LblRpt);
-            this.PnlRpt.Location = new System.Drawing.Point(2, 185);
+            this.PnlRpt.Location = new System.Drawing.Point(2, 321);
             this.PnlRpt.Margin = new System.Windows.Forms.Padding(0);
             this.PnlRpt.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlRpt.Name = "PnlRpt";
@@ -1876,13 +1876,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1397, 976);
+            this.Controls.Add(this.MnuPatientSearch);
             this.Controls.Add(this.MnuPicOnly);
+            this.Controls.Add(this.MnuPatient);
             this.Controls.Add(this.MnuImages);
             this.Controls.Add(this.MnuImagesSearch);
             this.Controls.Add(this.MnuImageSearchResult);
-            this.Controls.Add(this.MnuPatient);
             this.Controls.Add(this.MnuImageFilter);
-            this.Controls.Add(this.MnuPatientSearch);
             this.Controls.Add(this.MnuSurgery);
             this.Controls.Add(this.MnuSurgerySearch);
             this.Controls.Add(this.MnuDataCustomizeNames);

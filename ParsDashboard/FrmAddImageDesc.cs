@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static ParsDashboard.Globals;
 
 namespace ParsDashboard
 {
@@ -107,7 +108,13 @@ namespace ParsDashboard
                     fAddExisting.ShowDialog();
 
                     //this.Close();
-                    this.Visible = true;
+                    //this.Visible = true;
+
+                    //  save pics to existing patient
+                    if ( SAVEPICTOEXISTING == true )
+                    {
+                        this.Close();
+                    }
                 }
             }
         }

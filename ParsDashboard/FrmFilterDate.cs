@@ -73,10 +73,10 @@ namespace ParsDashboard
         private void BtnCancel_Click(object sender, EventArgs e)
         {
             if ( PatientSearchVar.DobChecked == true )
-            { DobCancel = true; }
+            { DOBCANCEL = true; }
 
             if ( PatientSearchVar.SurgeryDateChecked == true )
-            { SurgeryDateCancel = true; }
+            { SURGERYDATECANCEL = true; }
 
             this.Close();
         }

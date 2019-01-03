@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Reflection;
+using static ParsDashboard.Globals;
 
 namespace ParsDashboard
 {
@@ -22,7 +23,7 @@ namespace ParsDashboard
         //  Images
         FrmImages fImage = new FrmImages();
         FrmImageSearch fImageSearch = new FrmImageSearch();
-        FrmImageSearchResults fImageSearchResuts = new FrmImageSearchResults();
+        public FrmImageSearchResults fImageSearchResuts = new FrmImageSearchResults();
         FrmImageFilter fImageFilter = new FrmImageFilter();
 
         //  Patient
@@ -530,11 +531,11 @@ namespace ParsDashboard
 
         private void LlbPatientSearch_Click(object sender, EventArgs e)
         {
-            fNav.ShowForm(fPatientSearch);
+            fNav.ShowForm( fPatientSearch );
 
-            NavSetStyleClick(LlbPatientSearch);
+            NavSetStyleClick( LlbPatientSearch );
 
-            SubRtn.ShowHideMenu(this, MnuPatientSearch.Name);
+            SubRtn.ShowHideMenu( this, MnuPatientSearch.Name );
         }
 
         private void LblPatientFilter_Click(object sender, EventArgs e)
@@ -860,7 +861,7 @@ namespace ParsDashboard
         }
 
         private void TSMnuPatientSrchSearch_Click(object sender, EventArgs e)
-        {
+        {            
             fNav.ShowForm(fImageSearchResuts);
 
             SubRtn.DashboardAccordian(LblImages, e, tableLayoutPanel1);
@@ -1356,27 +1357,25 @@ namespace ParsDashboard
             FrmAddImageDesc fAddImageDesc = new FrmAddImageDesc();
 
             fAddImageDesc.ShowDialog();
+
+            //  save pics to existing patient
+            if ( SAVEPICTOEXISTING == true )
+            {
+                fNav.ShowFormName( fImageSearchResuts.MdiParent.MdiChildren, "FrmImageSearchResults" );
+
+                SubRtn.DashboardAccordian( LblImages, e, tableLayoutPanel1 );
+
+                NavSetStyleClick( LblImagesSearchResults );
+
+                SubRtn.ShowHideMenu( this, MnuImageSearchResult.Name );
+            }
+
             fAddImageDesc.Close();
         }
     }
 
     public class SubRoutine
     {
-        public void ShowHideMenu(Form fMain, string ControlName)
-        {
-            foreach (Control ctr in fMain.Controls)
-            {
-                if ( ctr is MenuStrip & ctr.Name == ControlName )
-                {
-                    ctr.Visible = true;
-                }
-                else if ( ctr is MenuStrip )
-                {
-                    ctr.Visible = false;
-                }
-            }
-        }
-
         public static Control FindControl(Form frm, String name)
         {
             foreach (Control control in frm.Controls)
@@ -1853,5 +1852,21 @@ namespace ParsDashboard
             else
             { ctlGrp.SendToBack(); }
         }
+
+        public void ShowHideMenu(Form fMain, string ControlName)
+        {
+            foreach (Control ctr in fMain.Controls)
+            {
+                if (ctr is MenuStrip & ctr.Name == ControlName)
+                {
+                    ctr.Visible = true;
+                }
+                else if (ctr is MenuStrip)
+                {
+                    ctr.Visible = false;
+                }
+            }
+        }
+        
     }
 }

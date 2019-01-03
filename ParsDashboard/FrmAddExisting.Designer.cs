@@ -249,6 +249,7 @@
             this.TSMnuAddEmailImageSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.S)));
             this.TSMnuAddEmailImageSave.Size = new System.Drawing.Size(52, 27);
             this.TSMnuAddEmailImageSave.Text = "&Save";
+            this.TSMnuAddEmailImageSave.Click += new System.EventHandler(this.TSMnuAddEmailImageSave_Click);
             // 
             // TSMnuAddEmailImagesBreak4
             // 

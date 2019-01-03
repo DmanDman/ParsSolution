@@ -110,7 +110,7 @@ namespace ParsDashboard
             helper.RemoveAllListBox( CboPicInfo, LstPicInfoSearchItems );
         }
 
-        private void TSMnuSearch_Click(object sender, EventArgs e)
+        public void TSMnuSearch_Click(object sender, EventArgs e)
         {
             frmNav.ShowFormName( this.MdiParent.MdiChildren, "FrmImageSearchResults" );            
         }

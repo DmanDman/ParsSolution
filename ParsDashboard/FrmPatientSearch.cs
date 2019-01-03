@@ -60,11 +60,11 @@ namespace ParsDashboard
         {
             if ( ChkSurgeryDate.Checked )
             {
-                SurgeryDateCancel = false;
+                SURGERYDATECANCEL = false;
 
                 fFilterDate.ShowDialog();
 
-                if ( SurgeryDateCancel == true )
+                if ( SURGERYDATECANCEL == true )
                 {
                     ChkSurgeryDate.Checked = false;
                 }
@@ -103,11 +103,11 @@ namespace ParsDashboard
         {
             if ( ChkAge.Checked )
             {
-                AgeCancel = false;
+                AGECANCEL = false;
 
                 fFilterAge.ShowDialog();
 
-                if ( AgeCancel == true )
+                if ( AGECANCEL == true )
                 {
                     ChkAge.Checked = false;
                 }
@@ -138,11 +138,11 @@ namespace ParsDashboard
         {
             if ( ChkDOB.Checked )
             {
-                DobCancel = false;
+                DOBCANCEL = false;
 
                 fFilterDate.ShowDialog();
 
-                if ( DobCancel == true )
+                if ( DOBCANCEL == true )
                 {
                     ChkDOB.Checked = false;
                 }
