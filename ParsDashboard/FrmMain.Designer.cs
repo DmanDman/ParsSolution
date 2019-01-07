@@ -952,6 +952,7 @@
             // 
             // MnuDashboard
             // 
+            this.MnuDashboard.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuDashboard.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuDashboard.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMnuOpenCanvas,
@@ -1005,13 +1006,14 @@
             // 
             // MnuImages
             // 
+            this.MnuImages.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuImages.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuImages.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMnuDisplay,
             this.toolStripMenuItem1,
             this.TSMnuClearAll});
             this.MnuImages.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuImages.Location = new System.Drawing.Point(185, 28);
+            this.MnuImages.Location = new System.Drawing.Point(185, 392);
             this.MnuImages.Name = "MnuImages";
             this.MnuImages.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
             this.MnuImages.Size = new System.Drawing.Size(1212, 28);
@@ -1043,6 +1045,7 @@
             // 
             // MnuImagesSearch
             // 
+            this.MnuImagesSearch.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuImagesSearch.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuImagesSearch.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMnuSearch,
@@ -1059,7 +1062,7 @@
             this.TsMnuImageSearchBreak6,
             this.TsMnuRemoveAllPic});
             this.MnuImagesSearch.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuImagesSearch.Location = new System.Drawing.Point(185, 28);
+            this.MnuImagesSearch.Location = new System.Drawing.Point(185, 364);
             this.MnuImagesSearch.Name = "MnuImagesSearch";
             this.MnuImagesSearch.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
             this.MnuImagesSearch.Size = new System.Drawing.Size(1212, 28);
@@ -1173,6 +1176,7 @@
             // 
             // MnuImageSearchResult
             // 
+            this.MnuImageSearchResult.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuImageSearchResult.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuImageSearchResult.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMnuImgSearchResultPatientDetail,
@@ -1185,7 +1189,7 @@
             this.TSMnuImgSearchResultBreak4,
             this.TSMnuImgSearchResultPrint});
             this.MnuImageSearchResult.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuImageSearchResult.Location = new System.Drawing.Point(185, 28);
+            this.MnuImageSearchResult.Location = new System.Drawing.Point(185, 336);
             this.MnuImageSearchResult.Name = "MnuImageSearchResult";
             this.MnuImageSearchResult.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
             this.MnuImageSearchResult.Size = new System.Drawing.Size(1212, 28);
@@ -1262,13 +1266,14 @@
             // 
             // MnuPatient
             // 
+            this.MnuPatient.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuPatient.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuPatient.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMnuPatientDisplay,
             this.TSMnuPatientBreak1,
             this.TSMnuPatientClear});
             this.MnuPatient.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuPatient.Location = new System.Drawing.Point(185, 28);
+            this.MnuPatient.Location = new System.Drawing.Point(185, 308);
             this.MnuPatient.Name = "MnuPatient";
             this.MnuPatient.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
             this.MnuPatient.Size = new System.Drawing.Size(1212, 28);
@@ -1300,6 +1305,7 @@
             // 
             // MnuImageFilter
             // 
+            this.MnuImageFilter.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuImageFilter.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuImageFilter.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMnuFilterApplyFilter,
@@ -1308,7 +1314,7 @@
             this.TSMnuFilterBreak2,
             this.TSMnuFilterClearSurgery});
             this.MnuImageFilter.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuImageFilter.Location = new System.Drawing.Point(185, 28);
+            this.MnuImageFilter.Location = new System.Drawing.Point(185, 280);
             this.MnuImageFilter.Name = "MnuImageFilter";
             this.MnuImageFilter.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
             this.MnuImageFilter.Size = new System.Drawing.Size(1212, 28);
@@ -1358,13 +1364,14 @@
             // 
             // MnuPatientSearch
             // 
+            this.MnuPatientSearch.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuPatientSearch.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuPatientSearch.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMnuPatientSrchSearch,
             this.TSMnuBlank1,
             this.TSMnuPatientSrchClear});
             this.MnuPatientSearch.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuPatientSearch.Location = new System.Drawing.Point(185, 28);
+            this.MnuPatientSearch.Location = new System.Drawing.Point(185, 252);
             this.MnuPatientSearch.Name = "MnuPatientSearch";
             this.MnuPatientSearch.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
             this.MnuPatientSearch.Size = new System.Drawing.Size(1212, 28);
@@ -1397,13 +1404,14 @@
             // 
             // MnuSurgery
             // 
+            this.MnuSurgery.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuSurgery.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuSurgery.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMnuSurgeryDisplay,
             this.TSMnuSurgeryBreak1,
             this.TSMnuSurgeryClear});
             this.MnuSurgery.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuSurgery.Location = new System.Drawing.Point(185, 28);
+            this.MnuSurgery.Location = new System.Drawing.Point(185, 224);
             this.MnuSurgery.Name = "MnuSurgery";
             this.MnuSurgery.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
             this.MnuSurgery.Size = new System.Drawing.Size(1212, 28);
@@ -1435,6 +1443,7 @@
             // 
             // MnuSurgerySearch
             // 
+            this.MnuSurgerySearch.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuSurgerySearch.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuSurgerySearch.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMnuSurgerySrchSearch,
@@ -1445,7 +1454,7 @@
             this.TSMnuSurgerySrchBreak3,
             this.TSMnuSurgerySrchClearAll});
             this.MnuSurgerySearch.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuSurgerySearch.Location = new System.Drawing.Point(185, 28);
+            this.MnuSurgerySearch.Location = new System.Drawing.Point(185, 196);
             this.MnuSurgerySearch.Name = "MnuSurgerySearch";
             this.MnuSurgerySearch.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
             this.MnuSurgerySearch.Size = new System.Drawing.Size(1212, 28);
@@ -1509,6 +1518,7 @@
             // 
             // MnuDataCustomizeNames
             // 
+            this.MnuDataCustomizeNames.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuDataCustomizeNames.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuDataCustomizeNames.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMnuDataCustNameSave,
@@ -1517,7 +1527,7 @@
             this.TSMnuDataCustNameBreak2,
             this.TSMnuDataCustNameClearAll});
             this.MnuDataCustomizeNames.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuDataCustomizeNames.Location = new System.Drawing.Point(185, 28);
+            this.MnuDataCustomizeNames.Location = new System.Drawing.Point(185, 168);
             this.MnuDataCustomizeNames.Name = "MnuDataCustomizeNames";
             this.MnuDataCustomizeNames.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
             this.MnuDataCustomizeNames.Size = new System.Drawing.Size(1212, 28);
@@ -1564,6 +1574,7 @@
             // 
             // MnuDataDefaultHosp
             // 
+            this.MnuDataDefaultHosp.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuDataDefaultHosp.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuDataDefaultHosp.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMnuDataDefaultHospSave,
@@ -1572,7 +1583,7 @@
             this.TSMnuDataDefaultHospBreak2,
             this.TSMnuDataDefaultHospClear});
             this.MnuDataDefaultHosp.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuDataDefaultHosp.Location = new System.Drawing.Point(185, 28);
+            this.MnuDataDefaultHosp.Location = new System.Drawing.Point(185, 140);
             this.MnuDataDefaultHosp.Name = "MnuDataDefaultHosp";
             this.MnuDataDefaultHosp.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
             this.MnuDataDefaultHosp.Size = new System.Drawing.Size(1212, 28);
@@ -1618,6 +1629,7 @@
             // 
             // MnuDataLink
             // 
+            this.MnuDataLink.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuDataLink.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuDataLink.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMnuDataLinkAddLink,
@@ -1630,7 +1642,7 @@
             this.TSMnuDataLinkBreak4,
             this.TSMnuDataLinkClearAll});
             this.MnuDataLink.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuDataLink.Location = new System.Drawing.Point(185, 28);
+            this.MnuDataLink.Location = new System.Drawing.Point(185, 112);
             this.MnuDataLink.Name = "MnuDataLink";
             this.MnuDataLink.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
             this.MnuDataLink.Size = new System.Drawing.Size(1212, 28);
@@ -1709,6 +1721,7 @@
             // 
             // MnuDataPicInfo
             // 
+            this.MnuDataPicInfo.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuDataPicInfo.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuDataPicInfo.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMnuDataPicInfoAdd,
@@ -1717,7 +1730,7 @@
             this.TSMnuDataPicInfoBreak2,
             this.TSMnuDataPicInfoRename});
             this.MnuDataPicInfo.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuDataPicInfo.Location = new System.Drawing.Point(185, 28);
+            this.MnuDataPicInfo.Location = new System.Drawing.Point(185, 84);
             this.MnuDataPicInfo.Name = "MnuDataPicInfo";
             this.MnuDataPicInfo.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
             this.MnuDataPicInfo.Size = new System.Drawing.Size(1212, 28);
@@ -1763,6 +1776,7 @@
             // 
             // MnuMD
             // 
+            this.MnuMD.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuMD.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuMD.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMnuMDAdd,
@@ -1771,7 +1785,7 @@
             this.TSMnuMDBreak2,
             this.TSMnuMDRename});
             this.MnuMD.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuMD.Location = new System.Drawing.Point(185, 28);
+            this.MnuMD.Location = new System.Drawing.Point(185, 56);
             this.MnuMD.Name = "MnuMD";
             this.MnuMD.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
             this.MnuMD.Size = new System.Drawing.Size(1212, 28);
@@ -1817,6 +1831,7 @@
             // 
             // MnuPicOnly
             // 
+            this.MnuPicOnly.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuPicOnly.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuPicOnly.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMnuPicOnlySave,
@@ -1876,13 +1891,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1397, 976);
-            this.Controls.Add(this.MnuPatientSearch);
-            this.Controls.Add(this.MnuPicOnly);
-            this.Controls.Add(this.MnuPatient);
             this.Controls.Add(this.MnuImages);
             this.Controls.Add(this.MnuImagesSearch);
             this.Controls.Add(this.MnuImageSearchResult);
+            this.Controls.Add(this.MnuPatient);
             this.Controls.Add(this.MnuImageFilter);
+            this.Controls.Add(this.MnuPatientSearch);
             this.Controls.Add(this.MnuSurgery);
             this.Controls.Add(this.MnuSurgerySearch);
             this.Controls.Add(this.MnuDataCustomizeNames);
@@ -1890,6 +1904,7 @@
             this.Controls.Add(this.MnuDataLink);
             this.Controls.Add(this.MnuDataPicInfo);
             this.Controls.Add(this.MnuMD);
+            this.Controls.Add(this.MnuPicOnly);
             this.Controls.Add(this.MnuDashboard);
             this.Controls.Add(this.tableLayoutPanel1);
             this.IsMdiContainer = true;

@@ -86,14 +86,20 @@
             this.TxtResPhone = new System.Windows.Forms.TextBox();
             this.TxtResAddress2 = new System.Windows.Forms.TextBox();
             this.TxtResAddress1 = new System.Windows.Forms.TextBox();
+            this.TabPatientSurgery = new System.Windows.Forms.TabPage();
+            this.GrpBoxSurgery = new System.Windows.Forms.GroupBox();
+            this.label33 = new System.Windows.Forms.Label();
+            this.label34 = new System.Windows.Forms.Label();
+            this.textBox8 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.MnuAddNew = new System.Windows.Forms.MenuStrip();
             this.TSMnuAddNewBack = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuAddNewBreak1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuAddNewBreak2 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuAddNewClear = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuAddNewBreak2 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuAddNewCont = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuAddNewSave = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuAddNewBreak3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuAddNewSave = new System.Windows.Forms.ToolStripMenuItem();
             this.GrpImages = new System.Windows.Forms.GroupBox();
             this.BtnImagePrev = new System.Windows.Forms.Button();
             this.BtnImageFirst = new System.Windows.Forms.Button();
@@ -101,14 +107,8 @@
             this.BtnImageLast = new System.Windows.Forms.Button();
             this.TxtImagesCount = new System.Windows.Forms.TextBox();
             this.LstImages = new System.Windows.Forms.ListView();
-            this.GrpDescFinal = new System.Windows.Forms.GroupBox();
+            this.GrpDesc = new System.Windows.Forms.GroupBox();
             this.LstImageDescFinal = new System.Windows.Forms.ListBox();
-            this.TabPatientSurgery = new System.Windows.Forms.TabPage();
-            this.GrpBoxSurgery = new System.Windows.Forms.GroupBox();
-            this.label33 = new System.Windows.Forms.Label();
-            this.label34 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.GrpSurgerySelect = new System.Windows.Forms.GroupBox();
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.label26 = new System.Windows.Forms.Label();
@@ -139,11 +139,11 @@
             this.groupBox1.SuspendLayout();
             this.TabPatientHome.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            this.MnuAddNew.SuspendLayout();
-            this.GrpImages.SuspendLayout();
-            this.GrpDescFinal.SuspendLayout();
             this.TabPatientSurgery.SuspendLayout();
             this.GrpBoxSurgery.SuspendLayout();
+            this.MnuAddNew.SuspendLayout();
+            this.GrpImages.SuspendLayout();
+            this.GrpDesc.SuspendLayout();
             this.GrpSurgerySelect.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -795,8 +795,74 @@
             this.TxtResAddress1.Size = new System.Drawing.Size(166, 22);
             this.TxtResAddress1.TabIndex = 1;
             // 
+            // TabPatientSurgery
+            // 
+            this.TabPatientSurgery.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.TabPatientSurgery.Controls.Add(this.GrpBoxSurgery);
+            this.TabPatientSurgery.Location = new System.Drawing.Point(4, 25);
+            this.TabPatientSurgery.Name = "TabPatientSurgery";
+            this.TabPatientSurgery.Padding = new System.Windows.Forms.Padding(3);
+            this.TabPatientSurgery.Size = new System.Drawing.Size(379, 399);
+            this.TabPatientSurgery.TabIndex = 2;
+            this.TabPatientSurgery.Text = "Surgery";
+            this.TabPatientSurgery.UseVisualStyleBackColor = true;
+            // 
+            // GrpBoxSurgery
+            // 
+            this.GrpBoxSurgery.Controls.Add(this.label33);
+            this.GrpBoxSurgery.Controls.Add(this.label34);
+            this.GrpBoxSurgery.Controls.Add(this.textBox8);
+            this.GrpBoxSurgery.Controls.Add(this.textBox9);
+            this.GrpBoxSurgery.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrpBoxSurgery.Location = new System.Drawing.Point(21, 17);
+            this.GrpBoxSurgery.Name = "GrpBoxSurgery";
+            this.GrpBoxSurgery.Size = new System.Drawing.Size(307, 369);
+            this.GrpBoxSurgery.TabIndex = 1;
+            this.GrpBoxSurgery.TabStop = false;
+            this.GrpBoxSurgery.Tag = "GrpBoxSurgery";
+            this.GrpBoxSurgery.Text = "Surgery";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(6, 75);
+            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(78, 17);
+            this.label33.TabIndex = 2;
+            this.label33.Text = "Fiscal Year";
+            // 
+            // label34
+            // 
+            this.label34.AutoSize = true;
+            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label34.Location = new System.Drawing.Point(6, 35);
+            this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label34.Name = "label34";
+            this.label34.Size = new System.Drawing.Size(92, 17);
+            this.label34.TabIndex = 0;
+            this.label34.Text = "Surgery Date";
+            // 
+            // textBox8
+            // 
+            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox8.Location = new System.Drawing.Point(123, 75);
+            this.textBox8.Name = "textBox8";
+            this.textBox8.Size = new System.Drawing.Size(166, 22);
+            this.textBox8.TabIndex = 3;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox9.Location = new System.Drawing.Point(123, 35);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(166, 22);
+            this.textBox9.TabIndex = 1;
+            // 
             // MnuAddNew
             // 
+            this.MnuAddNew.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuAddNew.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuAddNew.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMnuAddNewBack,
@@ -832,6 +898,13 @@
             this.TSMnuAddNewBreak1.Size = new System.Drawing.Size(18, 24);
             this.TSMnuAddNewBreak1.Text = "|";
             // 
+            // TSMnuAddNewClear
+            // 
+            this.TSMnuAddNewClear.Name = "TSMnuAddNewClear";
+            this.TSMnuAddNewClear.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.R)));
+            this.TSMnuAddNewClear.Size = new System.Drawing.Size(55, 24);
+            this.TSMnuAddNewClear.Text = "Clea&r";
+            // 
             // TSMnuAddNewBreak2
             // 
             this.TSMnuAddNewBreak2.Enabled = false;
@@ -839,13 +912,6 @@
             this.TSMnuAddNewBreak2.Name = "TSMnuAddNewBreak2";
             this.TSMnuAddNewBreak2.Size = new System.Drawing.Size(26, 24);
             this.TSMnuAddNewBreak2.Text = "|";
-            // 
-            // TSMnuAddNewClear
-            // 
-            this.TSMnuAddNewClear.Name = "TSMnuAddNewClear";
-            this.TSMnuAddNewClear.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.R)));
-            this.TSMnuAddNewClear.Size = new System.Drawing.Size(55, 24);
-            this.TSMnuAddNewClear.Text = "Clea&r";
             // 
             // TSMnuAddNewCont
             // 
@@ -855,14 +921,6 @@
             this.TSMnuAddNewCont.Text = "&Continue  >>";
             this.TSMnuAddNewCont.Click += new System.EventHandler(this.TSMnuAddNewCont_Click);
             // 
-            // TSMnuAddNewSave
-            // 
-            this.TSMnuAddNewSave.Name = "TSMnuAddNewSave";
-            this.TSMnuAddNewSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.S)));
-            this.TSMnuAddNewSave.Size = new System.Drawing.Size(52, 24);
-            this.TSMnuAddNewSave.Text = "&Save";
-            this.TSMnuAddNewSave.Visible = false;
-            // 
             // TSMnuAddNewBreak3
             // 
             this.TSMnuAddNewBreak3.Enabled = false;
@@ -871,6 +929,14 @@
             this.TSMnuAddNewBreak3.Size = new System.Drawing.Size(26, 24);
             this.TSMnuAddNewBreak3.Text = "|";
             this.TSMnuAddNewBreak3.Visible = false;
+            // 
+            // TSMnuAddNewSave
+            // 
+            this.TSMnuAddNewSave.Name = "TSMnuAddNewSave";
+            this.TSMnuAddNewSave.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.S)));
+            this.TSMnuAddNewSave.Size = new System.Drawing.Size(52, 24);
+            this.TSMnuAddNewSave.Text = "&Save";
+            this.TSMnuAddNewSave.Visible = false;
             // 
             // GrpImages
             // 
@@ -944,17 +1010,17 @@
             this.LstImages.TabIndex = 7;
             this.LstImages.UseCompatibleStateImageBehavior = false;
             // 
-            // GrpDescFinal
+            // GrpDesc
             // 
-            this.GrpDescFinal.Controls.Add(this.LstImageDescFinal);
-            this.GrpDescFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GrpDescFinal.Location = new System.Drawing.Point(457, 599);
-            this.GrpDescFinal.Name = "GrpDescFinal";
-            this.GrpDescFinal.Size = new System.Drawing.Size(259, 261);
-            this.GrpDescFinal.TabIndex = 39;
-            this.GrpDescFinal.TabStop = false;
-            this.GrpDescFinal.Text = "Image Descriptors";
-            this.GrpDescFinal.Visible = false;
+            this.GrpDesc.Controls.Add(this.LstImageDescFinal);
+            this.GrpDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrpDesc.Location = new System.Drawing.Point(457, 599);
+            this.GrpDesc.Name = "GrpDesc";
+            this.GrpDesc.Size = new System.Drawing.Size(259, 261);
+            this.GrpDesc.TabIndex = 39;
+            this.GrpDesc.TabStop = false;
+            this.GrpDesc.Text = "Image Descriptors";
+            this.GrpDesc.Visible = false;
             // 
             // LstImageDescFinal
             // 
@@ -966,71 +1032,6 @@
             this.LstImageDescFinal.Name = "LstImageDescFinal";
             this.LstImageDescFinal.Size = new System.Drawing.Size(233, 164);
             this.LstImageDescFinal.TabIndex = 36;
-            // 
-            // TabPatientSurgery
-            // 
-            this.TabPatientSurgery.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TabPatientSurgery.Controls.Add(this.GrpBoxSurgery);
-            this.TabPatientSurgery.Location = new System.Drawing.Point(4, 25);
-            this.TabPatientSurgery.Name = "TabPatientSurgery";
-            this.TabPatientSurgery.Padding = new System.Windows.Forms.Padding(3);
-            this.TabPatientSurgery.Size = new System.Drawing.Size(379, 399);
-            this.TabPatientSurgery.TabIndex = 2;
-            this.TabPatientSurgery.Text = "Surgery";
-            this.TabPatientSurgery.UseVisualStyleBackColor = true;
-            // 
-            // GrpBoxSurgery
-            // 
-            this.GrpBoxSurgery.Controls.Add(this.label33);
-            this.GrpBoxSurgery.Controls.Add(this.label34);
-            this.GrpBoxSurgery.Controls.Add(this.textBox8);
-            this.GrpBoxSurgery.Controls.Add(this.textBox9);
-            this.GrpBoxSurgery.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GrpBoxSurgery.Location = new System.Drawing.Point(21, 17);
-            this.GrpBoxSurgery.Name = "GrpBoxSurgery";
-            this.GrpBoxSurgery.Size = new System.Drawing.Size(307, 369);
-            this.GrpBoxSurgery.TabIndex = 1;
-            this.GrpBoxSurgery.TabStop = false;
-            this.GrpBoxSurgery.Tag = "GrpBoxSurgery";
-            this.GrpBoxSurgery.Text = "Surgery";
-            // 
-            // label33
-            // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(6, 75);
-            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(78, 17);
-            this.label33.TabIndex = 2;
-            this.label33.Text = "Fiscal Year";
-            // 
-            // label34
-            // 
-            this.label34.AutoSize = true;
-            this.label34.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(6, 35);
-            this.label34.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(92, 17);
-            this.label34.TabIndex = 0;
-            this.label34.Text = "Surgery Date";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(123, 75);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(166, 22);
-            this.textBox8.TabIndex = 3;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(123, 35);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(166, 22);
-            this.textBox9.TabIndex = 1;
             // 
             // GrpSurgerySelect
             // 
@@ -1055,7 +1056,7 @@
             this.GrpSurgerySelect.Controls.Add(this.listBox10);
             this.GrpSurgerySelect.Controls.Add(this.label37);
             this.GrpSurgerySelect.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GrpSurgerySelect.Location = new System.Drawing.Point(27, 58);
+            this.GrpSurgerySelect.Location = new System.Drawing.Point(472, 129);
             this.GrpSurgerySelect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GrpSurgerySelect.Name = "GrpSurgerySelect";
             this.GrpSurgerySelect.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1341,7 +1342,7 @@
             this.Controls.Add(this.GrpSurgerySelected);
             this.Controls.Add(this.GrpHold);
             this.Controls.Add(this.GrpSurgerySelect);
-            this.Controls.Add(this.GrpDescFinal);
+            this.Controls.Add(this.GrpDesc);
             this.Controls.Add(this.GrpImages);
             this.Controls.Add(this.MnuAddNew);
             this.Controls.Add(this.GrpPatient);
@@ -1367,14 +1368,14 @@
             this.TabPatientHome.ResumeLayout(false);
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.TabPatientSurgery.ResumeLayout(false);
+            this.GrpBoxSurgery.ResumeLayout(false);
+            this.GrpBoxSurgery.PerformLayout();
             this.MnuAddNew.ResumeLayout(false);
             this.MnuAddNew.PerformLayout();
             this.GrpImages.ResumeLayout(false);
             this.GrpImages.PerformLayout();
-            this.GrpDescFinal.ResumeLayout(false);
-            this.TabPatientSurgery.ResumeLayout(false);
-            this.GrpBoxSurgery.ResumeLayout(false);
-            this.GrpBoxSurgery.PerformLayout();
+            this.GrpDesc.ResumeLayout(false);
             this.GrpSurgerySelect.ResumeLayout(false);
             this.GrpSurgerySelect.PerformLayout();
             this.ResumeLayout(false);
@@ -1462,7 +1463,7 @@
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.TextBox textBox8;
         private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.GroupBox GrpDescFinal;
+        private System.Windows.Forms.GroupBox GrpDesc;
         private System.Windows.Forms.ListBox LstImageDescFinal;
         private System.Windows.Forms.GroupBox GrpSurgerySelect;
         private System.Windows.Forms.ListBox listBox1;

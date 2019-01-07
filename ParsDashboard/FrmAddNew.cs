@@ -88,31 +88,42 @@ namespace ParsDashboard
 
                 //  Show save
                 case 4:
+                    TabPatient.TabPages.Remove( TabPatientSurgery );
+                    TabPatient.TabPages.Insert( 0, TabPatientPersonal );
+                    TabPatient.TabPages.Insert( 1, TabPatientHome );
+                    TabPatient.TabPages.Insert( 2, TabPatientSurgery );
+
+                    TSMnuAddNewCont.Visible = false;
+                    TSMnuAddNewSave.Visible = true;
+
                     GrpSurgerySelect.Location = new Point(
-                                                    GrpPatient.Location.X,
-                                                    GrpPatient.Location.Y);
+                                                    GrpSurgerySelectFromHold.Location.X,
+                                                    GrpSurgerySelectFromHold.Location.Y );
 
                     GrpSurgerySelected.Location = new Point(
-                                                      GrpHold.Location.X,
-                                                      GrpHold.Location.Y);
+                                                      GrpSurgerySelectFromHold.Location.X,
+                                                      GrpSurgerySelectFromHold.Location.Y );
 
-                    GrpPatient.Visible = false;
+                    GrpPatient.Visible = true;
                     GrpSurgerySelect.Visible = true;
-                    GrpSurgerySelected.Visible = true;
+                    GrpImages.Visible = true;
+                    GrpDesc.Visible = true;
+                    GrpSurgerySelected.Visible = false;
 
-                    AddNewVar.AddNewStep = 4;
+                    AddNewVar.AddNewStep = 5;
 
                     break;
 
                 default:
-                    Console.WriteLine("Default case");
+                    Console.WriteLine( "Default case" );
+
                     break;
             }
         }
 
         private void TSMnuAddNewBack_Click(object sender, EventArgs e)
         {
-            switch (AddNewVar.AddNewStep)
+            switch ( AddNewVar.AddNewStep )
             {
                 //  Close
                 case 1:
@@ -131,8 +142,8 @@ namespace ParsDashboard
 
                 //  Show home tab
                 case 3:
-                    TabPatient.TabPages.Insert( 0, TabPatientHome );
                     TabPatient.TabPages.Remove( TabPatientSurgery );
+                    TabPatient.TabPages.Insert( 0, TabPatientHome );                    
 
                     AddNewVar.AddNewStep = 2;
 
@@ -148,8 +159,37 @@ namespace ParsDashboard
 
                     break;
 
+                //   Show surgery items
+                case 5:
+                    TabPatient.TabPages.Remove( TabPatientPersonal );
+                    TabPatient.TabPages.Remove( TabPatientHome );
+                    TabPatient.TabPages.Remove( TabPatientSurgery );
+                    TabPatient.TabPages.Insert( 0, TabPatientSurgery );
+
+                    TSMnuAddNewCont.Visible = true;
+                    TSMnuAddNewSave.Visible = false;
+
+                    GrpSurgerySelect.Location = new Point(
+                                                    GrpPatient.Location.X,
+                                                    GrpPatient.Location.Y );
+
+                    GrpSurgerySelected.Location = new Point(
+                                                      GrpHold.Location.X,
+                                                      GrpHold.Location.Y );
+
+                    GrpPatient.Visible = false;
+                    GrpSurgerySelect.Visible = true;
+                    GrpImages.Visible = false;
+                    GrpDesc.Visible = false;
+                    GrpSurgerySelected.Visible = true;
+
+                    AddNewVar.AddNewStep = 4;
+
+                    break;
+
                 default:
-                    Console.WriteLine("Default case");
+                    Console.WriteLine( "Default case" );
+
                     break;
             }
         }

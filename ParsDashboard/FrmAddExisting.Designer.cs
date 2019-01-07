@@ -169,6 +169,7 @@
             // 
             // MnuAddEmailPic
             // 
+            this.MnuAddEmailPic.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuAddEmailPic.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuAddEmailPic.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMnuAddEmailImagesBack,
