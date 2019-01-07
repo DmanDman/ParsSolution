@@ -558,6 +558,7 @@
             this.LstDr.Name = "LstDr";
             this.LstDr.Size = new System.Drawing.Size(249, 36);
             this.LstDr.TabIndex = 3;
+            this.LstDr.SelectedIndexChanged += new System.EventHandler(this.LstDr_SelectedIndexChanged);
             // 
             // label27
             // 

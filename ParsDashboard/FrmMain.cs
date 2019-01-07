@@ -152,7 +152,7 @@ namespace ParsDashboard
         {
             // Stop flickering for panels
 
-            StopPanel_FlickeringPanel(tableLayoutPanel1);
+            StopPanel_FlickeringPanel( tableLayoutPanel1 );
             StopPanel_FlickeringPanel(PnlDashboard);
             StopPanel_FlickeringPanel(PnlImages);
             StopPanel_FlickeringPanel(PnlPatient);

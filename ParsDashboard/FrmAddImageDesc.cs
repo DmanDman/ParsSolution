@@ -116,6 +116,25 @@ namespace ParsDashboard
                         this.Close();
                     }
                 }
+
+                //  Group box Add Image visible and "Add images to new patient and surgery" is checked
+                if (GrpAddImage.Visible == true && RdoAddNewPatSur.Checked == true)
+                {
+                    FrmAddNew fAddNew = new FrmAddNew();
+
+                    this.Visible = false;
+
+                    fAddNew.ShowDialog();
+
+                    //this.Close();
+                    this.Visible = true;
+
+                    //  save pics to existing patient
+                    //if (SAVEPICTOEXISTING == true)
+                    //{
+                    //    this.Close();
+                    //}
+                }
             }
         }
     }
