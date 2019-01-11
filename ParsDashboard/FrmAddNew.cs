@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Reflection;
+using static ParsDashboard.Globals;
 
 namespace ParsDashboard
 {
@@ -127,6 +128,9 @@ namespace ParsDashboard
             {
                 //  Close
                 case 1:
+
+                    SAVEPICTONEW = false;
+
                     this.Close();
 
                     break;
@@ -192,6 +196,13 @@ namespace ParsDashboard
 
                     break;
             }
+        }
+
+        private void TSMnuAddNewSave_Click(object sender, EventArgs e)
+        {
+            SAVEPICTONEW = true;
+
+            this.Close();
         }
     }
 }

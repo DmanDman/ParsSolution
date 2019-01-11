@@ -71,11 +71,6 @@ namespace ParsDashboard
 
             this.Close();
         }
-
-        private void LstDr_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 
     public class SubRoutinesFrmAddExisting

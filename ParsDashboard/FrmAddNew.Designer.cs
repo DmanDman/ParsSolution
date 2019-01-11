@@ -170,7 +170,7 @@
             this.GrpSurgerySelected.Controls.Add(this.LstDr);
             this.GrpSurgerySelected.Controls.Add(this.label7);
             this.GrpSurgerySelected.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GrpSurgerySelected.Location = new System.Drawing.Point(730, 58);
+            this.GrpSurgerySelected.Location = new System.Drawing.Point(1021, 58);
             this.GrpSurgerySelected.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GrpSurgerySelected.Name = "GrpSurgerySelected";
             this.GrpSurgerySelected.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -876,7 +876,7 @@
             this.MnuAddNew.Location = new System.Drawing.Point(0, 0);
             this.MnuAddNew.Name = "MnuAddNew";
             this.MnuAddNew.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.MnuAddNew.Size = new System.Drawing.Size(1109, 28);
+            this.MnuAddNew.Size = new System.Drawing.Size(1313, 28);
             this.MnuAddNew.TabIndex = 37;
             this.MnuAddNew.Text = "menuStrip1";
             // 
@@ -937,6 +937,7 @@
             this.TSMnuAddNewSave.Size = new System.Drawing.Size(52, 24);
             this.TSMnuAddNewSave.Text = "&Save";
             this.TSMnuAddNewSave.Visible = false;
+            this.TSMnuAddNewSave.Click += new System.EventHandler(this.TSMnuAddNewSave_Click);
             // 
             // GrpImages
             // 
@@ -947,7 +948,7 @@
             this.GrpImages.Controls.Add(this.TxtImagesCount);
             this.GrpImages.Controls.Add(this.LstImages);
             this.GrpImages.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GrpImages.Location = new System.Drawing.Point(27, 599);
+            this.GrpImages.Location = new System.Drawing.Point(468, 58);
             this.GrpImages.Name = "GrpImages";
             this.GrpImages.Size = new System.Drawing.Size(419, 261);
             this.GrpImages.TabIndex = 38;
@@ -1014,9 +1015,9 @@
             // 
             this.GrpDesc.Controls.Add(this.LstImageDescFinal);
             this.GrpDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GrpDesc.Location = new System.Drawing.Point(457, 599);
+            this.GrpDesc.Location = new System.Drawing.Point(468, 333);
             this.GrpDesc.Name = "GrpDesc";
-            this.GrpDesc.Size = new System.Drawing.Size(259, 261);
+            this.GrpDesc.Size = new System.Drawing.Size(259, 211);
             this.GrpDesc.TabIndex = 39;
             this.GrpDesc.TabStop = false;
             this.GrpDesc.Text = "Image Descriptors";
@@ -1028,7 +1029,7 @@
             this.LstImageDescFinal.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LstImageDescFinal.FormattingEnabled = true;
             this.LstImageDescFinal.ItemHeight = 16;
-            this.LstImageDescFinal.Location = new System.Drawing.Point(15, 70);
+            this.LstImageDescFinal.Location = new System.Drawing.Point(15, 26);
             this.LstImageDescFinal.Name = "LstImageDescFinal";
             this.LstImageDescFinal.Size = new System.Drawing.Size(233, 164);
             this.LstImageDescFinal.TabIndex = 36;
@@ -1056,7 +1057,7 @@
             this.GrpSurgerySelect.Controls.Add(this.listBox10);
             this.GrpSurgerySelect.Controls.Add(this.label37);
             this.GrpSurgerySelect.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GrpSurgerySelect.Location = new System.Drawing.Point(472, 129);
+            this.GrpSurgerySelect.Location = new System.Drawing.Point(753, 347);
             this.GrpSurgerySelect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GrpSurgerySelect.Name = "GrpSurgerySelect";
             this.GrpSurgerySelect.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1324,7 +1325,7 @@
             // 
             // GrpSurgerySelectFromHold
             // 
-            this.GrpSurgerySelectFromHold.Location = new System.Drawing.Point(730, 58);
+            this.GrpSurgerySelectFromHold.Location = new System.Drawing.Point(908, 58);
             this.GrpSurgerySelectFromHold.Name = "GrpSurgerySelectFromHold";
             this.GrpSurgerySelectFromHold.Size = new System.Drawing.Size(285, 36);
             this.GrpSurgerySelectFromHold.TabIndex = 42;
@@ -1337,13 +1338,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1109, 882);
+            this.ClientSize = new System.Drawing.Size(1313, 882);
+            this.Controls.Add(this.GrpImages);
             this.Controls.Add(this.GrpSurgerySelectFromHold);
             this.Controls.Add(this.GrpSurgerySelected);
             this.Controls.Add(this.GrpHold);
             this.Controls.Add(this.GrpSurgerySelect);
             this.Controls.Add(this.GrpDesc);
-            this.Controls.Add(this.GrpImages);
             this.Controls.Add(this.MnuAddNew);
             this.Controls.Add(this.GrpPatient);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;

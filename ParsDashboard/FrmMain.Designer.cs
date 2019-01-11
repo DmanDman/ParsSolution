@@ -1891,6 +1891,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1397, 976);
+            this.Controls.Add(this.MnuPicOnly);
             this.Controls.Add(this.MnuImages);
             this.Controls.Add(this.MnuImagesSearch);
             this.Controls.Add(this.MnuImageSearchResult);
@@ -1904,7 +1905,6 @@
             this.Controls.Add(this.MnuDataLink);
             this.Controls.Add(this.MnuDataPicInfo);
             this.Controls.Add(this.MnuMD);
-            this.Controls.Add(this.MnuPicOnly);
             this.Controls.Add(this.MnuDashboard);
             this.Controls.Add(this.tableLayoutPanel1);
             this.IsMdiContainer = true;

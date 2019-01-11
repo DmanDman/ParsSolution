@@ -148,6 +148,7 @@
             this.TSMnuAddEmailImageSave.Size = new System.Drawing.Size(52, 24);
             this.TSMnuAddEmailImageSave.Text = "&Save";
             this.TSMnuAddEmailImageSave.Visible = false;
+            this.TSMnuAddEmailImageSave.Click += new System.EventHandler(this.TSMnuAddEmailImageSave_Click);
             // 
             // GrpImages
             // 
@@ -375,6 +376,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(611, 982);
+            this.ControlBox = false;
             this.Controls.Add(this.GrpDescFinal);
             this.Controls.Add(this.GrpImages);
             this.Controls.Add(this.MnuAddEmailPic);

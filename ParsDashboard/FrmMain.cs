@@ -1356,10 +1356,38 @@ namespace ParsDashboard
         {
             FrmAddImageDesc fAddImageDesc = new FrmAddImageDesc();
 
+            SAVEPICTONEW = false;
+            SAVEPICTOEXISTING = false;
+            SAVEPICONLY = false;
+
             fAddImageDesc.ShowDialog();
 
             //  save pics to existing patient
             if ( SAVEPICTOEXISTING == true )
+            {
+                fNav.ShowFormName( fImageSearchResuts.MdiParent.MdiChildren, "FrmImageSearchResults" );
+
+                SubRtn.DashboardAccordian( LblImages, e, tableLayoutPanel1 );
+
+                NavSetStyleClick( LblImagesSearchResults );
+
+                SubRtn.ShowHideMenu( this, MnuImageSearchResult.Name );
+            }
+
+            //  save pics to new patient
+            if( SAVEPICTONEW == true )
+            {
+                fNav.ShowFormName( fImageSearchResuts.MdiParent.MdiChildren, "FrmImageSearchResults" );
+
+                SubRtn.DashboardAccordian( LblImages, e, tableLayoutPanel1 );
+
+                NavSetStyleClick( LblImagesSearchResults );
+
+                SubRtn.ShowHideMenu( this, MnuImageSearchResult.Name );
+            }
+
+            //  save pics only
+            if ( SAVEPICONLY == true )
             {
                 fNav.ShowFormName( fImageSearchResuts.MdiParent.MdiChildren, "FrmImageSearchResults" );
 
