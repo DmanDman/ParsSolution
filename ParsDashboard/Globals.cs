@@ -15,5 +15,7 @@ namespace ParsDashboard
         public static bool SAVEPICTOEXISTING = false;
         public static bool SAVEPICTONEW = false;
         public static bool SAVEPICONLY = false;
+
+        public static string FORMLOADED = "";
     }
 }

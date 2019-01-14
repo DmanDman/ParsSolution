@@ -61,8 +61,11 @@ namespace ParsDashboard
             if ( ChkSurgeryDate.Checked )
             {
                 SURGERYDATECANCEL = false;
+                FORMLOADED = Tag.ToString();
 
                 fFilterDate.ShowDialog();
+
+                FORMLOADED = "";
 
                 if ( SURGERYDATECANCEL == true )
                 {
@@ -104,8 +107,11 @@ namespace ParsDashboard
             if ( ChkAge.Checked )
             {
                 AGECANCEL = false;
+                FORMLOADED = Tag.ToString();
 
                 fFilterAge.ShowDialog();
+
+                FORMLOADED = "";
 
                 if ( AGECANCEL == true )
                 {
@@ -139,8 +145,11 @@ namespace ParsDashboard
             if ( ChkDOB.Checked )
             {
                 DOBCANCEL = false;
+                FORMLOADED = Tag.ToString();
 
                 fFilterDate.ShowDialog();
+
+                FORMLOADED = "";
 
                 if ( DOBCANCEL == true )
                 {

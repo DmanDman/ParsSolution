@@ -52,28 +52,28 @@
             this.GrpPatient = new System.Windows.Forms.GroupBox();
             this.TabPatient = new System.Windows.Forms.TabControl();
             this.TabPatientPersonal = new System.Windows.Forms.TabPage();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.TxtResPatNum = new System.Windows.Forms.TextBox();
+            this.GrpPersonal = new System.Windows.Forms.GroupBox();
+            this.MTxtssn = new System.Windows.Forms.MaskedTextBox();
+            this.ChkAge = new System.Windows.Forms.CheckBox();
+            this.ChkDOB = new System.Windows.Forms.CheckBox();
+            this.TxtPatNum = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.TxtResAge = new System.Windows.Forms.TextBox();
+            this.TxtAge = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
-            this.TxtResSsn = new System.Windows.Forms.TextBox();
-            this.TxtResDob = new System.Windows.Forms.TextBox();
-            this.RdoResFemale = new System.Windows.Forms.RadioButton();
-            this.RdoResMale = new System.Windows.Forms.RadioButton();
-            this.TxtResSurgeryDate = new System.Windows.Forms.TextBox();
-            this.TxtResFirstName = new System.Windows.Forms.TextBox();
-            this.TxtResLastName = new System.Windows.Forms.TextBox();
+            this.TxtDob = new System.Windows.Forms.TextBox();
+            this.RdoFemale = new System.Windows.Forms.RadioButton();
+            this.RdoMale = new System.Windows.Forms.RadioButton();
+            this.TxtFirstName = new System.Windows.Forms.TextBox();
+            this.TxtLastName = new System.Windows.Forms.TextBox();
             this.TabPatientHome = new System.Windows.Forms.TabPage();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.TxtResState = new System.Windows.Forms.TextBox();
-            this.TxtResCell = new System.Windows.Forms.TextBox();
+            this.GrpHome = new System.Windows.Forms.GroupBox();
+            this.MTxtCell = new System.Windows.Forms.MaskedTextBox();
+            this.MTxtPhone = new System.Windows.Forms.MaskedTextBox();
+            this.MTxtZip = new System.Windows.Forms.MaskedTextBox();
+            this.CboState = new System.Windows.Forms.ComboBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
@@ -81,17 +81,15 @@
             this.label23 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.TxtResZip = new System.Windows.Forms.TextBox();
-            this.TxtResCity = new System.Windows.Forms.TextBox();
-            this.TxtResPhone = new System.Windows.Forms.TextBox();
-            this.TxtResAddress2 = new System.Windows.Forms.TextBox();
-            this.TxtResAddress1 = new System.Windows.Forms.TextBox();
+            this.TxtCity = new System.Windows.Forms.TextBox();
+            this.TxtAddress2 = new System.Windows.Forms.TextBox();
+            this.TxtAddress1 = new System.Windows.Forms.TextBox();
             this.TabPatientSurgery = new System.Windows.Forms.TabPage();
-            this.GrpBoxSurgery = new System.Windows.Forms.GroupBox();
+            this.GrpSurgery = new System.Windows.Forms.GroupBox();
+            this.DtFiscalYear = new System.Windows.Forms.DateTimePicker();
+            this.DtSurgeryDate = new System.Windows.Forms.DateTimePicker();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
             this.MnuAddNew = new System.Windows.Forms.MenuStrip();
             this.TSMnuAddNewBack = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuAddNewBreak1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -110,25 +108,25 @@
             this.GrpDesc = new System.Windows.Forms.GroupBox();
             this.LstImageDescFinal = new System.Windows.Forms.ListBox();
             this.GrpSurgerySelect = new System.Windows.Forms.GroupBox();
-            this.listBox1 = new System.Windows.Forms.ListBox();
+            this.LstPicInfoFilter = new System.Windows.Forms.ListBox();
             this.label26 = new System.Windows.Forms.Label();
-            this.listBox2 = new System.Windows.Forms.ListBox();
+            this.LstCompFilter = new System.Windows.Forms.ListBox();
             this.label27 = new System.Windows.Forms.Label();
-            this.listBox3 = new System.Windows.Forms.ListBox();
+            this.LstInstFilter = new System.Windows.Forms.ListBox();
             this.label28 = new System.Windows.Forms.Label();
-            this.listBox4 = new System.Windows.Forms.ListBox();
+            this.LstSurgeryFilter = new System.Windows.Forms.ListBox();
             this.label29 = new System.Windows.Forms.Label();
-            this.listBox5 = new System.Windows.Forms.ListBox();
+            this.LstDxFilter = new System.Windows.Forms.ListBox();
             this.label30 = new System.Windows.Forms.Label();
-            this.listBox6 = new System.Windows.Forms.ListBox();
+            this.LstCptFilter = new System.Windows.Forms.ListBox();
             this.label31 = new System.Windows.Forms.Label();
-            this.listBox7 = new System.Windows.Forms.ListBox();
+            this.LstLevelFilter = new System.Windows.Forms.ListBox();
             this.label32 = new System.Windows.Forms.Label();
-            this.listBox8 = new System.Windows.Forms.ListBox();
+            this.LstLocationFIlter = new System.Windows.Forms.ListBox();
             this.label35 = new System.Windows.Forms.Label();
-            this.listBox9 = new System.Windows.Forms.ListBox();
+            this.LstHospitalFilter = new System.Windows.Forms.ListBox();
             this.label36 = new System.Windows.Forms.Label();
-            this.listBox10 = new System.Windows.Forms.ListBox();
+            this.LstDrFilter = new System.Windows.Forms.ListBox();
             this.label37 = new System.Windows.Forms.Label();
             this.GrpHold = new System.Windows.Forms.GroupBox();
             this.GrpSurgerySelectFromHold = new System.Windows.Forms.GroupBox();
@@ -136,11 +134,11 @@
             this.GrpPatient.SuspendLayout();
             this.TabPatient.SuspendLayout();
             this.TabPatientPersonal.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.GrpPersonal.SuspendLayout();
             this.TabPatientHome.SuspendLayout();
-            this.groupBox4.SuspendLayout();
+            this.GrpHome.SuspendLayout();
             this.TabPatientSurgery.SuspendLayout();
-            this.GrpBoxSurgery.SuspendLayout();
+            this.GrpSurgery.SuspendLayout();
             this.MnuAddNew.SuspendLayout();
             this.GrpImages.SuspendLayout();
             this.GrpDesc.SuspendLayout();
@@ -190,6 +188,7 @@
             this.LstPicInfo.Name = "LstPicInfo";
             this.LstPicInfo.Size = new System.Drawing.Size(249, 68);
             this.LstPicInfo.TabIndex = 19;
+            this.LstPicInfo.DoubleClick += new System.EventHandler(this.LstPicInfo_DoubleClick);
             // 
             // label16
             // 
@@ -211,6 +210,7 @@
             this.LstComp.Name = "LstComp";
             this.LstComp.Size = new System.Drawing.Size(249, 68);
             this.LstComp.TabIndex = 17;
+            this.LstComp.DoubleClick += new System.EventHandler(this.LstComp_DoubleClick);
             // 
             // label15
             // 
@@ -232,6 +232,7 @@
             this.LstInst.Name = "LstInst";
             this.LstInst.Size = new System.Drawing.Size(249, 68);
             this.LstInst.TabIndex = 15;
+            this.LstInst.DoubleClick += new System.EventHandler(this.LstInst_DoubleClick);
             // 
             // label14
             // 
@@ -253,6 +254,7 @@
             this.LstSurgery.Name = "LstSurgery";
             this.LstSurgery.Size = new System.Drawing.Size(249, 68);
             this.LstSurgery.TabIndex = 13;
+            this.LstSurgery.DoubleClick += new System.EventHandler(this.LstSurgery_DoubleClick);
             // 
             // label13
             // 
@@ -274,6 +276,7 @@
             this.LstDx.Name = "LstDx";
             this.LstDx.Size = new System.Drawing.Size(249, 68);
             this.LstDx.TabIndex = 11;
+            this.LstDx.DoubleClick += new System.EventHandler(this.LstDx_DoubleClick);
             // 
             // label12
             // 
@@ -295,6 +298,7 @@
             this.LstCpt.Name = "LstCpt";
             this.LstCpt.Size = new System.Drawing.Size(249, 68);
             this.LstCpt.TabIndex = 9;
+            this.LstCpt.DoubleClick += new System.EventHandler(this.LstCpt_DoubleClick);
             // 
             // label11
             // 
@@ -316,6 +320,7 @@
             this.LstLevel.Name = "LstLevel";
             this.LstLevel.Size = new System.Drawing.Size(249, 68);
             this.LstLevel.TabIndex = 7;
+            this.LstLevel.DoubleClick += new System.EventHandler(this.LstLevel_DoubleClick);
             // 
             // label10
             // 
@@ -337,6 +342,7 @@
             this.LstLocation.Name = "LstLocation";
             this.LstLocation.Size = new System.Drawing.Size(249, 68);
             this.LstLocation.TabIndex = 5;
+            this.LstLocation.DoubleClick += new System.EventHandler(this.LstLocation_DoubleClick);
             // 
             // label9
             // 
@@ -358,6 +364,7 @@
             this.LstHospital.Name = "LstHospital";
             this.LstHospital.Size = new System.Drawing.Size(249, 36);
             this.LstHospital.TabIndex = 3;
+            this.LstHospital.DoubleClick += new System.EventHandler(this.LstHospital_DoubleClick);
             // 
             // label8
             // 
@@ -379,6 +386,7 @@
             this.LstDr.Name = "LstDr";
             this.LstDr.Size = new System.Drawing.Size(249, 36);
             this.LstDr.TabIndex = 1;
+            this.LstDr.DoubleClick += new System.EventHandler(this.LstDr_DoubleClick);
             // 
             // label7
             // 
@@ -397,7 +405,7 @@
             this.GrpPatient.Location = new System.Drawing.Point(27, 58);
             this.GrpPatient.Name = "GrpPatient";
             this.GrpPatient.Size = new System.Drawing.Size(419, 486);
-            this.GrpPatient.TabIndex = 35;
+            this.GrpPatient.TabIndex = 0;
             this.GrpPatient.TabStop = false;
             this.GrpPatient.Text = "Patient";
             // 
@@ -410,12 +418,12 @@
             this.TabPatient.Name = "TabPatient";
             this.TabPatient.SelectedIndex = 0;
             this.TabPatient.Size = new System.Drawing.Size(387, 428);
-            this.TabPatient.TabIndex = 3;
+            this.TabPatient.TabIndex = 0;
             // 
             // TabPatientPersonal
             // 
             this.TabPatientPersonal.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TabPatientPersonal.Controls.Add(this.groupBox1);
+            this.TabPatientPersonal.Controls.Add(this.GrpPersonal);
             this.TabPatientPersonal.Location = new System.Drawing.Point(4, 25);
             this.TabPatientPersonal.Name = "TabPatientPersonal";
             this.TabPatientPersonal.Padding = new System.Windows.Forms.Padding(3);
@@ -424,80 +432,79 @@
             this.TabPatientPersonal.Text = "Personal Info";
             this.TabPatientPersonal.UseVisualStyleBackColor = true;
             // 
-            // groupBox1
+            // GrpPersonal
             // 
-            this.groupBox1.Controls.Add(this.label17);
-            this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Controls.Add(this.TxtResPatNum);
-            this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.label4);
-            this.groupBox1.Controls.Add(this.TxtResAge);
-            this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.label6);
-            this.groupBox1.Controls.Add(this.label18);
-            this.groupBox1.Controls.Add(this.TxtResSsn);
-            this.groupBox1.Controls.Add(this.TxtResDob);
-            this.groupBox1.Controls.Add(this.RdoResFemale);
-            this.groupBox1.Controls.Add(this.RdoResMale);
-            this.groupBox1.Controls.Add(this.TxtResSurgeryDate);
-            this.groupBox1.Controls.Add(this.TxtResFirstName);
-            this.groupBox1.Controls.Add(this.TxtResLastName);
-            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(21, 17);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(310, 369);
-            this.groupBox1.TabIndex = 0;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Tag = "GrpBoxPersonal";
-            this.groupBox1.Text = "Personal Info";
+            this.GrpPersonal.Controls.Add(this.MTxtssn);
+            this.GrpPersonal.Controls.Add(this.ChkAge);
+            this.GrpPersonal.Controls.Add(this.ChkDOB);
+            this.GrpPersonal.Controls.Add(this.TxtPatNum);
+            this.GrpPersonal.Controls.Add(this.label3);
+            this.GrpPersonal.Controls.Add(this.label4);
+            this.GrpPersonal.Controls.Add(this.TxtAge);
+            this.GrpPersonal.Controls.Add(this.label5);
+            this.GrpPersonal.Controls.Add(this.label6);
+            this.GrpPersonal.Controls.Add(this.label18);
+            this.GrpPersonal.Controls.Add(this.TxtDob);
+            this.GrpPersonal.Controls.Add(this.RdoFemale);
+            this.GrpPersonal.Controls.Add(this.RdoMale);
+            this.GrpPersonal.Controls.Add(this.TxtFirstName);
+            this.GrpPersonal.Controls.Add(this.TxtLastName);
+            this.GrpPersonal.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrpPersonal.Location = new System.Drawing.Point(21, 17);
+            this.GrpPersonal.Name = "GrpPersonal";
+            this.GrpPersonal.Size = new System.Drawing.Size(310, 369);
+            this.GrpPersonal.TabIndex = 0;
+            this.GrpPersonal.TabStop = false;
+            this.GrpPersonal.Tag = "GrpBoxPersonal";
+            this.GrpPersonal.Text = "Personal Info";
             // 
-            // label17
+            // MTxtssn
             // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(6, 243);
-            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(33, 17);
-            this.label17.TabIndex = 19;
-            this.label17.Text = "Age";
+            this.MTxtssn.Location = new System.Drawing.Point(123, 281);
+            this.MTxtssn.Mask = "000-00-0000";
+            this.MTxtssn.Name = "MTxtssn";
+            this.MTxtssn.Size = new System.Drawing.Size(161, 22);
+            this.MTxtssn.TabIndex = 14;
             // 
-            // label1
+            // ChkAge
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(6, 199);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 17);
-            this.label1.TabIndex = 18;
-            this.label1.Text = "D.O.B.";
+            this.ChkAge.AutoSize = true;
+            this.ChkAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChkAge.Location = new System.Drawing.Point(6, 199);
+            this.ChkAge.Name = "ChkAge";
+            this.ChkAge.Size = new System.Drawing.Size(55, 21);
+            this.ChkAge.TabIndex = 8;
+            this.ChkAge.Text = "Age";
+            this.ChkAge.UseVisualStyleBackColor = true;
+            this.ChkAge.CheckedChanged += new System.EventHandler(this.ChkAge_CheckedChanged);
+            this.ChkAge.Click += new System.EventHandler(this.ChkAge_Click);
             // 
-            // label2
+            // ChkDOB
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(7, 155);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(92, 17);
-            this.label2.TabIndex = 17;
-            this.label2.Text = "Surgery Date";
+            this.ChkDOB.AutoSize = true;
+            this.ChkDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ChkDOB.Location = new System.Drawing.Point(6, 158);
+            this.ChkDOB.Name = "ChkDOB";
+            this.ChkDOB.Size = new System.Drawing.Size(72, 21);
+            this.ChkDOB.TabIndex = 6;
+            this.ChkDOB.Text = "D.O.B.";
+            this.ChkDOB.UseVisualStyleBackColor = true;
+            this.ChkDOB.CheckedChanged += new System.EventHandler(this.ChkDOB_CheckedChanged);
+            this.ChkDOB.Click += new System.EventHandler(this.ChkDOB_Click);
             // 
-            // TxtResPatNum
+            // TxtPatNum
             // 
-            this.TxtResPatNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtResPatNum.Location = new System.Drawing.Point(123, 115);
-            this.TxtResPatNum.Name = "TxtResPatNum";
-            this.TxtResPatNum.Size = new System.Drawing.Size(166, 22);
-            this.TxtResPatNum.TabIndex = 5;
+            this.TxtPatNum.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtPatNum.Location = new System.Drawing.Point(123, 117);
+            this.TxtPatNum.Name = "TxtPatNum";
+            this.TxtPatNum.Size = new System.Drawing.Size(166, 22);
+            this.TxtPatNum.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 115);
+            this.label3.Location = new System.Drawing.Point(6, 117);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 17);
@@ -508,38 +515,39 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(6, 327);
+            this.label4.Location = new System.Drawing.Point(6, 281);
             this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(36, 17);
-            this.label4.TabIndex = 15;
+            this.label4.TabIndex = 13;
             this.label4.Text = "SSN";
             // 
-            // TxtResAge
+            // TxtAge
             // 
-            this.TxtResAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtResAge.Location = new System.Drawing.Point(123, 243);
-            this.TxtResAge.Multiline = true;
-            this.TxtResAge.Name = "TxtResAge";
-            this.TxtResAge.Size = new System.Drawing.Size(166, 22);
-            this.TxtResAge.TabIndex = 11;
+            this.TxtAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtAge.Location = new System.Drawing.Point(123, 199);
+            this.TxtAge.Multiline = true;
+            this.TxtAge.Name = "TxtAge";
+            this.TxtAge.ReadOnly = true;
+            this.TxtAge.Size = new System.Drawing.Size(166, 22);
+            this.TxtAge.TabIndex = 9;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(6, 287);
+            this.label5.Location = new System.Drawing.Point(6, 240);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(31, 17);
-            this.label5.TabIndex = 12;
+            this.label5.TabIndex = 10;
             this.label5.Text = "Sex";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(6, 75);
+            this.label6.Location = new System.Drawing.Point(6, 76);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(76, 17);
@@ -557,76 +565,60 @@
             this.label18.TabIndex = 0;
             this.label18.Text = "Last Name";
             // 
-            // TxtResSsn
+            // TxtDob
             // 
-            this.TxtResSsn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtResSsn.Location = new System.Drawing.Point(123, 327);
-            this.TxtResSsn.Name = "TxtResSsn";
-            this.TxtResSsn.Size = new System.Drawing.Size(166, 22);
-            this.TxtResSsn.TabIndex = 16;
+            this.TxtDob.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtDob.Location = new System.Drawing.Point(123, 158);
+            this.TxtDob.Multiline = true;
+            this.TxtDob.Name = "TxtDob";
+            this.TxtDob.ReadOnly = true;
+            this.TxtDob.Size = new System.Drawing.Size(166, 22);
+            this.TxtDob.TabIndex = 7;
             // 
-            // TxtResDob
+            // RdoFemale
             // 
-            this.TxtResDob.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtResDob.Location = new System.Drawing.Point(123, 199);
-            this.TxtResDob.Multiline = true;
-            this.TxtResDob.Name = "TxtResDob";
-            this.TxtResDob.Size = new System.Drawing.Size(166, 22);
-            this.TxtResDob.TabIndex = 9;
+            this.RdoFemale.AutoSize = true;
+            this.RdoFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RdoFemale.Location = new System.Drawing.Point(189, 240);
+            this.RdoFemale.Name = "RdoFemale";
+            this.RdoFemale.Size = new System.Drawing.Size(75, 21);
+            this.RdoFemale.TabIndex = 12;
+            this.RdoFemale.TabStop = true;
+            this.RdoFemale.Text = "Female";
+            this.RdoFemale.UseVisualStyleBackColor = true;
             // 
-            // RdoResFemale
+            // RdoMale
             // 
-            this.RdoResFemale.AutoSize = true;
-            this.RdoResFemale.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RdoResFemale.Location = new System.Drawing.Point(189, 287);
-            this.RdoResFemale.Name = "RdoResFemale";
-            this.RdoResFemale.Size = new System.Drawing.Size(75, 21);
-            this.RdoResFemale.TabIndex = 14;
-            this.RdoResFemale.TabStop = true;
-            this.RdoResFemale.Text = "Female";
-            this.RdoResFemale.UseVisualStyleBackColor = true;
+            this.RdoMale.AutoSize = true;
+            this.RdoMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RdoMale.Location = new System.Drawing.Point(123, 240);
+            this.RdoMale.Name = "RdoMale";
+            this.RdoMale.Size = new System.Drawing.Size(59, 21);
+            this.RdoMale.TabIndex = 11;
+            this.RdoMale.TabStop = true;
+            this.RdoMale.Text = "Male";
+            this.RdoMale.UseVisualStyleBackColor = true;
             // 
-            // RdoResMale
+            // TxtFirstName
             // 
-            this.RdoResMale.AutoSize = true;
-            this.RdoResMale.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.RdoResMale.Location = new System.Drawing.Point(123, 287);
-            this.RdoResMale.Name = "RdoResMale";
-            this.RdoResMale.Size = new System.Drawing.Size(59, 21);
-            this.RdoResMale.TabIndex = 13;
-            this.RdoResMale.TabStop = true;
-            this.RdoResMale.Text = "Male";
-            this.RdoResMale.UseVisualStyleBackColor = true;
+            this.TxtFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtFirstName.Location = new System.Drawing.Point(123, 76);
+            this.TxtFirstName.Name = "TxtFirstName";
+            this.TxtFirstName.Size = new System.Drawing.Size(166, 22);
+            this.TxtFirstName.TabIndex = 3;
             // 
-            // TxtResSurgeryDate
+            // TxtLastName
             // 
-            this.TxtResSurgeryDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtResSurgeryDate.Location = new System.Drawing.Point(123, 155);
-            this.TxtResSurgeryDate.Multiline = true;
-            this.TxtResSurgeryDate.Name = "TxtResSurgeryDate";
-            this.TxtResSurgeryDate.Size = new System.Drawing.Size(166, 22);
-            this.TxtResSurgeryDate.TabIndex = 7;
-            // 
-            // TxtResFirstName
-            // 
-            this.TxtResFirstName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtResFirstName.Location = new System.Drawing.Point(123, 75);
-            this.TxtResFirstName.Name = "TxtResFirstName";
-            this.TxtResFirstName.Size = new System.Drawing.Size(166, 22);
-            this.TxtResFirstName.TabIndex = 3;
-            // 
-            // TxtResLastName
-            // 
-            this.TxtResLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtResLastName.Location = new System.Drawing.Point(123, 35);
-            this.TxtResLastName.Name = "TxtResLastName";
-            this.TxtResLastName.Size = new System.Drawing.Size(166, 22);
-            this.TxtResLastName.TabIndex = 1;
+            this.TxtLastName.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtLastName.Location = new System.Drawing.Point(123, 35);
+            this.TxtLastName.Name = "TxtLastName";
+            this.TxtLastName.Size = new System.Drawing.Size(166, 22);
+            this.TxtLastName.TabIndex = 1;
             // 
             // TabPatientHome
             // 
             this.TabPatientHome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TabPatientHome.Controls.Add(this.groupBox4);
+            this.TabPatientHome.Controls.Add(this.GrpHome);
             this.TabPatientHome.Location = new System.Drawing.Point(4, 25);
             this.TabPatientHome.Name = "TabPatientHome";
             this.TabPatientHome.Padding = new System.Windows.Forms.Padding(3);
@@ -635,53 +627,176 @@
             this.TabPatientHome.Text = "Home";
             this.TabPatientHome.UseVisualStyleBackColor = true;
             // 
-            // groupBox4
+            // GrpHome
             // 
-            this.groupBox4.Controls.Add(this.TxtResState);
-            this.groupBox4.Controls.Add(this.TxtResCell);
-            this.groupBox4.Controls.Add(this.label19);
-            this.groupBox4.Controls.Add(this.label20);
-            this.groupBox4.Controls.Add(this.label21);
-            this.groupBox4.Controls.Add(this.label22);
-            this.groupBox4.Controls.Add(this.label23);
-            this.groupBox4.Controls.Add(this.label24);
-            this.groupBox4.Controls.Add(this.label25);
-            this.groupBox4.Controls.Add(this.TxtResZip);
-            this.groupBox4.Controls.Add(this.TxtResCity);
-            this.groupBox4.Controls.Add(this.TxtResPhone);
-            this.groupBox4.Controls.Add(this.TxtResAddress2);
-            this.groupBox4.Controls.Add(this.TxtResAddress1);
-            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(21, 17);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(307, 369);
-            this.groupBox4.TabIndex = 0;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Tag = "GrpBoxPersonal";
-            this.groupBox4.Text = "Home";
+            this.GrpHome.Controls.Add(this.MTxtCell);
+            this.GrpHome.Controls.Add(this.MTxtPhone);
+            this.GrpHome.Controls.Add(this.MTxtZip);
+            this.GrpHome.Controls.Add(this.CboState);
+            this.GrpHome.Controls.Add(this.label19);
+            this.GrpHome.Controls.Add(this.label20);
+            this.GrpHome.Controls.Add(this.label21);
+            this.GrpHome.Controls.Add(this.label22);
+            this.GrpHome.Controls.Add(this.label23);
+            this.GrpHome.Controls.Add(this.label24);
+            this.GrpHome.Controls.Add(this.label25);
+            this.GrpHome.Controls.Add(this.TxtCity);
+            this.GrpHome.Controls.Add(this.TxtAddress2);
+            this.GrpHome.Controls.Add(this.TxtAddress1);
+            this.GrpHome.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrpHome.Location = new System.Drawing.Point(21, 17);
+            this.GrpHome.Name = "GrpHome";
+            this.GrpHome.Size = new System.Drawing.Size(310, 369);
+            this.GrpHome.TabIndex = 0;
+            this.GrpHome.TabStop = false;
+            this.GrpHome.Tag = "GrpBoxPersonal";
+            this.GrpHome.Text = "Home";
             // 
-            // TxtResState
+            // MTxtCell
             // 
-            this.TxtResState.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtResState.Location = new System.Drawing.Point(123, 157);
-            this.TxtResState.Name = "TxtResState";
-            this.TxtResState.Size = new System.Drawing.Size(166, 22);
-            this.TxtResState.TabIndex = 7;
+            this.MTxtCell.Location = new System.Drawing.Point(123, 281);
+            this.MTxtCell.Mask = "(000) 000-0000";
+            this.MTxtCell.Name = "MTxtCell";
+            this.MTxtCell.Size = new System.Drawing.Size(161, 22);
+            this.MTxtCell.TabIndex = 13;
             // 
-            // TxtResCell
+            // MTxtPhone
             // 
-            this.TxtResCell.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtResCell.Location = new System.Drawing.Point(123, 282);
-            this.TxtResCell.Multiline = true;
-            this.TxtResCell.Name = "TxtResCell";
-            this.TxtResCell.Size = new System.Drawing.Size(166, 22);
-            this.TxtResCell.TabIndex = 13;
+            this.MTxtPhone.Location = new System.Drawing.Point(123, 240);
+            this.MTxtPhone.Mask = "(000) 000-0000";
+            this.MTxtPhone.Name = "MTxtPhone";
+            this.MTxtPhone.Size = new System.Drawing.Size(161, 22);
+            this.MTxtPhone.TabIndex = 11;
+            // 
+            // MTxtZip
+            // 
+            this.MTxtZip.Location = new System.Drawing.Point(123, 199);
+            this.MTxtZip.Mask = "00000";
+            this.MTxtZip.Name = "MTxtZip";
+            this.MTxtZip.Size = new System.Drawing.Size(161, 22);
+            this.MTxtZip.TabIndex = 9;
+            // 
+            // CboState
+            // 
+            this.CboState.AutoCompleteCustomSource.AddRange(new string[] {
+            "AL",
+            "AK",
+            "AZ",
+            "AR",
+            "CA",
+            "CO",
+            "CT",
+            "DE",
+            "FL",
+            "GA",
+            "HI",
+            "ID",
+            "IL",
+            "IN",
+            "IA",
+            "KS",
+            "KY",
+            "LA",
+            "ME",
+            "MD",
+            "MA",
+            "MI",
+            "MN",
+            "MS",
+            "MO",
+            "MT",
+            "NE",
+            "NV",
+            "NH",
+            "NJ",
+            "NJ",
+            "NM",
+            "NY",
+            "NC",
+            "ND",
+            "OH",
+            "OK",
+            "OR",
+            "PA",
+            "RI",
+            "SC",
+            "SD",
+            "TN",
+            "TX",
+            "UT",
+            "VT",
+            "VA",
+            "WA",
+            "WV",
+            "WI",
+            "WY"});
+            this.CboState.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CboState.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.CboState.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CboState.FormattingEnabled = true;
+            this.CboState.Items.AddRange(new object[] {
+            "AK",
+            "AL",
+            "AR",
+            "AZ",
+            "CA",
+            "CO",
+            "CT",
+            "DE",
+            "FL",
+            "GA",
+            "HI",
+            "IA",
+            "ID",
+            "IL",
+            "IN",
+            "KS",
+            "KY",
+            "LA",
+            "MA",
+            "MD",
+            "ME",
+            "MI",
+            "MN",
+            "MO",
+            "MS",
+            "MT",
+            "NC",
+            "ND",
+            "NE",
+            "NH",
+            "NJ",
+            "NM",
+            "NV",
+            "NY",
+            "OH",
+            "OK",
+            "OR",
+            "PA",
+            "RI",
+            "SC",
+            "SD",
+            "TN",
+            "TX",
+            "UT",
+            "VA",
+            "VT",
+            "WA",
+            "WI",
+            "WV",
+            "WY"});
+            this.CboState.Location = new System.Drawing.Point(123, 158);
+            this.CboState.MaxLength = 2;
+            this.CboState.Name = "CboState";
+            this.CboState.Size = new System.Drawing.Size(75, 24);
+            this.CboState.Sorted = true;
+            this.CboState.TabIndex = 7;
             // 
             // label19
             // 
             this.label19.AutoSize = true;
             this.label19.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(6, 287);
+            this.label19.Location = new System.Drawing.Point(6, 281);
             this.label19.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(31, 17);
@@ -692,7 +807,7 @@
             // 
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(6, 243);
+            this.label20.Location = new System.Drawing.Point(6, 240);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(49, 17);
@@ -714,7 +829,7 @@
             // 
             this.label22.AutoSize = true;
             this.label22.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label22.Location = new System.Drawing.Point(7, 155);
+            this.label22.Location = new System.Drawing.Point(6, 158);
             this.label22.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label22.Name = "label22";
             this.label22.Size = new System.Drawing.Size(41, 17);
@@ -725,7 +840,7 @@
             // 
             this.label23.AutoSize = true;
             this.label23.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label23.Location = new System.Drawing.Point(6, 115);
+            this.label23.Location = new System.Drawing.Point(6, 117);
             this.label23.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label23.Name = "label23";
             this.label23.Size = new System.Drawing.Size(31, 17);
@@ -736,7 +851,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(6, 75);
+            this.label24.Location = new System.Drawing.Point(6, 76);
             this.label24.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(72, 17);
@@ -754,51 +869,34 @@
             this.label25.TabIndex = 0;
             this.label25.Text = "Address 1";
             // 
-            // TxtResZip
+            // TxtCity
             // 
-            this.TxtResZip.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtResZip.Location = new System.Drawing.Point(123, 199);
-            this.TxtResZip.Name = "TxtResZip";
-            this.TxtResZip.Size = new System.Drawing.Size(166, 22);
-            this.TxtResZip.TabIndex = 9;
+            this.TxtCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCity.Location = new System.Drawing.Point(123, 117);
+            this.TxtCity.Name = "TxtCity";
+            this.TxtCity.Size = new System.Drawing.Size(166, 22);
+            this.TxtCity.TabIndex = 5;
             // 
-            // TxtResCity
+            // TxtAddress2
             // 
-            this.TxtResCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtResCity.Location = new System.Drawing.Point(123, 115);
-            this.TxtResCity.Name = "TxtResCity";
-            this.TxtResCity.Size = new System.Drawing.Size(166, 22);
-            this.TxtResCity.TabIndex = 5;
+            this.TxtAddress2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtAddress2.Location = new System.Drawing.Point(123, 76);
+            this.TxtAddress2.Name = "TxtAddress2";
+            this.TxtAddress2.Size = new System.Drawing.Size(166, 22);
+            this.TxtAddress2.TabIndex = 3;
             // 
-            // TxtResPhone
+            // TxtAddress1
             // 
-            this.TxtResPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtResPhone.Location = new System.Drawing.Point(123, 243);
-            this.TxtResPhone.Multiline = true;
-            this.TxtResPhone.Name = "TxtResPhone";
-            this.TxtResPhone.Size = new System.Drawing.Size(166, 22);
-            this.TxtResPhone.TabIndex = 11;
-            // 
-            // TxtResAddress2
-            // 
-            this.TxtResAddress2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtResAddress2.Location = new System.Drawing.Point(123, 75);
-            this.TxtResAddress2.Name = "TxtResAddress2";
-            this.TxtResAddress2.Size = new System.Drawing.Size(166, 22);
-            this.TxtResAddress2.TabIndex = 3;
-            // 
-            // TxtResAddress1
-            // 
-            this.TxtResAddress1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtResAddress1.Location = new System.Drawing.Point(123, 35);
-            this.TxtResAddress1.Name = "TxtResAddress1";
-            this.TxtResAddress1.Size = new System.Drawing.Size(166, 22);
-            this.TxtResAddress1.TabIndex = 1;
+            this.TxtAddress1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtAddress1.Location = new System.Drawing.Point(123, 35);
+            this.TxtAddress1.Name = "TxtAddress1";
+            this.TxtAddress1.Size = new System.Drawing.Size(166, 22);
+            this.TxtAddress1.TabIndex = 1;
             // 
             // TabPatientSurgery
             // 
             this.TabPatientSurgery.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.TabPatientSurgery.Controls.Add(this.GrpBoxSurgery);
+            this.TabPatientSurgery.Controls.Add(this.GrpSurgery);
             this.TabPatientSurgery.Location = new System.Drawing.Point(4, 25);
             this.TabPatientSurgery.Name = "TabPatientSurgery";
             this.TabPatientSurgery.Padding = new System.Windows.Forms.Padding(3);
@@ -807,26 +905,47 @@
             this.TabPatientSurgery.Text = "Surgery";
             this.TabPatientSurgery.UseVisualStyleBackColor = true;
             // 
-            // GrpBoxSurgery
+            // GrpSurgery
             // 
-            this.GrpBoxSurgery.Controls.Add(this.label33);
-            this.GrpBoxSurgery.Controls.Add(this.label34);
-            this.GrpBoxSurgery.Controls.Add(this.textBox8);
-            this.GrpBoxSurgery.Controls.Add(this.textBox9);
-            this.GrpBoxSurgery.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GrpBoxSurgery.Location = new System.Drawing.Point(21, 17);
-            this.GrpBoxSurgery.Name = "GrpBoxSurgery";
-            this.GrpBoxSurgery.Size = new System.Drawing.Size(307, 369);
-            this.GrpBoxSurgery.TabIndex = 1;
-            this.GrpBoxSurgery.TabStop = false;
-            this.GrpBoxSurgery.Tag = "GrpBoxSurgery";
-            this.GrpBoxSurgery.Text = "Surgery";
+            this.GrpSurgery.Controls.Add(this.DtFiscalYear);
+            this.GrpSurgery.Controls.Add(this.DtSurgeryDate);
+            this.GrpSurgery.Controls.Add(this.label33);
+            this.GrpSurgery.Controls.Add(this.label34);
+            this.GrpSurgery.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GrpSurgery.Location = new System.Drawing.Point(21, 17);
+            this.GrpSurgery.Name = "GrpSurgery";
+            this.GrpSurgery.Size = new System.Drawing.Size(310, 369);
+            this.GrpSurgery.TabIndex = 0;
+            this.GrpSurgery.TabStop = false;
+            this.GrpSurgery.Tag = "GrpBoxSurgery";
+            this.GrpSurgery.Text = "Surgery";
+            // 
+            // DtFiscalYear
+            // 
+            this.DtFiscalYear.CustomFormat = "yyyy";
+            this.DtFiscalYear.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.DtFiscalYear.Location = new System.Drawing.Point(123, 76);
+            this.DtFiscalYear.MinDate = new System.DateTime(1970, 1, 1, 0, 0, 0, 0);
+            this.DtFiscalYear.Name = "DtFiscalYear";
+            this.DtFiscalYear.ShowUpDown = true;
+            this.DtFiscalYear.Size = new System.Drawing.Size(166, 22);
+            this.DtFiscalYear.TabIndex = 3;
+            this.DtFiscalYear.Value = new System.DateTime(2019, 1, 13, 17, 43, 52, 0);
+            // 
+            // DtSurgeryDate
+            // 
+            this.DtSurgeryDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DtSurgeryDate.Location = new System.Drawing.Point(123, 35);
+            this.DtSurgeryDate.MinDate = new System.DateTime(1970, 1, 1, 0, 0, 0, 0);
+            this.DtSurgeryDate.Name = "DtSurgeryDate";
+            this.DtSurgeryDate.Size = new System.Drawing.Size(166, 22);
+            this.DtSurgeryDate.TabIndex = 1;
             // 
             // label33
             // 
             this.label33.AutoSize = true;
             this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(6, 75);
+            this.label33.Location = new System.Drawing.Point(6, 76);
             this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label33.Name = "label33";
             this.label33.Size = new System.Drawing.Size(78, 17);
@@ -843,22 +962,6 @@
             this.label34.Size = new System.Drawing.Size(92, 17);
             this.label34.TabIndex = 0;
             this.label34.Text = "Surgery Date";
-            // 
-            // textBox8
-            // 
-            this.textBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox8.Location = new System.Drawing.Point(123, 75);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(166, 22);
-            this.textBox8.TabIndex = 3;
-            // 
-            // textBox9
-            // 
-            this.textBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox9.Location = new System.Drawing.Point(123, 35);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(166, 22);
-            this.textBox9.TabIndex = 1;
             // 
             // MnuAddNew
             // 
@@ -904,6 +1007,7 @@
             this.TSMnuAddNewClear.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.R)));
             this.TSMnuAddNewClear.Size = new System.Drawing.Size(55, 24);
             this.TSMnuAddNewClear.Text = "Clea&r";
+            this.TSMnuAddNewClear.Click += new System.EventHandler(this.TSMnuAddNewClear_Click);
             // 
             // TSMnuAddNewBreak2
             // 
@@ -1036,28 +1140,28 @@
             // 
             // GrpSurgerySelect
             // 
-            this.GrpSurgerySelect.Controls.Add(this.listBox1);
+            this.GrpSurgerySelect.Controls.Add(this.LstPicInfoFilter);
             this.GrpSurgerySelect.Controls.Add(this.label26);
-            this.GrpSurgerySelect.Controls.Add(this.listBox2);
+            this.GrpSurgerySelect.Controls.Add(this.LstCompFilter);
             this.GrpSurgerySelect.Controls.Add(this.label27);
-            this.GrpSurgerySelect.Controls.Add(this.listBox3);
+            this.GrpSurgerySelect.Controls.Add(this.LstInstFilter);
             this.GrpSurgerySelect.Controls.Add(this.label28);
-            this.GrpSurgerySelect.Controls.Add(this.listBox4);
+            this.GrpSurgerySelect.Controls.Add(this.LstSurgeryFilter);
             this.GrpSurgerySelect.Controls.Add(this.label29);
-            this.GrpSurgerySelect.Controls.Add(this.listBox5);
+            this.GrpSurgerySelect.Controls.Add(this.LstDxFilter);
             this.GrpSurgerySelect.Controls.Add(this.label30);
-            this.GrpSurgerySelect.Controls.Add(this.listBox6);
+            this.GrpSurgerySelect.Controls.Add(this.LstCptFilter);
             this.GrpSurgerySelect.Controls.Add(this.label31);
-            this.GrpSurgerySelect.Controls.Add(this.listBox7);
+            this.GrpSurgerySelect.Controls.Add(this.LstLevelFilter);
             this.GrpSurgerySelect.Controls.Add(this.label32);
-            this.GrpSurgerySelect.Controls.Add(this.listBox8);
+            this.GrpSurgerySelect.Controls.Add(this.LstLocationFIlter);
             this.GrpSurgerySelect.Controls.Add(this.label35);
-            this.GrpSurgerySelect.Controls.Add(this.listBox9);
+            this.GrpSurgerySelect.Controls.Add(this.LstHospitalFilter);
             this.GrpSurgerySelect.Controls.Add(this.label36);
-            this.GrpSurgerySelect.Controls.Add(this.listBox10);
+            this.GrpSurgerySelect.Controls.Add(this.LstDrFilter);
             this.GrpSurgerySelect.Controls.Add(this.label37);
             this.GrpSurgerySelect.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GrpSurgerySelect.Location = new System.Drawing.Point(753, 347);
+            this.GrpSurgerySelect.Location = new System.Drawing.Point(743, 331);
             this.GrpSurgerySelect.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.GrpSurgerySelect.Name = "GrpSurgerySelect";
             this.GrpSurgerySelect.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -1067,21 +1171,22 @@
             this.GrpSurgerySelect.Text = "Surgery - Select From Items";
             this.GrpSurgerySelect.Visible = false;
             // 
-            // listBox1
+            // LstPicInfoFilter
             // 
-            this.listBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Items.AddRange(new object[] {
+            this.LstPicInfoFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LstPicInfoFilter.FormattingEnabled = true;
+            this.LstPicInfoFilter.ItemHeight = 16;
+            this.LstPicInfoFilter.Items.AddRange(new object[] {
             "Best Patient",
             "First Surgery",
             "Weirdest Case",
             "Youngest Male"});
-            this.listBox1.Location = new System.Drawing.Point(83, 721);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(249, 68);
-            this.listBox1.TabIndex = 19;
+            this.LstPicInfoFilter.Location = new System.Drawing.Point(83, 721);
+            this.LstPicInfoFilter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LstPicInfoFilter.Name = "LstPicInfoFilter";
+            this.LstPicInfoFilter.Size = new System.Drawing.Size(249, 68);
+            this.LstPicInfoFilter.TabIndex = 19;
+            this.LstPicInfoFilter.DoubleClick += new System.EventHandler(this.LstPicInfoFilter_DoubleClick);
             // 
             // label26
             // 
@@ -1093,20 +1198,21 @@
             this.label26.TabIndex = 18;
             this.label26.Text = "Pic Info";
             // 
-            // listBox2
+            // LstCompFilter
             // 
-            this.listBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
-            this.listBox2.Items.AddRange(new object[] {
+            this.LstCompFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LstCompFilter.FormattingEnabled = true;
+            this.LstCompFilter.ItemHeight = 16;
+            this.LstCompFilter.Items.AddRange(new object[] {
             "Hardware--Failure",
             "Transition Spondylolisthesis",
             "Open Incision"});
-            this.listBox2.Location = new System.Drawing.Point(83, 635);
-            this.listBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(249, 68);
-            this.listBox2.TabIndex = 17;
+            this.LstCompFilter.Location = new System.Drawing.Point(83, 635);
+            this.LstCompFilter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LstCompFilter.Name = "LstCompFilter";
+            this.LstCompFilter.Size = new System.Drawing.Size(249, 68);
+            this.LstCompFilter.TabIndex = 17;
+            this.LstCompFilter.DoubleClick += new System.EventHandler(this.LstCompFilter_DoubleClick);
             // 
             // label27
             // 
@@ -1118,20 +1224,21 @@
             this.label27.TabIndex = 16;
             this.label27.Text = "Comp";
             // 
-            // listBox3
+            // LstInstFilter
             // 
-            this.listBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 16;
-            this.listBox3.Items.AddRange(new object[] {
+            this.LstInstFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LstInstFilter.FormattingEnabled = true;
+            this.LstInstFilter.ItemHeight = 16;
+            this.LstInstFilter.Items.AddRange(new object[] {
             "Precision Spacer",
             "Translaminar Facet Screws",
             "Premier Plate"});
-            this.listBox3.Location = new System.Drawing.Point(83, 551);
-            this.listBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(249, 68);
-            this.listBox3.TabIndex = 15;
+            this.LstInstFilter.Location = new System.Drawing.Point(83, 551);
+            this.LstInstFilter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LstInstFilter.Name = "LstInstFilter";
+            this.LstInstFilter.Size = new System.Drawing.Size(249, 68);
+            this.LstInstFilter.TabIndex = 15;
+            this.LstInstFilter.DoubleClick += new System.EventHandler(this.LstInstFilter_DoubleClick);
             // 
             // label28
             // 
@@ -1143,20 +1250,21 @@
             this.label28.TabIndex = 14;
             this.label28.Text = "Inst";
             // 
-            // listBox4
+            // LstSurgeryFilter
             // 
-            this.listBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox4.FormattingEnabled = true;
-            this.listBox4.ItemHeight = 16;
-            this.listBox4.Items.AddRange(new object[] {
+            this.LstSurgeryFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LstSurgeryFilter.FormattingEnabled = true;
+            this.LstSurgeryFilter.ItemHeight = 16;
+            this.LstSurgeryFilter.Items.AddRange(new object[] {
             "Fusion",
             "Fusion--PTF",
             "Fusion--PLF"});
-            this.listBox4.Location = new System.Drawing.Point(83, 468);
-            this.listBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBox4.Name = "listBox4";
-            this.listBox4.Size = new System.Drawing.Size(249, 68);
-            this.listBox4.TabIndex = 13;
+            this.LstSurgeryFilter.Location = new System.Drawing.Point(83, 468);
+            this.LstSurgeryFilter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LstSurgeryFilter.Name = "LstSurgeryFilter";
+            this.LstSurgeryFilter.Size = new System.Drawing.Size(249, 68);
+            this.LstSurgeryFilter.TabIndex = 13;
+            this.LstSurgeryFilter.DoubleClick += new System.EventHandler(this.LstSurgeryFilter_DoubleClick);
             // 
             // label29
             // 
@@ -1168,18 +1276,19 @@
             this.label29.TabIndex = 12;
             this.label29.Text = "Surgery";
             // 
-            // listBox5
+            // LstDxFilter
             // 
-            this.listBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox5.FormattingEnabled = true;
-            this.listBox5.ItemHeight = 16;
-            this.listBox5.Items.AddRange(new object[] {
+            this.LstDxFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LstDxFilter.FormattingEnabled = true;
+            this.LstDxFilter.ItemHeight = 16;
+            this.LstDxFilter.Items.AddRange(new object[] {
             "Instability"});
-            this.listBox5.Location = new System.Drawing.Point(83, 383);
-            this.listBox5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBox5.Name = "listBox5";
-            this.listBox5.Size = new System.Drawing.Size(249, 68);
-            this.listBox5.TabIndex = 11;
+            this.LstDxFilter.Location = new System.Drawing.Point(83, 383);
+            this.LstDxFilter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LstDxFilter.Name = "LstDxFilter";
+            this.LstDxFilter.Size = new System.Drawing.Size(249, 68);
+            this.LstDxFilter.TabIndex = 11;
+            this.LstDxFilter.DoubleClick += new System.EventHandler(this.LstDxFilter_DoubleClick);
             // 
             // label30
             // 
@@ -1191,20 +1300,21 @@
             this.label30.TabIndex = 10;
             this.label30.Text = "Dx";
             // 
-            // listBox6
+            // LstCptFilter
             // 
-            this.listBox6.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox6.FormattingEnabled = true;
-            this.listBox6.ItemHeight = 16;
-            this.listBox6.Items.AddRange(new object[] {
+            this.LstCptFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LstCptFilter.FormattingEnabled = true;
+            this.LstCptFilter.ItemHeight = 16;
+            this.LstCptFilter.Items.AddRange(new object[] {
             "22610",
             "22164",
             "22842"});
-            this.listBox6.Location = new System.Drawing.Point(83, 301);
-            this.listBox6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBox6.Name = "listBox6";
-            this.listBox6.Size = new System.Drawing.Size(249, 68);
-            this.listBox6.TabIndex = 9;
+            this.LstCptFilter.Location = new System.Drawing.Point(83, 301);
+            this.LstCptFilter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LstCptFilter.Name = "LstCptFilter";
+            this.LstCptFilter.Size = new System.Drawing.Size(249, 68);
+            this.LstCptFilter.TabIndex = 9;
+            this.LstCptFilter.DoubleClick += new System.EventHandler(this.LstCptFilter_DoubleClick);
             // 
             // label31
             // 
@@ -1216,21 +1326,22 @@
             this.label31.TabIndex = 8;
             this.label31.Text = "CPT";
             // 
-            // listBox7
+            // LstLevelFilter
             // 
-            this.listBox7.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox7.FormattingEnabled = true;
-            this.listBox7.ItemHeight = 16;
-            this.listBox7.Items.AddRange(new object[] {
+            this.LstLevelFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LstLevelFilter.FormattingEnabled = true;
+            this.LstLevelFilter.ItemHeight = 16;
+            this.LstLevelFilter.Items.AddRange(new object[] {
             "Occipital-Atlantal",
             "T1-T3",
             "T1-T4",
             "T1-T5"});
-            this.listBox7.Location = new System.Drawing.Point(83, 217);
-            this.listBox7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBox7.Name = "listBox7";
-            this.listBox7.Size = new System.Drawing.Size(249, 68);
-            this.listBox7.TabIndex = 7;
+            this.LstLevelFilter.Location = new System.Drawing.Point(83, 217);
+            this.LstLevelFilter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LstLevelFilter.Name = "LstLevelFilter";
+            this.LstLevelFilter.Size = new System.Drawing.Size(249, 68);
+            this.LstLevelFilter.TabIndex = 7;
+            this.LstLevelFilter.DoubleClick += new System.EventHandler(this.LstLevelFilter_DoubleClick);
             // 
             // label32
             // 
@@ -1242,18 +1353,19 @@
             this.label32.TabIndex = 6;
             this.label32.Text = "Level";
             // 
-            // listBox8
+            // LstLocationFIlter
             // 
-            this.listBox8.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox8.FormattingEnabled = true;
-            this.listBox8.ItemHeight = 16;
-            this.listBox8.Items.AddRange(new object[] {
+            this.LstLocationFIlter.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LstLocationFIlter.FormattingEnabled = true;
+            this.LstLocationFIlter.ItemHeight = 16;
+            this.LstLocationFIlter.Items.AddRange(new object[] {
             "Thoracic"});
-            this.listBox8.Location = new System.Drawing.Point(83, 130);
-            this.listBox8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBox8.Name = "listBox8";
-            this.listBox8.Size = new System.Drawing.Size(249, 68);
-            this.listBox8.TabIndex = 5;
+            this.LstLocationFIlter.Location = new System.Drawing.Point(83, 130);
+            this.LstLocationFIlter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LstLocationFIlter.Name = "LstLocationFIlter";
+            this.LstLocationFIlter.Size = new System.Drawing.Size(249, 68);
+            this.LstLocationFIlter.TabIndex = 5;
+            this.LstLocationFIlter.DoubleClick += new System.EventHandler(this.LstLocationFIlter_DoubleClick);
             // 
             // label35
             // 
@@ -1265,19 +1377,20 @@
             this.label35.TabIndex = 4;
             this.label35.Text = "Location";
             // 
-            // listBox9
+            // LstHospitalFilter
             // 
-            this.listBox9.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox9.FormattingEnabled = true;
-            this.listBox9.ItemHeight = 16;
-            this.listBox9.Items.AddRange(new object[] {
+            this.LstHospitalFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LstHospitalFilter.FormattingEnabled = true;
+            this.LstHospitalFilter.ItemHeight = 16;
+            this.LstHospitalFilter.Items.AddRange(new object[] {
             "St Vincent 86th St",
             "Main"});
-            this.listBox9.Location = new System.Drawing.Point(83, 82);
-            this.listBox9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBox9.Name = "listBox9";
-            this.listBox9.Size = new System.Drawing.Size(249, 36);
-            this.listBox9.TabIndex = 3;
+            this.LstHospitalFilter.Location = new System.Drawing.Point(83, 82);
+            this.LstHospitalFilter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LstHospitalFilter.Name = "LstHospitalFilter";
+            this.LstHospitalFilter.Size = new System.Drawing.Size(249, 36);
+            this.LstHospitalFilter.TabIndex = 3;
+            this.LstHospitalFilter.DoubleClick += new System.EventHandler(this.LstHospitalFilter_DoubleClick);
             // 
             // label36
             // 
@@ -1289,19 +1402,20 @@
             this.label36.TabIndex = 2;
             this.label36.Text = "Hospital";
             // 
-            // listBox10
+            // LstDrFilter
             // 
-            this.listBox10.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.listBox10.FormattingEnabled = true;
-            this.listBox10.ItemHeight = 16;
-            this.listBox10.Items.AddRange(new object[] {
+            this.LstDrFilter.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LstDrFilter.FormattingEnabled = true;
+            this.LstDrFilter.ItemHeight = 16;
+            this.LstDrFilter.Items.AddRange(new object[] {
             "Sasso",
             "Smith"});
-            this.listBox10.Location = new System.Drawing.Point(83, 31);
-            this.listBox10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.listBox10.Name = "listBox10";
-            this.listBox10.Size = new System.Drawing.Size(249, 36);
-            this.listBox10.TabIndex = 1;
+            this.LstDrFilter.Location = new System.Drawing.Point(83, 31);
+            this.LstDrFilter.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.LstDrFilter.Name = "LstDrFilter";
+            this.LstDrFilter.Size = new System.Drawing.Size(249, 36);
+            this.LstDrFilter.TabIndex = 1;
+            this.LstDrFilter.DoubleClick += new System.EventHandler(this.LstDrFilter_DoubleClick);
             // 
             // label37
             // 
@@ -1339,11 +1453,11 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.ClientSize = new System.Drawing.Size(1313, 882);
+            this.Controls.Add(this.GrpSurgerySelect);
             this.Controls.Add(this.GrpImages);
             this.Controls.Add(this.GrpSurgerySelectFromHold);
             this.Controls.Add(this.GrpSurgerySelected);
             this.Controls.Add(this.GrpHold);
-            this.Controls.Add(this.GrpSurgerySelect);
             this.Controls.Add(this.GrpDesc);
             this.Controls.Add(this.MnuAddNew);
             this.Controls.Add(this.GrpPatient);
@@ -1364,14 +1478,14 @@
             this.GrpPatient.ResumeLayout(false);
             this.TabPatient.ResumeLayout(false);
             this.TabPatientPersonal.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.GrpPersonal.ResumeLayout(false);
+            this.GrpPersonal.PerformLayout();
             this.TabPatientHome.ResumeLayout(false);
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
+            this.GrpHome.ResumeLayout(false);
+            this.GrpHome.PerformLayout();
             this.TabPatientSurgery.ResumeLayout(false);
-            this.GrpBoxSurgery.ResumeLayout(false);
-            this.GrpBoxSurgery.PerformLayout();
+            this.GrpSurgery.ResumeLayout(false);
+            this.GrpSurgery.PerformLayout();
             this.MnuAddNew.ResumeLayout(false);
             this.MnuAddNew.PerformLayout();
             this.GrpImages.ResumeLayout(false);
@@ -1409,28 +1523,21 @@
         private System.Windows.Forms.GroupBox GrpPatient;
         private System.Windows.Forms.TabControl TabPatient;
         private System.Windows.Forms.TabPage TabPatientPersonal;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox TxtResPatNum;
+        private System.Windows.Forms.GroupBox GrpPersonal;
+        private System.Windows.Forms.TextBox TxtPatNum;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox TxtResAge;
+        private System.Windows.Forms.TextBox TxtAge;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox TxtResSsn;
-        private System.Windows.Forms.TextBox TxtResDob;
-        private System.Windows.Forms.RadioButton RdoResFemale;
-        private System.Windows.Forms.RadioButton RdoResMale;
-        private System.Windows.Forms.TextBox TxtResSurgeryDate;
-        private System.Windows.Forms.TextBox TxtResFirstName;
-        private System.Windows.Forms.TextBox TxtResLastName;
+        private System.Windows.Forms.TextBox TxtDob;
+        private System.Windows.Forms.RadioButton RdoFemale;
+        private System.Windows.Forms.RadioButton RdoMale;
+        private System.Windows.Forms.TextBox TxtFirstName;
+        private System.Windows.Forms.TextBox TxtLastName;
         private System.Windows.Forms.TabPage TabPatientHome;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.TextBox TxtResState;
-        private System.Windows.Forms.TextBox TxtResCell;
+        private System.Windows.Forms.GroupBox GrpHome;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
@@ -1438,11 +1545,9 @@
         private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label24;
         private System.Windows.Forms.Label label25;
-        private System.Windows.Forms.TextBox TxtResZip;
-        private System.Windows.Forms.TextBox TxtResCity;
-        private System.Windows.Forms.TextBox TxtResPhone;
-        private System.Windows.Forms.TextBox TxtResAddress2;
-        private System.Windows.Forms.TextBox TxtResAddress1;
+        private System.Windows.Forms.TextBox TxtCity;
+        private System.Windows.Forms.TextBox TxtAddress2;
+        private System.Windows.Forms.TextBox TxtAddress1;
         private System.Windows.Forms.MenuStrip MnuAddNew;
         private System.Windows.Forms.ToolStripMenuItem TSMnuAddNewBack;
         private System.Windows.Forms.ToolStripMenuItem TSMnuAddNewBreak1;
@@ -1459,35 +1564,42 @@
         private System.Windows.Forms.TextBox TxtImagesCount;
         private System.Windows.Forms.ListView LstImages;
         private System.Windows.Forms.TabPage TabPatientSurgery;
-        private System.Windows.Forms.GroupBox GrpBoxSurgery;
+        private System.Windows.Forms.GroupBox GrpSurgery;
         private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.GroupBox GrpDesc;
         private System.Windows.Forms.ListBox LstImageDescFinal;
         private System.Windows.Forms.GroupBox GrpSurgerySelect;
-        private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.ListBox LstPicInfoFilter;
         private System.Windows.Forms.Label label26;
-        private System.Windows.Forms.ListBox listBox2;
+        private System.Windows.Forms.ListBox LstCompFilter;
         private System.Windows.Forms.Label label27;
-        private System.Windows.Forms.ListBox listBox3;
+        private System.Windows.Forms.ListBox LstInstFilter;
         private System.Windows.Forms.Label label28;
-        private System.Windows.Forms.ListBox listBox4;
+        private System.Windows.Forms.ListBox LstSurgeryFilter;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.ListBox listBox5;
+        private System.Windows.Forms.ListBox LstDxFilter;
         private System.Windows.Forms.Label label30;
-        private System.Windows.Forms.ListBox listBox6;
+        private System.Windows.Forms.ListBox LstCptFilter;
         private System.Windows.Forms.Label label31;
-        private System.Windows.Forms.ListBox listBox7;
+        private System.Windows.Forms.ListBox LstLevelFilter;
         private System.Windows.Forms.Label label32;
-        private System.Windows.Forms.ListBox listBox8;
+        private System.Windows.Forms.ListBox LstLocationFIlter;
         private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.ListBox listBox9;
+        private System.Windows.Forms.ListBox LstHospitalFilter;
         private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.ListBox listBox10;
+        private System.Windows.Forms.ListBox LstDrFilter;
         private System.Windows.Forms.Label label37;
         private System.Windows.Forms.GroupBox GrpHold;
         private System.Windows.Forms.GroupBox GrpSurgerySelectFromHold;
+        private System.Windows.Forms.CheckBox ChkDOB;
+        private System.Windows.Forms.CheckBox ChkAge;
+        private System.Windows.Forms.DateTimePicker DtFiscalYear;
+        private System.Windows.Forms.DateTimePicker DtSurgeryDate;
+        private System.Windows.Forms.ComboBox CboState;
+        private System.Windows.Forms.MaskedTextBox MTxtssn;
+        private System.Windows.Forms.MaskedTextBox MTxtZip;
+        private System.Windows.Forms.MaskedTextBox MTxtPhone;
+        private System.Windows.Forms.MaskedTextBox MTxtCell;
     }
 }

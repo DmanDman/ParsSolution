@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static ParsDashboard.FrmImageFilter;
 using static ParsDashboard.FrmPatientSearch;
+using static ParsDashboard.FrmAddNew;
 using static ParsDashboard.Globals;
 
 namespace ParsDashboard
@@ -65,6 +66,16 @@ namespace ParsDashboard
             if ( PatientSearchVar.AgeChecked == true )
             { AGECANCEL = true; }
 
+            //  FrmAddNew personal info
+            if ( FORMLOADED == "FrmAddNew" )
+            {
+                if ( AddNewVar.DobChecked == true )
+                { DOBCANCEL = true; }
+
+                if ( AddNewVar.AgeChecked == true )
+                { AGECANCEL = true; }
+            }
+
             this.Close();
         }
 
@@ -72,25 +83,47 @@ namespace ParsDashboard
         {
 
             //  FrmPatientSearch personal info
-            if ( PatientSearchVar.PersonalType == 1 )
+            if ( FORMLOADED == "FrmPatientSearch" )
             {
-                //  age checked
-                if ( PatientSearchVar.AgeChecked == true )
+                if ( PatientSearchVar.PersonalType == 1 )
                 {
-                    if ( RdoFilterEqualTo.Checked )
-                    { PatientSearchVar.FilterAge = RdoFilterEqualTo.Text + " " + NumLess.Text; }
+                    //  age checked
+                    if ( PatientSearchVar.AgeChecked == true )
+                    {
+                        if ( RdoFilterEqualTo.Checked )
+                        { PatientSearchVar.FilterAge = RdoFilterEqualTo.Text + " " + NumLess.Text; }
 
-                    if ( RdoFilterGreaterThan.Checked )
-                    { PatientSearchVar.FilterAge = RdoFilterGreaterThan.Text + " " + NumLess.Text; }
+                        if  (RdoFilterGreaterThan.Checked )
+                        { PatientSearchVar.FilterAge = RdoFilterGreaterThan.Text + " " + NumLess.Text; }
 
-                    if ( RdoFilterLessThan.Checked )
-                    { PatientSearchVar.FilterAge = RdoFilterLessThan.Text + " " + NumLess.Text; }
+                        if ( RdoFilterLessThan.Checked )
+                        { PatientSearchVar.FilterAge = RdoFilterLessThan.Text + " " + NumLess.Text; }
 
-                    if ( RdoFilterBetween.Checked )
-                    { PatientSearchVar.FilterAge = RdoFilterBetween.Text + " " + NumLess.Text + " and " + NumGreater.Text; }
+                        if ( RdoFilterBetween.Checked )
+                        { PatientSearchVar.FilterAge = RdoFilterBetween.Text + " " + NumLess.Text + " and " + NumGreater.Text; }
+                    }
                 }
             }
-            
+
+            //  FrmAddNew personal info
+            if ( FORMLOADED == "FrmAddNew" )
+            {
+                if ( AddNewVar.AddNewStep == 1 )
+                {
+                    if ( RdoFilterEqualTo.Checked )
+                    { AddNewVar.FilterAge = RdoFilterEqualTo.Text + " " + NumLess.Text; }
+
+                    if ( RdoFilterGreaterThan.Checked )
+                    { AddNewVar.FilterAge = RdoFilterGreaterThan.Text + " " + NumLess.Text; }
+
+                    if ( RdoFilterLessThan.Checked )
+                    { AddNewVar.FilterAge = RdoFilterLessThan.Text + " " + NumLess.Text; }
+
+                    if ( RdoFilterBetween.Checked )
+                    { AddNewVar.FilterAge = RdoFilterBetween.Text + " " + NumLess.Text + " and " + NumGreater.Text; }
+                }
+            }
+
             //  set FrmImageFilter variables
             if ( RdoFilterEqualTo.Checked )
             { FilterVar.FilterAge = RdoFilterEqualTo.Text + " " + NumLess.Text; }

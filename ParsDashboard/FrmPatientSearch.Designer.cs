@@ -41,7 +41,6 @@
             this.LblSex = new System.Windows.Forms.Label();
             this.LblFirstName = new System.Windows.Forms.Label();
             this.LblLastName = new System.Windows.Forms.Label();
-            this.TxtSsn = new System.Windows.Forms.TextBox();
             this.TxtDob = new System.Windows.Forms.TextBox();
             this.RdoFemale = new System.Windows.Forms.RadioButton();
             this.RdoMale = new System.Windows.Forms.RadioButton();
@@ -50,20 +49,21 @@
             this.TxtLastName = new System.Windows.Forms.TextBox();
             this.TabHome = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.TxtZip = new System.Windows.Forms.TextBox();
+            this.LblCell = new System.Windows.Forms.Label();
+            this.CboState = new System.Windows.Forms.ComboBox();
+            this.LblPhone = new System.Windows.Forms.Label();
+            this.LblZip = new System.Windows.Forms.Label();
+            this.LblState = new System.Windows.Forms.Label();
+            this.LblCity = new System.Windows.Forms.Label();
+            this.LblAddress2 = new System.Windows.Forms.Label();
+            this.LblAddress1 = new System.Windows.Forms.Label();
             this.TxtCity = new System.Windows.Forms.TextBox();
-            this.TxtPhone = new System.Windows.Forms.TextBox();
             this.TxtAddress2 = new System.Windows.Forms.TextBox();
             this.TxtAddress1 = new System.Windows.Forms.TextBox();
-            this.LblAddress1 = new System.Windows.Forms.Label();
-            this.LblAddress2 = new System.Windows.Forms.Label();
-            this.LblCity = new System.Windows.Forms.Label();
-            this.LblState = new System.Windows.Forms.Label();
-            this.LblZip = new System.Windows.Forms.Label();
-            this.LblPhone = new System.Windows.Forms.Label();
-            this.CboState = new System.Windows.Forms.ComboBox();
-            this.LblCell = new System.Windows.Forms.Label();
-            this.TxtCell = new System.Windows.Forms.TextBox();
+            this.MTxtssn = new System.Windows.Forms.MaskedTextBox();
+            this.MTxtCell = new System.Windows.Forms.MaskedTextBox();
+            this.MTxtPhone = new System.Windows.Forms.MaskedTextBox();
+            this.MTxtZip = new System.Windows.Forms.MaskedTextBox();
             this.TabSearch.SuspendLayout();
             this.TabPersonal.SuspendLayout();
             this.GrpBoxPersonal.SuspendLayout();
@@ -95,6 +95,7 @@
             // 
             // GrpBoxPersonal
             // 
+            this.GrpBoxPersonal.Controls.Add(this.MTxtssn);
             this.GrpBoxPersonal.Controls.Add(this.TxtPatientNum);
             this.GrpBoxPersonal.Controls.Add(this.LblPatientNum);
             this.GrpBoxPersonal.Controls.Add(this.LblSSN);
@@ -105,7 +106,6 @@
             this.GrpBoxPersonal.Controls.Add(this.LblSex);
             this.GrpBoxPersonal.Controls.Add(this.LblFirstName);
             this.GrpBoxPersonal.Controls.Add(this.LblLastName);
-            this.GrpBoxPersonal.Controls.Add(this.TxtSsn);
             this.GrpBoxPersonal.Controls.Add(this.TxtDob);
             this.GrpBoxPersonal.Controls.Add(this.RdoFemale);
             this.GrpBoxPersonal.Controls.Add(this.RdoMale);
@@ -233,14 +233,6 @@
             this.LblLastName.TabIndex = 0;
             this.LblLastName.Text = "Last Name";
             // 
-            // TxtSsn
-            // 
-            this.TxtSsn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSsn.Location = new System.Drawing.Point(123, 327);
-            this.TxtSsn.Name = "TxtSsn";
-            this.TxtSsn.Size = new System.Drawing.Size(166, 22);
-            this.TxtSsn.TabIndex = 16;
-            // 
             // TxtDob
             // 
             this.TxtDob.Enabled = false;
@@ -314,7 +306,9 @@
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.TxtCell);
+            this.groupBox1.Controls.Add(this.MTxtZip);
+            this.groupBox1.Controls.Add(this.MTxtPhone);
+            this.groupBox1.Controls.Add(this.MTxtCell);
             this.groupBox1.Controls.Add(this.LblCell);
             this.groupBox1.Controls.Add(this.CboState);
             this.groupBox1.Controls.Add(this.LblPhone);
@@ -323,9 +317,7 @@
             this.groupBox1.Controls.Add(this.LblCity);
             this.groupBox1.Controls.Add(this.LblAddress2);
             this.groupBox1.Controls.Add(this.LblAddress1);
-            this.groupBox1.Controls.Add(this.TxtZip);
             this.groupBox1.Controls.Add(this.TxtCity);
-            this.groupBox1.Controls.Add(this.TxtPhone);
             this.groupBox1.Controls.Add(this.TxtAddress2);
             this.groupBox1.Controls.Add(this.TxtAddress1);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -337,112 +329,16 @@
             this.groupBox1.Tag = "GrpBoxPersonal";
             this.groupBox1.Text = "Home";
             // 
-            // TxtZip
+            // LblCell
             // 
-            this.TxtZip.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtZip.Location = new System.Drawing.Point(123, 199);
-            this.TxtZip.Name = "TxtZip";
-            this.TxtZip.Size = new System.Drawing.Size(166, 22);
-            this.TxtZip.TabIndex = 9;
-            // 
-            // TxtCity
-            // 
-            this.TxtCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCity.Location = new System.Drawing.Point(123, 115);
-            this.TxtCity.Name = "TxtCity";
-            this.TxtCity.Size = new System.Drawing.Size(166, 22);
-            this.TxtCity.TabIndex = 5;
-            // 
-            // TxtPhone
-            // 
-            this.TxtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtPhone.Location = new System.Drawing.Point(123, 243);
-            this.TxtPhone.Multiline = true;
-            this.TxtPhone.Name = "TxtPhone";
-            this.TxtPhone.Size = new System.Drawing.Size(166, 22);
-            this.TxtPhone.TabIndex = 11;
-            // 
-            // TxtAddress2
-            // 
-            this.TxtAddress2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtAddress2.Location = new System.Drawing.Point(123, 75);
-            this.TxtAddress2.Name = "TxtAddress2";
-            this.TxtAddress2.Size = new System.Drawing.Size(166, 22);
-            this.TxtAddress2.TabIndex = 3;
-            // 
-            // TxtAddress1
-            // 
-            this.TxtAddress1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtAddress1.Location = new System.Drawing.Point(123, 35);
-            this.TxtAddress1.Name = "TxtAddress1";
-            this.TxtAddress1.Size = new System.Drawing.Size(166, 22);
-            this.TxtAddress1.TabIndex = 1;
-            // 
-            // LblAddress1
-            // 
-            this.LblAddress1.AutoSize = true;
-            this.LblAddress1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblAddress1.Location = new System.Drawing.Point(5, 38);
-            this.LblAddress1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblAddress1.Name = "LblAddress1";
-            this.LblAddress1.Size = new System.Drawing.Size(72, 17);
-            this.LblAddress1.TabIndex = 0;
-            this.LblAddress1.Text = "Address 1";
-            // 
-            // LblAddress2
-            // 
-            this.LblAddress2.AutoSize = true;
-            this.LblAddress2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblAddress2.Location = new System.Drawing.Point(6, 76);
-            this.LblAddress2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblAddress2.Name = "LblAddress2";
-            this.LblAddress2.Size = new System.Drawing.Size(72, 17);
-            this.LblAddress2.TabIndex = 2;
-            this.LblAddress2.Text = "Address 2";
-            // 
-            // LblCity
-            // 
-            this.LblCity.AutoSize = true;
-            this.LblCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCity.Location = new System.Drawing.Point(6, 117);
-            this.LblCity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblCity.Name = "LblCity";
-            this.LblCity.Size = new System.Drawing.Size(31, 17);
-            this.LblCity.TabIndex = 4;
-            this.LblCity.Text = "City";
-            // 
-            // LblState
-            // 
-            this.LblState.AutoSize = true;
-            this.LblState.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblState.Location = new System.Drawing.Point(6, 158);
-            this.LblState.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblState.Name = "LblState";
-            this.LblState.Size = new System.Drawing.Size(41, 17);
-            this.LblState.TabIndex = 6;
-            this.LblState.Text = "State";
-            // 
-            // LblZip
-            // 
-            this.LblZip.AutoSize = true;
-            this.LblZip.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblZip.Location = new System.Drawing.Point(6, 199);
-            this.LblZip.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblZip.Name = "LblZip";
-            this.LblZip.Size = new System.Drawing.Size(28, 17);
-            this.LblZip.TabIndex = 8;
-            this.LblZip.Text = "Zip";
-            // 
-            // LblPhone
-            // 
-            this.LblPhone.AutoSize = true;
-            this.LblPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblPhone.Location = new System.Drawing.Point(6, 240);
-            this.LblPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblPhone.Name = "LblPhone";
-            this.LblPhone.Size = new System.Drawing.Size(49, 17);
-            this.LblPhone.TabIndex = 10;
-            this.LblPhone.Text = "Phone";
+            this.LblCell.AutoSize = true;
+            this.LblCell.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCell.Location = new System.Drawing.Point(7, 282);
+            this.LblCell.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblCell.Name = "LblCell";
+            this.LblCell.Size = new System.Drawing.Size(31, 17);
+            this.LblCell.TabIndex = 12;
+            this.LblCell.Text = "Cell";
             // 
             // CboState
             // 
@@ -560,25 +456,127 @@
             this.CboState.Sorted = true;
             this.CboState.TabIndex = 7;
             // 
-            // LblCell
+            // LblPhone
             // 
-            this.LblCell.AutoSize = true;
-            this.LblCell.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblCell.Location = new System.Drawing.Point(7, 282);
-            this.LblCell.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblCell.Name = "LblCell";
-            this.LblCell.Size = new System.Drawing.Size(31, 17);
-            this.LblCell.TabIndex = 12;
-            this.LblCell.Text = "Cell";
+            this.LblPhone.AutoSize = true;
+            this.LblPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblPhone.Location = new System.Drawing.Point(6, 240);
+            this.LblPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblPhone.Name = "LblPhone";
+            this.LblPhone.Size = new System.Drawing.Size(49, 17);
+            this.LblPhone.TabIndex = 10;
+            this.LblPhone.Text = "Phone";
             // 
-            // TxtCell
+            // LblZip
             // 
-            this.TxtCell.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtCell.Location = new System.Drawing.Point(123, 282);
-            this.TxtCell.Multiline = true;
-            this.TxtCell.Name = "TxtCell";
-            this.TxtCell.Size = new System.Drawing.Size(166, 22);
-            this.TxtCell.TabIndex = 13;
+            this.LblZip.AutoSize = true;
+            this.LblZip.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblZip.Location = new System.Drawing.Point(6, 199);
+            this.LblZip.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblZip.Name = "LblZip";
+            this.LblZip.Size = new System.Drawing.Size(28, 17);
+            this.LblZip.TabIndex = 8;
+            this.LblZip.Text = "Zip";
+            // 
+            // LblState
+            // 
+            this.LblState.AutoSize = true;
+            this.LblState.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblState.Location = new System.Drawing.Point(6, 158);
+            this.LblState.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblState.Name = "LblState";
+            this.LblState.Size = new System.Drawing.Size(41, 17);
+            this.LblState.TabIndex = 6;
+            this.LblState.Text = "State";
+            // 
+            // LblCity
+            // 
+            this.LblCity.AutoSize = true;
+            this.LblCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblCity.Location = new System.Drawing.Point(6, 117);
+            this.LblCity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblCity.Name = "LblCity";
+            this.LblCity.Size = new System.Drawing.Size(31, 17);
+            this.LblCity.TabIndex = 4;
+            this.LblCity.Text = "City";
+            // 
+            // LblAddress2
+            // 
+            this.LblAddress2.AutoSize = true;
+            this.LblAddress2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblAddress2.Location = new System.Drawing.Point(6, 76);
+            this.LblAddress2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblAddress2.Name = "LblAddress2";
+            this.LblAddress2.Size = new System.Drawing.Size(72, 17);
+            this.LblAddress2.TabIndex = 2;
+            this.LblAddress2.Text = "Address 2";
+            // 
+            // LblAddress1
+            // 
+            this.LblAddress1.AutoSize = true;
+            this.LblAddress1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblAddress1.Location = new System.Drawing.Point(5, 38);
+            this.LblAddress1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblAddress1.Name = "LblAddress1";
+            this.LblAddress1.Size = new System.Drawing.Size(72, 17);
+            this.LblAddress1.TabIndex = 0;
+            this.LblAddress1.Text = "Address 1";
+            // 
+            // TxtCity
+            // 
+            this.TxtCity.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtCity.Location = new System.Drawing.Point(123, 115);
+            this.TxtCity.Name = "TxtCity";
+            this.TxtCity.Size = new System.Drawing.Size(166, 22);
+            this.TxtCity.TabIndex = 5;
+            // 
+            // TxtAddress2
+            // 
+            this.TxtAddress2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtAddress2.Location = new System.Drawing.Point(123, 75);
+            this.TxtAddress2.Name = "TxtAddress2";
+            this.TxtAddress2.Size = new System.Drawing.Size(166, 22);
+            this.TxtAddress2.TabIndex = 3;
+            // 
+            // TxtAddress1
+            // 
+            this.TxtAddress1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtAddress1.Location = new System.Drawing.Point(123, 35);
+            this.TxtAddress1.Name = "TxtAddress1";
+            this.TxtAddress1.Size = new System.Drawing.Size(166, 22);
+            this.TxtAddress1.TabIndex = 1;
+            // 
+            // MTxtssn
+            // 
+            this.MTxtssn.Location = new System.Drawing.Point(123, 327);
+            this.MTxtssn.Mask = "000-00-0000";
+            this.MTxtssn.Name = "MTxtssn";
+            this.MTxtssn.Size = new System.Drawing.Size(161, 22);
+            this.MTxtssn.TabIndex = 16;
+            // 
+            // MTxtCell
+            // 
+            this.MTxtCell.Location = new System.Drawing.Point(123, 282);
+            this.MTxtCell.Mask = "(000) 000-0000";
+            this.MTxtCell.Name = "MTxtCell";
+            this.MTxtCell.Size = new System.Drawing.Size(161, 22);
+            this.MTxtCell.TabIndex = 13;
+            // 
+            // MTxtPhone
+            // 
+            this.MTxtPhone.Location = new System.Drawing.Point(123, 243);
+            this.MTxtPhone.Mask = "(000) 000-0000";
+            this.MTxtPhone.Name = "MTxtPhone";
+            this.MTxtPhone.Size = new System.Drawing.Size(161, 22);
+            this.MTxtPhone.TabIndex = 11;
+            // 
+            // MTxtZip
+            // 
+            this.MTxtZip.Location = new System.Drawing.Point(123, 199);
+            this.MTxtZip.Mask = "00000";
+            this.MTxtZip.Name = "MTxtZip";
+            this.MTxtZip.Size = new System.Drawing.Size(161, 22);
+            this.MTxtZip.TabIndex = 9;
             // 
             // FrmPatientSearch
             // 
@@ -614,7 +612,6 @@
         private System.Windows.Forms.TabControl TabSearch;
         private System.Windows.Forms.TabPage TabPersonal;
         private System.Windows.Forms.GroupBox GrpBoxPersonal;
-        private System.Windows.Forms.TextBox TxtSsn;
         private System.Windows.Forms.TextBox TxtDob;
         private System.Windows.Forms.RadioButton RdoFemale;
         private System.Windows.Forms.RadioButton RdoMale;
@@ -623,9 +620,7 @@
         private System.Windows.Forms.TextBox TxtLastName;
         private System.Windows.Forms.TabPage TabHome;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.TextBox TxtZip;
         private System.Windows.Forms.TextBox TxtCity;
-        private System.Windows.Forms.TextBox TxtPhone;
         private System.Windows.Forms.TextBox TxtAddress2;
         private System.Windows.Forms.TextBox TxtAddress1;
         private System.Windows.Forms.Label LblFirstName;
@@ -645,7 +640,10 @@
         private System.Windows.Forms.Label LblAddress2;
         private System.Windows.Forms.Label LblAddress1;
         private System.Windows.Forms.ComboBox CboState;
-        private System.Windows.Forms.TextBox TxtCell;
         private System.Windows.Forms.Label LblCell;
+        private System.Windows.Forms.MaskedTextBox MTxtssn;
+        private System.Windows.Forms.MaskedTextBox MTxtZip;
+        private System.Windows.Forms.MaskedTextBox MTxtPhone;
+        private System.Windows.Forms.MaskedTextBox MTxtCell;
     }
 }

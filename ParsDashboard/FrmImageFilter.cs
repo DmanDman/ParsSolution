@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static ParsDashboard.Globals;
 
 namespace ParsDashboard
 {
@@ -30,9 +31,14 @@ namespace ParsDashboard
 
         private void ChkSurgeryAge_Click(object sender, EventArgs e)
         {
-            if( ChkSurgeryAge.Checked )
+            if ( ChkSurgeryAge.Checked )
             {
+                AGECANCEL = false;
+                FORMLOADED = Tag.ToString();
+
                 fFilterAge.ShowDialog();
+
+                FORMLOADED = "";
 
                 TxtSurgeryAge.Text = FilterVar.FilterAge;
             }

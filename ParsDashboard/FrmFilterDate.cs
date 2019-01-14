@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static ParsDashboard.FrmImageFilter;
 using static ParsDashboard.FrmPatientSearch;
+using static ParsDashboard.FrmAddNew;
 using static ParsDashboard.Globals;
 
 namespace ParsDashboard
@@ -72,11 +73,25 @@ namespace ParsDashboard
 
         private void BtnCancel_Click(object sender, EventArgs e)
         {
-            if ( PatientSearchVar.DobChecked == true )
-            { DOBCANCEL = true; }
+            //  FrmPatientSearch personal info
+            if ( FORMLOADED == "FrmPatientSearch" )
+            { 
+                if ( PatientSearchVar.DobChecked == true )
+                { DOBCANCEL = true; }
 
-            if ( PatientSearchVar.SurgeryDateChecked == true )
-            { SURGERYDATECANCEL = true; }
+                if ( PatientSearchVar.SurgeryDateChecked == true )
+                { SURGERYDATECANCEL = true; }
+            }
+
+            //  FrmAddNew personal info
+            if ( FORMLOADED == "FrmAddNew" )
+            { 
+                if ( AddNewVar.DobChecked == true )
+                { DOBCANCEL = true; }
+            
+                if ( AddNewVar.AgeChecked == true )
+                { AGECANCEL = true; }
+            }
 
             this.Close();
         }
@@ -84,38 +99,60 @@ namespace ParsDashboard
         private void BtnOK_Click(object sender, EventArgs e)
         {
             //  FrmPatientSearch personal info
-            if ( PatientSearchVar.PersonalType == 1 )
+            if ( FORMLOADED == "FrmPatientSearch" )
             {
-                //  date of birth checked
-                if ( PatientSearchVar.DobChecked == true )
+                if ( PatientSearchVar.PersonalType == 1 )
                 {
-                    if ( RdoFilterEqualTo.Checked )
-                    { PatientSearchVar.FilterDOB = RdoFilterEqualTo.Text + " " + DtStart.Text; }
+                    //  date of birth checked
+                    if ( PatientSearchVar.DobChecked == true )
+                    {
+                        if ( RdoFilterEqualTo.Checked )
+                        { PatientSearchVar.FilterDOB = RdoFilterEqualTo.Text + " " + DtStart.Text; }
 
-                    if ( RdoFilterGreaterThan.Checked )
-                    { PatientSearchVar.FilterDOB = RdoFilterGreaterThan.Text + " " + DtStart.Text; }
+                        if ( RdoFilterGreaterThan.Checked )
+                        { PatientSearchVar.FilterDOB = RdoFilterGreaterThan.Text + " " + DtStart.Text; }
 
-                    if ( RdoFilterLessThan.Checked )
-                    { PatientSearchVar.FilterDOB = RdoFilterLessThan.Text + " " + DtStart.Text; }
+                        if ( RdoFilterLessThan.Checked )
+                        { PatientSearchVar.FilterDOB = RdoFilterLessThan.Text + " " + DtStart.Text; }
 
-                    if ( RdoFilterBetween.Checked )
-                    { PatientSearchVar.FilterDOB = RdoFilterBetween.Text + " " + DtStart.Text + " and " + DtEnd.Text; }
+                        if ( RdoFilterBetween.Checked )
+                        { PatientSearchVar.FilterDOB = RdoFilterBetween.Text + " " + DtStart.Text + " and " + DtEnd.Text; }
+                    }
+
+                    //  surgery date checked
+                    if ( PatientSearchVar.SurgeryDateChecked == true )
+                    {
+                        if ( RdoFilterEqualTo.Checked )
+                        { PatientSearchVar.FilterSurgeryDate = RdoFilterEqualTo.Text + " " + DtStart.Text; }
+
+                        if ( RdoFilterGreaterThan.Checked )
+                        { PatientSearchVar.FilterSurgeryDate = RdoFilterGreaterThan.Text + " " + DtStart.Text; }
+
+                        if ( RdoFilterLessThan.Checked )
+                        { PatientSearchVar.FilterSurgeryDate = RdoFilterLessThan.Text + " " + DtStart.Text; }
+
+                        if ( RdoFilterBetween.Checked )
+                        { PatientSearchVar.FilterSurgeryDate = RdoFilterBetween.Text + " " + DtStart.Text + " and " + DtEnd.Text; }
+                    }
                 }
+            }
 
-                //  surgery date checked
-                if ( PatientSearchVar.SurgeryDateChecked == true )
+            //  FrmAddNew personal info
+            if ( FORMLOADED == "FrmAddNew" )
+            { 
+                if ( AddNewVar.AddNewStep == 1 )
                 {
                     if ( RdoFilterEqualTo.Checked )
-                    { PatientSearchVar.FilterSurgeryDate = RdoFilterEqualTo.Text + " " + DtStart.Text; }
+                    { AddNewVar.FilterDOB = RdoFilterEqualTo.Text + " " + DtStart.Text; }
 
                     if ( RdoFilterGreaterThan.Checked )
-                    { PatientSearchVar.FilterSurgeryDate = RdoFilterGreaterThan.Text + " " + DtStart.Text; }
+                    { AddNewVar.FilterDOB = RdoFilterGreaterThan.Text + " " + DtStart.Text; }
 
                     if ( RdoFilterLessThan.Checked )
-                    { PatientSearchVar.FilterSurgeryDate = RdoFilterLessThan.Text + " " + DtStart.Text; }
+                    { AddNewVar.FilterDOB = RdoFilterLessThan.Text + " " + DtStart.Text; }
 
                     if ( RdoFilterBetween.Checked )
-                    { PatientSearchVar.FilterSurgeryDate = RdoFilterBetween.Text + " " + DtStart.Text + " and " + DtEnd.Text; }
+                    { AddNewVar.FilterDOB = RdoFilterBetween.Text + " " + DtStart.Text + " and " + DtEnd.Text; }
                 }
             }
 

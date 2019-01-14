@@ -1371,7 +1371,7 @@
             this.TSMnuBlank1,
             this.TSMnuPatientSrchClear});
             this.MnuPatientSearch.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuPatientSearch.Location = new System.Drawing.Point(185, 252);
+            this.MnuPatientSearch.Location = new System.Drawing.Point(185, 28);
             this.MnuPatientSearch.Name = "MnuPatientSearch";
             this.MnuPatientSearch.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
             this.MnuPatientSearch.Size = new System.Drawing.Size(1212, 28);
@@ -1891,13 +1891,13 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1397, 976);
+            this.Controls.Add(this.MnuPatientSearch);
             this.Controls.Add(this.MnuPicOnly);
             this.Controls.Add(this.MnuImages);
             this.Controls.Add(this.MnuImagesSearch);
             this.Controls.Add(this.MnuImageSearchResult);
             this.Controls.Add(this.MnuPatient);
             this.Controls.Add(this.MnuImageFilter);
-            this.Controls.Add(this.MnuPatientSearch);
             this.Controls.Add(this.MnuSurgery);
             this.Controls.Add(this.MnuSurgerySearch);
             this.Controls.Add(this.MnuDataCustomizeNames);

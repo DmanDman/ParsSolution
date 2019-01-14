@@ -12,13 +12,29 @@ namespace ParsDashboard
 {
     public class Helper
     {
-        public void DoubleBuffered(Control control, bool enable)
+        public void AddComboBox(ComboBox combo, ListBox list)
         {
-            var doubleBufferPropertyInfo =
-                control.GetType().GetProperty( "DoubleBuffered", BindingFlags.Instance | BindingFlags.NonPublic );
+            string sHoldData;
 
-            doubleBufferPropertyInfo.SetValue( control, enable, null );
-        }
+            if (list.SelectedIndex == -1)
+            {
+                //string message = "Can not remvoe item, nothing selected.";
+                //string title = "Search Term Not Selected";
+
+                //MessageBoxButtons buttons = MessageBoxButtons.OK;
+                //MessageBox.Show( message, title, buttons, MessageBoxIcon.Error );
+            }
+            else
+            {
+                sHoldData = list.SelectedItem.ToString().Trim();
+
+                combo.Items.Add(sHoldData);
+
+                list.Items.Remove(sHoldData);
+
+                combo.Sorted = true;
+            }
+        }       
 
         public void AdListBoxToListBox( ListBox listFrom, ListBox listTo )
         {
@@ -66,50 +82,7 @@ namespace ParsDashboard
 
                 list.Sorted = true;
             }            
-        }
-
-        public void AddComboBox( ComboBox combo, ListBox list )
-        {
-            string sHoldData;
-
-            if ( list.SelectedIndex == -1 )
-            {
-                //string message = "Can not remvoe item, nothing selected.";
-                //string title = "Search Term Not Selected";
-
-                //MessageBoxButtons buttons = MessageBoxButtons.OK;
-                //MessageBox.Show( message, title, buttons, MessageBoxIcon.Error );
-            }
-            else
-            {
-                sHoldData = list.SelectedItem.ToString().Trim();
-
-                combo.Items.Add( sHoldData );
-
-                list.Items.Remove( sHoldData );
-
-                combo.Sorted = true;
-            }            
-        }
-
-        public void RemoveAllListBox( ComboBox combo, ListBox list )
-        {
-            string sHoldData;
-            int x = list.Items.Count;
-            
-            for ( int i = list.Items.Count - 1; i >= 0; i-- )
-            {
-                list.SelectedIndex = i;
-
-                sHoldData = list.SelectedItem.ToString().Trim();
-
-                list.Items.RemoveAt( i );
-
-                combo.Items.Add( sHoldData );            
-            }
-
-            combo.Sorted = true;            
-        }
+        }                
         
         public void ClearAllCheckBoxes( GroupBox gb )
         {
@@ -150,6 +123,12 @@ namespace ParsDashboard
             }
 
             listTo.Sorted = true;
+        }
+
+        public void ClearMaskedTextBox( MaskedTextBox mtxt )
+        {
+            mtxt.Text = "";
+            mtxt.Focus();
         }
 
         public void ClearUpDwn( DomainUpDown domainupdwm )
@@ -205,6 +184,33 @@ namespace ParsDashboard
             }
 
             listTo.Sorted = true;
+        }
+
+        public void DoubleBuffered( Control control, bool enable )
+        {
+            var doubleBufferPropertyInfo =
+                control.GetType().GetProperty( "DoubleBuffered", BindingFlags.Instance | BindingFlags.NonPublic );
+
+            doubleBufferPropertyInfo.SetValue( control, enable, null );
+        }
+
+        public void RemoveAllListBox( ComboBox combo, ListBox list )
+        {
+            string sHoldData;
+            int x = list.Items.Count;
+
+            for ( int i = list.Items.Count - 1; i >= 0; i-- )
+            {
+                list.SelectedIndex = i;
+
+                sHoldData = list.SelectedItem.ToString().Trim();
+
+                list.Items.RemoveAt(i);
+
+                combo.Items.Add( sHoldData );
+            }
+
+            combo.Sorted = true;
         }
 
         public void SetDateToToday( DateTimePicker dt )

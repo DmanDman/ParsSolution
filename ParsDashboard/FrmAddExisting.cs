@@ -48,8 +48,10 @@ namespace ParsDashboard
 
         private void TSMnuAddEmailImagesClearSearch_Click(object sender, EventArgs e)
         {
+            //  set the tab number
             int ClearTab = AddExistingVar.ClearType;
 
+            //  clear the selected tab
             SubRtn.ClearSearch( this, ClearTab );
         }
 
@@ -75,7 +77,7 @@ namespace ParsDashboard
 
     public class SubRoutinesFrmAddExisting
     {
-        Helper helper = new Helper();        
+        Helper helper = new Helper();     
 
         public void ClearSearch( Form frm, int ClearTab )
         {
