@@ -16,6 +16,8 @@ namespace ParsDashboard
         public static bool SAVEPICTONEW = false;
         public static bool SAVEPICONLY = false;
 
+        public static bool SURGERYDATE = false;
+
         public static string FORMLOADED = "";
     }
 }

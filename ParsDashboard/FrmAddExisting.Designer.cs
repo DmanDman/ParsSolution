@@ -115,6 +115,7 @@
             this.TabSearch = new System.Windows.Forms.TabControl();
             this.TabPersonal = new System.Windows.Forms.TabPage();
             this.GrpBoxPersonal = new System.Windows.Forms.GroupBox();
+            this.MTxtssn = new System.Windows.Forms.MaskedTextBox();
             this.TxtPatientNum = new System.Windows.Forms.TextBox();
             this.LblPatientNum = new System.Windows.Forms.Label();
             this.LblSSN = new System.Windows.Forms.Label();
@@ -125,7 +126,6 @@
             this.LblSex = new System.Windows.Forms.Label();
             this.LblFirstName = new System.Windows.Forms.Label();
             this.LblLastName = new System.Windows.Forms.Label();
-            this.TxtSsn = new System.Windows.Forms.TextBox();
             this.TxtDob = new System.Windows.Forms.TextBox();
             this.RdoFemale = new System.Windows.Forms.RadioButton();
             this.RdoMale = new System.Windows.Forms.RadioButton();
@@ -1127,6 +1127,7 @@
             // 
             // GrpBoxPersonal
             // 
+            this.GrpBoxPersonal.Controls.Add(this.MTxtssn);
             this.GrpBoxPersonal.Controls.Add(this.TxtPatientNum);
             this.GrpBoxPersonal.Controls.Add(this.LblPatientNum);
             this.GrpBoxPersonal.Controls.Add(this.LblSSN);
@@ -1137,7 +1138,6 @@
             this.GrpBoxPersonal.Controls.Add(this.LblSex);
             this.GrpBoxPersonal.Controls.Add(this.LblFirstName);
             this.GrpBoxPersonal.Controls.Add(this.LblLastName);
-            this.GrpBoxPersonal.Controls.Add(this.TxtSsn);
             this.GrpBoxPersonal.Controls.Add(this.TxtDob);
             this.GrpBoxPersonal.Controls.Add(this.RdoFemale);
             this.GrpBoxPersonal.Controls.Add(this.RdoMale);
@@ -1152,6 +1152,14 @@
             this.GrpBoxPersonal.TabStop = false;
             this.GrpBoxPersonal.Tag = "GrpBoxPersonal";
             this.GrpBoxPersonal.Text = "Personal Info";
+            // 
+            // MTxtssn
+            // 
+            this.MTxtssn.Location = new System.Drawing.Point(123, 327);
+            this.MTxtssn.Mask = "000-00-0000";
+            this.MTxtssn.Name = "MTxtssn";
+            this.MTxtssn.Size = new System.Drawing.Size(161, 22);
+            this.MTxtssn.TabIndex = 16;
             // 
             // TxtPatientNum
             // 
@@ -1189,6 +1197,7 @@
             this.TxtAge.Location = new System.Drawing.Point(123, 243);
             this.TxtAge.Multiline = true;
             this.TxtAge.Name = "TxtAge";
+            this.TxtAge.ReadOnly = true;
             this.TxtAge.Size = new System.Drawing.Size(166, 22);
             this.TxtAge.TabIndex = 11;
             // 
@@ -1224,6 +1233,8 @@
             this.ChkSurgeryDate.TabIndex = 6;
             this.ChkSurgeryDate.Text = "Surgery Date";
             this.ChkSurgeryDate.UseVisualStyleBackColor = true;
+            this.ChkSurgeryDate.CheckedChanged += new System.EventHandler(this.ChkSurgeryDate_CheckedChanged);
+            this.ChkSurgeryDate.Click += new System.EventHandler(this.ChkSurgeryDate_Click);
             // 
             // LblSex
             // 
@@ -1258,20 +1269,13 @@
             this.LblLastName.TabIndex = 0;
             this.LblLastName.Text = "Last Name";
             // 
-            // TxtSsn
-            // 
-            this.TxtSsn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtSsn.Location = new System.Drawing.Point(123, 327);
-            this.TxtSsn.Name = "TxtSsn";
-            this.TxtSsn.Size = new System.Drawing.Size(166, 22);
-            this.TxtSsn.TabIndex = 16;
-            // 
             // TxtDob
             // 
             this.TxtDob.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TxtDob.Location = new System.Drawing.Point(123, 199);
             this.TxtDob.Multiline = true;
             this.TxtDob.Name = "TxtDob";
+            this.TxtDob.ReadOnly = true;
             this.TxtDob.Size = new System.Drawing.Size(166, 22);
             this.TxtDob.TabIndex = 9;
             // 
@@ -1305,6 +1309,7 @@
             this.TxtSurgeryDate.Location = new System.Drawing.Point(123, 155);
             this.TxtSurgeryDate.Multiline = true;
             this.TxtSurgeryDate.Name = "TxtSurgeryDate";
+            this.TxtSurgeryDate.ReadOnly = true;
             this.TxtSurgeryDate.Size = new System.Drawing.Size(166, 22);
             this.TxtSurgeryDate.TabIndex = 7;
             // 
@@ -1756,7 +1761,6 @@
         private System.Windows.Forms.Label LblSex;
         private System.Windows.Forms.Label LblFirstName;
         private System.Windows.Forms.Label LblLastName;
-        private System.Windows.Forms.TextBox TxtSsn;
         private System.Windows.Forms.TextBox TxtDob;
         private System.Windows.Forms.RadioButton RdoFemale;
         private System.Windows.Forms.RadioButton RdoMale;
@@ -1788,5 +1792,6 @@
         private System.Windows.Forms.ToolStripMenuItem TSMnuAddEmailImagesNext;
         private System.Windows.Forms.ToolStripMenuItem TSMnuAddEmailImagesLast;
         private System.Windows.Forms.TextBox TxtResState;
+        private System.Windows.Forms.MaskedTextBox MTxtssn;
     }
 }

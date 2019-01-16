@@ -18,11 +18,21 @@ namespace ParsDashboard
 
         FormNav fNav = new FormNav();
 
+        FrmFilterDate fFilterDate = new FrmFilterDate();
+
         public static class AddExistingVar
         {
             //  1 - Clear Personal Info
             //  2 - Clear Home Info
-            public static int ClearType { get; set; }          
+            public static int ClearType { get; set; }
+            public static int PersonalType { get; set; }
+
+            public static bool DobChecked { get; set; }
+            public static bool SurgeryDateChecked { get; set; }
+
+            public static string FilterDOB { get; set; }
+
+            public static string FilterSurgeryDate { get; set; }
         }
 
         public FrmAddExisting()
@@ -72,6 +82,53 @@ namespace ParsDashboard
             SAVEPICTOEXISTING = true;
 
             this.Close();
+        }
+
+        private void ChkSurgeryDate_CheckedChanged(object sender, EventArgs e)
+        {
+            if ( ChkSurgeryDate.Checked == true )
+            {
+                AddExistingVar.PersonalType = 1;
+                AddExistingVar.SurgeryDateChecked = true;
+            }
+            else
+            {
+                TxtDob.Text = "";
+                TxtDob.Height = 22;
+                AddExistingVar.FilterDOB = "";
+                AddExistingVar.SurgeryDateChecked = false;
+            }
+        }
+
+        private void ChkSurgeryDate_Click(object sender, EventArgs e)
+        {
+            if ( ChkSurgeryDate.Checked )
+            {
+                SURGERYDATE = false;
+                FORMLOADED = Tag.ToString();
+
+                fFilterDate.ShowDialog();
+
+                FORMLOADED = "";
+
+                if ( SURGERYDATE == true )
+                {
+                    ChkSurgeryDate.Checked = false;
+                }
+                else
+                {
+                    TxtDob.Text = AddExistingVar.FilterSurgeryDate;
+                }
+
+                if ( TxtDob.Text.Contains("Between") )
+                {
+                    TxtDob.Height = 32;
+                }
+                else
+                {
+                    TxtDob.Height = 22;
+                }
+            }
         }
     }
 
