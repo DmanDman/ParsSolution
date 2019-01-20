@@ -160,6 +160,12 @@
     <Compile Include="FrmPicOnly.Designer.cs">
       <DependentUpon>FrmPicOnly.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmSecurity.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSecurity.Designer.cs">
+      <DependentUpon>FrmSecurity.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmSurgery.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -233,6 +239,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPicOnly.resx">
       <DependentUpon>FrmPicOnly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSecurity.resx">
+      <DependentUpon>FrmSecurity.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSurgery.resx">
       <DependentUpon>FrmSurgery.cs</DependentUpon>

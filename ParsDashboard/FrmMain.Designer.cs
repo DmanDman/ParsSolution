@@ -38,9 +38,6 @@
             this.LblPatientAdd = new System.Windows.Forms.Label();
             this.LblPatient = new System.Windows.Forms.Label();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.PnlSecurity = new System.Windows.Forms.Panel();
-            this.LblSecurityUserMgmt = new System.Windows.Forms.Label();
-            this.LblSecurity = new System.Windows.Forms.Label();
             this.PnlData = new System.Windows.Forms.Panel();
             this.LblDataPicInfo = new System.Windows.Forms.Label();
             this.LblDataLink = new System.Windows.Forms.Label();
@@ -64,10 +61,10 @@
             this.LblMDCpt = new System.Windows.Forms.Label();
             this.LblMDComp = new System.Windows.Forms.Label();
             this.LblMetaData = new System.Windows.Forms.Label();
-            this.PnlEmailPic = new System.Windows.Forms.Panel();
-            this.LblEmailPicPicInfo = new System.Windows.Forms.Label();
-            this.LblEmailPicPicOnly = new System.Windows.Forms.Label();
-            this.LblEmailPic = new System.Windows.Forms.Label();
+            this.PnlSecurity = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.LblSecurityUserMgmt = new System.Windows.Forms.Label();
+            this.LblSecurity = new System.Windows.Forms.Label();
             this.PnlImages = new System.Windows.Forms.Panel();
             this.LblImagesSearchToPatient = new System.Windows.Forms.Label();
             this.LblImagesFilter = new System.Windows.Forms.Label();
@@ -79,6 +76,10 @@
             this.LblRptDynamic = new System.Windows.Forms.Label();
             this.LblRptStatic = new System.Windows.Forms.Label();
             this.LblRpt = new System.Windows.Forms.Label();
+            this.PnlEmailPic = new System.Windows.Forms.Panel();
+            this.LblEmailPicPicInfo = new System.Windows.Forms.Label();
+            this.LblEmailPicPicOnly = new System.Windows.Forms.Label();
+            this.LblEmailPic = new System.Windows.Forms.Label();
             this.DlgImagesAdd = new System.Windows.Forms.OpenFileDialog();
             this.MnuDashboard = new System.Windows.Forms.MenuStrip();
             this.TSMnuOpenCanvas = new System.Windows.Forms.ToolStripMenuItem();
@@ -180,16 +181,20 @@
             this.TSMnuPicOnlyAdd = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuPicOnlyBreak2 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuPicOnlyDel = new System.Windows.Forms.ToolStripMenuItem();
+            this.MnuSecurity = new System.Windows.Forms.MenuStrip();
+            this.TSMnuSecurityApplyFilter = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuSecurityBreak1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuSecurityClearFilter = new System.Windows.Forms.ToolStripMenuItem();
             this.PnlDashboard.SuspendLayout();
             this.PnlPatient.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.PnlSecurity.SuspendLayout();
             this.PnlData.SuspendLayout();
             this.PnlSurgery.SuspendLayout();
             this.PnlMetaData.SuspendLayout();
-            this.PnlEmailPic.SuspendLayout();
+            this.PnlSecurity.SuspendLayout();
             this.PnlImages.SuspendLayout();
             this.PnlRpt.SuspendLayout();
+            this.PnlEmailPic.SuspendLayout();
             this.MnuDashboard.SuspendLayout();
             this.MnuImages.SuspendLayout();
             this.MnuImagesSearch.SuspendLayout();
@@ -205,6 +210,7 @@
             this.MnuDataPicInfo.SuspendLayout();
             this.MnuMD.SuspendLayout();
             this.MnuPicOnly.SuspendLayout();
+            this.MnuSecurity.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnlDashboard
@@ -216,7 +222,7 @@
             this.PnlDashboard.Margin = new System.Windows.Forms.Padding(0);
             this.PnlDashboard.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlDashboard.Name = "PnlDashboard";
-            this.PnlDashboard.Size = new System.Drawing.Size(200, 31);
+            this.PnlDashboard.Size = new System.Drawing.Size(200, 32);
             this.PnlDashboard.TabIndex = 1;
             // 
             // LblDashboard
@@ -245,11 +251,11 @@
             this.PnlPatient.Controls.Add(this.LlbPatientSearch);
             this.PnlPatient.Controls.Add(this.LblPatientAdd);
             this.PnlPatient.Controls.Add(this.LblPatient);
-            this.PnlPatient.Location = new System.Drawing.Point(2, 86);
+            this.PnlPatient.Location = new System.Drawing.Point(2, 95);
             this.PnlPatient.Margin = new System.Windows.Forms.Padding(0);
             this.PnlPatient.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlPatient.Name = "PnlPatient";
-            this.PnlPatient.Size = new System.Drawing.Size(200, 184);
+            this.PnlPatient.Size = new System.Drawing.Size(200, 65);
             this.PnlPatient.TabIndex = 2;
             this.PnlPatient.Tag = "Collapsed";
             // 
@@ -340,21 +346,21 @@
             this.tableLayoutPanel1.CellBorderStyle = System.Windows.Forms.TableLayoutPanelCellBorderStyle.Inset;
             this.tableLayoutPanel1.ColumnCount = 1;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.Controls.Add(this.PnlSecurity, 0, 9);
             this.tableLayoutPanel1.Controls.Add(this.PnlData, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.PnlSurgery, 0, 3);
             this.tableLayoutPanel1.Controls.Add(this.PnlMetaData, 0, 6);
+            this.tableLayoutPanel1.Controls.Add(this.PnlSecurity, 0, 8);
             this.tableLayoutPanel1.Controls.Add(this.PnlDashboard, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.PnlEmailPic, 0, 8);
             this.tableLayoutPanel1.Controls.Add(this.PnlPatient, 0, 2);
             this.tableLayoutPanel1.Controls.Add(this.PnlImages, 0, 1);
             this.tableLayoutPanel1.Controls.Add(this.PnlRpt, 0, 4);
+            this.tableLayoutPanel1.Controls.Add(this.PnlEmailPic, 0, 7);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Left;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 11;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 31F));
+            this.tableLayoutPanel1.RowCount = 10;
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 32F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -364,48 +370,9 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 123F));
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(185, 976);
             this.tableLayoutPanel1.TabIndex = 3;
-            // 
-            // PnlSecurity
-            // 
-            this.PnlSecurity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.PnlSecurity.Controls.Add(this.LblSecurityUserMgmt);
-            this.PnlSecurity.Controls.Add(this.LblSecurity);
-            this.PnlSecurity.Dock = System.Windows.Forms.DockStyle.Left;
-            this.PnlSecurity.Location = new System.Drawing.Point(2, 603);
-            this.PnlSecurity.Margin = new System.Windows.Forms.Padding(0);
-            this.PnlSecurity.MinimumSize = new System.Drawing.Size(200, 0);
-            this.PnlSecurity.Name = "PnlSecurity";
-            this.PnlSecurity.Size = new System.Drawing.Size(200, 81);
-            this.PnlSecurity.TabIndex = 14;
-            this.PnlSecurity.Tag = "Collapsed";
-            // 
-            // LblSecurityUserMgmt
-            // 
-            this.LblSecurityUserMgmt.AutoSize = true;
-            this.LblSecurityUserMgmt.Location = new System.Drawing.Point(13, 46);
-            this.LblSecurityUserMgmt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblSecurityUserMgmt.Name = "LblSecurityUserMgmt";
-            this.LblSecurityUserMgmt.Size = new System.Drawing.Size(124, 17);
-            this.LblSecurityUserMgmt.TabIndex = 2;
-            this.LblSecurityUserMgmt.Text = "User Management";
-            // 
-            // LblSecurity
-            // 
-            this.LblSecurity.AutoEllipsis = true;
-            this.LblSecurity.BackColor = System.Drawing.Color.Silver;
-            this.LblSecurity.Dock = System.Windows.Forms.DockStyle.Top;
-            this.LblSecurity.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.LblSecurity.Location = new System.Drawing.Point(0, 0);
-            this.LblSecurity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblSecurity.Name = "LblSecurity";
-            this.LblSecurity.Size = new System.Drawing.Size(200, 33);
-            this.LblSecurity.TabIndex = 0;
-            this.LblSecurity.Text = "Security";
-            this.LblSecurity.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LblSecurity.Click += new System.EventHandler(this.LblSecurity_Click);
             // 
             // PnlData
             // 
@@ -415,11 +382,11 @@
             this.PnlData.Controls.Add(this.LblDataDefaultHosp);
             this.PnlData.Controls.Add(this.LblDataCustomizeName);
             this.PnlData.Controls.Add(this.LblData);
-            this.PnlData.Location = new System.Drawing.Point(2, 375);
+            this.PnlData.Location = new System.Drawing.Point(2, 292);
             this.PnlData.Margin = new System.Windows.Forms.Padding(0);
             this.PnlData.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlData.Name = "PnlData";
-            this.PnlData.Size = new System.Drawing.Size(200, 52);
+            this.PnlData.Size = new System.Drawing.Size(200, 63);
             this.PnlData.TabIndex = 7;
             this.PnlData.Tag = "Collapsed";
             // 
@@ -498,11 +465,11 @@
             this.PnlSurgery.Controls.Add(this.LblSurgerySearch);
             this.PnlSurgery.Controls.Add(this.LblSurgeryAdd);
             this.PnlSurgery.Controls.Add(this.LblSurgery);
-            this.PnlSurgery.Location = new System.Drawing.Point(2, 272);
+            this.PnlSurgery.Location = new System.Drawing.Point(2, 162);
             this.PnlSurgery.Margin = new System.Windows.Forms.Padding(0);
             this.PnlSurgery.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlSurgery.Name = "PnlSurgery";
-            this.PnlSurgery.Size = new System.Drawing.Size(200, 47);
+            this.PnlSurgery.Size = new System.Drawing.Size(200, 74);
             this.PnlSurgery.TabIndex = 6;
             this.PnlSurgery.Tag = "Collapsed";
             // 
@@ -564,11 +531,11 @@
             this.PnlMetaData.Controls.Add(this.LblMDCpt);
             this.PnlMetaData.Controls.Add(this.LblMDComp);
             this.PnlMetaData.Controls.Add(this.LblMetaData);
-            this.PnlMetaData.Location = new System.Drawing.Point(2, 429);
+            this.PnlMetaData.Location = new System.Drawing.Point(2, 357);
             this.PnlMetaData.Margin = new System.Windows.Forms.Padding(0);
             this.PnlMetaData.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlMetaData.Name = "PnlMetaData";
-            this.PnlMetaData.Size = new System.Drawing.Size(200, 54);
+            this.PnlMetaData.Size = new System.Drawing.Size(200, 75);
             this.PnlMetaData.TabIndex = 8;
             this.PnlMetaData.Tag = "Collapsed";
             // 
@@ -724,7 +691,7 @@
             this.LblMetaData.Location = new System.Drawing.Point(0, 0);
             this.LblMetaData.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblMetaData.Name = "LblMetaData";
-            this.LblMetaData.Size = new System.Drawing.Size(200, 31);
+            this.LblMetaData.Size = new System.Drawing.Size(200, 32);
             this.LblMetaData.TabIndex = 0;
             this.LblMetaData.Text = "Meta Data";
             this.LblMetaData.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -732,59 +699,59 @@
             this.LblMetaData.MouseEnter += new System.EventHandler(this.LblMetaData_MouseEnter);
             this.LblMetaData.MouseLeave += new System.EventHandler(this.LblMetaData_MouseLeave);
             // 
-            // PnlEmailPic
+            // PnlSecurity
             // 
-            this.PnlEmailPic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.PnlEmailPic.Controls.Add(this.LblEmailPicPicInfo);
-            this.PnlEmailPic.Controls.Add(this.LblEmailPicPicOnly);
-            this.PnlEmailPic.Controls.Add(this.LblEmailPic);
-            this.PnlEmailPic.Location = new System.Drawing.Point(2, 487);
-            this.PnlEmailPic.Margin = new System.Windows.Forms.Padding(0);
-            this.PnlEmailPic.MinimumSize = new System.Drawing.Size(200, 0);
-            this.PnlEmailPic.Name = "PnlEmailPic";
-            this.PnlEmailPic.Size = new System.Drawing.Size(200, 114);
-            this.PnlEmailPic.TabIndex = 13;
-            this.PnlEmailPic.Tag = "Collapsed";
+            this.PnlSecurity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.PnlSecurity.Controls.Add(this.label1);
+            this.PnlSecurity.Controls.Add(this.LblSecurityUserMgmt);
+            this.PnlSecurity.Controls.Add(this.LblSecurity);
+            this.PnlSecurity.Location = new System.Drawing.Point(2, 545);
+            this.PnlSecurity.Margin = new System.Windows.Forms.Padding(0);
+            this.PnlSecurity.MinimumSize = new System.Drawing.Size(200, 0);
+            this.PnlSecurity.Name = "PnlSecurity";
+            this.PnlSecurity.Size = new System.Drawing.Size(200, 73);
+            this.PnlSecurity.TabIndex = 14;
+            this.PnlSecurity.Tag = "Collapsed";
             // 
-            // LblEmailPicPicInfo
+            // label1
             // 
-            this.LblEmailPicPicInfo.AutoSize = true;
-            this.LblEmailPicPicInfo.Location = new System.Drawing.Point(13, 76);
-            this.LblEmailPicPicInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblEmailPicPicInfo.Name = "LblEmailPicPicInfo";
-            this.LblEmailPicPicInfo.Size = new System.Drawing.Size(107, 17);
-            this.LblEmailPicPicInfo.TabIndex = 3;
-            this.LblEmailPicPicInfo.Text = "Picture and Info";
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(13, 71);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(53, 17);
+            this.label1.TabIndex = 3;
+            this.label1.Text = "Hidden";
+            this.label1.Visible = false;
             // 
-            // LblEmailPicPicOnly
+            // LblSecurityUserMgmt
             // 
-            this.LblEmailPicPicOnly.AutoSize = true;
-            this.LblEmailPicPicOnly.Location = new System.Drawing.Point(13, 46);
-            this.LblEmailPicPicOnly.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblEmailPicPicOnly.Name = "LblEmailPicPicOnly";
-            this.LblEmailPicPicOnly.Size = new System.Drawing.Size(85, 17);
-            this.LblEmailPicPicOnly.TabIndex = 2;
-            this.LblEmailPicPicOnly.Text = "Picture Only";
-            this.LblEmailPicPicOnly.Click += new System.EventHandler(this.LblEmailPicPicOnly_Click);
-            this.LblEmailPicPicOnly.MouseEnter += new System.EventHandler(this.LblEmailPicPicOnly_MouseEnter);
-            this.LblEmailPicPicOnly.MouseLeave += new System.EventHandler(this.LblEmailPicPicOnly_MouseLeave);
+            this.LblSecurityUserMgmt.AutoSize = true;
+            this.LblSecurityUserMgmt.Location = new System.Drawing.Point(13, 46);
+            this.LblSecurityUserMgmt.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblSecurityUserMgmt.Name = "LblSecurityUserMgmt";
+            this.LblSecurityUserMgmt.Size = new System.Drawing.Size(124, 17);
+            this.LblSecurityUserMgmt.TabIndex = 2;
+            this.LblSecurityUserMgmt.Text = "User Management";
+            this.LblSecurityUserMgmt.MouseEnter += new System.EventHandler(this.LblSecurityUserMgmt_MouseEnter);
+            this.LblSecurityUserMgmt.MouseLeave += new System.EventHandler(this.LblSecurityUserMgmt_MouseLeave);
             // 
-            // LblEmailPic
+            // LblSecurity
             // 
-            this.LblEmailPic.AutoEllipsis = true;
-            this.LblEmailPic.BackColor = System.Drawing.Color.Silver;
-            this.LblEmailPic.Dock = System.Windows.Forms.DockStyle.Top;
-            this.LblEmailPic.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.LblEmailPic.Location = new System.Drawing.Point(0, 0);
-            this.LblEmailPic.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblEmailPic.Name = "LblEmailPic";
-            this.LblEmailPic.Size = new System.Drawing.Size(200, 32);
-            this.LblEmailPic.TabIndex = 0;
-            this.LblEmailPic.Text = "Emailed Pictures";
-            this.LblEmailPic.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.LblEmailPic.Click += new System.EventHandler(this.LblEmailPic_Click);
-            this.LblEmailPic.MouseEnter += new System.EventHandler(this.LblEmailPic_MouseEnter);
-            this.LblEmailPic.MouseLeave += new System.EventHandler(this.LblEmailPic_MouseLeave);
+            this.LblSecurity.AutoEllipsis = true;
+            this.LblSecurity.BackColor = System.Drawing.Color.Silver;
+            this.LblSecurity.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LblSecurity.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.LblSecurity.Location = new System.Drawing.Point(0, 0);
+            this.LblSecurity.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblSecurity.Name = "LblSecurity";
+            this.LblSecurity.Size = new System.Drawing.Size(200, 32);
+            this.LblSecurity.TabIndex = 0;
+            this.LblSecurity.Text = "Security";
+            this.LblSecurity.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblSecurity.Click += new System.EventHandler(this.LblSecurity_Click);
+            this.LblSecurity.MouseEnter += new System.EventHandler(this.LblSecurity_MouseEnter);
+            this.LblSecurity.MouseLeave += new System.EventHandler(this.LblSecurity_MouseLeave);
             // 
             // PnlImages
             // 
@@ -795,11 +762,11 @@
             this.PnlImages.Controls.Add(this.LblImagesSearch);
             this.PnlImages.Controls.Add(this.LblImagesAdd);
             this.PnlImages.Controls.Add(this.LblImages);
-            this.PnlImages.Location = new System.Drawing.Point(2, 35);
+            this.PnlImages.Location = new System.Drawing.Point(2, 36);
             this.PnlImages.Margin = new System.Windows.Forms.Padding(0);
             this.PnlImages.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlImages.Name = "PnlImages";
-            this.PnlImages.Size = new System.Drawing.Size(200, 49);
+            this.PnlImages.Size = new System.Drawing.Size(200, 57);
             this.PnlImages.TabIndex = 4;
             this.PnlImages.Tag = "Collapsed";
             // 
@@ -892,7 +859,7 @@
             this.PnlRpt.Controls.Add(this.LblRptDynamic);
             this.PnlRpt.Controls.Add(this.LblRptStatic);
             this.PnlRpt.Controls.Add(this.LblRpt);
-            this.PnlRpt.Location = new System.Drawing.Point(2, 321);
+            this.PnlRpt.Location = new System.Drawing.Point(2, 238);
             this.PnlRpt.Margin = new System.Windows.Forms.Padding(0);
             this.PnlRpt.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlRpt.Name = "PnlRpt";
@@ -942,6 +909,60 @@
             this.LblRpt.Click += new System.EventHandler(this.LblRpt_Click);
             this.LblRpt.MouseEnter += new System.EventHandler(this.LblRpt_MouseEnter);
             this.LblRpt.MouseLeave += new System.EventHandler(this.LblRpt_MouseLeave);
+            // 
+            // PnlEmailPic
+            // 
+            this.PnlEmailPic.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.PnlEmailPic.Controls.Add(this.LblEmailPicPicInfo);
+            this.PnlEmailPic.Controls.Add(this.LblEmailPicPicOnly);
+            this.PnlEmailPic.Controls.Add(this.LblEmailPic);
+            this.PnlEmailPic.Location = new System.Drawing.Point(2, 434);
+            this.PnlEmailPic.Margin = new System.Windows.Forms.Padding(0);
+            this.PnlEmailPic.MinimumSize = new System.Drawing.Size(200, 0);
+            this.PnlEmailPic.Name = "PnlEmailPic";
+            this.PnlEmailPic.Size = new System.Drawing.Size(200, 109);
+            this.PnlEmailPic.TabIndex = 13;
+            this.PnlEmailPic.Tag = "Collapsed";
+            // 
+            // LblEmailPicPicInfo
+            // 
+            this.LblEmailPicPicInfo.AutoSize = true;
+            this.LblEmailPicPicInfo.Location = new System.Drawing.Point(13, 76);
+            this.LblEmailPicPicInfo.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblEmailPicPicInfo.Name = "LblEmailPicPicInfo";
+            this.LblEmailPicPicInfo.Size = new System.Drawing.Size(107, 17);
+            this.LblEmailPicPicInfo.TabIndex = 3;
+            this.LblEmailPicPicInfo.Text = "Picture and Info";
+            // 
+            // LblEmailPicPicOnly
+            // 
+            this.LblEmailPicPicOnly.AutoSize = true;
+            this.LblEmailPicPicOnly.Location = new System.Drawing.Point(13, 46);
+            this.LblEmailPicPicOnly.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblEmailPicPicOnly.Name = "LblEmailPicPicOnly";
+            this.LblEmailPicPicOnly.Size = new System.Drawing.Size(85, 17);
+            this.LblEmailPicPicOnly.TabIndex = 2;
+            this.LblEmailPicPicOnly.Text = "Picture Only";
+            this.LblEmailPicPicOnly.Click += new System.EventHandler(this.LblEmailPicPicOnly_Click);
+            this.LblEmailPicPicOnly.MouseEnter += new System.EventHandler(this.LblEmailPicPicOnly_MouseEnter);
+            this.LblEmailPicPicOnly.MouseLeave += new System.EventHandler(this.LblEmailPicPicOnly_MouseLeave);
+            // 
+            // LblEmailPic
+            // 
+            this.LblEmailPic.AutoEllipsis = true;
+            this.LblEmailPic.BackColor = System.Drawing.Color.Silver;
+            this.LblEmailPic.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LblEmailPic.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.LblEmailPic.Location = new System.Drawing.Point(0, 0);
+            this.LblEmailPic.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblEmailPic.Name = "LblEmailPic";
+            this.LblEmailPic.Size = new System.Drawing.Size(200, 32);
+            this.LblEmailPic.TabIndex = 0;
+            this.LblEmailPic.Text = "Emailed Pictures";
+            this.LblEmailPic.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.LblEmailPic.Click += new System.EventHandler(this.LblEmailPic_Click);
+            this.LblEmailPic.MouseEnter += new System.EventHandler(this.LblEmailPic_MouseEnter);
+            this.LblEmailPic.MouseLeave += new System.EventHandler(this.LblEmailPic_MouseLeave);
             // 
             // DlgImagesAdd
             // 
@@ -1642,7 +1663,7 @@
             this.TSMnuDataLinkBreak4,
             this.TSMnuDataLinkClearAll});
             this.MnuDataLink.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuDataLink.Location = new System.Drawing.Point(185, 112);
+            this.MnuDataLink.Location = new System.Drawing.Point(185, 28);
             this.MnuDataLink.Name = "MnuDataLink";
             this.MnuDataLink.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
             this.MnuDataLink.Size = new System.Drawing.Size(1212, 28);
@@ -1730,7 +1751,7 @@
             this.TSMnuDataPicInfoBreak2,
             this.TSMnuDataPicInfoRename});
             this.MnuDataPicInfo.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuDataPicInfo.Location = new System.Drawing.Point(185, 84);
+            this.MnuDataPicInfo.Location = new System.Drawing.Point(185, 28);
             this.MnuDataPicInfo.Name = "MnuDataPicInfo";
             this.MnuDataPicInfo.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
             this.MnuDataPicInfo.Size = new System.Drawing.Size(1212, 28);
@@ -1785,7 +1806,7 @@
             this.TSMnuMDBreak2,
             this.TSMnuMDRename});
             this.MnuMD.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuMD.Location = new System.Drawing.Point(185, 56);
+            this.MnuMD.Location = new System.Drawing.Point(185, 28);
             this.MnuMD.Name = "MnuMD";
             this.MnuMD.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
             this.MnuMD.Size = new System.Drawing.Size(1212, 28);
@@ -1886,25 +1907,65 @@
             this.TSMnuPicOnlyDel.Size = new System.Drawing.Size(67, 24);
             this.TSMnuPicOnlyDel.Text = "Del Pic";
             // 
+            // MnuSecurity
+            // 
+            this.MnuSecurity.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.MnuSecurity.ImageScalingSize = new System.Drawing.Size(17, 17);
+            this.MnuSecurity.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMnuSecurityApplyFilter,
+            this.TSMnuSecurityBreak1,
+            this.TSMnuSecurityClearFilter});
+            this.MnuSecurity.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MnuSecurity.Location = new System.Drawing.Point(185, 28);
+            this.MnuSecurity.Name = "MnuSecurity";
+            this.MnuSecurity.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuSecurity.Size = new System.Drawing.Size(1212, 28);
+            this.MnuSecurity.TabIndex = 31;
+            this.MnuSecurity.Text = "menuStrip1";
+            this.MnuSecurity.Visible = false;
+            // 
+            // TSMnuSecurityApplyFilter
+            // 
+            this.TSMnuSecurityApplyFilter.Name = "TSMnuSecurityApplyFilter";
+            this.TSMnuSecurityApplyFilter.Size = new System.Drawing.Size(97, 24);
+            this.TSMnuSecurityApplyFilter.Tag = "";
+            this.TSMnuSecurityApplyFilter.Text = "Apply Filter";
+            // 
+            // TSMnuSecurityBreak1
+            // 
+            this.TSMnuSecurityBreak1.Enabled = false;
+            this.TSMnuSecurityBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuSecurityBreak1.Name = "TSMnuSecurityBreak1";
+            this.TSMnuSecurityBreak1.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuSecurityBreak1.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuSecurityBreak1.Text = "|";
+            // 
+            // TSMnuSecurityClearFilter
+            // 
+            this.TSMnuSecurityClearFilter.Name = "TSMnuSecurityClearFilter";
+            this.TSMnuSecurityClearFilter.Size = new System.Drawing.Size(92, 24);
+            this.TSMnuSecurityClearFilter.Text = "Clear Filter";
+            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1397, 976);
-            this.Controls.Add(this.MnuPatientSearch);
+            this.Controls.Add(this.MnuSecurity);
             this.Controls.Add(this.MnuPicOnly);
+            this.Controls.Add(this.MnuMD);
+            this.Controls.Add(this.MnuDataPicInfo);
+            this.Controls.Add(this.MnuDataLink);
             this.Controls.Add(this.MnuImages);
             this.Controls.Add(this.MnuImagesSearch);
             this.Controls.Add(this.MnuImageSearchResult);
             this.Controls.Add(this.MnuPatient);
             this.Controls.Add(this.MnuImageFilter);
+            this.Controls.Add(this.MnuPatientSearch);
             this.Controls.Add(this.MnuSurgery);
             this.Controls.Add(this.MnuSurgerySearch);
             this.Controls.Add(this.MnuDataCustomizeNames);
             this.Controls.Add(this.MnuDataDefaultHosp);
-            this.Controls.Add(this.MnuDataLink);
-            this.Controls.Add(this.MnuDataPicInfo);
-            this.Controls.Add(this.MnuMD);
             this.Controls.Add(this.MnuDashboard);
             this.Controls.Add(this.tableLayoutPanel1);
             this.IsMdiContainer = true;
@@ -1919,20 +1980,20 @@
             this.PnlPatient.ResumeLayout(false);
             this.PnlPatient.PerformLayout();
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.PnlSecurity.ResumeLayout(false);
-            this.PnlSecurity.PerformLayout();
             this.PnlData.ResumeLayout(false);
             this.PnlData.PerformLayout();
             this.PnlSurgery.ResumeLayout(false);
             this.PnlSurgery.PerformLayout();
             this.PnlMetaData.ResumeLayout(false);
             this.PnlMetaData.PerformLayout();
-            this.PnlEmailPic.ResumeLayout(false);
-            this.PnlEmailPic.PerformLayout();
+            this.PnlSecurity.ResumeLayout(false);
+            this.PnlSecurity.PerformLayout();
             this.PnlImages.ResumeLayout(false);
             this.PnlImages.PerformLayout();
             this.PnlRpt.ResumeLayout(false);
             this.PnlRpt.PerformLayout();
+            this.PnlEmailPic.ResumeLayout(false);
+            this.PnlEmailPic.PerformLayout();
             this.MnuDashboard.ResumeLayout(false);
             this.MnuDashboard.PerformLayout();
             this.MnuImages.ResumeLayout(false);
@@ -1963,6 +2024,8 @@
             this.MnuMD.PerformLayout();
             this.MnuPicOnly.ResumeLayout(false);
             this.MnuPicOnly.PerformLayout();
+            this.MnuSecurity.ResumeLayout(false);
+            this.MnuSecurity.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1994,19 +2057,6 @@
         internal System.Windows.Forms.Label LblRpt;
         private System.Windows.Forms.Label LblDataPicInfo;
         private System.Windows.Forms.Label LblDataLink;
-        internal System.Windows.Forms.Panel PnlMetaData;
-        private System.Windows.Forms.Label LblMDSurgery;
-        private System.Windows.Forms.Label LblMDLocation;
-        private System.Windows.Forms.Label LblMDLevel;
-        private System.Windows.Forms.Label LblMDInst;
-        private System.Windows.Forms.Label LblMDHospital;
-        private System.Windows.Forms.Label LblMDFiscalYr;
-        private System.Windows.Forms.Label LblMDDr;
-        private System.Windows.Forms.Label LblMDDx;
-        private System.Windows.Forms.Label LblMDImageDesc;
-        private System.Windows.Forms.Label LblMDCpt;
-        private System.Windows.Forms.Label LblMDComp;
-        internal System.Windows.Forms.Label LblMetaData;
         internal System.Windows.Forms.Label LblEmailPic;
         private System.Windows.Forms.Label LblEmailPicPicOnly;
         private System.Windows.Forms.Label LblEmailPicPicInfo;
@@ -2121,6 +2171,24 @@
         private System.Windows.Forms.ToolStripMenuItem TSMnuPicOnlyAdd;
         private System.Windows.Forms.ToolStripMenuItem TSMnuPicOnlyBreak2;
         private System.Windows.Forms.ToolStripMenuItem TSMnuPicOnlyDel;
+        private System.Windows.Forms.Label label1;
+        internal System.Windows.Forms.Panel PnlMetaData;
+        private System.Windows.Forms.Label LblMDSurgery;
+        private System.Windows.Forms.Label LblMDLocation;
+        private System.Windows.Forms.Label LblMDLevel;
+        private System.Windows.Forms.Label LblMDInst;
+        private System.Windows.Forms.Label LblMDHospital;
+        private System.Windows.Forms.Label LblMDFiscalYr;
+        private System.Windows.Forms.Label LblMDDr;
+        private System.Windows.Forms.Label LblMDDx;
+        private System.Windows.Forms.Label LblMDImageDesc;
+        private System.Windows.Forms.Label LblMDCpt;
+        private System.Windows.Forms.Label LblMDComp;
+        internal System.Windows.Forms.Label LblMetaData;
+        private System.Windows.Forms.MenuStrip MnuSecurity;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuSecurityApplyFilter;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuSecurityBreak1;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuSecurityClearFilter;
     }
 }
 

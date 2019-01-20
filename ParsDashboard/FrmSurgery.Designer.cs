@@ -378,7 +378,7 @@
             this.SurgeryAge,
             this.Sex,
             this.Surgeries});
-            this.dataGridView1.Location = new System.Drawing.Point(9, 63);
+            this.dataGridView1.Location = new System.Drawing.Point(9, 66);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;

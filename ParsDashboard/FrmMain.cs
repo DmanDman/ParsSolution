@@ -44,7 +44,10 @@ namespace ParsDashboard
         FrmMD fMD = new FrmMD();
 
         //  Emailed Pics
-        FrmPicOnly fPicOnly = new FrmPicOnly();          
+        FrmPicOnly fPicOnly = new FrmPicOnly();
+
+        //  Secrity
+        FrmSecurity fSecurity = new FrmSecurity();
 
         #endregion
 
@@ -113,6 +116,9 @@ namespace ParsDashboard
             LblMDLocation.Font = NavSetStyleLbl(LblMDLocation);
             LblMDSurgery.Font = NavSetStyleLbl(LblMDSurgery);
 
+            //  Security
+            LblSecurity.Font = NavSetStyleLbl( LblSecurity );
+            LblSecurityUserMgmt.Font = NavSetStyleLbl( LblSecurityUserMgmt );
 
             //  Set font bold
             if (lblClick.Font.Bold != true)
@@ -184,7 +190,7 @@ namespace ParsDashboard
             SubRtn.Load_All_Forms( fImage, this );
             SubRtn.Load_All_Forms( fImageSearch, this );
             SubRtn.Load_All_Forms( fImageSearchResuts, this );
-            SubRtn.Load_All_Forms (fImageFilter, this );
+            SubRtn.Load_All_Forms( fImageFilter, this );
 
             SubRtn.Load_All_Forms( fSurgery, this );
             SubRtn.Load_All_Forms( fSurgerySearch, this );
@@ -197,6 +203,8 @@ namespace ParsDashboard
             SubRtn.Load_All_Forms( fMD, this );
 
             SubRtn.Load_All_Forms( fPicOnly, this );
+
+            SubRtn.Load_All_Forms( fSecurity, this );
 
             SubRtn.Load_All_Forms( fDashBoard, this );
 
@@ -267,7 +275,13 @@ namespace ParsDashboard
 
         private void LblSecurity_Click(object sender, EventArgs e)
         {
-            SubRtn.DashboardAccordian(sender, e, tableLayoutPanel1);
+            SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
+
+            fNav.ShowForm( fSecurity );
+
+            NavSetStyleClick( LblSecurity );
+
+            SubRtn.ShowHideMenu( this, MnuSecurity.Name );
         }
 
         public void LblDashboard_Click(object sender, EventArgs e)
@@ -1399,6 +1413,26 @@ namespace ParsDashboard
             }
 
             fAddImageDesc.Close();
+        }
+
+        private void LblSecurity_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblSecurity );
+        }
+
+        private void LblSecurity_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblSecurity );
+        }
+
+        private void LblSecurityUserMgmt_MouseEnter(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseEnter( LblSecurityUserMgmt );
+        }
+
+        private void LblSecurityUserMgmt_MouseLeave(object sender, EventArgs e)
+        {
+            HelpMouseMove.MouseLeave( LblSecurityUserMgmt );
         }
     }
 

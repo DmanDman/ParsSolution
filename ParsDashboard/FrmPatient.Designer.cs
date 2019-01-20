@@ -87,7 +87,7 @@
             this.TabDisplay.Controls.Add(this.tabLastName);
             this.TabDisplay.Controls.Add(this.tabDate);
             this.TabDisplay.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TabDisplay.Location = new System.Drawing.Point(5, 38);
+            this.TabDisplay.Location = new System.Drawing.Point(6, 37);
             this.TabDisplay.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.TabDisplay.Name = "TabDisplay";
             this.TabDisplay.SelectedIndex = 0;
@@ -359,7 +359,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(63, 34);
+            this.textBox1.Location = new System.Drawing.Point(63, 35);
             this.textBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
@@ -372,7 +372,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(5, 34);
+            this.label5.Location = new System.Drawing.Point(6, 35);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(51, 17);
             this.label5.TabIndex = 0;
@@ -549,7 +549,7 @@
             this.Controls.Add(this.GrpImage);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(19, 41);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmPatient";
