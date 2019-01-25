@@ -12,6 +12,7 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
     <PublishUrl>publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Disk</InstallFrom>
@@ -24,7 +25,6 @@
     <MapFileExtensions>true</MapFileExtensions>
     <ApplicationRevision>0</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
-    <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
@@ -291,9 +291,11 @@
     <Content Include="Resources\arrow-down_16.png" />
     <Content Include="Resources\arrow-up_16.png" />
     <Content Include="Resources\Database Scripts\dbo.TableDatabaseGroup.sql" />
+    <Content Include="Resources\Database Scripts\dbo.TableDatabaseGroupUsers.sql" />
     <Content Include="Resources\Database Scripts\dbo.TableDoctor.sql" />
     <Content Include="Resources\Database Scripts\dbo.TableRoles.sql" />
     <Content Include="Resources\Database Scripts\dbo.TableSharingGroup.sql" />
+    <Content Include="Resources\Database Scripts\dbo.TableUsers.sql" />
     <Content Include="Resources\Expander_Collapsed16.png" />
     <Content Include="Resources\Expander_Expanded16.png" />
     <None Include="Resources\Image1.bmp" />
