@@ -279,7 +279,7 @@ namespace ParsDashboard
 
             fNav.ShowForm( fSecurity );
 
-            //NavSetStyleClick( LblSecurity );
+            NavSetStyleClick( LblSecurity );
 
             SubRtn.ShowHideSecurity( fSecurity, "GrpCurrentUser");
 
@@ -1421,29 +1421,69 @@ namespace ParsDashboard
 
         private void LblSecurity_MouseEnter(object sender, EventArgs e)
         {
-            HelpMouseMove.MouseEnter( LblSecurity );
+            HelpMouseMove.MouseEnter( LblSecurity );            
+
+            if ( LblSecurity.Font.Bold != true )
+            {
+                LblSecurity.Font = new Font( LblSecurity.Font.Name, LblSecurity.Font.SizeInPoints, FontStyle.Underline );
+            }         
+            else
+            {
+                LblSecurity.Font = new Font( LblSecurity.Font.Name, LblSecurity.Font.SizeInPoints, FontStyle.Underline | FontStyle.Bold);                
+            }
         }
 
         private void LblSecurity_MouseLeave(object sender, EventArgs e)
         {
-            HelpMouseMove.MouseLeave( LblSecurity );
+            HelpMouseMove.MouseLeave( LblSecurity );            
+
+            if ( LblSecurity.Font.Bold != true )
+            {
+                LblSecurity.Font = new Font( LblSecurity.Font.Name, LblSecurity.Font.SizeInPoints, FontStyle.Regular );
+            }
+            else
+            {
+                LblSecurity.Font = new Font( LblSecurity.Font.Name, LblSecurity.Font.SizeInPoints, FontStyle.Bold );
+            }
         }
 
         private void LblSecurityUserMgmt_MouseEnter(object sender, EventArgs e)
         {
             HelpMouseMove.MouseEnter( LblSecurityUserMgmt );
+
+            if ( LblSecurityUserMgmt.Font.Bold != true )
+            {
+                LblSecurityUserMgmt.Font = new Font( LblSecurityUserMgmt.Font.Name, LblSecurityUserMgmt.Font.SizeInPoints, FontStyle.Underline );
+            }
+            else
+            {
+                LblSecurityUserMgmt.Font = new Font( LblSecurityUserMgmt.Font.Name, LblSecurityUserMgmt.Font.SizeInPoints, FontStyle.Underline | FontStyle.Bold );
+            }
         }
 
         private void LblSecurityUserMgmt_MouseLeave(object sender, EventArgs e)
         {
             HelpMouseMove.MouseLeave( LblSecurityUserMgmt );
+
+            if ( LblSecurityUserMgmt.Font.Bold != true )
+            {
+                LblSecurityUserMgmt.Font = new Font( LblSecurityUserMgmt.Font.Name, LblSecurityUserMgmt.Font.SizeInPoints, FontStyle.Regular );
+            }
+            else
+            {
+                LblSecurityUserMgmt.Font = new Font( LblSecurityUserMgmt.Font.Name, LblSecurityUserMgmt.Font.SizeInPoints, FontStyle.Bold );
+            }
         }
 
         private void LblSecurityUserMgmt_Click(object sender, EventArgs e)
         {
+            NavSetStyleClick( LblSecurityUserMgmt );
+
             SubRtn.ShowHideSecurity( fSecurity, "GrpCurrentDBUser" );
 
             SubRtn.ShowHideSecurity( fSecurity, "GrpExistingUsers" );
+
+            SubRtn.ShowHideMenu( this, MnuSecurityUserMgmt.Name );
         }
     }
 
