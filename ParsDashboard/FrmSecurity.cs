@@ -16,5 +16,11 @@ namespace ParsDashboard
         {
             InitializeComponent();
         }
+
+        private void FrmSecurity_Load(object sender, EventArgs e)
+        {
+            GrpCurrentDBUser.Left = GrpHoldCurrent.Left;
+            GrpExistingUsers.Left = GrpHoldUsers.Left;
+        }
     }
 }

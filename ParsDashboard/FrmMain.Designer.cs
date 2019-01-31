@@ -185,6 +185,15 @@
             this.TSMnuSecurityApplyFilter = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuSecurityBreak1 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuSecurityClearFilter = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuSecuritySave = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuSecurityBreak2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuSecurityAddNew = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuSecurityBreak3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuSecurityAddExisting = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuSecurityBreak4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuSecurityRemove = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuSecurityBreak5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuSecurityPassword = new System.Windows.Forms.ToolStripMenuItem();
             this.PnlDashboard.SuspendLayout();
             this.PnlPatient.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -733,6 +742,7 @@
             this.LblSecurityUserMgmt.Size = new System.Drawing.Size(124, 17);
             this.LblSecurityUserMgmt.TabIndex = 2;
             this.LblSecurityUserMgmt.Text = "User Management";
+            this.LblSecurityUserMgmt.Click += new System.EventHandler(this.LblSecurityUserMgmt_Click);
             this.LblSecurityUserMgmt.MouseEnter += new System.EventHandler(this.LblSecurityUserMgmt_MouseEnter);
             this.LblSecurityUserMgmt.MouseLeave += new System.EventHandler(this.LblSecurityUserMgmt_MouseLeave);
             // 
@@ -1914,7 +1924,16 @@
             this.MnuSecurity.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.TSMnuSecurityApplyFilter,
             this.TSMnuSecurityBreak1,
-            this.TSMnuSecurityClearFilter});
+            this.TSMnuSecurityClearFilter,
+            this.TSMnuSecuritySave,
+            this.TSMnuSecurityBreak2,
+            this.TSMnuSecurityAddNew,
+            this.TSMnuSecurityBreak3,
+            this.TSMnuSecurityAddExisting,
+            this.TSMnuSecurityBreak4,
+            this.TSMnuSecurityRemove,
+            this.TSMnuSecurityBreak5,
+            this.TSMnuSecurityPassword});
             this.MnuSecurity.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
             this.MnuSecurity.Location = new System.Drawing.Point(185, 28);
             this.MnuSecurity.Name = "MnuSecurity";
@@ -1945,6 +1964,77 @@
             this.TSMnuSecurityClearFilter.Name = "TSMnuSecurityClearFilter";
             this.TSMnuSecurityClearFilter.Size = new System.Drawing.Size(92, 24);
             this.TSMnuSecurityClearFilter.Text = "Clear Filter";
+            // 
+            // TSMnuSecuritySave
+            // 
+            this.TSMnuSecuritySave.Name = "TSMnuSecuritySave";
+            this.TSMnuSecuritySave.Size = new System.Drawing.Size(112, 24);
+            this.TSMnuSecuritySave.Text = "Save Changes";
+            this.TSMnuSecuritySave.Visible = false;
+            // 
+            // TSMnuSecurityBreak2
+            // 
+            this.TSMnuSecurityBreak2.Enabled = false;
+            this.TSMnuSecurityBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuSecurityBreak2.Name = "TSMnuSecurityBreak2";
+            this.TSMnuSecurityBreak2.Size = new System.Drawing.Size(26, 24);
+            this.TSMnuSecurityBreak2.Text = "|";
+            this.TSMnuSecurityBreak2.Visible = false;
+            // 
+            // TSMnuSecurityAddNew
+            // 
+            this.TSMnuSecurityAddNew.Name = "TSMnuSecurityAddNew";
+            this.TSMnuSecurityAddNew.Size = new System.Drawing.Size(83, 24);
+            this.TSMnuSecurityAddNew.Text = "Add New";
+            this.TSMnuSecurityAddNew.Visible = false;
+            // 
+            // TSMnuSecurityBreak3
+            // 
+            this.TSMnuSecurityBreak3.Enabled = false;
+            this.TSMnuSecurityBreak3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuSecurityBreak3.Name = "TSMnuSecurityBreak3";
+            this.TSMnuSecurityBreak3.Size = new System.Drawing.Size(26, 24);
+            this.TSMnuSecurityBreak3.Text = "|";
+            this.TSMnuSecurityBreak3.Visible = false;
+            // 
+            // TSMnuSecurityAddExisting
+            // 
+            this.TSMnuSecurityAddExisting.Name = "TSMnuSecurityAddExisting";
+            this.TSMnuSecurityAddExisting.Size = new System.Drawing.Size(104, 24);
+            this.TSMnuSecurityAddExisting.Text = "Add Existing";
+            this.TSMnuSecurityAddExisting.Visible = false;
+            // 
+            // TSMnuSecurityBreak4
+            // 
+            this.TSMnuSecurityBreak4.Enabled = false;
+            this.TSMnuSecurityBreak4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuSecurityBreak4.Name = "TSMnuSecurityBreak4";
+            this.TSMnuSecurityBreak4.Size = new System.Drawing.Size(26, 24);
+            this.TSMnuSecurityBreak4.Text = "|";
+            this.TSMnuSecurityBreak4.Visible = false;
+            // 
+            // TSMnuSecurityRemove
+            // 
+            this.TSMnuSecurityRemove.Name = "TSMnuSecurityRemove";
+            this.TSMnuSecurityRemove.Size = new System.Drawing.Size(127, 24);
+            this.TSMnuSecurityRemove.Text = "Remove Current";
+            this.TSMnuSecurityRemove.Visible = false;
+            // 
+            // TSMnuSecurityBreak5
+            // 
+            this.TSMnuSecurityBreak5.Enabled = false;
+            this.TSMnuSecurityBreak5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuSecurityBreak5.Name = "TSMnuSecurityBreak5";
+            this.TSMnuSecurityBreak5.Size = new System.Drawing.Size(26, 24);
+            this.TSMnuSecurityBreak5.Text = "|";
+            this.TSMnuSecurityBreak5.Visible = false;
+            // 
+            // TSMnuSecurityPassword
+            // 
+            this.TSMnuSecurityPassword.Name = "TSMnuSecurityPassword";
+            this.TSMnuSecurityPassword.Size = new System.Drawing.Size(82, 24);
+            this.TSMnuSecurityPassword.Text = "Password";
+            this.TSMnuSecurityPassword.Visible = false;
             // 
             // FrmMain
             // 
@@ -2189,6 +2279,15 @@
         private System.Windows.Forms.ToolStripMenuItem TSMnuSecurityApplyFilter;
         private System.Windows.Forms.ToolStripMenuItem TSMnuSecurityBreak1;
         private System.Windows.Forms.ToolStripMenuItem TSMnuSecurityClearFilter;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuSecuritySave;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuSecurityBreak2;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuSecurityAddNew;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuSecurityBreak3;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuSecurityAddExisting;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuSecurityBreak4;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuSecurityRemove;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuSecurityBreak5;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuSecurityPassword;
     }
 }
 

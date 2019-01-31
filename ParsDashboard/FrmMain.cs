@@ -279,7 +279,11 @@ namespace ParsDashboard
 
             fNav.ShowForm( fSecurity );
 
-            NavSetStyleClick( LblSecurity );
+            //NavSetStyleClick( LblSecurity );
+
+            SubRtn.ShowHideSecurity( fSecurity, "GrpCurrentUser");
+
+            SubRtn.ShowHideSecurity( fSecurity, "GrpAllUsers");
 
             SubRtn.ShowHideMenu( this, MnuSecurity.Name );
         }
@@ -1434,6 +1438,13 @@ namespace ParsDashboard
         {
             HelpMouseMove.MouseLeave( LblSecurityUserMgmt );
         }
+
+        private void LblSecurityUserMgmt_Click(object sender, EventArgs e)
+        {
+            SubRtn.ShowHideSecurity( fSecurity, "GrpCurrentDBUser" );
+
+            SubRtn.ShowHideSecurity( fSecurity, "GrpExistingUsers" );
+        }
     }
 
     public class SubRoutine
@@ -1913,6 +1924,63 @@ namespace ParsDashboard
             { ctlGrp.BringToFront(); }
             else
             { ctlGrp.SendToBack(); }
+        }
+
+        public void ShowHideSecurity( Form frm, string GrpName )
+        {
+            Control grp;
+            GroupBox ctlGrp;
+
+            switch ( GrpName )
+            {
+                //  Current DB User
+                case "GrpCurrentDBUser":
+                    grp = SubRoutine.FindControl( frm, "GrpCurrentDBUser" );
+                    ctlGrp = grp as GroupBox;
+                    ctlGrp.Visible = true;
+
+                    grp = SubRoutine.FindControl(frm, "GrpCurrentUser");
+                    ctlGrp = grp as GroupBox;
+                    ctlGrp.Visible = false;
+
+                    break;
+
+                //  Current User
+                case "GrpCurrentUser":
+                    grp = SubRoutine.FindControl(frm, "GrpCurrentUser");
+                    ctlGrp = grp as GroupBox;
+                    ctlGrp.Visible = true;
+
+                    grp = SubRoutine.FindControl(frm, "GrpCurrentDBUser");
+                    ctlGrp = grp as GroupBox;
+                    ctlGrp.Visible = false;
+
+                    break;
+
+                //  Existing User
+                case "GrpExistingUsers":
+                    grp = SubRoutine.FindControl( frm, "GrpExistingUsers" );
+                    ctlGrp = grp as GroupBox;
+                    ctlGrp.Visible = true;
+
+                    grp = SubRoutine.FindControl(frm, "GrpAllUsers");
+                    ctlGrp = grp as GroupBox;
+                    ctlGrp.Visible = false;
+
+                    break;
+
+                //  All Users
+                case "GrpAllUsers":
+                    grp = SubRoutine.FindControl(frm, "GrpAllUsers");
+                    ctlGrp = grp as GroupBox;
+                    ctlGrp.Visible = true;
+
+                    grp = SubRoutine.FindControl(frm, "GrpExistingUsers");
+                    ctlGrp = grp as GroupBox;
+                    ctlGrp.Visible = false;
+
+                    break;
+            }
         }
 
         public void ShowHideMenu(Form fMain, string ControlName)
