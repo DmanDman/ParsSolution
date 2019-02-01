@@ -37,7 +37,14 @@
             this.TxtImagesCount = new System.Windows.Forms.TextBox();
             this.LblGrpImageDesc = new System.Windows.Forms.Label();
             this.LstImages = new System.Windows.Forms.ListView();
+            this.MnuPicOnly = new System.Windows.Forms.MenuStrip();
+            this.TSMnuPicOnlySave = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuPicOnlyBreak1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuPicOnlyAdd = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuPicOnlyBreak2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuPicOnlyDel = new System.Windows.Forms.ToolStripMenuItem();
             this.GrpImages.SuspendLayout();
+            this.MnuPicOnly.SuspendLayout();
             this.SuspendLayout();
             // 
             // GrpImages
@@ -132,12 +139,69 @@
             this.LstImages.TabIndex = 7;
             this.LstImages.UseCompatibleStateImageBehavior = false;
             // 
+            // MnuPicOnly
+            // 
+            this.MnuPicOnly.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.MnuPicOnly.ImageScalingSize = new System.Drawing.Size(17, 17);
+            this.MnuPicOnly.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMnuPicOnlySave,
+            this.TSMnuPicOnlyBreak1,
+            this.TSMnuPicOnlyAdd,
+            this.TSMnuPicOnlyBreak2,
+            this.TSMnuPicOnlyDel});
+            this.MnuPicOnly.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MnuPicOnly.Location = new System.Drawing.Point(0, 0);
+            this.MnuPicOnly.Name = "MnuPicOnly";
+            this.MnuPicOnly.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuPicOnly.Size = new System.Drawing.Size(1350, 28);
+            this.MnuPicOnly.TabIndex = 30;
+            this.MnuPicOnly.Text = "menuStrip1";
+            // 
+            // TSMnuPicOnlySave
+            // 
+            this.TSMnuPicOnlySave.Name = "TSMnuPicOnlySave";
+            this.TSMnuPicOnlySave.Size = new System.Drawing.Size(52, 24);
+            this.TSMnuPicOnlySave.Tag = "";
+            this.TSMnuPicOnlySave.Text = "Save";
+            this.TSMnuPicOnlySave.Click += new System.EventHandler(this.TSMnuPicOnlySave_Click);
+            // 
+            // TSMnuPicOnlyBreak1
+            // 
+            this.TSMnuPicOnlyBreak1.Enabled = false;
+            this.TSMnuPicOnlyBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuPicOnlyBreak1.Name = "TSMnuPicOnlyBreak1";
+            this.TSMnuPicOnlyBreak1.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuPicOnlyBreak1.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuPicOnlyBreak1.Text = "|";
+            // 
+            // TSMnuPicOnlyAdd
+            // 
+            this.TSMnuPicOnlyAdd.Name = "TSMnuPicOnlyAdd";
+            this.TSMnuPicOnlyAdd.Size = new System.Drawing.Size(72, 24);
+            this.TSMnuPicOnlyAdd.Text = "Add Pic";
+            // 
+            // TSMnuPicOnlyBreak2
+            // 
+            this.TSMnuPicOnlyBreak2.Enabled = false;
+            this.TSMnuPicOnlyBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuPicOnlyBreak2.Name = "TSMnuPicOnlyBreak2";
+            this.TSMnuPicOnlyBreak2.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuPicOnlyBreak2.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuPicOnlyBreak2.Text = "|";
+            // 
+            // TSMnuPicOnlyDel
+            // 
+            this.TSMnuPicOnlyDel.Name = "TSMnuPicOnlyDel";
+            this.TSMnuPicOnlyDel.Size = new System.Drawing.Size(67, 24);
+            this.TSMnuPicOnlyDel.Text = "Del Pic";
+            // 
             // FrmPicOnly
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 793);
             this.ControlBox = false;
+            this.Controls.Add(this.MnuPicOnly);
             this.Controls.Add(this.GrpImages);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
@@ -151,7 +215,10 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.GrpImages.ResumeLayout(false);
             this.GrpImages.PerformLayout();
+            this.MnuPicOnly.ResumeLayout(false);
+            this.MnuPicOnly.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -166,5 +233,11 @@
         private System.Windows.Forms.TextBox TxtImagesCount;
         private System.Windows.Forms.Label LblGrpImageDesc;
         private System.Windows.Forms.ListView LstImages;
+        private System.Windows.Forms.MenuStrip MnuPicOnly;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuPicOnlySave;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuPicOnlyBreak1;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuPicOnlyAdd;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuPicOnlyBreak2;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuPicOnlyDel;
     }
 }

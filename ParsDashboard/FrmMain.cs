@@ -270,7 +270,13 @@ namespace ParsDashboard
 
             NavSetStyleClick( LblEmailPicPicOnly );
 
-            SubRtn.ShowHideMenu( this, MnuPicOnly.Name );
+            //SubRtn.ShowHideMenu( this, MnuPicOnly.Name );
+
+            //  Hide dashboard menu
+            Control mnu = SubRoutine.FindControl( this, "MnuDashboard" );
+            MenuStrip ctlmnu = mnu as MenuStrip;
+
+            helper.HideControl( ctlmnu );
         }
 
         private void LblSecurity_Click(object sender, EventArgs e)
@@ -285,7 +291,25 @@ namespace ParsDashboard
 
             SubRtn.ShowHideSecurity( fSecurity, "GrpAllUsers");
 
-            SubRtn.ShowHideMenu( this, MnuSecurity.Name );
+            //SubRtn.ShowHideMenu( this, MnuSecurity.Name );
+
+            //  Show security menu
+            Control mnu = SubRoutine.FindControl( fSecurity, "MnuSecurity" );
+            MenuStrip ctlmnu = mnu as MenuStrip;
+
+            helper.ShowControl( ctlmnu );
+
+            //  Hide security user mgmet menu
+            mnu = SubRoutine.FindControl( fSecurity, "MnuSecurityUserMgmt" );
+            ctlmnu = mnu as MenuStrip;
+
+            helper.HideControl( ctlmnu );
+
+            //  Hide dashboard menu
+            mnu = SubRoutine.FindControl( this, "MnuDashboard" );
+            ctlmnu = mnu as MenuStrip;
+
+            helper.HideControl( ctlmnu );
         }
 
         public void LblDashboard_Click(object sender, EventArgs e)
@@ -1357,7 +1381,7 @@ namespace ParsDashboard
 
             fNav.ShowForm( fPicOnly );
 
-            SubRtn.ShowHideMenu( this, MnuPicOnly.Name );
+            //SubRtn.ShowHideMenu( this, MnuPicOnly.Name );
         }
 
         private void LblEmailPic_MouseEnter(object sender, EventArgs e)
@@ -1477,13 +1501,23 @@ namespace ParsDashboard
 
         private void LblSecurityUserMgmt_Click(object sender, EventArgs e)
         {
+            //SubRtn.ShowHideMenu(this, MnuSecurityUserMgmt.Name);
+            Control mnu = SubRoutine.FindControl(fSecurity, "MnuSecurityUserMgmt");
+            MenuStrip ctlmnu = mnu as MenuStrip;
+
+            helper.ShowControl( ctlmnu );
+
+            mnu = SubRoutine.FindControl( fSecurity, "MnuSecurity" );
+            ctlmnu = mnu as MenuStrip;
+
+            helper.HideControl(ctlmnu);
+
+
             NavSetStyleClick( LblSecurityUserMgmt );
 
             SubRtn.ShowHideSecurity( fSecurity, "GrpCurrentDBUser" );
 
             SubRtn.ShowHideSecurity( fSecurity, "GrpExistingUsers" );
-
-            SubRtn.ShowHideMenu( this, MnuSecurityUserMgmt.Name );
         }
     }
 
@@ -2030,6 +2064,7 @@ namespace ParsDashboard
                 if (ctr is MenuStrip & ctr.Name == ControlName)
                 {
                     ctr.Visible = true;
+                    break;
                 }
                 else if (ctr is MenuStrip)
                 {

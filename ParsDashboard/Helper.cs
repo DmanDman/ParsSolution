@@ -194,6 +194,11 @@ namespace ParsDashboard
             doubleBufferPropertyInfo.SetValue( control, enable, null );
         }
 
+        public void HideControl( Control ctl )
+        {
+            ctl.Visible = false;
+        }
+
         public void RemoveAllListBox( ComboBox combo, ListBox list )
         {
             string sHoldData;
@@ -216,6 +221,11 @@ namespace ParsDashboard
         public void SetDateToToday( DateTimePicker dt )
         {
             dt.Value = DateTime.Today;
+        }
+
+        public void ShowControl( Control ctl )
+        {
+            ctl.Visible = true;
         }
     }
 
