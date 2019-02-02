@@ -16,6 +16,8 @@ namespace ParsDashboard
         //  define forms
         FormNav fNav = new FormNav();
 
+        SubRoutine SubRtn = new SubRoutine();
+
         public FrmPicOnly()
         {
             InitializeComponent();
@@ -32,40 +34,66 @@ namespace ParsDashboard
             fAddImageDesc.ShowDialog();
 
             //  save pics to existing patient
-            if (SAVEPICTOEXISTING == true)
-            {
-                fNav.ShowFormName(fImageSearchResuts.MdiParent.MdiChildren, "FrmImageSearchResults");
+            if ( SAVEPICTOEXISTING == true )
+            {               
+                bool bSearchFound = false;
+                bool bMainFound = false;
 
-                SubRtn.DashboardAccordian(LblImages, e, tableLayoutPanel1);
+                foreach ( Form f in Application.OpenForms )
+                {
+                    if ( f.Tag.ToString() == "FrmImageSearchResults" )
+                    {                        
+                        f.BringToFront();
+                        bSearchFound = true;                       
+                    }
 
-                NavSetStyleClick(LblImagesSearchResults);
+                    if ( f.Tag.ToString() == "FrmMain" )
+                    {
+                        Control lbl = SubRoutine.FindControl( f, "LblImages" );
+                        Label ctllbl = lbl as Label;
 
-                SubRtn.ShowHideMenu(this, MnuImageSearchResult.Name);
+                        Control pnl = SubRoutine.FindControl( f, "tableLayoutPanel1" );
+                        TableLayoutPanel ctlpnl = pnl as TableLayoutPanel;
+
+                        SubRtn.DashboardAccordian( ctllbl, e, ctlpnl );
+
+                        lbl = SubRoutine.FindControl( f, "LblImagesSearchResults" );
+                        ctllbl = lbl as Label;
+
+                        SubRtn.NavSetStyleClickSub( ctllbl );
+                        bMainFound = true;
+                    }
+
+                    if ( bSearchFound == true && bMainFound == true )
+                    {
+                        break;
+                    }
+                }                
             }
 
-            //  save pics to new patient
-            if (SAVEPICTONEW == true)
-            {
-                fNav.ShowFormName(fImageSearchResuts.MdiParent.MdiChildren, "FrmImageSearchResults");
+            ////  save pics to new patient
+            //if (SAVEPICTONEW == true)
+            //{
+            //    fNav.ShowFormName(fImageSearchResuts.MdiParent.MdiChildren, "FrmImageSearchResults");
 
-                SubRtn.DashboardAccordian(LblImages, e, tableLayoutPanel1);
+            //    SubRtn.DashboardAccordian(LblImages, e, tableLayoutPanel1);
 
-                NavSetStyleClick(LblImagesSearchResults);
+            //    NavSetStyleClick(LblImagesSearchResults);
 
-                SubRtn.ShowHideMenu(this, MnuImageSearchResult.Name);
-            }
+            //    SubRtn.ShowHideMenu(this, MnuImageSearchResult.Name);
+            //}
 
-            //  save pics only
-            if (SAVEPICONLY == true)
-            {
-                fNav.ShowFormName(fImageSearchResuts.MdiParent.MdiChildren, "FrmImageSearchResults");
+            ////  save pics only
+            //if (SAVEPICONLY == true)
+            //{
+            //    fNav.ShowFormName(fImageSearchResuts.MdiParent.MdiChildren, "FrmImageSearchResults");
 
-                SubRtn.DashboardAccordian(LblImages, e, tableLayoutPanel1);
+            //    SubRtn.DashboardAccordian(LblImages, e, tableLayoutPanel1);
 
-                NavSetStyleClick(LblImagesSearchResults);
+            //    NavSetStyleClick(LblImagesSearchResults);
 
-                SubRtn.ShowHideMenu(this, MnuImageSearchResult.Name);
-            }
+            //    SubRtn.ShowHideMenu(this, MnuImageSearchResult.Name);
+            //}
 
             fAddImageDesc.Close();
         }

@@ -1523,37 +1523,6 @@ namespace ParsDashboard
 
     public class SubRoutine
     {
-        public static Control FindControl(Form frm, String name)
-        {
-            foreach (Control control in frm.Controls)
-            {
-                Control result = FindControl(frm, control, name);
-
-                if (result != null)
-                    return result;
-            }
-
-            return null;
-        }
-
-        private static Control FindControl(Form form, Control control, string name)
-        {
-            if (control.Name == name)
-            {
-                return control;
-            }
-
-            foreach (Control subControl in control.Controls)
-            {
-                Control result = FindControl(form, subControl, name);
-
-                if (result != null)
-                    return result;
-            }
-
-            return null;
-        }
-
         public void DashboardAccordian(Object sender, EventArgs e, Panel pnlLayout)
         {
             // find out which label was clicked
@@ -1586,19 +1555,19 @@ namespace ParsDashboard
                             }
                             else
                             {
-                                if ( p.Controls.Count == 3 )
+                                if (p.Controls.Count == 3)
                                 {
                                     p.Height = p.Controls.Count * 28;
                                     p.Tag = "Expanded";
                                 }
-                                else if ( p.Controls.Count == 5 )
+                                else if (p.Controls.Count == 5)
                                 {
                                     p.Height = p.Controls.Count * 28;
                                     p.Tag = "Expanded";
                                 }
                                 else
                                 {
-                                    p.Height = ( p.Controls.Count - 1 ) * 28;
+                                    p.Height = (p.Controls.Count - 1) * 28;
                                     p.Tag = "Expanded";
                                 }
                             }
@@ -1613,87 +1582,95 @@ namespace ParsDashboard
             }
         }
 
-        public void Load_All_Forms(Form frm, Form frmMain)
+        public static Control FindControl(Form frm, String name)
         {
-            frm.MdiParent = frmMain;
-            frm.StartPosition = FormStartPosition.CenterParent;
-            frm.WindowState = FormWindowState.Minimized;
-            frm.Dock = DockStyle.Fill;
-            frm.Show();
-            frm.WindowState = FormWindowState.Maximized;
+            foreach (Control control in frm.Controls)
+            {
+                Control result = FindControl(frm, control, name);
+
+                if (result != null)
+                    return result;
+            }
+
+            return null;
         }
 
-        public void ClearSurgeryDates(Form fSurgerySearch)
+        private static Control FindControl(Form form, Control control, string name)
+        {
+            if (control.Name == name)
+            {
+                return control;
+            }
+
+            foreach (Control subControl in control.Controls)
+            {
+                Control result = FindControl(form, subControl, name);
+
+                if (result != null)
+                    return result;
+            }
+
+            return null;
+        }        
+
+        public void ClearDataCustomizeNames(Form fDataCustName)
         {
             Helper helper = new Helper();
 
-            //  clear surgery dates
-            if (FrmSurgerySearch.SurgerySearchVar.ClearType == 0)
-            {
-                Control rdo = SubRoutine.FindControl(fSurgerySearch, "RdoSurgeryEqualTo");
-                RadioButton ctlrdo = rdo as RadioButton;
+            //  clear doctor
+            Control txt = SubRoutine.FindControl(fDataCustName, "TxtNewDr");
+            TextBox ctltxt = txt as TextBox;
 
-                helper.ClearRadioBtn(ctlrdo);
+            helper.ClearTextBox(ctltxt);
 
-                rdo = SubRoutine.FindControl(fSurgerySearch, "RdoSurgeryGreater");
-                ctlrdo = rdo as RadioButton;
+            //  clear hospital
+            txt = SubRoutine.FindControl(fDataCustName, "TxtNewHospital");
+            ctltxt = txt as TextBox;
 
-                helper.ClearRadioBtn(ctlrdo);
+            helper.ClearTextBox(ctltxt);
 
-                rdo = SubRoutine.FindControl(fSurgerySearch, "RdoSurgeryLess");
-                ctlrdo = rdo as RadioButton;
+            //  clear location
+            txt = SubRoutine.FindControl(fDataCustName, "TxtNewLocation");
+            ctltxt = txt as TextBox;
 
-                helper.ClearRadioBtn(ctlrdo);
+            helper.ClearTextBox(ctltxt);
 
-                rdo = SubRoutine.FindControl(fSurgerySearch, "RdoSurgeryBetween");
-                ctlrdo = rdo as RadioButton;
+            //  clear level
+            txt = SubRoutine.FindControl(fDataCustName, "TxtNewLevel");
+            ctltxt = txt as TextBox;
 
-                helper.ClearRadioBtn(ctlrdo);
+            helper.ClearTextBox(ctltxt);
 
-                Control dt = SubRoutine.FindControl(fSurgerySearch, "DtStart");
-                DateTimePicker ctldt = dt as DateTimePicker;
+            //  clear cpt
+            txt = SubRoutine.FindControl(fDataCustName, "TxtNewCpt");
+            ctltxt = txt as TextBox;
 
-                helper.SetDateToToday(ctldt);
+            helper.ClearTextBox(ctltxt);
 
-                dt = SubRoutine.FindControl(fSurgerySearch, "DtEnd");
-                ctldt = dt as DateTimePicker;
+            //  clear dx
+            txt = SubRoutine.FindControl(fDataCustName, "TxtNewDx");
+            ctltxt = txt as TextBox;
 
-                helper.SetDateToToday(ctldt);
+            helper.ClearTextBox(ctltxt);
 
-            }
-        }
+            //  clear surgery
+            txt = SubRoutine.FindControl(fDataCustName, "TxtNewSurgery");
+            ctltxt = txt as TextBox;
 
-        public void SurgeryClearType(Form fSurgery)
-        {
-            Helper helper = new Helper();
+            helper.ClearTextBox(ctltxt);
 
-            //  clear surgery type
-            if (FrmSurgery.SurgeryVar.ClearType == 0)
-            {
-                Control updwn = SubRoutine.FindControl(fSurgery, "UpDwnLastNameLetter");
-                DomainUpDown ctlupdwn = updwn as DomainUpDown;
+            //  clear instrumentation
+            txt = SubRoutine.FindControl(fDataCustName, "TxtNewInst");
+            ctltxt = txt as TextBox;
 
-                helper.ClearUpDwn(ctlupdwn);
+            helper.ClearTextBox(ctltxt);
 
-                Control cbo = SubRoutine.FindControl(fSurgery, "CboFullName");
-                ComboBox ctlcbo = cbo as ComboBox;
+            //  clear complication
+            txt = SubRoutine.FindControl(fDataCustName, "TxtNewComp");
+            ctltxt = txt as TextBox;
 
-                helper.ClearComboBox(ctlcbo);
-            }
+            helper.ClearTextBox(ctltxt);
 
-            //  clear surgery date
-            if (FrmSurgery.SurgeryVar.ClearType == 1)
-            {
-                Control updwn = SubRoutine.FindControl(fSurgery, "UpDwnYear");
-                DomainUpDown ctlupdwn = updwn as DomainUpDown;
-
-                helper.ClearUpDwn(ctlupdwn);
-
-                updwn = SubRoutine.FindControl(fSurgery, "UpDwnMonth");
-                ctlupdwn = updwn as DomainUpDown;
-
-                helper.ClearUpDwn(ctlupdwn);
-            }
         }
 
         public void ClearFiscalYear(Form fSurgerySearch)
@@ -1836,66 +1813,87 @@ namespace ParsDashboard
             ctllstTo = lstTo as ListBox;
 
             helper.ClearListBoxes(ctllstFrom, ctllstTo);
-        }
+        }        
 
-        public void ClearDataCustomizeNames( Form fDataCustName )
+        public void ClearSurgeryDates(Form fSurgerySearch)
         {
             Helper helper = new Helper();
 
-            //  clear doctor
-            Control txt = SubRoutine.FindControl( fDataCustName, "TxtNewDr" );
-            TextBox ctltxt = txt as TextBox;
+            //  clear surgery dates
+            if (FrmSurgerySearch.SurgerySearchVar.ClearType == 0)
+            {
+                Control rdo = SubRoutine.FindControl(fSurgerySearch, "RdoSurgeryEqualTo");
+                RadioButton ctlrdo = rdo as RadioButton;
 
-            helper.ClearTextBox( ctltxt );
+                helper.ClearRadioBtn(ctlrdo);
 
-            //  clear hospital
-            txt = SubRoutine.FindControl( fDataCustName, "TxtNewHospital" );
-            ctltxt = txt as TextBox;
+                rdo = SubRoutine.FindControl(fSurgerySearch, "RdoSurgeryGreater");
+                ctlrdo = rdo as RadioButton;
 
-            helper.ClearTextBox( ctltxt );
+                helper.ClearRadioBtn(ctlrdo);
 
-            //  clear location
-            txt = SubRoutine.FindControl( fDataCustName, "TxtNewLocation" );
-            ctltxt = txt as TextBox;
+                rdo = SubRoutine.FindControl(fSurgerySearch, "RdoSurgeryLess");
+                ctlrdo = rdo as RadioButton;
 
-            helper.ClearTextBox( ctltxt );
+                helper.ClearRadioBtn(ctlrdo);
 
-            //  clear level
-            txt = SubRoutine.FindControl( fDataCustName, "TxtNewLevel" );
-            ctltxt = txt as TextBox;
+                rdo = SubRoutine.FindControl(fSurgerySearch, "RdoSurgeryBetween");
+                ctlrdo = rdo as RadioButton;
 
-            helper.ClearTextBox( ctltxt );
+                helper.ClearRadioBtn(ctlrdo);
 
-            //  clear cpt
-            txt = SubRoutine.FindControl( fDataCustName, "TxtNewCpt" );
-            ctltxt = txt as TextBox;
+                Control dt = SubRoutine.FindControl(fSurgerySearch, "DtStart");
+                DateTimePicker ctldt = dt as DateTimePicker;
 
-            helper.ClearTextBox( ctltxt );
+                helper.SetDateToToday(ctldt);
 
-            //  clear dx
-            txt = SubRoutine.FindControl( fDataCustName, "TxtNewDx" );
-            ctltxt = txt as TextBox;
+                dt = SubRoutine.FindControl(fSurgerySearch, "DtEnd");
+                ctldt = dt as DateTimePicker;
 
-            helper.ClearTextBox( ctltxt );
+                helper.SetDateToToday(ctldt);
 
-            //  clear surgery
-            txt = SubRoutine.FindControl( fDataCustName, "TxtNewSurgery" );
-            ctltxt = txt as TextBox;
+            }
+        }
 
-            helper.ClearTextBox( ctltxt );
+        public void Load_All_Forms(Form frm, Form frmMain)
+        {
+            frm.MdiParent = frmMain;
+            frm.StartPosition = FormStartPosition.CenterParent;
+            frm.WindowState = FormWindowState.Minimized;
+            frm.Dock = DockStyle.Fill;
+            frm.Show();
+            frm.WindowState = FormWindowState.Maximized;
+        }
 
-            //  clear instrumentation
-            txt = SubRoutine.FindControl( fDataCustName, "TxtNewInst" );
-            ctltxt = txt as TextBox;
+        public void NavSetStyleClickSub( Label lblIn )
+        {
+            Label lblClick = lblIn;
 
-            helper.ClearTextBox( ctltxt );
+            //  Dashboard Panel         
+            foreach ( Form f in Application.OpenForms )
+            {
+                if ( f.Tag.ToString() == "FrmMain" )
+                {
+                    Control lbl = SubRoutine.FindControl( f, "LblDashboard" );
+                    Label ctllbl = lbl as Label;
 
-            //  clear complication
-            txt = SubRoutine.FindControl( fDataCustName, "TxtNewComp" );
-            ctltxt = txt as TextBox;
+                    ctllbl.Font = NavSetStyleLblSub( ctllbl );
 
-            helper.ClearTextBox( ctltxt );
+                    break;
+                }
+            }
 
+            //  Set font bold
+            if ( lblIn.Font.Bold != true )
+            {
+                lblIn.Font = new Font( lblIn.Font.Name, lblIn.Font.SizeInPoints, FontStyle.Bold );
+            }            
+        }
+
+        public static Font NavSetStyleLblSub ( Label lbl )
+        {
+            lbl.Font = new Font( lbl.Font.Name, lbl.Font.SizeInPoints, FontStyle.Regular );
+            return lbl.Font;
         }
 
         public void ShowHideMD ( Form frm, string GrpName )
@@ -2072,6 +2070,39 @@ namespace ParsDashboard
                 }
             }
         }
-        
+
+        public void SurgeryClearType(Form fSurgery)
+        {
+            Helper helper = new Helper();
+
+            //  clear surgery type
+            if (FrmSurgery.SurgeryVar.ClearType == 0)
+            {
+                Control updwn = SubRoutine.FindControl(fSurgery, "UpDwnLastNameLetter");
+                DomainUpDown ctlupdwn = updwn as DomainUpDown;
+
+                helper.ClearUpDwn(ctlupdwn);
+
+                Control cbo = SubRoutine.FindControl(fSurgery, "CboFullName");
+                ComboBox ctlcbo = cbo as ComboBox;
+
+                helper.ClearComboBox(ctlcbo);
+            }
+
+            //  clear surgery date
+            if (FrmSurgery.SurgeryVar.ClearType == 1)
+            {
+                Control updwn = SubRoutine.FindControl(fSurgery, "UpDwnYear");
+                DomainUpDown ctlupdwn = updwn as DomainUpDown;
+
+                helper.ClearUpDwn(ctlupdwn);
+
+                updwn = SubRoutine.FindControl(fSurgery, "UpDwnMonth");
+                ctlupdwn = updwn as DomainUpDown;
+
+                helper.ClearUpDwn(ctlupdwn);
+            }
+        }
+
     }
 }
