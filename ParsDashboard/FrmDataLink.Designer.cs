@@ -47,10 +47,21 @@
             this.Blank = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.PatientNum = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.DOB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MnuDataLink = new System.Windows.Forms.MenuStrip();
+            this.TSMnuDataLinkAddLink = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDataLinkBreak1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDataLinkRemoveLink = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDataLinkBreak2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDataLinkClearFrom = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDataLinkBreak3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDataLinkClearTo = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDataLinkBreak4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDataLinkClearAll = new System.Windows.Forms.ToolStripMenuItem();
             this.GrpLinkFrom.SuspendLayout();
             this.GrpLinkTo.SuspendLayout();
             this.GrpCurrentlyLinked.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.MnuDataLink.SuspendLayout();
             this.SuspendLayout();
             // 
             // CboLinkFromType
@@ -302,12 +313,102 @@
             this.DOB.ReadOnly = true;
             this.DOB.Width = 175;
             // 
+            // MnuDataLink
+            // 
+            this.MnuDataLink.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.MnuDataLink.ImageScalingSize = new System.Drawing.Size(17, 17);
+            this.MnuDataLink.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMnuDataLinkAddLink,
+            this.TSMnuDataLinkBreak1,
+            this.TSMnuDataLinkRemoveLink,
+            this.TSMnuDataLinkBreak2,
+            this.TSMnuDataLinkClearFrom,
+            this.TSMnuDataLinkBreak3,
+            this.TSMnuDataLinkClearTo,
+            this.TSMnuDataLinkBreak4,
+            this.TSMnuDataLinkClearAll});
+            this.MnuDataLink.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MnuDataLink.Location = new System.Drawing.Point(0, 0);
+            this.MnuDataLink.Name = "MnuDataLink";
+            this.MnuDataLink.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuDataLink.Size = new System.Drawing.Size(1567, 28);
+            this.MnuDataLink.TabIndex = 25;
+            this.MnuDataLink.Text = "menuStrip1";
+            this.MnuDataLink.Visible = false;
+            // 
+            // TSMnuDataLinkAddLink
+            // 
+            this.TSMnuDataLinkAddLink.Name = "TSMnuDataLinkAddLink";
+            this.TSMnuDataLinkAddLink.Size = new System.Drawing.Size(79, 24);
+            this.TSMnuDataLinkAddLink.Text = "Add Link";
+            // 
+            // TSMnuDataLinkBreak1
+            // 
+            this.TSMnuDataLinkBreak1.Enabled = false;
+            this.TSMnuDataLinkBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuDataLinkBreak1.Name = "TSMnuDataLinkBreak1";
+            this.TSMnuDataLinkBreak1.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuDataLinkBreak1.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuDataLinkBreak1.Text = "|";
+            // 
+            // TSMnuDataLinkRemoveLink
+            // 
+            this.TSMnuDataLinkRemoveLink.Name = "TSMnuDataLinkRemoveLink";
+            this.TSMnuDataLinkRemoveLink.Size = new System.Drawing.Size(105, 24);
+            this.TSMnuDataLinkRemoveLink.Text = "Remove Link";
+            // 
+            // TSMnuDataLinkBreak2
+            // 
+            this.TSMnuDataLinkBreak2.Enabled = false;
+            this.TSMnuDataLinkBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuDataLinkBreak2.Name = "TSMnuDataLinkBreak2";
+            this.TSMnuDataLinkBreak2.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuDataLinkBreak2.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuDataLinkBreak2.Text = "|";
+            // 
+            // TSMnuDataLinkClearFrom
+            // 
+            this.TSMnuDataLinkClearFrom.Name = "TSMnuDataLinkClearFrom";
+            this.TSMnuDataLinkClearFrom.Size = new System.Drawing.Size(93, 24);
+            this.TSMnuDataLinkClearFrom.Text = "Clear From";
+            // 
+            // TSMnuDataLinkBreak3
+            // 
+            this.TSMnuDataLinkBreak3.Enabled = false;
+            this.TSMnuDataLinkBreak3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuDataLinkBreak3.Name = "TSMnuDataLinkBreak3";
+            this.TSMnuDataLinkBreak3.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuDataLinkBreak3.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuDataLinkBreak3.Text = "|";
+            // 
+            // TSMnuDataLinkClearTo
+            // 
+            this.TSMnuDataLinkClearTo.Name = "TSMnuDataLinkClearTo";
+            this.TSMnuDataLinkClearTo.Size = new System.Drawing.Size(75, 24);
+            this.TSMnuDataLinkClearTo.Text = "Clear To";
+            // 
+            // TSMnuDataLinkBreak4
+            // 
+            this.TSMnuDataLinkBreak4.Enabled = false;
+            this.TSMnuDataLinkBreak4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuDataLinkBreak4.Name = "TSMnuDataLinkBreak4";
+            this.TSMnuDataLinkBreak4.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuDataLinkBreak4.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuDataLinkBreak4.Text = "|";
+            // 
+            // TSMnuDataLinkClearAll
+            // 
+            this.TSMnuDataLinkClearAll.Name = "TSMnuDataLinkClearAll";
+            this.TSMnuDataLinkClearAll.Size = new System.Drawing.Size(77, 24);
+            this.TSMnuDataLinkClearAll.Text = "Clear All";
+            // 
             // FrmDataLink
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1567, 699);
             this.ControlBox = false;
+            this.Controls.Add(this.MnuDataLink);
             this.Controls.Add(this.GrpCurrentlyLinked);
             this.Controls.Add(this.GrpLinkTo);
             this.Controls.Add(this.GrpLinkFrom);
@@ -327,7 +428,10 @@
             this.GrpLinkTo.PerformLayout();
             this.GrpCurrentlyLinked.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.MnuDataLink.ResumeLayout(false);
+            this.MnuDataLink.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -352,5 +456,15 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Blank;
         private System.Windows.Forms.DataGridViewTextBoxColumn PatientNum;
         private System.Windows.Forms.DataGridViewTextBoxColumn DOB;
+        private System.Windows.Forms.MenuStrip MnuDataLink;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataLinkAddLink;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataLinkBreak1;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataLinkRemoveLink;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataLinkBreak2;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataLinkClearFrom;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataLinkBreak3;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataLinkClearTo;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataLinkBreak4;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataLinkClearAll;
     }
 }

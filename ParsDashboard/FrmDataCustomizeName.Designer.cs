@@ -62,8 +62,15 @@
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.TxtDesc = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.MnuDataCustomizeNames = new System.Windows.Forms.MenuStrip();
+            this.TSMnuDataCustNameSave = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDataCustNameBreak1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDataCustNameRestore = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDataCustNameBreak2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDataCustNameClearAll = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.MnuDataCustomizeNames.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -424,6 +431,7 @@
             this.TxtDesc.Location = new System.Drawing.Point(9, 35);
             this.TxtDesc.Multiline = true;
             this.TxtDesc.Name = "TxtDesc";
+            this.TxtDesc.ReadOnly = true;
             this.TxtDesc.Size = new System.Drawing.Size(519, 76);
             this.TxtDesc.TabIndex = 0;
             this.TxtDesc.Text = "The name of the Doctor";
@@ -437,12 +445,68 @@
             this.label3.Size = new System.Drawing.Size(0, 17);
             this.label3.TabIndex = 1;
             // 
+            // MnuDataCustomizeNames
+            // 
+            this.MnuDataCustomizeNames.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.MnuDataCustomizeNames.ImageScalingSize = new System.Drawing.Size(17, 17);
+            this.MnuDataCustomizeNames.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMnuDataCustNameSave,
+            this.TSMnuDataCustNameBreak1,
+            this.TSMnuDataCustNameRestore,
+            this.TSMnuDataCustNameBreak2,
+            this.TSMnuDataCustNameClearAll});
+            this.MnuDataCustomizeNames.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MnuDataCustomizeNames.Location = new System.Drawing.Point(0, 0);
+            this.MnuDataCustomizeNames.Name = "MnuDataCustomizeNames";
+            this.MnuDataCustomizeNames.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuDataCustomizeNames.Size = new System.Drawing.Size(1603, 28);
+            this.MnuDataCustomizeNames.TabIndex = 21;
+            this.MnuDataCustomizeNames.Text = "menuStrip1";
+            // 
+            // TSMnuDataCustNameSave
+            // 
+            this.TSMnuDataCustNameSave.Name = "TSMnuDataCustNameSave";
+            this.TSMnuDataCustNameSave.Size = new System.Drawing.Size(52, 24);
+            this.TSMnuDataCustNameSave.Text = "Save";
+            // 
+            // TSMnuDataCustNameBreak1
+            // 
+            this.TSMnuDataCustNameBreak1.Enabled = false;
+            this.TSMnuDataCustNameBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuDataCustNameBreak1.Name = "TSMnuDataCustNameBreak1";
+            this.TSMnuDataCustNameBreak1.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuDataCustNameBreak1.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuDataCustNameBreak1.Text = "|";
+            // 
+            // TSMnuDataCustNameRestore
+            // 
+            this.TSMnuDataCustNameRestore.Name = "TSMnuDataCustNameRestore";
+            this.TSMnuDataCustNameRestore.Size = new System.Drawing.Size(128, 24);
+            this.TSMnuDataCustNameRestore.Text = "Restore Original";
+            // 
+            // TSMnuDataCustNameBreak2
+            // 
+            this.TSMnuDataCustNameBreak2.Enabled = false;
+            this.TSMnuDataCustNameBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuDataCustNameBreak2.Name = "TSMnuDataCustNameBreak2";
+            this.TSMnuDataCustNameBreak2.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuDataCustNameBreak2.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuDataCustNameBreak2.Text = "|";
+            // 
+            // TSMnuDataCustNameClearAll
+            // 
+            this.TSMnuDataCustNameClearAll.Name = "TSMnuDataCustNameClearAll";
+            this.TSMnuDataCustNameClearAll.Size = new System.Drawing.Size(77, 24);
+            this.TSMnuDataCustNameClearAll.Text = "Clear All";
+            this.TSMnuDataCustNameClearAll.Click += new System.EventHandler(this.TSMnuDataCustNameClearAll_Click);
+            // 
             // FrmDataCustomizeName
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1603, 793);
             this.ControlBox = false;
+            this.Controls.Add(this.MnuDataCustomizeNames);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -459,7 +523,10 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            this.MnuDataCustomizeNames.ResumeLayout(false);
+            this.MnuDataCustomizeNames.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -499,5 +566,11 @@
         private System.Windows.Forms.TextBox TxtCurrLevel;
         private System.Windows.Forms.TextBox TxtCurrLocation;
         private System.Windows.Forms.TextBox TxtCurrHospital;
+        private System.Windows.Forms.MenuStrip MnuDataCustomizeNames;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataCustNameSave;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataCustNameBreak1;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataCustNameRestore;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataCustNameBreak2;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataCustNameClearAll;
     }
 }

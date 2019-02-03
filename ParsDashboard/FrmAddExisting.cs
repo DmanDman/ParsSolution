@@ -207,11 +207,11 @@ namespace ParsDashboard
 
                 helper.ClearRadioBtn( ctlrdo );
 
-                //  Clear SSN 
-                txt = SubRoutine.FindControl( frm, "TxtSsn" );
-                ctltxt = txt as TextBox;
+                //  Clear SSN                
+                Control mtxt = SubRoutine.FindControl( frm, "MTxtssn");
+                MaskedTextBox ctrlmtxt = mtxt as MaskedTextBox;
 
-                helper.ClearTextBox( ctltxt );
+                helper.ClearMaskedTextBox( ctrlmtxt );
 
             }
 

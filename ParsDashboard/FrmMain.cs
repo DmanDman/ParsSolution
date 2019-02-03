@@ -116,7 +116,7 @@ namespace ParsDashboard
             LblMDLocation.Font = NavSetStyleLbl(LblMDLocation);
             LblMDSurgery.Font = NavSetStyleLbl(LblMDSurgery);
 
-            //  Security
+            //  Security Panel
             LblSecurity.Font = NavSetStyleLbl( LblSecurity );
             LblSecurityUserMgmt.Font = NavSetStyleLbl( LblSecurityUserMgmt );
 
@@ -242,22 +242,32 @@ namespace ParsDashboard
 
         private void LblData_Click(object sender, EventArgs e)
         {
+            //  Hide dashboard menu
+            Control mnu = SubRoutine.FindControl( this, "MnuDashboard" );
+            MenuStrip ctlmnu = mnu as MenuStrip;
+
+            helper.HideControl( ctlmnu );
+
             SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
 
             fNav.ShowForm( fDataCustName );
 
-            NavSetStyleClick( LblDataCustomizeName );           
-
-            SubRtn.ShowHideMenu( this, MnuDataCustomizeNames.Name );
+            NavSetStyleClick( LblDataCustomizeName );                       
         }
 
         private void LblMetaData_Click(object sender, EventArgs e)
         {
-            SubRtn.DashboardAccordian(sender, e, tableLayoutPanel1);
+            //  Hide dashboard menu
+            Control mnu = SubRoutine.FindControl( this, "MnuDashboard" );
+            MenuStrip ctlmnu = mnu as MenuStrip;
+
+            helper.HideControl( ctlmnu );
+
+            SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
 
             fNav.ShowForm( fMD );
-
-            NavSetStyleClick( LblMDComp );
+            
+            SubRtn.NavSetStyleClickSub( LblMDComp ) ;
 
             SubRtn.ShowHideMD( fMD, "GrpComp" );
         }
@@ -289,9 +299,7 @@ namespace ParsDashboard
 
             SubRtn.ShowHideSecurity( fSecurity, "GrpCurrentUser");
 
-            SubRtn.ShowHideSecurity( fSecurity, "GrpAllUsers");
-
-            //SubRtn.ShowHideMenu( this, MnuSecurity.Name );
+            SubRtn.ShowHideSecurity( fSecurity, "GrpAllUsers");            
 
             //  Show security menu
             Control mnu = SubRoutine.FindControl( fSecurity, "MnuSecurity" );
@@ -964,9 +972,7 @@ namespace ParsDashboard
         {
             NavSetStyleClick( LblDataCustomizeName );
 
-            fNav.ShowForm( fDataCustName );
-
-            SubRtn.ShowHideMenu( this, MnuDataCustomizeNames.Name );
+            fNav.ShowForm( fDataCustName );            
         }
 
         private void LblData_MouseEnter(object sender, EventArgs e)
@@ -1018,9 +1024,7 @@ namespace ParsDashboard
         {
             NavSetStyleClick( LblDataDefaultHosp );
 
-            fNav.ShowForm( fDataDefaultHosp );
-
-            SubRtn.ShowHideMenu( this, MnuDataDefaultHosp.Name );
+            fNav.ShowForm( fDataDefaultHosp );            
         }
 
         private void LblDataCustomizeName_MouseEnter(object sender, EventArgs e)
@@ -1100,8 +1104,6 @@ namespace ParsDashboard
 
             fNav.ShowForm( fMD ); 
 
-            SubRtn.ShowHideMenu( this, MnuMD.Name );
-
             SubRtn.ShowHideMD( fMD, "GrpComp" );
         }
 
@@ -1120,8 +1122,6 @@ namespace ParsDashboard
             NavSetStyleClick( LblMDCpt );
              
             fNav.ShowForm( fMD );
-
-            SubRtn.ShowHideMenu( this, MnuMD.Name );
 
             SubRtn.ShowHideMD( fMD, "GrpCpt" );
         }
@@ -1142,8 +1142,6 @@ namespace ParsDashboard
 
             fNav.ShowForm( fMD );
 
-            SubRtn.ShowHideMenu( this, MnuMD.Name );
-
             SubRtn.ShowHideMD( fMD, "GrpImageDesc" );
         }
 
@@ -1162,8 +1160,6 @@ namespace ParsDashboard
             NavSetStyleClick( LblMDDx );
 
             fNav.ShowForm( fMD );
-
-            SubRtn.ShowHideMenu( this, MnuMD.Name );
 
             SubRtn.ShowHideMD( fMD, "GrpDx" );
         }
@@ -1184,8 +1180,6 @@ namespace ParsDashboard
 
             fNav.ShowForm( fMD );
 
-            SubRtn.ShowHideMenu( this, MnuMD.Name );
-
             SubRtn.ShowHideMD( fMD, "GrpDr" );
         }
 
@@ -1204,8 +1198,6 @@ namespace ParsDashboard
             NavSetStyleClick( LblMDFiscalYr );
             
             fNav.ShowForm( fMD );
-
-            SubRtn.ShowHideMenu( this, MnuMD.Name );
 
             SubRtn.ShowHideMD( fMD, "GrpFiscalYr");
         }
@@ -1226,8 +1218,6 @@ namespace ParsDashboard
 
             fNav.ShowForm( fMD );
 
-            SubRtn.ShowHideMenu( this, MnuMD.Name) ;
-
             SubRtn.ShowHideMD( fMD, "GrpHospital" );
         }
 
@@ -1246,8 +1236,6 @@ namespace ParsDashboard
             NavSetStyleClick( LblMDInst );
 
             fNav.ShowForm( fMD );
-
-            SubRtn.ShowHideMenu( this, MnuMD.Name );
 
             SubRtn.ShowHideMD( fMD, "GrpInst" );
         }
@@ -1268,8 +1256,6 @@ namespace ParsDashboard
 
             fNav.ShowForm( fMD );
 
-            SubRtn.ShowHideMenu( this, MnuMD.Name );
-
             SubRtn.ShowHideMD( fMD, "GrpLevel" );
         }
 
@@ -1289,8 +1275,6 @@ namespace ParsDashboard
 
             fNav.ShowForm( fMD );
 
-            SubRtn.ShowHideMenu( this, MnuMD.Name );
-
             SubRtn.ShowHideMD( fMD, "GrpLocation" );
         }
 
@@ -1309,9 +1293,7 @@ namespace ParsDashboard
             NavSetStyleClick( LblMDSurgery );
 
             fNav.ShowForm( fMD );
-
-            SubRtn.ShowHideMenu( this, MnuMD.Name );
-
+            
             SubRtn.ShowHideMD( fMD, "GrpSurgery" );
         }
 
@@ -1604,6 +1586,7 @@ namespace ParsDashboard
 
             foreach (Control subControl in control.Controls)
             {
+
                 Control result = FindControl(form, subControl, name);
 
                 if (result != null)
@@ -1874,12 +1857,72 @@ namespace ParsDashboard
             {
                 if ( f.Tag.ToString() == "FrmMain" )
                 {
+                    //  Dashboard Panel 
                     Control lbl = SubRoutine.FindControl( f, "LblDashboard" );
                     Label ctllbl = lbl as Label;
-
                     ctllbl.Font = NavSetStyleLblSub( ctllbl );
 
-                    break;
+                    //  Meta Data Panel
+                    lbl = SubRoutine.FindControl( f, "LblMetaData" );
+                    ctllbl = lbl as Label;
+                    ctllbl.Font = NavSetStyleLblSub( ctllbl );
+
+                    lbl = SubRoutine.FindControl( f, "LblMDComp" );
+                    ctllbl = lbl as Label;
+                    ctllbl.Font = NavSetStyleLblSub( ctllbl );
+
+                    lbl = SubRoutine.FindControl( f, "LblMDCpt" );
+                    ctllbl = lbl as Label;
+                    ctllbl.Font = NavSetStyleLblSub( ctllbl );
+
+                    lbl = SubRoutine.FindControl( f, "LblMDImageDesc" );
+                    ctllbl = lbl as Label;
+                    ctllbl.Font = NavSetStyleLblSub( ctllbl );
+
+                    lbl = SubRoutine.FindControl( f, "LblMDDx" );
+                    ctllbl = lbl as Label;
+                    ctllbl.Font = NavSetStyleLblSub( ctllbl );
+
+                    lbl = SubRoutine.FindControl( f, "LblMDDr" );
+                    ctllbl = lbl as Label;
+                    ctllbl.Font = NavSetStyleLblSub( ctllbl );
+
+                    lbl = SubRoutine.FindControl( f, "LblMDFiscalYr" );
+                    ctllbl = lbl as Label;
+                    ctllbl.Font = NavSetStyleLblSub( ctllbl );
+
+                    lbl = SubRoutine.FindControl( f, "LblMDHospital" );
+                    ctllbl = lbl as Label;
+                    ctllbl.Font = NavSetStyleLblSub( ctllbl );
+
+                    lbl = SubRoutine.FindControl( f, "LblMDLevel" );
+                    ctllbl = lbl as Label; 
+                    ctllbl.Font = NavSetStyleLblSub( ctllbl );
+
+                    lbl = SubRoutine.FindControl( f, "LblMDInst" );
+                    ctllbl = lbl as Label;
+                    ctllbl.Font = NavSetStyleLblSub( ctllbl );
+
+                    lbl = SubRoutine.FindControl( f, "LblMDLocation" );
+                    ctllbl = lbl as Label;
+                    ctllbl.Font = NavSetStyleLblSub( ctllbl );
+
+                    lbl = SubRoutine.FindControl( f, "LblMDSurgery" );
+                    ctllbl = lbl as Label;
+                    ctllbl.Font = NavSetStyleLblSub( ctllbl );
+
+
+                    //  Security Panel
+                    lbl = SubRoutine.FindControl( f, "LblSecurity" );
+                    ctllbl = lbl as Label;
+                    ctllbl.Font = NavSetStyleLblSub( ctllbl );
+
+                    lbl = SubRoutine.FindControl( f, "LblSecurityUserMgmt" );
+                    ctllbl = lbl as Label;
+                    ctllbl.Font = NavSetStyleLblSub( ctllbl );
+                    
+
+                    //break;
                 }
             }
 

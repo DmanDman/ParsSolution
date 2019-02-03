@@ -31,14 +31,14 @@ namespace ParsDashboard
             SAVEPICTOEXISTING = false;
             SAVEPICONLY = false;
 
+            bool bSearchFound = false;
+            bool bMainFound = false;
+
             fAddImageDesc.ShowDialog();
 
             //  save pics to existing patient
             if ( SAVEPICTOEXISTING == true )
-            {               
-                bool bSearchFound = false;
-                bool bMainFound = false;
-
+            {                              
                 foreach ( Form f in Application.OpenForms )
                 {
                     if ( f.Tag.ToString() == "FrmImageSearchResults" )
@@ -61,6 +61,7 @@ namespace ParsDashboard
                         ctllbl = lbl as Label;
 
                         SubRtn.NavSetStyleClickSub( ctllbl );
+
                         bMainFound = true;
                     }
 
@@ -71,31 +72,80 @@ namespace ParsDashboard
                 }                
             }
 
-            ////  save pics to new patient
-            //if (SAVEPICTONEW == true)
-            //{
-            //    fNav.ShowFormName(fImageSearchResuts.MdiParent.MdiChildren, "FrmImageSearchResults");
+            //  save pics to new patient
+            if ( SAVEPICTONEW == true )
+            {
+                foreach ( Form f in Application.OpenForms )
+                {
+                    if ( f.Tag.ToString() == "FrmImageSearchResults" )
+                    {
+                        f.BringToFront();
+                        bSearchFound = true;
+                    }
 
-            //    SubRtn.DashboardAccordian(LblImages, e, tableLayoutPanel1);
+                    if ( f.Tag.ToString() == "FrmMain" )
+                    {
+                        Control lbl = SubRoutine.FindControl(f, "LblImages");
+                        Label ctllbl = lbl as Label;
 
-            //    NavSetStyleClick(LblImagesSearchResults);
+                        Control pnl = SubRoutine.FindControl( f, "tableLayoutPanel1" );
+                        TableLayoutPanel ctlpnl = pnl as TableLayoutPanel;
 
-            //    SubRtn.ShowHideMenu(this, MnuImageSearchResult.Name);
-            //}
+                        SubRtn.DashboardAccordian( ctllbl, e, ctlpnl );
 
-            ////  save pics only
-            //if (SAVEPICONLY == true)
-            //{
-            //    fNav.ShowFormName(fImageSearchResuts.MdiParent.MdiChildren, "FrmImageSearchResults");
+                        lbl = SubRoutine.FindControl( f, "LblImagesSearchResults" );
+                        ctllbl = lbl as Label;
 
-            //    SubRtn.DashboardAccordian(LblImages, e, tableLayoutPanel1);
+                        SubRtn.NavSetStyleClickSub( ctllbl );
 
-            //    NavSetStyleClick(LblImagesSearchResults);
+                        bMainFound = true;
+                    }
 
-            //    SubRtn.ShowHideMenu(this, MnuImageSearchResult.Name);
-            //}
+                    if ( bSearchFound == true && bMainFound == true )
+                    {
+                        break;
+                    }
+                }
+            }
 
-            fAddImageDesc.Close();
+            //  save pics only
+            if ( SAVEPICONLY == true )
+            {
+                foreach ( Form f in Application.OpenForms )
+                {
+                    if ( f.Tag.ToString() == "FrmImageSearchResults" )
+                    {
+                        f.BringToFront();
+                        bSearchFound = true;
+                    }
+
+                    if ( f.Tag.ToString() == "FrmMain" )
+                    {
+                        Control lbl = SubRoutine.FindControl( f, "LblImages" );
+                        Label ctllbl = lbl as Label;
+
+                        Control pnl = SubRoutine.FindControl( f, "tableLayoutPanel1" );
+                        TableLayoutPanel ctlpnl = pnl as TableLayoutPanel;
+
+                        SubRtn.DashboardAccordian( ctllbl, e, ctlpnl );
+
+                        lbl = SubRoutine.FindControl( f, "LblImagesSearchResults" );
+                        ctllbl = lbl as Label;
+
+                        SubRtn.NavSetStyleClickSub( ctllbl );
+
+                        bMainFound = true;
+                    }
+
+                    if (bSearchFound == true && bMainFound == true)
+                    {
+                        break;
+                    }
+                }
+            }
+             
+        fAddImageDesc.Close();
+
         }
     }
 }

@@ -32,8 +32,15 @@
             this.TxtOrigDr = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.CboMetaSearch = new System.Windows.Forms.ComboBox();
+            this.MnuDataDefaultHosp = new System.Windows.Forms.MenuStrip();
+            this.TSMnuDataDefaultHospSave = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDataDefaultHospBreak1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDataDefaultHospRemoveDefault = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDataDefaultHospBreak2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDataDefaultHospClear = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            this.MnuDataDefaultHosp.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -95,12 +102,67 @@
             this.CboMetaSearch.Sorted = true;
             this.CboMetaSearch.TabIndex = 2;
             // 
+            // MnuDataDefaultHosp
+            // 
+            this.MnuDataDefaultHosp.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.MnuDataDefaultHosp.ImageScalingSize = new System.Drawing.Size(17, 17);
+            this.MnuDataDefaultHosp.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMnuDataDefaultHospSave,
+            this.TSMnuDataDefaultHospBreak1,
+            this.TSMnuDataDefaultHospRemoveDefault,
+            this.TSMnuDataDefaultHospBreak2,
+            this.TSMnuDataDefaultHospClear});
+            this.MnuDataDefaultHosp.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MnuDataDefaultHosp.Location = new System.Drawing.Point(0, 0);
+            this.MnuDataDefaultHosp.Name = "MnuDataDefaultHosp";
+            this.MnuDataDefaultHosp.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuDataDefaultHosp.Size = new System.Drawing.Size(1585, 28);
+            this.MnuDataDefaultHosp.TabIndex = 23;
+            this.MnuDataDefaultHosp.Text = "menuStrip1";
+            // 
+            // TSMnuDataDefaultHospSave
+            // 
+            this.TSMnuDataDefaultHospSave.Name = "TSMnuDataDefaultHospSave";
+            this.TSMnuDataDefaultHospSave.Size = new System.Drawing.Size(52, 24);
+            this.TSMnuDataDefaultHospSave.Text = "Save";
+            // 
+            // TSMnuDataDefaultHospBreak1
+            // 
+            this.TSMnuDataDefaultHospBreak1.Enabled = false;
+            this.TSMnuDataDefaultHospBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuDataDefaultHospBreak1.Name = "TSMnuDataDefaultHospBreak1";
+            this.TSMnuDataDefaultHospBreak1.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuDataDefaultHospBreak1.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuDataDefaultHospBreak1.Text = "|";
+            // 
+            // TSMnuDataDefaultHospRemoveDefault
+            // 
+            this.TSMnuDataDefaultHospRemoveDefault.Name = "TSMnuDataDefaultHospRemoveDefault";
+            this.TSMnuDataDefaultHospRemoveDefault.Size = new System.Drawing.Size(128, 24);
+            this.TSMnuDataDefaultHospRemoveDefault.Text = "Remove Default";
+            // 
+            // TSMnuDataDefaultHospBreak2
+            // 
+            this.TSMnuDataDefaultHospBreak2.Enabled = false;
+            this.TSMnuDataDefaultHospBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuDataDefaultHospBreak2.Name = "TSMnuDataDefaultHospBreak2";
+            this.TSMnuDataDefaultHospBreak2.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuDataDefaultHospBreak2.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuDataDefaultHospBreak2.Text = "|";
+            // 
+            // TSMnuDataDefaultHospClear
+            // 
+            this.TSMnuDataDefaultHospClear.Name = "TSMnuDataDefaultHospClear";
+            this.TSMnuDataDefaultHospClear.Size = new System.Drawing.Size(55, 24);
+            this.TSMnuDataDefaultHospClear.Text = "Clear";
+            // 
             // FrmDataDefaultHosp
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1585, 746);
             this.ControlBox = false;
+            this.Controls.Add(this.MnuDataDefaultHosp);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -116,7 +178,10 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
+            this.MnuDataDefaultHosp.ResumeLayout(false);
+            this.MnuDataDefaultHosp.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -126,5 +191,11 @@
         private System.Windows.Forms.TextBox TxtOrigDr;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ComboBox CboMetaSearch;
+        private System.Windows.Forms.MenuStrip MnuDataDefaultHosp;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataDefaultHospSave;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataDefaultHospBreak1;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataDefaultHospRemoveDefault;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataDefaultHospBreak2;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataDefaultHospClear;
     }
 }

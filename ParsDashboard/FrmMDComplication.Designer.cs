@@ -157,6 +157,12 @@
             this.CboSurgery = new System.Windows.Forms.ComboBox();
             this.GrpSurgeryNew = new System.Windows.Forms.GroupBox();
             this.TxtSurgery = new System.Windows.Forms.TextBox();
+            this.MnuMD = new System.Windows.Forms.MenuStrip();
+            this.TSMnuMDAdd = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuMDBreak1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuMDDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuMDBreak2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuMDRename = new System.Windows.Forms.ToolStripMenuItem();
             this.GrpComp.SuspendLayout();
             this.GrpCompRename.SuspendLayout();
             this.GrpCompComp.SuspendLayout();
@@ -203,6 +209,7 @@
             this.GrpSurgeryRename.SuspendLayout();
             this.GrpSurgerySurgery.SuspendLayout();
             this.GrpSurgeryNew.SuspendLayout();
+            this.MnuMD.SuspendLayout();
             this.SuspendLayout();
             // 
             // GrpComp
@@ -1636,12 +1643,67 @@
             this.TxtSurgery.Size = new System.Drawing.Size(264, 22);
             this.TxtSurgery.TabIndex = 0;
             // 
+            // MnuMD
+            // 
+            this.MnuMD.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.MnuMD.ImageScalingSize = new System.Drawing.Size(17, 17);
+            this.MnuMD.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMnuMDAdd,
+            this.TSMnuMDBreak1,
+            this.TSMnuMDDelete,
+            this.TSMnuMDBreak2,
+            this.TSMnuMDRename});
+            this.MnuMD.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MnuMD.Location = new System.Drawing.Point(0, 0);
+            this.MnuMD.Name = "MnuMD";
+            this.MnuMD.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuMD.Size = new System.Drawing.Size(1531, 28);
+            this.MnuMD.TabIndex = 28;
+            this.MnuMD.Text = "menuStrip1";
+            // 
+            // TSMnuMDAdd
+            // 
+            this.TSMnuMDAdd.Name = "TSMnuMDAdd";
+            this.TSMnuMDAdd.Size = new System.Drawing.Size(53, 24);
+            this.TSMnuMDAdd.Text = "Add ";
+            // 
+            // TSMnuMDBreak1
+            // 
+            this.TSMnuMDBreak1.Enabled = false;
+            this.TSMnuMDBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuMDBreak1.Name = "TSMnuMDBreak1";
+            this.TSMnuMDBreak1.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuMDBreak1.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuMDBreak1.Text = "|";
+            // 
+            // TSMnuMDDelete
+            // 
+            this.TSMnuMDDelete.Name = "TSMnuMDDelete";
+            this.TSMnuMDDelete.Size = new System.Drawing.Size(65, 24);
+            this.TSMnuMDDelete.Text = "Delete";
+            // 
+            // TSMnuMDBreak2
+            // 
+            this.TSMnuMDBreak2.Enabled = false;
+            this.TSMnuMDBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuMDBreak2.Name = "TSMnuMDBreak2";
+            this.TSMnuMDBreak2.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuMDBreak2.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuMDBreak2.Text = "|";
+            // 
+            // TSMnuMDRename
+            // 
+            this.TSMnuMDRename.Name = "TSMnuMDRename";
+            this.TSMnuMDRename.Size = new System.Drawing.Size(75, 24);
+            this.TSMnuMDRename.Text = "Rename";
+            // 
             // FrmMD
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1531, 773);
             this.ControlBox = false;
+            this.Controls.Add(this.MnuMD);
             this.Controls.Add(this.GrpSurgery);
             this.Controls.Add(this.GrpLocation);
             this.Controls.Add(this.GrpLevel);
@@ -1731,7 +1793,10 @@
             this.GrpSurgerySurgery.ResumeLayout(false);
             this.GrpSurgeryNew.ResumeLayout(false);
             this.GrpSurgeryNew.PerformLayout();
+            this.MnuMD.ResumeLayout(false);
+            this.MnuMD.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1859,5 +1924,11 @@
         private System.Windows.Forms.ComboBox CboSurgery;
         private System.Windows.Forms.GroupBox GrpSurgeryNew;
         private System.Windows.Forms.TextBox TxtSurgery;
+        private System.Windows.Forms.MenuStrip MnuMD;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuMDAdd;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuMDBreak1;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuMDDelete;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuMDBreak2;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuMDRename;
     }
 }
