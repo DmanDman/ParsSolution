@@ -45,9 +45,6 @@ namespace ParsDashboard
 
     public class SubRoutineFrmDataCustomizeNames
     {
-        public void ClearDataCustomizeNames()
-        {
-
-        }
+        
     }
 }

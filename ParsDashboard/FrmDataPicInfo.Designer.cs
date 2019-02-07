@@ -34,9 +34,16 @@
             this.CboPicInfo = new System.Windows.Forms.ComboBox();
             this.GrpRename = new System.Windows.Forms.GroupBox();
             this.TxtRename = new System.Windows.Forms.TextBox();
+            this.MnuDataPicInfo = new System.Windows.Forms.MenuStrip();
+            this.TSMnuDataPicInfoAdd = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDataPicInfoBreak1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDataPicInfoDelete = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDataPicInfoBreak2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDataPicInfoRename = new System.Windows.Forms.ToolStripMenuItem();
             this.GrpNew.SuspendLayout();
             this.GrpPicInfo.SuspendLayout();
             this.GrpRename.SuspendLayout();
+            this.MnuDataPicInfo.SuspendLayout();
             this.SuspendLayout();
             // 
             // GrpNew
@@ -118,12 +125,67 @@
             this.TxtRename.Size = new System.Drawing.Size(264, 22);
             this.TxtRename.TabIndex = 0;
             // 
+            // MnuDataPicInfo
+            // 
+            this.MnuDataPicInfo.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.MnuDataPicInfo.ImageScalingSize = new System.Drawing.Size(17, 17);
+            this.MnuDataPicInfo.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMnuDataPicInfoAdd,
+            this.TSMnuDataPicInfoBreak1,
+            this.TSMnuDataPicInfoDelete,
+            this.TSMnuDataPicInfoBreak2,
+            this.TSMnuDataPicInfoRename});
+            this.MnuDataPicInfo.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MnuDataPicInfo.Location = new System.Drawing.Point(0, 0);
+            this.MnuDataPicInfo.Name = "MnuDataPicInfo";
+            this.MnuDataPicInfo.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuDataPicInfo.Size = new System.Drawing.Size(1549, 28);
+            this.MnuDataPicInfo.TabIndex = 26;
+            this.MnuDataPicInfo.Text = "menuStrip1";
+            // 
+            // TSMnuDataPicInfoAdd
+            // 
+            this.TSMnuDataPicInfoAdd.Name = "TSMnuDataPicInfoAdd";
+            this.TSMnuDataPicInfoAdd.Size = new System.Drawing.Size(53, 24);
+            this.TSMnuDataPicInfoAdd.Text = "Add ";
+            // 
+            // TSMnuDataPicInfoBreak1
+            // 
+            this.TSMnuDataPicInfoBreak1.Enabled = false;
+            this.TSMnuDataPicInfoBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuDataPicInfoBreak1.Name = "TSMnuDataPicInfoBreak1";
+            this.TSMnuDataPicInfoBreak1.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuDataPicInfoBreak1.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuDataPicInfoBreak1.Text = "|";
+            // 
+            // TSMnuDataPicInfoDelete
+            // 
+            this.TSMnuDataPicInfoDelete.Name = "TSMnuDataPicInfoDelete";
+            this.TSMnuDataPicInfoDelete.Size = new System.Drawing.Size(65, 24);
+            this.TSMnuDataPicInfoDelete.Text = "Delete";
+            // 
+            // TSMnuDataPicInfoBreak2
+            // 
+            this.TSMnuDataPicInfoBreak2.Enabled = false;
+            this.TSMnuDataPicInfoBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuDataPicInfoBreak2.Name = "TSMnuDataPicInfoBreak2";
+            this.TSMnuDataPicInfoBreak2.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuDataPicInfoBreak2.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuDataPicInfoBreak2.Text = "|";
+            // 
+            // TSMnuDataPicInfoRename
+            // 
+            this.TSMnuDataPicInfoRename.Name = "TSMnuDataPicInfoRename";
+            this.TSMnuDataPicInfoRename.Size = new System.Drawing.Size(75, 24);
+            this.TSMnuDataPicInfoRename.Text = "Rename";
+            // 
             // FrmDataPicInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1549, 652);
             this.ControlBox = false;
+            this.Controls.Add(this.MnuDataPicInfo);
             this.Controls.Add(this.GrpRename);
             this.Controls.Add(this.GrpPicInfo);
             this.Controls.Add(this.GrpNew);
@@ -142,7 +204,10 @@
             this.GrpPicInfo.ResumeLayout(false);
             this.GrpRename.ResumeLayout(false);
             this.GrpRename.PerformLayout();
+            this.MnuDataPicInfo.ResumeLayout(false);
+            this.MnuDataPicInfo.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -154,5 +219,11 @@
         private System.Windows.Forms.ComboBox CboPicInfo;
         private System.Windows.Forms.GroupBox GrpRename;
         private System.Windows.Forms.TextBox TxtRename;
+        private System.Windows.Forms.MenuStrip MnuDataPicInfo;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataPicInfoAdd;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataPicInfoBreak1;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataPicInfoDelete;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataPicInfoBreak2;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDataPicInfoRename;
     }
 }

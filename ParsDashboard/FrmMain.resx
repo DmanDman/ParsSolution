@@ -133,30 +133,21 @@
     <value>660, 21</value>
   </metadata>
   <metadata name="MnuPatient.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>877, 21</value>
+    <value>655, 65</value>
   </metadata>
   <metadata name="MnuImageFilter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>1012, 21</value>
+    <value>505, 64</value>
   </metadata>
   <metadata name="MnuPatientSearch.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>742, 69</value>
-  </metadata>
-  <metadata name="MnuSurgery.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>17, 64</value>
+    <value>321, 64</value>
   </metadata>
   <metadata name="MnuSurgerySearch.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>132, 64</value>
-  </metadata>
-  <metadata name="MnuDataLink.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>331, 65</value>
-  </metadata>
-  <metadata name="MnuDataPicInfo.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>462, 63</value>
+    <value>18, 63</value>
   </metadata>
   <metadata name="MnuMD.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>634, 61</value>
+    <value>204, 64</value>
   </metadata>
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>155</value>
+    <value>122</value>
   </metadata>
 </root>

@@ -334,7 +334,6 @@
             this.MnuDataLink.Size = new System.Drawing.Size(1567, 28);
             this.MnuDataLink.TabIndex = 25;
             this.MnuDataLink.Text = "menuStrip1";
-            this.MnuDataLink.Visible = false;
             // 
             // TSMnuDataLinkAddLink
             // 
@@ -371,6 +370,7 @@
             this.TSMnuDataLinkClearFrom.Name = "TSMnuDataLinkClearFrom";
             this.TSMnuDataLinkClearFrom.Size = new System.Drawing.Size(93, 24);
             this.TSMnuDataLinkClearFrom.Text = "Clear From";
+            this.TSMnuDataLinkClearFrom.Click += new System.EventHandler(this.TSMnuDataLinkClearFrom_Click);
             // 
             // TSMnuDataLinkBreak3
             // 
@@ -386,6 +386,7 @@
             this.TSMnuDataLinkClearTo.Name = "TSMnuDataLinkClearTo";
             this.TSMnuDataLinkClearTo.Size = new System.Drawing.Size(75, 24);
             this.TSMnuDataLinkClearTo.Text = "Clear To";
+            this.TSMnuDataLinkClearTo.Click += new System.EventHandler(this.TSMnuDataLinkClearTo_Click);
             // 
             // TSMnuDataLinkBreak4
             // 
@@ -401,6 +402,7 @@
             this.TSMnuDataLinkClearAll.Name = "TSMnuDataLinkClearAll";
             this.TSMnuDataLinkClearAll.Size = new System.Drawing.Size(77, 24);
             this.TSMnuDataLinkClearAll.Text = "Clear All";
+            this.TSMnuDataLinkClearAll.Click += new System.EventHandler(this.TSMnuDataLinkClearAll_Click);
             // 
             // FrmDataLink
             // 

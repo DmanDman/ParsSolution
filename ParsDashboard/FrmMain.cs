@@ -61,7 +61,17 @@ namespace ParsDashboard
         #endregion
 
 
-        #region Form Sub-Routines  
+        #region Form Sub-Routines
+        
+        public void HideDashMenu()
+        {
+            //  Hide dashboard menu
+            Control mnu = SubRoutine.FindControl( this, "MnuDashboard" );
+            MenuStrip ctlmnu = mnu as MenuStrip;
+
+            helper.HideControl( ctlmnu );
+        }
+
         public void NavSetStyleClick(Label lbl)
         {
             Label lblClick = lbl;
@@ -223,14 +233,14 @@ namespace ParsDashboard
         }
 
         private void LblSurgery_Click(object sender, EventArgs e)
-        {
+        {           
+            HideDashMenu();
+
             SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
 
             fNav.ShowForm( fSurgery );
 
-            NavSetStyleClick( LblSurgery );
-
-            SubRtn.ShowHideMenu( this, MnuSurgery.Name );
+            NavSetStyleClick( LblSurgery );            
         }
 
         private void LblRpt_Click(object sender, EventArgs e)
@@ -241,12 +251,8 @@ namespace ParsDashboard
         }
 
         private void LblData_Click(object sender, EventArgs e)
-        {
-            //  Hide dashboard menu
-            Control mnu = SubRoutine.FindControl( this, "MnuDashboard" );
-            MenuStrip ctlmnu = mnu as MenuStrip;
-
-            helper.HideControl( ctlmnu );
+        {           
+            HideDashMenu();
 
             SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
 
@@ -256,12 +262,8 @@ namespace ParsDashboard
         }
 
         private void LblMetaData_Click(object sender, EventArgs e)
-        {
-            //  Hide dashboard menu
-            Control mnu = SubRoutine.FindControl( this, "MnuDashboard" );
-            MenuStrip ctlmnu = mnu as MenuStrip;
-
-            helper.HideControl( ctlmnu );
+        {           
+            HideDashMenu();
 
             SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
 
@@ -280,13 +282,7 @@ namespace ParsDashboard
 
             NavSetStyleClick( LblEmailPicPicOnly );
 
-            //SubRtn.ShowHideMenu( this, MnuPicOnly.Name );
-
-            //  Hide dashboard menu
-            Control mnu = SubRoutine.FindControl( this, "MnuDashboard" );
-            MenuStrip ctlmnu = mnu as MenuStrip;
-
-            helper.HideControl( ctlmnu );
+            HideDashMenu();
         }
 
         private void LblSecurity_Click(object sender, EventArgs e)
@@ -312,23 +308,19 @@ namespace ParsDashboard
             ctlmnu = mnu as MenuStrip;
 
             helper.HideControl( ctlmnu );
-
-            //  Hide dashboard menu
-            mnu = SubRoutine.FindControl( this, "MnuDashboard" );
-            ctlmnu = mnu as MenuStrip;
-
-            helper.HideControl( ctlmnu );
+                    
+            HideDashMenu();
         }
 
         public void LblDashboard_Click(object sender, EventArgs e)
         {
+            SubRtn.ShowHideMenu(this, MnuDashboard.Name);
+
             SubRtn.DashboardAccordian(sender, e, tableLayoutPanel1);
 
             NavSetStyleClick(LblDashboard);
 
-            fNav.ShowForm(fDashBoard);
-
-            SubRtn.ShowHideMenu(this, MnuDashboard.Name);
+            fNav.ShowForm(fDashBoard);            
         }
 
         private void LblImagesAdd_MouseEnter(object sender, EventArgs e)
@@ -1041,22 +1033,20 @@ namespace ParsDashboard
         {
             NavSetStyleClick( LblDataLink );
 
-            fNav.ShowForm( fDataLink );
-
-            SubRtn.ShowHideMenu( this, MnuDataLink.Name );
+            fNav.ShowForm( fDataLink );            
         }
 
         public void TSMnuDataLinkClearFrom_Click(object sender, EventArgs e)
         {
-            Control cbo = SubRoutine.FindControl( fDataLink, "CboLinkFromType" );
+            Control cbo = SubRoutine.FindControl(fDataLink, "CboLinkFromType");
             ComboBox ctlcbo = cbo as ComboBox;
 
-            helper.ClearComboBoxTxt( ctlcbo );
+            helper.ClearComboBoxTxt(ctlcbo);
 
-            cbo = SubRoutine.FindControl( fDataLink, "CboLinkFromDetail");
+            cbo = SubRoutine.FindControl(fDataLink, "CboLinkFromDetail");
             ctlcbo = cbo as ComboBox;
 
-            helper.ClearComboBox( ctlcbo );
+            helper.ClearComboBox(ctlcbo);
         }
 
         public void TSMnuDataLinkClearTo_Click(object sender, EventArgs e)
@@ -1083,9 +1073,7 @@ namespace ParsDashboard
         {
             NavSetStyleClick( LblDataPicInfo );
 
-            fNav.ShowForm( fDataPicInfo );
-
-            SubRtn.ShowHideMenu( this, MnuDataPicInfo.Name );
+            fNav.ShowForm( fDataPicInfo );            
         }
 
         private void LblMDComp_MouseEnter(object sender, EventArgs e)
