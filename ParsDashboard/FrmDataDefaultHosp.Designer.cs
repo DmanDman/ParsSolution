@@ -31,7 +31,7 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.TxtOrigDr = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.CboMetaSearch = new System.Windows.Forms.ComboBox();
+            this.CboAvaliHosp = new System.Windows.Forms.ComboBox();
             this.MnuDataDefaultHosp = new System.Windows.Forms.MenuStrip();
             this.TSMnuDataDefaultHospSave = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuDataDefaultHospBreak1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -67,7 +67,7 @@
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.CboMetaSearch);
+            this.groupBox2.Controls.Add(this.CboAvaliHosp);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(303, 46);
             this.groupBox2.Name = "groupBox2";
@@ -76,17 +76,17 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Select Avaliable Hospital";
             // 
-            // CboMetaSearch
+            // CboAvaliHosp
             // 
-            this.CboMetaSearch.AutoCompleteCustomSource.AddRange(new string[] {
+            this.CboAvaliHosp.AutoCompleteCustomSource.AddRange(new string[] {
             "St Francis Hops BG\n",
             "St Joseph Hospital\n",
             "St Vincent 86th St",
             "\nSt Vincent Carmel"});
-            this.CboMetaSearch.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
-            this.CboMetaSearch.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
-            this.CboMetaSearch.FormattingEnabled = true;
-            this.CboMetaSearch.Items.AddRange(new object[] {
+            this.CboAvaliHosp.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
+            this.CboAvaliHosp.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.CboAvaliHosp.FormattingEnabled = true;
+            this.CboAvaliHosp.Items.AddRange(new object[] {
             "Lamin",
             "Laminar Screws",
             "Laminectomy",
@@ -96,11 +96,11 @@
             "Laminectomy/Foraminotomy/Facetectomy",
             "Laminoforaminotomy",
             "Laminoplasty"});
-            this.CboMetaSearch.Location = new System.Drawing.Point(6, 55);
-            this.CboMetaSearch.Name = "CboMetaSearch";
-            this.CboMetaSearch.Size = new System.Drawing.Size(232, 24);
-            this.CboMetaSearch.Sorted = true;
-            this.CboMetaSearch.TabIndex = 2;
+            this.CboAvaliHosp.Location = new System.Drawing.Point(6, 55);
+            this.CboAvaliHosp.Name = "CboAvaliHosp";
+            this.CboAvaliHosp.Size = new System.Drawing.Size(232, 24);
+            this.CboAvaliHosp.Sorted = true;
+            this.CboAvaliHosp.TabIndex = 2;
             // 
             // MnuDataDefaultHosp
             // 
@@ -155,6 +155,7 @@
             this.TSMnuDataDefaultHospClear.Name = "TSMnuDataDefaultHospClear";
             this.TSMnuDataDefaultHospClear.Size = new System.Drawing.Size(55, 24);
             this.TSMnuDataDefaultHospClear.Text = "Clear";
+            this.TSMnuDataDefaultHospClear.Click += new System.EventHandler(this.TSMnuDataDefaultHospClear_Click);
             // 
             // FrmDataDefaultHosp
             // 
@@ -190,7 +191,7 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox TxtOrigDr;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.ComboBox CboMetaSearch;
+        private System.Windows.Forms.ComboBox CboAvaliHosp;
         private System.Windows.Forms.MenuStrip MnuDataDefaultHosp;
         private System.Windows.Forms.ToolStripMenuItem TSMnuDataDefaultHospSave;
         private System.Windows.Forms.ToolStripMenuItem TSMnuDataDefaultHospBreak1;

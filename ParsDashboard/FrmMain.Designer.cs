@@ -337,7 +337,7 @@
             this.PnlData.Margin = new System.Windows.Forms.Padding(0);
             this.PnlData.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlData.Name = "PnlData";
-            this.PnlData.Size = new System.Drawing.Size(200, 71);
+            this.PnlData.Size = new System.Drawing.Size(200, 166);
             this.PnlData.TabIndex = 7;
             this.PnlData.Tag = "Collapsed";
             // 
@@ -482,7 +482,7 @@
             this.PnlMetaData.Controls.Add(this.LblMDCpt);
             this.PnlMetaData.Controls.Add(this.LblMDComp);
             this.PnlMetaData.Controls.Add(this.LblMetaData);
-            this.PnlMetaData.Location = new System.Drawing.Point(2, 421);
+            this.PnlMetaData.Location = new System.Drawing.Point(2, 516);
             this.PnlMetaData.Margin = new System.Windows.Forms.Padding(0);
             this.PnlMetaData.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlMetaData.Name = "PnlMetaData";
@@ -656,7 +656,7 @@
             this.PnlSecurity.Controls.Add(this.label1);
             this.PnlSecurity.Controls.Add(this.LblSecurityUserMgmt);
             this.PnlSecurity.Controls.Add(this.LblSecurity);
-            this.PnlSecurity.Location = new System.Drawing.Point(2, 561);
+            this.PnlSecurity.Location = new System.Drawing.Point(2, 656);
             this.PnlSecurity.Margin = new System.Windows.Forms.Padding(0);
             this.PnlSecurity.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlSecurity.Name = "PnlSecurity";
@@ -868,7 +868,7 @@
             this.PnlEmailPic.Controls.Add(this.LblEmailPicPicInfo);
             this.PnlEmailPic.Controls.Add(this.LblEmailPicPicOnly);
             this.PnlEmailPic.Controls.Add(this.LblEmailPic);
-            this.PnlEmailPic.Location = new System.Drawing.Point(2, 498);
+            this.PnlEmailPic.Location = new System.Drawing.Point(2, 593);
             this.PnlEmailPic.Margin = new System.Windows.Forms.Padding(0);
             this.PnlEmailPic.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlEmailPic.Name = "PnlEmailPic";

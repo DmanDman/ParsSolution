@@ -12,9 +12,25 @@ namespace ParsDashboard
 {
     public partial class FrmDataDefaultHosp : Form
     {
+        Helper helper = new Helper();
+
+        #region Form SubRoutines
+
+        public void ClearAvaliableHospital()
+        {
+            helper.ClearComboBoxTxt( CboAvaliHosp );            
+        }
+
+        #endregion
+
         public FrmDataDefaultHosp()
         {
             InitializeComponent();
+        }
+
+        private void TSMnuDataDefaultHospClear_Click(object sender, EventArgs e)
+        {
+            ClearAvaliableHospital();
         }
     }
 }
