@@ -21,6 +21,63 @@ namespace ParsDashboard
             public static int ClearType { get; set; }
         }
 
+        #region Form SubRoutines
+        public void SurgeryClearType()
+        {
+            //  clear surgery dates
+            if ( SurgerySearchVar.ClearType == 0 )
+            {
+                helper.SetDateToToday( DtStart );
+
+                helper.SetDateToToday( DtEnd );
+            }
+
+            //  clear fiscal year
+            if ( SurgerySearchVar.ClearType == 1 )
+            {
+                helper.SetDateToToday( DtFiscalStart );
+
+                helper.SetDateToToday( DtFiscalEnd );
+            }
+        }
+
+        public void ClearItems()
+        {
+            //  clear doctor
+            helper.ClearListBoxes( LstDr, LstDrFilter );
+
+            //  clear hospital
+            helper.ClearListBoxes( LstHospital, LstHospitalFilter );
+
+            //  clear location
+            helper.ClearListBoxes( LstLocation, LstLocationFIlter );
+
+            //  clear level
+            helper.ClearListBoxes( LstLevel, LstLevelFilter );
+
+            //  clear cpt
+            helper.ClearListBoxes( LstCpt, LstCptFilter );
+
+            //  clear Dx
+            helper.ClearListBoxes( LstDx, LstDxFilter );
+
+            //  clear surgery
+            helper.ClearListBoxes( LstSurgery, LstSurgeryFilter );
+
+            //  clear instrumentation
+            helper.ClearListBoxes( LstInst, LstInstFilter );
+
+            //  clear comp
+            helper.ClearListBoxes( LstComp, LstCompFilter );
+
+            //  clear PicInfo
+            helper.ClearListBoxes( LstPicInfo, LstPicInfoFilter );
+        }
+
+        #endregion
+
+
+
         public FrmSurgerySearch()
         {
             InitializeComponent();
@@ -174,6 +231,27 @@ namespace ParsDashboard
         private void RdoFiscalEqualTo_CheckedChanged_1(object sender, EventArgs e)
         {
             SubRtn.DateRdoBtn( RdoFiscalEqualTo, DtFiscalStart, DtFiscalEnd, LblAndFiscalYear, true, false, false );
+        }
+
+        private void TSMnuSurgerySrchClearSurgery_Click(object sender, EventArgs e)
+        {
+            //  dates
+            SurgeryClearType();
+        }
+
+        private void TSMnuSurgerySrchClearItems_Click(object sender, EventArgs e)
+        {
+            //  search items
+            ClearItems();
+        }
+
+        private void TSMnuSurgerySrchClearAll_Click(object sender, EventArgs e)
+        {
+            //  dates
+            SurgeryClearType();
+
+            //  search items
+            ClearItems();
         }
     }
 

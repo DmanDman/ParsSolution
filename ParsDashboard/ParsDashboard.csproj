@@ -175,6 +175,18 @@
     <Compile Include="FrmPicOnly.Designer.cs">
       <DependentUpon>FrmPicOnly.cs</DependentUpon>
     </Compile>
+    <Compile Include="FrmRptDynamic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRptDynamic.Designer.cs">
+      <DependentUpon>FrmRptDynamic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmRptStatic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmRptStatic.Designer.cs">
+      <DependentUpon>FrmRptStatic.cs</DependentUpon>
+    </Compile>
     <Compile Include="FrmSecurity.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -254,6 +266,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPicOnly.resx">
       <DependentUpon>FrmPicOnly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRptDynamic.resx">
+      <DependentUpon>FrmRptDynamic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmRptStatic.resx">
+      <DependentUpon>FrmRptStatic.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmSecurity.resx">
       <DependentUpon>FrmSecurity.cs</DependentUpon>

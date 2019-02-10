@@ -34,6 +34,10 @@ namespace ParsDashboard
         FrmSurgery fSurgery = new FrmSurgery();
         public FrmSurgerySearch fSurgerySearch = new FrmSurgerySearch();
 
+        //  Reports
+        FrmRptStatic fRptStatic = new FrmRptStatic();
+        FrmRptDynamic fRptDynamic = new FrmRptDynamic();
+
         //  Data
         FrmDataCustomizeName fDataCustName = new FrmDataCustomizeName();
         FrmDataDefaultHosp fDataDefaultHosp = new FrmDataDefaultHosp();
@@ -101,9 +105,9 @@ namespace ParsDashboard
             LblSurgerySearch.Font = NavSetStyleLbl(LblSurgerySearch);
 
             //  Report Panel
-            LblRpt.Font = NavSetStyleLbl(LblRpt);
-            LblSurgeryAdd.Font = NavSetStyleLbl(LblSurgeryAdd);
-            LblSurgerySearch.Font = NavSetStyleLbl(LblSurgerySearch);
+            LblRpt.Font = NavSetStyleLbl( LblRpt );
+            LblRptStatic.Font = NavSetStyleLbl( LblRptStatic );
+            LblRptDynamic.Font = NavSetStyleLbl( LblRptDynamic );
 
             //  Data Panel
             LblData.Font = NavSetStyleLbl(LblData);
@@ -131,7 +135,7 @@ namespace ParsDashboard
             LblSecurityUserMgmt.Font = NavSetStyleLbl( LblSecurityUserMgmt );
 
             //  Set font bold
-            if (lblClick.Font.Bold != true)
+            if ( lblClick.Font.Bold != true )
             {
                 lbl.Font = new Font(lbl.Font.Name, lbl.Font.SizeInPoints, FontStyle.Bold);
             }
@@ -204,6 +208,9 @@ namespace ParsDashboard
 
             SubRtn.Load_All_Forms( fSurgery, this );
             SubRtn.Load_All_Forms( fSurgerySearch, this );
+
+            SubRtn.Load_All_Forms( fRptStatic, this );
+            SubRtn.Load_All_Forms( fRptDynamic, this );
 
             SubRtn.Load_All_Forms( fDataCustName, this );
             SubRtn.Load_All_Forms( fDataDefaultHosp, this) ;
@@ -915,16 +922,14 @@ namespace ParsDashboard
 
         private void LblSurgeryAdd_Click(object sender, EventArgs e)
         {
-            NavSetStyleClick(LblSurgeryAdd);
+            NavSetStyleClick( LblSurgeryAdd );
         }
 
         private void LblSurgerySearch_Click(object sender, EventArgs e)
         {
-            NavSetStyleClick(LblSurgerySearch);
+            NavSetStyleClick( LblSurgerySearch );
 
-            fNav.ShowForm(fSurgerySearch);
-
-            SubRtn.ShowHideMenu(this, MnuSurgerySearch.Name);
+            fNav.ShowForm( fSurgerySearch );            
         }
 
         private void TSMnuSurgerySrchClearSurgery_Click(object sender, EventArgs e)
@@ -1308,6 +1313,8 @@ namespace ParsDashboard
         private void LblRptStatic_Click(object sender, EventArgs e)
         {
             NavSetStyleClick( LblRptStatic );
+
+            fNav.ShowForm( fRptStatic );
         }
 
         private void LblRptStatic_MouseEnter(object sender, EventArgs e)
@@ -1323,6 +1330,8 @@ namespace ParsDashboard
         private void LblRptDynamic_Click(object sender, EventArgs e)
         {
             NavSetStyleClick( LblRptDynamic );
+
+            fNav.ShowForm( fRptDynamic );
         }
 
         private void LblRptDynamic_MouseEnter(object sender, EventArgs e)
@@ -1349,9 +1358,7 @@ namespace ParsDashboard
         {
             NavSetStyleClick( LblEmailPicPicOnly );
 
-            fNav.ShowForm( fPicOnly );
-
-            //SubRtn.ShowHideMenu( this, MnuPicOnly.Name );
+            fNav.ShowForm( fPicOnly );           
         }
 
         private void LblEmailPic_MouseEnter(object sender, EventArgs e)

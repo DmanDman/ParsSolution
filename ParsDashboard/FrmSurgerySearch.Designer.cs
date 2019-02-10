@@ -90,6 +90,14 @@
             this.RdoFiscalEqualTo = new System.Windows.Forms.RadioButton();
             this.RdoFiscalGreater = new System.Windows.Forms.RadioButton();
             this.RdoFiscalLess = new System.Windows.Forms.RadioButton();
+            this.MnuSurgerySearch = new System.Windows.Forms.MenuStrip();
+            this.TSMnuSurgerySrchSearch = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuSurgerySrchBreak1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuSurgerySrchClearSurgery = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuSurgerySrchBreak2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuSurgerySrchClearItems = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuSurgerySrchBreak3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuSurgerySrchClearAll = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox4.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.GrpSurgery.SuspendLayout();
@@ -98,6 +106,7 @@
             this.GrpDate.SuspendLayout();
             this.TabFiscalYear.SuspendLayout();
             this.GrpFiscalYear.SuspendLayout();
+            this.MnuSurgerySearch.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox4
@@ -904,12 +913,87 @@
             this.RdoFiscalLess.UseVisualStyleBackColor = true;
             this.RdoFiscalLess.CheckedChanged += new System.EventHandler(this.RdoFiscalLess_CheckedChanged);
             // 
+            // MnuSurgerySearch
+            // 
+            this.MnuSurgerySearch.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.MnuSurgerySearch.ImageScalingSize = new System.Drawing.Size(17, 17);
+            this.MnuSurgerySearch.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMnuSurgerySrchSearch,
+            this.TSMnuSurgerySrchBreak1,
+            this.TSMnuSurgerySrchClearSurgery,
+            this.TSMnuSurgerySrchBreak2,
+            this.TSMnuSurgerySrchClearItems,
+            this.TSMnuSurgerySrchBreak3,
+            this.TSMnuSurgerySrchClearAll});
+            this.MnuSurgerySearch.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MnuSurgerySearch.Location = new System.Drawing.Point(0, 0);
+            this.MnuSurgerySearch.Name = "MnuSurgerySearch";
+            this.MnuSurgerySearch.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuSurgerySearch.Size = new System.Drawing.Size(1368, 28);
+            this.MnuSurgerySearch.TabIndex = 19;
+            this.MnuSurgerySearch.Text = "menuStrip1";
+            // 
+            // TSMnuSurgerySrchSearch
+            // 
+            this.TSMnuSurgerySrchSearch.Name = "TSMnuSurgerySrchSearch";
+            this.TSMnuSurgerySrchSearch.Size = new System.Drawing.Size(65, 24);
+            this.TSMnuSurgerySrchSearch.Text = "Search";
+            // 
+            // TSMnuSurgerySrchBreak1
+            // 
+            this.TSMnuSurgerySrchBreak1.Enabled = false;
+            this.TSMnuSurgerySrchBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuSurgerySrchBreak1.Name = "TSMnuSurgerySrchBreak1";
+            this.TSMnuSurgerySrchBreak1.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuSurgerySrchBreak1.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuSurgerySrchBreak1.Text = "|";
+            // 
+            // TSMnuSurgerySrchClearSurgery
+            // 
+            this.TSMnuSurgerySrchClearSurgery.Name = "TSMnuSurgerySrchClearSurgery";
+            this.TSMnuSurgerySrchClearSurgery.Size = new System.Drawing.Size(109, 24);
+            this.TSMnuSurgerySrchClearSurgery.Text = "Clear Surgery";
+            this.TSMnuSurgerySrchClearSurgery.Click += new System.EventHandler(this.TSMnuSurgerySrchClearSurgery_Click);
+            // 
+            // TSMnuSurgerySrchBreak2
+            // 
+            this.TSMnuSurgerySrchBreak2.Enabled = false;
+            this.TSMnuSurgerySrchBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuSurgerySrchBreak2.Name = "TSMnuSurgerySrchBreak2";
+            this.TSMnuSurgerySrchBreak2.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuSurgerySrchBreak2.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuSurgerySrchBreak2.Text = "|";
+            // 
+            // TSMnuSurgerySrchClearItems
+            // 
+            this.TSMnuSurgerySrchClearItems.Name = "TSMnuSurgerySrchClearItems";
+            this.TSMnuSurgerySrchClearItems.Size = new System.Drawing.Size(95, 24);
+            this.TSMnuSurgerySrchClearItems.Text = "Clear Items";
+            this.TSMnuSurgerySrchClearItems.Click += new System.EventHandler(this.TSMnuSurgerySrchClearItems_Click);
+            // 
+            // TSMnuSurgerySrchBreak3
+            // 
+            this.TSMnuSurgerySrchBreak3.Enabled = false;
+            this.TSMnuSurgerySrchBreak3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuSurgerySrchBreak3.Name = "TSMnuSurgerySrchBreak3";
+            this.TSMnuSurgerySrchBreak3.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuSurgerySrchBreak3.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuSurgerySrchBreak3.Text = "|";
+            // 
+            // TSMnuSurgerySrchClearAll
+            // 
+            this.TSMnuSurgerySrchClearAll.Name = "TSMnuSurgerySrchClearAll";
+            this.TSMnuSurgerySrchClearAll.Size = new System.Drawing.Size(77, 24);
+            this.TSMnuSurgerySrchClearAll.Text = "Clear All";
+            this.TSMnuSurgerySrchClearAll.Click += new System.EventHandler(this.TSMnuSurgerySrchClearAll_Click);
+            // 
             // FrmSurgerySearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1368, 839);
             this.ControlBox = false;
+            this.Controls.Add(this.MnuSurgerySearch);
             this.Controls.Add(this.GrpSurgery);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
@@ -937,7 +1021,10 @@
             this.TabFiscalYear.ResumeLayout(false);
             this.GrpFiscalYear.ResumeLayout(false);
             this.GrpFiscalYear.PerformLayout();
+            this.MnuSurgerySearch.ResumeLayout(false);
+            this.MnuSurgerySearch.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -1004,5 +1091,13 @@
         private System.Windows.Forms.RadioButton RdoFiscalEqualTo;
         private System.Windows.Forms.RadioButton RdoFiscalGreater;
         private System.Windows.Forms.RadioButton RdoFiscalLess;
+        private System.Windows.Forms.MenuStrip MnuSurgerySearch;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuSurgerySrchSearch;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuSurgerySrchBreak1;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuSurgerySrchClearSurgery;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuSurgerySrchBreak2;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuSurgerySrchClearItems;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuSurgerySrchBreak3;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuSurgerySrchClearAll;
     }
 }
