@@ -232,11 +232,9 @@ namespace ParsDashboard
         {
             SubRtn.DashboardAccordian(sender, e, tableLayoutPanel1);
 
-            fNav.ShowForm(fPatient);
+            fNav.ShowForm( fPatient );
 
-            NavSetStyleClick(LblPatient);
-
-            SubRtn.ShowHideMenu(this, MnuPatient.Name);
+            NavSetStyleClick( LblPatient );          
         }
 
         private void LblSurgery_Click(object sender, EventArgs e)
@@ -582,16 +580,14 @@ namespace ParsDashboard
         {
             fNav.ShowForm( fPatientSearch );
 
-            NavSetStyleClick( LlbPatientSearch );
-
-            SubRtn.ShowHideMenu( this, MnuPatientSearch.Name );
+            NavSetStyleClick( LlbPatientSearch );            
         }
 
         private void LblPatientFilter_Click(object sender, EventArgs e)
         {
             //fNav.ShowForm( X );
 
-            NavSetStyleClick(LblPatientFilter);
+            NavSetStyleClick( LblPatientFilter );
         }
 
         private void TSMnuSearch_Click(object sender, EventArgs e)
@@ -671,12 +667,12 @@ namespace ParsDashboard
 
         private void LblPatientSearchToImage_Click(object sender, EventArgs e)
         {
-            NavSetStyleClick(LblPatientSearchToImage);
+            NavSetStyleClick( LblPatientSearchToImage );
         }
 
         private void LblPatientSearchResults_Click(object sender, EventArgs e)
         {
-            NavSetStyleClick(LblPatientSearchResults);
+            NavSetStyleClick( LblPatientSearchResults );
         }
 
         private void TSMnuFilterClearChecks_Click(object sender, EventArgs e)
@@ -861,12 +857,7 @@ namespace ParsDashboard
                 rdo = SubRoutine.FindControl(fPatientSearch, "RdoFemale");
                 ctlrdo = rdo as RadioButton;
 
-                helper.ClearRadioBtn(ctlrdo);
-
-                txt = SubRoutine.FindControl(fPatientSearch, "TxtSsn");
-                ctltxt = txt as TextBox;
-
-                helper.ClearTextBox(ctltxt);
+                helper.ClearRadioBtn(ctlrdo);               
             }
 
             //  clear home information
@@ -890,22 +881,7 @@ namespace ParsDashboard
                 Control cbo = SubRoutine.FindControl(fPatientSearch, "CboState");
                 ComboBox ctlcbo = cbo as ComboBox;
 
-                helper.ClearComboBoxTxt(ctlcbo);
-
-                txt = SubRoutine.FindControl(fPatientSearch, "TxtZip");
-                ctltxt = txt as TextBox;
-
-                helper.ClearTextBox(ctltxt);
-
-                txt = SubRoutine.FindControl(fPatientSearch, "TxtPhone");
-                ctltxt = txt as TextBox;
-
-                helper.ClearTextBox(ctltxt);
-
-                txt = SubRoutine.FindControl(fPatientSearch, "TxtCell");
-                ctltxt = txt as TextBox;
-
-                helper.ClearTextBox(ctltxt);
+                helper.ClearComboBoxTxt(ctlcbo);               
             }
         }
 

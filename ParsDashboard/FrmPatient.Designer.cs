@@ -60,6 +60,10 @@
             this.TxtImagesCount = new System.Windows.Forms.TextBox();
             this.LblGrpImageDesc = new System.Windows.Forms.Label();
             this.LstImages = new System.Windows.Forms.ListView();
+            this.MnuPatient = new System.Windows.Forms.MenuStrip();
+            this.TSMnuPatientDisplay = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuPatientBreak1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuPatientClear = new System.Windows.Forms.ToolStripMenuItem();
             this.GrpImage.SuspendLayout();
             this.TabDisplay.SuspendLayout();
             this.tabLastName.SuspendLayout();
@@ -67,6 +71,7 @@
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.GrpImages.SuspendLayout();
+            this.MnuPatient.SuspendLayout();
             this.SuspendLayout();
             // 
             // GrpImage
@@ -538,12 +543,51 @@
             this.LstImages.TabIndex = 7;
             this.LstImages.UseCompatibleStateImageBehavior = false;
             // 
+            // MnuPatient
+            // 
+            this.MnuPatient.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.MnuPatient.ImageScalingSize = new System.Drawing.Size(17, 17);
+            this.MnuPatient.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMnuPatientDisplay,
+            this.TSMnuPatientBreak1,
+            this.TSMnuPatientClear});
+            this.MnuPatient.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MnuPatient.Location = new System.Drawing.Point(0, 0);
+            this.MnuPatient.Name = "MnuPatient";
+            this.MnuPatient.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuPatient.Size = new System.Drawing.Size(1556, 28);
+            this.MnuPatient.TabIndex = 12;
+            this.MnuPatient.Text = "menuStrip1";
+            // 
+            // TSMnuPatientDisplay
+            // 
+            this.TSMnuPatientDisplay.Name = "TSMnuPatientDisplay";
+            this.TSMnuPatientDisplay.Size = new System.Drawing.Size(70, 24);
+            this.TSMnuPatientDisplay.Text = "Display";
+            // 
+            // TSMnuPatientBreak1
+            // 
+            this.TSMnuPatientBreak1.Enabled = false;
+            this.TSMnuPatientBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuPatientBreak1.Name = "TSMnuPatientBreak1";
+            this.TSMnuPatientBreak1.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuPatientBreak1.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuPatientBreak1.Text = "|";
+            // 
+            // TSMnuPatientClear
+            // 
+            this.TSMnuPatientClear.Name = "TSMnuPatientClear";
+            this.TSMnuPatientClear.Size = new System.Drawing.Size(55, 24);
+            this.TSMnuPatientClear.Text = "Clear";
+            this.TSMnuPatientClear.Click += new System.EventHandler(this.TSMnuPatientClear_Click);
+            // 
             // FrmPatient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1556, 839);
             this.ControlBox = false;
+            this.Controls.Add(this.MnuPatient);
             this.Controls.Add(this.GrpImages);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.GrpImage);
@@ -571,7 +615,10 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.GrpImages.ResumeLayout(false);
             this.GrpImages.PerformLayout();
+            this.MnuPatient.ResumeLayout(false);
+            this.MnuPatient.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -609,5 +656,9 @@
         private System.Windows.Forms.TextBox TxtImagesCount;
         private System.Windows.Forms.Label LblGrpImageDesc;
         private System.Windows.Forms.ListView LstImages;
+        private System.Windows.Forms.MenuStrip MnuPatient;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuPatientDisplay;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuPatientBreak1;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuPatientClear;
     }
 }

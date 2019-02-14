@@ -247,8 +247,16 @@ namespace ParsDashboard
 
         private void TSMnuSurgerySrchClearAll_Click(object sender, EventArgs e)
         {
+            var holdType = SurgerySearchVar.ClearType;
+
             //  dates
+            SurgerySearchVar.ClearType = 0;
             SurgeryClearType();
+
+            SurgerySearchVar.ClearType = 1;
+            SurgeryClearType();
+
+            SurgerySearchVar.ClearType = holdType;
 
             //  search items
             ClearItems();

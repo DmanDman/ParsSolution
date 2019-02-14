@@ -14,6 +14,31 @@ namespace ParsDashboard
     {
         FormNav frmNav = new FormNav();
 
+        Helper helper = new Helper();
+
+        #region Form SubRoutines
+
+        public void Clear()
+        {
+            //  clear last name
+            if ( PatientVar.ClearType == 0 )
+            {
+                helper.ClearUpDwn( UpDwnLastNameLetter );
+
+                helper.ClearComboBox( CboFullName );
+            }
+
+            //  clear date
+            if ( PatientVar.ClearType == 1 )
+            {
+                helper.ClearUpDwn( UpDwnYear );
+
+                helper.ClearUpDwn( UpDwnMonth );
+            }
+        }
+
+        #endregion
+
         public static class PatientVar
         {
             public static int ClearType { get; set; }
@@ -49,7 +74,14 @@ namespace ParsDashboard
 
         private void TabDisplay_SelectedIndexChanged(object sender, EventArgs e)
         {
+            //  set the tab number: 0 last name; 1 date
             PatientVar.ClearType = TabDisplay.SelectedIndex;
+        }
+
+        private void TSMnuPatientClear_Click(object sender, EventArgs e)
+        {
+            //  clear form
+            Clear();
         }
     }
 }

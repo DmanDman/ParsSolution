@@ -31,6 +31,7 @@
             this.TabSearch = new System.Windows.Forms.TabControl();
             this.TabPersonal = new System.Windows.Forms.TabPage();
             this.GrpBoxPersonal = new System.Windows.Forms.GroupBox();
+            this.MTxtssn = new System.Windows.Forms.MaskedTextBox();
             this.TxtPatientNum = new System.Windows.Forms.TextBox();
             this.LblPatientNum = new System.Windows.Forms.Label();
             this.LblSSN = new System.Windows.Forms.Label();
@@ -49,6 +50,9 @@
             this.TxtLastName = new System.Windows.Forms.TextBox();
             this.TabHome = new System.Windows.Forms.TabPage();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.MTxtZip = new System.Windows.Forms.MaskedTextBox();
+            this.MTxtPhone = new System.Windows.Forms.MaskedTextBox();
+            this.MTxtCell = new System.Windows.Forms.MaskedTextBox();
             this.LblCell = new System.Windows.Forms.Label();
             this.CboState = new System.Windows.Forms.ComboBox();
             this.LblPhone = new System.Windows.Forms.Label();
@@ -60,15 +64,16 @@
             this.TxtCity = new System.Windows.Forms.TextBox();
             this.TxtAddress2 = new System.Windows.Forms.TextBox();
             this.TxtAddress1 = new System.Windows.Forms.TextBox();
-            this.MTxtssn = new System.Windows.Forms.MaskedTextBox();
-            this.MTxtCell = new System.Windows.Forms.MaskedTextBox();
-            this.MTxtPhone = new System.Windows.Forms.MaskedTextBox();
-            this.MTxtZip = new System.Windows.Forms.MaskedTextBox();
+            this.MnuPatientSearch = new System.Windows.Forms.MenuStrip();
+            this.TSMnuPatientSrchSearch = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuBlank1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuPatientSrchClear = new System.Windows.Forms.ToolStripMenuItem();
             this.TabSearch.SuspendLayout();
             this.TabPersonal.SuspendLayout();
             this.GrpBoxPersonal.SuspendLayout();
             this.TabHome.SuspendLayout();
             this.groupBox1.SuspendLayout();
+            this.MnuPatientSearch.SuspendLayout();
             this.SuspendLayout();
             // 
             // TabSearch
@@ -120,6 +125,14 @@
             this.GrpBoxPersonal.TabStop = false;
             this.GrpBoxPersonal.Tag = "GrpBoxPersonal";
             this.GrpBoxPersonal.Text = "Personal Info";
+            // 
+            // MTxtssn
+            // 
+            this.MTxtssn.Location = new System.Drawing.Point(123, 327);
+            this.MTxtssn.Mask = "000-00-0000";
+            this.MTxtssn.Name = "MTxtssn";
+            this.MTxtssn.Size = new System.Drawing.Size(161, 22);
+            this.MTxtssn.TabIndex = 16;
             // 
             // TxtPatientNum
             // 
@@ -328,6 +341,30 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Tag = "GrpBoxPersonal";
             this.groupBox1.Text = "Home";
+            // 
+            // MTxtZip
+            // 
+            this.MTxtZip.Location = new System.Drawing.Point(123, 199);
+            this.MTxtZip.Mask = "00000";
+            this.MTxtZip.Name = "MTxtZip";
+            this.MTxtZip.Size = new System.Drawing.Size(161, 22);
+            this.MTxtZip.TabIndex = 9;
+            // 
+            // MTxtPhone
+            // 
+            this.MTxtPhone.Location = new System.Drawing.Point(123, 243);
+            this.MTxtPhone.Mask = "(000) 000-0000";
+            this.MTxtPhone.Name = "MTxtPhone";
+            this.MTxtPhone.Size = new System.Drawing.Size(161, 22);
+            this.MTxtPhone.TabIndex = 11;
+            // 
+            // MTxtCell
+            // 
+            this.MTxtCell.Location = new System.Drawing.Point(123, 282);
+            this.MTxtCell.Mask = "(000) 000-0000";
+            this.MTxtCell.Name = "MTxtCell";
+            this.MTxtCell.Size = new System.Drawing.Size(161, 22);
+            this.MTxtCell.TabIndex = 13;
             // 
             // LblCell
             // 
@@ -546,37 +583,43 @@
             this.TxtAddress1.Size = new System.Drawing.Size(166, 22);
             this.TxtAddress1.TabIndex = 1;
             // 
-            // MTxtssn
+            // MnuPatientSearch
             // 
-            this.MTxtssn.Location = new System.Drawing.Point(123, 327);
-            this.MTxtssn.Mask = "000-00-0000";
-            this.MTxtssn.Name = "MTxtssn";
-            this.MTxtssn.Size = new System.Drawing.Size(161, 22);
-            this.MTxtssn.TabIndex = 16;
+            this.MnuPatientSearch.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.MnuPatientSearch.ImageScalingSize = new System.Drawing.Size(17, 17);
+            this.MnuPatientSearch.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMnuPatientSrchSearch,
+            this.TSMnuBlank1,
+            this.TSMnuPatientSrchClear});
+            this.MnuPatientSearch.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MnuPatientSearch.Location = new System.Drawing.Point(0, 0);
+            this.MnuPatientSearch.Name = "MnuPatientSearch";
+            this.MnuPatientSearch.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuPatientSearch.Size = new System.Drawing.Size(1350, 28);
+            this.MnuPatientSearch.TabIndex = 15;
+            this.MnuPatientSearch.Text = "menuStrip1";
             // 
-            // MTxtCell
+            // TSMnuPatientSrchSearch
             // 
-            this.MTxtCell.Location = new System.Drawing.Point(123, 282);
-            this.MTxtCell.Mask = "(000) 000-0000";
-            this.MTxtCell.Name = "MTxtCell";
-            this.MTxtCell.Size = new System.Drawing.Size(161, 22);
-            this.MTxtCell.TabIndex = 13;
+            this.TSMnuPatientSrchSearch.Name = "TSMnuPatientSrchSearch";
+            this.TSMnuPatientSrchSearch.Size = new System.Drawing.Size(65, 24);
+            this.TSMnuPatientSrchSearch.Text = "Search";
             // 
-            // MTxtPhone
+            // TSMnuBlank1
             // 
-            this.MTxtPhone.Location = new System.Drawing.Point(123, 243);
-            this.MTxtPhone.Mask = "(000) 000-0000";
-            this.MTxtPhone.Name = "MTxtPhone";
-            this.MTxtPhone.Size = new System.Drawing.Size(161, 22);
-            this.MTxtPhone.TabIndex = 11;
+            this.TSMnuBlank1.Enabled = false;
+            this.TSMnuBlank1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuBlank1.Name = "TSMnuBlank1";
+            this.TSMnuBlank1.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuBlank1.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuBlank1.Text = "|";
             // 
-            // MTxtZip
+            // TSMnuPatientSrchClear
             // 
-            this.MTxtZip.Location = new System.Drawing.Point(123, 199);
-            this.MTxtZip.Mask = "00000";
-            this.MTxtZip.Name = "MTxtZip";
-            this.MTxtZip.Size = new System.Drawing.Size(161, 22);
-            this.MTxtZip.TabIndex = 9;
+            this.TSMnuPatientSrchClear.Name = "TSMnuPatientSrchClear";
+            this.TSMnuPatientSrchClear.Size = new System.Drawing.Size(55, 24);
+            this.TSMnuPatientSrchClear.Text = "Clear";
+            this.TSMnuPatientSrchClear.Click += new System.EventHandler(this.TSMnuPatientSrchClear_Click);
             // 
             // FrmPatientSearch
             // 
@@ -584,6 +627,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1350, 793);
             this.ControlBox = false;
+            this.Controls.Add(this.MnuPatientSearch);
             this.Controls.Add(this.TabSearch);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Location = new System.Drawing.Point(6, 117);
@@ -603,7 +647,10 @@
             this.TabHome.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.MnuPatientSearch.ResumeLayout(false);
+            this.MnuPatientSearch.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -645,5 +692,9 @@
         private System.Windows.Forms.MaskedTextBox MTxtZip;
         private System.Windows.Forms.MaskedTextBox MTxtPhone;
         private System.Windows.Forms.MaskedTextBox MTxtCell;
+        private System.Windows.Forms.MenuStrip MnuPatientSearch;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuPatientSrchSearch;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuBlank1;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuPatientSrchClear;
     }
 }

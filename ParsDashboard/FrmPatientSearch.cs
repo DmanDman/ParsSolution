@@ -13,8 +13,43 @@ namespace ParsDashboard
 {
     public partial class FrmPatientSearch : Form
     {
+        Helper helper = new Helper();
+
         FrmFilterAge fFilterAge = new FrmFilterAge();
         FrmFilterDate fFilterDate = new FrmFilterDate();
+
+        #region Form SubRoutines
+
+        public void Clear()
+        {
+            //  clear personal information
+            if ( PatientSearchVar.ClearType == 0 )
+            {
+                helper.ClearTextBox( TxtLastName );
+                helper.ClearTextBox( TxtFirstName );
+                helper.ClearTextBox( TxtPatientNum );
+                helper.ClearCheckBox( ChkSurgeryDate );
+                helper.ClearCheckBox( ChkDOB );
+                helper.ClearCheckBox( ChkAge );
+                helper.ClearRadioBtn( RdoMale );
+                helper.ClearRadioBtn( RdoFemale );
+                helper.ClearMaskedTextBox( MTxtssn );
+            }
+
+            //  clear home information
+            if ( PatientSearchVar.ClearType == 1 )
+            {
+                helper.ClearTextBox( TxtAddress1 );
+                helper.ClearTextBox( TxtAddress2 );
+                helper.ClearTextBox( TxtCity );
+                helper.ClearComboBoxTxt( CboState );
+                helper.ClearMaskedTextBox( MTxtZip );
+                helper.ClearMaskedTextBox( MTxtPhone );
+                helper.ClearMaskedTextBox( MTxtCell );
+            }
+        }
+
+        #endregion
 
         public static class PatientSearchVar
         {
@@ -169,6 +204,12 @@ namespace ParsDashboard
                     TxtDob.Height = 22;
                 }
             }
+        }
+
+        private void TSMnuPatientSrchClear_Click(object sender, EventArgs e)
+        {
+            //  clear form
+            Clear();
         }
     }
 }
