@@ -44,8 +44,23 @@
             this.LblPicInfoSearchItems = new System.Windows.Forms.Label();
             this.CboPicInfo = new System.Windows.Forms.ComboBox();
             this.LblPicInfo = new System.Windows.Forms.Label();
+            this.MnuImagesSearch = new System.Windows.Forms.MenuStrip();
+            this.TSMnuSearch = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsMnuImageSearchBreak1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuAddMeta = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsMnuImageSearchBreak2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuRemoveMeta = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsMnuImageSearchBreak3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuAddInfo = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsMnuImageSearchBreak4 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuRemoveInfo = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsMnuImageSearchBreak5 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuRemoveAllMeta = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsMnuImageSearchBreak6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsMnuRemoveAllPic = new System.Windows.Forms.ToolStripMenuItem();
             this.GrpMetaData.SuspendLayout();
             this.GrpPicInfo.SuspendLayout();
+            this.MnuImagesSearch.SuspendLayout();
             this.SuspendLayout();
             // 
             // GrpMetaData
@@ -274,12 +289,136 @@
             this.LblPicInfo.TabIndex = 0;
             this.LblPicInfo.Text = "Picture Info";
             // 
+            // MnuImagesSearch
+            // 
+            this.MnuImagesSearch.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.MnuImagesSearch.ImageScalingSize = new System.Drawing.Size(17, 17);
+            this.MnuImagesSearch.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMnuSearch,
+            this.TsMnuImageSearchBreak1,
+            this.TSMnuAddMeta,
+            this.TsMnuImageSearchBreak2,
+            this.TSMnuRemoveMeta,
+            this.TsMnuImageSearchBreak3,
+            this.TSMnuAddInfo,
+            this.TsMnuImageSearchBreak4,
+            this.TSMnuRemoveInfo,
+            this.TsMnuImageSearchBreak5,
+            this.TSMnuRemoveAllMeta,
+            this.TsMnuImageSearchBreak6,
+            this.TsMnuRemoveAllPic});
+            this.MnuImagesSearch.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MnuImagesSearch.Location = new System.Drawing.Point(0, 0);
+            this.MnuImagesSearch.Name = "MnuImagesSearch";
+            this.MnuImagesSearch.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuImagesSearch.Size = new System.Drawing.Size(1368, 28);
+            this.MnuImagesSearch.TabIndex = 10;
+            this.MnuImagesSearch.Text = "menuStrip1";
+            // 
+            // TSMnuSearch
+            // 
+            this.TSMnuSearch.Name = "TSMnuSearch";
+            this.TSMnuSearch.Size = new System.Drawing.Size(65, 24);
+            this.TSMnuSearch.Tag = "FrmDashboard";
+            this.TSMnuSearch.Text = "&Search";
+            // 
+            // TsMnuImageSearchBreak1
+            // 
+            this.TsMnuImageSearchBreak1.Enabled = false;
+            this.TsMnuImageSearchBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TsMnuImageSearchBreak1.Name = "TsMnuImageSearchBreak1";
+            this.TsMnuImageSearchBreak1.Padding = new System.Windows.Forms.Padding(0);
+            this.TsMnuImageSearchBreak1.Size = new System.Drawing.Size(18, 24);
+            this.TsMnuImageSearchBreak1.Text = "|";
+            // 
+            // TSMnuAddMeta
+            // 
+            this.TSMnuAddMeta.Name = "TSMnuAddMeta";
+            this.TSMnuAddMeta.Size = new System.Drawing.Size(123, 24);
+            this.TSMnuAddMeta.Text = "&Add Meta Data";
+            // 
+            // TsMnuImageSearchBreak2
+            // 
+            this.TsMnuImageSearchBreak2.Enabled = false;
+            this.TsMnuImageSearchBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TsMnuImageSearchBreak2.Name = "TsMnuImageSearchBreak2";
+            this.TsMnuImageSearchBreak2.Padding = new System.Windows.Forms.Padding(0);
+            this.TsMnuImageSearchBreak2.Size = new System.Drawing.Size(18, 24);
+            this.TsMnuImageSearchBreak2.Text = "|";
+            // 
+            // TSMnuRemoveMeta
+            // 
+            this.TSMnuRemoveMeta.Name = "TSMnuRemoveMeta";
+            this.TSMnuRemoveMeta.Size = new System.Drawing.Size(149, 24);
+            this.TSMnuRemoveMeta.Text = "&Remove Meta Data";
+            // 
+            // TsMnuImageSearchBreak3
+            // 
+            this.TsMnuImageSearchBreak3.Enabled = false;
+            this.TsMnuImageSearchBreak3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TsMnuImageSearchBreak3.Name = "TsMnuImageSearchBreak3";
+            this.TsMnuImageSearchBreak3.Padding = new System.Windows.Forms.Padding(0);
+            this.TsMnuImageSearchBreak3.Size = new System.Drawing.Size(18, 24);
+            this.TsMnuImageSearchBreak3.Text = "|";
+            // 
+            // TSMnuAddInfo
+            // 
+            this.TSMnuAddInfo.Name = "TSMnuAddInfo";
+            this.TSMnuAddInfo.Size = new System.Drawing.Size(128, 24);
+            this.TSMnuAddInfo.Text = "Add Picture &Info";
+            // 
+            // TsMnuImageSearchBreak4
+            // 
+            this.TsMnuImageSearchBreak4.Enabled = false;
+            this.TsMnuImageSearchBreak4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TsMnuImageSearchBreak4.Name = "TsMnuImageSearchBreak4";
+            this.TsMnuImageSearchBreak4.Padding = new System.Windows.Forms.Padding(0);
+            this.TsMnuImageSearchBreak4.Size = new System.Drawing.Size(18, 24);
+            this.TsMnuImageSearchBreak4.Text = "|";
+            // 
+            // TSMnuRemoveInfo
+            // 
+            this.TSMnuRemoveInfo.Name = "TSMnuRemoveInfo";
+            this.TSMnuRemoveInfo.Size = new System.Drawing.Size(154, 24);
+            this.TSMnuRemoveInfo.Text = "Remove Picture I&nfo";
+            // 
+            // TsMnuImageSearchBreak5
+            // 
+            this.TsMnuImageSearchBreak5.Enabled = false;
+            this.TsMnuImageSearchBreak5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TsMnuImageSearchBreak5.Name = "TsMnuImageSearchBreak5";
+            this.TsMnuImageSearchBreak5.Padding = new System.Windows.Forms.Padding(0);
+            this.TsMnuImageSearchBreak5.Size = new System.Drawing.Size(18, 24);
+            this.TsMnuImageSearchBreak5.Text = "|";
+            // 
+            // TSMnuRemoveAllMeta
+            // 
+            this.TSMnuRemoveAllMeta.Name = "TSMnuRemoveAllMeta";
+            this.TSMnuRemoveAllMeta.Size = new System.Drawing.Size(171, 24);
+            this.TSMnuRemoveAllMeta.Text = "Re&move All Meta Data";
+            // 
+            // TsMnuImageSearchBreak6
+            // 
+            this.TsMnuImageSearchBreak6.Enabled = false;
+            this.TsMnuImageSearchBreak6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TsMnuImageSearchBreak6.Name = "TsMnuImageSearchBreak6";
+            this.TsMnuImageSearchBreak6.Padding = new System.Windows.Forms.Padding(0);
+            this.TsMnuImageSearchBreak6.Size = new System.Drawing.Size(18, 24);
+            this.TsMnuImageSearchBreak6.Text = "|";
+            // 
+            // TsMnuRemoveAllPic
+            // 
+            this.TsMnuRemoveAllPic.Name = "TsMnuRemoveAllPic";
+            this.TsMnuRemoveAllPic.Size = new System.Drawing.Size(150, 24);
+            this.TsMnuRemoveAllPic.Text = "Remove All Pic In&fo";
+            // 
             // FrmImageSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1368, 840);
             this.ControlBox = false;
+            this.Controls.Add(this.MnuImagesSearch);
             this.Controls.Add(this.GrpPicInfo);
             this.Controls.Add(this.GrpMetaData);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -298,7 +437,10 @@
             this.GrpMetaData.PerformLayout();
             this.GrpPicInfo.ResumeLayout(false);
             this.GrpPicInfo.PerformLayout();
+            this.MnuImagesSearch.ResumeLayout(false);
+            this.MnuImagesSearch.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -319,5 +461,19 @@
         private System.Windows.Forms.Label LblPicInfoSearchItems;
         private System.Windows.Forms.ComboBox CboPicInfo;
         private System.Windows.Forms.Label LblPicInfo;
+        private System.Windows.Forms.MenuStrip MnuImagesSearch;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuSearch;
+        private System.Windows.Forms.ToolStripMenuItem TsMnuImageSearchBreak1;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuAddMeta;
+        private System.Windows.Forms.ToolStripMenuItem TsMnuImageSearchBreak2;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuRemoveMeta;
+        private System.Windows.Forms.ToolStripMenuItem TsMnuImageSearchBreak3;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuAddInfo;
+        private System.Windows.Forms.ToolStripMenuItem TsMnuImageSearchBreak4;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuRemoveInfo;
+        private System.Windows.Forms.ToolStripMenuItem TsMnuImageSearchBreak5;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuRemoveAllMeta;
+        private System.Windows.Forms.ToolStripMenuItem TsMnuImageSearchBreak6;
+        private System.Windows.Forms.ToolStripMenuItem TsMnuRemoveAllPic;
     }
 }

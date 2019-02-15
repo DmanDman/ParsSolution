@@ -230,22 +230,24 @@ namespace ParsDashboard
 
         private void LblPatient_Click(object sender, EventArgs e)
         {
-            SubRtn.DashboardAccordian(sender, e, tableLayoutPanel1);
+            fNav.ShowForm(fPatient);
 
-            fNav.ShowForm( fPatient );
+            HideDashMenu();
+
+            SubRtn.DashboardAccordian(sender, e, tableLayoutPanel1);
 
             NavSetStyleClick( LblPatient );          
         }
 
         private void LblSurgery_Click(object sender, EventArgs e)
-        {           
+        {
+            fNav.ShowForm(fSurgery);
+
             HideDashMenu();
 
-            SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
+            SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );            
 
-            fNav.ShowForm( fSurgery );
-
-            NavSetStyleClick( LblSurgery );            
+            NavSetStyleClick( LblSurgery );
         }
 
         private void LblRpt_Click(object sender, EventArgs e)
@@ -256,23 +258,23 @@ namespace ParsDashboard
         }
 
         private void LblData_Click(object sender, EventArgs e)
-        {           
+        {
+            fNav.ShowForm(fDataCustName);
+
             HideDashMenu();
 
-            SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
-
-            fNav.ShowForm( fDataCustName );
+            SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );            
 
             NavSetStyleClick( LblDataCustomizeName );                       
         }
 
         private void LblMetaData_Click(object sender, EventArgs e)
-        {           
+        {
+            fNav.ShowForm(fMD);
+
             HideDashMenu();
 
-            SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
-
-            fNav.ShowForm( fMD );
+            SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );            
             
             SubRtn.NavSetStyleClickSub( LblMDComp ) ;
 
@@ -281,20 +283,22 @@ namespace ParsDashboard
 
         private void LblEmailPic_Click(object sender, EventArgs e)
         {
-            SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
-
-            fNav.ShowForm( fPicOnly );
-
-            NavSetStyleClick( LblEmailPicPicOnly );
+            fNav.ShowForm(fPicOnly);
 
             HideDashMenu();
+
+            SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
+            
+            NavSetStyleClick( LblEmailPicPicOnly );
         }
 
         private void LblSecurity_Click(object sender, EventArgs e)
         {
-            SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
+            fNav.ShowForm(fSecurity);
 
-            fNav.ShowForm( fSecurity );
+            HideDashMenu();
+
+            SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
 
             NavSetStyleClick( LblSecurity );
 
@@ -312,20 +316,18 @@ namespace ParsDashboard
             mnu = SubRoutine.FindControl( fSecurity, "MnuSecurityUserMgmt" );
             ctlmnu = mnu as MenuStrip;
 
-            helper.HideControl( ctlmnu );
-                    
-            HideDashMenu();
+            helper.HideControl( ctlmnu );            
         }
 
         public void LblDashboard_Click(object sender, EventArgs e)
         {
+            fNav.ShowForm(fDashBoard);
+
             SubRtn.ShowHideMenu(this, MnuDashboard.Name);
 
             SubRtn.DashboardAccordian(sender, e, tableLayoutPanel1);
 
-            NavSetStyleClick(LblDashboard);
-
-            fNav.ShowForm(fDashBoard);            
+            NavSetStyleClick(LblDashboard);                
         }
 
         private void LblImagesAdd_MouseEnter(object sender, EventArgs e)
@@ -349,7 +351,7 @@ namespace ParsDashboard
 
             NavSetStyleClick(LblImagesSearch);
 
-            SubRtn.ShowHideMenu(this, MnuImagesSearch.Name);
+           // SubRtn.ShowHideMenu(this, MnuImagesSearch.Name);
         }
 
         private void LblDashboard_MouseEnter(object sender, EventArgs e)
@@ -387,13 +389,13 @@ namespace ParsDashboard
 
         private void LblImages_Click(object sender, EventArgs e)
         {
-            SubRtn.DashboardAccordian(sender, e, tableLayoutPanel1);
-
             fNav.ShowForm(fImage);
 
-            NavSetStyleClick(LblImages);
+            HideDashMenu();
 
-            SubRtn.ShowHideMenu(this, MnuImages.Name);
+            SubRtn.DashboardAccordian(sender, e, tableLayoutPanel1);          
+
+            NavSetStyleClick(LblImages);            
         }
 
         private void LblImages_MouseEnter(object sender, EventArgs e)
@@ -559,7 +561,7 @@ namespace ParsDashboard
 
             NavSetStyleClick(LblImagesFilter);
 
-            SubRtn.ShowHideMenu(this, MnuImageFilter.Name);
+            //SubRtn.ShowHideMenu(this, MnuImageFilter.Name);
         }
 
         public void LblImagesSearchResults_Click(object sender, EventArgs e)

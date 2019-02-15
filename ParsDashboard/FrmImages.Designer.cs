@@ -44,8 +44,13 @@
             this.TxtImagesCount = new System.Windows.Forms.TextBox();
             this.LblGrpImageDesc = new System.Windows.Forms.Label();
             this.LstImages = new System.Windows.Forms.ListView();
+            this.MnuImages = new System.Windows.Forms.MenuStrip();
+            this.TSMnuDisplay = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuClearAll = new System.Windows.Forms.ToolStripMenuItem();
             this.GrpImage.SuspendLayout();
             this.GrpImages.SuspendLayout();
+            this.MnuImages.SuspendLayout();
             this.SuspendLayout();
             // 
             // GrpImage
@@ -287,12 +292,51 @@
             this.LstImages.TabIndex = 7;
             this.LstImages.UseCompatibleStateImageBehavior = false;
             // 
+            // MnuImages
+            // 
+            this.MnuImages.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.MnuImages.ImageScalingSize = new System.Drawing.Size(17, 17);
+            this.MnuImages.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMnuDisplay,
+            this.toolStripMenuItem1,
+            this.TSMnuClearAll});
+            this.MnuImages.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MnuImages.Location = new System.Drawing.Point(0, 0);
+            this.MnuImages.Name = "MnuImages";
+            this.MnuImages.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuImages.Size = new System.Drawing.Size(1368, 28);
+            this.MnuImages.TabIndex = 8;
+            this.MnuImages.Text = "menuStrip1";
+            // 
+            // TSMnuDisplay
+            // 
+            this.TSMnuDisplay.Name = "TSMnuDisplay";
+            this.TSMnuDisplay.Size = new System.Drawing.Size(70, 24);
+            this.TSMnuDisplay.Tag = "FrmDashboard";
+            this.TSMnuDisplay.Text = "Display";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Enabled = false;
+            this.toolStripMenuItem1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Padding = new System.Windows.Forms.Padding(0);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(18, 24);
+            this.toolStripMenuItem1.Text = "|";
+            // 
+            // TSMnuClearAll
+            // 
+            this.TSMnuClearAll.Name = "TSMnuClearAll";
+            this.TSMnuClearAll.Size = new System.Drawing.Size(77, 24);
+            this.TSMnuClearAll.Text = "Clear All";
+            // 
             // FrmImages
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1368, 840);
             this.ControlBox = false;
+            this.Controls.Add(this.MnuImages);
             this.Controls.Add(this.GrpImages);
             this.Controls.Add(this.GrpImage);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -310,7 +354,10 @@
             this.GrpImage.PerformLayout();
             this.GrpImages.ResumeLayout(false);
             this.GrpImages.PerformLayout();
+            this.MnuImages.ResumeLayout(false);
+            this.MnuImages.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -331,5 +378,9 @@
         private System.Windows.Forms.TextBox TxtImagesCount;
         private System.Windows.Forms.Label LblGrpImageDesc;
         private System.Windows.Forms.ListView LstImages;
+        private System.Windows.Forms.MenuStrip MnuImages;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDisplay;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuClearAll;
     }
 }

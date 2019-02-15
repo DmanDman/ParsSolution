@@ -84,9 +84,16 @@
             this.label19 = new System.Windows.Forms.Label();
             this.LstDrFilter = new System.Windows.Forms.ListBox();
             this.label20 = new System.Windows.Forms.Label();
+            this.MnuImageFilter = new System.Windows.Forms.MenuStrip();
+            this.TSMnuFilterApplyFilter = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuFilterBreak1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuFilterClearChecks = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuFilterBreak2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuFilterClearSurgery = new System.Windows.Forms.ToolStripMenuItem();
             this.GrpBoxPersonal.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.groupBox4.SuspendLayout();
+            this.MnuImageFilter.SuspendLayout();
             this.SuspendLayout();
             // 
             // GrpBoxPersonal
@@ -771,12 +778,69 @@
             this.label20.TabIndex = 0;
             this.label20.Text = "Doctor";
             // 
+            // MnuImageFilter
+            // 
+            this.MnuImageFilter.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.MnuImageFilter.ImageScalingSize = new System.Drawing.Size(17, 17);
+            this.MnuImageFilter.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMnuFilterApplyFilter,
+            this.TSMnuFilterBreak1,
+            this.TSMnuFilterClearChecks,
+            this.TSMnuFilterBreak2,
+            this.TSMnuFilterClearSurgery});
+            this.MnuImageFilter.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MnuImageFilter.Location = new System.Drawing.Point(0, 0);
+            this.MnuImageFilter.Name = "MnuImageFilter";
+            this.MnuImageFilter.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuImageFilter.Size = new System.Drawing.Size(1549, 28);
+            this.MnuImageFilter.TabIndex = 13;
+            this.MnuImageFilter.Text = "menuStrip1";
+            // 
+            // TSMnuFilterApplyFilter
+            // 
+            this.TSMnuFilterApplyFilter.Enabled = false;
+            this.TSMnuFilterApplyFilter.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuFilterApplyFilter.Name = "TSMnuFilterApplyFilter";
+            this.TSMnuFilterApplyFilter.Size = new System.Drawing.Size(102, 24);
+            this.TSMnuFilterApplyFilter.Text = "Apply Filter";
+            // 
+            // TSMnuFilterBreak1
+            // 
+            this.TSMnuFilterBreak1.Enabled = false;
+            this.TSMnuFilterBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuFilterBreak1.Name = "TSMnuFilterBreak1";
+            this.TSMnuFilterBreak1.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuFilterBreak1.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuFilterBreak1.Text = "|";
+            // 
+            // TSMnuFilterClearChecks
+            // 
+            this.TSMnuFilterClearChecks.Name = "TSMnuFilterClearChecks";
+            this.TSMnuFilterClearChecks.Size = new System.Drawing.Size(144, 24);
+            this.TSMnuFilterClearChecks.Text = "Clear Personal Info";
+            // 
+            // TSMnuFilterBreak2
+            // 
+            this.TSMnuFilterBreak2.Enabled = false;
+            this.TSMnuFilterBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuFilterBreak2.Name = "TSMnuFilterBreak2";
+            this.TSMnuFilterBreak2.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuFilterBreak2.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuFilterBreak2.Text = "|";
+            // 
+            // TSMnuFilterClearSurgery
+            // 
+            this.TSMnuFilterClearSurgery.Name = "TSMnuFilterClearSurgery";
+            this.TSMnuFilterClearSurgery.Size = new System.Drawing.Size(132, 24);
+            this.TSMnuFilterClearSurgery.Text = "Clear Filter Items";
+            // 
             // FrmImageFilter
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1549, 839);
             this.ControlBox = false;
+            this.Controls.Add(this.MnuImageFilter);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.GrpBoxPersonal);
@@ -796,7 +860,10 @@
             this.groupBox3.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
+            this.MnuImageFilter.ResumeLayout(false);
+            this.MnuImageFilter.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -858,5 +925,11 @@
         private System.Windows.Forms.ListBox LstDrFilter;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.DateTimePicker DtDOB;
+        private System.Windows.Forms.MenuStrip MnuImageFilter;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuFilterApplyFilter;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuFilterBreak1;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuFilterClearChecks;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuFilterBreak2;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuFilterClearSurgery;
     }
 }
