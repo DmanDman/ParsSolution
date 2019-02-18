@@ -18,6 +18,25 @@ namespace ParsDashboard
 
         Helper helper = new Helper();
 
+        #region Form SubRoutines
+
+        public void ClearFilterItems()
+        {
+            helper.ClearListBoxes( LstDr, LstDrFilter );
+            helper.ClearListBoxes( LstHospital, LstHospitalFilter );
+            helper.ClearListBoxes( LstLocation, LstLocationFIlter );
+            helper.ClearListBoxes( LstLevel, LstLevelFilter );
+            helper.ClearListBoxes( LstCpt, LstCptFilter );
+            helper.ClearListBoxes( LstDx, LstDxFilter );
+            helper.ClearListBoxes( LstSurgery, LstSurgeryFilter );
+            helper.ClearListBoxes( LstInst, LstInstFilter );
+            helper.ClearListBoxes( LstComp, LstCompFilter );
+            helper.ClearListBoxes( LstPicInfo, LstPicInfoFilter );
+            helper.ClearListBoxes( LstPicInfo, LstPicInfoFilter );
+        }
+
+        #endregion
+
         public static class FilterVar
         {
             public static string FilterDate { get; set; }
@@ -211,6 +230,18 @@ namespace ParsDashboard
         private void LstPicInfo_DoubleClick(object sender, EventArgs e)
         {
             helper.AdListBoxToListBox( LstPicInfo, LstPicInfoFilter );
+        }
+
+        private void TSMnuFilterClearSurgery_Click(object sender, EventArgs e)
+        {
+            //  clear filter items
+            ClearFilterItems();
+        }
+
+        private void TSMnuFilterClearChecks_Click(object sender, EventArgs e)
+        {
+            //  clear check boxes
+            helper.ClearAllCheckBoxes( GrpBoxPersonal );
         }
     }
 }

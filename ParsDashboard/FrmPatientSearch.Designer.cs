@@ -604,6 +604,7 @@
             this.TSMnuPatientSrchSearch.Name = "TSMnuPatientSrchSearch";
             this.TSMnuPatientSrchSearch.Size = new System.Drawing.Size(65, 24);
             this.TSMnuPatientSrchSearch.Text = "Search";
+            this.TSMnuPatientSrchSearch.Click += new System.EventHandler(this.TSMnuPatientSrchSearch_Click);
             // 
             // TSMnuBlank1
             // 

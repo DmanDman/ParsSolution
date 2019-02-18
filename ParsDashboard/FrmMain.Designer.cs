@@ -111,12 +111,6 @@
             this.TSMnuImgSearchResultOpenCanvas = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuImgSearchResultBreak4 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuImgSearchResultPrint = new System.Windows.Forms.ToolStripMenuItem();
-            this.MnuImageFilter = new System.Windows.Forms.MenuStrip();
-            this.TSMnuFilterApplyFilter = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuFilterBreak1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuFilterClearChecks = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuFilterBreak2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuFilterClearSurgery = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuPatientSearch = new System.Windows.Forms.MenuStrip();
             this.TSMnuPatientSrchSearch = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuBlank1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -134,7 +128,6 @@
             this.MnuDashboard.SuspendLayout();
             this.MnuImagesSearch.SuspendLayout();
             this.MnuImageSearchResult.SuspendLayout();
-            this.MnuImageFilter.SuspendLayout();
             this.MnuPatientSearch.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -176,11 +169,11 @@
             this.PnlPatient.Controls.Add(this.LlbPatientSearch);
             this.PnlPatient.Controls.Add(this.LblPatientAdd);
             this.PnlPatient.Controls.Add(this.LblPatient);
-            this.PnlPatient.Location = new System.Drawing.Point(2, 223);
+            this.PnlPatient.Location = new System.Drawing.Point(2, 112);
             this.PnlPatient.Margin = new System.Windows.Forms.Padding(0);
             this.PnlPatient.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlPatient.Name = "PnlPatient";
-            this.PnlPatient.Size = new System.Drawing.Size(200, 74);
+            this.PnlPatient.Size = new System.Drawing.Size(200, 179);
             this.PnlPatient.TabIndex = 2;
             this.PnlPatient.Tag = "Collapsed";
             // 
@@ -307,7 +300,7 @@
             this.PnlData.Controls.Add(this.LblDataDefaultHosp);
             this.PnlData.Controls.Add(this.LblDataCustomizeName);
             this.PnlData.Controls.Add(this.LblData);
-            this.PnlData.Location = new System.Drawing.Point(2, 501);
+            this.PnlData.Location = new System.Drawing.Point(2, 495);
             this.PnlData.Margin = new System.Windows.Forms.Padding(0);
             this.PnlData.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlData.Name = "PnlData";
@@ -390,7 +383,7 @@
             this.PnlSurgery.Controls.Add(this.LblSurgerySearch);
             this.PnlSurgery.Controls.Add(this.LblSurgeryAdd);
             this.PnlSurgery.Controls.Add(this.LblSurgery);
-            this.PnlSurgery.Location = new System.Drawing.Point(2, 299);
+            this.PnlSurgery.Location = new System.Drawing.Point(2, 293);
             this.PnlSurgery.Margin = new System.Windows.Forms.Padding(0);
             this.PnlSurgery.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlSurgery.Name = "PnlSurgery";
@@ -456,7 +449,7 @@
             this.PnlMetaData.Controls.Add(this.LblMDCpt);
             this.PnlMetaData.Controls.Add(this.LblMDComp);
             this.PnlMetaData.Controls.Add(this.LblMetaData);
-            this.PnlMetaData.Location = new System.Drawing.Point(2, 577);
+            this.PnlMetaData.Location = new System.Drawing.Point(2, 571);
             this.PnlMetaData.Margin = new System.Windows.Forms.Padding(0);
             this.PnlMetaData.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlMetaData.Name = "PnlMetaData";
@@ -630,7 +623,7 @@
             this.PnlSecurity.Controls.Add(this.label1);
             this.PnlSecurity.Controls.Add(this.LblSecurityUserMgmt);
             this.PnlSecurity.Controls.Add(this.LblSecurity);
-            this.PnlSecurity.Location = new System.Drawing.Point(2, 736);
+            this.PnlSecurity.Location = new System.Drawing.Point(2, 730);
             this.PnlSecurity.Margin = new System.Windows.Forms.Padding(0);
             this.PnlSecurity.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlSecurity.Name = "PnlSecurity";
@@ -692,7 +685,7 @@
             this.PnlImages.Margin = new System.Windows.Forms.Padding(0);
             this.PnlImages.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlImages.Name = "PnlImages";
-            this.PnlImages.Size = new System.Drawing.Size(200, 185);
+            this.PnlImages.Size = new System.Drawing.Size(200, 74);
             this.PnlImages.TabIndex = 4;
             this.PnlImages.Tag = "Collapsed";
             // 
@@ -785,7 +778,7 @@
             this.PnlRpt.Controls.Add(this.LblRptDynamic);
             this.PnlRpt.Controls.Add(this.LblRptStatic);
             this.PnlRpt.Controls.Add(this.LblRpt);
-            this.PnlRpt.Location = new System.Drawing.Point(2, 402);
+            this.PnlRpt.Location = new System.Drawing.Point(2, 396);
             this.PnlRpt.Margin = new System.Windows.Forms.Padding(0);
             this.PnlRpt.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlRpt.Name = "PnlRpt";
@@ -842,7 +835,7 @@
             this.PnlEmailPic.Controls.Add(this.LblEmailPicPicInfo);
             this.PnlEmailPic.Controls.Add(this.LblEmailPicPicOnly);
             this.PnlEmailPic.Controls.Add(this.LblEmailPic);
-            this.PnlEmailPic.Location = new System.Drawing.Point(2, 656);
+            this.PnlEmailPic.Location = new System.Drawing.Point(2, 650);
             this.PnlEmailPic.Margin = new System.Windows.Forms.Padding(0);
             this.PnlEmailPic.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlEmailPic.Name = "PnlEmailPic";
@@ -1172,65 +1165,6 @@
             this.TSMnuImgSearchResultPrint.Size = new System.Drawing.Size(51, 24);
             this.TSMnuImgSearchResultPrint.Text = "Print";
             // 
-            // MnuImageFilter
-            // 
-            this.MnuImageFilter.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.MnuImageFilter.ImageScalingSize = new System.Drawing.Size(17, 17);
-            this.MnuImageFilter.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSMnuFilterApplyFilter,
-            this.TSMnuFilterBreak1,
-            this.TSMnuFilterClearChecks,
-            this.TSMnuFilterBreak2,
-            this.TSMnuFilterClearSurgery});
-            this.MnuImageFilter.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuImageFilter.Location = new System.Drawing.Point(185, 28);
-            this.MnuImageFilter.Name = "MnuImageFilter";
-            this.MnuImageFilter.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.MnuImageFilter.Size = new System.Drawing.Size(1212, 28);
-            this.MnuImageFilter.TabIndex = 12;
-            this.MnuImageFilter.Text = "menuStrip1";
-            this.MnuImageFilter.Visible = false;
-            // 
-            // TSMnuFilterApplyFilter
-            // 
-            this.TSMnuFilterApplyFilter.Enabled = false;
-            this.TSMnuFilterApplyFilter.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TSMnuFilterApplyFilter.Name = "TSMnuFilterApplyFilter";
-            this.TSMnuFilterApplyFilter.Size = new System.Drawing.Size(102, 24);
-            this.TSMnuFilterApplyFilter.Text = "Apply Filter";
-            // 
-            // TSMnuFilterBreak1
-            // 
-            this.TSMnuFilterBreak1.Enabled = false;
-            this.TSMnuFilterBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TSMnuFilterBreak1.Name = "TSMnuFilterBreak1";
-            this.TSMnuFilterBreak1.Padding = new System.Windows.Forms.Padding(0);
-            this.TSMnuFilterBreak1.Size = new System.Drawing.Size(18, 24);
-            this.TSMnuFilterBreak1.Text = "|";
-            // 
-            // TSMnuFilterClearChecks
-            // 
-            this.TSMnuFilterClearChecks.Name = "TSMnuFilterClearChecks";
-            this.TSMnuFilterClearChecks.Size = new System.Drawing.Size(144, 24);
-            this.TSMnuFilterClearChecks.Text = "Clear Personal Info";
-            this.TSMnuFilterClearChecks.Click += new System.EventHandler(this.TSMnuFilterClearChecks_Click);
-            // 
-            // TSMnuFilterBreak2
-            // 
-            this.TSMnuFilterBreak2.Enabled = false;
-            this.TSMnuFilterBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TSMnuFilterBreak2.Name = "TSMnuFilterBreak2";
-            this.TSMnuFilterBreak2.Padding = new System.Windows.Forms.Padding(0);
-            this.TSMnuFilterBreak2.Size = new System.Drawing.Size(18, 24);
-            this.TSMnuFilterBreak2.Text = "|";
-            // 
-            // TSMnuFilterClearSurgery
-            // 
-            this.TSMnuFilterClearSurgery.Name = "TSMnuFilterClearSurgery";
-            this.TSMnuFilterClearSurgery.Size = new System.Drawing.Size(132, 24);
-            this.TSMnuFilterClearSurgery.Text = "Clear Filter Items";
-            this.TSMnuFilterClearSurgery.Click += new System.EventHandler(this.TSMnuFilterClearSurgery_Click);
-            // 
             // MnuPatientSearch
             // 
             this.MnuPatientSearch.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -1278,7 +1212,6 @@
             this.ClientSize = new System.Drawing.Size(1397, 976);
             this.Controls.Add(this.MnuImagesSearch);
             this.Controls.Add(this.MnuImageSearchResult);
-            this.Controls.Add(this.MnuImageFilter);
             this.Controls.Add(this.MnuPatientSearch);
             this.Controls.Add(this.MnuDashboard);
             this.Controls.Add(this.tableLayoutPanel1);
@@ -1315,8 +1248,6 @@
             this.MnuImagesSearch.PerformLayout();
             this.MnuImageSearchResult.ResumeLayout(false);
             this.MnuImageSearchResult.PerformLayout();
-            this.MnuImageFilter.ResumeLayout(false);
-            this.MnuImageFilter.PerformLayout();
             this.MnuPatientSearch.ResumeLayout(false);
             this.MnuPatientSearch.PerformLayout();
             this.ResumeLayout(false);
@@ -1382,12 +1313,6 @@
         private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultDelPic;
         private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultOpenCanvas;
         private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultPrint;
-        private System.Windows.Forms.MenuStrip MnuImageFilter;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuFilterApplyFilter;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuFilterClearChecks;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuFilterClearSurgery;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuFilterBreak1;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuFilterBreak2;
         private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultBreak1;
         private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultBreak2;
         private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultBreak3;

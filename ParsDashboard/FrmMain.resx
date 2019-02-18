@@ -127,10 +127,7 @@
     <value>346, 26</value>
   </metadata>
   <metadata name="MnuImageSearchResult.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>360, 60</value>
-  </metadata>
-  <metadata name="MnuImageFilter.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
-    <value>195, 57</value>
+    <value>222, 60</value>
   </metadata>
   <metadata name="MnuPatientSearch.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>27, 56</value>

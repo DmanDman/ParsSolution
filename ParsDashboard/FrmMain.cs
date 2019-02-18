@@ -557,11 +557,9 @@ namespace ParsDashboard
 
         private void LblImagesFilter_Click(object sender, EventArgs e)
         {
-            fNav.ShowForm(fImageFilter);
+            fNav.ShowForm( fImageFilter );
 
-            NavSetStyleClick(LblImagesFilter);
-
-            //SubRtn.ShowHideMenu(this, MnuImageFilter.Name);
+            NavSetStyleClick( LblImagesFilter );            
         }
 
         public void LblImagesSearchResults_Click(object sender, EventArgs e)
@@ -582,7 +580,9 @@ namespace ParsDashboard
         {
             fNav.ShowForm( fPatientSearch );
 
-            NavSetStyleClick( LlbPatientSearch );            
+            NavSetStyleClick( LlbPatientSearch );
+
+            SubRtn.ShowHideMenu(this, MnuPatientSearch.Name);
         }
 
         private void LblPatientFilter_Click(object sender, EventArgs e)
@@ -895,7 +895,7 @@ namespace ParsDashboard
 
             NavSetStyleClick(LblImagesSearchResults);
 
-            SubRtn.ShowHideMenu(this, MnuImageSearchResult.Name);
+            //SubRtn.ShowHideMenu(this, MnuImageSearchResult.Name);
         }
 
         private void LblSurgeryAdd_Click(object sender, EventArgs e)

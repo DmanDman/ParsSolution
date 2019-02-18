@@ -818,6 +818,7 @@
             this.TSMnuFilterClearChecks.Name = "TSMnuFilterClearChecks";
             this.TSMnuFilterClearChecks.Size = new System.Drawing.Size(144, 24);
             this.TSMnuFilterClearChecks.Text = "Clear Personal Info";
+            this.TSMnuFilterClearChecks.Click += new System.EventHandler(this.TSMnuFilterClearChecks_Click);
             // 
             // TSMnuFilterBreak2
             // 
@@ -833,6 +834,7 @@
             this.TSMnuFilterClearSurgery.Name = "TSMnuFilterClearSurgery";
             this.TSMnuFilterClearSurgery.Size = new System.Drawing.Size(132, 24);
             this.TSMnuFilterClearSurgery.Text = "Clear Filter Items";
+            this.TSMnuFilterClearSurgery.Click += new System.EventHandler(this.TSMnuFilterClearSurgery_Click);
             // 
             // FrmImageFilter
             // 

@@ -14,6 +14,7 @@ namespace ParsDashboard
     public partial class FrmPatientSearch : Form
     {
         Helper helper = new Helper();
+        FormNav fNav = new FormNav();        
 
         FrmFilterAge fFilterAge = new FrmFilterAge();
         FrmFilterDate fFilterDate = new FrmFilterDate();
@@ -210,6 +211,20 @@ namespace ParsDashboard
         {
             //  clear form
             Clear();
+        }
+
+        private void TSMnuPatientSrchSearch_Click(object sender, EventArgs e)
+        {
+            //fNav.ShowForm( fImageSearchResuts);
+
+            foreach (Form f in Application.OpenForms)
+            {
+                if (f.Tag.ToString() == "FrmImageSearchResults")
+                {
+                    //f.Show();
+                    f.BringToFront();
+                }
+            }
         }
     }
 }
