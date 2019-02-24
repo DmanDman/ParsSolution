@@ -16,9 +16,7 @@ namespace ParsDashboard
     {
         #region Define Forms
         //  define forms
-        FormNav fNav = new FormNav();
-
-        FrmDashboard fDashBoard = new FrmDashboard();
+        FormNav fNav = new FormNav();       
 
         //  Images
         FrmImages fImage = new FrmImages();
@@ -53,6 +51,8 @@ namespace ParsDashboard
         //  Secrity
         FrmSecurity fSecurity = new FrmSecurity();
 
+        FrmDashboard fDashBoard = new FrmDashboard();
+
         #endregion
 
         #region Define Helper Classes    
@@ -65,16 +65,7 @@ namespace ParsDashboard
         #endregion
 
 
-        #region Form Sub-Routines
-        
-        public void HideDashMenu()
-        {
-            //  Hide dashboard menu
-            Control mnu = SubRoutine.FindControl( this, "MnuDashboard" );
-            MenuStrip ctlmnu = mnu as MenuStrip;
-
-            helper.HideControl( ctlmnu );
-        }
+        #region Form Sub-Routines               
 
         public void NavSetStyleClick(Label lbl)
         {
@@ -173,22 +164,22 @@ namespace ParsDashboard
             // Stop flickering for panels
 
             StopPanel_FlickeringPanel( tableLayoutPanel1 );
-            StopPanel_FlickeringPanel(PnlDashboard);
-            StopPanel_FlickeringPanel(PnlImages);
-            StopPanel_FlickeringPanel(PnlPatient);
-            StopPanel_FlickeringPanel(PnlSurgery);
-            StopPanel_FlickeringPanel(PnlRpt);
-            StopPanel_FlickeringPanel(PnlData);
-            StopPanel_FlickeringPanel(PnlMetaData);
-            StopPanel_FlickeringPanel(PnlEmailPic);
-            StopPanel_FlickeringPanel(PnlSecurity);
+            StopPanel_FlickeringPanel( PnlDashboard );
+            StopPanel_FlickeringPanel( PnlImages );
+            StopPanel_FlickeringPanel( PnlPatient );
+            StopPanel_FlickeringPanel( PnlSurgery );
+            StopPanel_FlickeringPanel( PnlRpt );
+            StopPanel_FlickeringPanel( PnlData );
+            StopPanel_FlickeringPanel( PnlMetaData );
+            StopPanel_FlickeringPanel( PnlEmailPic );
+            StopPanel_FlickeringPanel( PnlSecurity );
         }
 
         private void StopPanel_FlickeringPanel(Panel pnl)
         {
-            typeof(Panel).InvokeMember("DoubleBuffered",
+            typeof( Panel ).InvokeMember( "DoubleBuffered",
                 BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic,
-                null, pnl, new object[] { true });
+                null, pnl, new object[] { true } );
         }
         #endregion
 
@@ -225,14 +216,15 @@ namespace ParsDashboard
 
             SubRtn.Load_All_Forms( fDashBoard, this );
 
+            //fDashBoard.Refresh();
+
             LblDashboard.Click += new EventHandler( LblDashboard_Click );
+            
         }
 
         private void LblPatient_Click(object sender, EventArgs e)
         {
             fNav.ShowForm(fPatient);
-
-            HideDashMenu();
 
             SubRtn.DashboardAccordian(sender, e, tableLayoutPanel1);
 
@@ -242,8 +234,6 @@ namespace ParsDashboard
         private void LblSurgery_Click(object sender, EventArgs e)
         {
             fNav.ShowForm(fSurgery);
-
-            HideDashMenu();
 
             SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );            
 
@@ -261,8 +251,6 @@ namespace ParsDashboard
         {
             fNav.ShowForm(fDataCustName);
 
-            HideDashMenu();
-
             SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );            
 
             NavSetStyleClick( LblDataCustomizeName );                       
@@ -271,8 +259,6 @@ namespace ParsDashboard
         private void LblMetaData_Click(object sender, EventArgs e)
         {
             fNav.ShowForm(fMD);
-
-            HideDashMenu();
 
             SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );            
             
@@ -284,9 +270,7 @@ namespace ParsDashboard
         private void LblEmailPic_Click(object sender, EventArgs e)
         {
             fNav.ShowForm(fPicOnly);
-
-            HideDashMenu();
-
+           
             SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
             
             NavSetStyleClick( LblEmailPicPicOnly );
@@ -295,8 +279,6 @@ namespace ParsDashboard
         private void LblSecurity_Click(object sender, EventArgs e)
         {
             fNav.ShowForm(fSecurity);
-
-            HideDashMenu();
 
             SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
 
@@ -321,9 +303,7 @@ namespace ParsDashboard
 
         public void LblDashboard_Click(object sender, EventArgs e)
         {
-            fNav.ShowForm(fDashBoard);
-
-            SubRtn.ShowHideMenu(this, MnuDashboard.Name);
+            fNav.ShowForm(fDashBoard);          
 
             SubRtn.DashboardAccordian(sender, e, tableLayoutPanel1);
 
@@ -349,9 +329,7 @@ namespace ParsDashboard
         {
             fNav.ShowForm(fImageSearch);
 
-            NavSetStyleClick(LblImagesSearch);
-
-           // SubRtn.ShowHideMenu(this, MnuImagesSearch.Name);
+            NavSetStyleClick(LblImagesSearch);           
         }
 
         private void LblDashboard_MouseEnter(object sender, EventArgs e)
@@ -390,8 +368,6 @@ namespace ParsDashboard
         private void LblImages_Click(object sender, EventArgs e)
         {
             fNav.ShowForm(fImage);
-
-            HideDashMenu();
 
             SubRtn.DashboardAccordian(sender, e, tableLayoutPanel1);          
 
@@ -436,13 +412,13 @@ namespace ParsDashboard
             SetPanel_Height();
 
             // Enable double duffering to stop flickering.
-            this.SetStyle(ControlStyles.DoubleBuffer, true);
-            this.SetStyle(ControlStyles.AllPaintingInWmPaint, true);
-            this.SetStyle(ControlStyles.UserPaint, true);
-            this.SetStyle(ControlStyles.SupportsTransparentBackColor, false);
-            this.SetStyle(ControlStyles.Opaque, false);
-            this.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
-            this.SetStyle(ControlStyles.ResizeRedraw, true);
+            this.SetStyle( ControlStyles.DoubleBuffer, true );
+            this.SetStyle( ControlStyles.AllPaintingInWmPaint, true );
+            this.SetStyle( ControlStyles.UserPaint, true );
+            this.SetStyle( ControlStyles.SupportsTransparentBackColor, false );
+            this.SetStyle( ControlStyles.Opaque, false );
+            this.SetStyle( ControlStyles.OptimizedDoubleBuffer, true );
+            this.SetStyle( ControlStyles.ResizeRedraw, true );
         }
 
         private void LblImagesFilter_MouseEnter(object sender, EventArgs e)
@@ -452,7 +428,7 @@ namespace ParsDashboard
 
         private void LblImagesSearchResults_MouseEnter(object sender, EventArgs e)
         {
-            HelpMouseMove.MouseEnter(LblImagesSearchResults);
+            //HelpMouseMove.MouseEnter(LblImagesSearchResults);
         }
 
         private void LblImagesSearchToPatient_MouseEnter(object sender, EventArgs e)
@@ -477,7 +453,7 @@ namespace ParsDashboard
 
         private void LblPatientSearchResults_MouseEnter(object sender, EventArgs e)
         {
-            HelpMouseMove.MouseEnter(LblPatientSearchResults);
+            //HelpMouseMove.MouseEnter(LblPatientSearchResults);
         }
 
         private void LblPatientSearchToImage_MouseEnter(object sender, EventArgs e)
@@ -507,7 +483,7 @@ namespace ParsDashboard
 
         private void LblImagesSearchResults_MouseLeave(object sender, EventArgs e)
         {
-            HelpMouseMove.MouseLeave(LblImagesSearchResults);
+            //HelpMouseMove.MouseLeave(LblImagesSearchResults);
         }
 
         private void LblImagesSearchToPatient_MouseLeave(object sender, EventArgs e)
@@ -532,7 +508,7 @@ namespace ParsDashboard
 
         private void LblPatientSearchResults_MouseLeave(object sender, EventArgs e)
         {
-            HelpMouseMove.MouseLeave(LblPatientSearchResults);
+            //HelpMouseMove.MouseLeave(LblPatientSearchResults);
         }
 
         private void LblPatientSearchToImage_MouseLeave(object sender, EventArgs e)
@@ -563,10 +539,8 @@ namespace ParsDashboard
         }
 
         public void LblImagesSearchResults_Click(object sender, EventArgs e)
-        {
-            //fNav.ShowForm( X );
-
-            NavSetStyleClick(LblImagesSearchResults);
+        {            
+            //NavSetStyleClick(LblImagesSearchResults);
         }
 
         private void LblImagesSearchToPatient_Click(object sender, EventArgs e)
@@ -581,8 +555,6 @@ namespace ParsDashboard
             fNav.ShowForm( fPatientSearch );
 
             NavSetStyleClick( LlbPatientSearch );
-
-            SubRtn.ShowHideMenu(this, MnuPatientSearch.Name);
         }
 
         private void LblPatientFilter_Click(object sender, EventArgs e)
@@ -609,7 +581,7 @@ namespace ParsDashboard
             ComboBox ctlCbo = cbo as ComboBox;
             ListBox ctlLst = lst as ListBox;
 
-            helper.AddListBoxData(ctlCbo, ctlLst);
+            helper.AddListBoxData( ctlCbo, ctlLst );
         }
 
         private void TSMnuRemoveMeta_Click(object sender, EventArgs e)
@@ -674,7 +646,7 @@ namespace ParsDashboard
 
         private void LblPatientSearchResults_Click(object sender, EventArgs e)
         {
-            NavSetStyleClick( LblPatientSearchResults );
+            //NavSetStyleClick( LblPatientSearchResults );
         }
 
         private void TSMnuFilterClearChecks_Click(object sender, EventArgs e)
@@ -893,9 +865,7 @@ namespace ParsDashboard
 
             SubRtn.DashboardAccordian(LblImages, e, tableLayoutPanel1);
 
-            NavSetStyleClick(LblImagesSearchResults);
-
-            //SubRtn.ShowHideMenu(this, MnuImageSearchResult.Name);
+            NavSetStyleClick(LblImagesSearchResults);            
         }
 
         private void LblSurgeryAdd_Click(object sender, EventArgs e)
@@ -1817,8 +1787,8 @@ namespace ParsDashboard
             frm.StartPosition = FormStartPosition.CenterParent;
             frm.WindowState = FormWindowState.Minimized;
             frm.Dock = DockStyle.Fill;
-            frm.Show();
             frm.WindowState = FormWindowState.Maximized;
+            frm.Show();           
         }
 
         public void NavSetStyleClickSub( Label lblIn )
@@ -1894,7 +1864,6 @@ namespace ParsDashboard
                     ctllbl = lbl as Label;
                     ctllbl.Font = NavSetStyleLblSub( ctllbl );
                     
-
                     //break;
                 }
             }

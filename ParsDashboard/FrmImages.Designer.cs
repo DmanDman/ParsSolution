@@ -339,6 +339,7 @@
             this.Controls.Add(this.MnuImages);
             this.Controls.Add(this.GrpImages);
             this.Controls.Add(this.GrpImage);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

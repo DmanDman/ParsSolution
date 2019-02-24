@@ -569,8 +569,8 @@
             this.Controls.Add(this.GrpImages);
             this.Controls.Add(this.GrpSurgeries);
             this.Controls.Add(this.GrpDisplay);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Location = new System.Drawing.Point(19, 41);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmSurgery";

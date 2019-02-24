@@ -555,7 +555,7 @@
             this.MnuPatient.Location = new System.Drawing.Point(0, 0);
             this.MnuPatient.Name = "MnuPatient";
             this.MnuPatient.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.MnuPatient.Size = new System.Drawing.Size(1556, 28);
+            this.MnuPatient.Size = new System.Drawing.Size(1368, 28);
             this.MnuPatient.TabIndex = 12;
             this.MnuPatient.Text = "menuStrip1";
             // 
@@ -585,14 +585,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1556, 839);
+            this.ClientSize = new System.Drawing.Size(1368, 840);
             this.ControlBox = false;
             this.Controls.Add(this.MnuPatient);
             this.Controls.Add(this.GrpImages);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.GrpImage);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Location = new System.Drawing.Point(19, 41);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;

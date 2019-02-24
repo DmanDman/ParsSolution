@@ -929,7 +929,7 @@
             this.MnuSurgerySearch.Location = new System.Drawing.Point(0, 0);
             this.MnuSurgerySearch.Name = "MnuSurgerySearch";
             this.MnuSurgerySearch.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.MnuSurgerySearch.Size = new System.Drawing.Size(1368, 28);
+            this.MnuSurgerySearch.Size = new System.Drawing.Size(1621, 28);
             this.MnuSurgerySearch.TabIndex = 19;
             this.MnuSurgerySearch.Text = "menuStrip1";
             // 
@@ -991,14 +991,14 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1368, 839);
+            this.ClientSize = new System.Drawing.Size(1621, 840);
             this.ControlBox = false;
             this.Controls.Add(this.MnuSurgerySearch);
             this.Controls.Add(this.GrpSurgery);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Location = new System.Drawing.Point(6, 117);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;

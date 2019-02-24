@@ -83,11 +83,18 @@
             this.TxtImagesCount = new System.Windows.Forms.TextBox();
             this.LblGrpImageDesc = new System.Windows.Forms.Label();
             this.LstImages = new System.Windows.Forms.ListView();
+            this.MnuDashboard = new System.Windows.Forms.MenuStrip();
+            this.TSMnuOpenCanvas = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDashboardBreak1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuAddToCanvas = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuDashboardBreak2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuHelp = new System.Windows.Forms.ToolStripMenuItem();
             this.GrpInfo.SuspendLayout();
             this.GrpRecent.SuspendLayout();
             this.GrpCanvas.SuspendLayout();
             this.GrpHighest.SuspendLayout();
             this.GrpImages.SuspendLayout();
+            this.MnuDashboard.SuspendLayout();
             this.SuspendLayout();
             // 
             // GrpInfo
@@ -655,22 +662,80 @@
             this.LstImages.TabIndex = 7;
             this.LstImages.UseCompatibleStateImageBehavior = false;
             // 
+            // MnuDashboard
+            // 
+            this.MnuDashboard.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.MnuDashboard.ImageScalingSize = new System.Drawing.Size(17, 17);
+            this.MnuDashboard.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMnuOpenCanvas,
+            this.TSMnuDashboardBreak1,
+            this.TSMnuAddToCanvas,
+            this.TSMnuDashboardBreak2,
+            this.TSMnuHelp});
+            this.MnuDashboard.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
+            this.MnuDashboard.Location = new System.Drawing.Point(0, 0);
+            this.MnuDashboard.Name = "MnuDashboard";
+            this.MnuDashboard.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
+            this.MnuDashboard.Size = new System.Drawing.Size(1368, 28);
+            this.MnuDashboard.TabIndex = 7;
+            this.MnuDashboard.Text = "menuStrip1";
+            // 
+            // TSMnuOpenCanvas
+            // 
+            this.TSMnuOpenCanvas.Name = "TSMnuOpenCanvas";
+            this.TSMnuOpenCanvas.Size = new System.Drawing.Size(107, 24);
+            this.TSMnuOpenCanvas.Text = "Open Canvas";
+            // 
+            // TSMnuDashboardBreak1
+            // 
+            this.TSMnuDashboardBreak1.Enabled = false;
+            this.TSMnuDashboardBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuDashboardBreak1.Name = "TSMnuDashboardBreak1";
+            this.TSMnuDashboardBreak1.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuDashboardBreak1.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuDashboardBreak1.Text = "|";
+            // 
+            // TSMnuAddToCanvas
+            // 
+            this.TSMnuAddToCanvas.Name = "TSMnuAddToCanvas";
+            this.TSMnuAddToCanvas.Size = new System.Drawing.Size(117, 24);
+            this.TSMnuAddToCanvas.Text = "Add to Canvas";
+            // 
+            // TSMnuDashboardBreak2
+            // 
+            this.TSMnuDashboardBreak2.Enabled = false;
+            this.TSMnuDashboardBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuDashboardBreak2.Name = "TSMnuDashboardBreak2";
+            this.TSMnuDashboardBreak2.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuDashboardBreak2.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuDashboardBreak2.Text = "|";
+            // 
+            // TSMnuHelp
+            // 
+            this.TSMnuHelp.Name = "TSMnuHelp";
+            this.TSMnuHelp.Size = new System.Drawing.Size(53, 24);
+            this.TSMnuHelp.Text = "Help";
+            // 
             // FrmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1249, 792);
+            this.ClientSize = new System.Drawing.Size(1368, 840);
             this.ControlBox = false;
+            this.Controls.Add(this.MnuDashboard);
             this.Controls.Add(this.GrpImages);
             this.Controls.Add(this.GrpHighest);
             this.Controls.Add(this.GrpCanvas);
             this.Controls.Add(this.GrpRecent);
             this.Controls.Add(this.GrpInfo);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmDashboard";
+            this.ShowIcon = false;
+            this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Tag = "FrmDashboard";
             this.Text = "Dashboard";
@@ -686,7 +751,10 @@
             this.GrpHighest.PerformLayout();
             this.GrpImages.ResumeLayout(false);
             this.GrpImages.PerformLayout();
+            this.MnuDashboard.ResumeLayout(false);
+            this.MnuDashboard.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -746,5 +814,11 @@
         private System.Windows.Forms.TextBox TxtImagesCount;
         private System.Windows.Forms.Label LblGrpImageDesc;
         private System.Windows.Forms.ListView LstImages;
+        private System.Windows.Forms.MenuStrip MnuDashboard;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuOpenCanvas;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDashboardBreak1;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuAddToCanvas;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuDashboardBreak2;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuHelp;
     }
 }

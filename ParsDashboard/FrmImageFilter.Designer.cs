@@ -792,7 +792,7 @@
             this.MnuImageFilter.Location = new System.Drawing.Point(0, 0);
             this.MnuImageFilter.Name = "MnuImageFilter";
             this.MnuImageFilter.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.MnuImageFilter.Size = new System.Drawing.Size(1549, 28);
+            this.MnuImageFilter.Size = new System.Drawing.Size(1621, 28);
             this.MnuImageFilter.TabIndex = 13;
             this.MnuImageFilter.Text = "menuStrip1";
             // 
@@ -840,12 +840,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1549, 839);
+            this.ClientSize = new System.Drawing.Size(1621, 840);
             this.ControlBox = false;
             this.Controls.Add(this.MnuImageFilter);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.GrpBoxPersonal);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

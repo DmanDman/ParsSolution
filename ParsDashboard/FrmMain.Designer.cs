@@ -81,26 +81,6 @@
             this.LblEmailPicPicOnly = new System.Windows.Forms.Label();
             this.LblEmailPic = new System.Windows.Forms.Label();
             this.DlgImagesAdd = new System.Windows.Forms.OpenFileDialog();
-            this.MnuDashboard = new System.Windows.Forms.MenuStrip();
-            this.TSMnuOpenCanvas = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuDashboardBreak1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuAddToCanvas = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuDashboardBreak2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuHelp = new System.Windows.Forms.ToolStripMenuItem();
-            this.MnuImagesSearch = new System.Windows.Forms.MenuStrip();
-            this.TSMnuSearch = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsMnuImageSearchBreak1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuAddMeta = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsMnuImageSearchBreak2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuRemoveMeta = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsMnuImageSearchBreak3 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuAddInfo = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsMnuImageSearchBreak4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuRemoveInfo = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsMnuImageSearchBreak5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuRemoveAllMeta = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsMnuImageSearchBreak6 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsMnuRemoveAllPic = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuImageSearchResult = new System.Windows.Forms.MenuStrip();
             this.TSMnuImgSearchResultPatientDetail = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuImgSearchResultBreak1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -111,10 +91,6 @@
             this.TSMnuImgSearchResultOpenCanvas = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuImgSearchResultBreak4 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuImgSearchResultPrint = new System.Windows.Forms.ToolStripMenuItem();
-            this.MnuPatientSearch = new System.Windows.Forms.MenuStrip();
-            this.TSMnuPatientSrchSearch = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuBlank1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuPatientSrchClear = new System.Windows.Forms.ToolStripMenuItem();
             this.PnlDashboard.SuspendLayout();
             this.PnlPatient.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -125,10 +101,7 @@
             this.PnlImages.SuspendLayout();
             this.PnlRpt.SuspendLayout();
             this.PnlEmailPic.SuspendLayout();
-            this.MnuDashboard.SuspendLayout();
-            this.MnuImagesSearch.SuspendLayout();
             this.MnuImageSearchResult.SuspendLayout();
-            this.MnuPatientSearch.SuspendLayout();
             this.SuspendLayout();
             // 
             // PnlDashboard
@@ -169,7 +142,7 @@
             this.PnlPatient.Controls.Add(this.LlbPatientSearch);
             this.PnlPatient.Controls.Add(this.LblPatientAdd);
             this.PnlPatient.Controls.Add(this.LblPatient);
-            this.PnlPatient.Location = new System.Drawing.Point(2, 112);
+            this.PnlPatient.Location = new System.Drawing.Point(2, 218);
             this.PnlPatient.Margin = new System.Windows.Forms.Padding(0);
             this.PnlPatient.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlPatient.Name = "PnlPatient";
@@ -300,7 +273,7 @@
             this.PnlData.Controls.Add(this.LblDataDefaultHosp);
             this.PnlData.Controls.Add(this.LblDataCustomizeName);
             this.PnlData.Controls.Add(this.LblData);
-            this.PnlData.Location = new System.Drawing.Point(2, 495);
+            this.PnlData.Location = new System.Drawing.Point(2, 601);
             this.PnlData.Margin = new System.Windows.Forms.Padding(0);
             this.PnlData.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlData.Name = "PnlData";
@@ -383,7 +356,7 @@
             this.PnlSurgery.Controls.Add(this.LblSurgerySearch);
             this.PnlSurgery.Controls.Add(this.LblSurgeryAdd);
             this.PnlSurgery.Controls.Add(this.LblSurgery);
-            this.PnlSurgery.Location = new System.Drawing.Point(2, 293);
+            this.PnlSurgery.Location = new System.Drawing.Point(2, 399);
             this.PnlSurgery.Margin = new System.Windows.Forms.Padding(0);
             this.PnlSurgery.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlSurgery.Name = "PnlSurgery";
@@ -449,7 +422,7 @@
             this.PnlMetaData.Controls.Add(this.LblMDCpt);
             this.PnlMetaData.Controls.Add(this.LblMDComp);
             this.PnlMetaData.Controls.Add(this.LblMetaData);
-            this.PnlMetaData.Location = new System.Drawing.Point(2, 571);
+            this.PnlMetaData.Location = new System.Drawing.Point(2, 677);
             this.PnlMetaData.Margin = new System.Windows.Forms.Padding(0);
             this.PnlMetaData.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlMetaData.Name = "PnlMetaData";
@@ -623,7 +596,7 @@
             this.PnlSecurity.Controls.Add(this.label1);
             this.PnlSecurity.Controls.Add(this.LblSecurityUserMgmt);
             this.PnlSecurity.Controls.Add(this.LblSecurity);
-            this.PnlSecurity.Location = new System.Drawing.Point(2, 730);
+            this.PnlSecurity.Location = new System.Drawing.Point(2, 836);
             this.PnlSecurity.Margin = new System.Windows.Forms.Padding(0);
             this.PnlSecurity.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlSecurity.Name = "PnlSecurity";
@@ -685,7 +658,7 @@
             this.PnlImages.Margin = new System.Windows.Forms.Padding(0);
             this.PnlImages.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlImages.Name = "PnlImages";
-            this.PnlImages.Size = new System.Drawing.Size(200, 74);
+            this.PnlImages.Size = new System.Drawing.Size(200, 180);
             this.PnlImages.TabIndex = 4;
             this.PnlImages.Tag = "Collapsed";
             // 
@@ -778,7 +751,7 @@
             this.PnlRpt.Controls.Add(this.LblRptDynamic);
             this.PnlRpt.Controls.Add(this.LblRptStatic);
             this.PnlRpt.Controls.Add(this.LblRpt);
-            this.PnlRpt.Location = new System.Drawing.Point(2, 396);
+            this.PnlRpt.Location = new System.Drawing.Point(2, 502);
             this.PnlRpt.Margin = new System.Windows.Forms.Padding(0);
             this.PnlRpt.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlRpt.Name = "PnlRpt";
@@ -835,7 +808,7 @@
             this.PnlEmailPic.Controls.Add(this.LblEmailPicPicInfo);
             this.PnlEmailPic.Controls.Add(this.LblEmailPicPicOnly);
             this.PnlEmailPic.Controls.Add(this.LblEmailPic);
-            this.PnlEmailPic.Location = new System.Drawing.Point(2, 650);
+            this.PnlEmailPic.Location = new System.Drawing.Point(2, 756);
             this.PnlEmailPic.Margin = new System.Windows.Forms.Padding(0);
             this.PnlEmailPic.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlEmailPic.Name = "PnlEmailPic";
@@ -890,191 +863,6 @@
             this.DlgImagesAdd.Multiselect = true;
             this.DlgImagesAdd.Title = "Select Pictures";
             // 
-            // MnuDashboard
-            // 
-            this.MnuDashboard.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.MnuDashboard.ImageScalingSize = new System.Drawing.Size(17, 17);
-            this.MnuDashboard.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSMnuOpenCanvas,
-            this.TSMnuDashboardBreak1,
-            this.TSMnuAddToCanvas,
-            this.TSMnuDashboardBreak2,
-            this.TSMnuHelp});
-            this.MnuDashboard.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuDashboard.Location = new System.Drawing.Point(185, 0);
-            this.MnuDashboard.Name = "MnuDashboard";
-            this.MnuDashboard.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.MnuDashboard.Size = new System.Drawing.Size(1212, 28);
-            this.MnuDashboard.TabIndex = 6;
-            this.MnuDashboard.Text = "menuStrip1";
-            // 
-            // TSMnuOpenCanvas
-            // 
-            this.TSMnuOpenCanvas.Name = "TSMnuOpenCanvas";
-            this.TSMnuOpenCanvas.Size = new System.Drawing.Size(107, 24);
-            this.TSMnuOpenCanvas.Text = "Open Canvas";
-            // 
-            // TSMnuDashboardBreak1
-            // 
-            this.TSMnuDashboardBreak1.Enabled = false;
-            this.TSMnuDashboardBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TSMnuDashboardBreak1.Name = "TSMnuDashboardBreak1";
-            this.TSMnuDashboardBreak1.Padding = new System.Windows.Forms.Padding(0);
-            this.TSMnuDashboardBreak1.Size = new System.Drawing.Size(18, 24);
-            this.TSMnuDashboardBreak1.Text = "|";
-            // 
-            // TSMnuAddToCanvas
-            // 
-            this.TSMnuAddToCanvas.Name = "TSMnuAddToCanvas";
-            this.TSMnuAddToCanvas.Size = new System.Drawing.Size(117, 24);
-            this.TSMnuAddToCanvas.Text = "Add to Canvas";
-            // 
-            // TSMnuDashboardBreak2
-            // 
-            this.TSMnuDashboardBreak2.Enabled = false;
-            this.TSMnuDashboardBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TSMnuDashboardBreak2.Name = "TSMnuDashboardBreak2";
-            this.TSMnuDashboardBreak2.Padding = new System.Windows.Forms.Padding(0);
-            this.TSMnuDashboardBreak2.Size = new System.Drawing.Size(18, 24);
-            this.TSMnuDashboardBreak2.Text = "|";
-            // 
-            // TSMnuHelp
-            // 
-            this.TSMnuHelp.Name = "TSMnuHelp";
-            this.TSMnuHelp.Size = new System.Drawing.Size(53, 24);
-            this.TSMnuHelp.Text = "Help";
-            // 
-            // MnuImagesSearch
-            // 
-            this.MnuImagesSearch.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.MnuImagesSearch.ImageScalingSize = new System.Drawing.Size(17, 17);
-            this.MnuImagesSearch.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSMnuSearch,
-            this.TsMnuImageSearchBreak1,
-            this.TSMnuAddMeta,
-            this.TsMnuImageSearchBreak2,
-            this.TSMnuRemoveMeta,
-            this.TsMnuImageSearchBreak3,
-            this.TSMnuAddInfo,
-            this.TsMnuImageSearchBreak4,
-            this.TSMnuRemoveInfo,
-            this.TsMnuImageSearchBreak5,
-            this.TSMnuRemoveAllMeta,
-            this.TsMnuImageSearchBreak6,
-            this.TsMnuRemoveAllPic});
-            this.MnuImagesSearch.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuImagesSearch.Location = new System.Drawing.Point(185, 28);
-            this.MnuImagesSearch.Name = "MnuImagesSearch";
-            this.MnuImagesSearch.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.MnuImagesSearch.Size = new System.Drawing.Size(1212, 28);
-            this.MnuImagesSearch.TabIndex = 9;
-            this.MnuImagesSearch.Text = "menuStrip1";
-            this.MnuImagesSearch.Visible = false;
-            // 
-            // TSMnuSearch
-            // 
-            this.TSMnuSearch.Name = "TSMnuSearch";
-            this.TSMnuSearch.Size = new System.Drawing.Size(65, 24);
-            this.TSMnuSearch.Tag = "FrmDashboard";
-            this.TSMnuSearch.Text = "&Search";
-            this.TSMnuSearch.Click += new System.EventHandler(this.TSMnuSearch_Click);
-            // 
-            // TsMnuImageSearchBreak1
-            // 
-            this.TsMnuImageSearchBreak1.Enabled = false;
-            this.TsMnuImageSearchBreak1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TsMnuImageSearchBreak1.Name = "TsMnuImageSearchBreak1";
-            this.TsMnuImageSearchBreak1.Padding = new System.Windows.Forms.Padding(0);
-            this.TsMnuImageSearchBreak1.Size = new System.Drawing.Size(18, 24);
-            this.TsMnuImageSearchBreak1.Text = "|";
-            // 
-            // TSMnuAddMeta
-            // 
-            this.TSMnuAddMeta.Name = "TSMnuAddMeta";
-            this.TSMnuAddMeta.Size = new System.Drawing.Size(123, 24);
-            this.TSMnuAddMeta.Text = "&Add Meta Data";
-            this.TSMnuAddMeta.Click += new System.EventHandler(this.TSMnuAddMeta_Click);
-            // 
-            // TsMnuImageSearchBreak2
-            // 
-            this.TsMnuImageSearchBreak2.Enabled = false;
-            this.TsMnuImageSearchBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TsMnuImageSearchBreak2.Name = "TsMnuImageSearchBreak2";
-            this.TsMnuImageSearchBreak2.Padding = new System.Windows.Forms.Padding(0);
-            this.TsMnuImageSearchBreak2.Size = new System.Drawing.Size(18, 24);
-            this.TsMnuImageSearchBreak2.Text = "|";
-            // 
-            // TSMnuRemoveMeta
-            // 
-            this.TSMnuRemoveMeta.Name = "TSMnuRemoveMeta";
-            this.TSMnuRemoveMeta.Size = new System.Drawing.Size(149, 24);
-            this.TSMnuRemoveMeta.Text = "&Remove Meta Data";
-            this.TSMnuRemoveMeta.Click += new System.EventHandler(this.TSMnuRemoveMeta_Click);
-            // 
-            // TsMnuImageSearchBreak3
-            // 
-            this.TsMnuImageSearchBreak3.Enabled = false;
-            this.TsMnuImageSearchBreak3.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TsMnuImageSearchBreak3.Name = "TsMnuImageSearchBreak3";
-            this.TsMnuImageSearchBreak3.Padding = new System.Windows.Forms.Padding(0);
-            this.TsMnuImageSearchBreak3.Size = new System.Drawing.Size(18, 24);
-            this.TsMnuImageSearchBreak3.Text = "|";
-            // 
-            // TSMnuAddInfo
-            // 
-            this.TSMnuAddInfo.Name = "TSMnuAddInfo";
-            this.TSMnuAddInfo.Size = new System.Drawing.Size(128, 24);
-            this.TSMnuAddInfo.Text = "Add Picture &Info";
-            this.TSMnuAddInfo.Click += new System.EventHandler(this.TSMnuAddInfo_Click);
-            // 
-            // TsMnuImageSearchBreak4
-            // 
-            this.TsMnuImageSearchBreak4.Enabled = false;
-            this.TsMnuImageSearchBreak4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TsMnuImageSearchBreak4.Name = "TsMnuImageSearchBreak4";
-            this.TsMnuImageSearchBreak4.Padding = new System.Windows.Forms.Padding(0);
-            this.TsMnuImageSearchBreak4.Size = new System.Drawing.Size(18, 24);
-            this.TsMnuImageSearchBreak4.Text = "|";
-            // 
-            // TSMnuRemoveInfo
-            // 
-            this.TSMnuRemoveInfo.Name = "TSMnuRemoveInfo";
-            this.TSMnuRemoveInfo.Size = new System.Drawing.Size(154, 24);
-            this.TSMnuRemoveInfo.Text = "Remove Picture I&nfo";
-            this.TSMnuRemoveInfo.Click += new System.EventHandler(this.TSMnuRemoveInfo_Click);
-            // 
-            // TsMnuImageSearchBreak5
-            // 
-            this.TsMnuImageSearchBreak5.Enabled = false;
-            this.TsMnuImageSearchBreak5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TsMnuImageSearchBreak5.Name = "TsMnuImageSearchBreak5";
-            this.TsMnuImageSearchBreak5.Padding = new System.Windows.Forms.Padding(0);
-            this.TsMnuImageSearchBreak5.Size = new System.Drawing.Size(18, 24);
-            this.TsMnuImageSearchBreak5.Text = "|";
-            // 
-            // TSMnuRemoveAllMeta
-            // 
-            this.TSMnuRemoveAllMeta.Name = "TSMnuRemoveAllMeta";
-            this.TSMnuRemoveAllMeta.Size = new System.Drawing.Size(171, 24);
-            this.TSMnuRemoveAllMeta.Text = "Re&move All Meta Data";
-            this.TSMnuRemoveAllMeta.Click += new System.EventHandler(this.TSMnuRemoveAllMeta_Click);
-            // 
-            // TsMnuImageSearchBreak6
-            // 
-            this.TsMnuImageSearchBreak6.Enabled = false;
-            this.TsMnuImageSearchBreak6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TsMnuImageSearchBreak6.Name = "TsMnuImageSearchBreak6";
-            this.TsMnuImageSearchBreak6.Padding = new System.Windows.Forms.Padding(0);
-            this.TsMnuImageSearchBreak6.Size = new System.Drawing.Size(18, 24);
-            this.TsMnuImageSearchBreak6.Text = "|";
-            // 
-            // TsMnuRemoveAllPic
-            // 
-            this.TsMnuRemoveAllPic.Name = "TsMnuRemoveAllPic";
-            this.TsMnuRemoveAllPic.Size = new System.Drawing.Size(150, 24);
-            this.TsMnuRemoveAllPic.Text = "Remove All Pic In&fo";
-            this.TsMnuRemoveAllPic.Click += new System.EventHandler(this.TsMnuRemoveAllPic_Click);
-            // 
             // MnuImageSearchResult
             // 
             this.MnuImageSearchResult.BackColor = System.Drawing.SystemColors.ActiveCaption;
@@ -1090,7 +878,7 @@
             this.TSMnuImgSearchResultBreak4,
             this.TSMnuImgSearchResultPrint});
             this.MnuImageSearchResult.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuImageSearchResult.Location = new System.Drawing.Point(185, 28);
+            this.MnuImageSearchResult.Location = new System.Drawing.Point(185, 0);
             this.MnuImageSearchResult.Name = "MnuImageSearchResult";
             this.MnuImageSearchResult.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
             this.MnuImageSearchResult.Size = new System.Drawing.Size(1212, 28);
@@ -1165,55 +953,12 @@
             this.TSMnuImgSearchResultPrint.Size = new System.Drawing.Size(51, 24);
             this.TSMnuImgSearchResultPrint.Text = "Print";
             // 
-            // MnuPatientSearch
-            // 
-            this.MnuPatientSearch.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.MnuPatientSearch.ImageScalingSize = new System.Drawing.Size(17, 17);
-            this.MnuPatientSearch.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSMnuPatientSrchSearch,
-            this.TSMnuBlank1,
-            this.TSMnuPatientSrchClear});
-            this.MnuPatientSearch.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow;
-            this.MnuPatientSearch.Location = new System.Drawing.Point(185, 28);
-            this.MnuPatientSearch.Name = "MnuPatientSearch";
-            this.MnuPatientSearch.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.MnuPatientSearch.Size = new System.Drawing.Size(1212, 28);
-            this.MnuPatientSearch.TabIndex = 14;
-            this.MnuPatientSearch.Text = "menuStrip1";
-            this.MnuPatientSearch.Visible = false;
-            // 
-            // TSMnuPatientSrchSearch
-            // 
-            this.TSMnuPatientSrchSearch.Name = "TSMnuPatientSrchSearch";
-            this.TSMnuPatientSrchSearch.Size = new System.Drawing.Size(65, 24);
-            this.TSMnuPatientSrchSearch.Text = "Search";
-            this.TSMnuPatientSrchSearch.Click += new System.EventHandler(this.TSMnuPatientSrchSearch_Click);
-            // 
-            // TSMnuBlank1
-            // 
-            this.TSMnuBlank1.Enabled = false;
-            this.TSMnuBlank1.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TSMnuBlank1.Name = "TSMnuBlank1";
-            this.TSMnuBlank1.Padding = new System.Windows.Forms.Padding(0);
-            this.TSMnuBlank1.Size = new System.Drawing.Size(18, 24);
-            this.TSMnuBlank1.Text = "|";
-            // 
-            // TSMnuPatientSrchClear
-            // 
-            this.TSMnuPatientSrchClear.Name = "TSMnuPatientSrchClear";
-            this.TSMnuPatientSrchClear.Size = new System.Drawing.Size(55, 24);
-            this.TSMnuPatientSrchClear.Text = "Clear";
-            this.TSMnuPatientSrchClear.Click += new System.EventHandler(this.TSMnuPatientSrchClear_Click);
-            // 
             // FrmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1397, 976);
-            this.Controls.Add(this.MnuImagesSearch);
             this.Controls.Add(this.MnuImageSearchResult);
-            this.Controls.Add(this.MnuPatientSearch);
-            this.Controls.Add(this.MnuDashboard);
             this.Controls.Add(this.tableLayoutPanel1);
             this.DoubleBuffered = true;
             this.IsMdiContainer = true;
@@ -1242,14 +987,8 @@
             this.PnlRpt.PerformLayout();
             this.PnlEmailPic.ResumeLayout(false);
             this.PnlEmailPic.PerformLayout();
-            this.MnuDashboard.ResumeLayout(false);
-            this.MnuDashboard.PerformLayout();
-            this.MnuImagesSearch.ResumeLayout(false);
-            this.MnuImagesSearch.PerformLayout();
             this.MnuImageSearchResult.ResumeLayout(false);
             this.MnuImageSearchResult.PerformLayout();
-            this.MnuPatientSearch.ResumeLayout(false);
-            this.MnuPatientSearch.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1295,18 +1034,6 @@
         private System.Windows.Forms.Label LblImagesFilter;
         private System.Windows.Forms.Label LblPatientSearchResults;
         private System.Windows.Forms.Label LblPatientFilter;
-        private System.Windows.Forms.MenuStrip MnuDashboard;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuOpenCanvas;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuAddToCanvas;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuHelp;
-        private System.Windows.Forms.MenuStrip MnuImagesSearch;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuSearch;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuAddMeta;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuRemoveMeta;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuAddInfo;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuRemoveInfo;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuRemoveAllMeta;
-        private System.Windows.Forms.ToolStripMenuItem TsMnuRemoveAllPic;
         private System.Windows.Forms.MenuStrip MnuImageSearchResult;
         private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultPatientDetail;
         private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultAddPic;
@@ -1317,18 +1044,6 @@
         private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultBreak2;
         private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultBreak3;
         private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultBreak4;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuDashboardBreak1;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuDashboardBreak2;
-        private System.Windows.Forms.ToolStripMenuItem TsMnuImageSearchBreak1;
-        private System.Windows.Forms.ToolStripMenuItem TsMnuImageSearchBreak2;
-        private System.Windows.Forms.ToolStripMenuItem TsMnuImageSearchBreak3;
-        private System.Windows.Forms.ToolStripMenuItem TsMnuImageSearchBreak4;
-        private System.Windows.Forms.ToolStripMenuItem TsMnuImageSearchBreak5;
-        private System.Windows.Forms.ToolStripMenuItem TsMnuImageSearchBreak6;
-        private System.Windows.Forms.MenuStrip MnuPatientSearch;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuPatientSrchSearch;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuBlank1;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuPatientSrchClear;
         private System.Windows.Forms.Label label1;
         internal System.Windows.Forms.Panel PnlMetaData;
         private System.Windows.Forms.Label LblMDSurgery;

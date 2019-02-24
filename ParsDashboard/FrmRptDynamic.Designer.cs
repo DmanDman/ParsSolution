@@ -44,7 +44,7 @@
             this.MnuRptDynamic.Location = new System.Drawing.Point(0, 0);
             this.MnuRptDynamic.Name = "MnuRptDynamic";
             this.MnuRptDynamic.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.MnuRptDynamic.Size = new System.Drawing.Size(1531, 28);
+            this.MnuRptDynamic.Size = new System.Drawing.Size(1567, 28);
             this.MnuRptDynamic.TabIndex = 27;
             this.MnuRptDynamic.Text = "menuStrip1";
             // 
@@ -68,10 +68,11 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1531, 605);
+            this.ClientSize = new System.Drawing.Size(1567, 803);
             this.ControlBox = false;
             this.Controls.Add(this.LblComingSoon);
             this.Controls.Add(this.MnuRptDynamic);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

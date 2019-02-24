@@ -139,7 +139,7 @@
             this.MnuDataPicInfo.Location = new System.Drawing.Point(0, 0);
             this.MnuDataPicInfo.Name = "MnuDataPicInfo";
             this.MnuDataPicInfo.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.MnuDataPicInfo.Size = new System.Drawing.Size(1549, 28);
+            this.MnuDataPicInfo.Size = new System.Drawing.Size(1567, 28);
             this.MnuDataPicInfo.TabIndex = 26;
             this.MnuDataPicInfo.Text = "menuStrip1";
             // 
@@ -183,12 +183,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1549, 652);
+            this.ClientSize = new System.Drawing.Size(1567, 803);
             this.ControlBox = false;
             this.Controls.Add(this.MnuDataPicInfo);
             this.Controls.Add(this.GrpRename);
             this.Controls.Add(this.GrpPicInfo);
             this.Controls.Add(this.GrpNew);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

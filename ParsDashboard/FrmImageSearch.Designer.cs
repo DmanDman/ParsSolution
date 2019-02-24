@@ -311,7 +311,7 @@
             this.MnuImagesSearch.Location = new System.Drawing.Point(0, 0);
             this.MnuImagesSearch.Name = "MnuImagesSearch";
             this.MnuImagesSearch.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.MnuImagesSearch.Size = new System.Drawing.Size(1368, 28);
+            this.MnuImagesSearch.Size = new System.Drawing.Size(1621, 28);
             this.MnuImagesSearch.TabIndex = 10;
             this.MnuImagesSearch.Text = "menuStrip1";
             // 
@@ -321,6 +321,7 @@
             this.TSMnuSearch.Size = new System.Drawing.Size(65, 24);
             this.TSMnuSearch.Tag = "FrmDashboard";
             this.TSMnuSearch.Text = "&Search";
+            this.TSMnuSearch.Click += new System.EventHandler(this.TSMnuSearch_Click);
             // 
             // TsMnuImageSearchBreak1
             // 
@@ -336,6 +337,7 @@
             this.TSMnuAddMeta.Name = "TSMnuAddMeta";
             this.TSMnuAddMeta.Size = new System.Drawing.Size(123, 24);
             this.TSMnuAddMeta.Text = "&Add Meta Data";
+            this.TSMnuAddMeta.Click += new System.EventHandler(this.TSMnuAddMeta_Click);
             // 
             // TsMnuImageSearchBreak2
             // 
@@ -351,6 +353,7 @@
             this.TSMnuRemoveMeta.Name = "TSMnuRemoveMeta";
             this.TSMnuRemoveMeta.Size = new System.Drawing.Size(149, 24);
             this.TSMnuRemoveMeta.Text = "&Remove Meta Data";
+            this.TSMnuRemoveMeta.Click += new System.EventHandler(this.TSMnuRemoveMeta_Click);
             // 
             // TsMnuImageSearchBreak3
             // 
@@ -366,6 +369,7 @@
             this.TSMnuAddInfo.Name = "TSMnuAddInfo";
             this.TSMnuAddInfo.Size = new System.Drawing.Size(128, 24);
             this.TSMnuAddInfo.Text = "Add Picture &Info";
+            this.TSMnuAddInfo.Click += new System.EventHandler(this.TSMnuAddInfo_Click);
             // 
             // TsMnuImageSearchBreak4
             // 
@@ -381,6 +385,7 @@
             this.TSMnuRemoveInfo.Name = "TSMnuRemoveInfo";
             this.TSMnuRemoveInfo.Size = new System.Drawing.Size(154, 24);
             this.TSMnuRemoveInfo.Text = "Remove Picture I&nfo";
+            this.TSMnuRemoveInfo.Click += new System.EventHandler(this.TSMnuRemoveInfo_Click);
             // 
             // TsMnuImageSearchBreak5
             // 
@@ -396,6 +401,7 @@
             this.TSMnuRemoveAllMeta.Name = "TSMnuRemoveAllMeta";
             this.TSMnuRemoveAllMeta.Size = new System.Drawing.Size(171, 24);
             this.TSMnuRemoveAllMeta.Text = "Re&move All Meta Data";
+            this.TSMnuRemoveAllMeta.Click += new System.EventHandler(this.TSMnuRemoveAllMeta_Click);
             // 
             // TsMnuImageSearchBreak6
             // 
@@ -411,16 +417,18 @@
             this.TsMnuRemoveAllPic.Name = "TsMnuRemoveAllPic";
             this.TsMnuRemoveAllPic.Size = new System.Drawing.Size(150, 24);
             this.TsMnuRemoveAllPic.Text = "Remove All Pic In&fo";
+            this.TsMnuRemoveAllPic.Click += new System.EventHandler(this.TsMnuRemoveAllPic_Click);
             // 
             // FrmImageSearch
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1368, 840);
+            this.ClientSize = new System.Drawing.Size(1621, 840);
             this.ControlBox = false;
             this.Controls.Add(this.MnuImagesSearch);
             this.Controls.Add(this.GrpPicInfo);
             this.Controls.Add(this.GrpMetaData);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;

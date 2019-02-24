@@ -459,7 +459,7 @@
             this.MnuDataCustomizeNames.Location = new System.Drawing.Point(0, 0);
             this.MnuDataCustomizeNames.Name = "MnuDataCustomizeNames";
             this.MnuDataCustomizeNames.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.MnuDataCustomizeNames.Size = new System.Drawing.Size(1603, 28);
+            this.MnuDataCustomizeNames.Size = new System.Drawing.Size(1567, 28);
             this.MnuDataCustomizeNames.TabIndex = 21;
             this.MnuDataCustomizeNames.Text = "menuStrip1";
             // 
@@ -504,11 +504,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1603, 793);
+            this.ClientSize = new System.Drawing.Size(1567, 803);
             this.ControlBox = false;
             this.Controls.Add(this.MnuDataCustomizeNames);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.MinimizeBox = false;

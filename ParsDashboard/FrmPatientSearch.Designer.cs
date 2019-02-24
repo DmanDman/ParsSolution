@@ -595,7 +595,7 @@
             this.MnuPatientSearch.Location = new System.Drawing.Point(0, 0);
             this.MnuPatientSearch.Name = "MnuPatientSearch";
             this.MnuPatientSearch.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.MnuPatientSearch.Size = new System.Drawing.Size(1350, 28);
+            this.MnuPatientSearch.Size = new System.Drawing.Size(1368, 28);
             this.MnuPatientSearch.TabIndex = 15;
             this.MnuPatientSearch.Text = "menuStrip1";
             // 
@@ -626,12 +626,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1350, 793);
+            this.ClientSize = new System.Drawing.Size(1368, 840);
             this.ControlBox = false;
             this.Controls.Add(this.MnuPatientSearch);
             this.Controls.Add(this.TabSearch);
+            this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Location = new System.Drawing.Point(6, 117);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmPatientSearch";

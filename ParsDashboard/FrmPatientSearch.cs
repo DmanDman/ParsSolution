@@ -13,6 +13,8 @@ namespace ParsDashboard
 {
     public partial class FrmPatientSearch : Form
     {
+        SubRoutine SubRtnMain = new SubRoutine();
+
         Helper helper = new Helper();
         FormNav fNav = new FormNav();        
 
@@ -215,14 +217,28 @@ namespace ParsDashboard
 
         private void TSMnuPatientSrchSearch_Click(object sender, EventArgs e)
         {
-            //fNav.ShowForm( fImageSearchResuts);
-
-            foreach (Form f in Application.OpenForms)
+            //  loop through open forms
+            foreach ( Form f in Application.OpenForms )
             {
-                if (f.Tag.ToString() == "FrmImageSearchResults")
-                {
-                    //f.Show();
+                //  show Image Search Results
+                if ( f.Tag.ToString() == "FrmImageSearchResults" )
+                {                    
                     f.BringToFront();
+                }
+
+                //  set navigation lable to selected on main form
+                if ( f.Tag.ToString() == "FrmMain" )
+                {
+                    Control lbl = SubRoutine.FindControl( f, "LblPatientSearchResults" );
+                    Label ctllbl = lbl as Label;
+
+                    SubRtnMain.NavSetStyleClickSub( ctllbl );
+
+                    //  set label LlbPatientSearch to not bold
+                    lbl = SubRoutine.FindControl( f, "LlbPatientSearch" );
+                    ctllbl = lbl as Label;
+                    
+                    ctllbl.Font = new Font( ctllbl.Font.Name, ctllbl.Font.SizeInPoints, FontStyle.Regular );
                 }
             }
         }

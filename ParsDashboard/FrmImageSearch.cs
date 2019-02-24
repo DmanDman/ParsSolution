@@ -9,6 +9,8 @@ namespace ParsDashboard
 {
     public partial class FrmImageSearch : Form
     {
+        SubRoutine SubRtnMain = new SubRoutine();
+
         Helper helper = new Helper();
         FormNav frmNav = new FormNav();
 
@@ -111,8 +113,31 @@ namespace ParsDashboard
         }
 
         public void TSMnuSearch_Click(object sender, EventArgs e)
-        {
-            frmNav.ShowFormName( this.MdiParent.MdiChildren, "FrmImageSearchResults" );            
+        {            
+            //  loop through open forms
+            foreach ( Form f in Application.OpenForms )
+            {
+                //  show Image Search Results
+                if ( f.Tag.ToString() == "FrmImageSearchResults" )
+                {
+                    f.BringToFront();
+                }
+
+                //  set navigation label to selected on main form
+                if ( f.Tag.ToString() == "FrmMain" )
+                {
+                    Control lbl = SubRoutine.FindControl( f, "LblImagesSearchResults" );
+                    Label ctllbl = lbl as Label;
+
+                    SubRtnMain.NavSetStyleClickSub( ctllbl );
+
+                    //  set label LblImagesSearch to not bold
+                    lbl = SubRoutine.FindControl( f, "LblImagesSearch" );
+                    ctllbl = lbl as Label;
+
+                    ctllbl.Font = new Font( ctllbl.Font.Name, ctllbl.Font.SizeInPoints, FontStyle.Regular );
+                }
+            }
         }
 
         private void FrmImageSearch_Load(object sender, EventArgs e)
@@ -157,7 +182,6 @@ namespace ParsDashboard
                     helper.AddListBoxData( CboPicInfo, LstPicInfoSearchItems );
                 }
             }
-
         }
     }
 }
