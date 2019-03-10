@@ -122,6 +122,7 @@
             // 
             // DtDOB
             // 
+            this.DtDOB.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DtDOB.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.DtDOB.Location = new System.Drawing.Point(121, 105);
             this.DtDOB.MinDate = new System.DateTime(1970, 1, 1, 0, 0, 0, 0);
@@ -798,10 +799,9 @@
             // 
             // TSMnuFilterApplyFilter
             // 
-            this.TSMnuFilterApplyFilter.Enabled = false;
-            this.TSMnuFilterApplyFilter.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuFilterApplyFilter.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.TSMnuFilterApplyFilter.Name = "TSMnuFilterApplyFilter";
-            this.TSMnuFilterApplyFilter.Size = new System.Drawing.Size(102, 24);
+            this.TSMnuFilterApplyFilter.Size = new System.Drawing.Size(97, 24);
             this.TSMnuFilterApplyFilter.Text = "Apply Filter";
             // 
             // TSMnuFilterBreak1

@@ -79,16 +79,14 @@ namespace ParsDashboard
             LblImagesAdd.Font = NavSetStyleLbl( LblImagesAdd );            
             LblImagesSearch.Font = NavSetStyleLbl( LblImagesSearch );
             LblImagesFilter.Font = NavSetStyleLbl( LblImagesFilter );
-            LblImagesSearchResults.Font = NavSetStyleLbl( LblImagesSearchResults );
-            LblImagesSearchToPatient.Font = NavSetStyleLbl( LblImagesSearchToPatient );
+            LblImagesSearchResults.Font = NavSetStyleLbl( LblImagesSearchResults );            
 
             //  Patient Panel
             LblPatient.Font = NavSetStyleLbl(LblPatient);
             LblPatientAdd.Font = NavSetStyleLbl(LblPatientAdd);
             LlbPatientSearch.Font = NavSetStyleLbl(LlbPatientSearch);
             LblPatientFilter.Font = NavSetStyleLbl(LblPatientFilter);
-            LblPatientSearchResults.Font = NavSetStyleLbl(LblPatientSearchResults);
-            LblPatientSearchToImage.Font = NavSetStyleLbl(LblPatientSearchToImage);
+            LblPatientSearchResults.Font = NavSetStyleLbl(LblPatientSearchResults);           
 
             //  Surgery Panel
             LblSurgery.Font = NavSetStyleLbl(LblSurgery);
@@ -367,11 +365,11 @@ namespace ParsDashboard
 
         private void LblImages_Click(object sender, EventArgs e)
         {
-            fNav.ShowForm(fImage);
+            fNav.ShowForm( fImage );
 
-            SubRtn.DashboardAccordian(sender, e, tableLayoutPanel1);          
+            SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );          
 
-            NavSetStyleClick(LblImages);            
+            NavSetStyleClick( LblImages );            
         }
 
         private void LblImages_MouseEnter(object sender, EventArgs e)
@@ -428,13 +426,8 @@ namespace ParsDashboard
 
         private void LblImagesSearchResults_MouseEnter(object sender, EventArgs e)
         {
-            //HelpMouseMove.MouseEnter(LblImagesSearchResults);
-        }
-
-        private void LblImagesSearchToPatient_MouseEnter(object sender, EventArgs e)
-        {
-            HelpMouseMove.MouseEnter(LblImagesSearchToPatient);
-        }
+           
+        }       
 
         private void LblPatientAdd_MouseEnter(object sender, EventArgs e)
         {
@@ -453,12 +446,12 @@ namespace ParsDashboard
 
         private void LblPatientSearchResults_MouseEnter(object sender, EventArgs e)
         {
-            //HelpMouseMove.MouseEnter(LblPatientSearchResults);
+            
         }
 
         private void LblPatientSearchToImage_MouseEnter(object sender, EventArgs e)
         {
-            HelpMouseMove.MouseEnter( LblPatientSearchToImage );
+           
         }
 
         private void LblSurgery_MouseEnter(object sender, EventArgs e)
@@ -483,12 +476,7 @@ namespace ParsDashboard
 
         private void LblImagesSearchResults_MouseLeave(object sender, EventArgs e)
         {
-            //HelpMouseMove.MouseLeave(LblImagesSearchResults);
-        }
-
-        private void LblImagesSearchToPatient_MouseLeave(object sender, EventArgs e)
-        {
-            HelpMouseMove.MouseLeave(LblImagesSearchToPatient);
+            
         }
 
         private void LblPatientAdd_MouseLeave(object sender, EventArgs e)
@@ -513,7 +501,7 @@ namespace ParsDashboard
 
         private void LblPatientSearchToImage_MouseLeave(object sender, EventArgs e)
         {
-            HelpMouseMove.MouseLeave(LblPatientSearchToImage);
+           
         }
 
         private void LblSurgery_MouseLeave(object sender, EventArgs e)
@@ -542,14 +530,7 @@ namespace ParsDashboard
         {            
             //NavSetStyleClick(LblImagesSearchResults);
         }
-
-        private void LblImagesSearchToPatient_Click(object sender, EventArgs e)
-        {
-            //fNav.ShowForm( X );
-
-            NavSetStyleClick(LblImagesSearchToPatient);
-        }
-
+       
         private void LlbPatientSearch_Click(object sender, EventArgs e)
         {
             fNav.ShowForm( fPatientSearch );
@@ -641,7 +622,7 @@ namespace ParsDashboard
 
         private void LblPatientSearchToImage_Click(object sender, EventArgs e)
         {
-            NavSetStyleClick( LblPatientSearchToImage );
+         
         }
 
         private void LblPatientSearchResults_Click(object sender, EventArgs e)
@@ -1480,19 +1461,34 @@ namespace ParsDashboard
                             }
                             else
                             {
-                                if (p.Controls.Count == 3)
-                                {
-                                    p.Height = p.Controls.Count * 28;
+                                if ( p.Controls.Count == 2 )
+                                {                                    
+                                    p.Height = 60;
                                     p.Tag = "Expanded";
                                 }
-                                else if (p.Controls.Count == 5)
+                                else if ( p.Controls.Count == 3 )
                                 {
-                                    p.Height = p.Controls.Count * 28;
+                                    p.Height = p.Controls.Count * 26;
+                                    p.Tag = "Expanded";
+                                }
+                                else if ( p.Controls.Count == 4 )
+                                {
+                                    p.Height = p.Controls.Count * 26;
+                                    p.Tag = "Expanded";
+                                }
+                                else if ( p.Controls.Count == 5 )
+                                {                                    
+                                    p.Height = ( p.Controls.Count - 1 ) * 30;
+                                    p.Tag = "Expanded";
+                                }
+                                else if ( p.Controls.Count == 6 )
+                                {                                   
+                                    p.Height = ( p.Controls.Count ) * 24;
                                     p.Tag = "Expanded";
                                 }
                                 else
                                 {
-                                    p.Height = (p.Controls.Count - 1) * 28;
+                                    p.Height = ( p.Controls.Count - 1 ) * 26;
                                     p.Tag = "Expanded";
                                 }
                             }

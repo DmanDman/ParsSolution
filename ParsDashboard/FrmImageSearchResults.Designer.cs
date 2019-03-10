@@ -76,11 +76,19 @@
             this.LblGrpImageDesc = new System.Windows.Forms.Label();
             this.LstImages = new System.Windows.Forms.ListView();
             this.MnuImageSearchResult = new System.Windows.Forms.MenuStrip();
+            this.TSMnuImgSearchResultPatient = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuImgSearchResultPatientDetail = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuImgSearchResultPatientSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.TSMnuImgSearchResultPatientSave = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuImgSearchResultPatientAdd = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuImgSearchResultPatientDelete = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuImgSearchResultBreak1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuImgSearchResultAddPic = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuImgSearchSurgery = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuSurgeryNew = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuImgSearchResultBreak2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuImgSearchResultDelPic = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuImgSearchResultImages = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuImgSearchResultImagesAdd = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuImgSearchResultImagesDel = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuImgSearchResultBreak3 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuImgSearchResultOpenCanvas = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuImgSearchResultBreak4 = new System.Windows.Forms.ToolStripMenuItem();
@@ -641,11 +649,11 @@
             this.MnuImageSearchResult.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuImageSearchResult.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuImageSearchResult.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.TSMnuImgSearchResultPatientDetail,
+            this.TSMnuImgSearchResultPatient,
             this.TSMnuImgSearchResultBreak1,
-            this.TSMnuImgSearchResultAddPic,
+            this.TSMnuImgSearchSurgery,
             this.TSMnuImgSearchResultBreak2,
-            this.TSMnuImgSearchResultDelPic,
+            this.TSMnuImgSearchResultImages,
             this.TSMnuImgSearchResultBreak3,
             this.TSMnuImgSearchResultOpenCanvas,
             this.TSMnuImgSearchResultBreak4,
@@ -658,12 +666,46 @@
             this.MnuImageSearchResult.TabIndex = 18;
             this.MnuImageSearchResult.Text = "menuStrip1";
             // 
+            // TSMnuImgSearchResultPatient
+            // 
+            this.TSMnuImgSearchResultPatient.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMnuImgSearchResultPatientDetail,
+            this.TSMnuImgSearchResultPatientSeparator1,
+            this.TSMnuImgSearchResultPatientSave,
+            this.TSMnuImgSearchResultPatientAdd,
+            this.TSMnuImgSearchResultPatientDelete});
+            this.TSMnuImgSearchResultPatient.Name = "TSMnuImgSearchResultPatient";
+            this.TSMnuImgSearchResultPatient.Size = new System.Drawing.Size(66, 24);
+            this.TSMnuImgSearchResultPatient.Text = "Patient";
+            // 
             // TSMnuImgSearchResultPatientDetail
             // 
             this.TSMnuImgSearchResultPatientDetail.Name = "TSMnuImgSearchResultPatientDetail";
-            this.TSMnuImgSearchResultPatientDetail.Size = new System.Drawing.Size(110, 24);
-            this.TSMnuImgSearchResultPatientDetail.Tag = "";
+            this.TSMnuImgSearchResultPatientDetail.Size = new System.Drawing.Size(173, 26);
             this.TSMnuImgSearchResultPatientDetail.Text = "Patient Detail";
+            // 
+            // TSMnuImgSearchResultPatientSeparator1
+            // 
+            this.TSMnuImgSearchResultPatientSeparator1.Name = "TSMnuImgSearchResultPatientSeparator1";
+            this.TSMnuImgSearchResultPatientSeparator1.Size = new System.Drawing.Size(170, 6);
+            // 
+            // TSMnuImgSearchResultPatientSave
+            // 
+            this.TSMnuImgSearchResultPatientSave.Name = "TSMnuImgSearchResultPatientSave";
+            this.TSMnuImgSearchResultPatientSave.Size = new System.Drawing.Size(173, 26);
+            this.TSMnuImgSearchResultPatientSave.Text = "Save";
+            // 
+            // TSMnuImgSearchResultPatientAdd
+            // 
+            this.TSMnuImgSearchResultPatientAdd.Name = "TSMnuImgSearchResultPatientAdd";
+            this.TSMnuImgSearchResultPatientAdd.Size = new System.Drawing.Size(173, 26);
+            this.TSMnuImgSearchResultPatientAdd.Text = "Add";
+            // 
+            // TSMnuImgSearchResultPatientDelete
+            // 
+            this.TSMnuImgSearchResultPatientDelete.Name = "TSMnuImgSearchResultPatientDelete";
+            this.TSMnuImgSearchResultPatientDelete.Size = new System.Drawing.Size(173, 26);
+            this.TSMnuImgSearchResultPatientDelete.Text = "Delete";
             // 
             // TSMnuImgSearchResultBreak1
             // 
@@ -674,11 +716,19 @@
             this.TSMnuImgSearchResultBreak1.Size = new System.Drawing.Size(18, 24);
             this.TSMnuImgSearchResultBreak1.Text = "|";
             // 
-            // TSMnuImgSearchResultAddPic
+            // TSMnuImgSearchSurgery
             // 
-            this.TSMnuImgSearchResultAddPic.Name = "TSMnuImgSearchResultAddPic";
-            this.TSMnuImgSearchResultAddPic.Size = new System.Drawing.Size(72, 24);
-            this.TSMnuImgSearchResultAddPic.Text = "Add Pic";
+            this.TSMnuImgSearchSurgery.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMnuSurgeryNew});
+            this.TSMnuImgSearchSurgery.Name = "TSMnuImgSearchSurgery";
+            this.TSMnuImgSearchSurgery.Size = new System.Drawing.Size(71, 24);
+            this.TSMnuImgSearchSurgery.Text = "Surgery";
+            // 
+            // TSMnuSurgeryNew
+            // 
+            this.TSMnuSurgeryNew.Name = "TSMnuSurgeryNew";
+            this.TSMnuSurgeryNew.Size = new System.Drawing.Size(114, 26);
+            this.TSMnuSurgeryNew.Text = "New";
             // 
             // TSMnuImgSearchResultBreak2
             // 
@@ -689,11 +739,26 @@
             this.TSMnuImgSearchResultBreak2.Size = new System.Drawing.Size(18, 24);
             this.TSMnuImgSearchResultBreak2.Text = "|";
             // 
-            // TSMnuImgSearchResultDelPic
+            // TSMnuImgSearchResultImages
             // 
-            this.TSMnuImgSearchResultDelPic.Name = "TSMnuImgSearchResultDelPic";
-            this.TSMnuImgSearchResultDelPic.Size = new System.Drawing.Size(67, 24);
-            this.TSMnuImgSearchResultDelPic.Text = "Del Pic";
+            this.TSMnuImgSearchResultImages.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.TSMnuImgSearchResultImagesAdd,
+            this.TSMnuImgSearchResultImagesDel});
+            this.TSMnuImgSearchResultImages.Name = "TSMnuImgSearchResultImages";
+            this.TSMnuImgSearchResultImages.Size = new System.Drawing.Size(69, 24);
+            this.TSMnuImgSearchResultImages.Text = "Images";
+            // 
+            // TSMnuImgSearchResultImagesAdd
+            // 
+            this.TSMnuImgSearchResultImagesAdd.Name = "TSMnuImgSearchResultImagesAdd";
+            this.TSMnuImgSearchResultImagesAdd.Size = new System.Drawing.Size(128, 26);
+            this.TSMnuImgSearchResultImagesAdd.Text = "Add";
+            // 
+            // TSMnuImgSearchResultImagesDel
+            // 
+            this.TSMnuImgSearchResultImagesDel.Name = "TSMnuImgSearchResultImagesDel";
+            this.TSMnuImgSearchResultImagesDel.Size = new System.Drawing.Size(128, 26);
+            this.TSMnuImgSearchResultImagesDel.Text = "Delete";
             // 
             // TSMnuImgSearchResultBreak3
             // 
@@ -707,8 +772,8 @@
             // TSMnuImgSearchResultOpenCanvas
             // 
             this.TSMnuImgSearchResultOpenCanvas.Name = "TSMnuImgSearchResultOpenCanvas";
-            this.TSMnuImgSearchResultOpenCanvas.Size = new System.Drawing.Size(107, 24);
-            this.TSMnuImgSearchResultOpenCanvas.Text = "Open Canvas";
+            this.TSMnuImgSearchResultOpenCanvas.Size = new System.Drawing.Size(67, 24);
+            this.TSMnuImgSearchResultOpenCanvas.Text = "Canvas";
             // 
             // TSMnuImgSearchResultBreak4
             // 
@@ -811,14 +876,22 @@
         private System.Windows.Forms.Label LblGrpImageDesc;
         private System.Windows.Forms.ListView LstImages;
         private System.Windows.Forms.MenuStrip MnuImageSearchResult;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultPatientDetail;
         private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultBreak1;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultAddPic;
         private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultBreak2;
-        private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultDelPic;
         private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultBreak3;
         private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultOpenCanvas;
         private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultBreak4;
         private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultPrint;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultPatient;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultPatientDetail;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultPatientSave;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultPatientAdd;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultPatientDelete;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchSurgery;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuSurgeryNew;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultImages;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultImagesAdd;
+        private System.Windows.Forms.ToolStripMenuItem TSMnuImgSearchResultImagesDel;
+        private System.Windows.Forms.ToolStripSeparator TSMnuImgSearchResultPatientSeparator1;
     }
 }

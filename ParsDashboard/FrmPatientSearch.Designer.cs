@@ -80,7 +80,7 @@
             // 
             this.TabSearch.Controls.Add(this.TabPersonal);
             this.TabSearch.Controls.Add(this.TabHome);
-            this.TabSearch.Location = new System.Drawing.Point(12, 27);
+            this.TabSearch.Location = new System.Drawing.Point(12, 46);
             this.TabSearch.Name = "TabSearch";
             this.TabSearch.SelectedIndex = 0;
             this.TabSearch.Size = new System.Drawing.Size(387, 428);
@@ -128,6 +128,7 @@
             // 
             // MTxtssn
             // 
+            this.MTxtssn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MTxtssn.Location = new System.Drawing.Point(123, 327);
             this.MTxtssn.Mask = "000-00-0000";
             this.MTxtssn.Name = "MTxtssn";
@@ -344,6 +345,7 @@
             // 
             // MTxtZip
             // 
+            this.MTxtZip.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MTxtZip.Location = new System.Drawing.Point(123, 199);
             this.MTxtZip.Mask = "00000";
             this.MTxtZip.Name = "MTxtZip";
@@ -352,6 +354,7 @@
             // 
             // MTxtPhone
             // 
+            this.MTxtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MTxtPhone.Location = new System.Drawing.Point(123, 243);
             this.MTxtPhone.Mask = "(000) 000-0000";
             this.MTxtPhone.Name = "MTxtPhone";
@@ -360,6 +363,7 @@
             // 
             // MTxtCell
             // 
+            this.MTxtCell.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MTxtCell.Location = new System.Drawing.Point(123, 282);
             this.MTxtCell.Mask = "(000) 000-0000";
             this.MTxtCell.Name = "MTxtCell";

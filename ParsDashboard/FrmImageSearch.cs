@@ -183,5 +183,35 @@ namespace ParsDashboard
                 }
             }
         }
+
+        private void TsMnuImageSearchMetaDataAdd_Click(object sender, EventArgs e)
+        {
+            helper.AddListBoxData( CboMetaSearch, LstMetaDataSearchTerms );
+        }
+
+        private void TsMnuImageSearchMetaDataRemove_Click(object sender, EventArgs e)
+        {
+            helper.AddComboBox( CboMetaSearch, LstMetaDataSearchTerms );
+        }
+
+        private void TsMnuImageSearchMetaDataRemoveAll_Click(object sender, EventArgs e)
+        {
+            helper.RemoveAllListBox( CboMetaSearch, LstMetaDataSearchTerms );
+        }
+
+        private void TSMnuSearchPicInfoAdd_Click(object sender, EventArgs e)
+        {
+            helper.AddListBoxData( CboPicInfo, LstPicInfoSearchItems );
+        }
+
+        private void TSMnuSearchPicInfoRemove_Click(object sender, EventArgs e)
+        {
+            helper.AddComboBox( CboPicInfo, LstPicInfoSearchItems );
+        }
+
+        private void TSMnuSearchPicInfoRemoveAll_Click(object sender, EventArgs e)
+        {
+            helper.RemoveAllListBox( CboPicInfo, LstPicInfoSearchItems );
+        }
     }
 }
