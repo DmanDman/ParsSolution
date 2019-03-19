@@ -447,12 +447,7 @@ namespace ParsDashboard
         private void LblPatientSearchResults_MouseEnter(object sender, EventArgs e)
         {
             
-        }
-
-        private void LblPatientSearchToImage_MouseEnter(object sender, EventArgs e)
-        {
-           
-        }
+        } 
 
         private void LblSurgery_MouseEnter(object sender, EventArgs e)
         {
@@ -498,12 +493,7 @@ namespace ParsDashboard
         {
             //HelpMouseMove.MouseLeave(LblPatientSearchResults);
         }
-
-        private void LblPatientSearchToImage_MouseLeave(object sender, EventArgs e)
-        {
-           
-        }
-
+       
         private void LblSurgery_MouseLeave(object sender, EventArgs e)
         {
             HelpMouseMove.MouseLeave(LblSurgery);
@@ -521,6 +511,7 @@ namespace ParsDashboard
 
         private void LblImagesFilter_Click(object sender, EventArgs e)
         {
+            //fImageFilter.
             fNav.ShowForm( fImageFilter );
 
             NavSetStyleClick( LblImagesFilter );            
@@ -619,12 +610,7 @@ namespace ParsDashboard
 
             helper.RemoveAllListBox(ctlCbo, ctlLst);
         }
-
-        private void LblPatientSearchToImage_Click(object sender, EventArgs e)
-        {
-         
-        }
-
+       
         private void LblPatientSearchResults_Click(object sender, EventArgs e)
         {
             //NavSetStyleClick( LblPatientSearchResults );

@@ -41,6 +41,7 @@ namespace ParsDashboard
         {
             public static string FilterDate { get; set; }
             public static string FilterAge { get; set; }
+            public static string CalledFrom { get; set; }
         }
 
         public FrmImageFilter()
