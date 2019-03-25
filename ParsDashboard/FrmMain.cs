@@ -27,6 +27,7 @@ namespace ParsDashboard
         //  Patient
         FrmPatient fPatient = new FrmPatient();
         public FrmPatientSearch fPatientSearch = new FrmPatientSearch();
+        FrmAddPatient fAddPatient = new FrmAddPatient();
 
         //  Surgery
         FrmSurgery fSurgery = new FrmSurgery();
@@ -179,8 +180,13 @@ namespace ParsDashboard
                 BindingFlags.SetProperty | BindingFlags.Instance | BindingFlags.NonPublic,
                 null, pnl, new object[] { true } );
         }
+
         #endregion
 
+        public static class MainVar
+        {
+            public static int CalledFrom { get; set; }
+        }
 
         public FrmMain()
         {
@@ -189,6 +195,7 @@ namespace ParsDashboard
 
             SubRtn.Load_All_Forms( fPatient, this );
             SubRtn.Load_All_Forms( fPatientSearch, this );
+            SubRtn.Load_All_Forms( fAddPatient, this );
 
             SubRtn.Load_All_Forms( fImage, this );
             SubRtn.Load_All_Forms( fImageSearch, this );
@@ -397,12 +404,11 @@ namespace ParsDashboard
 
         private void LblPatientAdd_Click(object sender, EventArgs e)
         {
-            SubRtn.DashboardAccordian(sender, e, tableLayoutPanel1);
+            SubRtn.DashboardAccordian( sender, e, tableLayoutPanel1 );
+            
+            fNav.ShowForm( fAddPatient );
 
-            // TODO create patinet add form; add it here
-            //fNav.ShowForm(  );
-
-            NavSetStyleClick(LblPatientAdd);
+            NavSetStyleClick( LblPatientAdd );
         }
 
         private void FrmMain_Load(object sender, EventArgs e)
@@ -510,12 +516,14 @@ namespace ParsDashboard
         }
 
         private void LblImagesFilter_Click(object sender, EventArgs e)
-        {
-            //fImageFilter.
+        {           
             fNav.ShowForm( fImageFilter );
 
-            NavSetStyleClick( LblImagesFilter );            
-        }
+            NavSetStyleClick( LblImagesFilter );
+
+            //  Called from images filter
+            MainVar.CalledFrom = 1;
+    }
 
         public void LblImagesSearchResults_Click(object sender, EventArgs e)
         {            
@@ -531,9 +539,12 @@ namespace ParsDashboard
 
         private void LblPatientFilter_Click(object sender, EventArgs e)
         {
-            //fNav.ShowForm( X );
+            fNav.ShowForm( fImageFilter );           
 
             NavSetStyleClick( LblPatientFilter );
+
+            //  Called from patient filter
+            MainVar.CalledFrom = 2;
         }
 
         private void TSMnuSearch_Click(object sender, EventArgs e)

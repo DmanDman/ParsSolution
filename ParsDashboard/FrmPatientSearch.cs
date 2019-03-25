@@ -228,7 +228,7 @@ namespace ParsDashboard
 
                 //  set navigation lable to selected on main form
                 if ( f.Tag.ToString() == "FrmMain" )
-                {
+                {                    
                     Control lbl = SubRoutine.FindControl( f, "LblPatientSearchResults" );
                     Label ctllbl = lbl as Label;
 

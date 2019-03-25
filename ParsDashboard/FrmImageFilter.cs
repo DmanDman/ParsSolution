@@ -8,11 +8,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using static ParsDashboard.Globals;
+using static ParsDashboard.FrmMain;
 
 namespace ParsDashboard
 {
     public partial class FrmImageFilter : Form
     {
+        SubRoutine SubRtnMain = new SubRoutine();
+
         FrmFilterAge fFilterAge = new FrmFilterAge();
         FrmFilterDate fFilterDate = new FrmFilterDate();
 
@@ -243,6 +246,53 @@ namespace ParsDashboard
         {
             //  clear check boxes
             helper.ClearAllCheckBoxes( GrpBoxPersonal );
+        }
+
+        private void TSMnuFilterApplyFilter_Click(object sender, EventArgs e)
+        {
+            //  loop through open forms
+            foreach ( Form f in Application.OpenForms )
+            {
+                //  show Image Search Results
+                if ( f.Tag.ToString() == "FrmImageSearchResults" )
+                {
+                    f.BringToFront();
+                }
+
+                //  set navigation label to selected on main form
+                if ( f.Tag.ToString() == "FrmMain" )
+                {
+                    //  called from images filter
+                    if ( MainVar.CalledFrom == 1 )
+                    {
+                        Control lbl = SubRoutine.FindControl( f, "LblImagesSearchResults" );
+                        Label ctllbl = lbl as Label;
+
+                        SubRtnMain.NavSetStyleClickSub( ctllbl );
+
+                        //  set label LblImagesFilter to not bold
+                        lbl = SubRoutine.FindControl( f, "LblImagesFilter" );
+                        ctllbl = lbl as Label;
+
+                        ctllbl.Font = new Font( ctllbl.Font.Name, ctllbl.Font.SizeInPoints, FontStyle.Regular );
+                    }
+
+                    //  called from patient filter
+                    if ( MainVar.CalledFrom ==  2 )
+                    {
+                        Control lbl = SubRoutine.FindControl( f, "LblPatientSearchResults" );
+                        Label ctllbl = lbl as Label;
+
+                        SubRtnMain.NavSetStyleClickSub( ctllbl );
+
+                        //  set label LblImagesFilter to not bold
+                        lbl = SubRoutine.FindControl( f, "LblPatientFilter" );
+                        ctllbl = lbl as Label;
+
+                        ctllbl.Font = new Font( ctllbl.Font.Name, ctllbl.Font.SizeInPoints, FontStyle.Regular );
+                    }
+                }
+            }
         }
     }
 }

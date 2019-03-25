@@ -460,6 +460,7 @@
             // 
             // MTxtssn
             // 
+            this.MTxtssn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MTxtssn.Location = new System.Drawing.Point(123, 281);
             this.MTxtssn.Mask = "000-00-0000";
             this.MTxtssn.Name = "MTxtssn";
@@ -654,6 +655,7 @@
             // 
             // MTxtCell
             // 
+            this.MTxtCell.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MTxtCell.Location = new System.Drawing.Point(123, 281);
             this.MTxtCell.Mask = "(000) 000-0000";
             this.MTxtCell.Name = "MTxtCell";
@@ -662,6 +664,7 @@
             // 
             // MTxtPhone
             // 
+            this.MTxtPhone.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MTxtPhone.Location = new System.Drawing.Point(123, 240);
             this.MTxtPhone.Mask = "(000) 000-0000";
             this.MTxtPhone.Name = "MTxtPhone";
@@ -670,6 +673,7 @@
             // 
             // MTxtZip
             // 
+            this.MTxtZip.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MTxtZip.Location = new System.Drawing.Point(123, 199);
             this.MTxtZip.Mask = "00000";
             this.MTxtZip.Name = "MTxtZip";
@@ -923,6 +927,7 @@
             // DtFiscalYear
             // 
             this.DtFiscalYear.CustomFormat = "yyyy";
+            this.DtFiscalYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DtFiscalYear.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.DtFiscalYear.Location = new System.Drawing.Point(123, 76);
             this.DtFiscalYear.MinDate = new System.DateTime(1970, 1, 1, 0, 0, 0, 0);
@@ -934,6 +939,7 @@
             // 
             // DtSurgeryDate
             // 
+            this.DtSurgeryDate.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DtSurgeryDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.DtSurgeryDate.Location = new System.Drawing.Point(123, 35);
             this.DtSurgeryDate.MinDate = new System.DateTime(1970, 1, 1, 0, 0, 0, 0);
@@ -979,7 +985,7 @@
             this.MnuAddNew.Location = new System.Drawing.Point(0, 0);
             this.MnuAddNew.Name = "MnuAddNew";
             this.MnuAddNew.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.MnuAddNew.Size = new System.Drawing.Size(1313, 28);
+            this.MnuAddNew.Size = new System.Drawing.Size(1417, 28);
             this.MnuAddNew.TabIndex = 37;
             this.MnuAddNew.Text = "menuStrip1";
             // 
@@ -1452,7 +1458,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1313, 882);
+            this.ClientSize = new System.Drawing.Size(1417, 882);
             this.Controls.Add(this.GrpSurgerySelect);
             this.Controls.Add(this.GrpImages);
             this.Controls.Add(this.GrpSurgerySelectFromHold);

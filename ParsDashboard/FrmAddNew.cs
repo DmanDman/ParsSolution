@@ -51,8 +51,7 @@ namespace ParsDashboard
             else
             {
                 GrpSurgerySelected.Enabled = false;
-            }
-            
+            }            
         }
 
         private void StopPanel_Flickering()

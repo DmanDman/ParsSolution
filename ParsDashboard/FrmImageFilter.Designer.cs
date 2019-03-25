@@ -803,6 +803,7 @@
             this.TSMnuFilterApplyFilter.Name = "TSMnuFilterApplyFilter";
             this.TSMnuFilterApplyFilter.Size = new System.Drawing.Size(97, 24);
             this.TSMnuFilterApplyFilter.Text = "Apply Filter";
+            this.TSMnuFilterApplyFilter.Click += new System.EventHandler(this.TSMnuFilterApplyFilter_Click);
             // 
             // TSMnuFilterBreak1
             // 
