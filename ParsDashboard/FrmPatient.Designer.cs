@@ -266,7 +266,7 @@
             this.UpDwnYear.Items.Add("2017");
             this.UpDwnYear.Items.Add("2018");
             this.UpDwnYear.Items.Add("2019");
-            this.UpDwnYear.Location = new System.Drawing.Point(5, 41);
+            this.UpDwnYear.Location = new System.Drawing.Point(9, 41);
             this.UpDwnYear.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.UpDwnYear.Name = "UpDwnYear";
             this.UpDwnYear.ReadOnly = true;

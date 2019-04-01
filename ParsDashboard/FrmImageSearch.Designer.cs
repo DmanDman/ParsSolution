@@ -47,12 +47,12 @@
             this.MnuImagesSearch = new System.Windows.Forms.MenuStrip();
             this.TSMnuSearch = new System.Windows.Forms.ToolStripMenuItem();
             this.TsMnuImageSearchBreak1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TsMnuImageSearchBreak2 = new System.Windows.Forms.ToolStripMenuItem();
             this.TsMnuImageSearchMetaData = new System.Windows.Forms.ToolStripMenuItem();
             this.TsMnuImageSearchMetaDataAdd = new System.Windows.Forms.ToolStripMenuItem();
             this.TsMnuImageSearchMetaDataRemove = new System.Windows.Forms.ToolStripMenuItem();
             this.TsMnuImageSearchMetaDataSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.TsMnuImageSearchMetaDataRemoveAll = new System.Windows.Forms.ToolStripMenuItem();
+            this.TsMnuImageSearchBreak2 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuSearchPicInfo = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuSearchPicInfoAdd = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuSearchPicInfoRemove = new System.Windows.Forms.ToolStripMenuItem();
@@ -83,9 +83,10 @@
             // ChkMeataOnly
             // 
             this.ChkMeataOnly.AutoSize = true;
+            this.ChkMeataOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChkMeataOnly.Location = new System.Drawing.Point(711, 107);
             this.ChkMeataOnly.Name = "ChkMeataOnly";
-            this.ChkMeataOnly.Size = new System.Drawing.Size(63, 21);
+            this.ChkMeataOnly.Size = new System.Drawing.Size(59, 21);
             this.ChkMeataOnly.TabIndex = 6;
             this.ChkMeataOnly.Text = "Only";
             this.ChkMeataOnly.UseVisualStyleBackColor = true;
@@ -94,9 +95,10 @@
             // RdoMetaOr
             // 
             this.RdoMetaOr.AutoSize = true;
+            this.RdoMetaOr.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RdoMetaOr.Location = new System.Drawing.Point(711, 80);
             this.RdoMetaOr.Name = "RdoMetaOr";
-            this.RdoMetaOr.Size = new System.Drawing.Size(47, 21);
+            this.RdoMetaOr.Size = new System.Drawing.Size(45, 21);
             this.RdoMetaOr.TabIndex = 5;
             this.RdoMetaOr.TabStop = true;
             this.RdoMetaOr.Text = "Or";
@@ -106,9 +108,10 @@
             // RdoMetaAnd
             // 
             this.RdoMetaAnd.AutoSize = true;
+            this.RdoMetaAnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RdoMetaAnd.Location = new System.Drawing.Point(711, 53);
             this.RdoMetaAnd.Name = "RdoMetaAnd";
-            this.RdoMetaAnd.Size = new System.Drawing.Size(57, 21);
+            this.RdoMetaAnd.Size = new System.Drawing.Size(54, 21);
             this.RdoMetaAnd.TabIndex = 4;
             this.RdoMetaAnd.TabStop = true;
             this.RdoMetaAnd.Text = "And";
@@ -117,6 +120,7 @@
             // 
             // LstMetaDataSearchTerms
             // 
+            this.LstMetaDataSearchTerms.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LstMetaDataSearchTerms.FormattingEnabled = true;
             this.LstMetaDataSearchTerms.ItemHeight = 16;
             this.LstMetaDataSearchTerms.Location = new System.Drawing.Point(354, 55);
@@ -149,6 +153,7 @@
             "Laminoplasty"});
             this.CboMetaSearch.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.CboMetaSearch.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.CboMetaSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CboMetaSearch.FormattingEnabled = true;
             this.CboMetaSearch.Items.AddRange(new object[] {
             "Lamin",
@@ -196,9 +201,10 @@
             // ChkPicInfoOnly
             // 
             this.ChkPicInfoOnly.AutoSize = true;
+            this.ChkPicInfoOnly.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ChkPicInfoOnly.Location = new System.Drawing.Point(711, 112);
             this.ChkPicInfoOnly.Name = "ChkPicInfoOnly";
-            this.ChkPicInfoOnly.Size = new System.Drawing.Size(63, 21);
+            this.ChkPicInfoOnly.Size = new System.Drawing.Size(59, 21);
             this.ChkPicInfoOnly.TabIndex = 6;
             this.ChkPicInfoOnly.Text = "Only";
             this.ChkPicInfoOnly.UseVisualStyleBackColor = true;
@@ -207,9 +213,10 @@
             // RdoPicInfoOr
             // 
             this.RdoPicInfoOr.AutoSize = true;
+            this.RdoPicInfoOr.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RdoPicInfoOr.Location = new System.Drawing.Point(711, 85);
             this.RdoPicInfoOr.Name = "RdoPicInfoOr";
-            this.RdoPicInfoOr.Size = new System.Drawing.Size(47, 21);
+            this.RdoPicInfoOr.Size = new System.Drawing.Size(45, 21);
             this.RdoPicInfoOr.TabIndex = 5;
             this.RdoPicInfoOr.TabStop = true;
             this.RdoPicInfoOr.Text = "Or";
@@ -219,9 +226,10 @@
             // RdoPicInfoAnd
             // 
             this.RdoPicInfoAnd.AutoSize = true;
+            this.RdoPicInfoAnd.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.RdoPicInfoAnd.Location = new System.Drawing.Point(711, 58);
             this.RdoPicInfoAnd.Name = "RdoPicInfoAnd";
-            this.RdoPicInfoAnd.Size = new System.Drawing.Size(57, 21);
+            this.RdoPicInfoAnd.Size = new System.Drawing.Size(54, 21);
             this.RdoPicInfoAnd.TabIndex = 4;
             this.RdoPicInfoAnd.TabStop = true;
             this.RdoPicInfoAnd.Text = "And";
@@ -230,6 +238,7 @@
             // 
             // LstPicInfoSearchItems
             // 
+            this.LstPicInfoSearchItems.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LstPicInfoSearchItems.FormattingEnabled = true;
             this.LstPicInfoSearchItems.ItemHeight = 16;
             this.LstPicInfoSearchItems.Location = new System.Drawing.Point(356, 55);
@@ -262,6 +271,7 @@
             "Youngest Male"});
             this.CboPicInfo.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.CboPicInfo.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.CboPicInfo.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CboPicInfo.FormattingEnabled = true;
             this.CboPicInfo.Items.AddRange(new object[] {
             "Best Patient",
@@ -324,15 +334,6 @@
             this.TsMnuImageSearchBreak1.Size = new System.Drawing.Size(18, 24);
             this.TsMnuImageSearchBreak1.Text = "|";
             // 
-            // TsMnuImageSearchBreak2
-            // 
-            this.TsMnuImageSearchBreak2.Enabled = false;
-            this.TsMnuImageSearchBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TsMnuImageSearchBreak2.Name = "TsMnuImageSearchBreak2";
-            this.TsMnuImageSearchBreak2.Padding = new System.Windows.Forms.Padding(0);
-            this.TsMnuImageSearchBreak2.Size = new System.Drawing.Size(18, 24);
-            this.TsMnuImageSearchBreak2.Text = "|";
-            // 
             // TsMnuImageSearchMetaData
             // 
             this.TsMnuImageSearchMetaData.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -347,28 +348,37 @@
             // TsMnuImageSearchMetaDataAdd
             // 
             this.TsMnuImageSearchMetaDataAdd.Name = "TsMnuImageSearchMetaDataAdd";
-            this.TsMnuImageSearchMetaDataAdd.Size = new System.Drawing.Size(216, 26);
+            this.TsMnuImageSearchMetaDataAdd.Size = new System.Drawing.Size(160, 26);
             this.TsMnuImageSearchMetaDataAdd.Text = "Add";
             this.TsMnuImageSearchMetaDataAdd.Click += new System.EventHandler(this.TsMnuImageSearchMetaDataAdd_Click);
             // 
             // TsMnuImageSearchMetaDataRemove
             // 
             this.TsMnuImageSearchMetaDataRemove.Name = "TsMnuImageSearchMetaDataRemove";
-            this.TsMnuImageSearchMetaDataRemove.Size = new System.Drawing.Size(216, 26);
+            this.TsMnuImageSearchMetaDataRemove.Size = new System.Drawing.Size(160, 26);
             this.TsMnuImageSearchMetaDataRemove.Text = "Remove";
             this.TsMnuImageSearchMetaDataRemove.Click += new System.EventHandler(this.TsMnuImageSearchMetaDataRemove_Click);
             // 
             // TsMnuImageSearchMetaDataSeparator1
             // 
             this.TsMnuImageSearchMetaDataSeparator1.Name = "TsMnuImageSearchMetaDataSeparator1";
-            this.TsMnuImageSearchMetaDataSeparator1.Size = new System.Drawing.Size(213, 6);
+            this.TsMnuImageSearchMetaDataSeparator1.Size = new System.Drawing.Size(157, 6);
             // 
             // TsMnuImageSearchMetaDataRemoveAll
             // 
             this.TsMnuImageSearchMetaDataRemoveAll.Name = "TsMnuImageSearchMetaDataRemoveAll";
-            this.TsMnuImageSearchMetaDataRemoveAll.Size = new System.Drawing.Size(216, 26);
+            this.TsMnuImageSearchMetaDataRemoveAll.Size = new System.Drawing.Size(160, 26);
             this.TsMnuImageSearchMetaDataRemoveAll.Text = "Remove All";
             this.TsMnuImageSearchMetaDataRemoveAll.Click += new System.EventHandler(this.TsMnuImageSearchMetaDataRemoveAll_Click);
+            // 
+            // TsMnuImageSearchBreak2
+            // 
+            this.TsMnuImageSearchBreak2.Enabled = false;
+            this.TsMnuImageSearchBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TsMnuImageSearchBreak2.Name = "TsMnuImageSearchBreak2";
+            this.TsMnuImageSearchBreak2.Padding = new System.Windows.Forms.Padding(0);
+            this.TsMnuImageSearchBreak2.Size = new System.Drawing.Size(18, 24);
+            this.TsMnuImageSearchBreak2.Text = "|";
             // 
             // TSMnuSearchPicInfo
             // 
@@ -384,26 +394,26 @@
             // TSMnuSearchPicInfoAdd
             // 
             this.TSMnuSearchPicInfoAdd.Name = "TSMnuSearchPicInfoAdd";
-            this.TSMnuSearchPicInfoAdd.Size = new System.Drawing.Size(216, 26);
+            this.TSMnuSearchPicInfoAdd.Size = new System.Drawing.Size(160, 26);
             this.TSMnuSearchPicInfoAdd.Text = "Add";
             this.TSMnuSearchPicInfoAdd.Click += new System.EventHandler(this.TSMnuSearchPicInfoAdd_Click);
             // 
             // TSMnuSearchPicInfoRemove
             // 
             this.TSMnuSearchPicInfoRemove.Name = "TSMnuSearchPicInfoRemove";
-            this.TSMnuSearchPicInfoRemove.Size = new System.Drawing.Size(216, 26);
+            this.TSMnuSearchPicInfoRemove.Size = new System.Drawing.Size(160, 26);
             this.TSMnuSearchPicInfoRemove.Text = "Remove";
             this.TSMnuSearchPicInfoRemove.Click += new System.EventHandler(this.TSMnuSearchPicInfoRemove_Click);
             // 
             // TSMnuSearchPicInfoSeparator1
             // 
             this.TSMnuSearchPicInfoSeparator1.Name = "TSMnuSearchPicInfoSeparator1";
-            this.TSMnuSearchPicInfoSeparator1.Size = new System.Drawing.Size(213, 6);
+            this.TSMnuSearchPicInfoSeparator1.Size = new System.Drawing.Size(157, 6);
             // 
             // TSMnuSearchPicInfoRemoveAll
             // 
             this.TSMnuSearchPicInfoRemoveAll.Name = "TSMnuSearchPicInfoRemoveAll";
-            this.TSMnuSearchPicInfoRemoveAll.Size = new System.Drawing.Size(216, 26);
+            this.TSMnuSearchPicInfoRemoveAll.Size = new System.Drawing.Size(160, 26);
             this.TSMnuSearchPicInfoRemoveAll.Text = "Remove All";
             this.TSMnuSearchPicInfoRemoveAll.Click += new System.EventHandler(this.TSMnuSearchPicInfoRemoveAll_Click);
             // 

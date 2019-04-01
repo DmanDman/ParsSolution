@@ -27,17 +27,21 @@ namespace ParsDashboard
             //  clear surgery dates
             if ( SurgerySearchVar.ClearType == 0 )
             {
+                helper.SetDateToToday( DtEnd );
+
                 helper.SetDateToToday( DtStart );
 
-                helper.SetDateToToday( DtEnd );
+                DtStart.Focus();
             }
 
             //  clear fiscal year
             if ( SurgerySearchVar.ClearType == 1 )
             {
+                helper.SetDateToToday( DtFiscalEnd );
+
                 helper.SetDateToToday( DtFiscalStart );
 
-                helper.SetDateToToday( DtFiscalEnd );
+                DtFiscalStart.Focus();
             }
         }
 

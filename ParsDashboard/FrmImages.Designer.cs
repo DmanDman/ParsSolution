@@ -78,6 +78,7 @@
             "2015"});
             this.CboEndYear.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.CboEndYear.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.CboEndYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CboEndYear.FormattingEnabled = true;
             this.CboEndYear.Items.AddRange(new object[] {
             "2018",
@@ -106,6 +107,7 @@
             "December"});
             this.CboEndMonth.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.CboEndMonth.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.CboEndMonth.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CboEndMonth.FormattingEnabled = true;
             this.CboEndMonth.Items.AddRange(new object[] {
             "January",
@@ -144,6 +146,7 @@
             "2015"});
             this.CboStartYear.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.CboStartYear.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.CboStartYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CboStartYear.FormattingEnabled = true;
             this.CboStartYear.Items.AddRange(new object[] {
             "2018",
@@ -172,6 +175,7 @@
             "December"});
             this.CboStartMonth.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.CboStartMonth.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.CboStartMonth.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CboStartMonth.FormattingEnabled = true;
             this.CboStartMonth.Items.AddRange(new object[] {
             "January",
@@ -221,6 +225,7 @@
             // 
             // LstImageDesc
             // 
+            this.LstImageDesc.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LstImageDesc.FormattingEnabled = true;
             this.LstImageDesc.ItemHeight = 16;
             this.LstImageDesc.Location = new System.Drawing.Point(9, 60);
@@ -286,6 +291,7 @@
             // 
             // LstImages
             // 
+            this.LstImages.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LstImages.Location = new System.Drawing.Point(225, 63);
             this.LstImages.Name = "LstImages";
             this.LstImages.Size = new System.Drawing.Size(478, 324);

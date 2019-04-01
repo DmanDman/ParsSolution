@@ -37,6 +37,8 @@ namespace ParsDashboard
                 helper.ClearRadioBtn( RdoMale );
                 helper.ClearRadioBtn( RdoFemale );
                 helper.ClearMaskedTextBox( MTxtssn );
+
+                TxtLastName.Focus();
             }
 
             //  clear home information
@@ -49,6 +51,8 @@ namespace ParsDashboard
                 helper.ClearMaskedTextBox( MTxtZip );
                 helper.ClearMaskedTextBox( MTxtPhone );
                 helper.ClearMaskedTextBox( MTxtCell );
+
+                TxtAddress1.Focus();
             }
         }
 

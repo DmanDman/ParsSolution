@@ -26,6 +26,8 @@ namespace ParsDashboard
                 helper.ClearUpDwn( UpDwnLastNameLetter );
 
                 helper.ClearComboBox( CboFullName );
+
+                UpDwnLastNameLetter.Focus();
             }
 
             //  clear date
@@ -34,6 +36,8 @@ namespace ParsDashboard
                 helper.ClearUpDwn( UpDwnYear );
 
                 helper.ClearUpDwn( UpDwnMonth );
+
+                UpDwnYear.Focus();
             }
         }
 

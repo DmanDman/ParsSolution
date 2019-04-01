@@ -20,18 +20,24 @@ namespace ParsDashboard
         {
             helper.ClearComboBoxTxt( CboLinkFromType );
             helper.ClearComboBoxTxt( CboLinkFromDetail );
+
+            CboLinkFromType.Focus();
         }
 
         public void ClearTo()
         {
             helper.ClearComboBoxTxt( CboLinkToType );
             helper.ClearComboBoxTxt( CboLinkToDetail );
+
+            CboLinkToType.Focus();
         }
        
         public void ClearAll()
         {
             ClearFrom();
             ClearTo();
+
+            CboLinkFromType.Focus();
         }
 
         #endregion

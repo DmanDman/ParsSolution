@@ -30,5 +30,14 @@ namespace ParsDashboard
             SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
             SetStyle(ControlStyles.ResizeRedraw, true);
         }
+
+        private void TSMnuSurgeryNew_Click(object sender, EventArgs e)
+        {
+            FrmPatientAddSurgery fPatientAddSurgery = new FrmPatientAddSurgery();
+
+            fPatientAddSurgery.ShowDialog();
+
+            fPatientAddSurgery.Close();
+        }
     }
 }

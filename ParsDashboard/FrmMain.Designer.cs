@@ -45,7 +45,6 @@
             this.LblData = new System.Windows.Forms.Label();
             this.PnlSurgery = new System.Windows.Forms.Panel();
             this.LblSurgerySearch = new System.Windows.Forms.Label();
-            this.LblSurgeryAdd = new System.Windows.Forms.Label();
             this.LblSurgery = new System.Windows.Forms.Label();
             this.PnlMetaData = new System.Windows.Forms.Panel();
             this.LblMDSurgery = new System.Windows.Forms.Label();
@@ -118,6 +117,7 @@
             this.LblDashboard.AutoEllipsis = true;
             this.LblDashboard.BackColor = System.Drawing.Color.Silver;
             this.LblDashboard.Dock = System.Windows.Forms.DockStyle.Top;
+            this.LblDashboard.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblDashboard.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.LblDashboard.Location = new System.Drawing.Point(0, 0);
             this.LblDashboard.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -256,7 +256,7 @@
             this.PnlData.Controls.Add(this.LblDataDefaultHosp);
             this.PnlData.Controls.Add(this.LblDataCustomizeName);
             this.PnlData.Controls.Add(this.LblData);
-            this.PnlData.Location = new System.Drawing.Point(2, 350);
+            this.PnlData.Location = new System.Drawing.Point(2, 332);
             this.PnlData.Margin = new System.Windows.Forms.Padding(0);
             this.PnlData.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlData.Name = "PnlData";
@@ -337,20 +337,19 @@
             // 
             this.PnlSurgery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.PnlSurgery.Controls.Add(this.LblSurgerySearch);
-            this.PnlSurgery.Controls.Add(this.LblSurgeryAdd);
             this.PnlSurgery.Controls.Add(this.LblSurgery);
             this.PnlSurgery.Location = new System.Drawing.Point(2, 179);
             this.PnlSurgery.Margin = new System.Windows.Forms.Padding(0);
             this.PnlSurgery.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlSurgery.Name = "PnlSurgery";
-            this.PnlSurgery.Size = new System.Drawing.Size(200, 99);
+            this.PnlSurgery.Size = new System.Drawing.Size(200, 81);
             this.PnlSurgery.TabIndex = 6;
             this.PnlSurgery.Tag = "Collapsed";
             // 
             // LblSurgerySearch
             // 
             this.LblSurgerySearch.AutoSize = true;
-            this.LblSurgerySearch.Location = new System.Drawing.Point(13, 70);
+            this.LblSurgerySearch.Location = new System.Drawing.Point(13, 43);
             this.LblSurgerySearch.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.LblSurgerySearch.Name = "LblSurgerySearch";
             this.LblSurgerySearch.Size = new System.Drawing.Size(53, 17);
@@ -359,19 +358,6 @@
             this.LblSurgerySearch.Click += new System.EventHandler(this.LblSurgerySearch_Click);
             this.LblSurgerySearch.MouseEnter += new System.EventHandler(this.LblSurgerySearch_MouseEnter);
             this.LblSurgerySearch.MouseLeave += new System.EventHandler(this.LblSurgerySearch_MouseLeave);
-            // 
-            // LblSurgeryAdd
-            // 
-            this.LblSurgeryAdd.AutoSize = true;
-            this.LblSurgeryAdd.Location = new System.Drawing.Point(13, 43);
-            this.LblSurgeryAdd.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblSurgeryAdd.Name = "LblSurgeryAdd";
-            this.LblSurgeryAdd.Size = new System.Drawing.Size(33, 17);
-            this.LblSurgeryAdd.TabIndex = 2;
-            this.LblSurgeryAdd.Text = "Add";
-            this.LblSurgeryAdd.Click += new System.EventHandler(this.LblSurgeryAdd_Click);
-            this.LblSurgeryAdd.MouseEnter += new System.EventHandler(this.LblSurgeryAdd_MouseEnter);
-            this.LblSurgeryAdd.MouseLeave += new System.EventHandler(this.LblSurgeryAdd_MouseLeave);
             // 
             // LblSurgery
             // 
@@ -405,7 +391,7 @@
             this.PnlMetaData.Controls.Add(this.LblMDCpt);
             this.PnlMetaData.Controls.Add(this.LblMDComp);
             this.PnlMetaData.Controls.Add(this.LblMetaData);
-            this.PnlMetaData.Location = new System.Drawing.Point(2, 422);
+            this.PnlMetaData.Location = new System.Drawing.Point(2, 404);
             this.PnlMetaData.Margin = new System.Windows.Forms.Padding(0);
             this.PnlMetaData.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlMetaData.Name = "PnlMetaData";
@@ -578,7 +564,7 @@
             this.PnlSecurity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
             this.PnlSecurity.Controls.Add(this.LblSecurityUserMgmt);
             this.PnlSecurity.Controls.Add(this.LblSecurity);
-            this.PnlSecurity.Location = new System.Drawing.Point(2, 569);
+            this.PnlSecurity.Location = new System.Drawing.Point(2, 551);
             this.PnlSecurity.Margin = new System.Windows.Forms.Padding(0);
             this.PnlSecurity.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlSecurity.Name = "PnlSecurity";
@@ -708,7 +694,7 @@
             this.PnlRpt.Controls.Add(this.LblRptDynamic);
             this.PnlRpt.Controls.Add(this.LblRptStatic);
             this.PnlRpt.Controls.Add(this.LblRpt);
-            this.PnlRpt.Location = new System.Drawing.Point(2, 280);
+            this.PnlRpt.Location = new System.Drawing.Point(2, 262);
             this.PnlRpt.Margin = new System.Windows.Forms.Padding(0);
             this.PnlRpt.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlRpt.Name = "PnlRpt";
@@ -765,7 +751,7 @@
             this.PnlEmailPic.Controls.Add(this.LblEmailPicPicInfo);
             this.PnlEmailPic.Controls.Add(this.LblEmailPicPicOnly);
             this.PnlEmailPic.Controls.Add(this.LblEmailPic);
-            this.PnlEmailPic.Location = new System.Drawing.Point(2, 499);
+            this.PnlEmailPic.Location = new System.Drawing.Point(2, 481);
             this.PnlEmailPic.Margin = new System.Windows.Forms.Padding(0);
             this.PnlEmailPic.MinimumSize = new System.Drawing.Size(200, 0);
             this.PnlEmailPic.Name = "PnlEmailPic";
@@ -965,7 +951,6 @@
         internal System.Windows.Forms.Label LblData;
         internal System.Windows.Forms.Panel PnlSurgery;
         private System.Windows.Forms.Label LblSurgerySearch;
-        private System.Windows.Forms.Label LblSurgeryAdd;
         internal System.Windows.Forms.Label LblSurgery;
         internal System.Windows.Forms.Panel PnlImages;
         private System.Windows.Forms.Label LblImagesSearch;

@@ -28,6 +28,7 @@ namespace ParsDashboard
         FrmPatient fPatient = new FrmPatient();
         public FrmPatientSearch fPatientSearch = new FrmPatientSearch();
         FrmAddPatient fAddPatient = new FrmAddPatient();
+        FrmPatientAddSurgery fPatientAddSurgery = new FrmPatientAddSurgery();
 
         //  Surgery
         FrmSurgery fSurgery = new FrmSurgery();
@@ -90,8 +91,7 @@ namespace ParsDashboard
             LblPatientSearchResults.Font = NavSetStyleLbl(LblPatientSearchResults);           
 
             //  Surgery Panel
-            LblSurgery.Font = NavSetStyleLbl(LblSurgery);
-            LblSurgeryAdd.Font = NavSetStyleLbl(LblSurgeryAdd);
+            LblSurgery.Font = NavSetStyleLbl(LblSurgery);            
             LblSurgerySearch.Font = NavSetStyleLbl(LblSurgerySearch);
 
             //  Report Panel
@@ -195,7 +195,7 @@ namespace ParsDashboard
 
             SubRtn.Load_All_Forms( fPatient, this );
             SubRtn.Load_All_Forms( fPatientSearch, this );
-            SubRtn.Load_All_Forms( fAddPatient, this );
+            SubRtn.Load_All_Forms( fAddPatient, this );           
 
             SubRtn.Load_All_Forms( fImage, this );
             SubRtn.Load_All_Forms( fImageSearch, this );
@@ -223,8 +223,7 @@ namespace ParsDashboard
 
             //fDashBoard.Refresh();
 
-            LblDashboard.Click += new EventHandler( LblDashboard_Click );
-            
+            LblDashboard.Click += new EventHandler( LblDashboard_Click );         
         }
 
         private void LblPatient_Click(object sender, EventArgs e)
@@ -461,8 +460,7 @@ namespace ParsDashboard
         }
 
         private void LblSurgeryAdd_MouseEnter(object sender, EventArgs e)
-        {
-            HelpMouseMove.MouseEnter(LblSurgeryAdd);
+        {           
         }
 
         private void LblSurgerySearch_MouseEnter(object sender, EventArgs e)
@@ -497,7 +495,7 @@ namespace ParsDashboard
 
         private void LblPatientSearchResults_MouseLeave(object sender, EventArgs e)
         {
-            //HelpMouseMove.MouseLeave(LblPatientSearchResults);
+           
         }
        
         private void LblSurgery_MouseLeave(object sender, EventArgs e)
@@ -506,8 +504,7 @@ namespace ParsDashboard
         }
 
         private void LblSurgeryAdd_MouseLeave(object sender, EventArgs e)
-        {
-            HelpMouseMove.MouseLeave(LblSurgeryAdd);
+        {            
         }
 
         private void LblSurgerySearch_MouseLeave(object sender, EventArgs e)
@@ -624,7 +621,7 @@ namespace ParsDashboard
        
         private void LblPatientSearchResults_Click(object sender, EventArgs e)
         {
-            //NavSetStyleClick( LblPatientSearchResults );
+           
         }
 
         private void TSMnuFilterClearChecks_Click(object sender, EventArgs e)
@@ -847,8 +844,7 @@ namespace ParsDashboard
         }
 
         private void LblSurgeryAdd_Click(object sender, EventArgs e)
-        {
-            NavSetStyleClick( LblSurgeryAdd );
+        {           
         }
 
         private void LblSurgerySearch_Click(object sender, EventArgs e)

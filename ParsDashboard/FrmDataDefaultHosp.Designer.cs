@@ -85,6 +85,7 @@
             "\nSt Vincent Carmel"});
             this.CboAvaliHosp.AutoCompleteMode = System.Windows.Forms.AutoCompleteMode.SuggestAppend;
             this.CboAvaliHosp.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+            this.CboAvaliHosp.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.CboAvaliHosp.FormattingEnabled = true;
             this.CboAvaliHosp.Items.AddRange(new object[] {
             "Lamin",

@@ -727,8 +727,9 @@
             // TSMnuSurgeryNew
             // 
             this.TSMnuSurgeryNew.Name = "TSMnuSurgeryNew";
-            this.TSMnuSurgeryNew.Size = new System.Drawing.Size(114, 26);
+            this.TSMnuSurgeryNew.Size = new System.Drawing.Size(216, 26);
             this.TSMnuSurgeryNew.Text = "New";
+            this.TSMnuSurgeryNew.Click += new System.EventHandler(this.TSMnuSurgeryNew_Click);
             // 
             // TSMnuImgSearchResultBreak2
             // 

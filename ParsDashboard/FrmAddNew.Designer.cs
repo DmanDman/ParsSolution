@@ -88,7 +88,7 @@
             this.GrpSurgery = new System.Windows.Forms.GroupBox();
             this.DtFiscalYear = new System.Windows.Forms.DateTimePicker();
             this.DtSurgeryDate = new System.Windows.Forms.DateTimePicker();
-            this.label33 = new System.Windows.Forms.Label();
+            this.LblFiscalYear = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.MnuAddNew = new System.Windows.Forms.MenuStrip();
             this.TSMnuAddNewBack = new System.Windows.Forms.ToolStripMenuItem();
@@ -913,7 +913,7 @@
             // 
             this.GrpSurgery.Controls.Add(this.DtFiscalYear);
             this.GrpSurgery.Controls.Add(this.DtSurgeryDate);
-            this.GrpSurgery.Controls.Add(this.label33);
+            this.GrpSurgery.Controls.Add(this.LblFiscalYear);
             this.GrpSurgery.Controls.Add(this.label34);
             this.GrpSurgery.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GrpSurgery.Location = new System.Drawing.Point(21, 17);
@@ -947,16 +947,16 @@
             this.DtSurgeryDate.Size = new System.Drawing.Size(166, 22);
             this.DtSurgeryDate.TabIndex = 1;
             // 
-            // label33
+            // LblFiscalYear
             // 
-            this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(6, 76);
-            this.label33.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(78, 17);
-            this.label33.TabIndex = 2;
-            this.label33.Text = "Fiscal Year";
+            this.LblFiscalYear.AutoSize = true;
+            this.LblFiscalYear.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblFiscalYear.Location = new System.Drawing.Point(6, 76);
+            this.LblFiscalYear.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LblFiscalYear.Name = "LblFiscalYear";
+            this.LblFiscalYear.Size = new System.Drawing.Size(78, 17);
+            this.LblFiscalYear.TabIndex = 2;
+            this.LblFiscalYear.Text = "Fiscal Year";
             // 
             // label34
             // 
@@ -1571,7 +1571,7 @@
         private System.Windows.Forms.ListView LstImages;
         private System.Windows.Forms.TabPage TabPatientSurgery;
         private System.Windows.Forms.GroupBox GrpSurgery;
-        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label LblFiscalYear;
         private System.Windows.Forms.Label label34;
         private System.Windows.Forms.GroupBox GrpDesc;
         private System.Windows.Forms.ListBox LstImageDescFinal;

@@ -28,6 +28,8 @@ namespace ParsDashboard
             helper.ClearTextBox( TxtNewSurgery );
             helper.ClearTextBox( TxtNewInst );
             helper.ClearTextBox( TxtNewComp );
+
+            TxtNewDr.Focus();
         }
 
         #endregion
