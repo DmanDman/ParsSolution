@@ -32,6 +32,7 @@ namespace ParsDashboard
         public void ShowForm( Form frm )
         {            
             frm.BringToFront();
+            frm.WindowState = FormWindowState.Maximized;
         }
 
         public void ShowFormName ( Form[] frm, string FrmTagName )

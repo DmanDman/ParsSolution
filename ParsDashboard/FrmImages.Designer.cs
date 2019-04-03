@@ -355,7 +355,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Tag = "FrmImages";
             this.Text = "Images";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmImages_Load);
             this.GrpImage.ResumeLayout(false);
             this.GrpImage.PerformLayout();
