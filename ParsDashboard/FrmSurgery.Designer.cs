@@ -523,6 +523,7 @@
             // 
             // MnuSurgery
             // 
+            this.MnuSurgery.AllowMerge = false;
             this.MnuSurgery.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuSurgery.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuSurgery.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -579,7 +580,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Tag = "FrmSurgery";
             this.Text = "Surgery";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.GrpDisplay.ResumeLayout(false);
             this.TabDisplay.ResumeLayout(false);
             this.TabSurgery.ResumeLayout(false);

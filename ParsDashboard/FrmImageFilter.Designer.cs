@@ -781,6 +781,7 @@
             // 
             // MnuImageFilter
             // 
+            this.MnuImageFilter.AllowMerge = false;
             this.MnuImageFilter.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuImageFilter.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuImageFilter.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -857,7 +858,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Tag = "FrmImageFilter";
             this.Text = "Search Results - Filter";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.GrpBoxPersonal.ResumeLayout(false);
             this.GrpBoxPersonal.PerformLayout();
             this.groupBox3.ResumeLayout(false);

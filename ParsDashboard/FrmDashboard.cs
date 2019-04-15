@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace ParsDashboard
 {
     public partial class FrmDashboard : Form
-    {
+    {       
         FormNav frmNav = new FormNav();        
 
         public FrmDashboard()
@@ -27,14 +27,14 @@ namespace ParsDashboard
 
         private void FrmDashboard_Load(object sender, EventArgs e)
         {
-            // Enable double duffering to stop flickering.
-            SetStyle(ControlStyles.DoubleBuffer, true);
-            SetStyle(ControlStyles.AllPaintingInWmPaint, true);
-            SetStyle(ControlStyles.UserPaint, true);
-            SetStyle(ControlStyles.SupportsTransparentBackColor, false);
-            SetStyle(ControlStyles.Opaque, false);
-            SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
-            SetStyle(ControlStyles.ResizeRedraw, true);
+            //// Enable double duffering to stop flickering.
+            //SetStyle(ControlStyles.DoubleBuffer, true);
+            //SetStyle(ControlStyles.AllPaintingInWmPaint, true);
+            //SetStyle(ControlStyles.UserPaint, true);
+            //SetStyle(ControlStyles.SupportsTransparentBackColor, false);
+            //SetStyle(ControlStyles.Opaque, false);
+            //SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
+            //SetStyle(ControlStyles.ResizeRedraw, true);
         }
     }
 }

@@ -315,6 +315,7 @@
             // 
             // MnuDataLink
             // 
+            this.MnuDataLink.AllowMerge = false;
             this.MnuDataLink.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuDataLink.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuDataLink.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -424,7 +425,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Tag = "FrmDataLink";
             this.Text = "Data - Link";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.GrpLinkFrom.ResumeLayout(false);
             this.GrpLinkFrom.PerformLayout();
             this.GrpLinkTo.ResumeLayout(false);

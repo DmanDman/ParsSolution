@@ -915,6 +915,7 @@
             // 
             // MnuSurgerySearch
             // 
+            this.MnuSurgerySearch.AllowMerge = false;
             this.MnuSurgerySearch.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuSurgerySearch.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuSurgerySearch.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -1008,7 +1009,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Tag = "FrmSurgerySearch";
             this.Text = "Surgery - Search";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
             this.groupBox3.ResumeLayout(false);

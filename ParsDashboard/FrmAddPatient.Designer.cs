@@ -32,6 +32,8 @@
             this.TSMnuAddNewSave = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuAddNewBreak1 = new System.Windows.Forms.ToolStripMenuItem();
             this.TSMnuAddNewClearPatient = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuAddNewBreak2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.TSMnuAddNewClearSurgery = new System.Windows.Forms.ToolStripMenuItem();
             this.GrpPatient = new System.Windows.Forms.GroupBox();
             this.TabPatient = new System.Windows.Forms.TabControl();
             this.TabPatientPersonal = new System.Windows.Forms.TabPage();
@@ -113,8 +115,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.LstDr = new System.Windows.Forms.ListBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.TSMnuAddNewBreak2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.TSMnuAddNewClearSurgery = new System.Windows.Forms.ToolStripMenuItem();
             this.MnuAddNew.SuspendLayout();
             this.GrpPatient.SuspendLayout();
             this.TabPatient.SuspendLayout();
@@ -130,6 +130,7 @@
             // 
             // MnuAddNew
             // 
+            this.MnuAddNew.AllowMerge = false;
             this.MnuAddNew.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuAddNew.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuAddNew.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -169,6 +170,23 @@
             this.TSMnuAddNewClearPatient.Size = new System.Drawing.Size(104, 24);
             this.TSMnuAddNewClearPatient.Text = "Clea&r Patient";
             this.TSMnuAddNewClearPatient.Click += new System.EventHandler(this.TSMnuAddNewClearPatient_Click);
+            // 
+            // TSMnuAddNewBreak2
+            // 
+            this.TSMnuAddNewBreak2.Enabled = false;
+            this.TSMnuAddNewBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
+            this.TSMnuAddNewBreak2.Name = "TSMnuAddNewBreak2";
+            this.TSMnuAddNewBreak2.Padding = new System.Windows.Forms.Padding(0);
+            this.TSMnuAddNewBreak2.Size = new System.Drawing.Size(18, 24);
+            this.TSMnuAddNewBreak2.Text = "|";
+            // 
+            // TSMnuAddNewClearSurgery
+            // 
+            this.TSMnuAddNewClearSurgery.Name = "TSMnuAddNewClearSurgery";
+            this.TSMnuAddNewClearSurgery.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.U)));
+            this.TSMnuAddNewClearSurgery.Size = new System.Drawing.Size(109, 24);
+            this.TSMnuAddNewClearSurgery.Text = "Clear S&urgery";
+            this.TSMnuAddNewClearSurgery.Click += new System.EventHandler(this.TSMnuAddNewClearSurgery_Click);
             // 
             // GrpPatient
             // 
@@ -1255,23 +1273,6 @@
             this.label7.TabIndex = 0;
             this.label7.Text = "Doctor";
             // 
-            // TSMnuAddNewBreak2
-            // 
-            this.TSMnuAddNewBreak2.Enabled = false;
-            this.TSMnuAddNewBreak2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold);
-            this.TSMnuAddNewBreak2.Name = "TSMnuAddNewBreak2";
-            this.TSMnuAddNewBreak2.Padding = new System.Windows.Forms.Padding(0);
-            this.TSMnuAddNewBreak2.Size = new System.Drawing.Size(18, 24);
-            this.TSMnuAddNewBreak2.Text = "|";
-            // 
-            // TSMnuAddNewClearSurgery
-            // 
-            this.TSMnuAddNewClearSurgery.Name = "TSMnuAddNewClearSurgery";
-            this.TSMnuAddNewClearSurgery.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Alt | System.Windows.Forms.Keys.U)));
-            this.TSMnuAddNewClearSurgery.Size = new System.Drawing.Size(109, 24);
-            this.TSMnuAddNewClearSurgery.Text = "Clear S&urgery";
-            this.TSMnuAddNewClearSurgery.Click += new System.EventHandler(this.TSMnuAddNewClearSurgery_Click);
-            // 
             // FrmAddPatient
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1292,7 +1293,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Tag = "FrmAddPatient";
             this.Text = "Patient - Add New Patient";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.MnuAddNew.ResumeLayout(false);
             this.MnuAddNew.PerformLayout();
             this.GrpPatient.ResumeLayout(false);

@@ -127,6 +127,7 @@
             // 
             // MnuDataPicInfo
             // 
+            this.MnuDataPicInfo.AllowMerge = false;
             this.MnuDataPicInfo.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuDataPicInfo.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuDataPicInfo.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -199,7 +200,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Tag = "FrmDataPicInfo";
             this.Text = "Data - Picture Information";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.GrpNew.ResumeLayout(false);
             this.GrpNew.PerformLayout();
             this.GrpPicInfo.ResumeLayout(false);

@@ -545,6 +545,7 @@
             // 
             // MnuPatient
             // 
+            this.MnuPatient.AllowMerge = false;
             this.MnuPatient.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuPatient.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuPatient.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -602,7 +603,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Tag = "FrmPatient";
             this.Text = "Patient";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmPatient_Load);
             this.GrpImage.ResumeLayout(false);
             this.TabDisplay.ResumeLayout(false);

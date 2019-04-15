@@ -256,6 +256,7 @@ namespace ParsDashboard
                 //  show Image Search Results
                 if ( f.Tag.ToString() == "FrmImageSearchResults" )
                 {
+                    f.Show();
                     f.BringToFront();
                 }
 

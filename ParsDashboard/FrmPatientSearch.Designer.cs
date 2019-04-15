@@ -589,6 +589,7 @@
             // 
             // MnuPatientSearch
             // 
+            this.MnuPatientSearch.AllowMerge = false;
             this.MnuPatientSearch.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuPatientSearch.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuPatientSearch.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -644,7 +645,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Tag = "FrmPatientSearch";
             this.Text = "Patient - Search";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.TabSearch.ResumeLayout(false);
             this.TabPersonal.ResumeLayout(false);
             this.GrpBoxPersonal.ResumeLayout(false);

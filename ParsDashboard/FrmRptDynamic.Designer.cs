@@ -36,6 +36,7 @@
             // 
             // MnuRptDynamic
             // 
+            this.MnuRptDynamic.AllowMerge = false;
             this.MnuRptDynamic.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuRptDynamic.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuRptDynamic.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -82,7 +83,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Tag = "FrmRptDynamic";
             this.Text = "Report - Dynamic";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.MnuRptDynamic.ResumeLayout(false);
             this.MnuRptDynamic.PerformLayout();
             this.ResumeLayout(false);

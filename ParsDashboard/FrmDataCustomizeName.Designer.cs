@@ -447,6 +447,7 @@
             // 
             // MnuDataCustomizeNames
             // 
+            this.MnuDataCustomizeNames.AllowMerge = false;
             this.MnuDataCustomizeNames.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuDataCustomizeNames.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuDataCustomizeNames.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -519,7 +520,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Tag = "FrmDataCustomizeName";
             this.Text = "Data - Customize Names";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

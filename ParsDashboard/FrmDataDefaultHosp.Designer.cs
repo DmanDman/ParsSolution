@@ -105,6 +105,7 @@
             // 
             // MnuDataDefaultHosp
             // 
+            this.MnuDataDefaultHosp.AllowMerge = false;
             this.MnuDataDefaultHosp.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuDataDefaultHosp.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuDataDefaultHosp.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -177,7 +178,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Tag = "FrmDataDefaultHosp";
             this.Text = "Data - Default Hospital";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

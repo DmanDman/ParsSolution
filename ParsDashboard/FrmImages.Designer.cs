@@ -300,6 +300,7 @@
             // 
             // MnuImages
             // 
+            this.MnuImages.AllowMerge = false;
             this.MnuImages.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuImages.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuImages.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -347,6 +348,7 @@
             this.Controls.Add(this.GrpImage);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MainMenuStrip = this.MnuImages;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "FrmImages";

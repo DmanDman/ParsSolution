@@ -36,6 +36,7 @@
             // 
             // MnuRptStatic
             // 
+            this.MnuRptStatic.AllowMerge = false;
             this.MnuRptStatic.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuRptStatic.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuRptStatic.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -82,7 +83,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Tag = "FrmRptStatic";
             this.Text = "Report - Static";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.MnuRptStatic.ResumeLayout(false);
             this.MnuRptStatic.PerformLayout();
             this.ResumeLayout(false);

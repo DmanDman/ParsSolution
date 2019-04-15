@@ -301,6 +301,7 @@
             // 
             // MnuImagesSearch
             // 
+            this.MnuImagesSearch.AllowMerge = false;
             this.MnuImagesSearch.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuImagesSearch.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuImagesSearch.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -437,7 +438,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Tag = "FrmImageSearch";
             this.Text = "Images - Search";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmImageSearch_Load);
             this.GrpMetaData.ResumeLayout(false);
             this.GrpMetaData.PerformLayout();

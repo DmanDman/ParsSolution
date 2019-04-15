@@ -693,6 +693,7 @@
             // 
             // MnuSecurity
             // 
+            this.MnuSecurity.AllowMerge = false;
             this.MnuSecurity.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuSecurity.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuSecurity.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -812,6 +813,7 @@
             // 
             // MnuSecurityUserMgmt
             // 
+            this.MnuSecurityUserMgmt.AllowMerge = false;
             this.MnuSecurityUserMgmt.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuSecurityUserMgmt.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuSecurityUserMgmt.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -901,8 +903,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1567, 803);
             this.ControlBox = false;
-            this.Controls.Add(this.MnuSecurityUserMgmt);
             this.Controls.Add(this.MnuSecurity);
+            this.Controls.Add(this.MnuSecurityUserMgmt);
             this.Controls.Add(this.GrpCurrentDBUser);
             this.Controls.Add(this.GrpHoldUsers);
             this.Controls.Add(this.GrpHoldCurrent);
@@ -920,7 +922,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Tag = "FrmSecurity";
             this.Text = "Current User";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmSecurity_Load);
             this.GrpCurrentUser.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

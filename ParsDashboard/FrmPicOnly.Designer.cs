@@ -141,6 +141,7 @@
             // 
             // MnuPicOnly
             // 
+            this.MnuPicOnly.AllowMerge = false;
             this.MnuPicOnly.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuPicOnly.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuPicOnly.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -213,7 +214,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Tag = "FrmPicOnly";
             this.Text = "Emailed Pics - Picture Only";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.GrpImages.ResumeLayout(false);
             this.GrpImages.PerformLayout();
             this.MnuPicOnly.ResumeLayout(false);

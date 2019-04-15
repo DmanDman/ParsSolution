@@ -646,6 +646,7 @@
             // 
             // MnuImageSearchResult
             // 
+            this.MnuImageSearchResult.AllowMerge = false;
             this.MnuImageSearchResult.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuImageSearchResult.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuImageSearchResult.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -727,7 +728,7 @@
             // TSMnuSurgeryNew
             // 
             this.TSMnuSurgeryNew.Name = "TSMnuSurgeryNew";
-            this.TSMnuSurgeryNew.Size = new System.Drawing.Size(216, 26);
+            this.TSMnuSurgeryNew.Size = new System.Drawing.Size(114, 26);
             this.TSMnuSurgeryNew.Text = "New";
             this.TSMnuSurgeryNew.Click += new System.EventHandler(this.TSMnuSurgeryNew_Click);
             // 
@@ -812,7 +813,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Tag = "FrmImageSearchResults";
             this.Text = "Images - Search Results";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmImageSearchResults_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

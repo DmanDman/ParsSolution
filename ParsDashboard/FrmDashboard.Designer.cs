@@ -664,6 +664,7 @@
             // 
             // MnuDashboard
             // 
+            this.MnuDashboard.AllowMerge = false;
             this.MnuDashboard.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.MnuDashboard.ImageScalingSize = new System.Drawing.Size(17, 17);
             this.MnuDashboard.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -677,7 +678,7 @@
             this.MnuDashboard.Name = "MnuDashboard";
             this.MnuDashboard.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
             this.MnuDashboard.Size = new System.Drawing.Size(1368, 28);
-            this.MnuDashboard.TabIndex = 7;
+            this.MnuDashboard.TabIndex = 0;
             this.MnuDashboard.Text = "menuStrip1";
             // 
             // TSMnuOpenCanvas
@@ -730,6 +731,7 @@
             this.Controls.Add(this.GrpInfo);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MainMenuStrip = this.MnuDashboard;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -739,7 +741,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Tag = "FrmDashboard";
             this.Text = "Dashboard";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmDashboard_Load);
             this.GrpInfo.ResumeLayout(false);
             this.GrpInfo.PerformLayout();
