@@ -27,14 +27,16 @@ namespace ParsDashboard
 
         private void FrmDashboard_Load(object sender, EventArgs e)
         {
+            this.Refresh();
+
             //// Enable double duffering to stop flickering.
-            //SetStyle(ControlStyles.DoubleBuffer, true);
-            //SetStyle(ControlStyles.AllPaintingInWmPaint, true);
-            //SetStyle(ControlStyles.UserPaint, true);
-            //SetStyle(ControlStyles.SupportsTransparentBackColor, false);
-            //SetStyle(ControlStyles.Opaque, false);
-            //SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
-            //SetStyle(ControlStyles.ResizeRedraw, true);
+            SetStyle(ControlStyles.DoubleBuffer, true);
+            SetStyle(ControlStyles.AllPaintingInWmPaint, true);
+            SetStyle(ControlStyles.UserPaint, true);
+            SetStyle(ControlStyles.SupportsTransparentBackColor, false);
+            SetStyle(ControlStyles.Opaque, false);
+            SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
+            SetStyle(ControlStyles.ResizeRedraw, true);
         }
     }
 }

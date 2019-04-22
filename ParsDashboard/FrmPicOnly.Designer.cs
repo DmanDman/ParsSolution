@@ -200,7 +200,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1567, 803);
+            this.ClientSize = new System.Drawing.Size(1567, 840);
             this.ControlBox = false;
             this.Controls.Add(this.MnuPicOnly);
             this.Controls.Add(this.GrpImages);

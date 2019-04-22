@@ -677,7 +677,7 @@
             this.MnuDashboard.Location = new System.Drawing.Point(0, 0);
             this.MnuDashboard.Name = "MnuDashboard";
             this.MnuDashboard.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.MnuDashboard.Size = new System.Drawing.Size(1368, 28);
+            this.MnuDashboard.Size = new System.Drawing.Size(1567, 28);
             this.MnuDashboard.TabIndex = 0;
             this.MnuDashboard.Text = "menuStrip1";
             // 
@@ -721,7 +721,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1368, 840);
+            this.ClientSize = new System.Drawing.Size(1567, 840);
             this.ControlBox = false;
             this.Controls.Add(this.MnuDashboard);
             this.Controls.Add(this.GrpImages);
@@ -731,7 +731,6 @@
             this.Controls.Add(this.GrpInfo);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.MainMenuStrip = this.MnuDashboard;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;

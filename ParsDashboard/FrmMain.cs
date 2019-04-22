@@ -211,9 +211,14 @@ namespace ParsDashboard
 
             SetPanel_Height();
            
-            StopPanel_Flickering();     
+            StopPanel_Flickering();
 
             //  load forms
+            fDashBoard.Show();
+            fDashBoard.WindowState = FormWindowState.Maximized;
+            fDashBoard.BringToFront();
+            fDashBoard.Refresh();
+
             SubRtn.Load_All_Forms( fPatient, this );
             SubRtn.Load_All_Forms( fPatientSearch, this );
             SubRtn.Load_All_Forms( fAddPatient, this );           
@@ -238,43 +243,11 @@ namespace ParsDashboard
 
             SubRtn.Load_All_Forms( fPicOnly, this );
 
-            SubRtn.Load_All_Forms( fSecurity, this );
+            SubRtn.Load_All_Forms( fSecurity, this );            
 
             SubRtn.Load_All_Forms( fDashBoard, this );
-
-            fDashBoard.Show();
-
-            int milliseconds = 1000;
-            Thread.Sleep(milliseconds);
-            this.WindowState = FormWindowState.Maximized;
-
-            //Control mnu = SubRoutine.FindControl( fDashBoard, "MnuDashboard" );
-            //fDashBoard.Update();
-            //mnu.Update();
-
-            //fDashBoard.WindowState = FormWindowState.Normal;
-            //fDashBoard.WindowState = FormWindowState.Maximized;
-            //fDashBoard.Refresh();
-
-            //fDashBoard.BringToFront();
-            //fDashBoard.WindowState = FormWindowState.Minimized;
-            //fDashBoard.WindowState = FormWindowState.Maximized;
-            //fDashBoard.SendToBack();
-            //fDashBoard.BringToFront();            
-            //fNav.ShowForm(fDashBoard);
-
-            //fDashBoard.Visible = true;        
-            //fDashBoard.Refresh();            
-            //LblDashboard.Click += new EventHandler( LblDashboard_Click );
-
-            //BtnDashboard.PerformClick();
-
-            //fDashBoard.BringToFront();
-            //fDashBoard.WindowState = FormWindowState.Maximized;
-            //fDashBoard.Show();
-
-            //fDashBoard.MainMenuStrip.Show();
-            //fDashBoard.Refresh();
+                   
+            fDashBoard.BringToFront();                     
         }
 
         private void LblPatient_Click(object sender, EventArgs e)
@@ -359,8 +332,7 @@ namespace ParsDashboard
         public void LblDashboard_Click(object sender, EventArgs e)
         {
             fNav.ShowForm(fDashBoard);
-
-            //SubRtn.DashboardAccordian(sender, e, tableLayoutPanel1);
+            
             SubRtn.DashboardAccordian(LblDashboard, e, tableLayoutPanel1);
 
             NavSetStyleClick(LblDashboard);                
@@ -1052,6 +1024,13 @@ namespace ParsDashboard
         {
             LblDashboard_Click( sender, e );
         }
+
+        private void Timer1_Tick(object sender, EventArgs e)
+        {
+            fDashBoard.BringToFront();
+            LblDashboard_Click( sender, e );
+            Timer1.Stop();
+        }
     }
 
     public class SubRoutine
@@ -1165,12 +1144,11 @@ namespace ParsDashboard
         public void Load_All_Forms(Form frm, Form frmMain)
         {               
             frm.MdiParent = frmMain;
-            frm.StartPosition = FormStartPosition.CenterParent;           
-            frm.WindowState = FormWindowState.Minimized;
-            frm.Dock = DockStyle.Fill;            
-            frm.Show();
+            frm.StartPosition = FormStartPosition.CenterParent;
+            frm.Dock = DockStyle.Fill;
             frm.WindowState = FormWindowState.Maximized;
-            frm.Refresh();           
+            frm.Show();                                  
+            frm.SendToBack();
         }
 
         public void Show_All_Forms(Form frm)
@@ -1462,6 +1440,5 @@ namespace ParsDashboard
                 helper.ClearUpDwn(ctlupdwn);
             }
         }
-
     }
 }

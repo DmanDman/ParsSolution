@@ -79,7 +79,7 @@
             this.LblEmailPic = new System.Windows.Forms.Label();
             this.DlgImagesAdd = new System.Windows.Forms.OpenFileDialog();
             this.BtnDashboard = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.Timer1 = new System.Windows.Forms.Timer(this.components);
             this.PnlDashboard.SuspendLayout();
             this.PnlPatient.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -809,9 +809,11 @@
             this.BtnDashboard.Visible = false;
             this.BtnDashboard.Click += new System.EventHandler(this.BtnDashboard_Click);
             // 
-            // timer1
+            // Timer1
             // 
-            this.timer1.Interval = 1000;
+            this.Timer1.Enabled = true;
+            this.Timer1.Interval = 2000;
+            this.Timer1.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
             // FrmMain
             // 
@@ -828,6 +830,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Tag = "FrmMain";
             this.Text = "PARS";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FrmMain_Load);
             this.PnlDashboard.ResumeLayout(false);
             this.PnlPatient.ResumeLayout(false);
@@ -902,7 +905,7 @@
         private System.Windows.Forms.Label LblMDComp;
         internal System.Windows.Forms.Label LblMetaData;
         private System.Windows.Forms.Button BtnDashboard;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer Timer1;
     }
 }
 

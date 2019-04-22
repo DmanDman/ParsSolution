@@ -30,11 +30,9 @@ namespace ParsDashboard
         public Form FrmMain;
 
         public void ShowForm( Form frm )
-        {            
-            //frm.BringToFront();
-            //frm.WindowState = FormWindowState.Maximized;
+        {           
             frm.Show();
-            frm.BringToFront();
+            frm.WindowState = FormWindowState.Maximized;            
         }
 
         public void ShowFormName ( Form[] frm, string FrmTagName )
@@ -44,8 +42,8 @@ namespace ParsDashboard
                 if ( frm[i].Tag.ToString() == FrmTagName )
                 {
                     frm[i].Show();
-                    frm[i].BringToFront();
-
+                    frm[i].WindowState = FormWindowState.Maximized;
+                    //frm[i].BringToFront();
                     break;
                 }
             }

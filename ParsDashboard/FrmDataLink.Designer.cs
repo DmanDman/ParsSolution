@@ -425,6 +425,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Tag = "FrmDataLink";
             this.Text = "Data - Link";
+            this.Load += new System.EventHandler(this.FrmDataLink_Load);
             this.GrpLinkFrom.ResumeLayout(false);
             this.GrpLinkFrom.PerformLayout();
             this.GrpLinkTo.ResumeLayout(false);
